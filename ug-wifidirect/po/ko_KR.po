@@ -1,0 +1,71 @@
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "Wi-Fi Direct 끄는 중..."
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "Wi-Fi Direct 켜는 중..."
+
+msgid "IDS_WFD_BODY_SCANNING"
+msgstr "검색 중..."
+
+msgid "IDS_WFD_BODY_ACTIVATED"
+msgstr "Wi-Fi Direct가 켜졌습니다."
+
+msgid "IDS_WFD_BODY_DEVICE_NAME"
+msgstr "장치명"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "사용 가능한 장치들"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "Wi-Fi Direct 장치들"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "장치가 없습니다."
+
+msgid "IDS_WFD_BODY_HELP"
+msgstr "도움말"
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "연결중..."
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "연결되었습니다."
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "검색"
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "중지"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "Wi-Fi Direct를 켜지 못했습니다."
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "Wi-Fi Direct를 끄지 못했습니다."
+
+msgid "IDS_WFD_POP_CONNECTING_TIMEOUT"
+msgstr "연결시간 초과"
+
+msgid "IDS_WFD_POP_AUTH_FAIL"
+msgstr "인증 실패"
+
+msgid "IDS_WFD_POP_LINK_FAIL"
+msgstr "연결 생성 실패"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "알수 없는 오류"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "Wi-Fi 연결이 끊어집니다.<br>계속하시겠습니까?"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "Wi-Fi 핫스팟이 끊어집니다.<br>계속하시겠습니까?"
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "Wi-Fi Direct Service를 지원하지 않는 장치입니다."
+
+msgid "IDS_WFD_POP_PROBLEM_WITH_WFD"
+msgstr "Wi-Fi Direct Service에 문제가 있습니다."

@@ -1,0 +1,8 @@
+Name=org.tizen.wifi-direct-popup
+Type=Application
+Exec=/opt/apps/org.tizen.wifi-direct-popup/bin/wifi-direct-popup
+Icon=NULL
+Comment=WiFi Direct UI Application
+nodisplay=TRUE
+X-Tizen-TaskManage=False
+X-Tizen-Removable=False

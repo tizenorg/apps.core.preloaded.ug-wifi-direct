@@ -1,0 +1,149 @@
+ug-setting-wifidirect-efl (0.3.9) unstable; urgency=low
+
+  * Bug fix and code cleaning
+  * Connection popup should show SSID instead of MAC address
+  * Wi-Fi Direct service should be blocked on specific device
+  * Git: slp/pkgs/u/ug-wifi-direct
+  * Tag: ug-setting-wifidirect-efl_0.3.9
+
+ -- Gibyoung Kim <lastkgb.kim@samsung.com>  Tue, 27 Mar 2012 20:01:04 +0900
+
+ug-setting-wifidirect-efl (0.3.8) unstable; urgency=low
+
+  * UI resource should be removed, when WFD initialization is failed
+  * Git: slp/pkgs/u/ug-wifi-direct
+  * Tag: ug-setting-wifidirect-efl_0.3.8
+
+ -- Gibyoung Kim <lastkgb.kim@samsung.com>  Tue, 20 Mar 2012 13:19:09 +0900
+
+ug-setting-wifidirect-efl (0.3.7) unstable; urgency=low
+
+  * desktop file is modified
+  * Git: slp/pkgs/u/ug-wifi-direct
+  * Tag: ug-setting-wifidirect-efl_0.3.7
+
+ -- Gibyoung Kim <lastkgb.kim@samsung.com>  Mon, 19 Mar 2012 22:23:27 +0900
+
+ug-setting-wifidirect-efl (0.3.6) unstable; urgency=low
+
+  * Stablizing Elementary 1.0 migration
+  * Git: slp/pkgs/u/ug-wifi-direct
+  * Tag: ug-setting-wifidirect-efl_0.3.6
+
+ -- Gibyoung Kim <lastkgb.kim@samsung.com>  Sat, 17 Mar 2012 20:08:28 +0900
+
+ug-setting-wifidirect-efl (0.3.5) unstable; urgency=low
+
+  * Changes from Mobile-AP library are applyed
+  * Git: slp/pkgs/u/ug-wifi-direct
+  * Tag: ug-setting-wifidirect-efl_0.3.5
+
+ -- Gibyoung Kim <lastkgb.kim@samsung.com>  Wed, 14 Mar 2012 17:07:25 +0900
+
+ug-setting-wifidirect-efl (0.3.4) unstable; urgency=low
+
+  * Elementary 1.0 migration is applyed
+  * WiFi-Direct API changes are applyed
+  * Git: slp/pkgs/u/ug-wifi-direct
+  * Tag: ug-setting-wifidirect-efl_0.3.4
+
+ -- Gibyoung Kim <lastkgb.kim@samsung.com>  Wed, 14 Mar 2012 15:33:07 +0900
+
+ug-setting-wifidirect-efl (0.3.3) unstable; urgency=low
+
+  * EDC file for popup application is removed 
+  * Git: slp/pkgs/u/ug-wifi-direct
+  * Tag: ug-setting-wifidirect-efl_0.3.3
+
+ -- Gibyoung Kim <lastkgb.kim@samsung.com>  Wed, 29 Feb 2012 11:28:24 +0900
+
+ug-setting-wifidirect-efl (0.3.2) unstable; urgency=low
+
+  * to apply changes from wifi-direct client library
+  * to add codes that turn off wifi or mobile ap
+  * to support multi language(English, Korean)
+  * Git: slp/pkgs/u/ug-wifi-direct
+  * Tag: ug-setting-wifidirect-efl_0.3.2
+
+ -- Gibyoung Kim <lastkgb.kim@samsung.com>  Tue, 28 Feb 2012 16:36:11 +0900
+
+ug-setting-wifidirect-efl (0.3.1) unstable; urgency=low
+
+  * to modify CMakeLists.txt and rules files
+  * to hide Direct On/Off button when activate ro decativate
+  * Git: slp/pkgs/u/ug-wifi-direct
+  * Tag: ug-setting-wifidirect-efl_0.3.1
+
+ -- Gibyoung Kim <lastkgb.kim@samsung.com>  Wed, 22 Feb 2012 16:43:51 +0900
+
+ug-setting-wifidirect-efl (0.3.0) unstable; urgency=low
+
+  * Merge wifi-direct popup and setting ug in a single source tree. 
+  * Git: slp/pkgs/u/ug-wifi-direct
+  * Tag: ug-setting-wifidirect-efl_0.3.0
+
+ -- Dongwook Lee <dwmax.lee@samsung.com>  Fri, 17 Feb 2012 17:40:18 +0900
+
+ug-setting-wifidirect-efl (0.2.1) unstable; urgency=low
+
+  * to apply changes from UIFW 
+  * Git: slp/pkgs/u/ug-wifi-direct
+  * Tag: ug-setting-wifidirect-efl_0.2.1
+
+ -- Gibyoung Kim <lastkgb.kim@samsung.com>  Thu, 16 Feb 2012 12:51:04 +0900
+
+ug-setting-wifidirect-efl (0.2.0) unstable; urgency=low
+
+  * Renewal all of UI
+  * Apply changes from WiFi Direct API
+  * Git: slp/pkgs/u/ug-wifi-direct
+  * Tag: ug-setting-wifidirect-efl_0.2.0
+
+ -- Gibyoung Kim <lastkgb.kim@samsung.com>  Tue, 14 Feb 2012 17:20:17 +0900
+
+ug-setting-wifidirect-efl (0.1.6) unstable; urgency=low
+
+  * LCD on when a connection request come. Follow up the wifi-direct API change.
+  * Git: slp/pkgs/u/ug-wifi-direct
+  * Tag: ug-setting-wifidirect-efl_0.1.6
+
+ -- Dongwook Lee <dwmax.lee@samsung.com>  Wed, 01 Feb 2012 21:21:54 +0900
+
+ug-setting-wifidirect-efl (0.1.5) unstable; urgency=low
+
+  * Change control to support any arch
+  * Git: slp/pkgs/u/ug-wifi-direct
+  * Tag: ug-setting-wifidirect-efl_0.1.5
+
+ -- Dongwook Lee <dwmax.lee@samsung.com>  Thu, 19 Jan 2012 14:29:45 +0900
+
+ug-setting-wifidirect-efl (0.1.4) unstable; urgency=low
+
+  * package upload
+  * Git: slp/pkgs/u/ug-wifi-direct
+  * Tag: ug-setting-wifidirect-efl_0.1.4
+
+ -- Dongwook Lee <dwmax.lee@samsung.com>  Wed, 18 Jan 2012 12:37:54 +0900
+
+ug-setting-wifidirect-efl (0.1.3) unstable; urgency=low
+
+  * Tag update and fix email address in changelog
+  * Git: slp/pkgs/u/ug-wifi-direct
+  * Tag: ug-setting-wifidirect-efl_0.1.3
+
+ -- Dongwook Lee <dwmax.lee@samsung.com>  Tue, 17 Jan 2012 19:23:56 +0900
+
+ug-setting-wifidirect-efl (0.1.2) unstable; urgency=low
+
+  * Tag update and fix email address in changelog
+  * Git: slp/pkgs/u/ug-wifi-direct
+  * Tag: ug-setting-wifidirect-efl_0.1.2
+ -- Dongwook Lee <dwmax.lee@samsung.com>  Tue, 17 Jan 2012 17:10:04 +0900
+
+ug-setting-wifidirect-efl (0.1.1) unstable; urgency=low
+
+  * Tag update and fix email address in changelog
+  * Git: slp/pkgs/u/ug-wifi-direct
+  * Tag: ug-setting-wifidirect-efl_0.1.1
+
+ -- Dongwook Lee <dwmax.lee@samsung.com>  Tue, 17 Jan 2012 01:21:37 +0900

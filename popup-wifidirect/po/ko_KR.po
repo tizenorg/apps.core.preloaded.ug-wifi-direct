@@ -1,0 +1,29 @@
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "와이파이 다이렉트"
+
+msgid "IDS_WFD_POP_CONNECT_WITH_PIN_Q"
+msgstr "%s와 %d초 내에 연결하시겠습니까?<br>PIN:%s"
+
+msgid "IDS_WFD_POP_CONNECT_Q"
+msgstr "%s와 %d초 내에 연결하시겠습니까?"
+
+msgid "IDS_WFD_POP_ENTER_PIN"
+msgstr "PIN 입력"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "유효하지 않은 PIN입니다."
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "연결 중..."
+
+msgid "IDS_WFD_POP_CONNECTING_WITH_PIN"
+msgstr "연결 중...<br>PIN:"
+
+msgid "IDS_WFD_POP_CANCELING"
+msgstr "취소 중..."
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "연결되었습니다."
+
+msgid "IDS_WFD_POP_ERROR_OCCURRED"
+msgstr "연결중에 오류가 발생하였습니다."
