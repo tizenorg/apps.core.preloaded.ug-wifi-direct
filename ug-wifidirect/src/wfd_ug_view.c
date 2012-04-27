@@ -103,27 +103,59 @@ static void _wfd_onoff_btn_cb(void *data, Evas_Object *obj, void *event_info)
 
     ugd->wfd_status = wfd_client_get_link_status();
     DBG(LOG_VERBOSE, "WFD state is [%d]", ugd->wfd_status);
-    if (ugd->wfd_status < 0)
-    {
-        DBG(LOG_VERBOSE, "bad wfd status\n");
-        wfd_ug_warn_popup(ugd, _("IDS_WFD_POP_ACTIVATE_FAIL"), POPUP_TYPE_ACTIVATE_FAIL);
-
-        ugd->head_text_mode = HEAD_TEXT_TYPE_DIRECT;
-        wfd_ug_view_refresh_glitem(ugd->head);
-        return;
-    }
 
     if (!ugd->wfd_onoff)
     {
+        if(ugd->wfd_status < 0)
+        {
+            DBG(LOG_VERBOSE, "bad wfd status\n");
+            wfd_ug_warn_popup(ugd, _("IDS_WFD_POP_ACTIVATE_FAIL"), POPUP_TYPE_TERMINATE);
+
+            ugd->head_text_mode = HEAD_TEXT_TYPE_DIRECT;
+            wfd_ug_view_refresh_glitem(ugd->head);
+            return;
+        }
+
         ugd->head_text_mode = HEAD_TEXT_TYPE_ACTIVATING;
         wfd_client_switch_on(ugd);
     }
     else
     {
+        if(ugd->wfd_status < 0)
+        {
+            DBG(LOG_VERBOSE, "bad wfd status\n");
+            wfd_ug_warn_popup(ugd, _("IDS_WFD_POP_DEACTIVATE_FAIL"), POPUP_TYPE_TERMINATE);
+
+            ugd->head_text_mode = HEAD_TEXT_TYPE_DIRECT;
+            wfd_ug_view_refresh_glitem(ugd->head);
+            return;
+        }
+
         ugd->head_text_mode = HEAD_TEXT_TYPE_DEACTIVATING;
         wfd_client_switch_off(ugd);
     }
     wfd_ug_view_refresh_glitem(ugd->head);
+
+    __FUNC_EXIT__;
+}
+
+static void _gl_header_sel(void *data, Evas_Object *obj, void *event_info)
+{
+    __FUNC_ENTER__;
+    struct ug_data *ugd = (struct ug_data*) data;
+    Elm_Object_Item *item = (Elm_Object_Item *)event_info;
+    int res;
+
+    if(data == NULL)
+    {
+        DBG(LOG_ERROR, "Incorrect parameter(NULL)\n");
+        return;
+    }
+
+    if(item != NULL)
+        elm_genlist_item_selected_set(item, EINA_FALSE);
+
+    _wfd_onoff_btn_cb(ugd, NULL, NULL);
 
     __FUNC_EXIT__;
 }
@@ -338,12 +370,8 @@ static Evas_Object *_gl_peer_icon_get(void *data, Evas_Object * obj,
             icon = elm_icon_add(obj);
             elm_icon_file_set(icon, WFD_ICON_CONNECTED, NULL);
         }
-        else
-        {
-            ;
-        }
-        evas_object_size_hint_aspect_set(icon, EVAS_ASPECT_CONTROL_VERTICAL, 1,
-                                         1);
+
+        evas_object_size_hint_aspect_set(icon, EVAS_ASPECT_CONTROL_VERTICAL, 1, 1);
         elm_icon_resizable_set(icon, 1, 1);
         evas_object_show(icon);
     }
@@ -493,9 +521,7 @@ static Evas_Object *_create_basic_genlist(void *data)
                             ELM_GENLIST_ITEM_NONE, NULL, NULL);
     ugd->head =
         elm_genlist_item_append(genlist, &head_itc, ugd, NULL,
-                                ELM_GENLIST_ITEM_NONE, NULL, NULL);
-    elm_genlist_item_select_mode_set(ugd->head,
-                                     ELM_OBJECT_SELECT_MODE_DISPLAY_ONLY);
+                                ELM_GENLIST_ITEM_NONE, _gl_header_sel, (void*) ugd);
     item =
         elm_genlist_item_append(genlist, &name_itc, ugd, NULL,
                                 ELM_GENLIST_ITEM_NONE, NULL, NULL);
@@ -581,8 +607,6 @@ void create_wfd_ug_view(void *data)
     evas_object_smart_callback_add(back_btn, "clicked", _back_btn_cb,
                                    (void *) ugd);
     elm_object_focus_allow_set(back_btn, EINA_FALSE);
-
-    elm_theme_extension_add(NULL, WFD_UG_EDJ_PATH);
 
     ugd->genlist = _create_basic_genlist(ugd);
     if (ugd->genlist == NULL)

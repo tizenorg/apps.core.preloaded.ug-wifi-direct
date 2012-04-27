@@ -268,7 +268,7 @@ void wfd_destroy_popup()
 
     if (ad->popup)
     {
-        evas_object_smart_callback_del(ad->popup, "response", __popup_resp_cb);
+        //evas_object_smart_callback_del(ad->popup, "response", __popup_resp_cb);
         evas_object_del(ad->popup);
         ad->popup = NULL;
     }
@@ -561,7 +561,7 @@ void wfd_prepare_popup(int type, void *userdata)
     case WFD_POP_APRV_CONNECTION_WPS_PUSHBUTTON_REQ:
         {
             snprintf(pop->text, sizeof(pop->text), _("IDS_WFD_POP_CONNECT_Q"),
-                     ad->peer_name, 120);
+                     ad->peer_name);
             snprintf(pop->label1, sizeof(pop->label1), "%s",
                      dgettext("sys_string", "IDS_COM_SK_YES"));
             snprintf(pop->label2, sizeof(pop->label2), "%s",
@@ -577,7 +577,7 @@ void wfd_prepare_popup(int type, void *userdata)
         {
             char *pin = (char *) userdata;
             snprintf(pop->text, sizeof(pop->text),
-                     _("IDS_WFD_POP_CONNECT_WITH_PIN_Q"), ad->peer_name, 120,
+                     _("IDS_WFD_POP_CONNECT_WITH_PIN_Q"), ad->peer_name,
                      ad->pin_number);
             snprintf(pop->label1, sizeof(pop->label1), "%s",
                      dgettext("sys_string", "IDS_COM_SK_YES"));
@@ -595,7 +595,7 @@ void wfd_prepare_popup(int type, void *userdata)
         {
             char *pin = (char *) userdata;
             snprintf(pop->text, sizeof(pop->text), _("IDS_WFD_POP_CONNECT_Q"),
-                     ad->peer_name, 120);
+                     ad->peer_name);
             snprintf(pop->label1, sizeof(pop->label1), "%s",
                      dgettext("sys_string", "IDS_COM_SK_YES"));
             snprintf(pop->label2, sizeof(pop->label2), "%s",

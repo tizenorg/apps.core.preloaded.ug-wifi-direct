@@ -43,7 +43,7 @@
 #define PACKAGE "wifi-direct-popup"
 #define EDJ_NAME RESDIR"/edje/wifi-direct-popup.edj"
 #define LOCALEDIR "/opt/apps/org.tizen.wifi-direct-popup/res/locale"
-#define WFD_POP_STR_MAX_LEN		64
+#define WFD_POP_STR_MAX_LEN		128
 
 enum
 {

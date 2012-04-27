@@ -1,3 +1,32 @@
+ug-setting-wifidirect-efl (0.4.2) unstable; urgency=low
+
+  * Connection error popup of WFD UG is removed
+  * Connection time limit string is removed
+  * Popup window type is changed as ELM_WIN_BASIC
+  * Git: slp/pkgs/u/ug-wifi-direct
+  * Tag: ug-setting-wifidirect-efl_0.4.2
+
+ -- Gibyoung Kim <lastkgb.kim@samsung.com>  Thu, 19 Apr 2012 20:50:38 +0900
+
+ug-setting-wifidirect-efl (0.4.1) unstable; urgency=low
+
+  * Connected peer should be displayed, when view is reloaded
+  * bug fix for S1-2549 and header list selection is enabled
+  * Git: slp/pkgs/u/ug-wifi-direct
+  * Tag: ug-setting-wifidirect-efl_0.4.1
+
+ -- Gibyoung Kim <lastkgb.kim@samsung.com>  Fri, 13 Apr 2012 20:19:17 +0900
+
+ug-setting-wifidirect-efl (0.4.0) unstable; urgency=low
+
+  * Blocking WFD service for specific device
+  * String is modified
+  * Setting view will be destroyed when driver error is occured
+  * Git: slp/pkgs/u/ug-wifi-direct
+  * Tag: ug-setting-wifidirect-efl_0.4.0
+
+ -- Gibyoung Kim <lastkgb.kim@samsung.com>  Thu, 12 Apr 2012 22:16:59 +0900
+
 ug-setting-wifidirect-efl (0.3.9) unstable; urgency=low
 
   * Bug fix and code cleaning

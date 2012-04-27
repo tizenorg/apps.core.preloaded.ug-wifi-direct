@@ -436,39 +436,10 @@ void _connection_cb(int error_code,
                     "Failed to get whether client is group owner. [%d]\n", res);
             }
         }
-        else if (error_code == WIFI_DIRECT_ERROR_CONNECTION_TIME_OUT)
-        {
-            DBG(LOG_ERROR,
-                "Failed to connect with peer. WIFI_DIRECT_ERROR_CONNECTION_TIME_OUT\n");
-            wfd_ug_warn_popup(ugd, _("IDS_WFD_POP_CONNECTING_TIMEOUT"),
-                              POPUP_TYPE_LINK_TIMEOUT);
-            peer->conn_status = PEER_CONN_STATUS_DISCONNECTED;
-            wifi_direct_start_discovery(FALSE, 0);
-        }
-        else if (error_code == WIFI_DIRECT_ERROR_AUTH_FAILED)
-        {
-            DBG(LOG_ERROR,
-                "Failed to connect with peer. WIFI_DIRECT_ERROR_AUTH_FAILED\n");
-            wfd_ug_warn_popup(ugd, _("IDS_WFD_POP_AUTH_FAIL"),
-                              POPUP_TYPE_AUTH_FAIL);
-            peer->conn_status = PEER_CONN_STATUS_DISCONNECTED;
-            wifi_direct_start_discovery(FALSE, 0);
-        }
-        else if (error_code == WIFI_DIRECT_ERROR_CONNECTION_FAILED)
-        {
-            DBG(LOG_ERROR,
-                "Failed to connect with peer. WIFI_DIRECT_ERROR_CONNECTION_FAILED\n");
-            wfd_ug_warn_popup(ugd, _("IDS_WFD_POP_LINK_FAIL"),
-                              POPUP_TYPE_LINK_FAIL);
-            peer->conn_status = PEER_CONN_STATUS_DISCONNECTED;
-            wifi_direct_start_discovery(FALSE, 0);
-        }
         else
         {
-            DBG(LOG_ERROR, "Failed to connect with peer. [%d]\n", error_code);
-            wfd_ug_warn_popup(ugd, _("IDS_WFD_POP_UNKNOWN_ERROR"),
-                              POPUP_TYPE_UNKNOWN_ERROR);
             peer->conn_status = PEER_CONN_STATUS_DISCONNECTED;
+            wifi_direct_start_discovery(FALSE, 0);
         }
         break;
     case WIFI_DIRECT_DISCONNECTION_RSP:
@@ -583,6 +554,26 @@ int init_wfd_client(void *data)
     }
     wfd_ug_view_refresh_glitem(ugd->head);
     wfd_ug_view_refresh_button(ugd->scan_btn, ugd->wfd_onoff);
+
+    if(wfd_status >= WIFI_DIRECT_STATE_CONNECTED)
+    {
+        device_type_s *peers = NULL;
+
+        peers = calloc(MAX_PEER_NUM, sizeof(device_type_s));
+        res = wifi_direct_foreach_connected_peers(_wfd_connected_peer_cb, (void*) peers);
+        if(res != WIFI_DIRECT_ERROR_NONE)
+        {
+            connected_cnt = 0;
+            DBG(LOG_ERROR, "get discovery result failed: %d\n", res);
+        }
+        wfd_ug_view_free_peers(ugd);
+
+        ugd->peers = peers;
+        ugd->peer_cnt = peer_cnt;
+
+        wfd_ug_view_update_peers(ugd);
+        DBG(LOG_VERBOSE, "%d peers are updated\n", peer_cnt);
+    }
 
     if (wfd_status > WIFI_DIRECT_STATE_ACTIVATING)
     {
@@ -699,7 +690,7 @@ int wfd_client_switch_on(void *data)
                 DBG(LOG_ERROR,
                     "Failed to activate Wi-Fi Direct. error code = [%d]\n",
                     res);
-                wfd_ug_warn_popup(ugd, _("IDS_WFD_POP_ACTIVATE_FAIL"), POPUP_TYPE_ACTIVATE_FAIL);
+                wfd_ug_warn_popup(ugd, _("IDS_WFD_POP_ACTIVATE_FAIL"), POPUP_TYPE_TERMINATE);
 
                 ugd->head_text_mode = HEAD_TEXT_TYPE_DIRECT;
                 wfd_ug_view_refresh_glitem(ugd->head);
@@ -737,7 +728,7 @@ int wfd_client_switch_off(void *data)
         {
             DBG(LOG_ERROR,
                 "Failed to deactivate Wi-Fi Direct. error code = [%d]\n", res);
-            wfd_ug_warn_popup(ugd, _("IDS_WFD_POP_DEACTIVATE_FAIL"), POPUP_TYPE_DEACTIVATE_FAIL);
+            wfd_ug_warn_popup(ugd, _("IDS_WFD_POP_DEACTIVATE_FAIL"), POPUP_TYPE_TERMINATE);
 
             ugd->head_text_mode = HEAD_TEXT_TYPE_DIRECT;
             wfd_ug_view_refresh_glitem(ugd->head);
@@ -762,7 +753,7 @@ int wfd_client_swtch_force(void *data, int onoff)
         {
             DBG(LOG_ERROR,
                 "Failed to activate Wi-Fi Direct. error code = [%d]\n", res);
-            wfd_ug_warn_popup(ugd, _("IDS_WFD_POP_ACTIVATE_FAIL"), POPUP_TYPE_ACTIVATE_FAIL);
+            wfd_ug_warn_popup(ugd, _("IDS_WFD_POP_ACTIVATE_FAIL"), POPUP_TYPE_TERMINATE);
 
             ugd->head_text_mode = HEAD_TEXT_TYPE_DIRECT;
             wfd_ug_view_refresh_glitem(ugd->head);
@@ -776,7 +767,7 @@ int wfd_client_swtch_force(void *data, int onoff)
         {
             DBG(LOG_ERROR,
                 "Failed to deactivate Wi-Fi Direct. error code = [%d]\n", res);
-            wfd_ug_warn_popup(ugd, _("IDS_WFD_POP_DEACTIVATE_FAIL"), POPUP_TYPE_DEACTIVATE_FAIL);
+            wfd_ug_warn_popup(ugd, _("IDS_WFD_POP_DEACTIVATE_FAIL"), POPUP_TYPE_TERMINATE);
 
             ugd->head_text_mode = HEAD_TEXT_TYPE_DIRECT;
             wfd_ug_view_refresh_glitem(ugd->head);

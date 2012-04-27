@@ -2,10 +2,10 @@ msgid "IDS_WFD_HEADER_WIFI_DIRECT"
 msgstr "Wi-Fi Direct"
 
 msgid "IDS_WFD_POP_CONNECT_WITH_PIN_Q"
-msgstr "Connect with %s in %d sec?<br>PIN:%s"
+msgstr "Connect with %s?<br>PIN:%s"
 
 msgid "IDS_WFD_POP_CONNECT_Q"
-msgstr "Connect with %s in %d sec?"
+msgstr "Connect with %s?"
 
 msgid "IDS_WFD_POP_ENTER_PIN"
 msgstr "Enter PIN"

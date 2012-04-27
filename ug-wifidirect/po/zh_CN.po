@@ -44,7 +44,7 @@ msgid "IDS_WFD_POP_ACTIVATE_FAIL"
 msgstr "Failed to activate Wi-Fi Direct"
 
 msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
-msgstr "Failed to decativate Wi-Fi Direct"
+msgstr "Failed to deactivate Wi-Fi Direct"
 
 msgid "IDS_WFD_POP_CONNECTING_TIMEOUT"
 msgstr "Connecting is timeout"

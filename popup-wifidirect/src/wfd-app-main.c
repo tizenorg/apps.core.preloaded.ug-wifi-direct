@@ -53,7 +53,7 @@ static Evas_Object *_create_win(Evas_Object * parent, const char *name)
     Evas_Object *eo;
     int w, h;
 
-    eo = elm_win_add(parent, name, ELM_WIN_DIALOG_BASIC);
+    eo = elm_win_add(parent, name, ELM_WIN_BASIC);
     if (eo)
     {
         elm_win_title_set(eo, name);
