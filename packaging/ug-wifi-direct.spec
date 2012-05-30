@@ -7,6 +7,7 @@ Release:    1
 Group:      TO_BE_FILLED
 License:    Samsung Proprietary License
 Source0:    %{name}-%{version}.tar.gz
+Source1001: packaging/ug-wifi-direct.manifest 
 Requires(post): /sbin/ldconfig   
 Requires(post): /usr/bin/sqlite3   
 Requires(postun): /sbin/ldconfig   
@@ -60,6 +61,7 @@ Wi-Fi Direct system popup.
 %setup -q
 
 %build
+cp %{SOURCE1001} .
 cmake . -DCMAKE_INSTALL_PREFIX=$PREFIX
 make %{?jobs:-j%jobs}
 
@@ -75,6 +77,7 @@ vconftool set -t int db/wifi_direct/onoff 0 -u apps -i
 
 
 %files
+%manifest ug-wifi-direct.manifest
 %defattr(-,root,root,-)
 /opt/ug/lib/*
 /opt/ug/res/images/*
@@ -82,6 +85,7 @@ vconftool set -t int db/wifi_direct/onoff 0 -u apps -i
 /opt/ug/res/locale/*/*/*
 
 %files -n org.tizen.wifi-direct-popup
+%manifest ug-wifi-direct.manifest
 %defattr(-,root,root,-)
 /opt/apps/org.tizen.wifi-direct-popup/bin/*
 /opt/apps/org.tizen.wifi-direct-popup/res/locale/*/*/*
