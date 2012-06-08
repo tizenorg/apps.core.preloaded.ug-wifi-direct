@@ -1,0 +1,30 @@
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_POP_CONNECT_WITH_PIN_Q"
+msgstr "Connect with %s?<br>PIN:%s"
+
+msgid "IDS_WFD_POP_CONNECT_Q"
+msgstr "Connect with %s?"
+
+msgid "IDS_WFD_POP_ENTER_PIN"
+msgstr "Enter PIN"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "PIN is not valid"
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "Connecting..."
+
+msgid "IDS_WFD_POP_CONNECTING_WITH_PIN"
+msgstr "Connecting...<br>PIN:%s"
+
+msgid "IDS_WFD_POP_CANCELING"
+msgstr "Canceling..."
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "Connected"
+
+msgid "IDS_WFD_POP_ERROR_OCCURRED"
+msgstr "An error has occurred during connecting"
+

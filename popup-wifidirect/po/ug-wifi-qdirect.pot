@@ -1,0 +1,324 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-09-29 15:49+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: sources/mainApp/viewers/view_detail.c:448
+msgid "IP address"
+msgstr ""
+
+#: sources/mainApp/viewers/view_detail.c:454
+msgid "Auto IP"
+msgstr ""
+
+#: sources/mainApp/viewers/view_detail.c:464
+msgid "Static IP"
+msgstr ""
+
+#: sources/mainApp/viewers/view_detail.c:474
+msgid "DHCP IP"
+msgstr ""
+
+#: sources/mainApp/viewers/view_detail.c:522
+msgid "Proxy setting"
+msgstr ""
+
+#: sources/mainApp/viewers/view_detail.c:530
+msgid "Proxy address"
+msgstr ""
+
+#: sources/mainApp/viewers/view_detail.c:533
+msgid "0.0.0.0:80"
+msgstr ""
+
+#: sources/mainApp/viewers/view_detail.c:555
+msgid "Details"
+msgstr ""
+
+#: sources/mainApp/viewers/view_detail.c:561
+msgid "Name"
+msgstr ""
+
+#: sources/mainApp/viewers/view_detail.c:572
+msgid "Signal stringth"
+msgstr ""
+
+#: sources/mainApp/viewers/view_detail.c:577
+msgid "Excellent"
+msgstr ""
+
+#: sources/mainApp/viewers/view_detail.c:579
+msgid "Normal"
+msgstr ""
+
+#: sources/mainApp/viewers/view_detail.c:581
+msgid "Week"
+msgstr ""
+
+#: sources/mainApp/viewers/view_detail.c:591
+msgid "Sequrity type"
+msgstr ""
+
+#: sources/mainApp/viewers/view_detail.c:594
+msgid "No security"
+msgstr ""
+
+#: sources/mainApp/viewers/view_detail.c:597
+msgid "WEP"
+msgstr ""
+
+#: sources/mainApp/viewers/view_detail.c:600
+msgid "WPA-PSK"
+msgstr ""
+
+#: sources/mainApp/viewers/view_detail.c:603
+msgid "WPA2-PSK"
+msgstr ""
+
+#: sources/mainApp/viewers/view_detail.c:606
+msgid "WPA-EAP"
+msgstr ""
+
+#: sources/mainApp/viewers/view_detail.c:609
+msgid "WPA2-EAP"
+msgstr ""
+
+#: sources/mainApp/viewers/view_detail.c:612
+msgid "WPA-PSK WPA2-PSK"
+msgstr ""
+
+#: sources/mainApp/viewers/view_detail.c:615
+msgid "WPA-EAP WPA2-EAP"
+msgstr ""
+
+#: sources/mainApp/viewers/view_detail.c:645
+msgid "Channel"
+msgstr ""
+
+#: sources/mainApp/viewers/view_detail.c:657
+msgid "AP Mac"
+msgstr ""
+
+#: sources/mainApp/viewers/view_autoip.c:54
+#: sources/mainApp/viewers/view_staticip.c:96
+#: sources/mainApp/viewers/view_dhcpip.c:53
+msgid "IP Address"
+msgstr ""
+
+#: sources/mainApp/viewers/view_autoip.c:70
+#: sources/mainApp/viewers/view_staticip.c:112
+#: sources/mainApp/viewers/view_dhcpip.c:69
+msgid "Subnet mask"
+msgstr ""
+
+#: sources/mainApp/viewers/view_autoip.c:86
+#: sources/mainApp/viewers/view_staticip.c:128
+#: sources/mainApp/viewers/view_dhcpip.c:85
+msgid "Gateway address"
+msgstr ""
+
+#: sources/mainApp/viewers/view_autoip.c:102
+#: sources/mainApp/viewers/view_staticip.c:145
+#: sources/mainApp/viewers/view_dhcpip.c:101
+msgid "DNS 1"
+msgstr ""
+
+#: sources/mainApp/viewers/view_autoip.c:118
+#: sources/mainApp/viewers/view_staticip.c:161
+#: sources/mainApp/viewers/view_dhcpip.c:117
+msgid "DNS 2"
+msgstr ""
+
+#: sources/mainApp/viewers/view_ime_password.c:74
+#: sources/mainApp/viewers/view_ime_hidden.c:73
+#: sources/mainApp/viewers/view_ime_proxy.c:77
+#: sources/mainApp/viewers/view_ime_statics.c:77
+msgid " "
+msgstr ""
+
+#: sources/mainApp/viewers/view_ime_password.c:78
+msgid "Input your password"
+msgstr ""
+
+#: sources/mainApp/viewers/view_ime_hidden.c:77
+msgid "Input AP name"
+msgstr ""
+
+#: sources/mainApp/viewers/view_ime_proxy.c:81
+msgid "Enter proxy address"
+msgstr ""
+
+#: sources/mainApp/viewers/view_ime_statics.c:193
+msgid "Enter IP address"
+msgstr ""
+
+#: sources/mainApp/viewers/view_ime_statics.c:230
+msgid "Enter Subnet mask"
+msgstr ""
+
+#: sources/mainApp/viewers/view_ime_statics.c:266
+msgid "Enter Gateway address"
+msgstr ""
+
+#: sources/mainApp/viewers/view_ime_statics.c:304
+msgid "Enter DNS 1"
+msgstr ""
+
+#: sources/mainApp/viewers/view_ime_statics.c:340
+msgid "Enter DNS 2"
+msgstr ""
+
+#: sources/mainApp/viewers/view_others.c:86
+msgid "by Hidden network"
+msgstr ""
+
+#: sources/mainApp/viewers/view_others.c:95
+msgid "by Protected Access"
+msgstr ""
+
+#. ad->layout_manager_object = layout_manager_create(ad->win_main);
+#: sources/mainApp/states/01_wifi_state_none/state.c:269
+#: sources/libraries/UIManager/viewerManager/wifi-components.c:37
+msgid "Wi-Fi"
+msgstr ""
+
+#. edje_object_signal_emit(ad->icon, "sig/icon/on", "image/icon");
+#: sources/mainApp/states/11_wifi_state_powering_off/state.c:37
+#: sources/libraries/UIManager/winsetWrapper/wifi-popup.c:211
+msgid "Failed to deactivate Wi-Fi"
+msgstr ""
+
+#: sources/libraries/UIManager/winset-wrapper/main/header.c:24
+msgid "Settings"
+msgstr ""
+
+#: sources/libraries/UIManager/winset-wrapper/main/header.c:53
+msgid "Default Style"
+msgstr ""
+
+#. edje_object_signal_emit(_EDJ(object->content),
+#. "processing_ani_stop",
+#. "listview_header_radio_button");
+#. edje_object_part_text_set(_EDJ(object->content), "listview_header_title", _("Wi-Fi Off"));
+#: sources/libraries/UIManager/winset-wrapper/main/header.c:97
+msgid "Wi-Fi Off"
+msgstr ""
+
+#. edje_object_signal_emit(_EDJ(object->content),
+#. "processing_ani_stop",
+#. "listview_header_radio_button");
+#. edje_object_part_text_set(_EDJ(object->content), "listview_header_title", _("Wi-Fi On"));
+#: sources/libraries/UIManager/winset-wrapper/main/header.c:112
+msgid "Wi-Fi On"
+msgstr ""
+
+#. edje_object_part_text_set(_EDJ(object->content), "listview_header_title", _("Wi-Fi Activating ..."));
+#. edje_object_signal_emit(_EDJ(object->content), "processing_ani_start", "listview_header_radio_button");
+#. edje_object_signal_emit(_EDJ(object->content), "header_check_hide", "header_check_hide");
+#: sources/libraries/UIManager/winset-wrapper/main/header.c:124
+msgid "Wi-Fi Activating ... "
+msgstr ""
+
+#. edje_object_part_text_set(_EDJ(object->content), "listview_header_title", _("Searching ..."));
+#: sources/libraries/UIManager/winset-wrapper/main/header.c:134
+msgid "Searching ... "
+msgstr ""
+
+#. edje_object_part_text_set(_EDJ(object->content), "listview_header_title", _("Wi-Fi Connecting ..."));
+#: sources/libraries/UIManager/winset-wrapper/main/header.c:142
+msgid "Wi-Fi Connecting ... "
+msgstr ""
+
+#. edje_object_part_text_set(_EDJ(object->content), "listview_header_title", _("Wi-Fi Connected"));
+#: sources/libraries/UIManager/winset-wrapper/main/header.c:152
+msgid "Wi-Fi Connected "
+msgstr ""
+
+#. edje_object_part_text_set(_EDJ(object->content), "listview_header_title", _("Wi-Fi Disconnecting ..."));
+#: sources/libraries/UIManager/winset-wrapper/main/header.c:163
+msgid "Wi-Fi Disconnecting ..."
+msgstr ""
+
+#. edje_object_part_text_set(_EDJ(object->content), "listview_header_title", _("Deactivating..."));
+#: sources/libraries/UIManager/winset-wrapper/main/header.c:172
+msgid "Deactivating ..."
+msgstr ""
+
+#: sources/libraries/UIManager/winset-wrapper/main/button.c:9
+msgid "WPS PBC"
+msgstr ""
+
+#: sources/libraries/UIManager/winset-wrapper/main/button.c:14
+msgid "WPS PIN"
+msgstr ""
+
+#: sources/libraries/UIManager/winset-wrapper/main/popup.c:110
+#: sources/libraries/UIManager/winsetWrapper/wifi-popup.c:437
+msgid "Authentication failed."
+msgstr ""
+
+#: sources/libraries/UIManager/winset-wrapper/main/popup.c:113
+#: sources/libraries/UIManager/winsetWrapper/wifi-popup.c:441
+msgid "IP configuration failed."
+msgstr ""
+
+#: sources/libraries/UIManager/winset-wrapper/main/popup.c:116
+#: sources/libraries/UIManager/winset-wrapper/main/popup.c:119
+#: sources/libraries/UIManager/winsetWrapper/wifi-popup.c:433
+#: sources/libraries/UIManager/winsetWrapper/wifi-popup.c:445
+msgid "Failed to Connect"
+msgstr ""
+
+#: sources/libraries/UIManager/winset-wrapper/main/popup.c:139
+msgid "No Wi-Fi AP found"
+msgstr ""
+
+#: sources/libraries/UIManager/winset-wrapper/main/popup.c:168
+msgid "Wi-Fi engine problem <br> wlan_client_get_state func"
+msgstr ""
+
+#: sources/libraries/UIManager/winset-wrapper/main/popup.c:174
+msgid "Wi-Fi engine problem <br> profile have not password"
+msgstr ""
+
+#. ad->bt = bt;
+#: sources/libraries/UIManager/winsetWrapper/wifi-popup.c:112
+msgid "Cancel"
+msgstr ""
+
+#: sources/libraries/UIManager/winsetWrapper/wifi-popup.c:129
+msgid "WiFi Deactivating"
+msgstr ""
+
+#: sources/libraries/UIManager/winsetWrapper/wifi-popup.c:143
+msgid "WiFi Activating"
+msgstr ""
+
+#: sources/libraries/UIManager/winsetWrapper/wifi-popup.c:168
+msgid "Failed to activate Wi-Fi"
+msgstr ""
+
+#: sources/libraries/UIManager/winsetWrapper/wifi-popup.c:225
+msgid "Searching..."
+msgstr ""
+
+#: sources/libraries/UIManager/winsetWrapper/wifi-popup.c:415
+msgid "Connection Lost"
+msgstr ""
+
+#: sources/libraries/UIManager/winsetWrapper/wifi-util.c:37
+msgid "FONT_NAME"
+msgstr ""

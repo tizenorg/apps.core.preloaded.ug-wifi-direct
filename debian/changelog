@@ -1,0 +1,9 @@
+ug-setting-wifidirect-efl (0.4.2) unstable; urgency=low
+
+  * Connection error popup of WFD UG is removed
+  * Connection time limit string is removed
+  * Popup window type is changed as ELM_WIN_BASIC
+  * Git: slp/pkgs/u/ug-wifi-direct
+  * Tag: ug-setting-wifidirect-efl_0.4.2
+
+ -- Gibyoung Kim <lastkgb.kim@samsung.com>  Thu, 19 Apr 2012 20:50:38 +0900

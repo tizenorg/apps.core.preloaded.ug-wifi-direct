@@ -1,0 +1,39 @@
+Source: ug-setting-wifidirect-efl
+Section: net
+Priority: extra
+Maintainer: Dongwook Lee <dwmax.lee@samsung.com>, Gibyoung Kim <lastkgb.kim@samsung.com>
+Uploaders: Dongwook Lee <dwmax.lee@samsung.com>, Gibyoung Kim <lastkgb.kim@samsung.com>
+Build-Depends: 	debhelper (>= 5), 
+		libappcore-efl-dev,
+		libappsvc-dev,
+		libelm-dev,
+		libslp-utilx-dev,
+		libui-gadget-dev,
+		libwifi-direct-dev,
+		libnetwork-dev,
+		libslp-pm-dev
+Standards-Version: 3.7.2
+
+Package: libug-setting-wifidirect-efl
+Section: net
+Architecture: any
+Depends: ${misc:Depends}, libappcore-efl-0, libslp-utilx-0, libui-gadget-0, libvconf-0, libwifi-direct, libnetwork-0
+Description: Wi-Fi Direct Setting application
+
+Package: libug-setting-wifidirect-efl-dbg
+Section: net-debug
+Architecture: any
+Depends: ${misc:Depends}, libug-setting-wifidirect-efl (= ${Source-Version})
+Description: Wi-Fi Direct Setting application -debug pkg (unstripped)
+
+Package: org.tizen.wifi-direct-popup
+Section: net
+Architecture: any
+Depends: libwifi-direct, ${misc:Depends}
+Description: WiFi Direct popup application pkg
+
+Package: org.tizen.wifi-direct-popup-dbg
+Section: net-debug
+Architecture: any
+Depends: org.tizen.wifi-direct-popup
+Description: WiFi Direct popup application Debug pkg
