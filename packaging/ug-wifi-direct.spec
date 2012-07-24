@@ -5,7 +5,7 @@ Summary:    Wi-Fi Direct setting UI gadget
 Version:    0.4.2
 Release:    1
 Group:      TO_BE_FILLED
-License:    Samsung Proprietary License
+License:    Flora Software License
 Source0:    %{name}-%{version}.tar.gz
 Source1001: packaging/ug-wifi-direct.manifest 
 Requires(post): /sbin/ldconfig   
