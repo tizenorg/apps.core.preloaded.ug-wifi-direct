@@ -10,6 +10,7 @@ Build-Depends: 	debhelper (>= 5),
 		libslp-utilx-dev,
 		libui-gadget-dev,
 		libwifi-direct-dev,
+		libmobile-ap-dev,
 		libnetwork-dev,
 		libslp-pm-dev
 Standards-Version: 3.7.2
@@ -17,7 +18,7 @@ Standards-Version: 3.7.2
 Package: libug-setting-wifidirect-efl
 Section: net
 Architecture: any
-Depends: ${misc:Depends}, libappcore-efl-0, libslp-utilx-0, libui-gadget-0, libvconf-0, libwifi-direct, libnetwork-0
+Depends: ${misc:Depends}, libappcore-efl-0, libslp-utilx-0, libui-gadget-0, libvconf-0, libwifi-direct, libmobile-ap-0, libnetwork-0
 Description: Wi-Fi Direct Setting application
 
 Package: libug-setting-wifidirect-efl-dbg
@@ -37,3 +38,10 @@ Section: net-debug
 Architecture: any
 Depends: org.tizen.wifi-direct-popup
 Description: WiFi Direct popup application Debug pkg
+
+Package: org.tizen.wifi-direct-ugapp
+Section: net
+Architecture: any
+Depends: libug-setting-wifidirect-efl, ${misc:Depends}
+Description: WiFi Direct UG Launcher
+

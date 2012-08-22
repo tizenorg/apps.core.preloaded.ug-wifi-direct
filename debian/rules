@@ -63,6 +63,13 @@ clean:
 	rm -rf popup-wifidirect/install_manifest.txt
 	rm -rf popup-wifidirect/*.so
 
+	rm -rf ugapp-wifidirect/CMakeCache.txt
+	rm -rf ugapp-wifidirect/CMakeFiles
+	rm -rf ugapp-wifidirect/cmake_install.cmake
+	rm -rf ugapp-wifidirect/Makefile
+	rm -rf ugapp-wifidirect/install_manifest.txt
+	rm -rf ugapp-wifidirect/*.so
+
 	rm -rf ug-wifidirect/CMakeCache.txt
 	rm -rf ug-wifidirect/CMakeFiles
 	rm -rf ug-wifidirect/cmake_install.cmake

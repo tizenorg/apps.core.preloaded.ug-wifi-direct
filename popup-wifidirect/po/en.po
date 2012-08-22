@@ -2,13 +2,16 @@ msgid "IDS_WFD_HEADER_WIFI_DIRECT"
 msgstr "Wi-Fi Direct"
 
 msgid "IDS_WFD_POP_CONNECT_WITH_PIN_Q"
-msgstr "Connect with %s?<br>PIN:%s"
+msgstr "Connect with %s in %d<br>secs.PIN:%s"
 
 msgid "IDS_WFD_POP_CONNECT_Q"
 msgstr "Connect with %s?"
 
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Wi-Fi Direct connection"
+
 msgid "IDS_WFD_POP_ENTER_PIN"
-msgstr "Enter PIN"
+msgstr "Connect with %s in %d secs. Enter PIN to connect %s."
 
 msgid "IDS_WFD_POP_PIN_INVALID"
 msgstr "PIN is not valid"
@@ -17,14 +20,28 @@ msgid "IDS_WFD_POP_CONNECTING"
 msgstr "Connecting..."
 
 msgid "IDS_WFD_POP_CONNECTING_WITH_PIN"
-msgstr "Connecting...<br>PIN:%s"
+msgstr "Connecting...PIN:"
 
 msgid "IDS_WFD_POP_CANCELING"
 msgstr "Canceling..."
 
 msgid "IDS_WFD_POP_CONNECTED"
-msgstr "Connected"
+msgstr "Connected to %s"
 
-msgid "IDS_WFD_POP_ERROR_OCCURRED"
-msgstr "An error has occurred during connecting"
+msgid "IDS_WFD_POP_CONNECT_FAILED"
+msgstr "Failed to connect %s"
 
+msgid "IDS_WFD_POP_DISCONNECTING"
+msgstr "Disconnecting..."
+
+msgid "IDS_WFD_POP_DISCONNECTED"
+msgstr "Disconnected to %s"
+
+msgid "IDS_WFD_POP_DISCONNECT_FAILED"
+msgstr "Failed to disconnect %s"
+
+msgid "IDS_WFD_POP_EXPIRED_CONNECTION"
+msgstr "Wi-Fi direct disconnected"
+
+msgid "IDS_WFD_POP_AUTOMATIC_TURN_OFF"
+msgstr "There has been no activity for 5 minutes since Wi-Fi Direct was enabled. To extend battery life, Wi-Fi Direct has been disabled."

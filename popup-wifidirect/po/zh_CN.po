@@ -2,29 +2,43 @@ msgid "IDS_WFD_HEADER_WIFI_DIRECT"
 msgstr "Wi-Fi Direct"
 
 msgid "IDS_WFD_POP_CONNECT_WITH_PIN_Q"
-msgstr "Connect with %s?<br>PIN:%s"
+msgstr "连接%s?<br>PIN:%s"
 
 msgid "IDS_WFD_POP_CONNECT_Q"
-msgstr "Connect with %s?"
+msgstr "连接%s?"
 
 msgid "IDS_WFD_POP_ENTER_PIN"
-msgstr "Enter PIN"
+msgstr "输入PIN"
 
 msgid "IDS_WFD_POP_PIN_INVALID"
-msgstr "PIN is not valid"
+msgstr "PIN无效"
 
 msgid "IDS_WFD_POP_CONNECTING"
-msgstr "Connecting..."
+msgstr "连接中..."
 
 msgid "IDS_WFD_POP_CONNECTING_WITH_PIN"
-msgstr "Connecting...<br>PIN:%s"
+msgstr "连接中...<br>PIN:%s"
 
 msgid "IDS_WFD_POP_CANCELING"
-msgstr "Canceling..."
+msgstr "取消中..."
 
 msgid "IDS_WFD_POP_CONNECTED"
-msgstr "Connected"
+msgstr "已连接 %s"
 
-msgid "IDS_WFD_POP_ERROR_OCCURRED"
-msgstr "An error has occurred during connecting"
+msgid "IDS_WFD_POP_CONNECT_FAILED"
+msgstr "无法连接 %s"
 
+msgid "IDS_WFD_POP_DISCONNECTING"
+msgstr "断开连接中..."
+
+msgid "IDS_WFD_POP_DISCONNECTED"
+msgstr "已断开%s的连接"
+
+msgid "IDS_WFD_POP_DISCONNECT_FAILED"
+msgstr "无法断开%s的连接"
+
+msgid "IDS_WFD_POP_EXPIRED_CONNECTION"
+msgstr "已断开Wi-Fi Direct"
+
+msgid "IDS_WFD_POP_AUTOMATIC_TURN_OFF"
+msgstr "自Wi-Fi Direct打开后,<br>已有5分钟无操作.关闭<br>Wi-Fi Direct,以节省电力.<br>是否继续?"

@@ -34,6 +34,9 @@ msgstr "연결중..."
 msgid "IDS_WFD_POP_CONNECTED"
 msgstr "연결되었습니다."
 
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "Connect"
+
 msgid "IDS_WFD_BUTTON_SCAN"
 msgstr "검색"
 
@@ -69,3 +72,18 @@ msgstr "Wi-Fi Direct Service를 지원하지 않는 장치입니다."
 
 msgid "IDS_WFD_POP_PROBLEM_WITH_WFD"
 msgstr "Wi-Fi Direct Service에 문제가 있습니다."
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "Cancel Wi-Fi direct connection.<br>Continue?"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "Current connect wil be disconnected."
+
+msgid "IDS_WFD_POP_SCAN_AGAIN"
+msgstr "To start new scanning,<br>current connection will be<br>ended.Continue?"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "You can connect up to<br>%d devices at the same time."
+
+msgid "IDS_WFD_POP_WARN_BUSY_DEVICE"
+msgstr "Unavailable device. Device is connected to another device."

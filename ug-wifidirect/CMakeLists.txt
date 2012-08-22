@@ -1,5 +1,6 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
 PROJECT(ug-setting-wifidirect-efl C)
+SET(PACKAGE_NAME ug-setting-wifidirect-efl)
 
 SET(PREFIX "/opt/ug")
 SET(LIBDIR "${PREFIX}/lib")
@@ -9,8 +10,12 @@ SET(IMGDIR "${RESDIR}/images/${PROJECT_NAME}")
 
 SET(SRCS 
 	src/wfd_ug.c
-	src/wfd_ug_view.c
 	src/wfd_client.c
+	src/wfd_ug_popup.c
+	src/wfd_ug_genlist.c
+	src/wfd_ug_main_view.c
+	src/wfd_ug_multiconnect_view.c
+	src/wfd_ug_about_view.c
 )
 
 INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/include)

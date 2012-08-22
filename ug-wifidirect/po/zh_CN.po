@@ -2,70 +2,88 @@ msgid "IDS_WFD_HEADER_WIFI_DIRECT"
 msgstr "Wi-Fi Direct"
 
 msgid "IDS_WFD_BODY_DEACTIVATING"
-msgstr "Deactivating Wi-Fi Direct..."
+msgstr "正在关闭Wi-Fi Direct..."
 
 msgid "IDS_WFD_BODY_ACTIVATING"
-msgstr "Activating Wi-Fi Direct..."
+msgstr "正在打开Wi-Fi Direct..."
 
 msgid "IDS_WFD_BODY_SCANNING"
-msgstr "Scanning..."
+msgstr "扫描中..."
 
 msgid "IDS_WFD_BODY_ACTIVATED"
-msgstr "Wi-Fi Direct activated"
+msgstr "已关闭Wi-Fi Direct"
 
 msgid "IDS_WFD_BODY_DEVICE_NAME"
-msgstr "Device name"
+msgstr "设备名"
 
 msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
-msgstr "Available Devices"
+msgstr "有效设备"
 
 msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
-msgstr "Wi-Fi Direct Devices"
+msgstr "Wi-Fi Direct设备"
 
 msgid "IDS_WFD_BODY_NO_DEVICES"
-msgstr "No devices"
+msgstr "没有设备"
 
 msgid "IDS_WFD_BODY_HELP"
-msgstr "HELP"
+msgstr "帮助"
 
 msgid "IDS_WFD_POP_CONNECTING"
-msgstr "Connecting..."
+msgstr "连接中..."
 
 msgid "IDS_WFD_POP_CONNECTED"
-msgstr "Connected"
+msgstr "已连接"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "连接"
 
 msgid "IDS_WFD_BUTTON_SCAN"
-msgstr "Scan"
+msgstr "扫描"
 
 msgid "IDS_WFD_BUTTON_STOPSCAN"
-msgstr "Stop"
+msgstr "停止"
 
 msgid "IDS_WFD_POP_ACTIVATE_FAIL"
-msgstr "Failed to activate Wi-Fi Direct"
+msgstr "打开Wi-Fi Direct失败"
 
 msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
-msgstr "Failed to deactivate Wi-Fi Direct"
+msgstr "关闭Wi-Fi Direct失败"
 
 msgid "IDS_WFD_POP_CONNECTING_TIMEOUT"
-msgstr "Connecting is timeout"
+msgstr "连接超时"
 
 msgid "IDS_WFD_POP_AUTH_FAIL"
-msgstr "Authentication failure"
+msgstr "认证失败"
 
 msgid "IDS_WFD_POP_LINK_FAIL"
-msgstr "Link creation failure"
+msgstr "创建连接失败"
 
 msgid "IDS_WFD_POP_UNKNOWN_ERROR"
-msgstr "Unknown error"
+msgstr "未知错误"
 
 msgid "IDS_WFD_POP_WIFI_OFF"
-msgstr "This will turn off Wi-Fi client operation.<br>Continue?"
+msgstr "打开Wi-Fi Direct将关闭Wi-Fi.<br>是否继续?"
 
 msgid "IDS_WFD_POP_HOTSPOT_OFF"
-msgstr "This will turn off Portable Wi-Fi hotspots operation.<br>Continue?"
+msgstr "这将关闭对Wi-Fi热点的操作.<br>是否继续?"
 
 msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
-msgstr "This device do not support<br>Wi-Fi Direct Service"
+msgstr "该设备不支持<br>Wi-Fi Direct服务"
 
 msgid "IDS_WFD_POP_PROBLEM_WITH_WFD"
-msgstr "This device have some problem with<br>Wi-Fi Direct Service"
+msgstr "该设备<br>Wi-Fi Direct Service"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "取消Wi-Fi direct连接.<br>是否继续?"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "当前连接将被关闭."
+
+msgid "IDS_WFD_POP_SCAN_AGAIN"
+msgstr "将开始重新扫描,<br>当前连接将被<br>关闭.是否继续?"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "你将同时连接<br>%d台设备."
+
+msgid "IDS_WFD_POP_WARN_BUSY_DEVICE"
+msgstr "无效的设备. 该设备已被其它设备连接."

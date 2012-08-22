@@ -1,3 +1,4 @@
-/opt/apps/org.tizen.wifi-direct-popup/bin/*
-/opt/apps/org.tizen.wifi-direct-popup/res/*
-/opt/share/applications/*
+/opt/apps/org.tizen.wifi-direct-popup/bin/*  
+/opt/apps/org.tizen.wifi-direct-popup/res/*  
+/opt/apps/org.tizen.wifi-direct-popup/res/images/*  
+/opt/share/applications/org.tizen.wifi-direct-popup.*

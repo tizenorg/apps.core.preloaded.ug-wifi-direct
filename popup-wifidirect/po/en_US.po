@@ -23,8 +23,22 @@ msgid "IDS_WFD_POP_CANCELING"
 msgstr "Canceling..."
 
 msgid "IDS_WFD_POP_CONNECTED"
-msgstr "Connected"
+msgstr "Connected to %s"
 
-msgid "IDS_WFD_POP_ERROR_OCCURRED"
-msgstr "An error has occurred during connecting"
+msgid "IDS_WFD_POP_CONNECT_FAILED"
+msgstr "Failed to connect %s"
 
+msgid "IDS_WFD_POP_DISCONNECTING"
+msgstr "Disconnecting..."
+
+msgid "IDS_WFD_POP_DISCONNECTED"
+msgstr "Disconnected to %s"
+
+msgid "IDS_WFD_POP_DISCONNECT_FAILED"
+msgstr "Failed to disconnect %s"
+
+msgid "IDS_WFD_POP_EXPIRED_CONNECTION"
+msgstr "Wi-Fi direct disconnected"
+
+msgid "IDS_WFD_POP_AUTOMATIC_TURN_OFF"
+msgstr "There has been no actions for<br>5 minutes since Wi-Fi direct<br>was activated. Turning off<br>Wi-Fi direct can extend battery<br>life. Continue?"

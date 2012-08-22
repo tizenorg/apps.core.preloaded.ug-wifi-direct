@@ -1,18 +1,21 @@
 /*
- * Copyright 2012  Samsung Electronics Co., Ltd
- *
- * Licensed under the Flora License, Version 1.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *    http://www.tizenopensource.org/license
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+*  WiFi-Direct UG
+*
+* Copyright 2012  Samsung Electronics Co., Ltd
+
+* Licensed under the Flora License, Version 1.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+
+* http://www.tizenopensource.org/license
+
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*
+*/
 
 /**
  * This file declares wifi direct application util functions.
@@ -41,8 +44,10 @@
 #define WFD_APP_LOG_WARN 	LOG_WARN
 #define WFD_APP_LOG_ASSERT 	LOG_FATAL
 #define WFD_APP_LOG_EXCEPTION 	LOG_FATAL
+#define WFD_MAX_SIZE            128
+#define WFD_MAC_ADDRESS_SIZE    18
 
-char *wfd_app_trim_path(const char *filewithpath);
+char * wfd_app_trim_path(const char* filewithpath);
 int wfd_app_gettid();
 
 #define WFD_APP_LOG(log_level, format, args...) \
@@ -65,8 +70,8 @@ int wfd_app_gettid();
 	  WFD_APP_LOG(WFD_APP_LOG_ASSERT, " ##(%s) -> %s() assert!!## "fmt, #expr, __FUNCTION__, ##arg); \
 		 exit(1); \
    } \
-} while (0)
+} while (0)			// retvm if
 
 
 
-#endif                          /* __WFD_APP_UTIL_H__ */
+#endif /* __WFD_APP_UTIL_H__ */

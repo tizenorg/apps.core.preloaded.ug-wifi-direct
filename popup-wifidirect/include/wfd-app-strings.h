@@ -1,33 +1,29 @@
 /*
- * Copyright 2012  Samsung Electronics Co., Ltd
- *
- * Licensed under the Flora License, Version 1.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *    http://www.tizenopensource.org/license
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+*  WiFi-Direct UG
+*
+* Copyright 2012  Samsung Electronics Co., Ltd
 
-/*
- * This file declares strings for wifi direct popup application.
- *
- * @file    wfd-app-strings.h
- * @author  Sungsik Jang (sungsik.jang@samsung.com)
- * @version 0.1
- */
+* Licensed under the Flora License, Version 1.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+
+* http://www.tizenopensource.org/license
+
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*
+*/
+
+
 
 #ifndef __WFD_APP_STRING_H__
 #define __WFD_APP_STRING_H__
 
 #ifdef __cplusplus
-extern "C"
-{
+extern "C" {
 #endif
 
 #define WFD_STR_HEADER					_("WiFi Direct")
@@ -57,6 +53,7 @@ extern "C"
    										"connecting"
 #define WFD_STR_POP_FAIL_TIMEOUT		"Connection timeout"
 
+/* Not included in excel file, but it exist in STMS */
 #define WFD_STR_TITLE_MAIN         _("WiFi Direct")
 
 
@@ -64,4 +61,4 @@ extern "C"
 }
 #endif
 
-#endif                          /* __WFD_APP_STRING_H__ */
+#endif /* __WFD_APP_STRING_H__ */

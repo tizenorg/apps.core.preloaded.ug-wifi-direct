@@ -1,18 +1,21 @@
 /*
- * Copyright 2012  Samsung Electronics Co., Ltd
- *
- * Licensed under the Flora License, Version 1.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *    http://www.tizenopensource.org/license
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+*  WiFi-Direct UG
+*
+* Copyright 2012  Samsung Electronics Co., Ltd
+
+* Licensed under the Flora License, Version 1.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+
+* http://www.tizenopensource.org/license
+
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*
+*/
 
 /**
  * This file implements wifi direct application main functions.
@@ -23,6 +26,9 @@
  */
 
 #include <libintl.h>
+#include <appcore-efl.h>
+#include <appsvc.h>
+#include <app_service.h>
 
 #include "wfd-app.h"
 #include "wfd-app-util.h"
@@ -45,7 +51,8 @@ static Evas_Object *_create_win(Evas_Object * parent, const char *name)
     Evas_Object *eo;
     int w, h;
 
-    eo = elm_win_add(parent, name, ELM_WIN_BASIC);
+    /* eo = elm_win_add(parent, name, ELM_WIN_BASIC); */
+    eo = elm_win_add(NULL, name, ELM_WIN_NOTIFICATION);
     if (eo)
     {
         elm_win_title_set(eo, name);
@@ -73,7 +80,7 @@ static int _app_create(void *data)
         return -1;
     }
 
-    bindtextdomain(PACKAGE, LOCALEDIR);
+    bindtextdomain(LOCALE_FILE_NAME, LOCALEDIR);
 
     ad->popup_data = (wfd_popup_t *) malloc(sizeof(wfd_popup_t));
     if (!ad->popup_data)
@@ -121,7 +128,7 @@ static int _app_terminate(void *data)
 
 	wfd_appdata_t *ad = (wfd_appdata_t *) data;
 
-	if (deinit_wfd_popup_client() == FALSE)
+	if (deinit_wfd_popup_client(ad) == FALSE)
 	{
 		WFD_APP_LOG(WFD_APP_LOG_ERROR, "deinit_wfd_popup_client error\n");
 	}
@@ -166,6 +173,35 @@ static int _app_resume(void *data)
 static int _app_reset(bundle * b, void *data)
 {
     __WFD_APP_FUNC_ENTER__;
+
+    wfd_appdata_t *ad = (wfd_appdata_t*) data;
+
+    if(b == NULL)
+    {
+    	WFD_APP_LOG(WFD_APP_LOG_LOW,"Bundle is NULL");
+        return -1;
+    }
+    // From Notification
+    char *noti_type = NULL;
+    noti_type = (char*) appsvc_get_data(b, NOTIFICATION_BUNDLE_PARAM);
+    if (noti_type == NULL)
+    {
+    	WFD_APP_LOG(WFD_APP_LOG_LOW,"Notification type is wrong.");
+    	return -1;
+    }
+    WFD_APP_LOG(WFD_APP_LOG_LOW,"Notification type is [%s]", noti_type);
+    if (strncmp(noti_type, NOTIFICATION_BUNDLE_VALUE, strlen(NOTIFICATION_BUNDLE_PARAM))==0)
+    {
+    	WFD_APP_LOG(WFD_APP_LOG_LOW,"Launch wifidirect-ugapp");
+    	service_h service;
+    	service_create(&service);
+    	service_set_operation(service, SERVICE_OPERATION_DEFAULT);
+    	service_set_package(service, "org.tizen.wifi-direct-ugapp");
+    	service_send_launch_request(service, NULL, NULL);
+    	service_destroy(service);
+    }
+
+
     __WFD_APP_FUNC_EXIT__;
     return 0;
 }

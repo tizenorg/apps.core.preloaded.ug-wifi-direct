@@ -7,15 +7,6 @@ msgstr "Deactivating Wi-Fi Direct..."
 msgid "IDS_WFD_BODY_ACTIVATING"
 msgstr "Activating Wi-Fi Direct..."
 
-msgid "IDS_WFD_BODY_SCANNING"
-msgstr "Scanning..."
-
-msgid "IDS_WFD_BODY_ACTIVATED"
-msgstr "Wi-Fi Direct activated"
-
-msgid "IDS_WFD_BODY_DEVICE_NAME"
-msgstr "Device name"
-
 msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
 msgstr "Available Devices"
 
@@ -33,6 +24,9 @@ msgstr "Connecting..."
 
 msgid "IDS_WFD_POP_CONNECTED"
 msgstr "Connected"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "Connect"
 
 msgid "IDS_WFD_BUTTON_SCAN"
 msgstr "Scan"
@@ -59,13 +53,31 @@ msgid "IDS_WFD_POP_UNKNOWN_ERROR"
 msgstr "Unknown error"
 
 msgid "IDS_WFD_POP_WIFI_OFF"
-msgstr "This will turn off Wi-Fi client operation.<br>Continue?"
+msgstr "Enabling Wi-Fi Direct will disable Wi-Fi.<br>Continue?"
 
 msgid "IDS_WFD_POP_HOTSPOT_OFF"
-msgstr "This will turn off Portable Wi-Fi hotspots operation.<br>Continue?"
+msgstr "Enabling Wi-Fi Direct will disable Wi-Fi tethering.<br>Continue?"
 
 msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
 msgstr "This device do not support<br>Wi-Fi Direct Service"
 
 msgid "IDS_WFD_POP_PROBLEM_WITH_WFD"
 msgstr "This device have some problem with<br>Wi-Fi Direct Service"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "Cancel Wi-Fi direct connection.<br>Continue?"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "Current connect will be disconnected."
+
+msgid "IDS_WFD_POP_SCAN_AGAIN"
+msgstr "To start new scanning,<br>current connection will be<br>ended.Continue?"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "You can connect up to<br>%d devices at the same time."
+
+msgid "IDS_WFD_POP_WARN_BUSY_DEVICE"
+msgstr "Unavailable device. Device is connected to another device."
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "Selected(%d)"

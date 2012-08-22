@@ -1,12 +1,5 @@
 #!/bin/sh
 
 # Automatically added by dh_makeshlibs
-if [ ${USER} == "root" ]
-then
-	/usr/bin/vconftool set -t int db/wifi_direct/onoff 0 -u apps
-	/usr/bin/vconftool set -t int db/wifi_direct/connection_status 0 -u apps
-	/usr/bin/vconftool set -t string db/wifi_direct/id "" -u apps
-	/usr/bin/vconftool set -t string db/wifi_direct/password "" -u apps
-fi
 
 # End automatically added section
