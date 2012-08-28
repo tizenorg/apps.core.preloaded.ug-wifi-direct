@@ -52,7 +52,6 @@ typedef enum {
 
 int wfd_get_vconf_status(void *data);
 int wfd_wifi_off(void *data);
-int wfd_mobile_ap_off(void *data);
 int init_wfd_client(void *data);
 int deinit_wfd_client(void *data);
 int wfd_client_start_discovery(void *data);

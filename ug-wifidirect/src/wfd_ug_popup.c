@@ -31,34 +31,6 @@
 #include "wfd_ug_view.h"
 #include "wfd_client.h"
 
-static void _wfd_ug_act_popup_hotspot_ok_cb(void *data, Evas_Object *obj, void *event_info)
-{
-    __FUNC_ENTER__;
-    struct ug_data *ugd = (struct ug_data*) data;
-
-    // TODO: Turn off Hotspot
-    ugd->wfd_status = WFD_LINK_STATUS_DEACTIVATED;
-    wfd_mobile_ap_off(ugd);
-
-     evas_object_del(ugd->act_popup);
-     ugd->act_popup = NULL;
-     __FUNC_EXIT__;
-}
-
-static void _wfd_ug_act_popup_hotspot_cancel_cb(void *data, Evas_Object *obj, void *event_info)
-{
-    __FUNC_ENTER__;
-    struct ug_data *ugd = (struct ug_data*) data;
-
-    // TODO: set genlist head item as "WiFi Direct"
-    ugd->head_text_mode = HEAD_TEXT_TYPE_DIRECT;
-    wfd_ug_view_refresh_glitem(ugd->head);
-
-     evas_object_del(ugd->act_popup);
-     ugd->act_popup = NULL;
-     __FUNC_EXIT__;
-}
-
 static void _wfd_ug_act_popup_wifi_ok_cb(void *data, Evas_Object *obj, void *event_info)
 {
     __FUNC_ENTER__;
@@ -230,7 +202,7 @@ void wfd_ug_act_popup(void *data, const char *message, int popup_type)
 	elm_object_style_set(btn2, "popup_button/default");
 
 	/* set the different text by type */
-	if (popup_type == POPUP_TYPE_WIFI_OFF || popup_type == POPUP_TYPE_HOTSPOT_OFF) {
+	if (popup_type == POPUP_TYPE_WIFI_OFF) {
 		elm_object_text_set(btn1, S_("IDS_COM_SK_YES"));
 		elm_object_text_set(btn2, S_("IDS_COM_SK_NO"));
 	} else {
@@ -245,9 +217,6 @@ void wfd_ug_act_popup(void *data, const char *message, int popup_type)
 	if (popup_type == POPUP_TYPE_WIFI_OFF) {
 		evas_object_smart_callback_add(btn1, "clicked", _wfd_ug_act_popup_wifi_ok_cb, (void*) ugd);
 		evas_object_smart_callback_add(btn2, "clicked", _wfd_ug_act_popup_wifi_cancel_cb, (void*) ugd);
-	} else if (popup_type == POPUP_TYPE_HOTSPOT_OFF) {
-		evas_object_smart_callback_add(btn1, "clicked", _wfd_ug_act_popup_hotspot_ok_cb, (void*) ugd);
-		evas_object_smart_callback_add(btn2, "clicked", _wfd_ug_act_popup_hotspot_cancel_cb, (void*) ugd);
 	} else if (popup_type == POP_TYPE_DISCONNECT) {
 		//evas_object_smart_callback_add(btn1, "clicked", _wfd_ug_act_popup_disconnect_ok_cb, (void*) ugd);
 		evas_object_smart_callback_add(btn1, "clicked", _wfd_ug_act_popup_disconnect_all_ok_cb, (void*) ugd);

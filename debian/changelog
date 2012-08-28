@@ -1,3 +1,11 @@
+ug-setting-wifidirect-efl (0.7.5) unstable; urgency=low
+
+  * removed code related with tethering.
+  * Git: rsa/apps/home/ug-wifi-direct
+  * Tag: libug-setting-wifidirect-efl_0.7.5
+
+ -- Sungsik Jang <sungsik.jang@samsung.com>  Tue, 28 Aug 2012 16:45:49 +0900
+
 ug-setting-wifidirect-efl (0.7.4) unstable; urgency=low
 
   * Update package & file name for tizen_2.0 beta.

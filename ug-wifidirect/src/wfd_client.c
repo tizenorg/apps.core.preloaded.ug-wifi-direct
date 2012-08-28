@@ -106,53 +106,6 @@ int wfd_wifi_off(void *data)
     return 0;
 }
 
-static void _hotspot_state_cb(keynode_t *key, void *data)
-{
-	__FUNC_ENTER__;
-	struct ug_data *ugd = (struct ug_data*) data;
-	int res;
-	int hotspot_mode;
-	tethering_error_e ret = TETHERING_ERROR_NONE;
-	tethering_h th = NULL;
-
-	res = vconf_get_int(VCONFKEY_MOBILE_HOTSPOT_MODE, &hotspot_mode);
-	if (res != 0)
-	{
-		DBG(LOG_ERROR, "Failed to get mobile hotspot state from vconf. [%d]\n", res);
-		// TODO: set genlist head item as "WiFi Direct"
-		return;
-	}
-
-	if(hotspot_mode & VCONFKEY_MOBILE_HOTSPOT_MODE_WIFI)
-	{
-		DBG(LOG_VERBOSE, " Mobile hotspot is activated\n");
-	}
-	else
-	{
-		DBG(LOG_VERBOSE, " Mobile hotspot is deactivated\n");
-		wfd_client_swtch_force(ugd, TRUE);
-	}
-
-	th = ugd->hotspot_handle;
-
-	if(th != NULL)
-	{
-		/* Deregister cbs */
-		ret = tethering_unset_disabled_cb(th, TETHERING_TYPE_WIFI);
-		if(ret != TETHERING_ERROR_NONE)
-			DBG(LOG_ERROR, "tethering_unset_disabled_cb is failed(%d)\n", ret);
-
-		/* Destroy tethering handle */
-		ret = tethering_destroy(th);
-		if(ret != TETHERING_ERROR_NONE)
-			DBG(LOG_ERROR, "tethering_destroy is failed(%d)\n", ret);
-
-		ugd->hotspot_handle = NULL;
-	}
-
-	__FUNC_EXIT__;
-}
-
 static void __disabled_cb(tethering_error_e error, tethering_type_e type, tethering_disabled_cause_e code, void *data)
 {
 	__FUNC_ENTER__;
@@ -173,61 +126,6 @@ static void __disabled_cb(tethering_error_e error, tethering_type_e type, tether
 	return;
 }
 
-
-int wfd_mobile_ap_off(void *data)
-{
-	__FUNC_ENTER__;
-	struct ug_data *ugd = (struct ug_data*) data;
-	int res;
-	tethering_error_e ret = TETHERING_ERROR_NONE;
-	tethering_h th = NULL;
-
-	res = vconf_notify_key_changed(VCONFKEY_MOBILE_HOTSPOT_MODE, _hotspot_state_cb, ugd);
-	if (res == -1)
-	{
-		DBG(LOG_ERROR, "Failed to register vconf callback\n");
-		return -1;
-	}
-
-	/* Create tethering handle */
-	ret = tethering_create(&th);
-	if(ret != TETHERING_ERROR_NONE)
-	{
-		DBG(LOG_ERROR, "Failed to tethering_create() [%d]\n", ret);
-		return -1;
-	}
-	else
-	{
-		DBG(LOG_VERBOSE, "Succeeded to tethering_create()\n");
-	}
-
-	/* Register cbs */
-	ret = tethering_set_disabled_cb(th, TETHERING_TYPE_WIFI,
-			__disabled_cb, NULL);
-	if(ret != TETHERING_ERROR_NONE)
-	{
-		DBG(LOG_ERROR, "tethering_set_disabled_cb is failed\n", ret);
-		return -1;
-	}
-
-	/* Disable tethering */
-	ret = tethering_disable(th, TETHERING_TYPE_WIFI);
-	if(ret != TETHERING_ERROR_NONE)
-	{
-		DBG(LOG_ERROR, "Failed to turn off mobile hotspot. [%d]\n", ret);
-		return -1;
-	}
-	else
-	{
-		DBG(LOG_VERBOSE, "Succeeded to turn off mobile hotspot\n");
-	}
-
-	ugd->hotspot_handle = th;
-
-
-	__FUNC_EXIT__;
-	return 0;
-}
 
 #if 0
 static device_type_s *wfd_client_find_peer_by_ssid(void *data, const char *ssid)
@@ -341,12 +239,6 @@ void _activation_cb(int error_code, wifi_direct_device_state_e device_state, voi
             if(res == -1)
             {
                 DBG(LOG_ERROR, "Failed to ignore vconf key callback for wifi state\n");
-            }
-
-            res = vconf_ignore_key_changed(VCONFKEY_MOBILE_HOTSPOT_MODE, _hotspot_state_cb);
-            if(res == -1)
-            {
-                DBG(LOG_ERROR, "Failed to ignore vconf key callback for hotspot state\n");
             }
 
             res = wifi_direct_start_discovery(FALSE, 0);
@@ -814,30 +706,6 @@ int deinit_wfd_client(void *data)
 		DBG(LOG_ERROR, "Failed to deregister network client. [%d]\n", res);
 	}
 
-	res = vconf_ignore_key_changed(VCONFKEY_MOBILE_HOTSPOT_MODE, _hotspot_state_cb);
-	if(res == -1)
-	{
-		DBG(LOG_ERROR, "Failed to ignore vconf key callback for hotspot state\n");
-	}
-
-	th = ugd->hotspot_handle;
-	
-	if(th != NULL)
-	{
-		/* Deregister cbs */
-		ret = tethering_unset_disabled_cb(th, TETHERING_TYPE_WIFI);
-		if(ret != TETHERING_ERROR_NONE)
-			DBG(LOG_ERROR, "tethering_unset_disabled_cb is failed(%d)\n", ret);
-
-		/* Destroy tethering handle */
-		ret = tethering_destroy(th);
-		if(ret != TETHERING_ERROR_NONE)
-			DBG(LOG_ERROR, "tethering_destroy is failed(%d)\n", ret);
-
-		ugd->hotspot_handle = NULL;
-			
-	}
-
 	__FUNC_EXIT__;
 
 	return 0;
@@ -864,24 +732,10 @@ int wfd_client_switch_on(void *data)
             return -1;
         }
 
-        int hotspot_mode;
-        res = vconf_get_int(VCONFKEY_MOBILE_HOTSPOT_MODE, &hotspot_mode);
-        if (res != 0)
-        {
-            DBG(LOG_ERROR, "Failed to get mobile hotspot state from vconf. [%d]\n", res);
-            // TODO: set genlist head item as "WiFi Direct"
-            return -1;
-        }
-
         if(wifi_state > VCONFKEY_WIFI_OFF)
         {
             DBG(LOG_VERBOSE, "WiFi is connected, so have to turn off WiFi");
             wfd_ug_act_popup(ugd, _("IDS_WFD_POP_WIFI_OFF"), POPUP_TYPE_WIFI_OFF); // "This will turn off Wi-Fi client operation.<br>Continue?"
-        }
-        else if(hotspot_mode & VCONFKEY_MOBILE_HOTSPOT_MODE_WIFI)
-        {
-            DBG(LOG_VERBOSE, "WiFi is connected, so have to turn off WiFi");
-            wfd_ug_act_popup(ugd, _("IDS_WFD_POP_HOTSPOT_OFF"), POPUP_TYPE_HOTSPOT_OFF); // "This will turn off Portable Wi-Fi hotspots operation.<br>Continue?"
         }
         else    // (wifi_state < VCONFKEY_WIFI_CONNECTED && !(hotspot_mode & VCONFKEY_MOBILE_HOTSPOT_MODE_WIFI))
         {
