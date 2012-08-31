@@ -26,36 +26,15 @@
 extern "C" {
 #endif
 
-#define WFD_STR_HEADER					_("WiFi Direct")
-#define WFD_STR_HEADER_CONNECTED		_("WiFi Direct connected")
-#define WFD_STR_HEADER_DEACTIVATING		_("Deactivating WiFi Direct...")
-#define WFD_STR_HEADER_CANCEL_CONNECT	_("Canceling connection...")
-#define WFD_STR_HEADER_DEFAULT			_("Wi-Fi")
-#define WFD_STR_BUTN_YES					_("Yes")
-#define WFD_STR_BUTN_NO					_("No")
-#define WFD_STR_BTN_OK					_("OK")
-#define WFD_STR_BTN_CLOSE				_("Close")
-#define WFD_STR_BTN_CANCEL				_("Cancel")
+#if 1 //Text should be translated.
 
-#define WFD_STR_POP_APRV_CONNECT4		"Connect with %s in %d sec?"
-#define WFD_STR_POP_ENTER_PIN			"Enter PIN"
-#define WFD_STR_POP_INVALID_PIN		"PIN is not valid."
+#define WFD_STR_HEADER					
 
+#define IDS_WFD_POP_CONNECT_Q "Connect with %s?"
+#define IDS_WFD_POP_ENTER_PIN "Connect with %s in %d secs. Enter PIN to connect %s."
+#define IDS_WFD_POP_CONNECTING_WITH_PIN "Connecting...PIN:"
 
-#define WFD_STR_POP_PROG_CONNECT		_("Connecting...")
-#define WFD_STR_POP_PROG_CONNECT_WITH_PIN	"Connecting...<br>"\
-										"PIN:"
-
-#define WFD_STR_POP_PROG_CANCEL			_("Canceling...")
-#define WFD_STR_POP_NOTI_CONNECTED		_("Connected")
-#define WFD_STR_POP_NOTI_DISCONNECTED	_("Disconnected")
-#define WFD_STR_POP_FAIL_CONNECT		"An error has occurred during<br>"\
-   										"connecting"
-#define WFD_STR_POP_FAIL_TIMEOUT		"Connection timeout"
-
-/* Not included in excel file, but it exist in STMS */
-#define WFD_STR_TITLE_MAIN         _("WiFi Direct")
-
+#endif
 
 #ifdef __cplusplus
 }

@@ -1,0 +1,369 @@
+msgid "IDS_WFD_CONNECTED"
+msgstr "Connecté"
+
+msgid "IDS_WFD_CONNECTING"
+msgstr "Connexion ..."
+
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "Déconnexion ..."
+
+msgid ""
+msgstr "Activation wifi..."
+
+msgid "IDS_WIFI_POP_DEACTIVATING_WI_FI_ING"
+msgstr "Désactivation wifi..."
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "Connecté"
+
+msgid "IDS_COM_POP_NETWORK_INTERNAL_ERR"
+msgstr "Erreur interne"
+
+msgid "IDS_COM_POP_RETRIEVED"
+msgstr "Récupéré"
+
+msgid "IDS_COM_POP_RETRIEVING_FAILED"
+msgstr "Échec de récupération"
+
+msgid "IDS_COM_SK_CANCEL"
+msgstr "Annuler"
+
+msgid "IDS_ST_BODY_INTERNAL_ERROR"
+msgstr "Erreur interne"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "Erreur inconnue"
+
+msgid "IDS_COM_POP_NETWORK_ERROR"
+msgstr "Erreur réseau"
+
+msgid "IDS_COM_BODY_NO_SEARCH_RESULTS"
+msgstr "Aucun résultat de recherche"
+
+msgid "IDS_COM_POP_SEARCHING"
+msgstr "Recherche..."
+
+msgid "IDS_WIFI_POP_DISCONNECTING_FAILED"
+msgstr "Échec de déconnexion"
+
+msgid "IDS_ST_BODY_ENTER_NEW_PASSWORD"
+msgstr "Saisissez le nouveau mot de passe"
+
+msgid "IDS_COM_POP_UNKNOWN_ERROR_UNABLE_TO_LAUNCH_APPLICATION"
+msgstr "Erreur inconnue. Impossible de lancer l'application"
+
+msgid "IDS_COM_POP_ACCEPT"
+msgstr "Accepter"
+
+msgid "IDS_COM_POP_CONNECTING"
+msgstr "Connexion ..."
+
+msgid "IDS_COM_POP_ERROR"
+msgstr "Erreur"
+
+msgid "IDS_COM_POP_REJECT"
+msgstr "Refuser"
+
+msgid "IDS_COM_POP_REJECTED"
+msgstr "Rejeté"
+
+msgid "IDS_COM_BODY_SELECT_ALL"
+msgstr "Sélectionner tout"
+
+msgid "IDS_COM_POP_FAILED"
+msgstr "Échec"
+
+msgid "IDS_COM_SK_ACCEPT"
+msgstr "Accepter"
+
+msgid "IDS_ST_BODY_ENTER_4_TO_8_DIGIT_PIN"
+msgstr "Entrez un NIP composé de 4 à 8 chiffres"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "Les NIP ne correspondent pas !"
+
+msgid "IDS_ST_POP_YES"
+msgstr "Oui"
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "En cours d'activation ..."
+
+msgid "IDS_COM_POP_DEACTIVATED"
+msgstr "Désactivé"
+
+msgid "IDS_COM_SK_OK"
+msgstr "OK"
+
+msgid "IDS_COM_SK_YES"
+msgstr "Oui"
+
+msgid "IDS_WIFI_HEADER_MOBILE_HOTSPOT_VZW"
+msgstr "Mobile Hotspot"
+
+msgid "IDS_ST_BODY_ENTER_CURRENT_PASSWORD"
+msgstr "Entrez le mot de passe actuel"
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "%d sélectionnées"
+
+msgid "IDS_ST_POP_SEARCHING_ING"
+msgstr "Recherche..."
+
+msgid "IDS_COM_POP_NOTHING_SELECTED"
+msgstr "Aucune sélection"
+
+msgid "IDS_COM_OPT1_WI_FI_DIRECT"
+msgstr "Wifi direct"
+
+msgid "IDS_COM_POP_DISCONNECTED"
+msgstr "Déconnecté"
+
+msgid "IDS_WIFI_MBODY_MOBILE_HOTSPOT_VZW"
+msgstr "Mobile Hotspot"
+
+msgid "IDS_WIFI_BODY_IP_ADDRESS"
+msgstr "Adresse IP"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "Désactivation..."
+
+msgid "IDS_COM_POP_UNEXPECTED_ERROR"
+msgstr "Erreur inattendue"
+
+msgid "IDS_COM_POP_NETWORK_CONNECTION_ERROR"
+msgstr "Erreur connexion réseau"
+
+msgid "IDS_COM_BODY_OPERATION_FAILED"
+msgstr "Échec de l'opération"
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "Non pris en charge"
+
+msgid "IDS_COM_POP_UNSUPPORTED"
+msgstr "Non pris en charge"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_COM_POP_ACCEPTED"
+msgstr "Accepté"
+
+msgid "IDS_WIFI_BODY_MAC_ADDRESS"
+msgstr "Adresse MAC"
+
+msgid "IDS_WIFI_POP_AUTOMATIC_CONNECTION_NETWORK_WILL_DISABLED_CONTINUE_Q_MSG"
+msgstr "La connexion automatique à ce réseau va être désactivée. Continuer ?"
+
+msgid "IDS_COM_POP_PROGRESSING_ING"
+msgstr "En cours..."
+
+msgid "IDS_WIFI_BODY_CONNECT"
+msgstr "Connexion"
+
+msgid "IDS_WIFI_HEADER_WI_FI"
+msgstr "Wifi"
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "Rechercher"
+
+msgid "IDS_WIFI_SK3_BACK"
+msgstr "Retour"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wifi Direct"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "Périphériques Wi-Fi Direct"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "Touchez pour vous connecter"
+
+msgid "IDS_WIFI_SK2_MULTI_CONNECT"
+msgstr "Connexion multiple"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "Connexion"
+
+msgid "IDS_WIFI_OPT_MYNETWORKS_DISCONNECT"
+msgstr "Déconnecter"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "Annuler la connexion"
+
+msgid "IDS_COM_SK_CANCEL_A"
+msgstr "Annuler"
+
+msgid "IDS_ST_HEADER_ACTIVATION"
+msgstr "Activation"
+
+msgid "IDS_COM_SK_CANCEL_LITE"
+msgstr "Annul."
+
+msgid "IDS_ST_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wifi Direct"
+
+msgid "IDS_WIFI_BODY_WI_FI"
+msgstr "Wifi"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Annuler"
+
+msgid "IDS_WIFI_BUTTON_CANCEL"
+msgstr "Annuler"
+
+msgid "IDS_WIFI_BODY_ALLSHARE_CAST"
+msgstr "AllShare Cast"
+
+msgid "IDS_WIFI_POP_MOBILEACCESSSERVICE_ACTIVATING_ING"
+msgstr "En cours d'activation ..."
+
+msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_CONNECTION"
+msgstr "L'utilisation de Wi-Fi Direct va interrompre la connexion Wifi actuelle"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "À propos de Wifi Direct"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "Wi-Fi Direct active les périphériques Wifi pour se connecter directement, réaliser des impressions, partager des fichiers, synchroniser des données et partager des écrans de manière simple et pratique. La connexion aux périphériques qui prennent en charge Wi-Fi Direct permet de partager vos contenus, synchroniser vos données, communiquer avec vos amis, jouer à des jeux, écouter de la musique, visionner des vidéos, etc. via diverses applications."
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "Périphériques connectés"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "Périphériques occupés"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "Connecté à un autre périphérique"
+
+msgid "IDS_WIFI_POP_AP_DISCONNECTING_ING"
+msgstr "Déconnexion ..."
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "Connexion ..."
+
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "Connexion en cours"
+
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "Échec de la connexion"
+
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "Connexion multiple"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "Tout déconnecter"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "Déconnecter"
+
+msgid "IDS_WFD_NOCONTENT"
+msgstr "Aucun périphérique détecté"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "Désactiver Wi-Fi Direct après utilisation"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_ABB"
+msgstr "Désact Wi-Fi Direct après utilisat."
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY"
+msgstr "Désactiver Wi-Fi Direct après utilisation pour économiser l'énergie de la pile"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY_ABB"
+msgstr "Désact Wi-Fi Direct apr util pour économ pile"
+
+msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES"
+msgstr "Rechercher des périphériques Wi-Fi Direct"
+
+msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES_CURRENT_NETWORK_WILL_BE_DISCONNECTED"
+msgstr "Rechercher des périphériques Wifi Direct. Le réseau actuel sera déconnecté"
+
+msgid "IDS_WIFI_BODY_SEARCH_FOR_WI_FI_DIRECT_DEVICES_OR_SEARCH_FOR_DEVICES_ON_OTHER_WI_FI_NETWORKS"
+msgstr "Rechercher des périphériques Wifi Direct ou des périphériques sur d'autres réseaux Wifi"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "L'utilisation de Wifi Direct va interrompre la connexion Wifi actuelle. Continuer ?"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "L'utilisation de Wifi Direct va désactiver le modem Wifi. Continuer ?"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_CONNECTED"
+msgstr "Wifi Direct connecté"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Connexion Wifi Direct"
+
+msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_SETTINGS"
+msgstr "Paramètres Wifi Direct"
+
+msgid "IDS_WIFI_MBODY_CONFIGURE_WI_FI_DIRECT"
+msgstr "Configurer Wifi Direct"
+
+msgid "IDS_WIFI_MBODY_DISCONNECT_WI_FI_DIRECT"
+msgstr "Déconn. Wifi Direct"
+
+msgid "IDS_WIFI_MBODY_WI_FI_DIRECT_STATUS"
+msgstr "État Wifi Direct"
+
+msgid "IDS_WIFI_OPT1_WI_FI_DIRECT"
+msgstr "Wifi direct"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "Annuler la connexion Wi-Fi Direct ?"
+
+msgid "IDS_WIFI_POP_CONNECTING_TO_WI_FI_NETWORK_WILL_DISCONNECT_DEVICE_CONNECTED_VIA_WI_FI_DIRECT"
+msgstr "La connexion au réseau Wifi va déconnecter le périphérique connecté via Wi-Fi Direct"
+
+msgid "IDS_WIFI_POP_CONNECT_TO_OTHER_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "Se connecter à d'autres périphériques via Wifi Direct"
+
+msgid "IDS_WIFI_POP_DISABLE_MOBILE_AP_TO_USE_WI_FI_DIRECT_Q"
+msgstr "Désactiver le point d'accès mobile pour utiliser Wi-Fi Direct?"
+
+msgid "IDS_WIFI_POP_DISCONNECT_CURRENT_WI_FI_DIRECT_DEVICE_TO_SEARCH_NETWORKS"
+msgstr "Déconnecter le périphérique Wifi Direct actuel pour rechercher des réseaux"
+
+msgid "IDS_WIFI_POP_ENABLING_WI_FI_DIRECT_WILL_TURN_OFF_WI_FI_AND_DISABLE_THE_PORTABLE_WI_FI_HOTSPOT"
+msgstr "L'activation de Wi-Fi Direct va désactiver Wifi et le point d'accès sans fil"
+
+msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISABLE_PORTABLE_WI_FI_HOTSPOT"
+msgstr "L'utilisation de Wi-Fi Direct va désactiver le point d'accès Wifi"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_ALREADY_IN_USE_TRY_LATER"
+msgstr "Wi-Fi Direct déjà utilisé. Réessayez ultérieurement"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_CONNECTION_REQUEST_AUTOMATICALLY_DENIED_TO_CONNECT_TURN_OFF_ALLSHARE_CAST"
+msgstr "Demande de connexion Wi-Fi Direct automatiquement refusée. Pour vous connecter, désactivez AllShare Cast"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_WILL_BE_DISCONNECTED_CONTINUE_Q"
+msgstr "Wifi Direct sera déconnecté. Continuer?"
+
+msgid "IDS_WIFI_POP_WI_FI_IS_DISCONNECTED_WHILE_WI_FI_DIRECT_CONNECTS"
+msgstr "Le Wifi est déconnecté lors de la connexion de Wifi Direct"
+
+msgid "IDS_WIFI_SK1_SEARCH_FOR_WI_FI_DIRECT_DEVICES"
+msgstr "Rechercher des périphériques Wifi Direct"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "Aucun périphérique"
+
+msgid "IDS_WIFI_SK4_SCAN"
+msgstr "Rech."
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "Arrêter"
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "Échec de la désactivation"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "Échec de l'activation"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "La connexion actuelle sera déconnectée. Continuer ?"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "Appareils disponibles"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "Vous pouvez vous connecter à %d périphériques maximum simultanément"
+

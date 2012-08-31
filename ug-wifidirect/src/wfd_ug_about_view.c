@@ -38,7 +38,7 @@ static char *_wfd_gl_label_help_dialogue_get(void *data, Evas_Object *obj, const
 	DBG(LOG_VERBOSE, "Adding text");
 
 	if (!strcmp(part, "elm.text.2")) {
-		return strdup(IDS_WFD_BODY_ABOUT_WIFI);
+		return strdup(_("IDS_WFD_BODY_ABOUT_WIFI"));
 	}
 	return NULL;
 }
@@ -52,7 +52,7 @@ static Evas_Object *_wfd_gl_help_icon_get(void *data, Evas_Object * obj, const c
     char content[1024] = {0};
 
     label = elm_label_add(obj);
-    snprintf(content, 1024, "<color=#7C7C7CFF><font_size=32>%s</font_size></color>", IDS_WFD_BODY_ABOUT_WIFI);
+    snprintf(content, 1024, "<color=#7C7C7CFF><font_size=32>%s</font_size></color>", _("IDS_WFD_BODY_ABOUT_WIFI"));
     elm_label_line_wrap_set(label, ELM_WRAP_WORD);
     elm_object_text_set(label, content);
     evas_object_size_hint_weight_set(label, EVAS_HINT_EXPAND, 0.0);
@@ -118,7 +118,7 @@ void _wifid_create_about_view(struct ug_data *ugd)
     item = elm_genlist_item_append(genlist, &itc, NULL, NULL, ELM_GENLIST_ITEM_NONE, NULL, NULL);
     elm_genlist_item_select_mode_set(item, ELM_OBJECT_SELECT_MODE_DISPLAY_ONLY);
     evas_object_show(genlist);
-    navi_item = elm_naviframe_item_push(ugd->naviframe, IDS_WFD_TITLE_ABOUT_WIFI, back_btn, NULL, genlist, NULL);
+    navi_item = elm_naviframe_item_push(ugd->naviframe, _("IDS_WFD_TITLE_ABOUT_WIFI"), back_btn, NULL, genlist, NULL);
 
     control_bar = elm_toolbar_add(ugd->naviframe);
     elm_toolbar_shrink_mode_set(control_bar, ELM_TOOLBAR_SHRINK_EXPAND);

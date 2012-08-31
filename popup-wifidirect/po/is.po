@@ -1,0 +1,369 @@
+msgid "IDS_WFD_CONNECTED"
+msgstr "Tengt"
+
+msgid "IDS_WFD_CONNECTING"
+msgstr "Verið er að tengjast..."
+
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "Verið er að aftengja..."
+
+msgid ""
+msgstr "Kveiki á Wi-Fi..."
+
+msgid "IDS_WIFI_POP_DEACTIVATING_WI_FI_ING"
+msgstr "Slekk á Wi-Fi..."
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "Tengt"
+
+msgid "IDS_COM_POP_NETWORK_INTERNAL_ERR"
+msgstr "Innri villa"
+
+msgid "IDS_COM_POP_RETRIEVED"
+msgstr "Sótt"
+
+msgid "IDS_COM_POP_RETRIEVING_FAILED"
+msgstr "Ekki tókst að endurheimta"
+
+msgid "IDS_COM_SK_CANCEL"
+msgstr "Hætta við"
+
+msgid "IDS_ST_BODY_INTERNAL_ERROR"
+msgstr "Innri villa"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "Óþekkt villa"
+
+msgid "IDS_COM_POP_NETWORK_ERROR"
+msgstr "Netvilla"
+
+msgid "IDS_COM_BODY_NO_SEARCH_RESULTS"
+msgstr "Engar leitarniðurstöður"
+
+msgid "IDS_COM_POP_SEARCHING"
+msgstr "Verið er að leita..."
+
+msgid "IDS_WIFI_POP_DISCONNECTING_FAILED"
+msgstr "Mistókst að aftengja"
+
+msgid "IDS_ST_BODY_ENTER_NEW_PASSWORD"
+msgstr "Tilgreina nýtt aðgangsorð"
+
+msgid "IDS_COM_POP_UNKNOWN_ERROR_UNABLE_TO_LAUNCH_APPLICATION"
+msgstr "Óþekkt villa. Það er ekki hægt að ræsa forrit"
+
+msgid "IDS_COM_POP_ACCEPT"
+msgstr "Svara"
+
+msgid "IDS_COM_POP_CONNECTING"
+msgstr "Verið er að tengjast..."
+
+msgid "IDS_COM_POP_ERROR"
+msgstr "Villa"
+
+msgid "IDS_COM_POP_REJECT"
+msgstr "Hafna"
+
+msgid "IDS_COM_POP_REJECTED"
+msgstr "Hafnað"
+
+msgid "IDS_COM_BODY_SELECT_ALL"
+msgstr "Velja allt"
+
+msgid "IDS_COM_POP_FAILED"
+msgstr "Mistókst"
+
+msgid "IDS_COM_SK_ACCEPT"
+msgstr "Samþykkja"
+
+msgid "IDS_ST_BODY_ENTER_4_TO_8_DIGIT_PIN"
+msgstr "Sláðu inn 4 til 8 stafa PIN-númer"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "PIN-númerin passa ekki saman!"
+
+msgid "IDS_ST_POP_YES"
+msgstr "Já"
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "Ræsi..."
+
+msgid "IDS_COM_POP_DEACTIVATED"
+msgstr "Slökkt"
+
+msgid "IDS_COM_SK_OK"
+msgstr "Í lagi"
+
+msgid "IDS_COM_SK_YES"
+msgstr "Já"
+
+msgid "IDS_WIFI_HEADER_MOBILE_HOTSPOT_VZW"
+msgstr "Mobile Hotspot"
+
+msgid "IDS_ST_BODY_ENTER_CURRENT_PASSWORD"
+msgstr "Sláðu inn núverandi lykilorð"
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "%d valið"
+
+msgid "IDS_ST_POP_SEARCHING_ING"
+msgstr "Verið er að leita..."
+
+msgid "IDS_COM_POP_NOTHING_SELECTED"
+msgstr "Ekkert er valið"
+
+msgid "IDS_COM_OPT1_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_COM_POP_DISCONNECTED"
+msgstr "Aftengt"
+
+msgid "IDS_WIFI_MBODY_MOBILE_HOTSPOT_VZW"
+msgstr "Mobile Hotspot"
+
+msgid "IDS_WIFI_BODY_IP_ADDRESS"
+msgstr "IP vistfang"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "Slekk..."
+
+msgid "IDS_COM_POP_UNEXPECTED_ERROR"
+msgstr "Óvænt villa"
+
+msgid "IDS_COM_POP_NETWORK_CONNECTION_ERROR"
+msgstr "Tengivilla"
+
+msgid "IDS_COM_BODY_OPERATION_FAILED"
+msgstr "Aðgerð mistókst"
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "Óstutt"
+
+msgid "IDS_COM_POP_UNSUPPORTED"
+msgstr "Óstutt"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_COM_POP_ACCEPTED"
+msgstr "Samþykkt"
+
+msgid "IDS_WIFI_BODY_MAC_ADDRESS"
+msgstr "MAC-vistfang"
+
+msgid "IDS_WIFI_POP_AUTOMATIC_CONNECTION_NETWORK_WILL_DISABLED_CONTINUE_Q_MSG"
+msgstr "Það verður slökkt á sjálfvirkri tengingu við þetta netkerfi. Viltu halda áfram?"
+
+msgid "IDS_COM_POP_PROGRESSING_ING"
+msgstr "Stendur yfir..."
+
+msgid "IDS_WIFI_BODY_CONNECT"
+msgstr "Tengjast"
+
+msgid "IDS_WIFI_HEADER_WI_FI"
+msgstr "Wi-Fi"
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "Skanna"
+
+msgid "IDS_WIFI_SK3_BACK"
+msgstr "BAKKA"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "Wi-Fi Direct tæki"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "Pikkaðu til að tengja"
+
+msgid "IDS_WIFI_SK2_MULTI_CONNECT"
+msgstr "Fjöltenging"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "Tengja"
+
+msgid "IDS_WIFI_OPT_MYNETWORKS_DISCONNECT"
+msgstr "Aftengjast"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "Hætta við tengingu"
+
+msgid "IDS_COM_SK_CANCEL_A"
+msgstr "Hætta við"
+
+msgid "IDS_ST_HEADER_ACTIVATION"
+msgstr "Virkjun"
+
+msgid "IDS_COM_SK_CANCEL_LITE"
+msgstr "Hætta"
+
+msgid "IDS_ST_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WIFI_BODY_WI_FI"
+msgstr "Wi-Fi"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Hætta við"
+
+msgid "IDS_WIFI_BUTTON_CANCEL"
+msgstr "Hætta v."
+
+msgid "IDS_WIFI_BODY_ALLSHARE_CAST"
+msgstr "AllShare Cast"
+
+msgid "IDS_WIFI_POP_MOBILEACCESSSERVICE_ACTIVATING_ING"
+msgstr "Ræsi..."
+
+msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_CONNECTION"
+msgstr "Ef Wi-Fi Direct er notað rofnar núverandi Wi-Fi-tenging"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "Um Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "Wi-Fi Direct gerir tækjum með Wi-Fi kleift að tengjast beint sín á milli, sem gerir prentun, samnýtingu skráa, samstillingu og skjásamnýtingu einfaldari og þægilegri. Með tengingu við tæki sem styðja Wi-Fi Direct geturðu deilt efninu þínu, samstillt gögn, blandað geði við vini, spilað leiki, myndskeið og tónlist og margt fleira, með ýmsum forritum"
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "Tengd tæki"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "Upptekin tæki"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "Tengt við annað tæki"
+
+msgid "IDS_WIFI_POP_AP_DISCONNECTING_ING"
+msgstr "Verið er að aftengja..."
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "Verið er að tengjast..."
+
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "Bíður eftir tengingu"
+
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "Mistókst að tengjast"
+
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "Fjöltenging"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "Aftengja allt"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "Aftengja"
+
+msgid "IDS_WFD_NOCONTENT"
+msgstr "Engin tæki fundust"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "Slökkva á Wi-Fi Direct eftir notkun"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_ABB"
+msgstr "Slökkva á Wi-Fi Direct eftir notkun"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY"
+msgstr "Slökkva á Wi-Fi Direct eftir notkun til að spara rafhlöðu"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY_ABB"
+msgstr "Slökktu síðan á Wi-Fi Direct til að spara rafhl."
+
+msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES"
+msgstr "Leita að Wi-Fi Direct tækjum"
+
+msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES_CURRENT_NETWORK_WILL_BE_DISCONNECTED"
+msgstr "Leita að Wi-Fi Direct-tækjum. Tengingu við núverandi netkerfi verður slitið"
+
+msgid "IDS_WIFI_BODY_SEARCH_FOR_WI_FI_DIRECT_DEVICES_OR_SEARCH_FOR_DEVICES_ON_OTHER_WI_FI_NETWORKS"
+msgstr "Leita að Wi-Fi Direct tækjum eða leita að tækjum á öðru Wi-Fi neti"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection. Continue?"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_CONNECTED"
+msgstr "Wi-Fi Direct tengt"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Wi-Fi Direct tenging"
+
+msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_SETTINGS"
+msgstr "Wi-Fi Direct stillingar"
+
+msgid "IDS_WIFI_MBODY_CONFIGURE_WI_FI_DIRECT"
+msgstr "Stilla Wi-Fi Direct"
+
+msgid "IDS_WIFI_MBODY_DISCONNECT_WI_FI_DIRECT"
+msgstr "Aftengja Wi-Fi Direct"
+
+msgid "IDS_WIFI_MBODY_WI_FI_DIRECT_STATUS"
+msgstr "Wi-Fi Direct staða"
+
+msgid "IDS_WIFI_OPT1_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "Hætta við Wi-Fi Direct tengingu?"
+
+msgid "IDS_WIFI_POP_CONNECTING_TO_WI_FI_NETWORK_WILL_DISCONNECT_DEVICE_CONNECTED_VIA_WI_FI_DIRECT"
+msgstr "Ef þú tengist Wi-Fi-neti aftengist tæki sem tengt er um Wi-Fi Direct"
+
+msgid "IDS_WIFI_POP_CONNECT_TO_OTHER_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "Tengja við önnur tæki um Wi-Fi Direct"
+
+msgid "IDS_WIFI_POP_DISABLE_MOBILE_AP_TO_USE_WI_FI_DIRECT_Q"
+msgstr "Slökkva á farsímaaðgangsstað til að nota Wi-Fi Direct?"
+
+msgid "IDS_WIFI_POP_DISCONNECT_CURRENT_WI_FI_DIRECT_DEVICE_TO_SEARCH_NETWORKS"
+msgstr "Aftengdu núgildandi Wi-Fi Direct tæki til að leita að kerfum"
+
+msgid "IDS_WIFI_POP_ENABLING_WI_FI_DIRECT_WILL_TURN_OFF_WI_FI_AND_DISABLE_THE_PORTABLE_WI_FI_HOTSPOT"
+msgstr "Ef þú kveikir á Wi-Fi Direct slokknar á Wi-Fi og heitum Wi-Fi reit"
+
+msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISABLE_PORTABLE_WI_FI_HOTSPOT"
+msgstr "Ef Wi-Fi Direct er notað verður færanlegur heitur Wi-Fi-reitur óvirkur"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_ALREADY_IN_USE_TRY_LATER"
+msgstr "Wi-Fi Direct þegar í notkun. Reyndu aftur"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_CONNECTION_REQUEST_AUTOMATICALLY_DENIED_TO_CONNECT_TURN_OFF_ALLSHARE_CAST"
+msgstr "Beiðni um Wi-Fi Direct tengingu hafnað sjálfkrafa. Slökktu á AllShare Cast til að tengjast"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_WILL_BE_DISCONNECTED_CONTINUE_Q"
+msgstr "Wi-Fi Direct verður aftengt. Viltu halda áfram?"
+
+msgid "IDS_WIFI_POP_WI_FI_IS_DISCONNECTED_WHILE_WI_FI_DIRECT_CONNECTS"
+msgstr "Wi-Fi er aftengt á meðan Wi-Fi Direct tengist"
+
+msgid "IDS_WIFI_SK1_SEARCH_FOR_WI_FI_DIRECT_DEVICES"
+msgstr "Leita að Wi-Fi Direct tækjum"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "Engin tæki"
+
+msgid "IDS_WIFI_SK4_SCAN"
+msgstr "Leita"
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "Stöðva"
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "Mistókst að slökkva"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "Ekki tókst að gera virkt"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "Tengingu við netkerfið verður slitið. Viltu halda áfram?"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "Tiltæk tæki"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "Hægt er að tengjast allt að %d tækjum samtímis"
+

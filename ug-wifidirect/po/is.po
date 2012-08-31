@@ -1,0 +1,117 @@
+msgid "IDS_WFD_CONNECTED"
+msgstr "Tengt"
+
+msgid "IDS_WFD_CONNECTING"
+msgstr "Verið er að tengjast..."
+
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "Verið er að aftengja..."
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "Tengt"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "Óþekkt villa"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "PIN-númerin passa ekki saman!"
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "Ræsi..."
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "%d valið"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "Slekk..."
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "Óstutt"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "Skanna"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "Wi-Fi Direct tæki"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "Pikkaðu til að tengja"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "Tengja"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "Hætta við tengingu"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "Um Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "Wi-Fi Direct gerir tækjum með Wi-Fi kleift að tengjast beint sín á milli, sem gerir prentun, samnýtingu skráa, samstillingu og skjásamnýtingu einfaldari og þægilegri. Með tengingu við tæki sem styðja Wi-Fi Direct geturðu deilt efninu þínu, samstillt gögn, blandað geði við vini, spilað leiki, myndskeið og tónlist og margt fleira, með ýmsum forritum"
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "Tengd tæki"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "Upptekin tæki"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "Tengt við annað tæki"
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "Verið er að tengjast..."
+
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "Bíður eftir tengingu"
+
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "Mistókst að tengjast"
+
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "Fjöltenging"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "Aftengja allt"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "Aftengja"
+
+msgid "IDS_WFD_NOCONTENT"
+msgstr "Engin tæki fundust"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection. Continue?"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Wi-Fi Direct tenging"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "Hætta við Wi-Fi Direct tengingu?"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "Engin tæki"
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "Stöðva"
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "Mistókst að slökkva"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "Ekki tókst að gera virkt"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "Tengingu við netkerfið verður slitið. Viltu halda áfram?"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "Tiltæk tæki"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "Hægt er að tengjast allt að %d tækjum samtímis"
+

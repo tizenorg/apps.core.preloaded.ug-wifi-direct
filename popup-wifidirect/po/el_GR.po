@@ -1,0 +1,369 @@
+msgid "IDS_WFD_CONNECTED"
+msgstr "Συνδέθηκε"
+
+msgid "IDS_WFD_CONNECTING"
+msgstr "Σύνδεση..."
+
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "Αποσύνδεση..."
+
+msgid ""
+msgstr "Ενεργοποίηση Wi-Fi..."
+
+msgid "IDS_WIFI_POP_DEACTIVATING_WI_FI_ING"
+msgstr "Απενεργοποίηση Wi-Fi..."
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "Συνδέθηκε"
+
+msgid "IDS_COM_POP_NETWORK_INTERNAL_ERR"
+msgstr "Εσωτερικό σφάλμα"
+
+msgid "IDS_COM_POP_RETRIEVED"
+msgstr "Ανακτήθηκε"
+
+msgid "IDS_COM_POP_RETRIEVING_FAILED"
+msgstr "Αποτυχία ανάκτησης"
+
+msgid "IDS_COM_SK_CANCEL"
+msgstr "Άκυρο"
+
+msgid "IDS_ST_BODY_INTERNAL_ERROR"
+msgstr "Εσωτερικό σφάλμα"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "Άγνωστο σφάλμα"
+
+msgid "IDS_COM_POP_NETWORK_ERROR"
+msgstr "Σφάλμα δικτύου"
+
+msgid "IDS_COM_BODY_NO_SEARCH_RESULTS"
+msgstr "Δεν υπάρχουν αποτελέσματα αναζήτησης"
+
+msgid "IDS_COM_POP_SEARCHING"
+msgstr "Αναζήτηση..."
+
+msgid "IDS_WIFI_POP_DISCONNECTING_FAILED"
+msgstr "Αποτυχία αποσύνδεσης"
+
+msgid "IDS_ST_BODY_ENTER_NEW_PASSWORD"
+msgstr "Εισάγετε νέο κωδικό"
+
+msgid "IDS_COM_POP_UNKNOWN_ERROR_UNABLE_TO_LAUNCH_APPLICATION"
+msgstr "Άγνωστο σφάλμα. Δεν είναι δυνατή η εκκίνηση της εφαρμογής"
+
+msgid "IDS_COM_POP_ACCEPT"
+msgstr "Αποδοχή"
+
+msgid "IDS_COM_POP_CONNECTING"
+msgstr "Σύνδεση..."
+
+msgid "IDS_COM_POP_ERROR"
+msgstr "Σφάλμα"
+
+msgid "IDS_COM_POP_REJECT"
+msgstr "Απόρριψη"
+
+msgid "IDS_COM_POP_REJECTED"
+msgstr "Απόρριψη"
+
+msgid "IDS_COM_BODY_SELECT_ALL"
+msgstr "Επιλογή όλων"
+
+msgid "IDS_COM_POP_FAILED"
+msgstr "Αποτυχία"
+
+msgid "IDS_COM_SK_ACCEPT"
+msgstr "Αποδοχή"
+
+msgid "IDS_ST_BODY_ENTER_4_TO_8_DIGIT_PIN"
+msgstr "Εισαγάγετε ένα PIN που να αποτελείται από 4 έως 8 ψηφία"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "Τα PIN δεν συμφωνούν!"
+
+msgid "IDS_ST_POP_YES"
+msgstr "Ναι"
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "Ενεργοποίηση..."
+
+msgid "IDS_COM_POP_DEACTIVATED"
+msgstr "Απενεργοποιημένο"
+
+msgid "IDS_COM_SK_OK"
+msgstr "OK"
+
+msgid "IDS_COM_SK_YES"
+msgstr "Ναι"
+
+msgid "IDS_WIFI_HEADER_MOBILE_HOTSPOT_VZW"
+msgstr "Mobile Hotspot"
+
+msgid "IDS_ST_BODY_ENTER_CURRENT_PASSWORD"
+msgstr "Εισαγάγετε τον τρέχοντα κωδικό πρόσβασης"
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "Επιλέχθηκαν %d"
+
+msgid "IDS_ST_POP_SEARCHING_ING"
+msgstr "Αναζήτηση..."
+
+msgid "IDS_COM_POP_NOTHING_SELECTED"
+msgstr "Δεν έχει γίνει καμία επιλογή"
+
+msgid "IDS_COM_OPT1_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_COM_POP_DISCONNECTED"
+msgstr "Αποσυνδέθηκε"
+
+msgid "IDS_WIFI_MBODY_MOBILE_HOTSPOT_VZW"
+msgstr "Mobile Hotspot"
+
+msgid "IDS_WIFI_BODY_IP_ADDRESS"
+msgstr "Διεύθυνση IP"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "Απενεργοποίηση.."
+
+msgid "IDS_COM_POP_UNEXPECTED_ERROR"
+msgstr "Μη αναμενόμενο σφάλμα"
+
+msgid "IDS_COM_POP_NETWORK_CONNECTION_ERROR"
+msgstr "Σφάλμα σύνδεσης δικτύου"
+
+msgid "IDS_COM_BODY_OPERATION_FAILED"
+msgstr "Λειτουργία απέτυχε"
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "Δεν υποστηρίζεται"
+
+msgid "IDS_COM_POP_UNSUPPORTED"
+msgstr "Δεν υποστηρίζεται"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_COM_POP_ACCEPTED"
+msgstr "Αποδοχή"
+
+msgid "IDS_WIFI_BODY_MAC_ADDRESS"
+msgstr "Διεύθυνση MAC"
+
+msgid "IDS_WIFI_POP_AUTOMATIC_CONNECTION_NETWORK_WILL_DISABLED_CONTINUE_Q_MSG"
+msgstr "Η αυτόματη σύνδεση σε αυτό το δίκτυο θα απενεργοποιηθεί. Συνέχεια;"
+
+msgid "IDS_COM_POP_PROGRESSING_ING"
+msgstr "Σε εξέλιξη..."
+
+msgid "IDS_WIFI_BODY_CONNECT"
+msgstr "Σύνδεση"
+
+msgid "IDS_WIFI_HEADER_WI_FI"
+msgstr "Wi-Fi"
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "Σάρωση"
+
+msgid "IDS_WIFI_SK3_BACK"
+msgstr "Πίσω"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "Συσκευές Wi-Fi Direct"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "Πατήστε για σύνδεση"
+
+msgid "IDS_WIFI_SK2_MULTI_CONNECT"
+msgstr "Πολλαπλή σύνδεση"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "Σύνδεση"
+
+msgid "IDS_WIFI_OPT_MYNETWORKS_DISCONNECT"
+msgstr "Αποσύνδεση"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "Ακύρωση σύνδεσης"
+
+msgid "IDS_COM_SK_CANCEL_A"
+msgstr "Άκυρο"
+
+msgid "IDS_ST_HEADER_ACTIVATION"
+msgstr "Ενεργοποίηση"
+
+msgid "IDS_COM_SK_CANCEL_LITE"
+msgstr "Ακύρωση"
+
+msgid "IDS_ST_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WIFI_BODY_WI_FI"
+msgstr "Wi-Fi"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Άκυρο"
+
+msgid "IDS_WIFI_BUTTON_CANCEL"
+msgstr "Ακύρωση"
+
+msgid "IDS_WIFI_BODY_ALLSHARE_CAST"
+msgstr "AllShare Cast"
+
+msgid "IDS_WIFI_POP_MOBILEACCESSSERVICE_ACTIVATING_ING"
+msgstr "Ενεργοποίηση..."
+
+msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_CONNECTION"
+msgstr "Η χρήση του Wi-Fi Direct θα αποσυνδέσει την τρέχουσα σύνδεση Wi-Fi"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "Σχετικά με Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "Το Wi-Fi Direct επιτρέπει στις συσκευές Wi-Fi να συνδέονται απευθείας, γεγονός που κάνει τη διαδικασία εκτύπωσης, κοινής χρήσης αρχείων, συγχρονισμού και κοινής χρήσης οθόνης πιο απλή και πιο εύχρηστη. Η σύνδεση σε συσκευές που υποστηρίζουν Wi-Fi Direct σας επιτρέπει να μοιράζεστε περιεχόμενο, να συγχρονίζετε τα δεδομένα σας, να συναναστρέφεστε με τους φίλους σας, να παίζετε παιχνίδια, να ακούτε μουσική, να παρακολουθείτε ταινίες κ.ά., χρησιμοποιώντας διάφορες εφαρμογές"
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "Συνδεδεμένες συσκευές"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "Απασχολημένες συσκευές"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "Έχει συνδεθεί με άλλη συσκευή"
+
+msgid "IDS_WIFI_POP_AP_DISCONNECTING_ING"
+msgstr "Αποσύνδεση..."
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "Σύνδεση..."
+
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "Αναμονή για σύνδεση"
+
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "Αποτυχία σύνδεσης"
+
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "Πολλαπλή σύνδεση"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "Αποσύνδεση όλων"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "Αποσύνδεση"
+
+msgid "IDS_WFD_NOCONTENT"
+msgstr "Δεν βρέθηκαν συσκευές"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "Απενεργοποίηση Wi-Fi Direct μετά τη χρήση"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_ABB"
+msgstr "Απενεργ. Wi-Fi Direct μετά τη χρήση"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY"
+msgstr "Απενεργοποίηση Wi-Fi Direct μετά τη χρήση για εξοικοκονόμηση μπαταρίας"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY_ABB"
+msgstr "Απεν. Wi-Fi Direct μετά τη χρήση για εξοικ. μπατ."
+
+msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES"
+msgstr "Σάρωση για συσκευές Wi-Fi Direct"
+
+msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES_CURRENT_NETWORK_WILL_BE_DISCONNECTED"
+msgstr "Σάρωση για συσκευές Wi-Fi Direct. Θα γίνει αποσύνδεση του τρέχοντος δικτύου"
+
+msgid "IDS_WIFI_BODY_SEARCH_FOR_WI_FI_DIRECT_DEVICES_OR_SEARCH_FOR_DEVICES_ON_OTHER_WI_FI_NETWORKS"
+msgstr "Αναζήτηση συσκευών Wi-Fi direct ή αναζήτηση συσκευών σε άλλα δίκτυα Wi-Fi"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection. Continue?"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_CONNECTED"
+msgstr "Έγινε σύνδεση του Wi-Fi Direct"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Σύνδεση Wi-Fi Direct"
+
+msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_SETTINGS"
+msgstr "Ρυθμίσεις Wi-Fi Direct"
+
+msgid "IDS_WIFI_MBODY_CONFIGURE_WI_FI_DIRECT"
+msgstr "Διαμόρφωση Wi-Fi Direct"
+
+msgid "IDS_WIFI_MBODY_DISCONNECT_WI_FI_DIRECT"
+msgstr "Αποσύνδεση Wi-Fi Direct"
+
+msgid "IDS_WIFI_MBODY_WI_FI_DIRECT_STATUS"
+msgstr "Κατάσταση Wi-Fi Direct"
+
+msgid "IDS_WIFI_OPT1_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "Ακύρωση της σύνδεσης Wi-Fi Direct;"
+
+msgid "IDS_WIFI_POP_CONNECTING_TO_WI_FI_NETWORK_WILL_DISCONNECT_DEVICE_CONNECTED_VIA_WI_FI_DIRECT"
+msgstr "Η σύνδεση σε δίκτυο Wi-Fi θα αποσυνδέσει τη συσκευή που είναι συνδεδεμένη μέσω Wi-Fi Direct"
+
+msgid "IDS_WIFI_POP_CONNECT_TO_OTHER_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "Σύνδεση σε άλλες συσκευές μέσω του Wi-Fi Direct"
+
+msgid "IDS_WIFI_POP_DISABLE_MOBILE_AP_TO_USE_WI_FI_DIRECT_Q"
+msgstr "Απενεργοποίηση του AP για κινητά για χρήση του Wi-Fi Direct;"
+
+msgid "IDS_WIFI_POP_DISCONNECT_CURRENT_WI_FI_DIRECT_DEVICE_TO_SEARCH_NETWORKS"
+msgstr "Αποσύνδεση τρέχουσας συσκευής Wi-Fi Direct για αναζήτηση δικτύων"
+
+msgid "IDS_WIFI_POP_ENABLING_WI_FI_DIRECT_WILL_TURN_OFF_WI_FI_AND_DISABLE_THE_PORTABLE_WI_FI_HOTSPOT"
+msgstr "Η ενεργοποίηση του Wi-Fi Direct θα απενεργοποιήσει το Wi-Fi και το φορητό σημείο πρόσβασης Wi-Fi"
+
+msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISABLE_PORTABLE_WI_FI_HOTSPOT"
+msgstr "Η χρήση του Wi-Fi Direct θα απενεργοποιήσει το φορητό σημείο πρόσβασης Wi-Fi"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_ALREADY_IN_USE_TRY_LATER"
+msgstr "Το Wi-Fi Direct χρησιμοποιείται ήδη. Δοκιμάστε αργότερα"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_CONNECTION_REQUEST_AUTOMATICALLY_DENIED_TO_CONNECT_TURN_OFF_ALLSHARE_CAST"
+msgstr "Το αίτημα σύνδεσης Wi-Fi Direct απορρίφθηκε αυτόματα. Για να συνδεθείτε, απενεργοποιήστε το AllShare Cast"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_WILL_BE_DISCONNECTED_CONTINUE_Q"
+msgstr "Το Wi-Fi Direct θα αποσυνδεθεί. Συνέχεια;"
+
+msgid "IDS_WIFI_POP_WI_FI_IS_DISCONNECTED_WHILE_WI_FI_DIRECT_CONNECTS"
+msgstr "Το Wi-Fi αποσυνδέεται κατά τη σύνδεση του Wi-Fi Direct"
+
+msgid "IDS_WIFI_SK1_SEARCH_FOR_WI_FI_DIRECT_DEVICES"
+msgstr "Αναζήτηση για συσκευές Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "Καμία συσκευή"
+
+msgid "IDS_WIFI_SK4_SCAN"
+msgstr "Σάρωση"
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "Διακοπή"
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "Αποτυχία απενεργοποίησης"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "Αποτυχία ενεργοποίησης"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "Η τρέχουσα σύνδεση θα αποσυνδεθεί. Συνέχεια;"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "Διαθέσιμες συσκευές"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "Μπορείτε να συνδέσετε έως και %d συσκευές ταυτόχρονα"
+

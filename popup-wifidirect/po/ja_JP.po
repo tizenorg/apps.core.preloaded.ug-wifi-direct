@@ -1,0 +1,369 @@
+msgid "IDS_WFD_CONNECTED"
+msgstr "接続しました。"
+
+msgid "IDS_WFD_CONNECTING"
+msgstr "接続中..."
+
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "切断中..."
+
+msgid ""
+msgstr "Wi-Fi​を​起動中..."
+
+msgid "IDS_WIFI_POP_DEACTIVATING_WI_FI_ING"
+msgstr "Wi-Fi​を​無効​に​して​います..."
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "接続しました。"
+
+msgid "IDS_COM_POP_NETWORK_INTERNAL_ERR"
+msgstr "内部エラー"
+
+msgid "IDS_COM_POP_RETRIEVED"
+msgstr "受信しました"
+
+msgid "IDS_COM_POP_RETRIEVING_FAILED"
+msgstr "受信​できません​でした"
+
+msgid "IDS_COM_SK_CANCEL"
+msgstr "キャンセル"
+
+msgid "IDS_ST_BODY_INTERNAL_ERROR"
+msgstr "内部エラー"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "不明なエラーです。"
+
+msgid "IDS_COM_POP_NETWORK_ERROR"
+msgstr "ネットワークエラーが発生しました。"
+
+msgid "IDS_COM_BODY_NO_SEARCH_RESULTS"
+msgstr "検索​結果​が​ありません。"
+
+msgid "IDS_COM_POP_SEARCHING"
+msgstr "検索中..."
+
+msgid "IDS_WIFI_POP_DISCONNECTING_FAILED"
+msgstr "切断​に​失敗​しました"
+
+msgid "IDS_ST_BODY_ENTER_NEW_PASSWORD"
+msgstr "新しい​パスワード​を​入力"
+
+msgid "IDS_COM_POP_UNKNOWN_ERROR_UNABLE_TO_LAUNCH_APPLICATION"
+msgstr "不明な​エラー​です。アプリケーション​を​起動​できません"
+
+msgid "IDS_COM_POP_ACCEPT"
+msgstr "応答"
+
+msgid "IDS_COM_POP_CONNECTING"
+msgstr "接続中..."
+
+msgid "IDS_COM_POP_ERROR"
+msgstr "エラー"
+
+msgid "IDS_COM_POP_REJECT"
+msgstr "拒否"
+
+msgid "IDS_COM_POP_REJECTED"
+msgstr "拒否されました。"
+
+msgid "IDS_COM_BODY_SELECT_ALL"
+msgstr "全て​選択"
+
+msgid "IDS_COM_POP_FAILED"
+msgstr "失敗​しました。"
+
+msgid "IDS_COM_SK_ACCEPT"
+msgstr "同意する"
+
+msgid "IDS_ST_BODY_ENTER_4_TO_8_DIGIT_PIN"
+msgstr "PIN​を​4～8桁​の​数字​で​入力​して​ください。"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "PINが​一致​しません！"
+
+msgid "IDS_ST_POP_YES"
+msgstr "はい"
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "起動中..."
+
+msgid "IDS_COM_POP_DEACTIVATED"
+msgstr "無効になりました。"
+
+msgid "IDS_COM_SK_OK"
+msgstr "OK"
+
+msgid "IDS_COM_SK_YES"
+msgstr "はい"
+
+msgid "IDS_WIFI_HEADER_MOBILE_HOTSPOT_VZW"
+msgstr "モバイルホットスポット"
+
+msgid "IDS_ST_BODY_ENTER_CURRENT_PASSWORD"
+msgstr "現在のパスワードを入力してください。"
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "%d件​選択"
+
+msgid "IDS_ST_POP_SEARCHING_ING"
+msgstr "検索中..."
+
+msgid "IDS_COM_POP_NOTHING_SELECTED"
+msgstr "何も​選択​されて​いません。"
+
+msgid "IDS_COM_OPT1_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_COM_POP_DISCONNECTED"
+msgstr "切断しました。"
+
+msgid "IDS_WIFI_MBODY_MOBILE_HOTSPOT_VZW"
+msgstr "モバイルホットスポット"
+
+msgid "IDS_WIFI_BODY_IP_ADDRESS"
+msgstr "IP​アドレス"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "解除​中..."
+
+msgid "IDS_COM_POP_UNEXPECTED_ERROR"
+msgstr "予期しない​エラー"
+
+msgid "IDS_COM_POP_NETWORK_CONNECTION_ERROR"
+msgstr "ネットワーク接続エラーです。"
+
+msgid "IDS_COM_BODY_OPERATION_FAILED"
+msgstr "操作に失敗しました。"
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "サポート​されて​いません。"
+
+msgid "IDS_COM_POP_UNSUPPORTED"
+msgstr "未対応です"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_COM_POP_ACCEPTED"
+msgstr "Accepted"
+
+msgid "IDS_WIFI_BODY_MAC_ADDRESS"
+msgstr "MAC​アドレス"
+
+msgid "IDS_WIFI_POP_AUTOMATIC_CONNECTION_NETWORK_WILL_DISABLED_CONTINUE_Q_MSG"
+msgstr "この​ネットワーク​への​自動接続​を​無効​に​します。​続行​しますか？"
+
+msgid "IDS_COM_POP_PROGRESSING_ING"
+msgstr "進行中..."
+
+msgid "IDS_WIFI_BODY_CONNECT"
+msgstr "接続"
+
+msgid "IDS_WIFI_HEADER_WI_FI"
+msgstr "Wi-Fi"
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "スキャン"
+
+msgid "IDS_WIFI_SK3_BACK"
+msgstr "戻る"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "Wi-Fi Directデバイス"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "タップ​して​接続"
+
+msgid "IDS_WIFI_SK2_MULTI_CONNECT"
+msgstr "複数接続"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "接続"
+
+msgid "IDS_WIFI_OPT_MYNETWORKS_DISCONNECT"
+msgstr "切断"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "接続をキャンセル"
+
+msgid "IDS_COM_SK_CANCEL_A"
+msgstr "ｷｬﾝｾﾙ"
+
+msgid "IDS_ST_HEADER_ACTIVATION"
+msgstr "アクティベーション"
+
+msgid "IDS_COM_SK_CANCEL_LITE"
+msgstr "取消"
+
+msgid "IDS_ST_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WIFI_BODY_WI_FI"
+msgstr "Wi-Fi"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "ｷｬﾝｾﾙ"
+
+msgid "IDS_WIFI_BUTTON_CANCEL"
+msgstr "キャンセル"
+
+msgid "IDS_WIFI_BODY_ALLSHARE_CAST"
+msgstr "AllShare Cast"
+
+msgid "IDS_WIFI_POP_MOBILEACCESSSERVICE_ACTIVATING_ING"
+msgstr "起動中..."
+
+msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_CONNECTION"
+msgstr "Wi-Fi Directを使用すると、現在のWi-Fi接続が切断されます。"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "Wi-Fi Direct​に​ついて"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "Wi-Fi ​Directは、​より​簡単​で​便利​に​Wi-Fi​デバイス​の​直接​接続、​印刷、​ファイル​共有、​同期、​画面​共有​が​できる​よう​に​します。​Wi-Fi ​Direct​に​対応​した​デバイス​に​接続​する​と、​コンテンツ​の​共有、​データ​の​同期、​友達​と​の​交流​や​ゲーム、​音楽、​動画​の​再生​等​を​様々​な​アプリ​ケーション​で​利用​でき​ます。"
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "接続デバイス"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "アクセスできないデバイス"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "他のデバイスと接続されています。"
+
+msgid "IDS_WIFI_POP_AP_DISCONNECTING_ING"
+msgstr "切断中..."
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "接続中..."
+
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "接続​待機​中"
+
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "接続​に​失敗​しました。"
+
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "複数​接続"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "全て​切断"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "切断"
+
+msgid "IDS_WFD_NOCONTENT"
+msgstr "デバイスが​見つかりません。"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "使用​後​は​Wi-Fi Direct​を​無効​に​して​ください。"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_ABB"
+msgstr "使用​後​は​Wi-Fi Direct​を​無効​に​して​ください。"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY"
+msgstr "バッテリー​を​節約​する​には、​使用​後​は​Wi-Fi Direct​を​無効​に​して​ください。"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY_ABB"
+msgstr "バッテリー​を​節約​する​には、​使用​後​は​Wi-Fi Direct​を​無効​に​して​ください。"
+
+msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES"
+msgstr "Wi-Fi Directデバイスを検索"
+
+msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES_CURRENT_NETWORK_WILL_BE_DISCONNECTED"
+msgstr "Wi-Fi Direct端末を検索します。現在のネットワークは切断されます。"
+
+msgid "IDS_WIFI_BODY_SEARCH_FOR_WI_FI_DIRECT_DEVICES_OR_SEARCH_FOR_DEVICES_ON_OTHER_WI_FI_NETWORKS"
+msgstr "Wi-Fi Direct​デバイス​を​検索​、または​その他​の​Wi-Fi​ネットワーク​の​デバイス​を​検索​します。"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection. Continue?"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_CONNECTED"
+msgstr "Wi-Fi Direct​が​接続​されました。"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Wi-Fi Direct接続"
+
+msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_SETTINGS"
+msgstr "Wi-Fi Direct​設定"
+
+msgid "IDS_WIFI_MBODY_CONFIGURE_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct設定"
+
+msgid "IDS_WIFI_MBODY_DISCONNECT_WI_FI_DIRECT"
+msgstr "Wi-Fi Directを切断"
+
+msgid "IDS_WIFI_MBODY_WI_FI_DIRECT_STATUS"
+msgstr "Wi-Fi Direct​ステータス"
+
+msgid "IDS_WIFI_OPT1_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "Wi-Fi Direct接続をキャンセルしますか？"
+
+msgid "IDS_WIFI_POP_CONNECTING_TO_WI_FI_NETWORK_WILL_DISCONNECT_DEVICE_CONNECTED_VIA_WI_FI_DIRECT"
+msgstr "Wi-Fiネットワークに接続すると、Wi-Fi Directで接続された端末が切断されます。"
+
+msgid "IDS_WIFI_POP_CONNECT_TO_OTHER_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "Wi-Fi Directで他のデバイスに接続"
+
+msgid "IDS_WIFI_POP_DISABLE_MOBILE_AP_TO_USE_WI_FI_DIRECT_Q"
+msgstr "Wi-Fi Directを使用するためにWi-Fiテザリングを無効にしますか？"
+
+msgid "IDS_WIFI_POP_DISCONNECT_CURRENT_WI_FI_DIRECT_DEVICE_TO_SEARCH_NETWORKS"
+msgstr "ネットワーク​を​検索​する​ため、​現在​の​Wi-Fi Direct​を​切断​します。"
+
+msgid "IDS_WIFI_POP_ENABLING_WI_FI_DIRECT_WILL_TURN_OFF_WI_FI_AND_DISABLE_THE_PORTABLE_WI_FI_HOTSPOT"
+msgstr "Wi-Fi Directを有効にすると、Wi-FiはOFFになり、Wi-Fiテザリングも無効になります。"
+
+msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISABLE_PORTABLE_WI_FI_HOTSPOT"
+msgstr "Wi-Fi Directを使用すると、Wi-Fiテザリングが無効になります。"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_ALREADY_IN_USE_TRY_LATER"
+msgstr "Wi-Fi Direct​は​使用中​です。​後ほど​お試し​ください。"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_CONNECTION_REQUEST_AUTOMATICALLY_DENIED_TO_CONNECT_TURN_OFF_ALLSHARE_CAST"
+msgstr "Wi-Fi Direct​の​接続​要求​は​自動​的​に​拒否​され​ました。​Wi-Fi Direct​接続​を​する​には、​AllShare Cast​を​OFF​に​して​ください。"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_WILL_BE_DISCONNECTED_CONTINUE_Q"
+msgstr "Wi-Fi Direct​の​接続​が​解除​されます。​続行​しますか？"
+
+msgid "IDS_WIFI_POP_WI_FI_IS_DISCONNECTED_WHILE_WI_FI_DIRECT_CONNECTS"
+msgstr "Wi-Fi Direct​接続中​は​Wi-Fi​は​切断​され​ます。"
+
+msgid "IDS_WIFI_SK1_SEARCH_FOR_WI_FI_DIRECT_DEVICES"
+msgstr "Wi-Fi Direct​デバイス​を​検索​します。"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "デバイス​が​あり​ません。"
+
+msgid "IDS_WIFI_SK4_SCAN"
+msgstr "スキャン"
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "停止"
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "無効に​失敗​しました"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "起動に失敗しました。"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "現在の​接続​は切断​されます。​続行しますか？"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "接続可能なデバイス"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "同時に%d台までデバイスを接続できます。"
+

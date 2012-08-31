@@ -1,0 +1,117 @@
+msgid "IDS_WFD_CONNECTED"
+msgstr "Ühendatud"
+
+msgid "IDS_WFD_CONNECTING"
+msgstr "Ühendamine..."
+
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "Ühenduse katkestamine..."
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "Ühendatud"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "Tundmatu tõrge"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "PIN-koodid ei kattu!"
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "Aktiveerimine..."
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "%d valitud"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "Desaktiveerimine..."
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "Tugi puudub"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "Otsi"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "Wi-Fi Direct seadmed"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "puudutage ühendamiseks"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "Ühenda"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "Katkesta ühendus"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "Wi-Fi Directi teave"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "Wi-Fi Direct võimaldab Wi-Fi seadmetel otse ühenduda, muutes printimise, failijagamise, sünkroonimise ja ekraanijagamise palju lihtsamaks ning mugavamaks. Teenust Wi-Fi Direct toetavate seadmete ühendamine võimaldab teil mitmesuguste rakenduste abil jagada sisu, sünkroonida andmeid, suhelda sõpradega, mängida mänge, heli, videoid ja teha muudki"
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "Ühendatud seadmed"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "Hõivatud seadmed"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "Ühendatud teise seadmega"
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "Ühendamine..."
+
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "Ühenduse ootamine"
+
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "Ühendamine nurjus"
+
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "Mitmikühendus"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "Katkesta kõigi ühendus"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "Katkesta ühendus"
+
+msgid "IDS_WFD_NOCONTENT"
+msgstr "Seadmeid ei leitud"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection. Continue?"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Wi-Fi Directi ühendus"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "Kas katkestada Wi-Fi Directi ühendus?"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "Seadmeid pole"
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "Lõpeta"
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "Desaktiveerimine nurjus"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "Aktiveerimine nurjus"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "Aktiivne ühendus katkestatakse. Kas jätkata?"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "Saadaolevad seadmed"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "Korraga saate ühendada kuni %d seadet"
+

@@ -863,9 +863,9 @@ void wfd_prepare_popup(int type, void *userdata)
 
 	case /* MT */ WFD_POP_APRV_CONNECTION_WPS_PUSHBUTTON_REQ:
 	{
-		snprintf(pop->text, sizeof(pop->text), _("IDS_WFD_POP_CONNECT_Q"), // WFD_STR_POP_APRV_CONNECT4
+		snprintf(pop->text, sizeof(pop->text), IDS_WFD_POP_CONNECT_Q, // WFD_STR_POP_APRV_CONNECT4
 				ad->peer_name);
-		snprintf(pop->label1, sizeof(pop->label1), "%s", dgettext("sys_string", "IDS_COM_SK_YES")); // WFD_STR_BUTN_YES
+		snprintf(pop->label1, sizeof(pop->label1), "%s", dgettext("sys_string", "IDS_COM_SK_YES")); // IDS_WFD_BUTN_YES
 		snprintf(pop->label2, sizeof(pop->label2), "%s", dgettext("sys_string", "IDS_COM_SK_NO")); // WFD_STR_BUTN_NO
 		pop->resp_data1 = WFD_POP_RESP_APRV_CONNECT_PBC_YES;
 		pop->resp_data2 = WFD_POP_RESP_APRV_CONNECT_NO;
@@ -877,9 +877,9 @@ void wfd_prepare_popup(int type, void *userdata)
 	case /* MT */ WFD_POP_APRV_CONNECTION_WPS_DISPLAY_REQ:
 	{
 		char *pin = (char *) userdata;
-		snprintf(pop->text, sizeof(pop->text), _("IDS_WFD_POP_CONNECT_Q"), //WFD_STR_POP_APRV_CONNECT4"<br>PIN:%s"
+		snprintf(pop->text, sizeof(pop->text), IDS_WFD_POP_CONNECT_Q, //WFD_STR_POP_APRV_CONNECT4"<br>PIN:%s"
 				ad->peer_name, WFD_POP_TIMER_120, ad->pin_number);
-		snprintf(pop->label1, sizeof(pop->label1), "%s", dgettext("sys_string", "IDS_COM_SK_YES")); // WFD_STR_BUTN_YES
+		snprintf(pop->label1, sizeof(pop->label1), "%s", dgettext("sys_string", "IDS_COM_SK_YES")); // IDS_WFD_BUTN_YES
 		snprintf(pop->label2, sizeof(pop->label2), "%s", dgettext("sys_string", "IDS_COM_SK_NO")); // WFD_STR_BUTN_NO
 		pop->timeout = WFD_POP_TIMER_120;
 		pop->resp_data1 = WFD_POP_RESP_APRV_CONNECT_DISPLAY_YES;
@@ -891,9 +891,9 @@ void wfd_prepare_popup(int type, void *userdata)
 
 	case /*MO/MT */ WFD_POP_APRV_CONNECTION_WPS_KEYPAD_REQ:
 	{
-		snprintf(pop->text, sizeof(pop->text), _("IDS_WFD_POP_ENTER_PIN"), // WFD_STR_POP_APRV_CONNECT4
+		snprintf(pop->text, sizeof(pop->text), IDS_WFD_POP_ENTER_PIN, // WFD_STR_POP_APRV_CONNECT4
 				ad->peer_name, WFD_POP_TIMER_120, ad->peer_name);
-		snprintf(pop->label1, sizeof(pop->label1), "%s", dgettext("sys_string", "IDS_COM_SK_YES")); // WFD_STR_BUTN_YES
+		snprintf(pop->label1, sizeof(pop->label1), "%s", dgettext("sys_string", "IDS_COM_SK_YES")); // IDS_WFD_BUTN_YES
 		snprintf(pop->label2, sizeof(pop->label2), "%s", dgettext("sys_string", "IDS_COM_SK_NO")); // WFD_STR_BUTN_NO
 		pop->timeout = WFD_POP_TIMER_120;
 		pop->resp_data1 = WFD_POP_RESP_APRV_CONNECT_KEYPAD_YES;
@@ -916,7 +916,7 @@ void wfd_prepare_popup(int type, void *userdata)
 
 	case /* MO */ WFD_POP_PROG_CONNECT_WITH_KEYPAD:
 	{
-		snprintf(pop->text, sizeof(pop->text), _("IDS_WFD_POP_ENTER_PIN"), // WFD_STR_POP_ENTER_PIN
+		snprintf(pop->text, sizeof(pop->text), IDS_WFD_POP_ENTER_PIN, // WFD_STR_POP_ENTER_PIN
 				ad->peer_name, WFD_POP_TIMER_120, ad->peer_name);
 		snprintf(pop->label1, sizeof(pop->label1), "%s", dgettext("sys_string", "IDS_COM_SK_OK")); // WFD_STR_BTN_OK
 		snprintf(pop->label2, sizeof(pop->label2), "%s", dgettext("sys_string", "IDS_COM_POP_CANCEL")); // WFD_STR_BTN_CANCEL
@@ -929,7 +929,7 @@ void wfd_prepare_popup(int type, void *userdata)
 	break;
 
 	case /* MO/MT */ WFD_POP_PROG_CONNECT_WITH_PIN:
-		snprintf(pop->text, sizeof(pop->text), "%s %s", _("IDS_WFD_POP_CONNECTING_WITH_PIN"), ad->pin_number); // WFD_STR_POP_PROG_CONNECT_WITH_PIN
+		snprintf(pop->text, sizeof(pop->text), "%s %s", IDS_WFD_POP_CONNECTING_WITH_PIN, ad->pin_number); // WFD_STR_POP_PROG_CONNECT_WITH_PIN
 		snprintf(pop->label1, sizeof(pop->label1), "%s", dgettext("sys_string", "IDS_COM_POP_CANCEL")); // WFD_STR_BTN_CANCEL
 		pop->timeout = WFD_POP_TIMER_120;
 		pop->resp_data1 = WFD_POP_RESP_PROG_CONNECT_CANCEL;

@@ -1,0 +1,369 @@
+msgid "IDS_WFD_CONNECTED"
+msgstr "Свързан"
+
+msgid "IDS_WFD_CONNECTING"
+msgstr "Свързване..."
+
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "Изключване..."
+
+msgid ""
+msgstr "Активиране на Wi-Fi..."
+
+msgid "IDS_WIFI_POP_DEACTIVATING_WI_FI_ING"
+msgstr "Деактивиране на Wi-Fi..."
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "Свързан"
+
+msgid "IDS_COM_POP_NETWORK_INTERNAL_ERR"
+msgstr "Вътрешна грешка"
+
+msgid "IDS_COM_POP_RETRIEVED"
+msgstr "Свързан"
+
+msgid "IDS_COM_POP_RETRIEVING_FAILED"
+msgstr "Неуспешно изтегляне"
+
+msgid "IDS_COM_SK_CANCEL"
+msgstr "Отмени"
+
+msgid "IDS_ST_BODY_INTERNAL_ERROR"
+msgstr "Вътрешна грешка"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "Неизвестна грешка"
+
+msgid "IDS_COM_POP_NETWORK_ERROR"
+msgstr "Грешка на мрежата"
+
+msgid "IDS_COM_BODY_NO_SEARCH_RESULTS"
+msgstr "Няма резултати от търсенето"
+
+msgid "IDS_COM_POP_SEARCHING"
+msgstr "Търсене..."
+
+msgid "IDS_WIFI_POP_DISCONNECTING_FAILED"
+msgstr "Прекъсването неуспешно"
+
+msgid "IDS_ST_BODY_ENTER_NEW_PASSWORD"
+msgstr "Въведи нова парола"
+
+msgid "IDS_COM_POP_UNKNOWN_ERROR_UNABLE_TO_LAUNCH_APPLICATION"
+msgstr "Неизвестна грешка. Приложението не може да се стартира"
+
+msgid "IDS_COM_POP_ACCEPT"
+msgstr "Приемам"
+
+msgid "IDS_COM_POP_CONNECTING"
+msgstr "Свързване..."
+
+msgid "IDS_COM_POP_ERROR"
+msgstr "Грешка"
+
+msgid "IDS_COM_POP_REJECT"
+msgstr "Отказ"
+
+msgid "IDS_COM_POP_REJECTED"
+msgstr "Отхвърлен"
+
+msgid "IDS_COM_BODY_SELECT_ALL"
+msgstr "Избери всички"
+
+msgid "IDS_COM_POP_FAILED"
+msgstr "Неуспешно"
+
+msgid "IDS_COM_SK_ACCEPT"
+msgstr "Приеми"
+
+msgid "IDS_ST_BODY_ENTER_4_TO_8_DIGIT_PIN"
+msgstr "Въведете 4- до 8-цифрен PIN"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "PIN кодовете не съвпадат!"
+
+msgid "IDS_ST_POP_YES"
+msgstr "Да"
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "Активиране..."
+
+msgid "IDS_COM_POP_DEACTIVATED"
+msgstr "Деактивирана"
+
+msgid "IDS_COM_SK_OK"
+msgstr "OK"
+
+msgid "IDS_COM_SK_YES"
+msgstr "Да"
+
+msgid "IDS_WIFI_HEADER_MOBILE_HOTSPOT_VZW"
+msgstr "Mobile Hotspot"
+
+msgid "IDS_ST_BODY_ENTER_CURRENT_PASSWORD"
+msgstr "Въведете текуща парола"
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "%d избрани"
+
+msgid "IDS_ST_POP_SEARCHING_ING"
+msgstr "Търсене..."
+
+msgid "IDS_COM_POP_NOTHING_SELECTED"
+msgstr "Нищо не е избрано"
+
+msgid "IDS_COM_OPT1_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_COM_POP_DISCONNECTED"
+msgstr "Изключен"
+
+msgid "IDS_WIFI_MBODY_MOBILE_HOTSPOT_VZW"
+msgstr "Mobile Hotspot"
+
+msgid "IDS_WIFI_BODY_IP_ADDRESS"
+msgstr "IP адрес"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "Деактивиране..."
+
+msgid "IDS_COM_POP_UNEXPECTED_ERROR"
+msgstr "Неочаквана грешка"
+
+msgid "IDS_COM_POP_NETWORK_CONNECTION_ERROR"
+msgstr "Грешка във връзката с мрежата"
+
+msgid "IDS_COM_BODY_OPERATION_FAILED"
+msgstr "Операцията е неуспешна"
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "Не се поддържа"
+
+msgid "IDS_COM_POP_UNSUPPORTED"
+msgstr "Не се поддържа"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_COM_POP_ACCEPTED"
+msgstr "Приет"
+
+msgid "IDS_WIFI_BODY_MAC_ADDRESS"
+msgstr "MAC адрес"
+
+msgid "IDS_WIFI_POP_AUTOMATIC_CONNECTION_NETWORK_WILL_DISABLED_CONTINUE_Q_MSG"
+msgstr "Автоматичното свързване с тази мрежа ще бъде деактивирано. Продължаване?"
+
+msgid "IDS_COM_POP_PROGRESSING_ING"
+msgstr "В процес на..."
+
+msgid "IDS_WIFI_BODY_CONNECT"
+msgstr "Свързване"
+
+msgid "IDS_WIFI_HEADER_WI_FI"
+msgstr "Wi-Fi"
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "Сканиране"
+
+msgid "IDS_WIFI_SK3_BACK"
+msgstr "НАЗАД"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "Устройства за Wi-Fi Direct"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "Чукнете, за да се свържете"
+
+msgid "IDS_WIFI_SK2_MULTI_CONNECT"
+msgstr "Мултивръзка"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "Свързване"
+
+msgid "IDS_WIFI_OPT_MYNETWORKS_DISCONNECT"
+msgstr "Изключване"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "Отмяна на връзката"
+
+msgid "IDS_COM_SK_CANCEL_A"
+msgstr "Отказ"
+
+msgid "IDS_ST_HEADER_ACTIVATION"
+msgstr "Активиране"
+
+msgid "IDS_COM_SK_CANCEL_LITE"
+msgstr "Отказ"
+
+msgid "IDS_ST_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WIFI_BODY_WI_FI"
+msgstr "Wi-Fi"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Отказ"
+
+msgid "IDS_WIFI_BUTTON_CANCEL"
+msgstr "Отказ"
+
+msgid "IDS_WIFI_BODY_ALLSHARE_CAST"
+msgstr "AllShare Cast"
+
+msgid "IDS_WIFI_POP_MOBILEACCESSSERVICE_ACTIVATING_ING"
+msgstr "Активиране..."
+
+msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_CONNECTION"
+msgstr "Използването на Wi-Fi Direct ще прекъсне текущата Wi-Fi връзка"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "За Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "Wi-Fi Direct позволява на Wi-Fi устройства да се свързват директно, като прави печата, споделянето на файлове, синхронизирането и споделянето на екрани много по-просто и по-удобно. Свързването към устройства, които поддържат Wi-Fi Direct, позволява да споделяте съдържанието си, да синхронизирате данните си, да се социализирате с приятелите си, да играете игри, да възпроизвеждате аудио, видео и много други, с помощта на различни приложения."
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "Свързани устройства"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "Заети устройства"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "Свързано с друго устройство"
+
+msgid "IDS_WIFI_POP_AP_DISCONNECTING_ING"
+msgstr "Изключване..."
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "Свързване..."
+
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "Изчакване на връзка"
+
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "Неуспешно свързване"
+
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "Мултивръзка"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "Прекъсване на всички"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "Изключване"
+
+msgid "IDS_WFD_NOCONTENT"
+msgstr "Не са намерени устройства"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "Деактивиране на Wi-Fi Direct след използване"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_ABB"
+msgstr "Деакт. Wi-Fi Direct след използване"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY"
+msgstr "Деактивиране на Wi-Fi Direct след използване, за да се пести батерията"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY_ABB"
+msgstr "Деактив. Wi-Fi Direct след използв. за пест. бат."
+
+msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES"
+msgstr "Сканиране за устройства с Wi-Fi Direct"
+
+msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES_CURRENT_NETWORK_WILL_BE_DISCONNECTED"
+msgstr "Сканиране за Wi-Fi Direct устройства. Връзката с текущата мрежа ще бъде прекъсната"
+
+msgid "IDS_WIFI_BODY_SEARCH_FOR_WI_FI_DIRECT_DEVICES_OR_SEARCH_FOR_DEVICES_ON_OTHER_WI_FI_NETWORKS"
+msgstr "Търсене на Wi-Fi Direct устройства или търсене на устройства в други Wi-Fi мрежи"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection. Continue?"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_CONNECTED"
+msgstr "Wi-Fi Direct е свързана"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Връзка Wi-Fi Direct"
+
+msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_SETTINGS"
+msgstr "Настройки за Wi-Fi Direct"
+
+msgid "IDS_WIFI_MBODY_CONFIGURE_WI_FI_DIRECT"
+msgstr "Конфигурир. Wi-Fi Direct"
+
+msgid "IDS_WIFI_MBODY_DISCONNECT_WI_FI_DIRECT"
+msgstr "Край връзка Wi-Fi Direct"
+
+msgid "IDS_WIFI_MBODY_WI_FI_DIRECT_STATUS"
+msgstr "Състояние на Wi-Fi Direct"
+
+msgid "IDS_WIFI_OPT1_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "Отмяна на връзка Wi-Fi Direct?"
+
+msgid "IDS_WIFI_POP_CONNECTING_TO_WI_FI_NETWORK_WILL_DISCONNECT_DEVICE_CONNECTED_VIA_WI_FI_DIRECT"
+msgstr "Свързването към Wi-Fi мрежа ще изключи устройството, свързано чрез Wi-Fi Direct"
+
+msgid "IDS_WIFI_POP_CONNECT_TO_OTHER_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "Свързване към други устройства през Wi-Fi Direct"
+
+msgid "IDS_WIFI_POP_DISABLE_MOBILE_AP_TO_USE_WI_FI_DIRECT_Q"
+msgstr "Деактивиране на Mobile AP, за да се използва Wi-Fi Direct?"
+
+msgid "IDS_WIFI_POP_DISCONNECT_CURRENT_WI_FI_DIRECT_DEVICE_TO_SEARCH_NETWORKS"
+msgstr "Прекъснете връзката с текущото Wi-Fi Direct устройство, за да се търсят мрежи"
+
+msgid "IDS_WIFI_POP_ENABLING_WI_FI_DIRECT_WILL_TURN_OFF_WI_FI_AND_DISABLE_THE_PORTABLE_WI_FI_HOTSPOT"
+msgstr "Разрешаването на Wi-Fi Direct ще изключи Wi-Fi и ще деактивира преносимата точка за Wi-Fi достъп"
+
+msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISABLE_PORTABLE_WI_FI_HOTSPOT"
+msgstr "Използването на Wi-Fi Direct ще деактивира преносимата точка за Wi-Fi достъп"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_ALREADY_IN_USE_TRY_LATER"
+msgstr "Wi-Fi Direct вече се използва. Опитайте по-късно"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_CONNECTION_REQUEST_AUTOMATICALLY_DENIED_TO_CONNECT_TURN_OFF_ALLSHARE_CAST"
+msgstr "Заявката за Wi-Fi Direct връзка е отказана автоматично. За да се свържете, изключете AllShare Cast"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_WILL_BE_DISCONNECTED_CONTINUE_Q"
+msgstr "Връзката с Wi-Fi Direct ще бъде прекъсната. Продължаване?"
+
+msgid "IDS_WIFI_POP_WI_FI_IS_DISCONNECTED_WHILE_WI_FI_DIRECT_CONNECTS"
+msgstr "Връзката с Wi-Fi е прекъсната, докато се свързва Wi-Fi Direct"
+
+msgid "IDS_WIFI_SK1_SEARCH_FOR_WI_FI_DIRECT_DEVICES"
+msgstr "Търсене на устройства за Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "Няма устройства"
+
+msgid "IDS_WIFI_SK4_SCAN"
+msgstr "Скани-ране"
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "Стоп"
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "Деактивирането неуспешно"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "Неуспешно активиране"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "Текущата връзка ще бъде прекъсната. Продължаване?"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "Достъпни устройства"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "Можете да свържете до %d устройства едновременно"
+

@@ -1,0 +1,117 @@
+msgid "IDS_WFD_CONNECTED"
+msgstr "تم التوصيل"
+
+msgid "IDS_WFD_CONNECTING"
+msgstr "جاري التوصيل"
+
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "جاري الفصل..."
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "تم التوصيل"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "خطأ غير معروف"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "عدم تطابق رموز PIN!"
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "جاري التفعيل..."
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "تم تحديد %d"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "جاري إلغاء التفعيل..."
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "غير مدعوم"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "بحث"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "أجهزة Wi-Fi Direct"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "انقر للتوصيل"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "توصيل"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "إلغاء الاتصال"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "حول Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "تعمل شبكة Wi-Fi Direct على تفعيل أجهزة Wi-Fi للاتصال مباشرة والطباعة ومشاركة الملفات والمزامنة ومشاركة الشاشة بسهولة وراحة أكبر. ومن خلال الاتصال بالأجهزة التي تدعم شبكة Wi-Fi Direct، يمكن مشاركة المحتوى ومزامنة البيانات والتواصل مع الأصدقاء على المستوى الاجتماعي وتشغيل الألعاب والصوت ومقاطع الفيديو وغير ذلك المزيد باستخدام تطبيقات متعددة"
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "الأجهزة المتصلة"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "الأجهزة المشغولة"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "متصل بجهاز آخر"
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "جاري التوصيل"
+
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "في انتظار الاتصال"
+
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "فشل الاتصال"
+
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "اتصال متعدد"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "فصل الكل"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "فصل"
+
+msgid "IDS_WFD_NOCONTENT"
+msgstr "لم يتم العثور على أجهزة"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection. Continue?"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "اتصال Wi-Fi مباشر"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "هل تريد إلغاء اتصال Wi-Fi Direct؟"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "لا توجد أجهزة"
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "إيقاف"
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "فشل إلغاء التنشيط"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "فشل التنشيط"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "سيتم قطع الاتصال الحالي. متابعة؟"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "الأجهزة المتاحة"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "يمكنك الاتصال بما يصل إلى %d أجهزة في نفس الوقت"
+

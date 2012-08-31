@@ -1,0 +1,114 @@
+msgid "IDS_WFD_CONNECTED"
+msgstr "Ansluten"
+
+msgid "IDS_WFD_CONNECTING"
+msgstr "Ansluter..."
+
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "Kopplar från..."
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "Ansluten"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "Okänt fel"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "PIN-koder matchar inte!"
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "Aktiverar..."
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "%d markerade"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "Deaktiverar..."
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "Kan ej användas"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "Skanna"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "Wi-Fi Direct-enheter"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "Tryck för att ansluta"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "Anslut"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "Avbryt anslutning"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "Om Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "Med Wi-Fi Direct kan Wi-Fi-enheter ansluta direkt, blir det enklare och bekvämare att skriva ut, dela filer, synkronisera och dela skärm. Anslutningar till enheter som stödjer Wi-Fi Direct gör det möjligt att dela innehåll, synkronisera data, interagera med vänner, spela spel, lyssna på ljud och visa video m.m. med en rad olika program"
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "Anslutna enheter"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "Upptagna enheter"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "Ansluten med en annan enhet"
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "Ansluter..."
+
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "Väntar på anslutning"
+
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "Det gick inte att ansluta"
+
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "Multianslutning"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "Koppla från alla"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "Koppla från"
+
+msgid "IDS_WFD_NOCONTENT"
+msgstr "Inga enheter hittades"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Wi-Fi Direct-anslutning"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "Vill du avbryta Wi-Fi Direct-anslutningen?"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "Inga enheter"
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "Stopp"
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "Avaktiveringen misslyckades"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "Aktiveringsfel"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "Aktuell anslutning bryts. Fortsätta?"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "Tillängliga enheter"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "Du kan ansluta upp till %d enheter samtidigt"
+

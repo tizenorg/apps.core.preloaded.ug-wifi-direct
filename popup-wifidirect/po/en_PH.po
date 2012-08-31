@@ -1,0 +1,369 @@
+msgid "IDS_WFD_CONNECTED"
+msgstr "Connected"
+
+msgid "IDS_WFD_CONNECTING"
+msgstr "Connecting..."
+
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "Disconnecting..."
+
+msgid ""
+msgstr "Activating Wi-Fi..."
+
+msgid "IDS_WIFI_POP_DEACTIVATING_WI_FI_ING"
+msgstr "Deactivating Wi-Fi..."
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "Connected"
+
+msgid "IDS_COM_POP_NETWORK_INTERNAL_ERR"
+msgstr "Internal error"
+
+msgid "IDS_COM_POP_RETRIEVED"
+msgstr "Retrieved"
+
+msgid "IDS_COM_POP_RETRIEVING_FAILED"
+msgstr "Retrieving failed"
+
+msgid "IDS_COM_SK_CANCEL"
+msgstr "Cancel"
+
+msgid "IDS_ST_BODY_INTERNAL_ERROR"
+msgstr "Internal error"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "Unknown error"
+
+msgid "IDS_COM_POP_NETWORK_ERROR"
+msgstr "Network error"
+
+msgid "IDS_COM_BODY_NO_SEARCH_RESULTS"
+msgstr "No search results"
+
+msgid "IDS_COM_POP_SEARCHING"
+msgstr "Searching..."
+
+msgid "IDS_WIFI_POP_DISCONNECTING_FAILED"
+msgstr "Disconnecting failed"
+
+msgid "IDS_ST_BODY_ENTER_NEW_PASSWORD"
+msgstr "Enter new password"
+
+msgid "IDS_COM_POP_UNKNOWN_ERROR_UNABLE_TO_LAUNCH_APPLICATION"
+msgstr "Unknown error. Unable to launch application"
+
+msgid "IDS_COM_POP_ACCEPT"
+msgstr "Accept"
+
+msgid "IDS_COM_POP_CONNECTING"
+msgstr "Connecting..."
+
+msgid "IDS_COM_POP_ERROR"
+msgstr "Error"
+
+msgid "IDS_COM_POP_REJECT"
+msgstr "Reject"
+
+msgid "IDS_COM_POP_REJECTED"
+msgstr "Rejected"
+
+msgid "IDS_COM_BODY_SELECT_ALL"
+msgstr "Select all"
+
+msgid "IDS_COM_POP_FAILED"
+msgstr "Failed"
+
+msgid "IDS_COM_SK_ACCEPT"
+msgstr "Accept"
+
+msgid "IDS_ST_BODY_ENTER_4_TO_8_DIGIT_PIN"
+msgstr "Enter 4 to 8 digit PIN"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "PINs don't match!"
+
+msgid "IDS_ST_POP_YES"
+msgstr "Yes"
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "Activating..."
+
+msgid "IDS_COM_POP_DEACTIVATED"
+msgstr "Deactivated"
+
+msgid "IDS_COM_SK_OK"
+msgstr "OK"
+
+msgid "IDS_COM_SK_YES"
+msgstr "Yes"
+
+msgid "IDS_WIFI_HEADER_MOBILE_HOTSPOT_VZW"
+msgstr "Mobile Hotspot"
+
+msgid "IDS_ST_BODY_ENTER_CURRENT_PASSWORD"
+msgstr "Enter current password"
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "%d selected"
+
+msgid "IDS_ST_POP_SEARCHING_ING"
+msgstr "Searching..."
+
+msgid "IDS_COM_POP_NOTHING_SELECTED"
+msgstr "Nothing selected"
+
+msgid "IDS_COM_OPT1_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_COM_POP_DISCONNECTED"
+msgstr "Disconnected"
+
+msgid "IDS_WIFI_MBODY_MOBILE_HOTSPOT_VZW"
+msgstr "Mobile Hotspot"
+
+msgid "IDS_WIFI_BODY_IP_ADDRESS"
+msgstr "IP address"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "Deactivating..."
+
+msgid "IDS_COM_POP_UNEXPECTED_ERROR"
+msgstr "Unexpected error"
+
+msgid "IDS_COM_POP_NETWORK_CONNECTION_ERROR"
+msgstr "Network connection error"
+
+msgid "IDS_COM_BODY_OPERATION_FAILED"
+msgstr "Operation failed"
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "Not supported"
+
+msgid "IDS_COM_POP_UNSUPPORTED"
+msgstr "Unsupported"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_COM_POP_ACCEPTED"
+msgstr "Accepted"
+
+msgid "IDS_WIFI_BODY_MAC_ADDRESS"
+msgstr "MAC address"
+
+msgid "IDS_WIFI_POP_AUTOMATIC_CONNECTION_NETWORK_WILL_DISABLED_CONTINUE_Q_MSG"
+msgstr "Automatic connection to this network will be disabled. Continue?"
+
+msgid "IDS_COM_POP_PROGRESSING_ING"
+msgstr "In progress..."
+
+msgid "IDS_WIFI_BODY_CONNECT"
+msgstr "Connect"
+
+msgid "IDS_WIFI_HEADER_WI_FI"
+msgstr "Wi-Fi"
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "Scan"
+
+msgid "IDS_WIFI_SK3_BACK"
+msgstr "Back"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "Wi-Fi Direct devices"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "Tap to connect"
+
+msgid "IDS_WIFI_SK2_MULTI_CONNECT"
+msgstr "Multi-connect"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "Connect"
+
+msgid "IDS_WIFI_OPT_MYNETWORKS_DISCONNECT"
+msgstr "Disconnect"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "Cancel connection"
+
+msgid "IDS_COM_SK_CANCEL_A"
+msgstr "Cancel"
+
+msgid "IDS_ST_HEADER_ACTIVATION"
+msgstr "Activation"
+
+msgid "IDS_COM_SK_CANCEL_LITE"
+msgstr "Cancel"
+
+msgid "IDS_ST_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WIFI_BODY_WI_FI"
+msgstr "Wi-Fi"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Cancel"
+
+msgid "IDS_WIFI_BUTTON_CANCEL"
+msgstr "Cancel"
+
+msgid "IDS_WIFI_BODY_ALLSHARE_CAST"
+msgstr "AllShare Cast"
+
+msgid "IDS_WIFI_POP_MOBILEACCESSSERVICE_ACTIVATING_ING"
+msgstr "Activating..."
+
+msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_CONNECTION"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "About Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "Wi-Fi Direct enables Wi-Fi devices to connect directly, making printing, file sharing, synchronizing, and screen sharing much simpler and more convenient. Connecting to devices that support Wi-Fi Direct makes it possible to share your content, synchronize your data, socialize with friends, play games, audio, videos, and more, using various applications."
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "Connected devices"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "Busy devices"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "Connected with another device"
+
+msgid "IDS_WIFI_POP_AP_DISCONNECTING_ING"
+msgstr "Disconnecting..."
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "Connecting..."
+
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "Waiting for connection"
+
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "Failed to connect"
+
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "Multi-connect"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "Disconnect all"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "Disconnect"
+
+msgid "IDS_WFD_NOCONTENT"
+msgstr "No devices found"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "Disable Wi-Fi Direct after use"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_ABB"
+msgstr "Disable Wi-Fi Direct after use"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY"
+msgstr "Disable Wi-Fi Direct after use to save battery"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY_ABB"
+msgstr "Disable Wi-Fi Direct after use to save battery"
+
+msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES"
+msgstr "Scan for Wi-Fi Direct devices"
+
+msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES_CURRENT_NETWORK_WILL_BE_DISCONNECTED"
+msgstr "Scan for Wi-Fi Direct devices. Current network will be disconnected"
+
+msgid "IDS_WIFI_BODY_SEARCH_FOR_WI_FI_DIRECT_DEVICES_OR_SEARCH_FOR_DEVICES_ON_OTHER_WI_FI_NETWORKS"
+msgstr "Search for Wi-Fi direct devices or search for devices on other Wi-Fi networks"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection. Continue?"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_CONNECTED"
+msgstr "Wi-Fi Direct connected"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Wi-Fi Direct connection"
+
+msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_SETTINGS"
+msgstr "Wi-Fi Direct settings"
+
+msgid "IDS_WIFI_MBODY_CONFIGURE_WI_FI_DIRECT"
+msgstr "Configure Wi-Fi Direct"
+
+msgid "IDS_WIFI_MBODY_DISCONNECT_WI_FI_DIRECT"
+msgstr "Disconnect Wi-Fi Direct"
+
+msgid "IDS_WIFI_MBODY_WI_FI_DIRECT_STATUS"
+msgstr "Wi-Fi Direct status"
+
+msgid "IDS_WIFI_OPT1_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "Cancel Wi-Fi Direct connection?"
+
+msgid "IDS_WIFI_POP_CONNECTING_TO_WI_FI_NETWORK_WILL_DISCONNECT_DEVICE_CONNECTED_VIA_WI_FI_DIRECT"
+msgstr "Connecting to Wi-Fi network will disconnect device connected via Wi-Fi Direct"
+
+msgid "IDS_WIFI_POP_CONNECT_TO_OTHER_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "Connect to other devices via Wi-Fi Direct"
+
+msgid "IDS_WIFI_POP_DISABLE_MOBILE_AP_TO_USE_WI_FI_DIRECT_Q"
+msgstr "Disable mobile AP to use Wi-Fi Direct?"
+
+msgid "IDS_WIFI_POP_DISCONNECT_CURRENT_WI_FI_DIRECT_DEVICE_TO_SEARCH_NETWORKS"
+msgstr "Disconnect current Wi-Fi Direct device to search networks"
+
+msgid "IDS_WIFI_POP_ENABLING_WI_FI_DIRECT_WILL_TURN_OFF_WI_FI_AND_DISABLE_THE_PORTABLE_WI_FI_HOTSPOT"
+msgstr "Enabling Wi-Fi Direct will turn off Wi-Fi and disable the portable Wi-Fi hotspot"
+
+msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISABLE_PORTABLE_WI_FI_HOTSPOT"
+msgstr "Using Wi-Fi Direct will disable portable Wi-Fi hotspot"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_ALREADY_IN_USE_TRY_LATER"
+msgstr "Wi-Fi Direct already in use. Try later"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_CONNECTION_REQUEST_AUTOMATICALLY_DENIED_TO_CONNECT_TURN_OFF_ALLSHARE_CAST"
+msgstr "Wi-Fi Direct connection request automatically denied. To connect, turn off AllShare Cast"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_WILL_BE_DISCONNECTED_CONTINUE_Q"
+msgstr "Wi-Fi Direct will be disconnected. Continue?"
+
+msgid "IDS_WIFI_POP_WI_FI_IS_DISCONNECTED_WHILE_WI_FI_DIRECT_CONNECTS"
+msgstr "Wi-Fi is disconnected while Wi-Fi Direct connects"
+
+msgid "IDS_WIFI_SK1_SEARCH_FOR_WI_FI_DIRECT_DEVICES"
+msgstr "Search for Wi-Fi Direct devices"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "No devices"
+
+msgid "IDS_WIFI_SK4_SCAN"
+msgstr "Scan"
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "Stop"
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "Deactivation failed"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "Activation failed"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "Current connection will be disconnected. Continue?"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "Available devices"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "You can connect up to %d devices at the same time"
+

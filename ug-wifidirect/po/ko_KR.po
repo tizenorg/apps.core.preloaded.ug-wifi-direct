@@ -1,89 +1,117 @@
-msgid "IDS_WFD_HEADER_WIFI_DIRECT"
-msgstr "Wi-Fi Direct"
+msgid "IDS_WFD_CONNECTED"
+msgstr "연결되었습니다"
 
-msgid "IDS_WFD_BODY_DEACTIVATING"
-msgstr "Wi-Fi Direct 끄는 중..."
+msgid "IDS_WFD_CONNECTING"
+msgstr "연결 중..."
 
-msgid "IDS_WFD_BODY_ACTIVATING"
-msgstr "Wi-Fi Direct 켜는 중..."
-
-msgid "IDS_WFD_BODY_SCANNING"
-msgstr "검색 중..."
-
-msgid "IDS_WFD_BODY_ACTIVATED"
-msgstr "Wi-Fi Direct가 켜졌습니다."
-
-msgid "IDS_WFD_BODY_DEVICE_NAME"
-msgstr "장치명"
-
-msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
-msgstr "사용 가능한 장치들"
-
-msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
-msgstr "Wi-Fi Direct 장치들"
-
-msgid "IDS_WFD_BODY_NO_DEVICES"
-msgstr "장치가 없습니다."
-
-msgid "IDS_WFD_BODY_HELP"
-msgstr "도움말"
-
-msgid "IDS_WFD_POP_CONNECTING"
-msgstr "연결중..."
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "연결을 끊는 중..."
 
 msgid "IDS_WFD_POP_CONNECTED"
-msgstr "연결되었습니다."
+msgstr "연결되었습니다"
 
-msgid "IDS_WFD_BUTTON_CONNECT"
-msgstr "Connect"
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "알 수 없는 오류가 발생하였습니다"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "PIN이 일치하지 않습니다"
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "실행 중..."
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "%d개 선택"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "해제 중..."
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "사용할 수 없습니다"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi Direct"
 
 msgid "IDS_WFD_BUTTON_SCAN"
 msgstr "검색"
 
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "Wi-Fi Direct 기기"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "연결하려면 누르세요"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "연결"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "연결 취소"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "Wi-Fi Direct 정보"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "Wi-Fi Direct는 Wi-Fi 기기에 직접 연결하여 더욱 간단하고 편리하게 인쇄, 파일 공유, 동기화, 화면 공유를 할 수 있게 해줍니다. Wi-Fi Direct를 지원하는 기기에 연결하면 컨텐츠 공유, 데이터 동기화, 친구와 친목 도모, 게임하기, 오디오, 동영상 등 다양한 애플리케이션을 이용할 수 있습니다."
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "연결된 기기"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "사용 중인 기기"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "다른 기기 연결됨"
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "연결 중..."
+
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "연결 대기 중"
+
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "연결에 실패하였습니다"
+
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "다중 연결"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "모든 연결 끊기"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "연결 해제"
+
+msgid "IDS_WFD_NOCONTENT"
+msgstr "검색된 기기가 없습니다"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "Wi-Fi Direct를 사용하면 현재 사용 중인 Wi-Fi 연결이 끊어집니다. 계속하시겠습니까?"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "Wi-Fi Direct를 사용하면 현재 사용 중인 Wi-Fi 테더링이 연결 해제됩니다. 계속하시겠습니까?"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Wi-Fi Direct 연결"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "Wi-Fi Direct 연결을 취소할까요?"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "기기 목록이 없습니다"
+
 msgid "IDS_WFD_BUTTON_STOPSCAN"
 msgstr "중지"
 
-msgid "IDS_WFD_POP_ACTIVATE_FAIL"
-msgstr "Wi-Fi Direct를 켜지 못했습니다."
-
 msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
-msgstr "Wi-Fi Direct를 끄지 못했습니다."
+msgstr "연결을 끊지 못하였습니다"
 
-msgid "IDS_WFD_POP_CONNECTING_TIMEOUT"
-msgstr "연결시간 초과"
-
-msgid "IDS_WFD_POP_AUTH_FAIL"
-msgstr "인증 실패"
-
-msgid "IDS_WFD_POP_LINK_FAIL"
-msgstr "연결 생성 실패"
-
-msgid "IDS_WFD_POP_UNKNOWN_ERROR"
-msgstr "알수 없는 오류"
-
-msgid "IDS_WFD_POP_WIFI_OFF"
-msgstr "Wi-Fi 연결이 끊어집니다.<br>계속하시겠습니까?"
-
-msgid "IDS_WFD_POP_HOTSPOT_OFF"
-msgstr "Wi-Fi 핫스팟이 끊어집니다.<br>계속하시겠습니까?"
-
-msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
-msgstr "Wi-Fi Direct Service를 지원하지 않는 장치입니다."
-
-msgid "IDS_WFD_POP_PROBLEM_WITH_WFD"
-msgstr "Wi-Fi Direct Service에 문제가 있습니다."
-
-msgid "IDS_WFD_POP_CANCEL_CONNECT"
-msgstr "Cancel Wi-Fi direct connection.<br>Continue?"
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "실행하지 못하였습니다"
 
 msgid "IDS_WFD_POP_DISCONNECT"
-msgstr "Current connect wil be disconnected."
+msgstr "사용 중인 네트워크 연결이 끊어집니다. 계속할까요?"
 
-msgid "IDS_WFD_POP_SCAN_AGAIN"
-msgstr "To start new scanning,<br>current connection will be<br>ended.Continue?"
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "사용할 수 있는 기기"
 
 msgid "IDS_WFD_POP_MULTI_CONNECT"
-msgstr "You can connect up to<br>%d devices at the same time."
+msgstr "동시에 %d개의 기기까지 연결할 수 있습니다"
 
-msgid "IDS_WFD_POP_WARN_BUSY_DEVICE"
-msgstr "Unavailable device. Device is connected to another device."

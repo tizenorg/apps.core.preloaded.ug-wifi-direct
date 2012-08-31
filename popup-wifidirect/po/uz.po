@@ -1,0 +1,369 @@
+msgid "IDS_WFD_CONNECTED"
+msgstr "Ulangan"
+
+msgid "IDS_WFD_CONNECTING"
+msgstr "Ulanmoqda..."
+
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "Uzilmoqda..."
+
+msgid ""
+msgstr "Wi-Fi faollashtirilmoqda..."
+
+msgid "IDS_WIFI_POP_DEACTIVATING_WI_FI_ING"
+msgstr "Wi-Fi o‘chirilmoqda..."
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "Ulangan"
+
+msgid "IDS_COM_POP_NETWORK_INTERNAL_ERR"
+msgstr "Ichki xato"
+
+msgid "IDS_COM_POP_RETRIEVED"
+msgstr "Qayta olindi"
+
+msgid "IDS_COM_POP_RETRIEVING_FAILED"
+msgstr "Qayta olish bajarilmadi"
+
+msgid "IDS_COM_SK_CANCEL"
+msgstr "Bekor q."
+
+msgid "IDS_ST_BODY_INTERNAL_ERROR"
+msgstr "Ichki xato"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "Noma’lum xato"
+
+msgid "IDS_COM_POP_NETWORK_ERROR"
+msgstr "Tarmoq xatosi"
+
+msgid "IDS_COM_BODY_NO_SEARCH_RESULTS"
+msgstr "Qidirish natijalari yo‘q"
+
+msgid "IDS_COM_POP_SEARCHING"
+msgstr "Qidirilmoqda..."
+
+msgid "IDS_WIFI_POP_DISCONNECTING_FAILED"
+msgstr "Uzib bo‘lmadi"
+
+msgid "IDS_ST_BODY_ENTER_NEW_PASSWORD"
+msgstr "Yangi parol kiriting"
+
+msgid "IDS_COM_POP_UNKNOWN_ERROR_UNABLE_TO_LAUNCH_APPLICATION"
+msgstr "Unknown error. Unable to launch application"
+
+msgid "IDS_COM_POP_ACCEPT"
+msgstr "Qabul qilish"
+
+msgid "IDS_COM_POP_CONNECTING"
+msgstr "Ulanmoqda..."
+
+msgid "IDS_COM_POP_ERROR"
+msgstr "Xato"
+
+msgid "IDS_COM_POP_REJECT"
+msgstr "Rad etish"
+
+msgid "IDS_COM_POP_REJECTED"
+msgstr "Rad etildi"
+
+msgid "IDS_COM_BODY_SELECT_ALL"
+msgstr "Barchasini tanlash"
+
+msgid "IDS_COM_POP_FAILED"
+msgstr "Xato"
+
+msgid "IDS_COM_SK_ACCEPT"
+msgstr "Qabul qil"
+
+msgid "IDS_ST_BODY_ENTER_4_TO_8_DIGIT_PIN"
+msgstr "4-8 xonali PIN-kod kirit."
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "PINs don't match!"
+
+msgid "IDS_ST_POP_YES"
+msgstr "Ha"
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "Faollashtirilmoqda..."
+
+msgid "IDS_COM_POP_DEACTIVATED"
+msgstr "O‘chirilgan"
+
+msgid "IDS_COM_SK_OK"
+msgstr "OK"
+
+msgid "IDS_COM_SK_YES"
+msgstr "Ha"
+
+msgid "IDS_WIFI_HEADER_MOBILE_HOTSPOT_VZW"
+msgstr "Mobile Hotspot"
+
+msgid "IDS_ST_BODY_ENTER_CURRENT_PASSWORD"
+msgstr "Enter current password"
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "%d tanlangan"
+
+msgid "IDS_ST_POP_SEARCHING_ING"
+msgstr "Qidirilmoqda..."
+
+msgid "IDS_COM_POP_NOTHING_SELECTED"
+msgstr "Hech narsa tanlanmagan"
+
+msgid "IDS_COM_OPT1_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_COM_POP_DISCONNECTED"
+msgstr "Uzilgan"
+
+msgid "IDS_WIFI_MBODY_MOBILE_HOTSPOT_VZW"
+msgstr "Mobile Hotspot"
+
+msgid "IDS_WIFI_BODY_IP_ADDRESS"
+msgstr "IP-manzil"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "O‘chirilmoqda..."
+
+msgid "IDS_COM_POP_UNEXPECTED_ERROR"
+msgstr "Kutilmagan xato"
+
+msgid "IDS_COM_POP_NETWORK_CONNECTION_ERROR"
+msgstr "Tarmoq ulanishi xatosi"
+
+msgid "IDS_COM_BODY_OPERATION_FAILED"
+msgstr "Operatsiya bajarilmadi"
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "Qo‘llab-quvvatlanmaydi"
+
+msgid "IDS_COM_POP_UNSUPPORTED"
+msgstr "Qo‘llab-quvvatlanmaydigan"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_COM_POP_ACCEPTED"
+msgstr "Qabul qilindi"
+
+msgid "IDS_WIFI_BODY_MAC_ADDRESS"
+msgstr "MAC manzili"
+
+msgid "IDS_WIFI_POP_AUTOMATIC_CONNECTION_NETWORK_WILL_DISABLED_CONTINUE_Q_MSG"
+msgstr "Ushbu tarmoqqa avtomatik ulanish o‘chiriladi. Davom ettirilsinmi?"
+
+msgid "IDS_COM_POP_PROGRESSING_ING"
+msgstr "Bajarilmoqda..."
+
+msgid "IDS_WIFI_BODY_CONNECT"
+msgstr "Ulanish"
+
+msgid "IDS_WIFI_HEADER_WI_FI"
+msgstr "Wi-Fi"
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "Scan"
+
+msgid "IDS_WIFI_SK3_BACK"
+msgstr "Orqaga"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "Wi-Fi Direct qurilmalari"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "Ulanish uchun cherting"
+
+msgid "IDS_WIFI_SK2_MULTI_CONNECT"
+msgstr "Ko‘p-ulanish"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "Ulanish"
+
+msgid "IDS_WIFI_OPT_MYNETWORKS_DISCONNECT"
+msgstr "Uzish"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "Ulanishni bekor qilish"
+
+msgid "IDS_COM_SK_CANCEL_A"
+msgstr "Bek/q."
+
+msgid "IDS_ST_HEADER_ACTIVATION"
+msgstr "Faollashtirish"
+
+msgid "IDS_COM_SK_CANCEL_LITE"
+msgstr "Bekor q."
+
+msgid "IDS_ST_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WIFI_BODY_WI_FI"
+msgstr "Wi-Fi"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Bek/q."
+
+msgid "IDS_WIFI_BUTTON_CANCEL"
+msgstr "Bekor q."
+
+msgid "IDS_WIFI_BODY_ALLSHARE_CAST"
+msgstr "AllShare Cast"
+
+msgid "IDS_WIFI_POP_MOBILEACCESSSERVICE_ACTIVATING_ING"
+msgstr "Faollashtirilmoqda..."
+
+msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_CONNECTION"
+msgstr "Wi-Fi Directdan foydalanish joriy Wi-Fi ulanishini uzadi"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "Wi-Fi Direct haqida"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "Wi-Fi Direct to‘g‘ridan-to‘g‘ri ulanish, chop etish, faylni ulashish va ekranni baham ko‘rishni soddaroq va osonroq qilish uchun Wi-Fi qurilmalarini yoqadi. Wi-Fi Directni qo‘llab-quvvatlovchi qurilmalarga ulanish turli ilovalar yordamida tarkibni baham ko‘rish, ma’lumotlarni sinxronlash, do‘stlar bilan suhbatlashish, o‘yinlar o‘ynash, audio, video tomosha qilish va boshq. amalga oshirishingiz mumkin"
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "Ulangan qurilmalar"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "Band qurilmalar"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "Boshqa qurilma bilan ulandi"
+
+msgid "IDS_WIFI_POP_AP_DISCONNECTING_ING"
+msgstr "Uzilmoqda..."
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "Ulanmoqda..."
+
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "Ulanish kutilmoqda"
+
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "Ulanib bo‘lmadi"
+
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "Ko‘p-ulanish"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "Barini uzish"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "Uzish"
+
+msgid "IDS_WFD_NOCONTENT"
+msgstr "Qurilmalar topilmadi"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "Wi-Fi Directdan foydalangandan so‘ng, uni o‘chiring"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_ABB"
+msgstr "Wi-Fi Direct ishlatil so‘ng o‘chir"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY"
+msgstr "Batareya quvvatini tejash uchun, Wi-Fi Directdan foydalangandan so‘ng, uni o‘chiring"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY_ABB"
+msgstr "Batareya tejash u-n Wi-Fi Direct ishl so‘ng o‘chir"
+
+msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES"
+msgstr "Wi-Fi Direct qurilmalarini qidirish"
+
+msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES_CURRENT_NETWORK_WILL_BE_DISCONNECTED"
+msgstr "Wi-Fi Direct qurilmalarini qidirish. Joriy tarmoq uziladi"
+
+msgid "IDS_WIFI_BODY_SEARCH_FOR_WI_FI_DIRECT_DEVICES_OR_SEARCH_FOR_DEVICES_ON_OTHER_WI_FI_NETWORKS"
+msgstr "Wi-Fi Direct qurilmalarini yoki boshqa Wi-Fi tarmoqlardagi qurilmalarni qidirish"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection. Continue?"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_CONNECTED"
+msgstr "Wi-Fi Direct ulandi"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Wi-Fi Direct ulanishi"
+
+msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_SETTINGS"
+msgstr "Wi-Fi Direct parametrlari"
+
+msgid "IDS_WIFI_MBODY_CONFIGURE_WI_FI_DIRECT"
+msgstr "Wi-Fi Directni sozlash"
+
+msgid "IDS_WIFI_MBODY_DISCONNECT_WI_FI_DIRECT"
+msgstr "Wi-Fi Directni uzish"
+
+msgid "IDS_WIFI_MBODY_WI_FI_DIRECT_STATUS"
+msgstr "Wi-Fi Direct holati"
+
+msgid "IDS_WIFI_OPT1_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "Wi-Fi Direct ulanishi bekor qilinsinmi?"
+
+msgid "IDS_WIFI_POP_CONNECTING_TO_WI_FI_NETWORK_WILL_DISCONNECT_DEVICE_CONNECTED_VIA_WI_FI_DIRECT"
+msgstr "Wi-Fi tarmoqqa ulanish Wi-Fi Direct orqali ulangan qurilmani uzadi"
+
+msgid "IDS_WIFI_POP_CONNECT_TO_OTHER_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct orqali boshqa qurilmalarga ulanish"
+
+msgid "IDS_WIFI_POP_DISABLE_MOBILE_AP_TO_USE_WI_FI_DIRECT_Q"
+msgstr "Wi-Fi Directdan foydalanish uchun Mobile AP o‘chirilsinmi?"
+
+msgid "IDS_WIFI_POP_DISCONNECT_CURRENT_WI_FI_DIRECT_DEVICE_TO_SEARCH_NETWORKS"
+msgstr "Tarmoqlarni qidirish uchun, joriy Wi-Fi Direct qurilmasini uzing"
+
+msgid "IDS_WIFI_POP_ENABLING_WI_FI_DIRECT_WILL_TURN_OFF_WI_FI_AND_DISABLE_THE_PORTABLE_WI_FI_HOTSPOT"
+msgstr "Wi-Fi Directni yoqish Wi-Fi hamda portativ Wi-Fi faol nuqtani o‘chiradi"
+
+msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISABLE_PORTABLE_WI_FI_HOTSPOT"
+msgstr "Wi-Fi Directdan foydalanish portativ Wi-Fi faol nuqtani o‘chiradi"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_ALREADY_IN_USE_TRY_LATER"
+msgstr "Wi-Fi Direct hozirda ishlatilmoqda. Keyinroq urinib ko‘ring"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_CONNECTION_REQUEST_AUTOMATICALLY_DENIED_TO_CONNECT_TURN_OFF_ALLSHARE_CAST"
+msgstr "Wi-Fi Direct ulanish so‘rovi avtomatik ravishda rad etildi. Ulanish uchun, AllShare Castni o‘chiring"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_WILL_BE_DISCONNECTED_CONTINUE_Q"
+msgstr "Wi-Fi Direct will be disconnected. Continue?"
+
+msgid "IDS_WIFI_POP_WI_FI_IS_DISCONNECTED_WHILE_WI_FI_DIRECT_CONNECTS"
+msgstr "Wi-Fi Direct ulanayotganda, Wi-Fi uzildi"
+
+msgid "IDS_WIFI_SK1_SEARCH_FOR_WI_FI_DIRECT_DEVICES"
+msgstr "Wi-Fi Direct qurilmalarini qidirish"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "Qurilmalar yo‘q"
+
+msgid "IDS_WIFI_SK4_SCAN"
+msgstr "Qidirish"
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "To‘xtatish"
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "O‘chirib bo‘lmadi"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "Faollashtirish bajarilmadi"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "Joriy ulanish uziladi. Davom ettirilsinmi?"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "Mavjud qurilmalar"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "Bir vaqtda ko‘pi bilan %d qurilma ulanishi mumkin"
+

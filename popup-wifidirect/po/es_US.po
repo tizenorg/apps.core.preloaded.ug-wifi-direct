@@ -1,0 +1,369 @@
+msgid "IDS_WFD_CONNECTED"
+msgstr "Conectado"
+
+msgid "IDS_WFD_CONNECTING"
+msgstr "Conectando..."
+
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "Desconectando..."
+
+msgid ""
+msgstr "Activando Wi-Fi..."
+
+msgid "IDS_WIFI_POP_DEACTIVATING_WI_FI_ING"
+msgstr "Desactivando Wi-Fi..."
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "Conectado"
+
+msgid "IDS_COM_POP_NETWORK_INTERNAL_ERR"
+msgstr "Error interno"
+
+msgid "IDS_COM_POP_RETRIEVED"
+msgstr "Recuperado"
+
+msgid "IDS_COM_POP_RETRIEVING_FAILED"
+msgstr "Error al recuperar"
+
+msgid "IDS_COM_SK_CANCEL"
+msgstr "Cancelar"
+
+msgid "IDS_ST_BODY_INTERNAL_ERROR"
+msgstr "Error interno"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "Error desconocido"
+
+msgid "IDS_COM_POP_NETWORK_ERROR"
+msgstr "Error de red"
+
+msgid "IDS_COM_BODY_NO_SEARCH_RESULTS"
+msgstr "No se han encontrado resultados"
+
+msgid "IDS_COM_POP_SEARCHING"
+msgstr "Buscando..."
+
+msgid "IDS_WIFI_POP_DISCONNECTING_FAILED"
+msgstr "Error en desconexión"
+
+msgid "IDS_ST_BODY_ENTER_NEW_PASSWORD"
+msgstr "Introducir nueva contraseña"
+
+msgid "IDS_COM_POP_UNKNOWN_ERROR_UNABLE_TO_LAUNCH_APPLICATION"
+msgstr "Error desconocido. No se puede iniciar aplicación"
+
+msgid "IDS_COM_POP_ACCEPT"
+msgstr "Aceptar"
+
+msgid "IDS_COM_POP_CONNECTING"
+msgstr "Conectando..."
+
+msgid "IDS_COM_POP_ERROR"
+msgstr "Error"
+
+msgid "IDS_COM_POP_REJECT"
+msgstr "Rechazar"
+
+msgid "IDS_COM_POP_REJECTED"
+msgstr "Rechazado"
+
+msgid "IDS_COM_BODY_SELECT_ALL"
+msgstr "Seleccionar todo"
+
+msgid "IDS_COM_POP_FAILED"
+msgstr "Error"
+
+msgid "IDS_COM_SK_ACCEPT"
+msgstr "Aceptar"
+
+msgid "IDS_ST_BODY_ENTER_4_TO_8_DIGIT_PIN"
+msgstr "Debe tener entre 4 y 8 dígitos"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "Los PIN no coinciden"
+
+msgid "IDS_ST_POP_YES"
+msgstr "Sí"
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "Activando..."
+
+msgid "IDS_COM_POP_DEACTIVATED"
+msgstr "Desactivado"
+
+msgid "IDS_COM_SK_OK"
+msgstr "Aceptar"
+
+msgid "IDS_COM_SK_YES"
+msgstr "Sí"
+
+msgid "IDS_WIFI_HEADER_MOBILE_HOTSPOT_VZW"
+msgstr "Mobile Hotspot"
+
+msgid "IDS_ST_BODY_ENTER_CURRENT_PASSWORD"
+msgstr "Introducir contraseña actual"
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "%d seleccionado(s)"
+
+msgid "IDS_ST_POP_SEARCHING_ING"
+msgstr "Buscando..."
+
+msgid "IDS_COM_POP_NOTHING_SELECTED"
+msgstr "No se ha seleccionado nada"
+
+msgid "IDS_COM_OPT1_WI_FI_DIRECT"
+msgstr "Wi-Fi Directo"
+
+msgid "IDS_COM_POP_DISCONNECTED"
+msgstr "Desconectado"
+
+msgid "IDS_WIFI_MBODY_MOBILE_HOTSPOT_VZW"
+msgstr "Mobile Hotspot"
+
+msgid "IDS_WIFI_BODY_IP_ADDRESS"
+msgstr "Dirección IP"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "Desactivando…"
+
+msgid "IDS_COM_POP_UNEXPECTED_ERROR"
+msgstr "Error inesperado"
+
+msgid "IDS_COM_POP_NETWORK_CONNECTION_ERROR"
+msgstr "Error de conexión de red"
+
+msgid "IDS_COM_BODY_OPERATION_FAILED"
+msgstr "Error de funcionamiento"
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "No soportado"
+
+msgid "IDS_COM_POP_UNSUPPORTED"
+msgstr "No compatible"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi Directo"
+
+msgid "IDS_COM_POP_ACCEPTED"
+msgstr "Aceptado"
+
+msgid "IDS_WIFI_BODY_MAC_ADDRESS"
+msgstr "Dirección MAC"
+
+msgid "IDS_WIFI_POP_AUTOMATIC_CONNECTION_NETWORK_WILL_DISABLED_CONTINUE_Q_MSG"
+msgstr "La conexión automática a esta red se desactivará. ¿Continuar?"
+
+msgid "IDS_COM_POP_PROGRESSING_ING"
+msgstr "Procesando..."
+
+msgid "IDS_WIFI_BODY_CONNECT"
+msgstr "Conectar"
+
+msgid "IDS_WIFI_HEADER_WI_FI"
+msgstr "Wi-Fi"
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "Buscar"
+
+msgid "IDS_WIFI_SK3_BACK"
+msgstr "Atrás"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Directo"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "Dispositivos Wi-Fi Directo"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "Pulse para conectar"
+
+msgid "IDS_WIFI_SK2_MULTI_CONNECT"
+msgstr "Conexión múltiple"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "Conectar"
+
+msgid "IDS_WIFI_OPT_MYNETWORKS_DISCONNECT"
+msgstr "Desconectar"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "Cancelar conexión"
+
+msgid "IDS_COM_SK_CANCEL_A"
+msgstr "Canc."
+
+msgid "IDS_ST_HEADER_ACTIVATION"
+msgstr "Activación"
+
+msgid "IDS_COM_SK_CANCEL_LITE"
+msgstr "Cancelar"
+
+msgid "IDS_ST_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Directo"
+
+msgid "IDS_WIFI_BODY_WI_FI"
+msgstr "Wi-Fi"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Canc."
+
+msgid "IDS_WIFI_BUTTON_CANCEL"
+msgstr "Cancelar"
+
+msgid "IDS_WIFI_BODY_ALLSHARE_CAST"
+msgstr "AllShare Cast"
+
+msgid "IDS_WIFI_POP_MOBILEACCESSSERVICE_ACTIVATING_ING"
+msgstr "Activando..."
+
+msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_CONNECTION"
+msgstr "Al usar Wi-Fi Directo se desconectará la conexión Wi-Fi actual"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "Acerca de Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "Wi-Fi Directo permite conectar directamente dispositivos Wi-Fi, lo que hace más simple y conveniente imprimir, compartir archivos, sincronizar datos y compartir en pantalla. La conexión con dispositivos que admiten Wi-Fi Directo hace que puedas compartir tus contenidos, sincronizar tus datos, socializar con amigos, jugar juegos, reproducir audio o videos, etc., mediante varias aplicaciones"
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "Dispositivos conectados"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "Dispositivos ocupados"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "Conectado con otro dispositivo"
+
+msgid "IDS_WIFI_POP_AP_DISCONNECTING_ING"
+msgstr "Desconectando..."
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "Conectando..."
+
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "Esperando conectarse"
+
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "Error de conexión"
+
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "Conexión múltiple"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "Desconectar todo"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "Desconectar"
+
+msgid "IDS_WFD_NOCONTENT"
+msgstr "No se han encontrado dispositivos"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "Desactivar Wi-Fi Directo después de usar"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_ABB"
+msgstr "Desac. Wi-Fi Directo después de usar"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY"
+msgstr "Desactivar Wi-Fi Directo después de usar para ahorro de la batería"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY_ABB"
+msgstr "Desac. Wi-Fi Directo luego de usar para ahorr. bat."
+
+msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES"
+msgstr "Buscar dispositivos de Wi-Fi Directo"
+
+msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES_CURRENT_NETWORK_WILL_BE_DISCONNECTED"
+msgstr "Buscar dispositivos Wi-Fi Directo. La red actual se desconectará"
+
+msgid "IDS_WIFI_BODY_SEARCH_FOR_WI_FI_DIRECT_DEVICES_OR_SEARCH_FOR_DEVICES_ON_OTHER_WI_FI_NETWORKS"
+msgstr "Buscar dispositivos Wi-Fi directos o dispositivos en otras redes Wi-Fi"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "Al usar Wi-Fi Directo se desconectará la conexión Wi-Fi actual. ¿Continuar?"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "Al usar Wi-Fi Directo se desconectará la redirección de Wi-Fi actual. ¿Continuar?"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_CONNECTED"
+msgstr "Wi-Fi Directo conectado"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Conexión Wi-Fi Directo"
+
+msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_SETTINGS"
+msgstr "Configuración Wi-Fi Directo"
+
+msgid "IDS_WIFI_MBODY_CONFIGURE_WI_FI_DIRECT"
+msgstr "Configurar Wi-Fi Directo"
+
+msgid "IDS_WIFI_MBODY_DISCONNECT_WI_FI_DIRECT"
+msgstr "Desconectar Wi-Fi Directo"
+
+msgid "IDS_WIFI_MBODY_WI_FI_DIRECT_STATUS"
+msgstr "Estado Wi-Fi Directo"
+
+msgid "IDS_WIFI_OPT1_WI_FI_DIRECT"
+msgstr "Wi-Fi Directo"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "¿Desea cancelar la conexión de Wi-Fi Directo?"
+
+msgid "IDS_WIFI_POP_CONNECTING_TO_WI_FI_NETWORK_WILL_DISCONNECT_DEVICE_CONNECTED_VIA_WI_FI_DIRECT"
+msgstr "Al conectarse a una red Wi-Fi se desconectará el dispositivo conectado a través de Wi-Fi Directo"
+
+msgid "IDS_WIFI_POP_CONNECT_TO_OTHER_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "Conectarse a otros dispositivos a través de Wi-Fi Directo"
+
+msgid "IDS_WIFI_POP_DISABLE_MOBILE_AP_TO_USE_WI_FI_DIRECT_Q"
+msgstr "¿Desactivar el punto de acceso móvil para usar Wi-Fi Directo?"
+
+msgid "IDS_WIFI_POP_DISCONNECT_CURRENT_WI_FI_DIRECT_DEVICE_TO_SEARCH_NETWORKS"
+msgstr "Desconectar el dispositivo Wi-Fi Directo actual para buscar redes"
+
+msgid "IDS_WIFI_POP_ENABLING_WI_FI_DIRECT_WILL_TURN_OFF_WI_FI_AND_DISABLE_THE_PORTABLE_WI_FI_HOTSPOT"
+msgstr "La activación de Wi-Fi Directo desactivará la conexión Wi-Fi y la cobertura móvil de Wi-Fi"
+
+msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISABLE_PORTABLE_WI_FI_HOTSPOT"
+msgstr "Al usar Wi-Fi Directo se desactivará la cobertura móvil de Wi-Fi"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_ALREADY_IN_USE_TRY_LATER"
+msgstr "Wi-Fi Directo ya se está utilizando. Inténtalo más tarde"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_CONNECTION_REQUEST_AUTOMATICALLY_DENIED_TO_CONNECT_TURN_OFF_ALLSHARE_CAST"
+msgstr "La solicitud de conexión de Wi-Fi Directo se rechazó automáticamente. Para conectarse, desactive AllShare Cast"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_WILL_BE_DISCONNECTED_CONTINUE_Q"
+msgstr "Wi-Fi Directo se desconectará. ¿Continuar?"
+
+msgid "IDS_WIFI_POP_WI_FI_IS_DISCONNECTED_WHILE_WI_FI_DIRECT_CONNECTS"
+msgstr "El Wi-Fi se desconectará mientras se conecta Wi-Fi Directo"
+
+msgid "IDS_WIFI_SK1_SEARCH_FOR_WI_FI_DIRECT_DEVICES"
+msgstr "Buscar dispositivos Wi-Fi Directo"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "No hay dispositivos"
+
+msgid "IDS_WIFI_SK4_SCAN"
+msgstr "Buscar"
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "Detener"
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "Error en desactivación"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "Error al activar"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "La conexión actual se desconectará. ¿Continuar?"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "Dispositivos disponibles"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "Puedes conectar hasta %d dispositivos al mismo tiempo"
+

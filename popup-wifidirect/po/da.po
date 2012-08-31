@@ -1,0 +1,369 @@
+msgid "IDS_WFD_CONNECTED"
+msgstr "Forbundet"
+
+msgid "IDS_WFD_CONNECTING"
+msgstr "Opretter forbindelse..."
+
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "Afbryder..."
+
+msgid ""
+msgstr "Aktiverer Wi-Fi..."
+
+msgid "IDS_WIFI_POP_DEACTIVATING_WI_FI_ING"
+msgstr "Deaktiverer Wi-Fi..."
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "Forbundet"
+
+msgid "IDS_COM_POP_NETWORK_INTERNAL_ERR"
+msgstr "Intern fejl"
+
+msgid "IDS_COM_POP_RETRIEVED"
+msgstr "Hentet"
+
+msgid "IDS_COM_POP_RETRIEVING_FAILED"
+msgstr "Hentning mislykkedes"
+
+msgid "IDS_COM_SK_CANCEL"
+msgstr "Annuller"
+
+msgid "IDS_ST_BODY_INTERNAL_ERROR"
+msgstr "Intern fejl"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "Ukendt fejl"
+
+msgid "IDS_COM_POP_NETWORK_ERROR"
+msgstr "Netværksfejl"
+
+msgid "IDS_COM_BODY_NO_SEARCH_RESULTS"
+msgstr "Ingen søgeresultater"
+
+msgid "IDS_COM_POP_SEARCHING"
+msgstr "Søger ..."
+
+msgid "IDS_WIFI_POP_DISCONNECTING_FAILED"
+msgstr "Afbrydelse mislykkedes"
+
+msgid "IDS_ST_BODY_ENTER_NEW_PASSWORD"
+msgstr "Angiv ny adgangskode"
+
+msgid "IDS_COM_POP_UNKNOWN_ERROR_UNABLE_TO_LAUNCH_APPLICATION"
+msgstr "Ukendt fejl. Kan ikke starte program"
+
+msgid "IDS_COM_POP_ACCEPT"
+msgstr "Acceptér"
+
+msgid "IDS_COM_POP_CONNECTING"
+msgstr "Opretter forbindelse..."
+
+msgid "IDS_COM_POP_ERROR"
+msgstr "Fejl"
+
+msgid "IDS_COM_POP_REJECT"
+msgstr "Afvis"
+
+msgid "IDS_COM_POP_REJECTED"
+msgstr "Afvist"
+
+msgid "IDS_COM_BODY_SELECT_ALL"
+msgstr "Vælg alle"
+
+msgid "IDS_COM_POP_FAILED"
+msgstr "Mislykkedes"
+
+msgid "IDS_COM_SK_ACCEPT"
+msgstr "Acceptér"
+
+msgid "IDS_ST_BODY_ENTER_4_TO_8_DIGIT_PIN"
+msgstr "Indtast 4- til 8-cifret PIN-kode"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "PIN-koder stemmer ikke overens!"
+
+msgid "IDS_ST_POP_YES"
+msgstr "Ja"
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "Aktiverer ..."
+
+msgid "IDS_COM_POP_DEACTIVATED"
+msgstr "Deaktiveret"
+
+msgid "IDS_COM_SK_OK"
+msgstr "OK"
+
+msgid "IDS_COM_SK_YES"
+msgstr "Ja"
+
+msgid "IDS_WIFI_HEADER_MOBILE_HOTSPOT_VZW"
+msgstr "Mobile Hotspot"
+
+msgid "IDS_ST_BODY_ENTER_CURRENT_PASSWORD"
+msgstr "Indtast aktuel adgangskode"
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "%d valgt"
+
+msgid "IDS_ST_POP_SEARCHING_ING"
+msgstr "Søger ..."
+
+msgid "IDS_COM_POP_NOTHING_SELECTED"
+msgstr "Intet er valgt"
+
+msgid "IDS_COM_OPT1_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_COM_POP_DISCONNECTED"
+msgstr "Afbrudt"
+
+msgid "IDS_WIFI_MBODY_MOBILE_HOTSPOT_VZW"
+msgstr "Mobile Hotspot"
+
+msgid "IDS_WIFI_BODY_IP_ADDRESS"
+msgstr "IP-adresse"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "Deaktiverer..."
+
+msgid "IDS_COM_POP_UNEXPECTED_ERROR"
+msgstr "Uventet fejl"
+
+msgid "IDS_COM_POP_NETWORK_CONNECTION_ERROR"
+msgstr "Netværksforbindelsesfejl"
+
+msgid "IDS_COM_BODY_OPERATION_FAILED"
+msgstr "Handlingen mislykkedes"
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "Understøttes ikke"
+
+msgid "IDS_COM_POP_UNSUPPORTED"
+msgstr "Understøttes ikke"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_COM_POP_ACCEPTED"
+msgstr "Accepteret"
+
+msgid "IDS_WIFI_BODY_MAC_ADDRESS"
+msgstr "MAC-adresse"
+
+msgid "IDS_WIFI_POP_AUTOMATIC_CONNECTION_NETWORK_WILL_DISABLED_CONTINUE_Q_MSG"
+msgstr "Automatisk forbindelse til dette netværk deaktiveres. Vil du fortsætte?"
+
+msgid "IDS_COM_POP_PROGRESSING_ING"
+msgstr "I gang..."
+
+msgid "IDS_WIFI_BODY_CONNECT"
+msgstr "Tilslut"
+
+msgid "IDS_WIFI_HEADER_WI_FI"
+msgstr "Wi-Fi"
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "Scanning"
+
+msgid "IDS_WIFI_SK3_BACK"
+msgstr "Tilbage"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "Wi-Fi Direct-enheder"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "Rør for at tilslutte"
+
+msgid "IDS_WIFI_SK2_MULTI_CONNECT"
+msgstr "Multi-forbind"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "Forbind"
+
+msgid "IDS_WIFI_OPT_MYNETWORKS_DISCONNECT"
+msgstr "Afbryd"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "Annuller forbindelse"
+
+msgid "IDS_COM_SK_CANCEL_A"
+msgstr "Afbr."
+
+msgid "IDS_ST_HEADER_ACTIVATION"
+msgstr "Aktivering"
+
+msgid "IDS_COM_SK_CANCEL_LITE"
+msgstr "Annuller"
+
+msgid "IDS_ST_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WIFI_BODY_WI_FI"
+msgstr "Wi-Fi"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Afbr."
+
+msgid "IDS_WIFI_BUTTON_CANCEL"
+msgstr "Annuller"
+
+msgid "IDS_WIFI_BODY_ALLSHARE_CAST"
+msgstr "AllShare Cast"
+
+msgid "IDS_WIFI_POP_MOBILEACCESSSERVICE_ACTIVATING_ING"
+msgstr "Aktiverer ..."
+
+msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_CONNECTION"
+msgstr "Brug af Wi-Fi Direct frakobler aktuel Wi-Fi-forbindelse"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "Om Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "Wi-Fi Direct gør det muligt for Wi-Fi-enheder at tilslutte direkte og gøre udskrivning, fildeling, synkronisering og skærmdeling meget enklere og mere praktisk. Tilslutning til enheder, der understøtter Wi-Fi Direct, gør det muligt at dele dit indhold, synkronisere dine data, være social med venner, spille spil, lyd, video og mere ved hjælp af forskellige programmer"
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "Tilsluttede enheder"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "Optagne enheder"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "Sluttet til en anden enhed"
+
+msgid "IDS_WIFI_POP_AP_DISCONNECTING_ING"
+msgstr "Afbryder..."
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "Opretter forbindelse..."
+
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "Venter på forbindelse"
+
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "Kunne ikke tilslutte"
+
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "Multi-forbind"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "Frakobl alle"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "Afbryd"
+
+msgid "IDS_WFD_NOCONTENT"
+msgstr "Ingen enheder fundet"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "Deaktivér Wi-Fi Direct efter brug"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_ABB"
+msgstr "Deaktivér Wi-Fi Direct efter brug"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY"
+msgstr "Deaktivér Wi-Fi Direct efter brug for at spare batteri"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY_ABB"
+msgstr "Deak. Wi-Fi Direct efter brug for at spare batteri"
+
+msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES"
+msgstr "Søg efter Wi-Fi Direct-enheder"
+
+msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES_CURRENT_NETWORK_WILL_BE_DISCONNECTED"
+msgstr "Scan efter Wi-Fi Direct-enheder. Aktuelt netværk bliver frakoblet"
+
+msgid "IDS_WIFI_BODY_SEARCH_FOR_WI_FI_DIRECT_DEVICES_OR_SEARCH_FOR_DEVICES_ON_OTHER_WI_FI_NETWORKS"
+msgstr "Søg efter direkte Wi-Fi-enheder, eller søg efter enheder på andre Wi-Fi-netværk"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection. Continue?"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_CONNECTED"
+msgstr "Wi-Fi Direct tilsluttet"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Wi-Fi Direct-forbindelse"
+
+msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_SETTINGS"
+msgstr "Wi-Fi Direct-indstillinger"
+
+msgid "IDS_WIFI_MBODY_CONFIGURE_WI_FI_DIRECT"
+msgstr "Konfigurer Wi-Fi Direct"
+
+msgid "IDS_WIFI_MBODY_DISCONNECT_WI_FI_DIRECT"
+msgstr "Frakobl Wi-Fi Direct"
+
+msgid "IDS_WIFI_MBODY_WI_FI_DIRECT_STATUS"
+msgstr "Wi-Fi Direct-status"
+
+msgid "IDS_WIFI_OPT1_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "Annuller Wi-Fi Direct-forbindelse?"
+
+msgid "IDS_WIFI_POP_CONNECTING_TO_WI_FI_NETWORK_WILL_DISCONNECT_DEVICE_CONNECTED_VIA_WI_FI_DIRECT"
+msgstr "Oprettelse af forbindelse til Wi-Fi-netværk frakobler enhed tilsluttet via Wi-Fi Direct"
+
+msgid "IDS_WIFI_POP_CONNECT_TO_OTHER_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "Forbind til andre enheder via Wi-Fi Direct"
+
+msgid "IDS_WIFI_POP_DISABLE_MOBILE_AP_TO_USE_WI_FI_DIRECT_Q"
+msgstr "Deaktiver mobilt AP for at anvende Wi-Fi Direct?"
+
+msgid "IDS_WIFI_POP_DISCONNECT_CURRENT_WI_FI_DIRECT_DEVICE_TO_SEARCH_NETWORKS"
+msgstr "Frakobl aktuel Wi-Fi Direct-enhed for at søge efter netværk"
+
+msgid "IDS_WIFI_POP_ENABLING_WI_FI_DIRECT_WILL_TURN_OFF_WI_FI_AND_DISABLE_THE_PORTABLE_WI_FI_HOTSPOT"
+msgstr "Aktivering af Wi-Fi Direct vil slukke for Wi-Fi og deaktivere det bærbare Wi-Fi-hotspot"
+
+msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISABLE_PORTABLE_WI_FI_HOTSPOT"
+msgstr "Brug af Wi-Fi Direct deaktiverer bærbart Wi-Fi-hotspot"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_ALREADY_IN_USE_TRY_LATER"
+msgstr "Wi-Fi Direct anvendes allerede. Prøv senere"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_CONNECTION_REQUEST_AUTOMATICALLY_DENIED_TO_CONNECT_TURN_OFF_ALLSHARE_CAST"
+msgstr "Anmodning om Wi-Fi Direct afvist automatisk. Deaktivér AllShare Cast for at oprette forbindelse"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_WILL_BE_DISCONNECTED_CONTINUE_Q"
+msgstr "Wi-Fi Direct frakobles. Fortsæt?"
+
+msgid "IDS_WIFI_POP_WI_FI_IS_DISCONNECTED_WHILE_WI_FI_DIRECT_CONNECTS"
+msgstr "Wi-Fi er frakoblet, mens Wi-Fi Direct tilslutter"
+
+msgid "IDS_WIFI_SK1_SEARCH_FOR_WI_FI_DIRECT_DEVICES"
+msgstr "Søg efter Wi-Fi Direct-enheder"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "Ingen enheder"
+
+msgid "IDS_WIFI_SK4_SCAN"
+msgstr "Scan"
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "Stop"
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "Deaktivering mislykkedes"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "Aktivering mislykkedes"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "Den aktuelle forbindelse vil blive afbrudt. Vil du fortsætte?"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "Tilgængelige enheder"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "Du kan tilslutte op til %d enheder på samme tid"
+

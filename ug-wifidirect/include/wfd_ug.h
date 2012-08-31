@@ -64,26 +64,16 @@
 #define N_(s)      dgettext_noop(s)
 #define S_(s)      dgettext("sys_string", s)
 
-#define IDS_WFD_TITLE_ABOUT_WIFI "About Wi-Fi Direct"
-#define IDS_WFD_BODY_ABOUT_WIFI  "Wi-Fi Direct enables Wi-Fi devices to<br>connect directly, making printing,"\
-	" file<br>sharing, synchronising, and screen<br>sharing much simpler and more<br>convenient.<br>"\
-	"Connecting to devices that support<br>Wi-Fi Direct makes it possible to share<br>your content,"\
-	" synchronise your data,<br>socialise with friends, play games,<br>audio, videos, and more, using various<br>applications."
-#define IDS_WFD_BODY_CONNECTED_DEVICES "Connected Devices"
-#define IDS_WFD_BODY_BUSY_DEVICES "Busy Devices"
+
+#if 1	//To-Do : Text should be translated.
+
+#define IDS_WFD_POP_SCAN_AGAIN "To start new scanning,<br>current connection will be<br>ended.Continue?"
+#define IDS_WFD_POP_WARN_BUSY_DEVICE "Unavailable device. Device is connected to another device."
+#define IDS_WFD_POP_AUTOMATIC_TURN_OFF "There has been no activity for 5 minutes since Wi-Fi Direct was enabled. To extend battery life, Wi-Fi Direct has been disabled."
 #define IDS_WFD_BODY_FAILED_DEVICES "Failed Devices"
-#define IDS_WFD_TAP_TO_CONNECT	"Tap to connect"
-#define IDS_WFD_CONNECTED_WITH_OTHER_DEVICE "Connected with another device"
-#define IDS_WFD_CONNECTED "Connected"
-#define IDS_WFD_CONNECTING "Connecting ..."
-#define IDS_WFD_WAITING_FOR_CONNECT "Waiting for connect"
-#define IDS_WFD_FAILED_TO_CONNECT "Failed to connect"
-#define IDS_WFD_DISCONNECTING "Disconnecting ..."
-#define IDS_WFD_NOCONTENT "No device found"
-#define IDS_WFD_BUTTON_MULTI	"Multi connect"
-#define IDS_WFD_BUTTON_CANCEL	"Cancel connect"
-#define IDS_WFD_BUTTON_DISCONNECT_ALL	"Disconnect all"
-#define IDS_WFD_BUTTON_DISCONNECT	"Disconnect"
+ 
+#endif
+
 
 #define WFD_GLOBALIZATION_STR_LENGTH 256
 

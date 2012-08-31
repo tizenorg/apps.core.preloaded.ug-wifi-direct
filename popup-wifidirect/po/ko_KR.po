@@ -1,44 +1,369 @@
-msgid "IDS_WFD_HEADER_WIFI_DIRECT"
-msgstr "와이파이 다이렉트"
+msgid "IDS_WFD_CONNECTED"
+msgstr "연결되었습니다"
 
-msgid "IDS_WFD_POP_CONNECT_WITH_PIN_Q"
-msgstr "%s와 연결하시겠습니까?<br>PIN:%s"
+msgid "IDS_WFD_CONNECTING"
+msgstr "연결 중..."
 
-msgid "IDS_WFD_POP_CONNECT_Q"
-msgstr "%s와 연결하시겠습니까?"
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "연결을 끊는 중..."
 
-msgid "IDS_WFD_POP_ENTER_PIN"
-msgstr "PIN 입력"
+msgid ""
+msgstr "Wi-Fi 실행 중..."
+
+msgid "IDS_WIFI_POP_DEACTIVATING_WI_FI_ING"
+msgstr "Wi-Fi 연결을 끊는 중..."
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "연결되었습니다"
+
+msgid "IDS_COM_POP_NETWORK_INTERNAL_ERR"
+msgstr "내부 오류가 발생하였습니다"
+
+msgid "IDS_COM_POP_RETRIEVED"
+msgstr "가져오기가 끝났습니다"
+
+msgid "IDS_COM_POP_RETRIEVING_FAILED"
+msgstr "불러오지 못하였습니다"
+
+msgid "IDS_COM_SK_CANCEL"
+msgstr "취소"
+
+msgid "IDS_ST_BODY_INTERNAL_ERROR"
+msgstr "내부 오류가 발생하였습니다"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "알 수 없는 오류가 발생하였습니다"
+
+msgid "IDS_COM_POP_NETWORK_ERROR"
+msgstr "네트워크 오류가 발생하였습니다"
+
+msgid "IDS_COM_BODY_NO_SEARCH_RESULTS"
+msgstr "검색 결과가 없습니다"
+
+msgid "IDS_COM_POP_SEARCHING"
+msgstr "검색 중..."
+
+msgid "IDS_WIFI_POP_DISCONNECTING_FAILED"
+msgstr "연결을 끊지 못하였습니다"
+
+msgid "IDS_ST_BODY_ENTER_NEW_PASSWORD"
+msgstr "새 비밀번호를 입력하세요"
+
+msgid "IDS_COM_POP_UNKNOWN_ERROR_UNABLE_TO_LAUNCH_APPLICATION"
+msgstr "알 수 없는 오류가 발생하여 애플리케이션을 실행할 수 없습니다"
+
+msgid "IDS_COM_POP_ACCEPT"
+msgstr "수락"
+
+msgid "IDS_COM_POP_CONNECTING"
+msgstr "연결 중..."
+
+msgid "IDS_COM_POP_ERROR"
+msgstr "오류가 발생하였습니다"
+
+msgid "IDS_COM_POP_REJECT"
+msgstr "거절"
+
+msgid "IDS_COM_POP_REJECTED"
+msgstr "수신 거부하였습니다"
+
+msgid "IDS_COM_BODY_SELECT_ALL"
+msgstr "모두 선택"
+
+msgid "IDS_COM_POP_FAILED"
+msgstr "실패하였습니다"
+
+msgid "IDS_COM_SK_ACCEPT"
+msgstr "수락"
+
+msgid "IDS_ST_BODY_ENTER_4_TO_8_DIGIT_PIN"
+msgstr "4~8자리 PIN을 입력하세요"
 
 msgid "IDS_WFD_POP_PIN_INVALID"
-msgstr "유효하지 않은 PIN입니다."
+msgstr "PIN이 일치하지 않습니다"
+
+msgid "IDS_ST_POP_YES"
+msgstr "예"
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "실행 중..."
+
+msgid "IDS_COM_POP_DEACTIVATED"
+msgstr "해제되었습니다"
+
+msgid "IDS_COM_SK_OK"
+msgstr "확인"
+
+msgid "IDS_COM_SK_YES"
+msgstr "예"
+
+msgid "IDS_WIFI_HEADER_MOBILE_HOTSPOT_VZW"
+msgstr "모바일 핫스팟"
+
+msgid "IDS_ST_BODY_ENTER_CURRENT_PASSWORD"
+msgstr "현재 비밀번호를 입력하세요"
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "%d개 선택"
+
+msgid "IDS_ST_POP_SEARCHING_ING"
+msgstr "검색 중..."
+
+msgid "IDS_COM_POP_NOTHING_SELECTED"
+msgstr "선택된 것이 없습니다"
+
+msgid "IDS_COM_OPT1_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_COM_POP_DISCONNECTED"
+msgstr "연결 끊김"
+
+msgid "IDS_WIFI_MBODY_MOBILE_HOTSPOT_VZW"
+msgstr "모바일 핫스팟"
+
+msgid "IDS_WIFI_BODY_IP_ADDRESS"
+msgstr "IP 주소"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "해제 중..."
+
+msgid "IDS_COM_POP_UNEXPECTED_ERROR"
+msgstr "예상치 못한 오류가 발생하였습니다"
+
+msgid "IDS_COM_POP_NETWORK_CONNECTION_ERROR"
+msgstr "네트워크에 연결할 수 없습니다"
+
+msgid "IDS_COM_BODY_OPERATION_FAILED"
+msgstr "작업을 수행하지 못하였습니다"
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "사용할 수 없습니다"
+
+msgid "IDS_COM_POP_UNSUPPORTED"
+msgstr "지원되지 않습니다"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_COM_POP_ACCEPTED"
+msgstr "허용되었습니다"
+
+msgid "IDS_WIFI_BODY_MAC_ADDRESS"
+msgstr "MAC 주소"
+
+msgid "IDS_WIFI_POP_AUTOMATIC_CONNECTION_NETWORK_WILL_DISABLED_CONTINUE_Q_MSG"
+msgstr "이 네트워크로 자동 연결이 해제됩니다. 계속할까요?"
+
+msgid "IDS_COM_POP_PROGRESSING_ING"
+msgstr "진행 중..."
+
+msgid "IDS_WIFI_BODY_CONNECT"
+msgstr "연결"
+
+msgid "IDS_WIFI_HEADER_WI_FI"
+msgstr "Wi-Fi"
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "검색"
+
+msgid "IDS_WIFI_SK3_BACK"
+msgstr "이전"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "Wi-Fi Direct 기기"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "연결하려면 누르세요"
+
+msgid "IDS_WIFI_SK2_MULTI_CONNECT"
+msgstr "다중 연결"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "연결"
+
+msgid "IDS_WIFI_OPT_MYNETWORKS_DISCONNECT"
+msgstr "연결 해제"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "연결 취소"
+
+msgid "IDS_COM_SK_CANCEL_A"
+msgstr "취소"
+
+msgid "IDS_ST_HEADER_ACTIVATION"
+msgstr "실행"
+
+msgid "IDS_COM_SK_CANCEL_LITE"
+msgstr "취소"
+
+msgid "IDS_ST_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WIFI_BODY_WI_FI"
+msgstr "Wi-Fi"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "취소"
+
+msgid "IDS_WIFI_BUTTON_CANCEL"
+msgstr "취소"
+
+msgid "IDS_WIFI_BODY_ALLSHARE_CAST"
+msgstr "AllShare Cast"
+
+msgid "IDS_WIFI_POP_MOBILEACCESSSERVICE_ACTIVATING_ING"
+msgstr "실행 중..."
+
+msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_CONNECTION"
+msgstr "Wi-Fi Direct를 사용하면 현재 Wi-Fi 연결이 끊어집니다"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "Wi-Fi Direct 정보"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "Wi-Fi Direct는 Wi-Fi 기기에 직접 연결하여 더욱 간단하고 편리하게 인쇄, 파일 공유, 동기화, 화면 공유를 할 수 있게 해줍니다. Wi-Fi Direct를 지원하는 기기에 연결하면 컨텐츠 공유, 데이터 동기화, 친구와 친목 도모, 게임하기, 오디오, 동영상 등 다양한 애플리케이션을 이용할 수 있습니다."
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "연결된 기기"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "사용 중인 기기"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "다른 기기 연결됨"
+
+msgid "IDS_WIFI_POP_AP_DISCONNECTING_ING"
+msgstr "연결을 끊는 중..."
 
 msgid "IDS_WFD_POP_CONNECTING"
 msgstr "연결 중..."
 
-msgid "IDS_WFD_POP_CONNECTING_WITH_PIN"
-msgstr "연결 중...<br>PIN:"
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "연결 대기 중"
 
-msgid "IDS_WFD_POP_CANCELING"
-msgstr "취소 중..."
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "연결에 실패하였습니다"
 
-msgid "IDS_WFD_POP_CONNECTED"
-msgstr "연결되었습니다."
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "다중 연결"
 
-msgid "IDS_WFD_POP_ERROR_OCCURRED"
-msgstr "연결중에 오류가 발생하였습니다."
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "모든 연결 끊기"
 
-msgid "IDS_WFD_POP_DISCONNECTING"
-msgstr "Disconnecting..."
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "연결 해제"
 
-msgid "IDS_WFD_POP_DISCONNECTED"
-msgstr "Disconnected to %s"
+msgid "IDS_WFD_NOCONTENT"
+msgstr "검색된 기기가 없습니다"
 
-msgid "IDS_WFD_POP_DISCONNECT_FAILED"
-msgstr "Failed to disconnect %s"
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "Wi-Fi Direct 사용 후 해제"
 
-msgid "IDS_WFD_POP_EXPIRED_CONNECTION"
-msgstr "Wi-Fi direct disconnected"
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_ABB"
+msgstr "Wi-Fi Direct 사용 후 해제"
 
-msgid "IDS_WFD_POP_AUTOMATIC_TURN_OFF"
-msgstr "There has been no actions for<br>5 minutes since Wi-Fi direct<br>was activated. Turning off<br>Wi-Fi direct can extend battery<br>life. Continue?"
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY"
+msgstr "배터리 절약을 위해 Wi-Fi Direct 사용 후 해제"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY_ABB"
+msgstr "배터리 절약을 위해 Wi-Fi Direct 사용 후 해제"
+
+msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES"
+msgstr "Wi-Fi Direct 기기 검색"
+
+msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES_CURRENT_NETWORK_WILL_BE_DISCONNECTED"
+msgstr "Wi-Fi Direct 기기를 검색합니다. 현재 네트워크 연결이 끊어집니다"
+
+msgid "IDS_WIFI_BODY_SEARCH_FOR_WI_FI_DIRECT_DEVICES_OR_SEARCH_FOR_DEVICES_ON_OTHER_WI_FI_NETWORKS"
+msgstr "Wi-Fi Direct 기기를 검색하거나 다른 Wi-Fi 네트워크에 있는 기기를 검색합니다"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "Wi-Fi Direct를 사용하면 현재 사용 중인 Wi-Fi 연결이 끊어집니다. 계속하시겠습니까?"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "Wi-Fi Direct를 사용하면 현재 사용 중인 Wi-Fi 테더링이 연결 해제됩니다. 계속하시겠습니까?"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_CONNECTED"
+msgstr "Wi-Fi Direct가 연결되었습니다"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Wi-Fi Direct 연결"
+
+msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_SETTINGS"
+msgstr "Wi-Fi Direct 설정"
+
+msgid "IDS_WIFI_MBODY_CONFIGURE_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct 구성"
+
+msgid "IDS_WIFI_MBODY_DISCONNECT_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct 연결 해제"
+
+msgid "IDS_WIFI_MBODY_WI_FI_DIRECT_STATUS"
+msgstr "Wi-Fi Direct 상태"
+
+msgid "IDS_WIFI_OPT1_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "Wi-Fi Direct 연결을 취소할까요?"
+
+msgid "IDS_WIFI_POP_CONNECTING_TO_WI_FI_NETWORK_WILL_DISCONNECT_DEVICE_CONNECTED_VIA_WI_FI_DIRECT"
+msgstr "Wi-Fi 네트워크에 연결하면 Wi-Fi Direct를 통해 연결된 기기와의 연결이 끊어집니다"
+
+msgid "IDS_WIFI_POP_CONNECT_TO_OTHER_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct로 다른 기기에 연결합니다"
+
+msgid "IDS_WIFI_POP_DISABLE_MOBILE_AP_TO_USE_WI_FI_DIRECT_Q"
+msgstr "Wi-Fi Direct를 사용하기 위해 모바일 AP를 종료할까요?"
+
+msgid "IDS_WIFI_POP_DISCONNECT_CURRENT_WI_FI_DIRECT_DEVICE_TO_SEARCH_NETWORKS"
+msgstr "네트워크를 검색하려면 사용 중인 Wi-Fi Direct 기기 연결을 해제하세요"
+
+msgid "IDS_WIFI_POP_ENABLING_WI_FI_DIRECT_WILL_TURN_OFF_WI_FI_AND_DISABLE_THE_PORTABLE_WI_FI_HOTSPOT"
+msgstr "Wi-Fi Direct를 실행하면 Wi-Fi가 꺼지고 휴대용 Wi-Fi 핫스팟이 비활성화됩니다"
+
+msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISABLE_PORTABLE_WI_FI_HOTSPOT"
+msgstr "Wi-Fi Direct를 사용하면 휴대용 Wi-Fi 핫스팟이 해제됩니다"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_ALREADY_IN_USE_TRY_LATER"
+msgstr "Wi-Fi Direct가 이미 사용 중입니다. 잠시 후 다시 시도하세요"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_CONNECTION_REQUEST_AUTOMATICALLY_DENIED_TO_CONNECT_TURN_OFF_ALLSHARE_CAST"
+msgstr "Wi-Fi Direct 연결 요청이 자동으로 거부되었습니다. 연결하려면 AllShare Cast를 종료하세요"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_WILL_BE_DISCONNECTED_CONTINUE_Q"
+msgstr "Wi-Fi Direct 연결이 끊어집니다. 계속할까요?"
+
+msgid "IDS_WIFI_POP_WI_FI_IS_DISCONNECTED_WHILE_WI_FI_DIRECT_CONNECTS"
+msgstr "Wi-Fi Direct 연결 중에는 Wi-Fi 연결이 해제됩니다"
+
+msgid "IDS_WIFI_SK1_SEARCH_FOR_WI_FI_DIRECT_DEVICES"
+msgstr "Wi-Fi Direct 기기 검색"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "기기 목록이 없습니다"
+
+msgid "IDS_WIFI_SK4_SCAN"
+msgstr "검색"
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "중지"
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "연결을 끊지 못하였습니다"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "실행하지 못하였습니다"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "사용 중인 네트워크 연결이 끊어집니다. 계속할까요?"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "사용할 수 있는 기기"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "동시에 %d개의 기기까지 연결할 수 있습니다"
+

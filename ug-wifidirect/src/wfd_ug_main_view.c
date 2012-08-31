@@ -110,7 +110,7 @@ void _scan_btn_cb(void *data, Evas_Object * obj, void *event_info)
 
 	/* if connected, show the popup*/
 	if (ugd->wfd_status >= WIFI_DIRECT_STATE_CONNECTED) {
-		wfd_ug_act_popup(ugd, _("IDS_WFD_POP_SCAN_AGAIN"), POP_TYPE_SCAN_AGAIN);
+		wfd_ug_act_popup(ugd, IDS_WFD_POP_SCAN_AGAIN, POP_TYPE_SCAN_AGAIN);
 	} else if (WIFI_DIRECT_STATE_ACTIVATED == ugd->wfd_status) {
 		wfd_client_start_discovery(ugd);
 	} else if (WIFI_DIRECT_STATE_DEACTIVATED == ugd->wfd_status) {
@@ -342,7 +342,7 @@ static void _gl_busy_peer_sel(void *data, Evas_Object *obj, void *event_info)
 
     DBG(LOG_VERBOSE, "Busy device is clicked");
 
-    wfd_ug_warn_popup(ugd, _("IDS_WFD_POP_WARN_BUSY_DEVICE"), POP_TYPE_BUSY_DEVICE_POPUP);
+    wfd_ug_warn_popup(ugd, IDS_WFD_POP_WARN_BUSY_DEVICE, POP_TYPE_BUSY_DEVICE_POPUP);
 
     __FUNC_EXIT__;
 }
@@ -368,7 +368,7 @@ void _wifid_create_multibutton_cb(void *data, Evas_Object * obj, void *event_inf
     if (ugd->multi_connect_mode == WFD_MULTI_CONNECT_MODE_IN_PROGRESS)
     {
     	ugd->multi_connect_mode = WFD_MULTI_CONNECT_MODE_NONE;
-		if (0 == strcmp(IDS_WFD_BUTTON_CANCEL, text_lbl))
+		if (0 == strcmp(_("IDS_WFD_BUTTON_CANCEL"), text_lbl))
 		{
 			wfd_ug_act_popup(ugd, _("IDS_WFD_POP_CANCEL_CONNECT"), POP_TYPE_DISCONNECT_ALL);
 		}
@@ -379,19 +379,19 @@ void _wifid_create_multibutton_cb(void *data, Evas_Object * obj, void *event_inf
     }
     else
     {
-		if (0 == strcmp(IDS_WFD_BUTTON_MULTI, text_lbl))
+		if (0 == strcmp(_("IDS_WFD_BUTTON_MULTI"), text_lbl))
 		{
 			_wifid_create_multiconnect_view(ugd);
 		}
-		else if (0 == strcmp(IDS_WFD_BUTTON_CANCEL, text_lbl))
+		else if (0 == strcmp(_("IDS_WFD_BUTTON_CANCEL"), text_lbl))
 		{
 			wfd_ug_act_popup(ugd, _("IDS_WFD_POP_CANCEL_CONNECT"), POP_TYPE_DISCONNECT_ALL);
 		}
-		else if (0 == strcmp(IDS_WFD_BUTTON_DISCONNECT_ALL, text_lbl))
+		else if (0 == strcmp(_("IDS_WFD_BUTTON_DISCONNECT_ALL"), text_lbl))
 		{
 			wfd_ug_act_popup(ugd, _("IDS_WFD_POP_DISCONNECT"), POP_TYPE_DISCONNECT_ALL);
 		}
-		else if (0 == strcmp(IDS_WFD_BUTTON_DISCONNECT, text_lbl))
+		else if (0 == strcmp(_("IDS_WFD_BUTTON_DISCONNECT"), text_lbl))
 		{
 			wfd_ug_act_popup(ugd, _("IDS_WFD_POP_DISCONNECT"), POP_TYPE_DISCONNECT);
 		}
@@ -416,18 +416,18 @@ int _change_multi_button_title(void *data)
 	if (ugd->wfd_status == WFD_LINK_STATUS_CONNECTING)
 	{
 		//if (conn_prog_count > 0)
-		elm_object_text_set(ugd->multi_btn, IDS_WFD_BUTTON_CANCEL);
+		elm_object_text_set(ugd->multi_btn, _("IDS_WFD_BUTTON_CANCEL"));
 	}
 	else if (ugd->wfd_status > WFD_LINK_STATUS_CONNECTING)
 	{
 		if (ugd->gl_connected_peer_cnt > 1)
-			elm_object_text_set(ugd->multi_btn, IDS_WFD_BUTTON_DISCONNECT_ALL);
+			elm_object_text_set(ugd->multi_btn, _("IDS_WFD_BUTTON_DISCONNECT_ALL"));
 		else
-			elm_object_text_set(ugd->multi_btn, IDS_WFD_BUTTON_DISCONNECT);
+			elm_object_text_set(ugd->multi_btn, _("IDS_WFD_BUTTON_DISCONNECT"));
 	}
 	else
 	{
-		elm_object_text_set(ugd->multi_btn, IDS_WFD_BUTTON_MULTI);
+		elm_object_text_set(ugd->multi_btn, _("IDS_WFD_BUTTON_MULTI"));
 	}
 
     evas_object_show(ugd->multi_btn);

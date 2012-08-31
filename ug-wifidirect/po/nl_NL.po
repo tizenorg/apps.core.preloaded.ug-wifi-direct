@@ -1,0 +1,117 @@
+msgid "IDS_WFD_CONNECTED"
+msgstr "Verbonden"
+
+msgid "IDS_WFD_CONNECTING"
+msgstr "Verbinden..."
+
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "Verbinding verbreken..."
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "Verbonden"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "Onbekende fout"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "PIN's komen niet overeen!"
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "Inschakelen..."
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "%d geselecteerd"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "Uitschakelen..."
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "Niet ondersteund"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "Scannen"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "Wi-Fi Direct-apparaten"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "Tik voor verbinding"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "Verbinden"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "Verbinding annuleren"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "Over Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "Wi-Fi Direct zorgt dat Wi-Fi-apparaten rechtstreeks kunnen worden verbonden, zodat afdrukken, bestanden delen, synchroniseren en het delen van schermen veel eenvoudiger en handiger verlopen. Als u apparaten verbindt die Wi-Fi Direct ondersteunen, kunt u via diverse applicaties inhoud delen, gegevens synchroniseren, contacten met vrienden onderhouden, gamen, en genieten van onder andere audio en video."
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "Verbonden apparaten"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "Bezette apparaten"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "Verbonden met ander apparaat"
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "Verbinden..."
+
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "Wachten op verbinding"
+
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "Kan geen verbinding maken"
+
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "Meerdere verbindingen"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "Alle verbreken"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "Verb.verbr"
+
+msgid "IDS_WFD_NOCONTENT"
+msgstr "Geen apparaten gevonden"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection. Continue?"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Wi-Fi Direct-verbinding"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "Wi-Fi Direct-verbinding annuleren?"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "Geen apparaten"
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "Stoppen"
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "Uitschakelen mislukt"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "Kan niet inschakelen..."
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "Huidige verbinding wordt verbroken. Doorgaan?"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "Beschikbare apparaten"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "U kunt maximaal %d apparaten tegelijk verbinden"
+

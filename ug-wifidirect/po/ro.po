@@ -1,0 +1,117 @@
+msgid "IDS_WFD_CONNECTED"
+msgstr "Conectat"
+
+msgid "IDS_WFD_CONNECTING"
+msgstr "Conectare"
+
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "Deconectare"
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "Conectat"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "Eroare necunoscută"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "Codurile PIN nu se potrivesc!"
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "Se activează..."
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "%d selectate"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "Dezactivare..."
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "Neacceptat"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "Căutare"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "Dispozitive cu Wi-Fi Direct"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "Apăsaţi pentru conectare"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "Conectare"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "Revocare conexiune"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "Despre Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "Wi-Fi Direct permite conectarea directă a dispozitivelor Wi-Fi, ceea ce face ca imprimarea, partajarea fişierelor, sincronizarea şi partajarea ecranului să fie mai simple şi mai convenabile. Conectând dispozitive care acceptă Wi-Fi Direct puteţi partaja conţinut, sincroniza date, socializa cu prietenii, juca jocuri, reda conţinut audio şi video şi multe altele, utilizând diferite aplicaţii"
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "Dispozitive conectate"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "Dispozitive ocupate"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "Conectat la un alt dispozitiv"
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "Conectare"
+
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "Se aşteaptă conexiunea"
+
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "Conectare nereuşită"
+
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "Mai multe conexiuni"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "Deconectaţi-le pe toate"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "Deconectare"
+
+msgid "IDS_WFD_NOCONTENT"
+msgstr "Nu au fost găsite dispozitive"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection. Continue?"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Conexiune Wi-Fi Direct"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "Revocaţi conexiunea Wi-Fi Direct?"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "Nu există dispozitive"
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "Oprire"
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "Dezactivare nereuşită"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "Activare nereuşită"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "Conexiunea actuală va fi încheiată. Continuaţi?"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "Dispozitive disponibile"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "Vă puteţi conecta la maximum %d dispozitive în acelaşi timp"
+

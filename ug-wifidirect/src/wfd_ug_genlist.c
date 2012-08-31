@@ -142,7 +142,7 @@ static char *_gl_name_label_get(void *data, Evas_Object *obj, const char *part)
 
     if(!strcmp(part, "elm.text"))
     {
-        return strdup(IDS_WFD_TITLE_ABOUT_WIFI); // "Device name"
+        return strdup(_("IDS_WFD_TITLE_ABOUT_WIFI")); // "Device name"
     }
     else if(!strcmp(part, "elm.text.2"))
     {
@@ -241,32 +241,32 @@ static char *_gl_peer_label_get(void *data, Evas_Object * obj, const char *part)
     {
         switch (peer->conn_status) {
         case PEER_CONN_STATUS_DISCONNECTED:
-            g_strlcpy(buf, IDS_WFD_TAP_TO_CONNECT,
+            g_strlcpy(buf, _("IDS_WFD_TAP_TO_CONNECT"),
                             WFD_GLOBALIZATION_STR_LENGTH);
         break;
 
         case PEER_CONN_STATUS_CONNECTING:
-            g_strlcpy(buf, IDS_WFD_CONNECTING,
+            g_strlcpy(buf, _("IDS_WFD_CONNECTING"),
                     WFD_GLOBALIZATION_STR_LENGTH);
         break;
 
         case PEER_CONN_STATUS_CONNECTED:
-            g_strlcpy(buf, IDS_WFD_CONNECTED,
+            g_strlcpy(buf, _("IDS_WFD_CONNECTED"),
                 WFD_GLOBALIZATION_STR_LENGTH);
         break;
 
         case PEER_CONN_STATUS_FAILED_TO_CONNECT:
-            g_strlcpy(buf, IDS_WFD_FAILED_TO_CONNECT,
+            g_strlcpy(buf, _("IDS_WFD_FAILED_TO_CONNECT"),
                 WFD_GLOBALIZATION_STR_LENGTH);
         break;
 
         case PEER_CONN_STATUS_WAIT_FOR_CONNECT:
-            g_strlcpy(buf, IDS_WFD_WAITING_FOR_CONNECT,
+            g_strlcpy(buf, _("IDS_WFD_WAITING_FOR_CONNECT"),
                 WFD_GLOBALIZATION_STR_LENGTH);
         break;
 
         default:
-            g_strlcpy(buf, IDS_WFD_TAP_TO_CONNECT,
+            g_strlcpy(buf, _("IDS_WFD_TAP_TO_CONNECT"),
                 WFD_GLOBALIZATION_STR_LENGTH);
         break;
         }
@@ -441,7 +441,7 @@ static char *_gl_noitem_text_get(void *data, Evas_Object * obj,
 	}
 
 	__FUNC_EXIT__;
-	return strdup(IDS_WFD_NOCONTENT);
+	return strdup(_("IDS_WFD_NOCONTENT"));
 }
 
 
@@ -468,7 +468,7 @@ static Evas_Object *_gl_button_get(void *data, Evas_Object * obj, const char *pa
 
 	if (ugd->multi_connect_mode == WFD_MULTI_CONNECT_MODE_COMPLETED)
 	{
-		elm_object_text_set(ugd->multi_btn, IDS_WFD_BUTTON_DISCONNECT);
+		elm_object_text_set(ugd->multi_btn, _("IDS_WFD_BUTTON_DISCONNECT"));
 		DBG(LOG_VERBOSE, "button: Disconnect\n");
 
 		// Don't connect "clicked" callback.
@@ -477,25 +477,25 @@ static Evas_Object *_gl_button_get(void *data, Evas_Object * obj, const char *pa
 
 	if (ugd->wfd_status == WFD_LINK_STATUS_CONNECTING)
 	{
-		elm_object_text_set(ugd->multi_btn, IDS_WFD_BUTTON_CANCEL);
+		elm_object_text_set(ugd->multi_btn, _("IDS_WFD_BUTTON_CANCEL"));
 		DBG(LOG_VERBOSE, "button: Cancel connect\n");
 	}
 	else if (ugd->wfd_status >= WFD_LINK_STATUS_CONNECTED)
 	{
 		if (ugd->gl_connected_peer_cnt > 1)
 		{
-			elm_object_text_set(ugd->multi_btn, IDS_WFD_BUTTON_DISCONNECT_ALL);
+			elm_object_text_set(ugd->multi_btn, _("IDS_WFD_BUTTON_DISCONNECT_ALL"));
 			DBG(LOG_VERBOSE, "button: Disconnect All\n");
 		}
 		else
 		{
-			elm_object_text_set(ugd->multi_btn, IDS_WFD_BUTTON_DISCONNECT);
+			elm_object_text_set(ugd->multi_btn, _("IDS_WFD_BUTTON_DISCONNECT"));
 			DBG(LOG_VERBOSE, "button: Disconnect\n");
 		}
 	}
 	else
 	{
-		elm_object_text_set(ugd->multi_btn, IDS_WFD_BUTTON_MULTI);
+		elm_object_text_set(ugd->multi_btn, _("IDS_WFD_BUTTON_MULTI"));
 		DBG(LOG_VERBOSE, "button: Multi connect\n");
 	}
 
@@ -521,7 +521,7 @@ static char *_gl_conn_dev_title_label_get(void *data, Evas_Object *obj,
 
     if (!strcmp(part, "elm.text"))
     {
-            return strdup(IDS_WFD_BODY_CONNECTED_DEVICES);
+            return strdup(_("IDS_WFD_BODY_CONNECTED_DEVICES"));
     }
 
     __FUNC_EXIT__;
@@ -552,7 +552,7 @@ static char *_gl_peer_conn_dev_label_get(void *data, Evas_Object * obj, const ch
 	}
 	else
 	{
-		g_strlcpy(buf, IDS_WFD_CONNECTED,
+		g_strlcpy(buf, _("IDS_WFD_CONNECTED"),
 						WFD_GLOBALIZATION_STR_LENGTH);
 		__FUNC_EXIT__;
 		return strdup(buf);
@@ -603,7 +603,7 @@ static char *_gl_peer_conn_failed_dev_label_get(void *data, Evas_Object * obj, c
 	}
 	else
 	{
-		g_strlcpy(buf, IDS_WFD_FAILED_TO_CONNECT,
+		g_strlcpy(buf, _("IDS_WFD_FAILED_TO_CONNECT"),
 						WFD_GLOBALIZATION_STR_LENGTH);
 		__FUNC_EXIT__;
 		return strdup(buf);
@@ -649,7 +649,7 @@ static char *_gl_busy_dev_title_label_get(void *data, Evas_Object *obj,
 
     if (!strcmp(part, "elm.text"))
     {
-            return strdup(IDS_WFD_BODY_BUSY_DEVICES);
+            return strdup(_("IDS_WFD_BODY_BUSY_DEVICES"));
     }
 
     __FUNC_EXIT__;
@@ -678,7 +678,7 @@ static char *_gl_peer_busy_dev_label_get(void *data, Evas_Object * obj, const ch
 	}
 	else
 	{
-		g_strlcpy(buf, IDS_WFD_CONNECTED_WITH_OTHER_DEVICE,
+		g_strlcpy(buf, _("IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"),
 						WFD_GLOBALIZATION_STR_LENGTH);
 		__FUNC_EXIT__;
 		return strdup(buf);

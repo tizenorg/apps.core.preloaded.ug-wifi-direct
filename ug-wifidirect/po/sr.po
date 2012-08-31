@@ -1,0 +1,117 @@
+msgid "IDS_WFD_CONNECTED"
+msgstr "Povezan"
+
+msgid "IDS_WFD_CONNECTING"
+msgstr "Povezivanje..."
+
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "Prekidanje veze..."
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "Povezan"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "Nepoznata greška"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "PIN-ovi se ne slažu!"
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "Aktiviranje..."
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "Izabran je %d"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "Deaktivacija..."
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "Nepodržano"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "Skeniraj"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "Wi-Fi Direct uređaji"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "Kucni za povezivanje"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "Poveži se"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "Otkaži povezivanje"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "O Wi-Fi Direct-u"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "Wi-Fi Direct omogućava direktno povezivanje Wi-Fi uređaja čime štampanje, deljenje fajlova, sinhronizacija i deljenje ekrana postaje jednostavnije i prihvatljivije. Povezivanje na uređaje koji podržavaju Wi-Fi Direct omogućava deljenje sadržaja, sinhronizovanje podataka, druženje sa prijateljima, igranje igara, audio, video i još mnogo toga, koristeći različite aplikacije"
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "Povezani uređaji"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "Zauzeti uređaji"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "Povezan sa drugim uređajem"
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "Povezivanje..."
+
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "Čekanje na povezivanje"
+
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "Neuspešno povezivanje"
+
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "Višestruko povezivanje"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "Otkači sve"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "Prekini vezu"
+
+msgid "IDS_WFD_NOCONTENT"
+msgstr "Nema uređaja"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection. Continue?"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Wi-Fi Direct veza"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "Prekinuti Wi-Fi Direct vezu?"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "Nema uređaja"
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "Stop"
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "Deaktivacija neuspešna"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "Uključivanje neuspešno"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "Trenutna veza će biti prekinuta. Nastavak?"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "Dostupni uređaji"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "Možeš da povežeš do %d uređaja istovremeno"
+

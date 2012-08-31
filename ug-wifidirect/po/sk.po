@@ -1,0 +1,117 @@
+msgid "IDS_WFD_CONNECTED"
+msgstr "Pripojené"
+
+msgid "IDS_WFD_CONNECTING"
+msgstr "Pripájanie..."
+
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "Odpájanie..."
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "Pripojené"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "Neznáma chyba"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "PIN kódy sa nezhodujú!"
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "Aktivácia..."
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "Vybraté: %d"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "Deaktivácia..."
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "Nepodporované"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "Vyhľadať"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "Zariadenia Wi-Fi Direct"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "Ťuknite na pripojenie"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "Pripojiť"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "Zrušiť pripojenie"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "Inform. o Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "Wi-Fi Direct umožňuje zariadeniam siete Wi-Fi pripájať sa priamo, čo umožňuje oveľa jednoduchšie a pohodlnejšie tlačiť, zdieľať súbory, synchronizovať a zdieľať obrazovku. Pripojenie k zariadeniam, ktoré podporujú technológiu Wi-Fi Direct, umožňuje zdieľať obsah, synchronizovať údaje, komunikovať s priateľmi, hrať hry, prehrávať zvuky, videá a ďalší obsah použitím rozličných aplikácií"
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "Pripojené zariadenia"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "﻿Zaneprázdnené zariadenia"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "Pripojené k inému zariadeniu"
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "Pripájanie..."
+
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "Čaká sa na pripojenie"
+
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "Nepodarilo sa pripojiť"
+
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "Viacnásobné pripojenie"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "Odpojiť všetky"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "Odpojiť"
+
+msgid "IDS_WFD_NOCONTENT"
+msgstr "Nenašli sa žiadne zariadenia"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection. Continue?"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Pripojenie Wi-Fi Direct"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "Zrušiť pripojenie Wi-Fi Direct?"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "Žiadne zariadenia"
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "Stop"
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "Deaktivácia zlyhala"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "Aktivácia sa nepodarila"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "Aktuálne pripojenie bude odpojené. Pokračovať?"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "Dostupné zariadenia"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "Naraz môžete pripojiť max. %d zariadení"
+

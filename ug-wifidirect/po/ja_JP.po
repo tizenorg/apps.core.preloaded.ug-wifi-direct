@@ -1,0 +1,117 @@
+msgid "IDS_WFD_CONNECTED"
+msgstr "接続しました。"
+
+msgid "IDS_WFD_CONNECTING"
+msgstr "接続中..."
+
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "切断中..."
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "接続しました。"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "不明なエラーです。"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "PINが​一致​しません！"
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "起動中..."
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "%d件​選択"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "解除​中..."
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "サポート​されて​いません。"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "スキャン"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "Wi-Fi Directデバイス"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "タップ​して​接続"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "接続"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "接続をキャンセル"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "Wi-Fi Direct​に​ついて"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "Wi-Fi ​Directは、​より​簡単​で​便利​に​Wi-Fi​デバイス​の​直接​接続、​印刷、​ファイル​共有、​同期、​画面​共有​が​できる​よう​に​します。​Wi-Fi ​Direct​に​対応​した​デバイス​に​接続​する​と、​コンテンツ​の​共有、​データ​の​同期、​友達​と​の​交流​や​ゲーム、​音楽、​動画​の​再生​等​を​様々​な​アプリ​ケーション​で​利用​でき​ます。"
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "接続デバイス"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "アクセスできないデバイス"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "他のデバイスと接続されています。"
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "接続中..."
+
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "接続​待機​中"
+
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "接続​に​失敗​しました。"
+
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "複数​接続"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "全て​切断"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "切断"
+
+msgid "IDS_WFD_NOCONTENT"
+msgstr "デバイスが​見つかりません。"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection. Continue?"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Wi-Fi Direct接続"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "Wi-Fi Direct接続をキャンセルしますか？"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "デバイス​が​あり​ません。"
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "停止"
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "無効に​失敗​しました"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "起動に失敗しました。"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "現在の​接続​は切断​されます。​続行しますか？"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "接続可能なデバイス"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "同時に%d台までデバイスを接続できます。"
+
