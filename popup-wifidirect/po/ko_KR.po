@@ -115,7 +115,7 @@ msgstr "선택된 것이 없습니다"
 msgid "IDS_COM_OPT1_WI_FI_DIRECT"
 msgstr "Wi-Fi Direct"
 
-msgid "IDS_COM_POP_DISCONNECTED"
+msgid "IDS_WFD_POP_DISCONNECTED"
 msgstr "연결 끊김"
 
 msgid "IDS_WIFI_MBODY_MOBILE_HOTSPOT_VZW"

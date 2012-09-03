@@ -115,7 +115,7 @@ msgstr "未选择"
 msgid "IDS_COM_OPT1_WI_FI_DIRECT"
 msgstr "直接Wi-Fi"
 
-msgid "IDS_COM_POP_DISCONNECTED"
+msgid "IDS_WFD_POP_DISCONNECTED"
 msgstr "已中断连接"
 
 msgid "IDS_WIFI_MBODY_MOBILE_HOTSPOT_VZW"

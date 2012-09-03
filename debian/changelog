@@ -1,3 +1,11 @@
+ug-setting-wifidirect-efl (0.7.7) unstable; urgency=low
+
+  * fixed the text bug.
+  * Git: rsa/apps/home/ug-wifi-direct
+  * Tag: libug-setting-wifidirect-efl_0.7.7
+
+ -- Sungsik Jang <sungsik.jang@samsung.com>  Mon, 03 Sep 2012 13:08:40 +0900
+
 ug-setting-wifidirect-efl (0.7.6) unstable; urgency=low
 
   * changed to support multi-languages.

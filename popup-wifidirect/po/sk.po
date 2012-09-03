@@ -115,7 +115,7 @@ msgstr "Nič nie je vybrané"
 msgid "IDS_COM_OPT1_WI_FI_DIRECT"
 msgstr "Wi-Fi Direct"
 
-msgid "IDS_COM_POP_DISCONNECTED"
+msgid "IDS_WFD_POP_DISCONNECTED"
 msgstr "Odpojené"
 
 msgid "IDS_WIFI_MBODY_MOBILE_HOTSPOT_VZW"

@@ -69,7 +69,6 @@
 
 #define IDS_WFD_POP_SCAN_AGAIN "To start new scanning,<br>current connection will be<br>ended.Continue?"
 #define IDS_WFD_POP_WARN_BUSY_DEVICE "Unavailable device. Device is connected to another device."
-#define IDS_WFD_POP_AUTOMATIC_TURN_OFF "There has been no activity for 5 minutes since Wi-Fi Direct was enabled. To extend battery life, Wi-Fi Direct has been disabled."
 #define IDS_WFD_BODY_FAILED_DEVICES "Failed Devices"
  
 #endif

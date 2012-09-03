@@ -966,7 +966,7 @@ void wfd_prepare_popup(int type, void *userdata)
 		ad->popup = wfd_draw_pop_type_e(ad->win, pop);
 		break;
 	case WFD_POP_AUTOMATIC_TURN_OFF:
-		snprintf(pop->text, sizeof(pop->text), "%s", _("IDS_WFD_POP_AUTOMATIC_TURN_OFF"));
+		snprintf(pop->text, sizeof(pop->text), "%s", IDS_WFD_POP_AUTOMATIC_TURN_OFF);
 		snprintf(pop->label1, sizeof(pop->label1), "%s", dgettext("sys_string", "IDS_COM_SK_OK"));
 		snprintf(pop->label2, sizeof(pop->label2), "%s", dgettext("sys_string", "IDS_COM_POP_CANCEL"));
 		pop->timeout = WFD_POP_TIMER_120;

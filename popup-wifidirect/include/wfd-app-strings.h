@@ -33,6 +33,7 @@ extern "C" {
 #define IDS_WFD_POP_CONNECT_Q "Connect with %s?"
 #define IDS_WFD_POP_ENTER_PIN "Connect with %s in %d secs. Enter PIN to connect %s."
 #define IDS_WFD_POP_CONNECTING_WITH_PIN "Connecting...PIN:"
+#define IDS_WFD_POP_AUTOMATIC_TURN_OFF "There has been no activity for 5 minutes since Wi-Fi Direct was enabled. To extend battery life, Wi-Fi Direct has been disabled."
 
 #endif
 
