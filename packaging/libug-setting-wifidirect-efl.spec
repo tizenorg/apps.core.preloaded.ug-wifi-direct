@@ -88,6 +88,7 @@ ln -sf /usr/bin/ug-client /opt/ug/bin/ug-setting-wifidirect-efl
 
 
 %files
+%manifest libug-setting-wifidirect-efl.manifest
 %defattr(-,root,root,-)
 /opt/ug/lib/*
 /opt/ug/res/images/*
@@ -95,6 +96,7 @@ ln -sf /usr/bin/ug-client /opt/ug/bin/ug-setting-wifidirect-efl
 /opt/ug/res/locale/*/*/*
 
 %files -n org.tizen.wifi-direct-popup
+%manifest com.samsung.wifi-direct-popup.manifest
 %defattr(-,root,root,-)
 /opt/apps/org.tizen.wifi-direct-popup/bin/*
 /opt/apps/org.tizen.wifi-direct-popup/res/images/*
@@ -104,6 +106,7 @@ ln -sf /usr/bin/ug-client /opt/ug/bin/ug-setting-wifidirect-efl
 /opt/share/packages/org.tizen.wifi-direct-popup.xml
 
 %files -n org.tizen.wifi-direct-ugapp
+%manifest com.samsung.wifi-direct-ugapp.manifest
 %defattr(-,root,root,-)
 /opt/apps/org.tizen.wifi-direct-ugapp/bin/*
 #/opt/share/applications/org.tizen.wifi-direct-ugapp.desktop
