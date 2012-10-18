@@ -4,7 +4,7 @@
 	<author email="sungsik.jang@samsung.com" href="www.samsung.com">Sungsik Jang</author>
 	<author email="dwmax.lee@samsung.com" href="www.samsung.com">Dongwook Lee</author>
 	<description>WiFi Direct UG Application</description>
-	<ui-application appid="org.tizen.wifi-direct-ugapp" exec="/opt/apps/org.tizen.wifi-direct-ugapp/bin/wifi-direct-ugapp" nodisplay="true" multiple="false" type="capp" taskmanage="true">
+	<ui-application appid="org.tizen.wifi-direct-ugapp" exec="/opt/apps/org.tizen.wifi-direct-ugapp/bin/wifi-direct-ugapp" nodisplay="true" multiple="false" type="capp" taskmanage="false">
 		<label>WifiDirectUgapp</label>
 		<label xml:lang="en-us">WifiDirectUgapp</label>
 	</ui-application>

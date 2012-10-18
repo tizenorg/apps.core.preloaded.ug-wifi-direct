@@ -1,3 +1,11 @@
+ug-setting-wifidirect-efl (0.7.8) unstable; urgency=low
+
+  * set the value "false" of taskmanager in xml so that pop-up App does not appear in TaskManager
+  * Git: rsa/apps/home/ug-wifi-direct
+  * Tag: libug-setting-wifidirect-efl_0.7.8
+
+ -- Sungsik Jang <sungsik.jang@samsung.com>  Thu, 18 Oct 2012 16:09:57 +0900
+
 ug-setting-wifidirect-efl (0.7.7) unstable; urgency=low
 
   * fixed the text bug.
