@@ -262,7 +262,7 @@ static Evas_Object *_gl_noitem_icon_get(void *data, Evas_Object * obj,
 #else   // use image
     Evas_Object *icon;
     icon = elm_icon_add(obj);
-    elm_icon_file_set(icon, "/opt/ug/res/images/ug-wifi-direct/A09_NoDevice.png", NULL);
+    elm_icon_file_set(icon, "/usr/ug/res/images/ug-wifi-direct/A09_NoDevice.png", NULL);
     evas_object_size_hint_min_set(icon, 400, 200);
     evas_object_size_hint_max_set(icon, 400, 200);
     evas_object_resize(icon, 400, 200);

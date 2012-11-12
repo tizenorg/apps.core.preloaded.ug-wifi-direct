@@ -23,9 +23,9 @@
 #include <glib.h>
 #include <syspopup_caller.h>
 
-#define EDJDIR "/opt/ug/res/edje/ug-setting-wifidirect-efl"
+#define EDJDIR "/usr/ug/res/edje/ug-setting-wifidirect-efl"
 #define WFD_UG_EDJ_PATH  EDJDIR"/wfd_ug.edj"
-#define WFD_IMG_DIR "/opt/ug/res/images/ug-setting-wifidirect-efl"
+#define WFD_IMG_DIR "/usr/ug/res/images/ug-setting-wifidirect-efl"
 #define TICKERNOTI_SYSPOPUP "tickernoti-syspopup"
 
 

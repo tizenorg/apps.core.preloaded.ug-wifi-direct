@@ -1,4 +1,4 @@
-/opt/ug/lib/*
-/opt/ug/res/edje/*
-/opt/ug/res/images/*
-/opt/ug/res/locale/*
+/usr/ug/lib/*
+/usr/ug/res/edje/*
+/usr/ug/res/images/*
+/usr/ug/res/locale/*

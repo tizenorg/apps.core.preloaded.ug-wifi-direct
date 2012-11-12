@@ -37,7 +37,7 @@
 
 
 #define PACKAGE "org.tizen.wifi-direct-ugapp"
-#define LOCALEDIR "/opt/apps/org.tizen.wifi-direct-ugapp"
+#define LOCALEDIR "/usr/apps/org.tizen.wifi-direct-ugapp"
 
 typedef struct
 {

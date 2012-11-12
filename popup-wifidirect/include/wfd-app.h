@@ -49,7 +49,7 @@
 
 
 #define LOCALE_FILE_NAME "wifi-direct-popup"
-#define LOCALEDIR "/opt/apps/org.tizen.wifi-direct-popup/res/locale"
+#define LOCALEDIR "/usr/apps/org.tizen.wifi-direct-popup/res/locale"
 
 #define _(s)        dgettext(LOCALE_FILE_NAME, s)
 #define N_(s)      dgettext_noop(s)

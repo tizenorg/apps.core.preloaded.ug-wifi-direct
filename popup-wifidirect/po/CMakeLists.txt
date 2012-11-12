@@ -16,7 +16,7 @@ FOREACH(pofile ${POFILES})
 			DEPENDS ${absPofile}
 	)
 	INSTALL(FILES ${moFile}
-			DESTINATION /opt/apps/org.tizen.wifi-direct-popup/res/locale/${lang}/LC_MESSAGES RENAME ${PROJECT_NAME}.mo)
+			DESTINATION /usr/apps/org.tizen.wifi-direct-popup/res/locale/${lang}/LC_MESSAGES RENAME ${PROJECT_NAME}.mo)
 	SET(moFiles ${moFiles} ${moFile})
 ENDFOREACH(pofile)
 

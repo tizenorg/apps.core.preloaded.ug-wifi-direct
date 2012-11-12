@@ -2,7 +2,7 @@ CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
 PROJECT(ug-setting-wifidirect-efl C)
 SET(PACKAGE_NAME ug-setting-wifidirect-efl)
 
-SET(PREFIX "/opt/ug")
+SET(PREFIX "/usr/ug")
 SET(LIBDIR "${PREFIX}/lib")
 SET(RESDIR "${PREFIX}/res")
 SET(EDJDIR "${RESDIR}/edje/${PROJECT_NAME}") 

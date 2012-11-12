@@ -16,7 +16,7 @@ FOREACH(pofile ${POFILES})
 			DEPENDS ${absPofile}
 	)
 	INSTALL(FILES ${moFile}
-			DESTINATION /opt/ug/res/locale/${lang}/LC_MESSAGES RENAME ${PROJECT_NAME}.mo)
+			DESTINATION /usr/ug/res/locale/${lang}/LC_MESSAGES RENAME ${PROJECT_NAME}.mo)
 	SET(moFiles ${moFiles} ${moFile})
 ENDFOREACH(pofile)
 

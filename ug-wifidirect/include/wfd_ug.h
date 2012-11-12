@@ -26,7 +26,7 @@
 #include <tethering.h>
 
 #define PACKAGE "ug-setting-wifidirect-efl"
-#define LOCALEDIR "/opt/ug/res/locale"
+#define LOCALEDIR "/usr/ug/res/locale"
 
 #define DIRECT_TAG  "wfd_ug"
 #define DBG(log_level, format, args...) \

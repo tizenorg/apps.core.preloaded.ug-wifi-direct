@@ -1,9 +1,9 @@
 #sbs-git:slp/apps/u/ug-wifi-direct libug-setting-wifidirect-efl 0.3.4 82f07b22ef73127a446c49e00b8dca37010b3ee2
-%define PREFIX /opt/ug
+%define PREFIX /usr/ug
 
 Name:       libug-setting-wifidirect-efl
 Summary:    Wi-Fi Direct setting UI gadget 
-Version:    0.7.8
+Version:    0.7.9
 Release:    1
 Group:      TO_BE_FILLED
 License:    Samsung Proprietary License
@@ -77,39 +77,39 @@ make %{?jobs:-j%jobs}
 %install
 rm -rf %{buildroot}
 %make_install
-%__strip %{buildroot}/opt/ug/lib/libug-setting-wifidirect-efl.so.0.1.0
-%__strip %{buildroot}/opt/apps/org.tizen.wifi-direct-ugapp/bin/wifi-direct-ugapp
-%__strip %{buildroot}/opt/apps/org.tizen.wifi-direct-popup/bin/wifi-direct-popup
+%__strip %{buildroot}/usr/ug/lib/libug-setting-wifidirect-efl.so.0.1.0
+%__strip %{buildroot}/usr/apps/org.tizen.wifi-direct-ugapp/bin/wifi-direct-ugapp
+%__strip %{buildroot}/usr/apps/org.tizen.wifi-direct-popup/bin/wifi-direct-popup
 
 %post
-mkdir -p /opt/ug/bin/
-ln -sf /usr/bin/ug-client /opt/ug/bin/ug-setting-wifidirect-efl
+mkdir -p /usr/ug/bin/
+ln -sf /usr/bin/ug-client /usr/ug/bin/ug-setting-wifidirect-efl
 %postun
 
 
 %files
 %manifest libug-setting-wifidirect-efl.manifest
 %defattr(-,root,root,-)
-/opt/ug/lib/*
-/opt/ug/res/images/*
-/opt/ug/res/edje/*
-/opt/ug/res/locale/*/*/*
+/usr/ug/lib/*
+/usr/ug/res/images/*
+/usr/ug/res/edje/*
+/usr/ug/res/locale/*/*/*
 
 %files -n org.tizen.wifi-direct-popup
 %manifest com.samsung.wifi-direct-popup.manifest
 %defattr(-,root,root,-)
-/opt/apps/org.tizen.wifi-direct-popup/bin/*
-/opt/apps/org.tizen.wifi-direct-popup/res/images/*
-/opt/apps/org.tizen.wifi-direct-popup/res/locale/*/*/*
-#/opt/share/applications/org.tizen.wifi-direct-popup.desktop
+/usr/apps/org.tizen.wifi-direct-popup/bin/*
+/usr/apps/org.tizen.wifi-direct-popup/res/images/*
+/usr/apps/org.tizen.wifi-direct-popup/res/locale/*/*/*
+#/usr/share/applications/org.tizen.wifi-direct-popup.desktop
 #for appfw new manifest
-/opt/share/packages/org.tizen.wifi-direct-popup.xml
+/usr/share/packages/org.tizen.wifi-direct-popup.xml
 
 %files -n org.tizen.wifi-direct-ugapp
 %manifest com.samsung.wifi-direct-ugapp.manifest
 %defattr(-,root,root,-)
-/opt/apps/org.tizen.wifi-direct-ugapp/bin/*
-#/opt/share/applications/org.tizen.wifi-direct-ugapp.desktop
+/usr/apps/org.tizen.wifi-direct-ugapp/bin/*
+#/usr/share/applications/org.tizen.wifi-direct-ugapp.desktop
 #for appfw new manifest
-/opt/share/packages/org.tizen.wifi-direct-ugapp.xml
+/usr/share/packages/org.tizen.wifi-direct-ugapp.xml
 
