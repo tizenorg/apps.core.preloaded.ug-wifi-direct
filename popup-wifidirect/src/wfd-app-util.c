@@ -34,32 +34,30 @@
 char *wfd_app_trim_path(const char *filewithpath)
 {
 #if 0
-    char *filename = NULL;
-    if ((filename = strrchr(filewithpath, '/')) == NULL)
-        return (char *) filewithpath;
-    else
-        return (filename + 1);
+	char *filename = NULL;
+	if ((filename = strrchr(filewithpath, '/')) == NULL)
+	    return (char *) filewithpath;
+	else
+	    return (filename + 1);
 #else
-    static char *filename[100];
-    char *strptr = NULL;
-    int start = 0;
-    const char *space = "                                        ";
-    int len = strlen(filewithpath);
+	static char *filename[100];
+	char *strptr = NULL;
+	int start = 0;
+	const char *space = "                                        ";
+	int len = strlen(filewithpath);
 
-    if (len > 20)
-    {
-        strptr = (char *) filewithpath + (len - 20);
-        start = 0;
-    }
-    else if (len < 20)
-    {
-        strptr = (char *) filewithpath;
-        start = 20 - len;
-    }
-    strncpy((char *) filename, space, strlen(space));
-    strncpy((char *) filename + start, strptr, 50);
+	if (len > 20) {
+		strptr = (char *) filewithpath + (len - 20);
+		start = 0;
+	} else if (len < 20) {
+		strptr = (char *) filewithpath;
+		start = 20 - len;
+	}
 
-    return (char *) filename;
+	strncpy((char *) filename, space, strlen(space));
+	strncpy((char *) filename + start, strptr, 50);
+
+	return (char *) filename;
 #endif
 }
 
@@ -67,10 +65,9 @@ char *wfd_app_trim_path(const char *filewithpath)
 int wfd_app_gettid()
 {
 #ifdef __NR_gettid
-    return syscall(__NR_gettid);
+	return syscall(__NR_gettid);
 #else
-    fprintf(stderr,
-            "__NR_gettid is not defined, please include linux/unistd.h ");
-    return -1;
+	fprintf(stderr, "__NR_gettid is not defined, please include linux/unistd.h ");
+	return -1;
 #endif
 }

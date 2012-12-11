@@ -46,6 +46,9 @@ msgstr "Connect"
 msgid "IDS_WFD_BUTTON_CANCEL"
 msgstr "Cancel connection"
 
+msgid "IDS_WFD_TITLE_ABOUT_WIFI_DIRECT"
+msgstr "About Wi-Fi Direct"
+
 msgid "IDS_WFD_BODY_ABOUT_WIFI"
 msgstr "Wi-Fi Direct enables Wi-Fi devices to connect directly, making printing, file sharing, synchronising, and screen sharing much simpler and more convenient. Connecting to devices that support Wi-Fi Direct makes it possible to share your content, synchronise your data, socialise with friends, play games, audio, videos, and more, using various applications"
 

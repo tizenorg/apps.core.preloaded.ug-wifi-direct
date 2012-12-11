@@ -38,40 +38,39 @@
 
 #define WIFI_DIRECT_APP_MID		"wfd-ugapp"
 
-#define WFD_APP_LOG_LOW 	LOG_VERBOSE
-#define WFD_APP_LOG_HIGH 	LOG_INFO
-#define WFD_APP_LOG_ERROR 	LOG_ERROR
-#define WFD_APP_LOG_WARN 	LOG_WARN
-#define WFD_APP_LOG_ASSERT 	LOG_FATAL
-#define WFD_APP_LOG_EXCEPTION 	LOG_FATAL
+#define WFD_APP_LOG_LOW	LOG_VERBOSE
+#define WFD_APP_LOG_HIGH	LOG_INFO
+#define WFD_APP_LOG_ERROR	LOG_ERROR
+#define WFD_APP_LOG_WARN	LOG_WARN
+#define WFD_APP_LOG_ASSERT	LOG_FATAL
+#define WFD_APP_LOG_EXCEPTION	LOG_FATAL
 #define WFD_MAX_SIZE            128
 #define WFD_MAC_ADDRESS_SIZE    18
 
-char * wfd_app_trim_path(const char* filewithpath);
+char *wfd_app_trim_path(const char *filewithpath);
 int wfd_app_gettid();
 
 #define WFD_APP_LOG(log_level, format, args...) \
-	LOG(log_level, WIFI_DIRECT_APP_MID, "[%s:%04d,%d] " format, wfd_app_trim_path(__FILE__), __LINE__,wfd_app_gettid(),##args)
-#define __WFD_APP_FUNC_ENTER__	LOG(LOG_VERBOSE,  WIFI_DIRECT_APP_MID, "[%s:%04d,%d] Enter: %s()\n", wfd_app_trim_path(__FILE__), __LINE__,wfd_app_gettid(),__func__)
-#define __WFD_APP_FUNC_EXIT__	LOG(LOG_VERBOSE,  WIFI_DIRECT_APP_MID, "[%s:%04d,%d] Quit: %s()\n", wfd_app_trim_path(__FILE__), __LINE__,wfd_app_gettid(),__func__)
+	LOG(log_level, WIFI_DIRECT_APP_MID, "[%s:%04d,%d] " format, wfd_app_trim_path(__FILE__), __LINE__, wfd_app_gettid(), ##args)
+#define __WFD_APP_FUNC_ENTER__	LOG(LOG_VERBOSE,  WIFI_DIRECT_APP_MID, "[%s:%04d,%d] Enter: %s()\n", wfd_app_trim_path(__FILE__), __LINE__, wfd_app_gettid(), __func__)
+#define __WFD_APP_FUNC_EXIT__	LOG(LOG_VERBOSE,  WIFI_DIRECT_APP_MID, "[%s:%04d,%d] Quit: %s()\n", wfd_app_trim_path(__FILE__), __LINE__, wfd_app_gettid(), __func__)
 
 #else /** _DLOG_UTIL */
 
-#define WFD_APP_LOG(log_level, format, args...) printf("[%s:%04d,%d] " format, wfd_app_trim_path(__FILE__), __LINE__,wfd_app_gettid(), ##args)
-#define __WFD_APP_FUNC_ENTER__	printf("[%s:%04d,%d] Entering: %s()\n", wfd_app_trim_path(__FILE__), __LINE__,wfd_app_gettid(),__func__)
-#define __WFD_APP_FUNC_EXIT__	printf("[%s:%04d,%d] Quit: %s()\n", wfd_app_trim_path(__FILE__), __LINE__,wfd_app_gettid(),__func__)
+#define WFD_APP_LOG(log_level, format, args...) printf("[%s:%04d,%d] " format, wfd_app_trim_path(__FILE__), __LINE__, wfd_app_gettid(), ##args)
+#define __WFD_APP_FUNC_ENTER__	printf("[%s:%04d,%d] Entering: %s()\n", wfd_app_trim_path(__FILE__), __LINE__, wfd_app_gettid(), __func__)
+#define __WFD_APP_FUNC_EXIT__	printf("[%s:%04d,%d] Quit: %s()\n", wfd_app_trim_path(__FILE__), __LINE__, wfd_app_gettid(), __func__)
 
 #endif /** _USE_DLOG_UTIL */
 
 
 
 #define assertm_if(expr, fmt, arg...) do { \
-   if(expr) { \
+	if (expr) { \
 	  WFD_APP_LOG(WFD_APP_LOG_ASSERT, " ##(%s) -> %s() assert!!## "fmt, #expr, __FUNCTION__, ##arg); \
 		 exit(1); \
-   } \
-} while (0)			// retvm if
-
+	} \
+} while (0)
 
 
 #endif /* __WFD_APP_UTIL_H__ */

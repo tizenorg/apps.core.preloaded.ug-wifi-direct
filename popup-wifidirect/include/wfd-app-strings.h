@@ -26,14 +26,17 @@
 extern "C" {
 #endif
 
-#if 1 //Text should be translated.
-
-#define WFD_STR_HEADER					
+#if 1
+/* Text should be translated. */
+#define IDS_WFD_POP_CONNECTED "Connected to %s"
+#define IDS_WFD_POP_CONNECT_FAILED "Connect to %s failed"
+#define IDS_WFD_POP_DISCONNECTED "Disconnected to %s"
 
 #define IDS_WFD_POP_CONNECT_Q "Connect with %s?"
-#define IDS_WFD_POP_ENTER_PIN "Connect with %s in %d secs. Enter PIN to connect %s."
-#define IDS_WFD_POP_CONNECTING_WITH_PIN "Connecting...PIN:"
-#define IDS_WFD_POP_AUTOMATIC_TURN_OFF "There has been no activity for 5 minutes since Wi-Fi Direct was enabled. To extend battery life, Wi-Fi Direct has been disabled."
+#define IDS_WFD_POP_CONNECTING_WITH_KEYPAD "Connect with %s in %d secs. Enter PIN to connect to %s"
+#define IDS_WFD_POP_ENTER_PIN "Connect with %s in %d secs"
+#define IDS_WFD_POP_ENTER_PIN_WITH_KEYPAD "%s is requesting a Wi-Fi Direct connection. Allow?"
+#define IDS_WFD_POP_CONNECTING_WITH_PIN "Connect with %s in %d secs. PIN: %s"
 
 #endif
 

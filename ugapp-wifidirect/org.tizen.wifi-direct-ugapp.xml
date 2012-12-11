@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns="http://tizen.org/ns/packages" package="org.tizen.wifi-direct-ugapp" version="0.6.2" install-location="internal-only">
 	<label>WifiDirectUgapp</label>
-	<author email="sungsik.jang@samsung.com" href="www.samsung.com">Sungsik Jang</author>
-	<author email="dwmax.lee@samsung.com" href="www.samsung.com">Dongwook Lee</author>
+	<author email="lastkgb.kim@samsung.com" href="www.samsung.com">Sungsik Jang</author>
+	<author email="jinmin@samsung.com" href="www.samsung.com">Dongwook Lee</author>
 	<description>WiFi Direct UG Application</description>
 	<ui-application appid="org.tizen.wifi-direct-ugapp" exec="/usr/apps/org.tizen.wifi-direct-ugapp/bin/wifi-direct-ugapp" nodisplay="true" multiple="false" type="capp" taskmanage="false">
 		<label>WifiDirectUgapp</label>

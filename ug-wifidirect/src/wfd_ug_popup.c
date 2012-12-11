@@ -31,95 +31,149 @@
 #include "wfd_ug_view.h"
 #include "wfd_client.h"
 
+/**
+ *	This function let the ug call it when click 'ok' button in hotspot action popup
+ *	@return   void
+ *	@param[in] data the pointer to the main data structure
+ *	@param[in] obj the pointer to the evas object
+ *	@param[in] event_info the pointer to the event information
+ */
+static void _wfd_ug_act_popup_hotspot_ok_cb(void *data, Evas_Object *obj, void *event_info)
+{
+	__FUNC_ENTER__;
+	int result = -1;
+	struct ug_data *ugd = (struct ug_data *) data;
+
+	result = wfd_mobile_ap_off(ugd);
+	if (0 == result) {
+		/* refresh the header */
+		ugd->head_text_mode = HEAD_TEXT_TYPE_ACTIVATING;
+		wfd_ug_view_refresh_glitem(ugd->head);
+
+		/* while activating/deactivating, disable the buttons */
+		if (ugd->scan_btn) {
+			wfd_ug_view_refresh_button(ugd->scan_btn, _("IDS_WFD_BUTTON_SCAN"), FALSE);
+		}
+
+		if (ugd->multi_scan_btn) {
+			wfd_ug_view_refresh_button(ugd->multi_scan_btn, _("IDS_WFD_BUTTON_SCAN"), FALSE);
+		}
+
+		if (ugd->back_btn) {
+			elm_object_disabled_set(ugd->back_btn, TRUE);
+		}
+	}
+
+	evas_object_del(ugd->act_popup);
+	ugd->act_popup = NULL;
+	__FUNC_EXIT__;
+}
+
+/**
+ *	This function let the ug call it when click 'cancel' button in hotspot action popup
+ *	@return   void
+ *	@param[in] data the pointer to the main data structure
+ *	@param[in] obj the pointer to the evas object
+ *	@param[in] event_info the pointer to the event information
+ */
+static void _wfd_ug_act_popup_hotspot_cancel_cb(void *data, Evas_Object *obj, void *event_info)
+{
+	__FUNC_ENTER__;
+	struct ug_data *ugd = (struct ug_data *) data;
+
+	ugd->head_text_mode = HEAD_TEXT_TYPE_DIRECT;
+	wfd_ug_view_refresh_glitem(ugd->head);
+
+	evas_object_del(ugd->act_popup);
+	ugd->act_popup = NULL;
+	__FUNC_EXIT__;
+}
+
+/**
+ *	This function let the ug call it when click 'ok' button in wifi action popup
+ *	@return   void
+ *	@param[in] data the pointer to the main data structure
+ *	@param[in] obj the pointer to the evas object
+ *	@param[in] event_info the pointer to the event information
+ */
 static void _wfd_ug_act_popup_wifi_ok_cb(void *data, Evas_Object *obj, void *event_info)
 {
-    __FUNC_ENTER__;
-    struct ug_data *ugd = (struct ug_data*) data;
+	__FUNC_ENTER__;
+	int result = -1;
+	struct ug_data *ugd = (struct ug_data *) data;
 
-    // TODO: Turn off WiFi
-    ugd->wfd_status = WFD_LINK_STATUS_DEACTIVATED;
-    wfd_wifi_off(ugd);
+	result = wfd_wifi_off(ugd);
+	if (0 == result) {
+		/* refresh the header */
+		ugd->head_text_mode = HEAD_TEXT_TYPE_ACTIVATING;
+		wfd_ug_view_refresh_glitem(ugd->head);
 
-     evas_object_del(ugd->act_popup);
-     ugd->act_popup = NULL;
-    __FUNC_EXIT__;
+		/* while activating/deactivating, disable the buttons */
+		if (ugd->scan_btn) {
+			wfd_ug_view_refresh_button(ugd->scan_btn, _("IDS_WFD_BUTTON_SCAN"), FALSE);
+		}
+
+		if (ugd->multi_scan_btn) {
+			wfd_ug_view_refresh_button(ugd->multi_scan_btn, _("IDS_WFD_BUTTON_SCAN"), FALSE);
+		}
+
+		if (ugd->back_btn) {
+			elm_object_disabled_set(ugd->back_btn, TRUE);
+		}
+	}
+
+	evas_object_del(ugd->act_popup);
+	ugd->act_popup = NULL;
+	__FUNC_EXIT__;
 }
 
+/**
+ *	This function let the ug call it when click 'cancel' button in wifi action popup
+ *	@return   void
+ *	@param[in] data the pointer to the main data structure
+ *	@param[in] obj the pointer to the evas object
+ *	@param[in] event_info the pointer to the event information
+ */
 static void _wfd_ug_act_popup_wifi_cancel_cb(void *data, Evas_Object *obj, void *event_info)
 {
-    __FUNC_ENTER__;
-    struct ug_data *ugd = (struct ug_data*) data;
-
-    // TODO: set genlist head item as "WiFi Direct"
-    ugd->head_text_mode = HEAD_TEXT_TYPE_DIRECT;
-    wfd_ug_view_refresh_glitem(ugd->head);
-
-     evas_object_del(ugd->act_popup);
-     ugd->act_popup = NULL;
-    __FUNC_EXIT__;
-}
-
-static void _wfd_ug_act_popup_disconnect_ok_cb(void *data, Evas_Object *obj, void *event_info)
-{
 	__FUNC_ENTER__;
+	struct ug_data *ugd = (struct ug_data *) data;
 
-	char *mac_addr = NULL;
-	struct ug_data *ugd = (struct ug_data*) data;
-
-	if (NULL == ugd) {
-		DBG(LOG_ERROR, "Incorrect parameter(NULL)\n");
-		return;
-	}
-
-	if (ugd->gl_connected_peer_cnt < 1) {
-		DBG(LOG_ERROR, "No connected peer\n");
-		evas_object_del(ugd->act_popup);
-		ugd->act_popup = NULL;
-		return;
-	}
-
-	/* just one peer */
-	mac_addr = ugd->gl_connected_peers[0].mac_addr;
-	wfd_client_disconnect(mac_addr);
-	if (ugd->multi_connect_mode == WFD_MULTI_CONNECT_MODE_IN_PROGRESS) {
-		wfd_stop_multi_connect(ugd);
-	}
+	ugd->head_text_mode = HEAD_TEXT_TYPE_DIRECT;
+	wfd_ug_view_refresh_glitem(ugd->head);
 
 	evas_object_del(ugd->act_popup);
 	ugd->act_popup = NULL;
-
 	__FUNC_EXIT__;
 }
 
-static void _wfd_ug_act_popup_disconnect_cancel_cb(void *data, Evas_Object *obj, void *event_info)
-{
-	__FUNC_ENTER__;
-
-	struct ug_data *ugd = (struct ug_data*) data;
-	if (NULL == ugd) {
-		DBG(LOG_ERROR, "Incorrect parameter(NULL)\n");
-		return;
-	}
-
-	evas_object_del(ugd->act_popup);
-	ugd->act_popup = NULL;
-
-	__FUNC_EXIT__;
-}
-
+/**
+ *	This function let the ug call it when click 'ok' button in disconnect all popup
+ *	@return   void
+ *	@param[in] data the pointer to the main data structure
+ *	@param[in] obj the pointer to the evas object
+ *	@param[in] event_info the pointer to the event information
+ */
 static void _wfd_ug_act_popup_disconnect_all_ok_cb(void *data, Evas_Object *obj, void *event_info)
 {
 	__FUNC_ENTER__;
-
-	struct ug_data *ugd = (struct ug_data*) data;
+	int i = 0;
+	struct ug_data *ugd = (struct ug_data *) data;
 	if (NULL == ugd) {
 		DBG(LOG_ERROR, "Incorrect parameter(NULL)\n");
 		return;
 	}
 
 	wfd_client_disconnect(NULL);
-	if (ugd->multi_connect_mode == WFD_MULTI_CONNECT_MODE_IN_PROGRESS) {
-		wfd_stop_multi_connect(ugd);
+
+	if (ugd->multi_connect_mode != WFD_MULTI_CONNECT_MODE_NONE) {
+		wfd_free_multi_selected_peers(ugd);
+	} else {
+		/* update the connecting icon */
+		for (i = 0; i < ugd->raw_discovered_peer_cnt; i++) {
+			ugd->raw_discovered_peers[i].conn_status = PEER_CONN_STATUS_DISCONNECTED;
+			wfd_ug_view_refresh_glitem(ugd->raw_discovered_peers[i].gl_item);
+		}
 	}
 
 	evas_object_del(ugd->act_popup);
@@ -128,11 +182,18 @@ static void _wfd_ug_act_popup_disconnect_all_ok_cb(void *data, Evas_Object *obj,
 	__FUNC_EXIT__;
 }
 
+/**
+ *	This function let the ug call it when click 'cancel' button in disconnect all popup
+ *	@return   void
+ *	@param[in] data the pointer to the main data structure
+ *	@param[in] obj the pointer to the evas object
+ *	@param[in] event_info the pointer to the event information
+ */
 static void _wfd_ug_act_popup_disconnect_all_cancel_cb(void *data, Evas_Object *obj, void *event_info)
 {
 	__FUNC_ENTER__;
 
-	struct ug_data *ugd = (struct ug_data*) data;
+	struct ug_data *ugd = (struct ug_data *) data;
 	if (NULL == ugd) {
 		DBG(LOG_ERROR, "Incorrect parameter(NULL)\n");
 		return;
@@ -144,51 +205,17 @@ static void _wfd_ug_act_popup_disconnect_all_cancel_cb(void *data, Evas_Object *
 	__FUNC_EXIT__;
 }
 
-static void _wfd_ug_act_popup_scan_again_ok_cb(void *data, Evas_Object *obj, void *event_info)
-{
-	__FUNC_ENTER__;
-
-	struct ug_data *ugd = (struct ug_data*) data;
-	if (NULL == ugd) {
-		DBG(LOG_ERROR, "Incorrect parameter(NULL)\n");
-		return;
-	}
-
-	if (ugd->conn_wfd_item != NULL) {
-		elm_object_item_del(ugd->conn_wfd_item);
-		ugd->conn_wfd_item = NULL;
-	}
-
-	/* cancel the current connection */
-	wfd_client_disconnect(NULL);
-	if (ugd->multi_connect_mode == WFD_MULTI_CONNECT_MODE_IN_PROGRESS) {
-		wfd_stop_multi_connect(ugd);
-	}
-
-	/* start discovery again */
-	wfd_client_start_discovery(ugd);
-	evas_object_del(ugd->act_popup);
-	ugd->act_popup = NULL;
-
-	__FUNC_EXIT__;
-}
-
-static void _wfd_ug_act_popup_scan_again_cancel_cb(void *data, Evas_Object *obj, void *event_info)
-{
-	__FUNC_ENTER__;
-
-	struct ug_data *ugd = (struct ug_data*) data;
-
-	evas_object_del(ugd->act_popup);
-	ugd->act_popup = NULL;
-
-	__FUNC_EXIT__;
-}
-
+/**
+ *	This function let the ug create a action popup
+ *	@return   void
+ *	@param[in] data the pointer to the main data structure
+ *	@param[in] message the pointer to the text of popup
+ *	@param[in] popup_type the message type
+ */
 void wfd_ug_act_popup(void *data, const char *message, int popup_type)
 {
 	__FUNC_ENTER__;
-	struct ug_data *ugd = (struct ug_data*) data;
+	struct ug_data *ugd = (struct ug_data *) data;
 	Evas_Object *popup = NULL;
 	Evas_Object *btn1 = NULL, *btn2 = NULL;
 
@@ -202,7 +229,7 @@ void wfd_ug_act_popup(void *data, const char *message, int popup_type)
 	elm_object_style_set(btn2, "popup_button/default");
 
 	/* set the different text by type */
-	if (popup_type == POPUP_TYPE_WIFI_OFF) {
+	if (popup_type == POPUP_TYPE_WIFI_OFF || popup_type == POPUP_TYPE_HOTSPOT_OFF) {
 		elm_object_text_set(btn1, S_("IDS_COM_SK_YES"));
 		elm_object_text_set(btn2, S_("IDS_COM_SK_NO"));
 	} else {
@@ -215,18 +242,16 @@ void wfd_ug_act_popup(void *data, const char *message, int popup_type)
 
 	/* set the different callback by type */
 	if (popup_type == POPUP_TYPE_WIFI_OFF) {
-		evas_object_smart_callback_add(btn1, "clicked", _wfd_ug_act_popup_wifi_ok_cb, (void*) ugd);
-		evas_object_smart_callback_add(btn2, "clicked", _wfd_ug_act_popup_wifi_cancel_cb, (void*) ugd);
-	} else if (popup_type == POP_TYPE_DISCONNECT) {
-		//evas_object_smart_callback_add(btn1, "clicked", _wfd_ug_act_popup_disconnect_ok_cb, (void*) ugd);
-		evas_object_smart_callback_add(btn1, "clicked", _wfd_ug_act_popup_disconnect_all_ok_cb, (void*) ugd);
-		evas_object_smart_callback_add(btn2, "clicked", _wfd_ug_act_popup_disconnect_cancel_cb, (void*) ugd);
-	} else if (popup_type == POP_TYPE_DISCONNECT_ALL) {
-		evas_object_smart_callback_add(btn1, "clicked", _wfd_ug_act_popup_disconnect_all_ok_cb, (void*) ugd);
-		evas_object_smart_callback_add(btn2, "clicked", _wfd_ug_act_popup_disconnect_all_cancel_cb, (void*) ugd);
-	} else if (popup_type == POP_TYPE_SCAN_AGAIN) {
-		evas_object_smart_callback_add(btn1, "clicked", _wfd_ug_act_popup_scan_again_ok_cb, (void*) ugd);
-		evas_object_smart_callback_add(btn2, "clicked", _wfd_ug_act_popup_scan_again_cancel_cb, (void*) ugd);
+		evas_object_smart_callback_add(btn1, "clicked", _wfd_ug_act_popup_wifi_ok_cb, (void *)ugd);
+		evas_object_smart_callback_add(btn2, "clicked", _wfd_ug_act_popup_wifi_cancel_cb, (void *)ugd);
+	} else if (popup_type == POPUP_TYPE_HOTSPOT_OFF) {
+		evas_object_smart_callback_add(btn1, "clicked", _wfd_ug_act_popup_hotspot_ok_cb, (void *)ugd);
+		evas_object_smart_callback_add(btn2, "clicked", _wfd_ug_act_popup_hotspot_cancel_cb, (void *)ugd);
+	} else if (popup_type == POP_TYPE_DISCONNECT ||
+		popup_type == POP_TYPE_DISCONNECT_ALL ||
+		popup_type == POP_TYPE_SCAN_AGAIN) {
+		evas_object_smart_callback_add(btn1, "clicked", _wfd_ug_act_popup_disconnect_all_ok_cb, (void *)ugd);
+		evas_object_smart_callback_add(btn2, "clicked", _wfd_ug_act_popup_disconnect_all_cancel_cb, (void *)ugd);
 	}
 
 	evas_object_show(popup);
@@ -234,135 +259,121 @@ void wfd_ug_act_popup(void *data, const char *message, int popup_type)
 	__FUNC_EXIT__;
 }
 
+/**
+ *	This function let the ug remove the action popup
+ *	@return   void
+ *	@param[in] data the pointer to the main data structure
+ */
 void wfg_ug_act_popup_remove(void *data)
 {
-    __FUNC_ENTER__;
-    struct ug_data *ugd = (struct ug_data*) data;
+	__FUNC_ENTER__;
+	struct ug_data *ugd = (struct ug_data *) data;
 
-    if(ugd->act_popup)
-    {
-        evas_object_del(ugd->act_popup);
-        ugd->act_popup = NULL;
-    }
-    __FUNC_EXIT__;
+	if (ugd->act_popup) {
+		evas_object_del(ugd->act_popup);
+		ugd->act_popup = NULL;
+	}
+	__FUNC_EXIT__;
 }
 
+/**
+ *	This function let the ug call it when click 'ok' button in warning popup of terminated problem
+ *	@return   void
+ *	@param[in] data the pointer to the main data structure
+ *	@param[in] obj the pointer to the evas object
+ *	@param[in] event_info the pointer to the event information
+ */
 static void _wfd_ug_terminate_popup_cb(void *data, Evas_Object *obj, void *event_info)
 {
-    __FUNC_ENTER__;
-    struct ug_data *ugd = (struct ug_data*) data;
+	__FUNC_ENTER__;
+	struct ug_data *ugd = (struct ug_data *) data;
 
-    evas_object_del(ugd->warn_popup);
-    ugd->warn_popup = NULL;
+	evas_object_del(ugd->warn_popup);
+	ugd->warn_popup = NULL;
 
-    wfd_ug_view_free_peers(ugd);
+	wfd_ug_view_free_peers(ugd);
 
-    ug_destroy_me(ugd->ug);
-    __FUNC_EXIT__;
+	ug_destroy_me(ugd->ug);
+	__FUNC_EXIT__;
 }
 
-static void _wfd_ug_warn_popup_cb(void *data, Evas_Object *obj, void *event_info)
-{
-    __FUNC_ENTER__;
-    struct ug_data *ugd = (struct ug_data*) data;
-
-    evas_object_del(ugd->warn_popup);
-    ugd->warn_popup = NULL;
-
-    __FUNC_EXIT__;
-}
-
-void wfd_ug_warn_popup(void *data, const char *message, int popup_type)
-{
-    __FUNC_ENTER__;
-    struct ug_data *ugd = (struct ug_data*) data;
-    Evas_Object *popup = NULL;
-    Evas_Object *btn = NULL;
-
-    popup = elm_popup_add(ugd->base);
-    evas_object_size_hint_weight_set(popup, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
-    elm_object_text_set(popup, message);
-
-    btn = elm_button_add(popup);
-    elm_object_style_set(btn, "popup_button/default");
-    elm_object_text_set(btn, S_("IDS_COM_SK_OK"));
-    elm_object_part_content_set(popup, "button1", btn);
-    if(popup_type == POPUP_TYPE_TERMINATE)
-        evas_object_smart_callback_add(btn, "clicked", _wfd_ug_terminate_popup_cb, (void*) ugd);
-    else
-        evas_object_smart_callback_add(btn, "clicked", _wfd_ug_warn_popup_cb, (void*) ugd);
-
-    evas_object_show(popup);
-    ugd->warn_popup = popup;
-    __FUNC_EXIT__;
-}
-
-void wfg_ug_warn_popup_remove(void *data)
-{
-    __FUNC_ENTER__;
-    struct ug_data *ugd = (struct ug_data*) data;
-
-    if(ugd->warn_popup)
-    {
-        evas_object_del(ugd->warn_popup);
-        ugd->warn_popup = NULL;
-    }
-    __FUNC_EXIT__;
-}
-
-
-void wfd_ug_tickernoti_popup(char *msg)
+/**
+ *	This function let the ug call it when click 'ok' button in warning popup of turning off WFD automatically
+ *	@return   void
+ *	@param[in] data the pointer to the main data structure
+ *	@param[in] obj the pointer to the evas object
+ *	@param[in] event_info the pointer to the event information
+ */
+static void _wfd_ug_automatic_turn_off_popup_cb(void *data, Evas_Object *obj, void *event_info)
 {
 	__FUNC_ENTER__;
+	struct ug_data *ugd = (struct ug_data *) data;
 
-	int ret = -1;
-	bundle *b = NULL;
+	evas_object_del(ugd->warn_popup);
+	ugd->warn_popup = NULL;
 
-	b = bundle_create();
-	if (!b) {
-		DBG(LOG_ERROR, "FAIL: bundle_create()\n");
-		return;
+	/* turn off the Wi-Fi Direct */
+	wfd_client_switch_off(ugd);
+
+	/* antomaticlly turn on tethering mode */
+	if (TRUE == ugd->is_hotspot_off) {
+		wfd_mobile_ap_on(ugd);
 	}
 
-	/* tickernoti style */
-	ret = bundle_add(b, "0", "info");
-	if (ret) {
-		DBG(LOG_ERROR, "Fail to add tickernoti style\n");
-		bundle_free(b);
-		return;
+	__FUNC_EXIT__;
+}
+
+/**
+ *	This function let the ug call it when click 'ok' button in warning popup
+ *	@return   void
+ *	@param[in] data the pointer to the main data structure
+ *	@param[in] obj the pointer to the evas object
+ *	@param[in] event_info the pointer to the event information
+ */
+static void _wfd_ug_warn_popup_cb(void *data, Evas_Object *obj, void *event_info)
+{
+	__FUNC_ENTER__;
+	struct ug_data *ugd = (struct ug_data *) data;
+
+	evas_object_del(ugd->warn_popup);
+	ugd->warn_popup = NULL;
+
+	__FUNC_EXIT__;
+}
+
+/**
+ *	This function let the ug create a warning popup
+ *	@return   void
+ *	@param[in] data the pointer to the main data structure
+ *	@param[in] message the pointer to the text of popup
+ *	@param[in] popup_type the message type
+ */
+void wfd_ug_warn_popup(void *data, const char *message, int popup_type)
+{
+	__FUNC_ENTER__;
+	struct ug_data *ugd = (struct ug_data *) data;
+	Evas_Object *popup = NULL;
+	Evas_Object *btn = NULL;
+
+	popup = elm_popup_add(ugd->base);
+	evas_object_size_hint_weight_set(popup, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
+	elm_object_part_text_set(popup, "title,text", _("IDS_WFD_POP_TITILE_CONNECTION"));
+	elm_object_text_set(popup, message);
+
+	btn = elm_button_add(popup);
+	elm_object_style_set(btn, "popup_button/default");
+	elm_object_text_set(btn, S_("IDS_COM_SK_OK"));
+	elm_object_part_content_set(popup, "button1", btn);
+	if (popup_type == POPUP_TYPE_TERMINATE) {
+		evas_object_smart_callback_add(btn, "clicked", _wfd_ug_terminate_popup_cb, (void *)ugd);
+	} else if (popup_type == POP_TYPE_AUTOMATIC_TURN_OFF) {
+		evas_object_smart_callback_add(btn, "clicked", _wfd_ug_automatic_turn_off_popup_cb, (void *)ugd);
+	} else {
+		evas_object_smart_callback_add(btn, "clicked", _wfd_ug_warn_popup_cb, (void *)ugd);
 	}
 
-	/* popup text */
-	ret = bundle_add(b, "1", msg);
-	if (ret) {
-		DBG(LOG_ERROR, "Fail to add popup text\n");
-		bundle_free(b);
-		return;
-	}
-
-	/* orientation of tickernoti */
-	ret = bundle_add(b, "2", "1");
-	if (ret) {
-		DBG(LOG_ERROR, "Fail to add orientation of tickernoti\n");
-		bundle_free(b);
-		return;
-	}
-
-	/* timeout(second) of tickernoti */
-	ret = bundle_add(b, "3", "3");
-	if (ret) {
-		DBG(LOG_ERROR, "Fail to add timeout of tickernoti\n");
-		bundle_free(b);
-		return;
-	}
-
-	/* launch tickernoti */
-	ret = syspopup_launch(TICKERNOTI_SYSPOPUP, b);
-	if (ret) {
-		DBG(LOG_ERROR, "Fail to launch syspopup\n");
-	}
-
-	bundle_free(b);
+	evas_object_show(popup);
+	ugd->warn_popup = popup;
 	__FUNC_EXIT__;
 }
 

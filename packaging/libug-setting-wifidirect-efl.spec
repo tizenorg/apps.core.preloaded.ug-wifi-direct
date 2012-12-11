@@ -3,7 +3,7 @@
 
 Name:       libug-setting-wifidirect-efl
 Summary:    Wi-Fi Direct setting UI gadget 
-Version:    0.7.9
+Version:    1.0.1
 Release:    1
 Group:      TO_BE_FILLED
 License:    Samsung Proprietary License
@@ -96,7 +96,7 @@ ln -sf /usr/bin/ug-client /usr/ug/bin/ug-setting-wifidirect-efl
 /usr/ug/res/locale/*/*/*
 
 %files -n org.tizen.wifi-direct-popup
-%manifest com.samsung.wifi-direct-popup.manifest
+%manifest org.tizen.wifi-direct-popup.manifest
 %defattr(-,root,root,-)
 /usr/apps/org.tizen.wifi-direct-popup/bin/*
 /usr/apps/org.tizen.wifi-direct-popup/res/images/*
@@ -106,7 +106,7 @@ ln -sf /usr/bin/ug-client /usr/ug/bin/ug-setting-wifidirect-efl
 /usr/share/packages/org.tizen.wifi-direct-popup.xml
 
 %files -n org.tizen.wifi-direct-ugapp
-%manifest com.samsung.wifi-direct-ugapp.manifest
+%manifest org.tizen.wifi-direct-ugapp.manifest
 %defattr(-,root,root,-)
 /usr/apps/org.tizen.wifi-direct-ugapp/bin/*
 #/usr/share/applications/org.tizen.wifi-direct-ugapp.desktop

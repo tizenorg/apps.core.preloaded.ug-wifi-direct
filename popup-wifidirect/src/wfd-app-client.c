@@ -28,31 +28,36 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "wifi-direct.h"
 #include "wfd-app.h"
 #include "wfd-app-util.h"
-#include "vconf.h"
+#include "wfd-app-strings.h"
+#include <vconf.h>
 
-
+/**
+ *	This function let the app make a callback for connected peer
+ *	@return   TRUE
+ *	@param[in] peer the pointer to the connected peer
+ *	@param[in] user_data the pointer to the main data structure
+ */
 bool _wfd_connected_peer_cb(wifi_direct_connected_peer_info_s *peer, void *user_data)
 {
 	__WFD_APP_FUNC_ENTER__;
 
 	wfd_appdata_t *ad = (wfd_appdata_t *) user_data;
-	if (NULL == ad || NULL == peer || NULL == peer->ssid || NULL == peer->mac_address) {
+	if (NULL == ad || NULL == peer || NULL == peer->device_name || NULL == peer->mac_address) {
 		WFD_APP_LOG(WFD_APP_LOG_LOW, "NULL parameters.\n");
 		return FALSE;
 	}
 
 	int peer_cnt = ad->raw_connected_peer_cnt;
-	WFD_APP_LOG(WFD_APP_LOG_LOW, "%dth connected peer. [%s]\n", peer_cnt, peer->ssid);
+	WFD_APP_LOG(WFD_APP_LOG_LOW, "%dth connected peer. [%s]\n", peer_cnt, peer->device_name);
 
-	strncpy(ad->raw_connected_peers[peer_cnt].ssid, peer->ssid, sizeof(ad->raw_connected_peers[peer_cnt].ssid));
+	strncpy(ad->raw_connected_peers[peer_cnt].ssid, peer->device_name, sizeof(ad->raw_connected_peers[peer_cnt].ssid));
 	strncpy(ad->raw_connected_peers[peer_cnt].mac_address, peer->mac_address, WFD_MAC_ADDRESS_SIZE);
 	WFD_APP_LOG(WFD_APP_LOG_LOW, "\tSSID: [%s]\n", ad->raw_connected_peers[peer_cnt].ssid);
 	ad->raw_connected_peer_cnt++;
 
-	free(peer->ssid);
+	free(peer->device_name);
 	free(peer->mac_address);
 	free(peer);
 
@@ -60,6 +65,11 @@ bool _wfd_connected_peer_cb(wifi_direct_connected_peer_info_s *peer, void *user_
 	return TRUE;
 }
 
+/**
+ *	This function let the app get the connected peers
+ *	@return   If success, return 0, else return -1
+ *	@param[in] ugd the pointer to the main data structure
+ */
 int _wfd_app_get_connected_peers(void *user_data)
 {
 	__WFD_APP_FUNC_ENTER__;
@@ -83,6 +93,10 @@ int _wfd_app_get_connected_peers(void *user_data)
 	return 0;
 }
 
+/**
+ *	This function let the app delete the notification
+ *	@return   void
+ */
 void _del_wfd_notification()
 {
 	__WFD_APP_FUNC_ENTER__;
@@ -90,7 +104,7 @@ void _del_wfd_notification()
 	/* delete the notification */
 	notification_error_e noti_err = NOTIFICATION_ERROR_NONE;
 	noti_err  = notification_delete_all_by_type(NULL, NOTIFICATION_TYPE_NOTI);
-	if(noti_err != NOTIFICATION_ERROR_NONE) {
+	if (noti_err != NOTIFICATION_ERROR_NONE) {
 		WFD_APP_LOG(WFD_APP_LOG_LOW, "Fail to notification_delete_all_by_type.(%d)\n", noti_err);
 		return;
 	}
@@ -98,83 +112,11 @@ void _del_wfd_notification()
 	__WFD_APP_FUNC_EXIT__;
 }
 
-#if 0
-void _add_wfd_actived_notification(void *user_data)
-{
-	__WFD_APP_FUNC_ENTER__;
-
-	wfd_appdata_t *ad = (wfd_appdata_t *) user_data;
-	if (NULL == ad || NULL == ad->noti) {
-		WFD_APP_LOG(WFD_APP_LOG_LOW, "NULL parameters.\n");
-		return;
-	}
-
-	notification_error_e noti_err = NOTIFICATION_ERROR_NONE;
-
-	/* set the icon */
-	noti_err = notification_set_image(ad->noti, NOTIFICATION_IMAGE_TYPE_ICON,  RESDIR"/images/A09_notification_icon.png");
-	if (noti_err != NOTIFICATION_ERROR_NONE) {
-		WFD_APP_LOG(WFD_APP_LOG_LOW, "Fail to notification_set_image. (%d)\n", noti_err);
-		return;
-	}
-
-	/* set the title and content */
-	noti_err = notification_set_text(ad->noti, NOTIFICATION_TEXT_TYPE_TITLE,
-		"Wi-Fi Direct activated", NULL, NOTIFICATION_VARIABLE_TYPE_NONE);
-	if (noti_err != NOTIFICATION_ERROR_NONE) {
-		WFD_APP_LOG(WFD_APP_LOG_LOW, "Fail to notification_set_text. (%d)\n", noti_err);
-		return;
-	}
-
-	noti_err = notification_set_text(ad->noti, NOTIFICATION_TEXT_TYPE_CONTENT,
-		"Tap to change settings", NULL, NOTIFICATION_VARIABLE_TYPE_NONE);
-	if (noti_err != NOTIFICATION_ERROR_NONE) {
-		WFD_APP_LOG(WFD_APP_LOG_LOW, "Fail to notification_set_text. (%d)\n", noti_err);
-		return;
-	}
-
-	bundle *b = NULL;
-	b = bundle_create();
-	appsvc_set_pkgname(b, PACKAGE);
-	appsvc_add_data(b, NOTIFICATION_BUNDLE_PARAM, NOTIFICATION_BUNDLE_VALUE);
-
-	int res = NOTIFICATION_ERROR_NONE;
-	res = notification_set_execute_option(ad->noti, NOTIFICATION_EXECUTE_TYPE_SINGLE_LAUNCH, /*Button Text*/NULL, NULL, b);
-	if (res != NOTIFICATION_ERROR_NONE) {
-		WFD_APP_LOG(WFD_APP_LOG_LOW,"Failed to notification_set_execute_option. [%d]", res);
-		return;
-	}
-
-	bundle_free(b);
-
-	/* set display application list */
-	noti_err = notification_set_display_applist(ad->noti, NOTIFICATION_DISPLAY_APP_NOTIFICATION_TRAY);
-	if(noti_err != NOTIFICATION_ERROR_NONE) {
-		WFD_APP_LOG(WFD_APP_LOG_LOW, "Fail to notification_set_display_applist : %d\n", noti_err);
-		return;
-	}
-
-	/* notify the quick panel */
-	if (0 == ad->is_insert) {
-		noti_err = notification_insert(ad->noti, NULL);
-		if (noti_err != NOTIFICATION_ERROR_NONE) {
-			WFD_APP_LOG(WFD_APP_LOG_LOW, "Fail to notification_insert.(%d)\n", noti_err);
-			return;
-		}
-
-		ad->is_insert= 1;
-	} else {
-		noti_err  = notification_update(ad->noti);
-		if (noti_err != NOTIFICATION_ERROR_NONE) {
-			WFD_APP_LOG(WFD_APP_LOG_LOW, "Fail to notification_update. (%d)\n", noti_err);
-			return;
-		}
-	}
-
-	__WFD_APP_FUNC_EXIT__;
-}
-#endif
-
+/**
+ *	This function let the app add the notification when it is connected
+ *	@return   void
+ *	@param[in] user_data the pointer to the main data structure
+ */
 void _add_wfd_peers_connected_notification(void *user_data)
 {
 	__WFD_APP_FUNC_ENTER__;
@@ -222,7 +164,7 @@ void _add_wfd_peers_connected_notification(void *user_data)
 	int res = NOTIFICATION_ERROR_NONE;
 	res = notification_set_execute_option(ad->noti, NOTIFICATION_EXECUTE_TYPE_SINGLE_LAUNCH, /*Button Text*/NULL, NULL, b);
 	if (res != NOTIFICATION_ERROR_NONE) {
-		WFD_APP_LOG(WFD_APP_LOG_LOW,"Failed to notification_set_execute_option. [%d]", res);
+		WFD_APP_LOG(WFD_APP_LOG_LOW, "Failed to notification_set_execute_option. [%d]", res);
 		return;
 	}
 
@@ -230,7 +172,7 @@ void _add_wfd_peers_connected_notification(void *user_data)
 
 	/* set display application list */
 	noti_err = notification_set_display_applist(ad->noti, NOTIFICATION_DISPLAY_APP_NOTIFICATION_TRAY);
-	if(noti_err != NOTIFICATION_ERROR_NONE) {
+	if (noti_err != NOTIFICATION_ERROR_NONE) {
 		WFD_APP_LOG(WFD_APP_LOG_LOW, "Fail to notification_set_display_applist : %d\n", noti_err);
 		return;
 	}
@@ -245,6 +187,11 @@ void _add_wfd_peers_connected_notification(void *user_data)
 	__WFD_APP_FUNC_EXIT__;
 }
 
+/**
+ *	This function let the app add the notification when it shoule be turned off
+ *	@return   void
+ *	@param[in] user_data the pointer to the main data structure
+ */
 void _add_wfd_turn_off_notification(void *user_data)
 {
 	__WFD_APP_FUNC_ENTER__;
@@ -269,14 +216,14 @@ void _add_wfd_turn_off_notification(void *user_data)
 
 	/* set the title and content */
 	noti_err = notification_set_text(ad->noti, NOTIFICATION_TEXT_TYPE_TITLE,
-		"Turn off Wi-Fi direct after using", NULL, NOTIFICATION_VARIABLE_TYPE_NONE);
+		"Disable Wi-Fi Direct after use", NULL, NOTIFICATION_VARIABLE_TYPE_NONE);
 	if (noti_err != NOTIFICATION_ERROR_NONE) {
 		WFD_APP_LOG(WFD_APP_LOG_LOW, "Fail to notification_set_text. (%d)\n", noti_err);
 		return;
 	}
 
 	noti_err = notification_set_text(ad->noti, NOTIFICATION_TEXT_TYPE_CONTENT,
-		"To save battery turn off Wi-Fi direct after using", NULL, NOTIFICATION_VARIABLE_TYPE_NONE);
+		"Disable Wi-Fi Direct after use to save battery", NULL, NOTIFICATION_VARIABLE_TYPE_NONE);
 	if (noti_err != NOTIFICATION_ERROR_NONE) {
 		WFD_APP_LOG(WFD_APP_LOG_LOW, "Fail to notification_set_text. (%d)\n", noti_err);
 		return;
@@ -290,7 +237,7 @@ void _add_wfd_turn_off_notification(void *user_data)
 	int res = NOTIFICATION_ERROR_NONE;
 	res = notification_set_execute_option(ad->noti, NOTIFICATION_EXECUTE_TYPE_SINGLE_LAUNCH, /*Button Text*/NULL, NULL, b);
 	if (res != NOTIFICATION_ERROR_NONE) {
-		WFD_APP_LOG(WFD_APP_LOG_LOW,"Failed to notification_set_execute_option. [%d]", res);
+		WFD_APP_LOG(WFD_APP_LOG_LOW, "Failed to notification_set_execute_option. [%d]", res);
 		return;
 	}
 
@@ -298,7 +245,7 @@ void _add_wfd_turn_off_notification(void *user_data)
 
 	/* set display application list */
 	noti_err = notification_set_display_applist(ad->noti, NOTIFICATION_DISPLAY_APP_NOTIFICATION_TRAY);
-	if(noti_err != NOTIFICATION_ERROR_NONE) {
+	if (noti_err != NOTIFICATION_ERROR_NONE) {
 		WFD_APP_LOG(WFD_APP_LOG_LOW, "Fail to notification_set_display_applist : %d\n", noti_err);
 		return;
 	}
@@ -313,12 +260,16 @@ void _add_wfd_turn_off_notification(void *user_data)
 	__WFD_APP_FUNC_EXIT__;
 }
 
+/**
+ *	This function let the app make a callback for deactivating wfd automatically when connected
+ *	@return   if stop the timer, return ECORE_CALLBACK_CANCEL, else return ECORE_CALLBACK_RENEW
+ *	@param[in] user_data the pointer to the main data structure
+ */
 static Eina_Bool _wfd_automatic_deactivated_for_connection_cb(void *user_data)
 {
 	int interval = 0;
-	unsigned int transmit_packet = 0;
 	int wfd_transfer_state = 0;
-	wfd_appdata_t *ad = (wfd_appdata_t*) user_data;
+	wfd_appdata_t *ad = (wfd_appdata_t *)user_data;
 
 	if (NULL == ad) {
 		WFD_APP_LOG(WFD_APP_LOG_LOW, "NULL parameters.\n");
@@ -351,223 +302,171 @@ static Eina_Bool _wfd_automatic_deactivated_for_connection_cb(void *user_data)
 	return ECORE_CALLBACK_CANCEL;
 }
 
-/* automatic deactivated wfd callback*/
-static Eina_Bool _wfd_automatic_deactivated_for_no_connection_cb(void *user_data)
-{
-	int res = -1;
-	int interval = 0;
-	wfd_appdata_t *ad = (wfd_appdata_t*) user_data;
-
-	if (NULL == ad) {
-		WFD_APP_LOG(WFD_APP_LOG_LOW, "NULL parameters.\n");
-		return ECORE_CALLBACK_CANCEL;
-	}
-
-	/* check the action, if action is exist, keep the cb */
-	res = wifi_direct_get_state(&ad->wfd_status);
-	if (res != WIFI_DIRECT_ERROR_NONE) {
-		WFD_APP_LOG(WFD_APP_LOG_LOW, "Failed to get link status. [%d]\n", res);
-		return ECORE_CALLBACK_CANCEL;
-	}
-
-	if (ad->last_wfd_status != ad->wfd_status) {
-		WFD_APP_LOG(WFD_APP_LOG_LOW, "Action is exist, last status: %d\n",
-			ad->last_wfd_status);
-		ad->last_wfd_status = ad->wfd_status;
-		ad->last_wfd_time = time(NULL);
-		return ECORE_CALLBACK_RENEW;
-	}
-
-	/* check the timeout, if not timeout, keep the cb */
-	interval = time(NULL) - ad->last_wfd_time;
-	if (interval < NO_ACTION_TIME_OUT) {
-		return ECORE_CALLBACK_RENEW;
-	}
-
-	/* turn off the Wi-Fi Direct */
-	wifi_direct_get_state(&ad->wfd_status);
-	if (ad->wfd_status < WIFI_DIRECT_STATE_ACTIVATING) {
-		WFD_APP_LOG(WFD_APP_LOG_LOW, "Wi-Fi Direct is already deactivated\n");
-	} else {
-		wfd_prepare_popup(WFD_POP_AUTOMATIC_TURN_OFF, NULL);
-	}
-
-	return ECORE_CALLBACK_CANCEL;
-}
-
-void _cb_activation(int error_code, wifi_direct_device_state_e device_state,
-                    void *user_data)
-{
-    __WFD_APP_FUNC_ENTER__;
-
-    wfd_appdata_t *ad = (wfd_appdata_t *) user_data;
-
-    switch (device_state)
-    {
-    case WIFI_DIRECT_DEVICE_STATE_ACTIVATED:
-        WFD_APP_LOG(WFD_APP_LOG_LOW,
-                    "event ------------------ WIFI_DIRECT_DEVICE_STATE_ACTIVATED\n");
-        break;
-
-    case WIFI_DIRECT_DEVICE_STATE_DEACTIVATED:
-        WFD_APP_LOG(WFD_APP_LOG_LOW,
-                    "event ------------------ WIFI_DIRECT_DEVICE_STATE_DEACTIVATED\n");
-        WFD_APP_LOG(WFD_APP_LOG_LOW,
-                    "Termination process of wifi-direct popup begins...\n");
-
-	/* when deactivated, stop the timer */
-	if (ad->transmit_timer) {
-	    ecore_timer_del(ad->transmit_timer);
-	    ad->transmit_timer = NULL;
-	}
-
-	if (ad->monitor_timer) {
-	    ecore_timer_del(ad->monitor_timer);
-	    ad->monitor_timer = NULL;
-	}
-
-        elm_exit();
-        break;
-
-    default:
-        break;
-    }
-
-    __WFD_APP_FUNC_EXIT__;
-
-}
-
-
-static wfd_device_info_t *_wfd_app_find_peer_by_mac_address(void *data,
-	                                                  const char *mac_address)
+/**
+ *	This function let the app make a callback for registering activation event
+ *	@return   void
+ *	@param[in] error_code the returned error code
+ *	@param[in] device_state the state of device
+ *	@param[in] user_data the pointer to the main data structure
+ */
+void _cb_activation(int error_code, wifi_direct_device_state_e device_state, void *user_data)
 {
 	__WFD_APP_FUNC_ENTER__;
+	wfd_appdata_t *ad = (wfd_appdata_t *)user_data;
 
+	switch (device_state) {
+	case WIFI_DIRECT_DEVICE_STATE_ACTIVATED:
+		WFD_APP_LOG(WFD_APP_LOG_LOW, "event ------------------ WIFI_DIRECT_DEVICE_STATE_ACTIVATED\n");
+		break;
+
+	case WIFI_DIRECT_DEVICE_STATE_DEACTIVATED:
+		WFD_APP_LOG(WFD_APP_LOG_LOW, "event ------------------ WIFI_DIRECT_DEVICE_STATE_DEACTIVATED\n");
+		WFD_APP_LOG(WFD_APP_LOG_LOW, "Termination process of wifi-direct popup begins...\n");
+
+		/* when deactivated, stop the timer */
+		if (ad->transmit_timer) {
+			ecore_timer_del(ad->transmit_timer);
+			ad->transmit_timer = NULL;
+		}
+
+		elm_exit();
+		break;
+
+	default:
+		break;
+	}
+
+	__WFD_APP_FUNC_EXIT__;
+}
+
+/**
+ *	This function let the app find the peer by mac address
+ *	@return   the found peer
+ *	@param[in] data the pointer to the main data structure
+ *	@param[in] mac_address the pointer to mac address
+ */
+static wfd_device_info_t *_wfd_app_find_peer_by_mac_address(void *data, const char *mac_address)
+{
+	__WFD_APP_FUNC_ENTER__;
 	wfd_appdata_t *ad = (wfd_appdata_t *) data;
-	
 	int i;
 
-	if (ad == NULL)
-	{
+	if (ad == NULL) {
 		WFD_APP_LOG(WFD_APP_LOG_LOW, "Incorrect parameter(NULL)\n");
 		return NULL;
 	}
 
 	WFD_APP_LOG(WFD_APP_LOG_LOW, "find peer by MAC [%s] \n", mac_address);
 
-	for (i = 0; i < ad->discovered_peer_count; i++)
-	{
+	for (i = 0; i < ad->discovered_peer_count; i++) {
 		WFD_APP_LOG(WFD_APP_LOG_LOW, "check %dth peer\n", i);
-		
-		if (!strncmp(mac_address, (const char *) ad->discovered_peers[i].mac_address, 18))
-		{
+
+		if (!strncmp(mac_address, (const char *) ad->discovered_peers[i].mac_address, 18)) {
 			WFD_APP_LOG(WFD_APP_LOG_LOW, "found peer. [%d]\n", i);
 			__WFD_APP_FUNC_EXIT__;
 			return &ad->discovered_peers[i];
 		}
 	}
-    
-	__WFD_APP_FUNC_EXIT__;
 
-    return NULL;
+	__WFD_APP_FUNC_EXIT__;
+	return NULL;
 }
 
-
-bool _wfd_app_discoverd_peer_cb(wifi_direct_discovered_peer_info_s * peer,
-                            void *user_data)
+/**
+ *	This function let the app make a callback for discovering peer
+ *	@return   TRUE
+ *	@param[in] peer the pointer to the discovered peer
+ *	@param[in] user_data the pointer to the main data structure
+ */
+bool _wfd_app_discoverd_peer_cb(wifi_direct_discovered_peer_info_s *peer, void *user_data)
 {
 	__WFD_APP_FUNC_ENTER__;
-
 	wfd_appdata_t *ad = (wfd_appdata_t *) user_data;
 
-	if (NULL != peer->ssid)
-	{
-		WFD_APP_LOG(WFD_APP_LOG_LOW, "discovered peer ssid[%s]\n", peer->ssid);
-		strncpy(ad->discovered_peers[ad->discovered_peer_count].ssid, peer->ssid, 32);
-	}
-	else
-	{
-		WFD_APP_LOG(WFD_APP_LOG_LOW, "peer's ssid is NULL\n");
+	if (NULL != peer->device_name) {
+		WFD_APP_LOG(WFD_APP_LOG_LOW, "discovered peer ssid[%s]\n", peer->device_name);
+		strncpy(ad->discovered_peers[ad->discovered_peer_count].ssid, peer->device_name, 32);
+	} else {
+		WFD_APP_LOG(WFD_APP_LOG_LOW, "peer's device name is NULL\n");
 	}
 
-	if (NULL != peer->mac_address)
-	{
+	if (NULL != peer->mac_address) {
 		WFD_APP_LOG(WFD_APP_LOG_LOW, "discovered peer mac[%s]\n", peer->mac_address);
 		strncpy(ad->discovered_peers[ad->discovered_peer_count].mac_address, peer->mac_address, 18);
-	}
-	else
-	{
+	} else {
 		WFD_APP_LOG(WFD_APP_LOG_LOW, "peer's mac is NULL\n");
 	}
-	
+
 	ad->discovered_peer_count++;
 
 	__WFD_APP_FUNC_EXIT__;
-	
 	return TRUE;
 
 }
 
-
-void _cb_discover(int error_code, wifi_direct_discovery_state_e discovery_state,
-                  void *user_data)
+/**
+ *	This function let the app make a callback for registering discover event
+ *	@return   void
+ *	@param[in] error_code the returned error code
+ *	@param[in] discovery_state the state of discover
+ *	@param[in] user_data the pointer to the main data structure
+ */
+void _cb_discover(int error_code, wifi_direct_discovery_state_e discovery_state, void *user_data)
 {
-    __WFD_APP_FUNC_ENTER__;
+	__WFD_APP_FUNC_ENTER__;
+	wfd_appdata_t *ad = (wfd_appdata_t *)user_data;
+	int ret;
 
-    wfd_appdata_t *ad = (wfd_appdata_t *) user_data;
-    int ret;
-
-    switch (discovery_state)
-    {
+	switch (discovery_state) {
 	case WIFI_DIRECT_DISCOVERY_STARTED:
-		{
-			WFD_APP_LOG(WFD_APP_LOG_LOW, "event ------------------ WIFI_DIRECT_DISCOVERY_STARTED\n");
-		}
+		WFD_APP_LOG(WFD_APP_LOG_LOW, "event ------------------ WIFI_DIRECT_DISCOVERY_STARTED\n");
 		break;
 
 	case WIFI_DIRECT_ONLY_LISTEN_STARTED:
-		{
-			WFD_APP_LOG(WFD_APP_LOG_LOW, "event ------------------ WIFI_DIRECT_ONLY_LISTEN_STARTED\n");
-		}
+		WFD_APP_LOG(WFD_APP_LOG_LOW, "event ------------------ WIFI_DIRECT_ONLY_LISTEN_STARTED\n");
 		break;
 
 	case WIFI_DIRECT_DISCOVERY_FINISHED:
-		{
-			WFD_APP_LOG(WFD_APP_LOG_LOW, "event ------------------ WIFI_DIRECT_DISCOVERY_FINISHED\n");
-		}
+		WFD_APP_LOG(WFD_APP_LOG_LOW, "event ------------------ WIFI_DIRECT_DISCOVERY_FINISHED\n");
 		break;
 
 	case WIFI_DIRECT_DISCOVERY_FOUND:
-		{
-			WFD_APP_LOG(WFD_APP_LOG_LOW, "event ------------------ WIFI_DIRECT_DISCOVERY_FOUND\n");
+		WFD_APP_LOG(WFD_APP_LOG_LOW, "event ------------------ WIFI_DIRECT_DISCOVERY_FOUND\n");
 
-			if (NULL != ad->discovered_peers)
-				free(ad->discovered_peers);
+		if (NULL != ad->discovered_peers) {
+			free(ad->discovered_peers);
+			ad->discovered_peers = NULL;
+		}
 
-			ad->discovered_peers = calloc(10, sizeof(wfd_device_info_t));
-			ad->discovered_peer_count = 0;
+		ad->discovered_peers = calloc(10, sizeof(wfd_device_info_t));
+		ad->discovered_peer_count = 0;
 
-			ret = wifi_direct_foreach_discovered_peers(_wfd_app_discoverd_peer_cb, (void *) ad);
-			if (ret != WIFI_DIRECT_ERROR_NONE)
- 				WFD_APP_LOG(WFD_APP_LOG_LOW, "get discovery result failed: %d\n", ret);
- 		}
+		ret = wifi_direct_foreach_discovered_peers(_wfd_app_discoverd_peer_cb, (void *) ad);
+		if (ret != WIFI_DIRECT_ERROR_NONE) {
+			WFD_APP_LOG(WFD_APP_LOG_LOW, "get discovery result failed: %d\n", ret);
+		}
 		break;
 
 	default:
 		break;
-    }
+	}
 
-    __WFD_APP_FUNC_EXIT__;
-
+	__WFD_APP_FUNC_EXIT__;
 }
 
-void _cb_connection(int error_code,
-                    wifi_direct_connection_state_e connection_state,
-                    const char *mac_address, void *user_data)
+/**
+ *	This function let the app make a callback for registering connection event
+ *	@return   void
+ *	@param[in] error_code the returned error code
+ *	@param[in] connection_state the state of connection
+ *	@param[in] mac_address the mac address of peer
+ *	@param[in] user_data the pointer to the main data structure
+ */
+void _cb_connection(int error_code, wifi_direct_connection_state_e connection_state, const char *mac_address, void *user_data)
 {
 	__WFD_APP_FUNC_ENTER__;
 
-	wfd_appdata_t *ad = (wfd_appdata_t *) user_data;
+	wfd_appdata_t *ad = (wfd_appdata_t *)user_data;
 	int result = -1;
 	char msg[WFD_POP_STR_MAX_LEN] = {0};
 	wfd_device_info_t *peer_info = NULL;
@@ -578,121 +477,104 @@ void _cb_connection(int error_code,
 		return;
 	}
 
-	strncpy(ad->peer_mac, mac_address, strlen(mac_address));
+	/* when disconnection, mac_address is empty */
+	if (connection_state <= WIFI_DIRECT_CONNECTION_RSP) {
+		memset(ad->peer_mac, 0, sizeof(ad->peer_mac));
+		memset(ad->peer_name, 0, sizeof(ad->peer_name));
+		strncpy(ad->peer_mac, mac_address, strlen(mac_address));
+		peer_info = _wfd_app_find_peer_by_mac_address(ad, mac_address);
 
-	peer_info = _wfd_app_find_peer_by_mac_address(ad, mac_address);
+		if (NULL == peer_info) {
+			WFD_APP_LOG(WFD_APP_LOG_LOW, "peer_info is NULL !!\n");
+		} else if (0 == strlen(peer_info->ssid)) {
+			WFD_APP_LOG(WFD_APP_LOG_LOW, "SSID from connection is invalid !!\n");
+		} else {
+			WFD_APP_LOG(WFD_APP_LOG_LOW, "SSID from connection is %s.\n", peer_info->ssid);
+			strncpy(ad->peer_name, peer_info->ssid, strlen(peer_info->ssid));
+		}
 
-	if (NULL == peer_info)
-	{
-		WFD_APP_LOG(WFD_APP_LOG_LOW, "peer_info is NULL !!\n");
-	}
-	else if (NULL == peer_info->ssid)
-	{
-		WFD_APP_LOG(WFD_APP_LOG_LOW, "SSID from connection is NULL !!\n");
-	}
-	else
-	{
-		WFD_APP_LOG(WFD_APP_LOG_LOW, "SSID from connection is %s.\n", peer_info->ssid);
-		strncpy(ad->peer_name, peer_info->ssid, strlen(peer_info->ssid));
+		if (0 == strlen(ad->peer_name)) {
+			strncpy(ad->peer_name, ad->peer_mac, strlen(ad->peer_mac));
+		}
 	}
 
-	if (ad->peer_name == NULL || strlen(ad->peer_name) == 0) {
-		strncpy(ad->peer_name, ad->peer_mac, strlen(ad->peer_mac));
-	}
-
-	switch (connection_state)
-	{
+	switch (connection_state) {
 	case WIFI_DIRECT_CONNECTION_RSP:
 	{
-		WFD_APP_LOG(WFD_APP_LOG_LOW,
-				"event ------------------ WIFI_DIRECT_CONNECTION_RSP\n");
+		WFD_APP_LOG(WFD_APP_LOG_LOW, "event ------------------ WIFI_DIRECT_CONNECTION_RSP\n");
 		wfd_destroy_popup();
 
-		if (error_code == WIFI_DIRECT_ERROR_NONE)
-		{
+		if (error_code == WIFI_DIRECT_ERROR_NONE) {
 			WFD_APP_LOG(WFD_APP_LOG_LOW, "Link Complete!\n");
 
 			/* add connected notification */
 			_add_wfd_peers_connected_notification(ad);
 
 			/* tickernoti popup */
-			snprintf(msg, WFD_POP_STR_MAX_LEN, _("IDS_WFD_POP_CONNECTED"), ad->peer_name);
+			snprintf(msg, WFD_POP_STR_MAX_LEN, IDS_WFD_POP_CONNECTED, ad->peer_name);
 			wfd_tickernoti_popup(msg);
-		}
-		else
-		{
-			if (error_code == WIFI_DIRECT_ERROR_CONNECTION_TIME_OUT)
+		} else {
+			if (error_code == WIFI_DIRECT_ERROR_CONNECTION_TIME_OUT) {
 				WFD_APP_LOG(WFD_APP_LOG_LOW,
 						"Error Code - WIFI_DIRECT_ERROR_CONNECTION_TIME_OUT\n");
-			else if (error_code == WIFI_DIRECT_ERROR_AUTH_FAILED)
+			} else if (error_code == WIFI_DIRECT_ERROR_AUTH_FAILED) {
 				WFD_APP_LOG(WFD_APP_LOG_LOW,
 						"Error Code - WIFI_DIRECT_ERROR_AUTH_FAILED\n");
-			else if (error_code == WIFI_DIRECT_ERROR_CONNECTION_FAILED)
+			} else if (error_code == WIFI_DIRECT_ERROR_CONNECTION_FAILED) {
 				WFD_APP_LOG(WFD_APP_LOG_LOW,
 						"Error Code - WIFI_DIRECT_ERROR_CONNECTION_FAILED\n");
+			}
 
-			result = wifi_direct_start_discovery(FALSE, 0);
-			WFD_APP_LOG(WFD_APP_LOG_LOW,
-					"wifi_direct_start_discovery() result=[%d]\n",
-					result);
+			/* tickernoti popup */
+			snprintf(msg, WFD_POP_STR_MAX_LEN, IDS_WFD_POP_CONNECT_FAILED, ad->peer_name);
+			wfd_tickernoti_popup(msg);
 		}
 	}
 	break;
 
 	case WIFI_DIRECT_CONNECTION_WPS_REQ:
 	{
-		wifi_direct_config_data_s *config = NULL;
+		wifi_direct_wps_type_e wps_mode;
 
 		memcpy(ad->peer_mac, mac_address, sizeof(ad->peer_mac));
 
 		WFD_APP_LOG(WFD_APP_LOG_LOW,
 				"event ------------------ WIFI_DIRECT_CONNECTION_WPS_REQ\n");
-		result = wifi_direct_get_config_data(&config);
+		result = wifi_direct_get_wps_type(&wps_mode);
 		WFD_APP_LOG(WFD_APP_LOG_LOW,
-				"wifi_direct_client_get_config_data() result=[%d]\n",
-				result);
+				"wifi_direct_get_wps_type() result=[%d]\n", result);
 
-		if (config->wps_config == WIFI_DIRECT_WPS_TYPE_PBC)
-		{
+		if (wps_mode == WIFI_DIRECT_WPS_TYPE_PBC) {
 			WFD_APP_LOG(WFD_APP_LOG_LOW,
 					"wps_config is WIFI_DIRECT_WPS_TYPE_PBC. Ignore it..\n");
-		}
-		else if (config->wps_config == WIFI_DIRECT_WPS_TYPE_PIN_KEYPAD)
-		{
+		} else if (wps_mode == WIFI_DIRECT_WPS_TYPE_PIN_KEYPAD) {
 			char *pin;
 			WFD_APP_LOG(WFD_APP_LOG_LOW, "wps_config is WIFI_DIRECT_WPS_TYPE_PIN_KEYPAD\n");
 
-			if (wifi_direct_generate_wps_pin() != WIFI_DIRECT_ERROR_NONE)
-			{
+			if (wifi_direct_generate_wps_pin() != WIFI_DIRECT_ERROR_NONE) {
 				WFD_APP_LOG(WFD_APP_LOG_LOW, "wifi_direct_generate_wps_pin() is failed\n");
 				return;
 			}
 
-			if (wifi_direct_get_wps_pin(&pin) != WIFI_DIRECT_ERROR_NONE)
-			{
+			if (wifi_direct_get_wps_pin(&pin) != WIFI_DIRECT_ERROR_NONE) {
 				WFD_APP_LOG(WFD_APP_LOG_LOW, "wifi_direct_generate_wps_pin() is failed\n");
 				return;
 			}
-			strncpy(ad->pin_number, pin, 32);
+
+			strncpy(ad->pin_number, pin, 64);
 			free(pin);
-			pin=NULL;
+			pin = NULL;
 
 			WFD_APP_LOG(WFD_APP_LOG_LOW, "pin=[%s]\n", ad->pin_number);
 
 			wfd_prepare_popup(WFD_POP_PROG_CONNECT_WITH_PIN, NULL);
-		}
-		else if (config->wps_config == WIFI_DIRECT_WPS_TYPE_PIN_DISPLAY)
-		{
+		} else if (wps_mode == WIFI_DIRECT_WPS_TYPE_PIN_DISPLAY) {
 			WFD_APP_LOG(WFD_APP_LOG_LOW, "wps_config is WIFI_DIRECT_WPS_TYPE_PIN_DISPLAY\n");
 			wfd_prepare_popup(WFD_POP_PROG_CONNECT_WITH_KEYPAD, (void *) NULL);
-		}
-		else
-		{
+		} else {
 			WFD_APP_LOG(WFD_APP_LOG_LOW, "wps_config is unkown!\n");
 
 		}
-		if (config != NULL)
-			free(config);
 	}
 	break;
 
@@ -700,45 +582,31 @@ void _cb_connection(int error_code,
 	{
 		WFD_APP_LOG(WFD_APP_LOG_LOW, "event ------------------ WIFI_DIRECT_CONNECTION_REQ\n");
 
-		wifi_direct_config_data_s *config = NULL;
+		wifi_direct_wps_type_e wps_mode;
+		bool auto_connection_mode;
 
-		result = wifi_direct_get_config_data(&config);
-		WFD_APP_LOG(WFD_APP_LOG_LOW, "wifi_direct_client_get_config_data() result=[%d]\n", result);
+		result = wifi_direct_get_wps_type(&wps_mode);
+		WFD_APP_LOG(WFD_APP_LOG_LOW, "wifi_direct_get_wps_type() result=[%d]\n", result);
 
-		if(config->auto_connection == TRUE)
-		{
+		result = wifi_direct_is_autoconnection_mode(&auto_connection_mode);
+		WFD_APP_LOG(WFD_APP_LOG_LOW, "wifi_direct_is_autoconnection_mode() result=[%d]\n", result);
+
+		if (auto_connection_mode == TRUE) {
 			result = wifi_direct_accept_connection(ad->peer_mac);
 			printf("wifi_direct_accept_connection() result=[%d]\n", result);
-		}
-		else
-		{
-
-			if (config->wps_config == WIFI_DIRECT_WPS_TYPE_PBC)
-			{
-				char pushbutton;
+		} else {
+			if (wps_mode == WIFI_DIRECT_WPS_TYPE_PBC) {
 				WFD_APP_LOG(WFD_APP_LOG_LOW, "wps_config is WIFI_DIRECT_WPS_TYPE_PBC\n");
-
 				wfd_prepare_popup(WFD_POP_APRV_CONNECTION_WPS_PUSHBUTTON_REQ, NULL);
-			}
-			else if (config->wps_config == WIFI_DIRECT_WPS_TYPE_PIN_DISPLAY)
-			{
+			} else if (wps_mode == WIFI_DIRECT_WPS_TYPE_PIN_DISPLAY) {
 				WFD_APP_LOG(WFD_APP_LOG_LOW, "wps_config is WIFI_DIRECT_WPS_TYPE_PIN_DISPLAY\n");
-
 				wfd_prepare_popup(WFD_POP_APRV_CONNECTION_WPS_DISPLAY_REQ, NULL);
-			}
-			else if (config->wps_config == WIFI_DIRECT_WPS_TYPE_PIN_KEYPAD)
-			{
+			} else if (wps_mode == WIFI_DIRECT_WPS_TYPE_PIN_KEYPAD) {
 				WFD_APP_LOG(WFD_APP_LOG_LOW, "wps_config is WIFI_DIRECT_WPS_TYPE_PIN_KEYPAD\n");
 				wfd_prepare_popup(WFD_POP_APRV_CONNECTION_WPS_KEYPAD_REQ, (void *) NULL);
-			}
-			else
-			{
+			} else {
 				WFD_APP_LOG(WFD_APP_LOG_LOW, "wps_config is unkown!\n");
 			}
-
-			if (config != NULL)
-				free(config);
-
 		}
 	}
 	break;
@@ -746,14 +614,13 @@ void _cb_connection(int error_code,
 	case WIFI_DIRECT_DISCONNECTION_IND:
 	{
 		_del_wfd_notification();
-		WFD_APP_LOG(WFD_APP_LOG_LOW,
-				"event ------------------ WIFI_DIRECT_DISCONNECTION_IND\n");
+		WFD_APP_LOG(WFD_APP_LOG_LOW, "event ------------------ WIFI_DIRECT_DISCONNECTION_IND\n");
 
 		result = wifi_direct_set_autoconnection_mode(false);
-		WFD_APP_LOG(WFD_APP_LOG_LOW,"wifi_direct_set_autoconnection_mode() result=[%d]\n", result);
+		WFD_APP_LOG(WFD_APP_LOG_LOW, "wifi_direct_set_autoconnection_mode() result=[%d]\n", result);
 
 		/* tickernoti popup */
-		snprintf(msg, WFD_POP_STR_MAX_LEN, _("IDS_WFD_POP_DISCONNECTED"), ad->peer_name);
+		snprintf(msg, WFD_POP_STR_MAX_LEN, IDS_WFD_POP_DISCONNECTED, ad->peer_name);
 		wfd_tickernoti_popup(msg);
 	}
 	break;
@@ -764,21 +631,16 @@ void _cb_connection(int error_code,
 		wfd_destroy_popup();
 
 		result = wifi_direct_set_autoconnection_mode(false);
-		WFD_APP_LOG(WFD_APP_LOG_LOW,"wifi_direct_set_autoconnection_mode() result=[%d]\n", result);
-
-		result = wifi_direct_start_discovery(FALSE, 0);
-		WFD_APP_LOG(WFD_APP_LOG_LOW,
-				"wifi_direct_start_discovery() result=[%d]\n", result);
+		WFD_APP_LOG(WFD_APP_LOG_LOW, "wifi_direct_set_autoconnection_mode() result=[%d]\n", result);
 
 		/* tickernoti popup */
-		snprintf(msg, WFD_POP_STR_MAX_LEN, _("IDS_WFD_POP_DISCONNECTED"), ad->peer_name);
+		snprintf(msg, WFD_POP_STR_MAX_LEN, IDS_WFD_POP_DISCONNECTED, ad->peer_name);
 		wfd_tickernoti_popup(msg);
 	}
 	break;
 	case WIFI_DIRECT_CONNECTION_IN_PROGRESS:
 	{
-		WFD_APP_LOG(WFD_APP_LOG_LOW,
-				"event ------------------ WIFI_DIRECT_CONNECTION_IN_PROGRESS\n");
+		WFD_APP_LOG(WFD_APP_LOG_LOW, "event ------------------ WIFI_DIRECT_CONNECTION_IN_PROGRESS\n");
 		/* tickernoti popup */
 		wfd_tickernoti_popup(_("IDS_WFD_POP_CONNECTING"));
 	}
@@ -787,118 +649,188 @@ void _cb_connection(int error_code,
 
 	}
 
-	/* if connected, switch to the transmit timer; Otherwise, switch to monitor timer */
+	/* if connected, start the transmit timer */
 	wifi_direct_get_state(&ad->wfd_status);
-	WFD_APP_LOG(WFD_APP_LOG_LOW,"status: %d", ad->wfd_status);
+	WFD_APP_LOG(WFD_APP_LOG_LOW, "status: %d", ad->wfd_status);
 
-	if (ad->wfd_status > WIFI_DIRECT_STATE_CONNECTING) {
-		if (ad->monitor_timer) {
-			ecore_timer_del(ad->monitor_timer);
-			ad->monitor_timer = NULL;
-		}
-
+	if (ad->wfd_status < WIFI_DIRECT_STATE_CONNECTED) {
+	    if (ad->transmit_timer) {
+		    ecore_timer_del(ad->transmit_timer);
+		    ad->transmit_timer = NULL;
+	    }
+	} else {
 		if (NULL == ad->transmit_timer) {
-			WFD_APP_LOG(WFD_APP_LOG_LOW, "switch to the transmit timer\n");
+			WFD_APP_LOG(WFD_APP_LOG_LOW, "start the transmit timer\n");
 			ad->last_wfd_transmit_time = time(NULL);
 			ad->transmit_timer = ecore_timer_add(5.0,
-					(Ecore_Task_Cb)_wfd_automatic_deactivated_for_connection_cb, ad);
-		}
-	} else {
-		if (ad->transmit_timer) {
-			ecore_timer_del(ad->transmit_timer);
-			ad->transmit_timer = NULL;
-		}
-
-		if (NULL == ad->monitor_timer) {
-			WFD_APP_LOG(WFD_APP_LOG_LOW, "switch to the monitor timer\n");
-			ad->last_wfd_time = time(NULL);
-			ad->monitor_timer = ecore_timer_add(5.0,
-					(Ecore_Task_Cb)_wfd_automatic_deactivated_for_no_connection_cb, ad);
+				(Ecore_Task_Cb)_wfd_automatic_deactivated_for_connection_cb, ad);
 		}
 	}
 
 	__WFD_APP_FUNC_EXIT__;
 }
 
-
-int init_wfd_popup_client(wfd_appdata_t * ad)
+/**
+ *	This function let the app make a change callback for flight mode
+ *	@return   void
+ *	@param[in] key the pointer to the key
+ *	@param[in] user_data the pointer to the main data structure
+ */
+static void _wfd_flight_mode_changed(keynode_t *node, void *user_data)
 {
-    __WFD_APP_FUNC_ENTER__;
+	__WFD_APP_FUNC_ENTER__;
+	int res = -1;
+	int flight_mode = 0;
+	wfd_appdata_t *ad = (wfd_appdata_t *)user_data;
 
-    if (NULL == ad) {
-	WFD_APP_LOG(WFD_APP_LOG_LOW, "NULL parameters.\n");
-	return FALSE;
-    }
+	if (NULL == ad) {
+		WFD_APP_LOG(WFD_APP_LOG_ERROR, "NULL parameters.\n");
+		return;
+	}
 
-    int ret = -1;
+	res = vconf_get_bool(VCONFKEY_SETAPPL_FLIGHT_MODE_BOOL, &flight_mode);
+	if (res != 0) {
+		WFD_APP_LOG(WFD_APP_LOG_ERROR, "Failed to get flight state from vconf. [%d]\n", res);
+		return;
+	}
 
-    ret = wifi_direct_initialize();
+	if (flight_mode == FALSE) {
+		WFD_APP_LOG(WFD_APP_LOG_LOW, "Flight mode is off\n");
+		return;
+	}
 
-    ret = wifi_direct_set_device_state_changed_cb(_cb_activation, (void *) ad);
-    ret = wifi_direct_set_discovery_state_changed_cb(_cb_discover, (void *) ad);
-    ret =
-        wifi_direct_set_connection_state_changed_cb(_cb_connection,
-                                                    (void *) ad);
+	/* If flight mode is on, turn off WFD */
+	wifi_direct_get_state(&ad->wfd_status);
+	if (WIFI_DIRECT_STATE_DEACTIVATED == ad->wfd_status) {
+		WFD_APP_LOG(WFD_APP_LOG_LOW, "Wi-Fi Direct is deactivated.\n");
+		return;
+	}
 
-    /* initialize notification */
-    ad->noti = NULL;
-    ad->raw_connected_peer_cnt = 0;
+	/*if connected, disconnect all devices*/
+	if (WIFI_DIRECT_STATE_CONNECTED == ad->wfd_status) {
+		res = wifi_direct_disconnect_all();
+		if (res != WIFI_DIRECT_ERROR_NONE) {
+			WFD_APP_LOG(WFD_APP_LOG_ERROR, "Failed to send disconnection request to all. [%d]\n", res);
+			return;
+		}
+	}
 
-    ad->noti = notification_new(NOTIFICATION_TYPE_NOTI, NOTIFICATION_GROUP_ID_NONE, NOTIFICATION_PRIV_ID_NONE);
-    if (NULL == ad->noti) {
-	WFD_APP_LOG(WFD_APP_LOG_LOW, "notification_new failed.\n");
-	return FALSE;
-    }
+	res = wifi_direct_deactivate();
+	if (res != WIFI_DIRECT_ERROR_NONE) {
+		WFD_APP_LOG(WFD_APP_LOG_ERROR, "Failed to deactivate Wi-Fi Direct. error code = [%d]\n", res);
+		return;
+	}
 
-    /* start the monitor timer */
-    ad->last_wfd_time = time(NULL);
-    ad->last_wfd_status = WIFI_DIRECT_STATE_DEACTIVATED;
-    ad->monitor_timer = ecore_timer_add(5.0, (Ecore_Task_Cb)_wfd_automatic_deactivated_for_no_connection_cb, ad);
-
-    __WFD_APP_FUNC_EXIT__;
-
-    if (ret == WIFI_DIRECT_ERROR_NONE)
-        return TRUE;
-    else
-        return FALSE;
+	__WFD_APP_FUNC_EXIT__;
 }
 
-int deinit_wfd_popup_client(wfd_appdata_t * ad)
+/**
+ *	This function let the app do initialization
+ *	@return   If success, return TRUE, else return FALSE
+ *	@param[in] ad the pointer to the main data structure
+ */
+int init_wfd_popup_client(wfd_appdata_t *ad)
 {
-    __WFD_APP_FUNC_ENTER__;
+	__WFD_APP_FUNC_ENTER__;
 
-    if (NULL == ad || NULL == ad->noti) {
-	WFD_APP_LOG(WFD_APP_LOG_LOW, "NULL parameters.\n");
-	return FALSE;
-    }
+	if (NULL == ad) {
+		WFD_APP_LOG(WFD_APP_LOG_LOW, "NULL parameters.\n");
+		return FALSE;
+	}
 
-    int ret = -1;
+	int ret = -1;
 
-    ret = wifi_direct_deinitialize();
+	ret = wifi_direct_initialize();
+	if (ret != WIFI_DIRECT_ERROR_NONE) {
+		WFD_APP_LOG(WFD_APP_LOG_ERROR, "Failed to initialize Wi-Fi Direct. error code = [%d]\n", ret);
+		return FALSE;
+	}
 
-    _del_wfd_notification(ad);
+	ret = wifi_direct_set_device_state_changed_cb(_cb_activation, (void *)ad);
+	if (ret != WIFI_DIRECT_ERROR_NONE) {
+		WFD_APP_LOG(WFD_APP_LOG_ERROR, "Failed to register _cb_activation. error code = [%d]\n", ret);
+		return FALSE;
+	}
 
-    notification_error_e noti_err = NOTIFICATION_ERROR_NONE;
-    noti_err = notification_free(ad->noti);
-    if (noti_err != NOTIFICATION_ERROR_NONE) {
-	WFD_APP_LOG(WFD_APP_LOG_LOW, "Fail to notification_free.(%d)\n", noti_err);
-	ret = WIFI_DIRECT_ERROR_RESOURCE_BUSY;
-    }
+	ret = wifi_direct_set_discovery_state_changed_cb(_cb_discover, (void *)ad);
+	if (ret != WIFI_DIRECT_ERROR_NONE) {
+		WFD_APP_LOG(WFD_APP_LOG_ERROR, "Failed to register _cb_discover. error code = [%d]\n", ret);
+		return FALSE;
+	}
 
-    if (ad->transmit_timer) {
-	ecore_timer_del(ad->transmit_timer);
-	ad->transmit_timer = NULL;
-    }
+	ret = wifi_direct_set_connection_state_changed_cb(_cb_connection, (void *)ad);
+	if (ret != WIFI_DIRECT_ERROR_NONE) {
+		WFD_APP_LOG(WFD_APP_LOG_ERROR, "Failed to register _cb_connection. error code = [%d]\n", ret);
+		return FALSE;
+	}
 
-    if (ad->monitor_timer) {
-	ecore_timer_del(ad->monitor_timer);
-	ad->monitor_timer = NULL;
-    }
+	/* initialize notification */
+	ad->noti = notification_new(NOTIFICATION_TYPE_NOTI, NOTIFICATION_GROUP_ID_NONE, NOTIFICATION_PRIV_ID_NONE);
+	if (NULL == ad->noti) {
+		WFD_APP_LOG(WFD_APP_LOG_LOW, "notification_new failed.\n");
+		return FALSE;
+	}
 
-    __WFD_APP_FUNC_EXIT__;
+	/* register flight mode */
+	int result = -1;
+	result = vconf_notify_key_changed(VCONFKEY_SETAPPL_FLIGHT_MODE_BOOL, _wfd_flight_mode_changed, ad);
+	if (result == -1) {
+		WFD_APP_LOG(WFD_APP_LOG_ERROR, "Failed to register vconf callback for flight mode\n");
+		return FALSE;
+	}
 
-    if (ret == WIFI_DIRECT_ERROR_NONE)
-        return TRUE;
-    else
-        return FALSE;
+	__WFD_APP_FUNC_EXIT__;
+
+	if (ret == WIFI_DIRECT_ERROR_NONE) {
+		return TRUE;
+	} else {
+		return FALSE;
+	}
+}
+
+/**
+ *	This function let the app do de-initialization
+ *	@return   If success, return TRUE, else return FALSE
+ *	@param[in] ad the pointer to the main data structure
+ */
+int deinit_wfd_popup_client(wfd_appdata_t *ad)
+{
+	__WFD_APP_FUNC_ENTER__;
+
+	if (NULL == ad || NULL == ad->noti) {
+		WFD_APP_LOG(WFD_APP_LOG_LOW, "NULL parameters.\n");
+		return FALSE;
+	}
+
+	int ret = -1;
+
+	ret = wifi_direct_deinitialize();
+
+	_del_wfd_notification(ad);
+	notification_error_e noti_err = NOTIFICATION_ERROR_NONE;
+	noti_err = notification_free(ad->noti);
+	if (noti_err != NOTIFICATION_ERROR_NONE) {
+		WFD_APP_LOG(WFD_APP_LOG_LOW, "Fail to notification_free.(%d)\n", noti_err);
+		ret = WIFI_DIRECT_ERROR_RESOURCE_BUSY;
+	}
+
+	/* remove callback for flight mode */
+	int result = -1;
+	result = vconf_ignore_key_changed(VCONFKEY_WIFI_STATE, _wfd_flight_mode_changed);
+	if (result == -1) {
+		WFD_APP_LOG(WFD_APP_LOG_ERROR, "Failed to ignore vconf key callback for flight mode\n");
+	}
+
+	if (ad->transmit_timer) {
+		ecore_timer_del(ad->transmit_timer);
+		ad->transmit_timer = NULL;
+	}
+
+	__WFD_APP_FUNC_EXIT__;
+
+	if (ret == WIFI_DIRECT_ERROR_NONE) {
+		return TRUE;
+	} else {
+		return FALSE;
+	}
 }

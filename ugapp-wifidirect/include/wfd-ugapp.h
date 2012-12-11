@@ -38,11 +38,15 @@
 
 #define PACKAGE "org.tizen.wifi-direct-ugapp"
 #define LOCALEDIR "/usr/apps/org.tizen.wifi-direct-ugapp"
+#define DESKTOP_ICON "/usr/apps/org.tizen.setting/res/icons/A01-1_icon_Wi-Fi_direct.png"
 
-typedef struct
-{
-    Evas_Object *win;
-    struct ui_gadget *wifi_direct_ug;
+typedef struct {
+	Evas_Object *win;
+	Evas_Object *bg;
+	Evas_Object *conform;
+	Evas_Object *top_layout;
+	Evas_Object *icon;
+	ui_gadget_h wifi_direct_ug;
 } wfd_appdata_t;
 
 #endif  /* __WFD_UG_APP_MAIN_H__ */
