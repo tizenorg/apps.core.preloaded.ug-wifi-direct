@@ -54,17 +54,17 @@ static char *_wfd_gl_label_help_dialogue_get(void *data, Evas_Object *obj, const
  */
 void _about_view_back_btn_cb(void *data, Evas_Object * obj, void *event_info)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 	struct ug_data *ugd = (struct ug_data *) data;
 
 	if (!ugd) {
-		DBG(LOG_ERROR, "The param is NULL\n");
+		WDUG_LOGE("The param is NULL\n");
 		return;
 	}
 
 	elm_naviframe_item_pop(ugd->naviframe);
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 	return;
 }
 
@@ -75,7 +75,7 @@ void _about_view_back_btn_cb(void *data, Evas_Object * obj, void *event_info)
  */
 void _wifid_create_about_view(struct ug_data *ugd)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 
 	Evas_Object *back_btn = NULL;
 	Elm_Object_Item *navi_item = NULL;
@@ -83,13 +83,13 @@ void _wifid_create_about_view(struct ug_data *ugd)
 	Elm_Object_Item *item = NULL;
 
 	if (ugd == NULL) {
-		DBG(LOG_ERROR, "Incorrect parameter(NULL)");
+		WDUG_LOGE("Incorrect parameter(NULL)");
 		return;
 	}
 
 	genlist = elm_genlist_add(ugd->naviframe);
 	if (NULL == genlist) {
-		DBG(LOG_ERROR, "Create genlist failed\n");
+		WDUG_LOGE("Create genlist failed\n");
 		return;
 	}
 
@@ -112,5 +112,5 @@ void _wifid_create_about_view(struct ug_data *ugd)
 
 	navi_item = elm_naviframe_item_push(ugd->naviframe, IDS_WFD_TITLE_ABOUT_WIFI_DIRECT, back_btn, NULL, genlist, NULL);
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 }

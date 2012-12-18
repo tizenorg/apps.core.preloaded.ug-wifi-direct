@@ -50,30 +50,30 @@ void wfd_tickernoti_popup(char *msg);
  */
 static void __popup_resp_cb(void *data, Evas_Object * obj, void *event_info)
 {
-	__WFD_APP_FUNC_ENTER__;
+	__WDPOP_LOG_FUNC_ENTER__;
 	wfd_appdata_t *ad = wfd_get_appdata();
 	int result = -1;
 	int resp = (int) data;
 	char msg[WFD_POP_STR_MAX_LEN] = {0};
 
-	WFD_APP_LOG(WFD_APP_LOG_HIGH, "popup resp : %d\n", resp);
+	WDPOP_LOGI( "popup resp : %d\n", resp);
 
 	switch (resp) {
 	case /* MT */ WFD_POP_RESP_APRV_CONNECT_PBC_YES:
 	{
-		WFD_APP_LOG(WFD_APP_LOG_HIGH,
+		WDPOP_LOGI(
 				"WFD_POP_RESP_APRV_CONNECT_PBC_YES\n");
 		wfd_destroy_popup();
 
 		result = wifi_direct_accept_connection(ad->peer_mac);
-		WFD_APP_LOG(WFD_APP_LOG_LOW,
+		WDPOP_LOGD(
 				"wifi_direct_accept_connection() result=[%d]\n",
 				result);
 		if (result == WIFI_DIRECT_ERROR_NONE) {
 			/* tickernoti popup */
 			wfd_tickernoti_popup(_("IDS_WFD_POP_CONNECTING"));
 		} else {
-			WFD_APP_LOG(WFD_APP_LOG_ERROR,
+			WDPOP_LOGE(
 					"wifi_direct_accept_connection() FAILED!!\n");
 			evas_object_hide(ad->win);
 
@@ -88,30 +88,30 @@ static void __popup_resp_cb(void *data, Evas_Object * obj, void *event_info)
 	{
 		char *pin = NULL;
 
-		WFD_APP_LOG(WFD_APP_LOG_HIGH,
+		WDPOP_LOGI(
 				"WFD_POP_RESP_APRV_CONNECT_DISPLAY_OK\n");
 		wfd_destroy_popup();
 
 		if (wifi_direct_generate_wps_pin() != WIFI_DIRECT_ERROR_NONE) {
-			WFD_APP_LOG(WFD_APP_LOG_LOW, "wifi_direct_generate_wps_pin() is failed\n");
+			WDPOP_LOGD( "wifi_direct_generate_wps_pin() is failed\n");
 			return;
 		}
 
 		if (wifi_direct_get_wps_pin(&pin) != WIFI_DIRECT_ERROR_NONE) {
-			WFD_APP_LOG(WFD_APP_LOG_LOW, "wifi_direct_generate_wps_pin() is failed\n");
+			WDPOP_LOGD( "wifi_direct_generate_wps_pin() is failed\n");
 			return;
 		}
 
 		strncpy(ad->pin_number, pin, 64);
 		free(pin);
 		pin = NULL;
-		WFD_APP_LOG(WFD_APP_LOG_LOW, "button ok: pin [%s]", ad->pin_number);
+		WDPOP_LOGD( "button ok: pin [%s]", ad->pin_number);
 
 		result = wifi_direct_accept_connection(ad->peer_mac);
 		if (result == WIFI_DIRECT_ERROR_NONE) {
 			wfd_prepare_popup(WFD_POP_PROG_CONNECT_WITH_PIN, NULL);
 		} else {
-			WFD_APP_LOG(WFD_APP_LOG_LOW,
+			WDPOP_LOGD(
 				"wifi_direct_accept_connection() failed. result=[%d]\n", result);
 			/* tickernoti popup */
 			wfd_tickernoti_popup(IDS_WFD_POP_CONNECT_FAILED);
@@ -121,17 +121,17 @@ static void __popup_resp_cb(void *data, Evas_Object * obj, void *event_info)
 
 	case /* MO */ WFD_POP_RESP_PROG_CONNECT_KEYPAD_OK:
 	{
-		WFD_APP_LOG(WFD_APP_LOG_HIGH,
+		WDPOP_LOGI(
 				"WFD_POP_RESP_PROG_CONNECT_KEYPAD_OK\n");
 
 		wfd_destroy_popup();
 
 		int len = strlen(ad->pin_number);
-		WFD_APP_LOG(WFD_APP_LOG_LOW, "button ok: pin [%s]", ad->pin_number);
+		WDPOP_LOGD( "button ok: pin [%s]", ad->pin_number);
 
 		if (len > 7 && len < 64) {
 			int result = 0;
-			WFD_APP_LOG(WFD_APP_LOG_LOW, "pin=[%s]\n", ad->pin_number);
+			WDPOP_LOGD( "pin=[%s]\n", ad->pin_number);
 
 			result = wifi_direct_set_wps_pin(ad->pin_number);
 			if (result != WIFI_DIRECT_ERROR_NONE) {
@@ -143,11 +143,11 @@ static void __popup_resp_cb(void *data, Evas_Object * obj, void *event_info)
 
 			//result = wifi_direct_activate_pushbutton();
 			result = wifi_direct_accept_connection(ad->peer_mac);
-			WFD_APP_LOG(WFD_APP_LOG_LOW,
+			WDPOP_LOGD(
 					"wifi_direct_accept_connection(%s) result=[%d]\n",
 					ad->peer_mac, result);
 			if (result != WIFI_DIRECT_ERROR_NONE) {
-				WFD_APP_LOG(WFD_APP_LOG_ERROR,
+				WDPOP_LOGE(
 						"wifi_direct_accept_connection() FAILED!!\n");
 				evas_object_hide(ad->win);
 
@@ -156,7 +156,7 @@ static void __popup_resp_cb(void *data, Evas_Object * obj, void *event_info)
 				wfd_tickernoti_popup(msg);
 			}
 		} else {
-			WFD_APP_LOG(WFD_APP_LOG_ERROR, "Error, Incorrect PIN!!\n");
+			WDPOP_LOGE( "Error, Incorrect PIN!!\n");
 
 			/* tickernoti popup */
 			wfd_tickernoti_popup(_("IDS_WFD_POP_PIN_INVALID"));
@@ -175,7 +175,7 @@ static void __popup_resp_cb(void *data, Evas_Object * obj, void *event_info)
 
 	case /* MT */ WFD_POP_RESP_APRV_CONNECT_KEYPAD_YES:
 	{
-		WFD_APP_LOG(WFD_APP_LOG_HIGH,
+		WDPOP_LOGI(
 				"WFD_POP_RESP_APRV_CONNECT_KEYPAD_YES\n");
 		wfd_destroy_popup();
 		if (pb_timer) {
@@ -189,7 +189,7 @@ static void __popup_resp_cb(void *data, Evas_Object * obj, void *event_info)
 
 	case /* MT */ WFD_POP_RESP_APRV_CONNECT_NO:
 	{
-		WFD_APP_LOG(WFD_APP_LOG_HIGH,
+		WDPOP_LOGI(
 				"WFD_POP_RESP_APRV_CONNECT_NO: destroy_popup...\n");
 
 		wfd_destroy_popup();
@@ -199,7 +199,7 @@ static void __popup_resp_cb(void *data, Evas_Object * obj, void *event_info)
 		}
 
 		result = wifi_direct_disconnect(ad->peer_mac);
-		WFD_APP_LOG(WFD_APP_LOG_LOW,
+		WDPOP_LOGD(
 				"wifi_direct_disconnect[%s] result=[%d]\n",
 				ad->peer_mac, result);
 	}
@@ -207,13 +207,13 @@ static void __popup_resp_cb(void *data, Evas_Object * obj, void *event_info)
 
 	default:
 	{
-		WFD_APP_LOG(WFD_APP_LOG_ERROR, "Unknown respone\n");
+		WDPOP_LOGE( "Unknown respone\n");
 		evas_object_hide(ad->win);
 	}
 	break;
 	}
 
-	__WFD_APP_FUNC_EXIT__;
+	__WDPOP_LOG_FUNC_EXIT__;
 }
 
 /**
@@ -223,11 +223,11 @@ static void __popup_resp_cb(void *data, Evas_Object * obj, void *event_info)
  */
 void wfd_destroy_popup()
 {
-	__WFD_APP_FUNC_ENTER__;
+	__WDPOP_LOG_FUNC_ENTER__;
 	wfd_appdata_t *ad = wfd_get_appdata();
 
 	if (ad == NULL) {
-		WFD_APP_LOG(WFD_APP_LOG_ERROR, "ad is NULL\n");
+		WDPOP_LOGE( "ad is NULL\n");
 		return;
 	}
 
@@ -243,7 +243,7 @@ void wfd_destroy_popup()
 
 	evas_object_hide(ad->win);
 
-	__WFD_APP_FUNC_EXIT__;
+	__WDPOP_LOG_FUNC_EXIT__;
 	return;
 }
 
@@ -255,7 +255,7 @@ void wfd_destroy_popup()
  */
 static Evas_Object *wfd_draw_pop_type_a(Evas_Object * win, wfd_popup_t * pop)
 {
-	__WFD_APP_FUNC_ENTER__;
+	__WDPOP_LOG_FUNC_ENTER__;
 	Evas_Object *popup;
 
 	popup = elm_popup_add(win);
@@ -265,7 +265,7 @@ static Evas_Object *wfd_draw_pop_type_a(Evas_Object * win, wfd_popup_t * pop)
 	evas_object_show(popup);
 	evas_object_show(win);
 
-	__WFD_APP_FUNC_EXIT__;
+	__WDPOP_LOG_FUNC_EXIT__;
 	return popup;
 }
 
@@ -277,7 +277,7 @@ static Evas_Object *wfd_draw_pop_type_a(Evas_Object * win, wfd_popup_t * pop)
  */
 static Evas_Object *wfd_draw_pop_type_b(Evas_Object * win, wfd_popup_t * pop)
 {
-	__WFD_APP_FUNC_ENTER__;
+	__WDPOP_LOG_FUNC_ENTER__;
 	Evas_Object *popup = NULL;
 	Evas_Object *btn = NULL;
 
@@ -294,7 +294,7 @@ static Evas_Object *wfd_draw_pop_type_b(Evas_Object * win, wfd_popup_t * pop)
 	evas_object_show(popup);
 	evas_object_show(win);
 
-	__WFD_APP_FUNC_EXIT__;
+	__WDPOP_LOG_FUNC_EXIT__;
 	return popup;
 }
 
@@ -306,7 +306,7 @@ static Evas_Object *wfd_draw_pop_type_b(Evas_Object * win, wfd_popup_t * pop)
  */
 static Evas_Object *wfd_draw_pop_type_c(Evas_Object * win, wfd_popup_t * pop)
 {
-	__WFD_APP_FUNC_ENTER__;
+	__WDPOP_LOG_FUNC_ENTER__;
 	Evas_Object *popup = NULL;
 	Evas_Object *btn1 = NULL, *btn2 = NULL;
 
@@ -331,7 +331,7 @@ static Evas_Object *wfd_draw_pop_type_c(Evas_Object * win, wfd_popup_t * pop)
 	evas_object_show(popup);
 	evas_object_show(win);
 
-	__WFD_APP_FUNC_EXIT__;
+	__WDPOP_LOG_FUNC_EXIT__;
 	return popup;
 }
 
@@ -344,26 +344,26 @@ static Evas_Object *wfd_draw_pop_type_c(Evas_Object * win, wfd_popup_t * pop)
  */
 static void _smart_ime_cb(void *data, Evas_Object * obj, void *event_info)
 {
-	__WFD_APP_FUNC_ENTER__;
+	__WDPOP_LOG_FUNC_ENTER__;
 	wfd_appdata_t *ad = wfd_get_appdata();
 
 	Ecore_IMF_Context *imf_context = NULL;
 	imf_context = (Ecore_IMF_Context *) ad->pin_entry;
 
 	if (NULL == imf_context) {
-		WFD_APP_LOG(WFD_APP_LOG_ERROR, "Error!!! Ecore_IMF_Context is NULL!!");
+		WDPOP_LOGE( "Error!!! Ecore_IMF_Context is NULL!!");
 		return;
 	}
 
 	const char *txt = elm_entry_markup_to_utf8(elm_entry_entry_get((const Evas_Object *) imf_context));
 	if (NULL != txt) {
-		WFD_APP_LOG(WFD_APP_LOG_LOW, "* text [%s], len=[%d]", txt, strlen(txt));
+		WDPOP_LOGD( "* text [%s], len=[%d]", txt, strlen(txt));
 		strncpy(ad->pin_number, txt, sizeof(ad->pin_number));
 	} else {
-		WFD_APP_LOG(WFD_APP_LOG_LOW, "Err!");
+		WDPOP_LOGD( "Err!");
 	}
 
-	__WFD_APP_FUNC_EXIT__;
+	__WDPOP_LOG_FUNC_EXIT__;
 }
 
 /**
@@ -398,7 +398,7 @@ static Eina_Bool _fn_pb_timer(void *data)
 	wfd_wps_display_popup_t *wps_display_popup = (wfd_wps_display_popup_t *) data;
 
 	if (NULL == wps_display_popup) {
-		WFD_APP_LOG(WFD_APP_LOG_ERROR, "Param is NULL.\n");
+		WDPOP_LOGE( "Param is NULL.\n");
 		return ECORE_CALLBACK_CANCEL;
 	}
 
@@ -410,7 +410,7 @@ static Eina_Bool _fn_pb_timer(void *data)
 	value = elm_progressbar_value_get(progressbar);
 
 	if (value >= 1.0) {
-		WFD_APP_LOG(WFD_APP_LOG_ERROR, "Progress end.\n");
+		WDPOP_LOGE( "Progress end.\n");
 		if (pb_timer) {
 			ecore_timer_del(pb_timer);
 			pb_timer = NULL;
@@ -423,7 +423,7 @@ static Eina_Bool _fn_pb_timer(void *data)
 	step = wps_display_popup->step;
 	value = ((double)step) / WFD_POP_TIMER_120;
 	elm_progressbar_value_set(progressbar, value);
-	WFD_APP_LOG(WFD_APP_LOG_LOW, "step: %d, value: %f\n", wps_display_popup->step, value);
+	WDPOP_LOGD( "step: %d, value: %f\n", wps_display_popup->step, value);
 
 	/* show the time label */
 	if (step < 60) {
@@ -495,7 +495,7 @@ static Evas_Object *_add_edit_field(Evas_Object *parent, const char *title, cons
  */
 Evas_Object *wfd_draw_pop_type_display(Evas_Object * win, wfd_popup_t * pop)
 {
-	__WFD_APP_FUNC_ENTER__;
+	__WDPOP_LOG_FUNC_ENTER__;
 
 	Evas_Object *popup = NULL;
 	Evas_Object *label = NULL;
@@ -579,7 +579,7 @@ Evas_Object *wfd_draw_pop_type_display(Evas_Object * win, wfd_popup_t * pop)
 	evas_object_show(popup);
 	evas_object_show(win);
 
-	__WFD_APP_FUNC_EXIT__;
+	__WDPOP_LOG_FUNC_EXIT__;
 	return popup;
 }
 
@@ -591,7 +591,7 @@ Evas_Object *wfd_draw_pop_type_display(Evas_Object * win, wfd_popup_t * pop)
  */
 Evas_Object *wfd_draw_pop_type_keypad(Evas_Object * win, wfd_popup_t * pop)
 {
-	__WFD_APP_FUNC_ENTER__;
+	__WDPOP_LOG_FUNC_ENTER__;
 	wfd_appdata_t *ad = wfd_get_appdata();
 
 	Evas_Object *conformant = NULL;
@@ -687,7 +687,7 @@ Evas_Object *wfd_draw_pop_type_keypad(Evas_Object * win, wfd_popup_t * pop)
 	evas_object_show(win);
 	elm_object_focus_set(ad->pin_entry, EINA_TRUE);
 
-	__WFD_APP_FUNC_EXIT__;
+	__WDPOP_LOG_FUNC_EXIT__;
 	return pinpopup;
 }
 
@@ -699,7 +699,7 @@ Evas_Object *wfd_draw_pop_type_keypad(Evas_Object * win, wfd_popup_t * pop)
  */
 void wfd_prepare_popup(int type, void *userdata)
 {
-	__WFD_APP_FUNC_ENTER__;
+	__WDPOP_LOG_FUNC_ENTER__;
 	wfd_appdata_t *ad = wfd_get_appdata();
 	wfd_popup_t *pop = ad->popup_data;
 
@@ -786,7 +786,7 @@ void wfd_prepare_popup(int type, void *userdata)
 		break;
 	}
 
-	__WFD_APP_FUNC_EXIT__;
+	__WDPOP_LOG_FUNC_EXIT__;
 	return;
 }
 
@@ -797,21 +797,21 @@ void wfd_prepare_popup(int type, void *userdata)
  */
 void wfd_tickernoti_popup(char *msg)
 {
-	__WFD_APP_FUNC_ENTER__;
+	__WDPOP_LOG_FUNC_ENTER__;
 
 	int ret = -1;
 	bundle *b = NULL;
 
 	b = bundle_create();
 	if (!b) {
-		WFD_APP_LOG(WFD_APP_LOG_LOW, "FAIL: bundle_create()\n");
+		WDPOP_LOGD( "FAIL: bundle_create()\n");
 		return;
 	}
 
 	/* tickernoti style */
 	ret = bundle_add(b, "0", "info");
 	if (ret) {
-		WFD_APP_LOG(WFD_APP_LOG_LOW, "Fail to add tickernoti style\n");
+		WDPOP_LOGD( "Fail to add tickernoti style\n");
 		bundle_free(b);
 		return;
 	}
@@ -819,7 +819,7 @@ void wfd_tickernoti_popup(char *msg)
 	/* popup text */
 	ret = bundle_add(b, "1", msg);
 	if (ret) {
-		WFD_APP_LOG(WFD_APP_LOG_LOW, "Fail to add popup text\n");
+		WDPOP_LOGD( "Fail to add popup text\n");
 		bundle_free(b);
 		return;
 	}
@@ -827,7 +827,7 @@ void wfd_tickernoti_popup(char *msg)
 	/* orientation of tickernoti */
 	ret = bundle_add(b, "2", "0");
 	if (ret) {
-		WFD_APP_LOG(WFD_APP_LOG_LOW, "Fail to add orientation of tickernoti\n");
+		WDPOP_LOGD( "Fail to add orientation of tickernoti\n");
 		bundle_free(b);
 		return;
 	}
@@ -835,7 +835,7 @@ void wfd_tickernoti_popup(char *msg)
 	/* timeout(second) of tickernoti */
 	ret = bundle_add(b, "3", "3");
 	if (ret) {
-		WFD_APP_LOG(WFD_APP_LOG_LOW, "Fail to add timeout of tickernoti\n");
+		WDPOP_LOGD( "Fail to add timeout of tickernoti\n");
 		bundle_free(b);
 		return;
 	}
@@ -843,10 +843,10 @@ void wfd_tickernoti_popup(char *msg)
 	/* launch tickernoti */
 	ret = syspopup_launch(TICKERNOTI_SYSPOPUP, b);
 	if (ret) {
-		WFD_APP_LOG(WFD_APP_LOG_LOW, "Fail to launch syspopup\n");
+		WDPOP_LOGD( "Fail to launch syspopup\n");
 	}
 
 	bundle_free(b);
-	__WFD_APP_FUNC_EXIT__;
+	__WDPOP_LOG_FUNC_EXIT__;
 }
 

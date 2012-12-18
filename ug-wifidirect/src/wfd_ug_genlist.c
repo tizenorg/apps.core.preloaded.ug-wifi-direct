@@ -59,17 +59,17 @@ Elm_Gen_Item_Class peer_conn_failed_itc;
  */
 static char *_gl_header_label_get(void *data, Evas_Object *obj, const char *part)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 	struct ug_data *ugd = (struct ug_data *) data;
-	DBG(LOG_VERBOSE, "%s", part);
+	WDUG_LOGI("%s", part);
 
 	if (data == NULL) {
-		DBG(LOG_ERROR, "Incorrect parameter(NULL)\n");
+		WDUG_LOGE("Incorrect parameter(NULL)\n");
 		return NULL;
 	}
 
 	if (!strcmp(part, "elm.text.1")) {
-		DBG(LOG_VERBOSE, "Current text mode [%d]\n", ugd->head_text_mode);
+		WDUG_LOGI("Current text mode [%d]\n", ugd->head_text_mode);
 		switch (ugd->head_text_mode) {
 		case HEAD_TEXT_TYPE_DIRECT:
 		case HEAD_TEXT_TYPE_ACTIVATED:
@@ -91,7 +91,7 @@ static char *_gl_header_label_get(void *data, Evas_Object *obj, const char *part
 		return strdup(ugd->dev_name);
 	}
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 	return NULL;
 }
 
@@ -104,12 +104,12 @@ static char *_gl_header_label_get(void *data, Evas_Object *obj, const char *part
  */
 static Evas_Object *_gl_header_icon_get(void *data, Evas_Object *obj, const char *part)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 	struct ug_data *ugd = (struct ug_data *) data;
 	Evas_Object *onoff = NULL;
 
 	if (data == NULL) {
-		DBG(LOG_ERROR, "Incorrect parameter(NULL)\n");
+		WDUG_LOGE("Incorrect parameter(NULL)\n");
 		return NULL;
 	}
 
@@ -125,7 +125,7 @@ static Evas_Object *_gl_header_icon_get(void *data, Evas_Object *obj, const char
 		evas_object_show(onoff);
 	}
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 	return onoff;
 }
 
@@ -138,15 +138,15 @@ static Evas_Object *_gl_header_icon_get(void *data, Evas_Object *obj, const char
  */
 static char *_gl_name_label_get(void *data, Evas_Object *obj, const char *part)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 	struct ug_data *ugd = (struct ug_data *) data;
 
 	if (data == NULL) {
-		DBG(LOG_ERROR, "Incorrect parameter(NULL)\n");
+		WDUG_LOGE("Incorrect parameter(NULL)\n");
 		return NULL;
 	}
 
-	DBG(LOG_VERBOSE, "%s", part);
+	WDUG_LOGI("%s", part);
 
 	if (!strcmp(part, "elm.text")) {
 		return strdup(IDS_WFD_TITLE_ABOUT_WIFI_DIRECT);
@@ -154,7 +154,7 @@ static char *_gl_name_label_get(void *data, Evas_Object *obj, const char *part)
 		return strdup(ugd->dev_name);
 	}
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 	return NULL;
 }
 
@@ -167,11 +167,11 @@ static char *_gl_name_label_get(void *data, Evas_Object *obj, const char *part)
  */
 static char *_gl_title_label_get(void *data, Evas_Object *obj, const char *part)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 	struct ug_data *ugd = (struct ug_data *) data;
 
 	if (data == NULL) {
-		DBG(LOG_ERROR, "Incorrect parameter(NULL)\n");
+		WDUG_LOGE("Incorrect parameter(NULL)\n");
 		return NULL;
 	}
 
@@ -193,7 +193,7 @@ static char *_gl_title_label_get(void *data, Evas_Object *obj, const char *part)
 		}
 	}
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 	return NULL;
 }
 
@@ -210,7 +210,7 @@ static Evas_Object *_gl_title_content_get(void *data, Evas_Object *obj, const ch
 	struct ug_data *ugd = (struct ug_data *) data;
 
 	if (data == NULL) {
-	    DBG(LOG_ERROR, "Incorrect parameter(NULL)\n");
+	    WDUG_LOGE("Incorrect parameter(NULL)\n");
 	    return NULL;
 	}
 
@@ -238,20 +238,20 @@ static Evas_Object *_gl_title_content_get(void *data, Evas_Object *obj, const ch
  */
 static char *_gl_peer_label_get(void *data, Evas_Object *obj, const char *part)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 	assertm_if(NULL == obj, "NULL!!");
 	assertm_if(NULL == part, "NULL!!");
 	device_type_s *peer = (device_type_s *) data;
 	char buf[WFD_GLOBALIZATION_STR_LENGTH] = { 0, };
-	DBG(LOG_VERBOSE, "%s", part);
+	WDUG_LOGI("%s", part);
 
 	if (data == NULL) {
-		DBG(LOG_ERROR, "Incorrect parameter(NULL)\n");
+		WDUG_LOGE("Incorrect parameter(NULL)\n");
 		return NULL;
 	}
 
 	if (!strcmp(part, "elm.text.1")) {
-		__FUNC_EXIT__;
+		__WDUG_LOG_FUNC_EXIT__;
 		return strdup(peer->ssid);
 	} else if (!strcmp(part, "elm.text.2")) {
 		switch (peer->conn_status) {
@@ -279,11 +279,11 @@ static char *_gl_peer_label_get(void *data, Evas_Object *obj, const char *part)
 			break;
 		}
 	} else {
-		__FUNC_EXIT__;
+		__WDUG_LOG_FUNC_EXIT__;
 		return NULL;
 	}
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 	return strdup(buf);
 }
 
@@ -296,7 +296,7 @@ static char *_gl_peer_label_get(void *data, Evas_Object *obj, const char *part)
  */
 static Evas_Object *_gl_peer_icon_get(void *data, Evas_Object *obj, const char *part)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 	assertm_if(NULL == obj, "NULL!!");
 	assertm_if(NULL == part, "NULL!!");
 	device_type_s *peer = (device_type_s *) data;
@@ -304,12 +304,12 @@ static Evas_Object *_gl_peer_icon_get(void *data, Evas_Object *obj, const char *
 	struct ug_data *ugd = wfd_get_ug_data();
 
 	if (data == NULL) {
-		DBG(LOG_ERROR, "Incorrect parameter(NULL)\n");
+		WDUG_LOGE("Incorrect parameter(NULL)\n");
 		return NULL;
 	}
 
 	if (!strcmp(part, "elm.icon.2")) {
-		DBG(LOG_VERBOSE, "elm.icon.2 - connection status [%d]\n", peer->conn_status);
+		WDUG_LOGI("elm.icon.2 - connection status [%d]\n", peer->conn_status);
 		if (peer->conn_status == PEER_CONN_STATUS_CONNECTING) {
 			icon = elm_progressbar_add(obj);
 			elm_object_style_set(icon, "list_process");
@@ -322,7 +322,7 @@ static Evas_Object *_gl_peer_icon_get(void *data, Evas_Object *obj, const char *
 		elm_icon_resizable_set(icon, 1, 1);
 		evas_object_show(icon);
 	} else if (!strcmp(part, "elm.icon.1")) {
-		DBG(LOG_VERBOSE, "elm.icon.1 - category [%d]\n", peer->category);
+		WDUG_LOGI("elm.icon.1 - category [%d]\n", peer->category);
 		char *img_path = NULL;
 		int status = -1;
 
@@ -430,7 +430,7 @@ static Evas_Object *_gl_peer_icon_get(void *data, Evas_Object *obj, const char *
 		}
 	}
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 	return icon;
 }
 
@@ -443,14 +443,14 @@ static Evas_Object *_gl_peer_icon_get(void *data, Evas_Object *obj, const char *
  */
 static char *_gl_noitem_text_get(void *data, Evas_Object *obj, const char *part)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 
 	if (data == NULL) {
-		DBG(LOG_ERROR, "Incorrect parameter(NULL)\n");
+		WDUG_LOGE("Incorrect parameter(NULL)\n");
 		return NULL;
 	}
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 	return strdup(_("IDS_WFD_NOCONTENT"));
 }
 
@@ -463,33 +463,33 @@ static char *_gl_noitem_text_get(void *data, Evas_Object *obj, const char *part)
  */
 static Evas_Object *_gl_button_get(void *data, Evas_Object *obj, const char *part)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 	struct ug_data *ugd = (struct ug_data *) data;
 
-	DBG(LOG_VERBOSE, "%s", part);
+	WDUG_LOGI("%s", part);
 	ugd->multi_btn = elm_button_add(obj);
 	wfd_refresh_wifi_direct_state(ugd);
 
 	if (ugd->wfd_status == WIFI_DIRECT_STATE_CONNECTING) {
 		elm_object_text_set(ugd->multi_btn, _("IDS_WFD_BUTTON_CANCEL"));
-		DBG(LOG_VERBOSE, "button: Cancel connect\n");
+		WDUG_LOGI("button: Cancel connect\n");
 	} else {
 		if (ugd->gl_connected_peer_cnt > 1) {
 			elm_object_text_set(ugd->multi_btn, _("IDS_WFD_BUTTON_DISCONNECT_ALL"));
-			DBG(LOG_VERBOSE, "button: Disconnect All\n");
+			WDUG_LOGI("button: Disconnect All\n");
 		} else if (ugd->gl_connected_peer_cnt == 1) {
 			elm_object_text_set(ugd->multi_btn, _("IDS_WFD_BUTTON_DISCONNECT"));
-			DBG(LOG_VERBOSE, "button: Disconnect\n");
+			WDUG_LOGI("button: Disconnect\n");
 		} else {
 			elm_object_text_set(ugd->multi_btn, _("IDS_WFD_BUTTON_MULTI"));
-			DBG(LOG_VERBOSE, "button: Multi connect\n");
+			WDUG_LOGI("button: Multi connect\n");
 		}
 	}
 
 	evas_object_smart_callback_add(ugd->multi_btn, "clicked", _wifid_create_multibutton_cb, ugd);
 	evas_object_show(ugd->multi_btn);
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 	return ugd->multi_btn;
 }
 
@@ -502,10 +502,10 @@ static Evas_Object *_gl_button_get(void *data, Evas_Object *obj, const char *par
  */
 static char *_gl_conn_dev_title_label_get(void *data, Evas_Object *obj, const char *part)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 
 	if (data == NULL) {
-		DBG(LOG_ERROR, "Incorrect parameter(NULL)\n");
+		WDUG_LOGE("Incorrect parameter(NULL)\n");
 		return NULL;
 	}
 
@@ -513,7 +513,7 @@ static char *_gl_conn_dev_title_label_get(void *data, Evas_Object *obj, const ch
 		return strdup(_("IDS_WFD_BODY_CONNECTED_DEVICES"));
 	}
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 	return NULL;
 }
 
@@ -526,15 +526,15 @@ static char *_gl_conn_dev_title_label_get(void *data, Evas_Object *obj, const ch
  */
 static char *_gl_peer_conn_dev_label_get(void *data, Evas_Object *obj, const char *part)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 	assertm_if(NULL == obj, "NULL!!");
 	assertm_if(NULL == part, "NULL!!");
 	device_type_s *peer = (device_type_s *) data;
 	char buf[WFD_GLOBALIZATION_STR_LENGTH] = { 0, };
-	DBG(LOG_VERBOSE, "%s", part);
+	WDUG_LOGI("%s", part);
 
 	if (data == NULL) {
-		DBG(LOG_ERROR, "Incorrect parameter(NULL)\n");
+		WDUG_LOGE("Incorrect parameter(NULL)\n");
 		return NULL;
 	}
 
@@ -542,7 +542,7 @@ static char *_gl_peer_conn_dev_label_get(void *data, Evas_Object *obj, const cha
 		return strdup(peer->ssid);
 	} else {
 		g_strlcpy(buf, _("IDS_WFD_CONNECTED"), WFD_GLOBALIZATION_STR_LENGTH);
-		__FUNC_EXIT__;
+		__WDUG_LOG_FUNC_EXIT__;
 		return strdup(buf);
 	}
 }
@@ -557,10 +557,10 @@ static char *_gl_peer_conn_dev_label_get(void *data, Evas_Object *obj, const cha
 static char *_gl_conn_failed_dev_title_label_get(void *data, Evas_Object *obj,
 		const char *part)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 
 	if (data == NULL) {
-		DBG(LOG_ERROR, "Incorrect parameter(NULL)\n");
+		WDUG_LOGE("Incorrect parameter(NULL)\n");
 		return NULL;
 	}
 
@@ -568,7 +568,7 @@ static char *_gl_conn_failed_dev_title_label_get(void *data, Evas_Object *obj,
 		return strdup(IDS_WFD_BODY_FAILED_DEVICES);
 	}
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 	return NULL;
 }
 
@@ -581,15 +581,15 @@ static char *_gl_conn_failed_dev_title_label_get(void *data, Evas_Object *obj,
  */
 static char *_gl_peer_conn_failed_dev_label_get(void *data, Evas_Object *obj, const char *part)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 	assertm_if(NULL == obj, "NULL!!");
 	assertm_if(NULL == part, "NULL!!");
 	device_type_s *peer = (device_type_s *) data;
 	char buf[WFD_GLOBALIZATION_STR_LENGTH] = { 0, };
-	DBG(LOG_VERBOSE, "%s", part);
+	WDUG_LOGI("%s", part);
 
 	if (data == NULL) {
-		DBG(LOG_ERROR, "Incorrect parameter(NULL)\n");
+		WDUG_LOGE("Incorrect parameter(NULL)\n");
 		return NULL;
 	}
 
@@ -597,7 +597,7 @@ static char *_gl_peer_conn_failed_dev_label_get(void *data, Evas_Object *obj, co
 		return strdup(peer->ssid);
 	} else {
 		g_strlcpy(buf, _("IDS_WFD_FAILED_TO_CONNECT"), WFD_GLOBALIZATION_STR_LENGTH);
-		__FUNC_EXIT__;
+		__WDUG_LOG_FUNC_EXIT__;
 		return strdup(buf);
 	}
 }
@@ -611,11 +611,11 @@ static char *_gl_peer_conn_failed_dev_label_get(void *data, Evas_Object *obj, co
  */
 static char *_gl_multi_connect_dev_title_label_get(void *data, Evas_Object *obj, const char *part)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 	struct ug_data *ugd = wfd_get_ug_data();
 
 	if (data == NULL) {
-		DBG(LOG_ERROR, "Incorrect parameter(NULL)\n");
+		WDUG_LOGE("Incorrect parameter(NULL)\n");
 		return NULL;
 	}
 
@@ -627,7 +627,7 @@ static char *_gl_multi_connect_dev_title_label_get(void *data, Evas_Object *obj,
 		}
 	}
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 	return NULL;
 }
 
@@ -641,10 +641,10 @@ static char *_gl_multi_connect_dev_title_label_get(void *data, Evas_Object *obj,
 static char *_gl_busy_dev_title_label_get(void *data, Evas_Object *obj,
 		const char *part)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 
 	if (data == NULL) {
-		DBG(LOG_ERROR, "Incorrect parameter(NULL)\n");
+		WDUG_LOGE("Incorrect parameter(NULL)\n");
 		return NULL;
 	}
 
@@ -652,7 +652,7 @@ static char *_gl_busy_dev_title_label_get(void *data, Evas_Object *obj,
 		return strdup(_("IDS_WFD_BODY_BUSY_DEVICES"));
 	}
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 	return NULL;
 }
 
@@ -665,25 +665,25 @@ static char *_gl_busy_dev_title_label_get(void *data, Evas_Object *obj,
  */
 static char *_gl_peer_busy_dev_label_get(void *data, Evas_Object *obj, const char *part)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 	assertm_if(NULL == obj, "NULL!!");
 	assertm_if(NULL == part, "NULL!!");
 	device_type_s *peer = (device_type_s *) data;
 	char buf[WFD_GLOBALIZATION_STR_LENGTH] = { 0, };
-	DBG(LOG_VERBOSE, "%s", part);
+	WDUG_LOGI("%s", part);
 
 	if (data == NULL) {
-		DBG(LOG_ERROR, "Incorrect parameter(NULL)\n");
+		WDUG_LOGE("Incorrect parameter(NULL)\n");
 		return NULL;
 	}
 
-	DBG(LOG_VERBOSE, "peer->ssid = %s", peer->ssid);
+	WDUG_LOGI("peer->ssid = %s", peer->ssid);
 
 	if (!strcmp(part, "elm.text.1")) {
 		return strdup(peer->ssid);
 	} else {
 		g_strlcpy(buf, _("IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"), WFD_GLOBALIZATION_STR_LENGTH);
-		__FUNC_EXIT__;
+		__WDUG_LOG_FUNC_EXIT__;
 		return strdup(buf);
 	}
 }
@@ -696,11 +696,11 @@ static char *_gl_peer_busy_dev_label_get(void *data, Evas_Object *obj, const cha
  */
 static void _gl_peer_del(void *data, Evas_Object *obj)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 	assertm_if(NULL == obj, "NULL!!");
 	assertm_if(NULL == data, "NULL!!");
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 	return;
 }
 
@@ -710,7 +710,7 @@ static void _gl_peer_del(void *data, Evas_Object *obj)
  */
 void initialize_gen_item_class()
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 	head_itc.item_style = "dialogue/2text.1icon.10";
 	head_itc.func.text_get = _gl_header_label_get;
 	head_itc.func.content_get = _gl_header_icon_get;
@@ -788,6 +788,6 @@ void initialize_gen_item_class()
 	title_multi_connect_itc.func.state_get = NULL;
 	title_multi_connect_itc.func.del = NULL;
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 
 }

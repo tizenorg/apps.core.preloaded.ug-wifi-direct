@@ -21,29 +21,58 @@
 #ifndef __WFD_UG_H__
 #define __WFD_UG_H__
 
-#include <dlog.h>
 #include <ui-gadget-module.h>
 #include <tethering.h>
 #include <wifi-direct.h>
 
 #define PACKAGE "ug-setting-wifidirect-efl"
 #define LOCALEDIR "/usr/ug/res/locale"
+#define VCONF_WFD_APNAME "db/setting/device_name"
 
-#define DIRECT_TAG  "wfd_ug"
-#define DBG(log_level, format, args...) \
-	LOG(log_level, DIRECT_TAG, "[%s()][%d] " format, __FUNCTION__, __LINE__, ##args)
+#ifdef USE_DLOG
+#include <dlog.h>
 
-#define __FUNC_ENTER__  DBG(LOG_VERBOSE, "+\n")
-#define __FUNC_EXIT__   DBG(LOG_VERBOSE, "-\n")
+#undef LOG_TAG
+#define LOG_TAG "UG_WIFI_DIRECT"
 
-#define VCONF_WFD_APNAME			"db/setting/device_name"
+#define WDUG_LOGV(format, args...) LOGV(format, ##args)
+#define WDUG_LOGD(format, args...) LOGD(format, ##args)
+#define WDUG_LOGI(format, args...) LOGI(format, ##args)
+#define WDUG_LOGW(format, args...) LOGW(format, ##args)
+#define WDUG_LOGE(format, args...) LOGE(format, ##args)
+#define WDUG_LOGF(format, args...) LOGF(format, ##args)
 
-#define assertm_if(expr, fmt, arg...) do { \
+#define __WDUG_LOG_FUNC_ENTER__ LOGV("Enter")
+#define __WDUG_LOG_FUNC_EXIT__ LOGV("Quit")
+
+#define assertm_if(expr, fmt, args...) do { \
 	if (expr) { \
-	  DBG(LOG_VERBOSE, " ##(%s) -> %s() assert!!## "fmt, #expr, __FUNCTION__, ##arg); \
+	  WDUG_LOGF(" ##(%s) -> assert!!## "fmt, #expr, ##args); \
 		 assert(1); \
 	} \
 } while (0)
+
+#else /** _DLOG_UTIL */
+
+#define WDUG_LOGV(format, args...) \
+	printf("[V/UG_WIFI_DIRECT] %s: %s()(%4d)> "format, __FILE__, __FUNCTION__, __LINE__, ##args)
+#define WDUG_LOGD(format, args...) \
+	printf("[D/UG_WIFI_DIRECT] %s: %s()(%4d)> "format, __FILE__, __FUNCTION__, __LINE__, ##args)
+#define WDUG_LOGI(format, args...) \
+	printf("[I/UG_WIFI_DIRECT] %s: %s()(%4d)> "format, __FILE__, __FUNCTION__, __LINE__, ##args)
+#define WDUG_LOGW(format, args...) \
+	printf("[W/UG_WIFI_DIRECT] %s: %s()(%4d)> "format, __FILE__, __FUNCTION__, __LINE__, ##args)
+#define WDUG_LOGE(format, args...) \
+	printf("[E/UG_WIFI_DIRECT] %s: %s()(%4d)> "format, __FILE__, __FUNCTION__, __LINE__, ##args)
+#define WDUG_LOGF(format, args...) \
+	printf("[F/UG_WIFI_DIRECT] %s: %s()(%4d)> "format, __FILE__, __FUNCTION__, __LINE__, ##args)
+
+#define __WDUG_LOG_FUNC_ENTER__ \
+	printf("[V/UG_WIFI_DIRECT] %s: %s()(%4d)> Enter", __FILE__, __FUNCTION__, __LINE__)
+#define __WDUG_LOG_FUNC_EXIT__ \
+	printf("[V/UG_WIFI_DIRECT] %s: %s()(%4d)> Exit", __FILE__, __FUNCTION__, __LINE__)
+
+#endif /** _DLOG_UTIL */
 
 #define MAC2STR(a) (a)[0], (a)[1], (a)[2], (a)[3], (a)[4], (a)[5]
 #define MACSTR "%02x:%02x:%02x:%02x:%02x:%02x"

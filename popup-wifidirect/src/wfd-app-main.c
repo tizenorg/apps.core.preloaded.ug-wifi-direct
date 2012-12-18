@@ -68,11 +68,11 @@ static Evas_Object *_create_win(Evas_Object *parent, const char *name)
 
 static int _app_create(void *data)
 {
-	__WFD_APP_FUNC_ENTER__;
+	__WDPOP_LOG_FUNC_ENTER__;
 	wfd_appdata_t *ad = wfd_get_appdata();
 
 	if (data == NULL) {
-		WFD_APP_LOG(WFD_APP_LOG_LOW, "Incorrect parameter\n");
+		WDPOP_LOGD( "Incorrect parameter\n");
 		return -1;
 	}
 
@@ -80,7 +80,7 @@ static int _app_create(void *data)
 
 	ad->popup_data = (wfd_popup_t *) malloc(sizeof(wfd_popup_t));
 	if (!ad->popup_data) {
-		WFD_APP_LOG(WFD_APP_LOG_ERROR, "malloc failed\n");
+		WDPOP_LOGE("malloc failed\n");
 		return -1;
 	}
 
@@ -96,32 +96,32 @@ static int _app_create(void *data)
 
 	r = appcore_set_i18n(PACKAGE, NULL);
 	if (r != 0) {
-		WFD_APP_LOG(WFD_APP_LOG_LOW, "appcore_set_i18n error\n");
+		WDPOP_LOGD( "appcore_set_i18n error\n");
 		return -1;
 	}
 
 	if (init_wfd_popup_client(ad) == FALSE) {
-		WFD_APP_LOG(WFD_APP_LOG_ERROR, "init_wfd_popup_client error\n");
+		WDPOP_LOGE("init_wfd_popup_client error\n");
 		wfd_prepare_popup(WFD_POP_FAIL_INIT, NULL);
 	}
 
-	__WFD_APP_FUNC_EXIT__;
+	__WDPOP_LOG_FUNC_EXIT__;
 	return 0;
 }
 
 static int _app_terminate(void *data)
 {
-	__WFD_APP_FUNC_ENTER__;
+	__WDPOP_LOG_FUNC_ENTER__;
 
 	if (data == NULL) {
-		WFD_APP_LOG(WFD_APP_LOG_ERROR, "Incorrect parameter\n");
+		WDPOP_LOGE("Incorrect parameter\n");
 		return -1;
 	}
 
 	wfd_appdata_t *ad = (wfd_appdata_t *) data;
 
 	if (deinit_wfd_popup_client(ad) == FALSE) {
-		WFD_APP_LOG(WFD_APP_LOG_ERROR, "deinit_wfd_popup_client error\n");
+		WDPOP_LOGE("deinit_wfd_popup_client error\n");
 	} else {
 		if (ad->popup) {
 			evas_object_del(ad->popup);
@@ -137,30 +137,30 @@ static int _app_terminate(void *data)
 		}
 	}
 
-	__WFD_APP_FUNC_EXIT__;
+	__WDPOP_LOG_FUNC_EXIT__;
 	return 0;
 }
 
 static int _app_pause(void *data)
 {
-	__WFD_APP_FUNC_ENTER__;
-	__WFD_APP_FUNC_EXIT__;
+	__WDPOP_LOG_FUNC_ENTER__;
+	__WDPOP_LOG_FUNC_EXIT__;
 	return 0;
 }
 
 static int _app_resume(void *data)
 {
-	__WFD_APP_FUNC_ENTER__;
-	__WFD_APP_FUNC_EXIT__;
+	__WDPOP_LOG_FUNC_ENTER__;
+	__WDPOP_LOG_FUNC_EXIT__;
 	return 0;
 }
 
 static int _app_reset(bundle *b, void *data)
 {
-	__WFD_APP_FUNC_ENTER__;
+	__WDPOP_LOG_FUNC_ENTER__;
 
 	if (b == NULL) {
-		WFD_APP_LOG(WFD_APP_LOG_LOW, "Bundle is NULL");
+		WDPOP_LOGD( "Bundle is NULL");
 		return -1;
 	}
 
@@ -169,13 +169,13 @@ static int _app_reset(bundle *b, void *data)
 	noti_type = (char *)appsvc_get_data(b, NOTIFICATION_BUNDLE_PARAM);
 
 	if (noti_type == NULL) {
-		WFD_APP_LOG(WFD_APP_LOG_LOW, "Notification type is wrong.");
+		WDPOP_LOGD( "Notification type is wrong.");
 		return -1;
 	}
 
-	WFD_APP_LOG(WFD_APP_LOG_LOW, "Notification type is [%s]", noti_type);
+	WDPOP_LOGD( "Notification type is [%s]", noti_type);
 	if (strncmp(noti_type, NOTIFICATION_BUNDLE_VALUE, strlen(NOTIFICATION_BUNDLE_PARAM)) == 0) {
-		WFD_APP_LOG(WFD_APP_LOG_LOW, "Launch wifidirect-ugapp");
+		WDPOP_LOGD( "Launch wifidirect-ugapp");
 		service_h service;
 		service_create(&service);
 		service_set_operation(service, SERVICE_OPERATION_DEFAULT);
@@ -184,7 +184,7 @@ static int _app_reset(bundle *b, void *data)
 		service_destroy(service);
 	}
 
-	__WFD_APP_FUNC_EXIT__;
+	__WDPOP_LOG_FUNC_EXIT__;
 	return 0;
 }
 

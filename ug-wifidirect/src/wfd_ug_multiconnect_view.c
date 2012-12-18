@@ -43,18 +43,18 @@ Elm_Gen_Item_Class device_itc;
  */
 void _multiconnect_view_back_btn_cb(void *data, Evas_Object * obj, void *event_info)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 	struct ug_data *ugd = (struct ug_data *)data;
 
 	if (!ugd) {
-		DBG(LOG_ERROR, "The param is NULL\n");
+		WDUG_LOGE("The param is NULL\n");
 		return;
 	}
 
 	ugd->multiconn_view_genlist = NULL;
 	elm_naviframe_item_pop(ugd->naviframe);
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 	return;
 }
 
@@ -65,7 +65,7 @@ void _multiconnect_view_back_btn_cb(void *data, Evas_Object * obj, void *event_i
  */
 gboolean __wfd_multi_connect_reset_cb(void *data)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 	int i = 0;
 	struct ug_data *ugd = (struct ug_data *)data;
 
@@ -79,7 +79,7 @@ gboolean __wfd_multi_connect_reset_cb(void *data)
 
 	wfd_ug_view_update_peers(ugd);
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 	return false;
 }
 
@@ -90,7 +90,7 @@ gboolean __wfd_multi_connect_reset_cb(void *data)
  */
 void wfd_free_multi_selected_peers(void *data)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 	int i = 0;
 	struct ug_data *ugd = (struct ug_data *)data;
 
@@ -105,7 +105,7 @@ void wfd_free_multi_selected_peers(void *data)
 	ugd->raw_multi_selected_peer_cnt = 0;
 	ugd->multi_connect_mode = WFD_MULTI_CONNECT_MODE_NONE;
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 
 }
 
@@ -116,7 +116,7 @@ void wfd_free_multi_selected_peers(void *data)
  */
 int wfd_stop_multi_connect(void *data)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 	struct ug_data *ugd = (struct ug_data *)data;
 
 	/* change the title of failed peers */
@@ -128,7 +128,7 @@ int wfd_stop_multi_connect(void *data)
 	/* after 30s, remove the failed peers */
 	g_timeout_add(30000 /*ms*/, __wfd_multi_connect_reset_cb, ugd);
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 	return 0;
 }
 
@@ -139,7 +139,7 @@ int wfd_stop_multi_connect(void *data)
  */
 int wfd_start_multi_connect(void *data)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 	struct ug_data *ugd = (struct ug_data *)data;
 	int res;
 
@@ -148,19 +148,19 @@ int wfd_start_multi_connect(void *data)
 
 		res = wfd_client_group_add();
 		if (res == -1) {
-			DBG(LOG_ERROR, "Failed to add group");
+			WDUG_LOGE("Failed to add group");
 			wfd_free_multi_selected_peers(ugd);
 
-			__FUNC_EXIT__;
+			__WDUG_LOG_FUNC_EXIT__;
 			return -1;
 		}
 
 	} else {
-		DBG(LOG_VERBOSE, "No selected peers.\n");
+		WDUG_LOGD("No selected peers.\n");
 		return -1;
 	}
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 	return 0;
 }
 
@@ -171,7 +171,7 @@ int wfd_start_multi_connect(void *data)
  */
 gboolean wfd_multi_connect_next_cb(void *data)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 	struct ug_data *ugd = (struct ug_data *)data;
 	int i;
 	int res;
@@ -185,7 +185,7 @@ gboolean wfd_multi_connect_next_cb(void *data)
 			if (ugd->raw_multi_selected_peers[i].conn_status == PEER_CONN_STATUS_WAIT_FOR_CONNECT) {
 				res = wfd_client_connect(ugd->raw_multi_selected_peers[i].mac_addr);
 				if (res == -1) {
-					DBG(LOG_VERBOSE, "Failed to connect [%s].\n", ugd->raw_multi_selected_peers[i].ssid);
+					WDUG_LOGD("Failed to connect [%s].\n", ugd->raw_multi_selected_peers[i].ssid);
 					ugd->raw_multi_selected_peers[i].conn_status = PEER_CONN_STATUS_FAILED_TO_CONNECT;
 				} else {
 					ugd->raw_multi_selected_peers[i].conn_status = PEER_CONN_STATUS_CONNECTING;
@@ -196,15 +196,15 @@ gboolean wfd_multi_connect_next_cb(void *data)
 
 		if (i >= ugd->raw_multi_selected_peer_cnt) {
 			// All selected peers are touched.
-			DBG(LOG_VERBOSE, "Stop Multi Connect...\n");
+			WDUG_LOGD("Stop Multi Connect...\n");
 			wfd_stop_multi_connect(ugd);
 		}
 	} else {
-		DBG(LOG_VERBOSE, "No selected peers.\n");
+		WDUG_LOGD("No selected peers.\n");
 		return -1;
 	}
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 	return false;
 }
 
@@ -217,16 +217,16 @@ gboolean wfd_multi_connect_next_cb(void *data)
  */
 void _connect_btn_cb(void *data, Evas_Object *obj, void *event_info)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 	struct ug_data *ugd = (struct ug_data *)data;
 	int i = 0;
 	int count = 0;
 	char popup_text[MAX_POPUP_TEXT_SIZE] = {0};
-	DBG(LOG_VERBOSE, "_connect_btn_cb \n");
+	WDUG_LOGD("_connect_btn_cb \n");
 
 	for (i = 0; i < ugd->gl_available_peer_cnt ; i++) {
 		if (TRUE == ugd->multi_conn_dev_list[i].dev_sel_state) {
-			DBG(LOG_VERBOSE, "ugd->peers[i].mac_addr = %s, i = %d\n", ugd->multi_conn_dev_list[i].peer.mac_addr, i);
+			WDUG_LOGD("ugd->peers[i].mac_addr = %s, i = %d\n", ugd->multi_conn_dev_list[i].peer.mac_addr, i);
 
 			memcpy(&ugd->raw_multi_selected_peers[count], &ugd->multi_conn_dev_list[i].peer, sizeof(device_type_s));
 			ugd->raw_multi_selected_peers[count].conn_status = PEER_CONN_STATUS_WAIT_FOR_CONNECT;
@@ -251,7 +251,7 @@ void _connect_btn_cb(void *data, Evas_Object *obj, void *event_info)
 	ugd->multiconn_view_genlist = NULL;
 	_change_multi_button_title(ugd);
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 	return;
 }
 
@@ -262,11 +262,11 @@ void _connect_btn_cb(void *data, Evas_Object *obj, void *event_info)
  */
 static void _wfd_multi_del_select_info_label(void *data)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 	struct ug_data *ugd = (struct ug_data *)data;
 
 	if (NULL == ugd) {
-		DBG(LOG_ERROR, "The param is NULL\n");
+		WDUG_LOGE("The param is NULL\n");
 		return;
 	}
 
@@ -280,7 +280,7 @@ static void _wfd_multi_del_select_info_label(void *data)
 		ugd->notify_layout = NULL;
 	}
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 	return;
 }
 
@@ -292,13 +292,13 @@ static void _wfd_multi_del_select_info_label(void *data)
  */
 static void _wfd_multi_add_select_info_label(void *data, int count)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 
 	char select_lablel[MAX_POPUP_TEXT_SIZE] = {0};
 	struct ug_data *ugd = (struct ug_data *)data;
 
 	if (NULL == ugd || count <= 0) {
-		DBG(LOG_ERROR, "The param is NULL\n");
+		WDUG_LOGE("The param is NULL\n");
 		return;
 	}
 
@@ -308,7 +308,7 @@ static void _wfd_multi_add_select_info_label(void *data, int count)
 	/* add notify */
 	ugd->notify = elm_notify_add(ugd->base);
 	if (NULL == ugd->notify) {
-		DBG(LOG_ERROR, "Add notify failed\n");
+		WDUG_LOGE("Add notify failed\n");
 		return;
 	}
 
@@ -330,7 +330,7 @@ static void _wfd_multi_add_select_info_label(void *data, int count)
 	elm_notify_timeout_set(ugd->notify, 3);
 	evas_object_show(ugd->notify);
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 	return;
 }
 
@@ -343,7 +343,7 @@ static void _wfd_multi_add_select_info_label(void *data, int count)
  */
 static void _wfd_gl_multi_sel_cb(void *data, Evas_Object *obj, void *event_info)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 
 	int i = 0;
 	int index = 0;
@@ -357,26 +357,26 @@ static void _wfd_gl_multi_sel_cb(void *data, Evas_Object *obj, void *event_info)
 	Elm_Object_Item *item = (Elm_Object_Item *)event_info;
 
 	if (NULL == ugd || NULL == item) {
-		DBG(LOG_ERROR, "The param is NULL\n");
+		WDUG_LOGE("The param is NULL\n");
 		return;
 	}
 
 	elm_genlist_item_selected_set(item, EINA_FALSE);
 	index = elm_genlist_item_index_get(item) - 3; /* subtract the previous items */
-	DBG(LOG_VERBOSE, "selected index = %d \n", index);
+	WDUG_LOGD("selected index = %d \n", index);
 	if (index < 0) {
-		DBG(LOG_ERROR, "The index is invalid.\n");
+		WDUG_LOGE("The index is invalid.\n");
 		return;
 	}
 
 	chk_box = elm_object_item_part_content_get((Elm_Object_Item *)event_info, "elm.icon.1");
 	state = elm_check_state_get(chk_box);
-	DBG(LOG_VERBOSE, "state = %d \n", state);
+	WDUG_LOGD("state = %d \n", state);
 	elm_check_state_set(chk_box, !state);
 
 	ugd->multi_conn_dev_list[index].dev_sel_state = !state;
-	DBG(LOG_VERBOSE, "ptr->dev_sel_state = %d \n", ugd->multi_conn_dev_list[index].dev_sel_state);
-	DBG(LOG_VERBOSE, "ptr->peer.mac_addr = %s \n", ugd->multi_conn_dev_list[index].peer.mac_addr);
+	WDUG_LOGD("ptr->dev_sel_state = %d \n", ugd->multi_conn_dev_list[index].dev_sel_state);
+	WDUG_LOGD("ptr->peer.mac_addr = %s \n", ugd->multi_conn_dev_list[index].peer.mac_addr);
 
 	/* update the checkbox and button */
 	for (; i < ugd->gl_available_dev_cnt_at_multiconn_view; i++) {
@@ -402,7 +402,7 @@ static void _wfd_gl_multi_sel_cb(void *data, Evas_Object *obj, void *event_info)
 		_wfd_multi_del_select_info_label(ugd);
 	}
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 }
 
 /**
@@ -421,13 +421,13 @@ static void _wfd_gl_sel_cb(void *data, Evas_Object *obj, void *event_info)
 	elm_genlist_item_selected_set((Elm_Object_Item *)event_info, EINA_FALSE);
 
 	if (NULL == ugd || NULL == obj) {
-		DBG(LOG_ERROR, "NULL parameters.\n");
+		WDUG_LOGE("NULL parameters.\n");
 		return;
 	}
 
 	Evas_Object *sel_chkbox = elm_object_item_part_content_get(ugd->mcview_select_all_item, "elm.icon");
 	if (sel_chkbox == NULL) {
-		DBG(LOG_VERBOSE, "select-all chkbox is NULL\n");
+		WDUG_LOGD("select-all chkbox is NULL\n");
 		return;
 	}
 
@@ -439,7 +439,7 @@ static void _wfd_gl_sel_cb(void *data, Evas_Object *obj, void *event_info)
 	}
 
 	elm_check_state_set(sel_chkbox, state);
-	DBG(LOG_VERBOSE, "state = %d \n", state);
+	WDUG_LOGD("state = %d \n", state);
 
 	int i = 0;
 	bool is_sel = FALSE;
@@ -482,7 +482,7 @@ static void _wfd_gl_sel_cb(void *data, Evas_Object *obj, void *event_info)
  */
 static char *_wfd_gl_device_label_get(void *data, Evas_Object *obj, const char *part)
 {
-	DBG(LOG_VERBOSE, "part %s", part);
+	WDUG_LOGD("part %s", part);
 	device_type_s *peer = (device_type_s *)data;
 
 	if (NULL == peer) {
@@ -557,13 +557,13 @@ static char *__wfd_get_device_icon_path(device_type_s *peer)
 static void _wfd_check_clicked_cb(void *data, Evas_Object *obj, void *event_info)
 {
 	if (NULL == obj) {
-		DBG(LOG_ERROR, "NULL parameters.\n");
+		WDUG_LOGE("NULL parameters.\n");
 		return;
 	}
 
 	Eina_Bool state = elm_check_state_get(obj);
 	elm_check_state_set(obj, !state);
-	DBG(LOG_VERBOSE, "state = %d \n", state);
+	WDUG_LOGD("state = %d \n", state);
 }
 
 /**
@@ -579,10 +579,10 @@ static Evas_Object *_wfd_gl_device_icon_get(void *data, Evas_Object *obj, const 
 	device_type_s *peer = (device_type_s *) data;
 	Evas_Object *icon = NULL;
 
-	DBG(LOG_VERBOSE, "Part %s", part);
+	WDUG_LOGD("Part %s", part);
 
 	if (!strcmp(part, "elm.icon.1")) {
-		DBG(LOG_VERBOSE, "Part %s", part);
+		WDUG_LOGD("Part %s", part);
 		icon = elm_check_add(obj);
 		elm_check_state_set(icon, EINA_FALSE);
 		evas_object_smart_callback_add(icon, "changed", _wfd_check_clicked_cb, (void *)data);
@@ -608,7 +608,7 @@ static Evas_Object *_wfd_gl_device_icon_get(void *data, Evas_Object *obj, const 
 static char *_wfd_gl_select_all_label_get(void *data, Evas_Object *obj, const char *part)
 {
 	if (!strcmp(part, "elm.text")) {
-		DBG(LOG_VERBOSE, "Adding text %s", part);
+		WDUG_LOGD("Adding text %s", part);
 		return strdup("Select all");
 	}
 	return NULL;
@@ -626,7 +626,7 @@ static Evas_Object *_wfd_gl_select_all_icon_get(void *data, Evas_Object *obj, co
 	Evas_Object *icon = NULL;
 
 	if (!strcmp(part, "elm.icon")) {
-		DBG(LOG_VERBOSE, "Part %s", part);
+		WDUG_LOGD("Part %s", part);
 		icon = elm_check_add(obj);
 		elm_check_state_set(icon, EINA_FALSE);
 		evas_object_smart_callback_add(icon, "changed", _wfd_check_clicked_cb, (void *)data);
@@ -642,7 +642,7 @@ static Evas_Object *_wfd_gl_select_all_icon_get(void *data, Evas_Object *obj, co
  */
 int wfd_free_multiconnect_device(struct ug_data *ugd)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 
 	int i = 0;
 
@@ -673,7 +673,7 @@ int wfd_free_multiconnect_device(struct ug_data *ugd)
 	}
 	ugd->gl_available_dev_cnt_at_multiconn_view = 0;
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 	return 0;
 }
 
@@ -684,7 +684,7 @@ int wfd_free_multiconnect_device(struct ug_data *ugd)
  */
 int wfd_update_multiconnect_device(struct ug_data *ugd)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 
 	int count = 0;
 	device_type_s *device = NULL;
@@ -708,7 +708,7 @@ int wfd_update_multiconnect_device(struct ug_data *ugd)
 	ugd->gl_available_dev_cnt_at_multiconn_view = count;
 
 	if (ugd->gl_available_dev_cnt_at_multiconn_view == 0) {
-		DBG(LOG_ERROR, "There are No peers\n");
+		WDUG_LOGE("There are No peers\n");
 		ugd->mcview_title_item = elm_genlist_item_append(genlist, &title_itc, ugd, NULL, ELM_GENLIST_ITEM_NONE, NULL, NULL);
 		elm_genlist_item_select_mode_set(ugd->mcview_title_item, ELM_OBJECT_SELECT_MODE_DISPLAY_ONLY);
 		ugd->mcview_nodevice_item = elm_genlist_item_append(genlist, &noitem_itc, (void *)ugd, NULL, ELM_GENLIST_ITEM_NONE, NULL, NULL);
@@ -722,7 +722,7 @@ int wfd_update_multiconnect_device(struct ug_data *ugd)
 		for (i = 0; i < ugd->raw_discovered_peer_cnt; i++) {
 			device = &ugd->raw_discovered_peers[i];
 			if (device->is_connected == FALSE) {
-				DBG(LOG_VERBOSE, "%dth peer being added on genlist\n", i);
+				WDUG_LOGD("%dth peer being added on genlist\n", i);
 
 				if (ugd->multi_conn_dev_list[count].peer.gl_item != NULL) {
 					elm_object_item_del(ugd->multi_conn_dev_list[count].peer.gl_item);
@@ -738,7 +738,7 @@ int wfd_update_multiconnect_device(struct ug_data *ugd)
 		}
 	}
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 	return 0;
 }
 
@@ -749,14 +749,14 @@ int wfd_update_multiconnect_device(struct ug_data *ugd)
  */
 void wfd_create_multiconnect_view(struct ug_data *ugd)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 
 	Evas_Object *back_btn = NULL;
 	Evas_Object *genlist = NULL;
 	Elm_Object_Item *navi_item = NULL;
 
 	if (ugd == NULL) {
-		DBG(LOG_ERROR, "Incorrect parameter(NULL)");
+		WDUG_LOGE("Incorrect parameter(NULL)");
 		return;
 	}
 
@@ -772,7 +772,7 @@ void wfd_create_multiconnect_view(struct ug_data *ugd)
 	device_itc.func.state_get = NULL;
 	device_itc.func.del = NULL;
 
-	DBG(LOG_VERBOSE, "_wifid_create_multiconnect_view");
+	WDUG_LOGD("_wifid_create_multiconnect_view");
 	back_btn = elm_button_add(ugd->naviframe);
 	elm_object_style_set(back_btn, "naviframe/back_btn/default");
 	evas_object_smart_callback_add(back_btn, "clicked", _multiconnect_view_back_btn_cb, (void *)ugd);
@@ -803,5 +803,5 @@ void wfd_create_multiconnect_view(struct ug_data *ugd)
 	elm_object_disabled_set(ugd->multi_connect_btn, EINA_TRUE);
 	elm_object_item_part_content_set(navi_item, "toolbar_button2", ugd->multi_connect_btn);
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 }

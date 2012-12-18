@@ -42,14 +42,15 @@ wfd_appdata_t *wfd_get_appdata()
 
 void _ug_layout_cb(ui_gadget_h ug, enum ug_mode mode, void *priv)
 {
-	__WFD_APP_FUNC_ENTER__;
+	__WDUA_LOG_FUNC_ENTER__;
 
 	Evas_Object *base = NULL;
 	base = ug_get_layout(ug);
 
 	if (!base) {
-		WFD_APP_LOG(WFD_APP_LOG_LOW, "ug_get_layout failed!");
+		WDUA_LOGE("ug_get_layout failed!");
 		ug_destroy(ug);
+		__WDUA_LOG_FUNC_EXIT__;
 		return;
 	}
 
@@ -62,11 +63,13 @@ void _ug_layout_cb(ui_gadget_h ug, enum ug_mode mode, void *priv)
 	default:
 		break;
 	}
+
+	__WDUA_LOG_FUNC_EXIT__;
 }
 
 void _ug_destroy_cb(ui_gadget_h ug, void *priv)
 {
-	__WFD_APP_FUNC_ENTER__;
+	__WDUA_LOG_FUNC_ENTER__;
 
 	// TODO: free all memory allocation
 
@@ -76,15 +79,16 @@ void _ug_destroy_cb(ui_gadget_h ug, void *priv)
 
 void ug_result_cb(ui_gadget_h ug, service_h service, void *priv)
 {
-	__WFD_APP_FUNC_ENTER__;
+	__WDUA_LOG_FUNC_ENTER__;
 
 	// TODO: free all memory allocation
 
+	__WDUA_LOG_FUNC_EXIT__;
 }
 
 static int load_wifi_direct_ug(ui_gadget_h parent_ug, void *data)
 {
-	__WFD_APP_FUNC_ENTER__;
+	__WDUA_LOG_FUNC_ENTER__;
 	wfd_appdata_t *ugd = (wfd_appdata_t *)data;
 	service_h handle = NULL;
 
@@ -99,10 +103,14 @@ static int load_wifi_direct_ug(ui_gadget_h parent_ug, void *data)
 
 	ugd->wifi_direct_ug = ug_create(parent_ug, "setting-wifidirect-efl", UG_MODE_FULLVIEW, handle, &wifi_direct_cbs);
 	if (ugd->wifi_direct_ug) {
+		__WDUA_LOG_FUNC_EXIT__;
 		return TRUE;
 	} else {
+		__WDUA_LOG_FUNC_EXIT__;
 		return FALSE;
 	}
+
+	__WDUA_LOG_FUNC_EXIT__;
 }
 
 
@@ -132,28 +140,28 @@ static Evas_Object *_create_win(Evas_Object * parent, const char *name)
 
 static Evas_Object* _set_win_icon(wfd_appdata_t *ad)
 {
-	__WFD_APP_FUNC_ENTER__;
+	__WDUA_LOG_FUNC_ENTER__;
 
 	Evas_Object *icon = evas_object_image_add(evas_object_evas_get(ad->win));
 	evas_object_image_file_set(icon, DESKTOP_ICON, NULL);
 	elm_win_icon_object_set(ad->win, icon);
 
-	__WFD_APP_FUNC_EXIT__;
+	__WDUA_LOG_FUNC_EXIT__;
 	return icon;
 }
 
 static Evas_Object *_create_bg(Evas_Object *parent)
 {
-	__WFD_APP_FUNC_ENTER__;
+	__WDUA_LOG_FUNC_ENTER__;
 
 	if (NULL == parent) {
-		WFD_APP_LOG(WFD_APP_LOG_LOW, "Incorrect parameter\n");
+		WDUA_LOGE("Incorrect parameter\n");
 		return NULL;
 	}
 
 	Evas_Object *bg = elm_bg_add(parent);
 	if (NULL == bg) {
-		WFD_APP_LOG(WFD_APP_LOG_LOW, "Create background failed\n");
+		WDUA_LOGE("Create background failed\n");
 		return NULL;
 	}
 
@@ -161,22 +169,22 @@ static Evas_Object *_create_bg(Evas_Object *parent)
 	elm_win_resize_object_add(parent, bg);
 	evas_object_show(bg);
 
-	__WFD_APP_FUNC_EXIT__;
+	__WDUA_LOG_FUNC_EXIT__;
 	return bg;
 }
 
 static Evas_Object *_create_layout_main(Evas_Object *parent)
 {
-	__WFD_APP_FUNC_ENTER__;
+	__WDUA_LOG_FUNC_ENTER__;
 
 	if (NULL == parent) {
-		WFD_APP_LOG(WFD_APP_LOG_LOW, "Incorrect parameter\n");
+		WDUA_LOGE("Incorrect parameter\n");
 		return NULL;
 	}
 
 	Evas_Object *layout = elm_layout_add(parent);
 	if (NULL == layout) {
-		WFD_APP_LOG(WFD_APP_LOG_LOW, "Create layout failed\n");
+		WDUA_LOGE("Create layout failed\n");
 		return NULL;
 	}
 
@@ -191,16 +199,16 @@ static Evas_Object *_create_layout_main(Evas_Object *parent)
 	elm_object_content_set(parent, layout);
 	evas_object_show(layout);
 
-	__WFD_APP_FUNC_EXIT__;
+	__WDUA_LOG_FUNC_EXIT__;
 	return layout;
 }
 
 static void _win_profile_changed_cb(void *data, Evas_Object * obj, void *event_info)
 {
-	__WFD_APP_FUNC_ENTER__;
+	__WDUA_LOG_FUNC_ENTER__;
 
 	if (data == NULL) {
-		WFD_APP_LOG(WFD_APP_LOG_LOW, "Incorrect parameter\n");
+		WDUA_LOGE("Incorrect parameter\n");
 		return -1;
 	}
 
@@ -221,16 +229,16 @@ static void _win_profile_changed_cb(void *data, Evas_Object * obj, void *event_i
 		elm_win_indicator_mode_set(ad->win, ELM_WIN_INDICATOR_SHOW);
 	}
 
-	__WFD_APP_FUNC_EXIT__;
+	__WDUA_LOG_FUNC_EXIT__;
 }
 
 static int _app_create(void *data)
 {
-	__WFD_APP_FUNC_ENTER__;
+	__WDUA_LOG_FUNC_ENTER__;
 	wfd_appdata_t *ad = wfd_get_appdata();
 
 	if (data == NULL) {
-		WFD_APP_LOG(WFD_APP_LOG_LOW, "Incorrect parameter\n");
+		WDUA_LOGE("Incorrect parameter\n");
 		return -1;
 	}
 
@@ -242,13 +250,13 @@ static int _app_create(void *data)
 	/*Add conformat for indicator */
 	ad->bg = _create_bg(ad->win);
 	if (ad->bg == NULL) {
-		WFD_APP_LOG(WFD_APP_LOG_ERROR, "Failed to create background");
+		WDUA_LOGE("Failed to create background");
 		return -1;
 	}
 
 	ad->conform = elm_conformant_add(ad->win);
 	if (ad->conform == NULL) {
-		WFD_APP_LOG(WFD_APP_LOG_ERROR, "Failed to create elm conformant");
+		WDUA_LOGE("Failed to create elm conformant");
 		return -1;
 	}
 
@@ -258,7 +266,7 @@ static int _app_create(void *data)
 
 	ad->top_layout = _create_layout_main(ad->conform);
 	if (ad->top_layout == NULL) {
-		WFD_APP_LOG(WFD_APP_LOG_ERROR, "Failed to create top layout");
+		WDUA_LOGE("Failed to create top layout");
 		return -1;
 	}
 
@@ -272,20 +280,20 @@ static int _app_create(void *data)
 
 	r = appcore_set_i18n(PACKAGE, NULL);
 	if (r != 0) {
-		WFD_APP_LOG(WFD_APP_LOG_LOW, "appcore_set_i18n error\n");
+		WDUA_LOGE("appcore_set_i18n error\n");
 		return -1;
 	}
 
-	__WFD_APP_FUNC_EXIT__;
+	__WDUA_LOG_FUNC_EXIT__;
 	return 0;
 }
 
 static int _app_terminate(void *data)
 {
-	__WFD_APP_FUNC_ENTER__;
+	__WDUA_LOG_FUNC_ENTER__;
 
 	if (data == NULL) {
-		WFD_APP_LOG(WFD_APP_LOG_ERROR, "Incorrect parameter\n");
+		WDUA_LOGE("Incorrect parameter\n");
 		return -1;
 	}
 
@@ -316,32 +324,32 @@ static int _app_terminate(void *data)
 		ad->icon = NULL;
 	}
 
-	__WFD_APP_FUNC_EXIT__;
+	__WDUA_LOG_FUNC_EXIT__;
 	return 0;
 }
 
 static int _app_pause(void *data)
 {
-	__WFD_APP_FUNC_ENTER__;
-	__WFD_APP_FUNC_EXIT__;
+	__WDUA_LOG_FUNC_ENTER__;
+	__WDUA_LOG_FUNC_EXIT__;
 	return 0;
 }
 
 static int _app_resume(void *data)
 {
-	__WFD_APP_FUNC_ENTER__;
-	__WFD_APP_FUNC_EXIT__;
+	__WDUA_LOG_FUNC_ENTER__;
+	__WDUA_LOG_FUNC_EXIT__;
 	return 0;
 }
 
 static int _app_reset(bundle *b, void *data)
 {
-	__WFD_APP_FUNC_ENTER__;
+	__WDUA_LOG_FUNC_ENTER__;
 
 	wfd_appdata_t *ad = wfd_get_appdata();
 	load_wifi_direct_ug(NULL, ad);
 
-	__WFD_APP_FUNC_EXIT__;
+	__WDUA_LOG_FUNC_EXIT__;
 	return 0;
 }
 

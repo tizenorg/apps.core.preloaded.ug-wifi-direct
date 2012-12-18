@@ -40,7 +40,7 @@
  */
 static void _wfd_ug_act_popup_hotspot_ok_cb(void *data, Evas_Object *obj, void *event_info)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 	int result = -1;
 	struct ug_data *ugd = (struct ug_data *) data;
 
@@ -66,7 +66,7 @@ static void _wfd_ug_act_popup_hotspot_ok_cb(void *data, Evas_Object *obj, void *
 
 	evas_object_del(ugd->act_popup);
 	ugd->act_popup = NULL;
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 }
 
 /**
@@ -78,7 +78,7 @@ static void _wfd_ug_act_popup_hotspot_ok_cb(void *data, Evas_Object *obj, void *
  */
 static void _wfd_ug_act_popup_hotspot_cancel_cb(void *data, Evas_Object *obj, void *event_info)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 	struct ug_data *ugd = (struct ug_data *) data;
 
 	ugd->head_text_mode = HEAD_TEXT_TYPE_DIRECT;
@@ -86,7 +86,7 @@ static void _wfd_ug_act_popup_hotspot_cancel_cb(void *data, Evas_Object *obj, vo
 
 	evas_object_del(ugd->act_popup);
 	ugd->act_popup = NULL;
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 }
 
 /**
@@ -98,7 +98,7 @@ static void _wfd_ug_act_popup_hotspot_cancel_cb(void *data, Evas_Object *obj, vo
  */
 static void _wfd_ug_act_popup_wifi_ok_cb(void *data, Evas_Object *obj, void *event_info)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 	int result = -1;
 	struct ug_data *ugd = (struct ug_data *) data;
 
@@ -124,7 +124,7 @@ static void _wfd_ug_act_popup_wifi_ok_cb(void *data, Evas_Object *obj, void *eve
 
 	evas_object_del(ugd->act_popup);
 	ugd->act_popup = NULL;
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 }
 
 /**
@@ -136,7 +136,7 @@ static void _wfd_ug_act_popup_wifi_ok_cb(void *data, Evas_Object *obj, void *eve
  */
 static void _wfd_ug_act_popup_wifi_cancel_cb(void *data, Evas_Object *obj, void *event_info)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 	struct ug_data *ugd = (struct ug_data *) data;
 
 	ugd->head_text_mode = HEAD_TEXT_TYPE_DIRECT;
@@ -144,7 +144,7 @@ static void _wfd_ug_act_popup_wifi_cancel_cb(void *data, Evas_Object *obj, void 
 
 	evas_object_del(ugd->act_popup);
 	ugd->act_popup = NULL;
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 }
 
 /**
@@ -156,11 +156,11 @@ static void _wfd_ug_act_popup_wifi_cancel_cb(void *data, Evas_Object *obj, void 
  */
 static void _wfd_ug_act_popup_disconnect_all_ok_cb(void *data, Evas_Object *obj, void *event_info)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 	int i = 0;
 	struct ug_data *ugd = (struct ug_data *) data;
 	if (NULL == ugd) {
-		DBG(LOG_ERROR, "Incorrect parameter(NULL)\n");
+		WDUG_LOGE("Incorrect parameter(NULL)\n");
 		return;
 	}
 
@@ -179,7 +179,7 @@ static void _wfd_ug_act_popup_disconnect_all_ok_cb(void *data, Evas_Object *obj,
 	evas_object_del(ugd->act_popup);
 	ugd->act_popup = NULL;
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 }
 
 /**
@@ -191,18 +191,18 @@ static void _wfd_ug_act_popup_disconnect_all_ok_cb(void *data, Evas_Object *obj,
  */
 static void _wfd_ug_act_popup_disconnect_all_cancel_cb(void *data, Evas_Object *obj, void *event_info)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 
 	struct ug_data *ugd = (struct ug_data *) data;
 	if (NULL == ugd) {
-		DBG(LOG_ERROR, "Incorrect parameter(NULL)\n");
+		WDUG_LOGE("Incorrect parameter(NULL)\n");
 		return;
 	}
 
 	evas_object_del(ugd->act_popup);
 	ugd->act_popup = NULL;
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 }
 
 /**
@@ -214,7 +214,7 @@ static void _wfd_ug_act_popup_disconnect_all_cancel_cb(void *data, Evas_Object *
  */
 void wfd_ug_act_popup(void *data, const char *message, int popup_type)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 	struct ug_data *ugd = (struct ug_data *) data;
 	Evas_Object *popup = NULL;
 	Evas_Object *btn1 = NULL, *btn2 = NULL;
@@ -256,7 +256,7 @@ void wfd_ug_act_popup(void *data, const char *message, int popup_type)
 
 	evas_object_show(popup);
 	ugd->act_popup = popup;
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 }
 
 /**
@@ -266,14 +266,14 @@ void wfd_ug_act_popup(void *data, const char *message, int popup_type)
  */
 void wfg_ug_act_popup_remove(void *data)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 	struct ug_data *ugd = (struct ug_data *) data;
 
 	if (ugd->act_popup) {
 		evas_object_del(ugd->act_popup);
 		ugd->act_popup = NULL;
 	}
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 }
 
 /**
@@ -285,7 +285,7 @@ void wfg_ug_act_popup_remove(void *data)
  */
 static void _wfd_ug_terminate_popup_cb(void *data, Evas_Object *obj, void *event_info)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 	struct ug_data *ugd = (struct ug_data *) data;
 
 	evas_object_del(ugd->warn_popup);
@@ -294,7 +294,7 @@ static void _wfd_ug_terminate_popup_cb(void *data, Evas_Object *obj, void *event
 	wfd_ug_view_free_peers(ugd);
 
 	ug_destroy_me(ugd->ug);
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 }
 
 /**
@@ -306,7 +306,7 @@ static void _wfd_ug_terminate_popup_cb(void *data, Evas_Object *obj, void *event
  */
 static void _wfd_ug_automatic_turn_off_popup_cb(void *data, Evas_Object *obj, void *event_info)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 	struct ug_data *ugd = (struct ug_data *) data;
 
 	evas_object_del(ugd->warn_popup);
@@ -320,7 +320,7 @@ static void _wfd_ug_automatic_turn_off_popup_cb(void *data, Evas_Object *obj, vo
 		wfd_mobile_ap_on(ugd);
 	}
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 }
 
 /**
@@ -332,13 +332,13 @@ static void _wfd_ug_automatic_turn_off_popup_cb(void *data, Evas_Object *obj, vo
  */
 static void _wfd_ug_warn_popup_cb(void *data, Evas_Object *obj, void *event_info)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 	struct ug_data *ugd = (struct ug_data *) data;
 
 	evas_object_del(ugd->warn_popup);
 	ugd->warn_popup = NULL;
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 }
 
 /**
@@ -350,7 +350,7 @@ static void _wfd_ug_warn_popup_cb(void *data, Evas_Object *obj, void *event_info
  */
 void wfd_ug_warn_popup(void *data, const char *message, int popup_type)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 	struct ug_data *ugd = (struct ug_data *) data;
 	Evas_Object *popup = NULL;
 	Evas_Object *btn = NULL;
@@ -374,6 +374,6 @@ void wfd_ug_warn_popup(void *data, const char *message, int popup_type)
 
 	evas_object_show(popup);
 	ugd->warn_popup = popup;
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 }
 

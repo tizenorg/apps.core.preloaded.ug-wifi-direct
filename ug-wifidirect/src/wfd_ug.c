@@ -53,7 +53,7 @@ struct ug_data *wfd_get_ug_data()
  */
 static Evas_Object *_create_bg(Evas_Object *parent, char *style)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 	Evas_Object *bg;
 
 	bg = elm_bg_add(parent);
@@ -62,7 +62,7 @@ static Evas_Object *_create_bg(Evas_Object *parent, char *style)
 	elm_win_resize_object_add(parent, bg);
 	evas_object_show(bg);
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 	return bg;
 }
 
@@ -74,18 +74,18 @@ static Evas_Object *_create_bg(Evas_Object *parent, char *style)
  */
 static Evas_Object *_create_fullview(Evas_Object *parent, struct ug_data *ugd)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 	Evas_Object *base;
 
 	if (parent == NULL) {
-		DBG(LOG_ERROR, "Incorrenct parameter");
+		WDUG_LOGE( "Incorrenct parameter");
 		return NULL;
 	}
 
 	/* Create Full view */
 	base = elm_layout_add(parent);
 	if (!base) {
-		DBG(LOG_ERROR, "Failed to add layout");
+		WDUG_LOGE( "Failed to add layout");
 		return NULL;
 	}
 
@@ -93,7 +93,7 @@ static Evas_Object *_create_fullview(Evas_Object *parent, struct ug_data *ugd)
 	evas_object_size_hint_weight_set(base, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
 	evas_object_size_hint_align_set(base, EVAS_HINT_FILL, EVAS_HINT_FILL);
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 	return base;
 }
 
@@ -105,18 +105,18 @@ static Evas_Object *_create_fullview(Evas_Object *parent, struct ug_data *ugd)
  */
 static Evas_Object *_create_frameview(Evas_Object *parent, struct ug_data *ugd)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 	Evas_Object *base;
 
 	if (parent == NULL) {
-		DBG(LOG_ERROR, "Incorrenct parameter");
+		WDUG_LOGE( "Incorrenct parameter");
 		return NULL;
 	}
 
 	/* Create Frame view */
 	base = elm_layout_add(parent);
 	if (!base) {
-		DBG(LOG_ERROR, "Failed to add layout");
+		WDUG_LOGE( "Failed to add layout");
 		return NULL;
 	}
 
@@ -124,7 +124,7 @@ static Evas_Object *_create_frameview(Evas_Object *parent, struct ug_data *ugd)
 	evas_object_size_hint_weight_set(base, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
 	evas_object_size_hint_align_set(base, EVAS_HINT_FILL, EVAS_HINT_FILL);
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 	return base;
 }
 
@@ -135,7 +135,7 @@ static Evas_Object *_create_frameview(Evas_Object *parent, struct ug_data *ugd)
  */
 void destroy_wfd_ug_view(void *data)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 	struct ug_data *ugd = (struct ug_data *) data;
 
 	if (ugd->genlist) {
@@ -148,7 +148,7 @@ void destroy_wfd_ug_view(void *data)
 		ugd->naviframe = NULL;
 	}
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 }
 
 /**
@@ -158,25 +158,25 @@ void destroy_wfd_ug_view(void *data)
  */
 gboolean _wfd_init_cb(void *data)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 	int res = -1;
 	struct ug_data *ugd = (struct ug_data *) data;
 
 	if (ugd->wfd_status == WIFI_DIRECT_STATE_DEACTIVATED) {
 		res = init_wfd_client(ugd);
 		if (res != 0) {
-			DBG(LOG_ERROR, "Failed to initialize WFD client library\n");
+			WDUG_LOGE( "Failed to initialize WFD client library\n");
 			return true;
 		}
 	}
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 	return false;
 }
 
 static void *on_create(ui_gadget_h ug, enum ug_mode mode, service_h service, void *priv)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 	struct ug_data *ugd;
 	int res = 0;
 
@@ -204,7 +204,7 @@ static void *on_create(ui_gadget_h ug, enum ug_mode mode, service_h service, voi
 		ugd->bg = _create_bg(ugd->win, "group_list");
 		elm_object_part_content_set(ugd->base, "elm.swallow.bg", ugd->bg);
 	} else {
-		DBG(LOG_ERROR, "Failed to create base layout\n");
+		WDUG_LOGE( "Failed to create base layout\n");
 		return NULL;
 	}
 
@@ -218,7 +218,7 @@ static void *on_create(ui_gadget_h ug, enum ug_mode mode, service_h service, voi
 	if (ugd->wfd_status > WIFI_DIRECT_STATE_DEACTIVATED || service) {
 		res = init_wfd_client(ugd);
 		if (res != 0) {
-			DBG(LOG_ERROR, "Failed to initialize WFD client library\n");
+			WDUG_LOGE( "Failed to initialize WFD client library\n");
 		}
 
 		if (service) {
@@ -259,11 +259,11 @@ static void *on_create(ui_gadget_h ug, enum ug_mode mode, service_h service, voi
 		/* start discovery */
 		res = wifi_direct_start_discovery(FALSE, MAX_SCAN_TIME_OUT);
 		if (res != WIFI_DIRECT_ERROR_NONE) {
-			DBG(LOG_ERROR, "Failed to start discovery. [%d]\n", res);
+			WDUG_LOGE( "Failed to start discovery. [%d]\n", res);
 			ugd->is_re_discover = TRUE;
 			wifi_direct_cancel_discovery();
 		} else {
-			DBG(LOG_VERBOSE, "Discovery is started\n");
+			WDUG_LOGI("Discovery is started\n");
 			ugd->is_re_discover = FALSE;
 		}
 	}
@@ -275,13 +275,13 @@ static void *on_create(ui_gadget_h ug, enum ug_mode mode, service_h service, voi
 
 	evas_object_show(ugd->base);
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 	return ugd->base;
 }
 
 static void on_start(ui_gadget_h ug, service_h service, void *priv)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 	struct ug_data *ugd;
 	int res;
 
@@ -294,147 +294,147 @@ static void on_start(ui_gadget_h ug, service_h service, void *priv)
 	struct utsname kernel_info;
 	res = uname(&kernel_info);
 	if (res != 0) {
-		DBG(LOG_ERROR, "Failed to detect target type\n");
+		WDUG_LOGE( "Failed to detect target type\n");
 	} else {
-		DBG(LOG_VERBOSE, "HW ID of this device [%s]\n", kernel_info.machine);
+		WDUG_LOGI("HW ID of this device [%s]\n", kernel_info.machine);
 		if (strncmp(kernel_info.machine, "arm", 3) != 0) {
 			wfd_ug_warn_popup(ugd, _("IDS_WFD_POP_NOT_SUPPORTED_DEVICE"), POPUP_TYPE_TERMINATE);
 			return;
 		}
 	}
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 }
 
 static void on_pause(ui_gadget_h ug, service_h service, void *priv)
 {
-	__FUNC_ENTER__;
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_ENTER__;
+	__WDUG_LOG_FUNC_EXIT__;
 }
 
 static void on_resume(ui_gadget_h ug, service_h service, void *priv)
 {
-	__FUNC_ENTER__;
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_ENTER__;
+	__WDUG_LOG_FUNC_EXIT__;
 }
 
 static void on_destroy(ui_gadget_h ug, service_h service, void *priv)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 
 	if (!ug || !priv) {
-		DBG(LOG_ERROR, "The param is NULL\n");
+		WDUG_LOGE( "The param is NULL\n");
 		return;
 	}
 
 	struct ug_data *ugd = priv;
 	if (ugd == NULL || ugd->base == NULL) {
-		DBG(LOG_ERROR, "The param is NULL\n");
+		WDUG_LOGE( "The param is NULL\n");
 		return;
 	}
 
 	deinit_wfd_client(ugd);
-	DBG(LOG_VERBOSE, "WFD client deregistered");
+	WDUG_LOGI("WFD client deregistered");
 
 	destroy_wfd_ug_view(ugd);
-	DBG(LOG_VERBOSE, "Destroying About item");
+	WDUG_LOGI("Destroying About item");
 
 	wfd_ug_view_free_peers(ugd);
 
-	DBG(LOG_VERBOSE, "WFD client deregistered");
+	WDUG_LOGI("WFD client deregistered");
 	if (ugd->bg) {
 		evas_object_del(ugd->bg);
 		ugd->bg = NULL;
 	}
-	DBG(LOG_VERBOSE, "WFD client deregistered");
+	WDUG_LOGI("WFD client deregistered");
 
 	if (ugd->base) {
 		evas_object_del(ugd->base);
 		ugd->base = NULL;
 	}
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 	return;
 }
 
 static void on_message(ui_gadget_h ug, service_h msg, service_h service, void *priv)
 {
-	__FUNC_ENTER__;
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_ENTER__;
+	__WDUG_LOG_FUNC_EXIT__;
 }
 
 static void on_event(ui_gadget_h ug, enum ug_event event, service_h service, void *priv)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 
 	if (!ug || !priv) {
-		DBG(LOG_ERROR, "The param is NULL\n");
+		WDUG_LOGE( "The param is NULL\n");
 		return;
 	}
 
 	switch (event) {
 	case UG_EVENT_LOW_MEMORY:
-		DBG(LOG_VERBOSE, "UG_EVENT_LOW_MEMORY\n");
+		WDUG_LOGI("UG_EVENT_LOW_MEMORY\n");
 		break;
 	case UG_EVENT_LOW_BATTERY:
-		DBG(LOG_VERBOSE, "UG_EVENT_LOW_BATTERY\n");
+		WDUG_LOGI("UG_EVENT_LOW_BATTERY\n");
 		break;
 	case UG_EVENT_LANG_CHANGE:
-		DBG(LOG_VERBOSE, "UG_EVENT_LANG_CHANGE\n");
+		WDUG_LOGI("UG_EVENT_LANG_CHANGE\n");
 		break;
 	case UG_EVENT_ROTATE_PORTRAIT:
-		DBG(LOG_VERBOSE, "UG_EVENT_ROTATE_PORTRAIT\n");
+		WDUG_LOGI("UG_EVENT_ROTATE_PORTRAIT\n");
 		break;
 	case UG_EVENT_ROTATE_PORTRAIT_UPSIDEDOWN:
-		DBG(LOG_VERBOSE, "UG_EVENT_ROTATE_PORTRAIT_UPSIDEDOWN\n");
+		WDUG_LOGI("UG_EVENT_ROTATE_PORTRAIT_UPSIDEDOWN\n");
 		break;
 	case UG_EVENT_ROTATE_LANDSCAPE:
-		DBG(LOG_VERBOSE, "UG_EVENT_ROTATE_LANDSCAPE\n");
+		WDUG_LOGI("UG_EVENT_ROTATE_LANDSCAPE\n");
 		break;
 	case UG_EVENT_ROTATE_LANDSCAPE_UPSIDEDOWN:
-		DBG(LOG_VERBOSE, "UG_EVENT_ROTATE_LANDSCAPE_UPSIDEDOWN\n");
+		WDUG_LOGI("UG_EVENT_ROTATE_LANDSCAPE_UPSIDEDOWN\n");
 		break;
 	default:
-		DBG(LOG_VERBOSE, "default\n");
+		WDUG_LOGI("default\n");
 		break;
 	}
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 }
 
 static void on_key_event(ui_gadget_h ug, enum ug_key_event event, service_h service, void *priv)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 
 	if (!ug || !priv) {
-		DBG(LOG_ERROR, "The param is NULL\n");
+		WDUG_LOGE( "The param is NULL\n");
 		return;
 	}
 
 	switch (event) {
 	case UG_KEY_EVENT_END:
-		DBG(LOG_VERBOSE, "UG_KEY_EVENT_END\n");
+		WDUG_LOGI("UG_KEY_EVENT_END\n");
 		break;
 	default:
 		break;
 	}
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 }
 
 UG_MODULE_API int UG_MODULE_INIT(struct ug_module_ops *ops)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 	struct ug_data *ugd;
 
 	if (!ops) {
-		DBG(LOG_ERROR, "The param is NULL\n");
+		WDUG_LOGE( "The param is NULL\n");
 		return -1;
 	}
 
 	ugd = calloc(1, sizeof(struct ug_data));
 	if (ugd == NULL) {
-		DBG(LOG_ERROR, "Failed to allocate memory for UG data\n");
+		WDUG_LOGE( "Failed to allocate memory for UG data\n");
 		return -1;
 	}
 
@@ -451,18 +451,18 @@ UG_MODULE_API int UG_MODULE_INIT(struct ug_module_ops *ops)
 	ops->priv = ugd;
 	ops->opt = UG_OPT_INDICATOR_ENABLE;
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 	return 0;
 }
 
 UG_MODULE_API void UG_MODULE_EXIT(struct ug_module_ops *ops)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 
 	struct ug_data *ugd;
 
 	if (!ops) {
-		DBG(LOG_ERROR, "The param is NULL\n");
+		WDUG_LOGE( "The param is NULL\n");
 		return;
 	}
 
@@ -472,53 +472,53 @@ UG_MODULE_API void UG_MODULE_EXIT(struct ug_module_ops *ops)
 		free(ugd);
 	}
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 }
 
 UG_MODULE_API int setting_plugin_reset(service_h service, void *priv)
 {
-	__FUNC_ENTER__;
+	__WDUG_LOG_FUNC_ENTER__;
 	int res = -1;
 	wifi_direct_state_e state;
 
 	res = wifi_direct_initialize();
 	if (res != WIFI_DIRECT_ERROR_NONE) {
-		DBG(LOG_ERROR, "Failed to initialize wifi direct. [%d]\n", res);
+		WDUG_LOGE( "Failed to initialize wifi direct. [%d]\n", res);
 		return -1;
 	}
 
 	res = wifi_direct_get_state(&state);
 	if (res != WIFI_DIRECT_ERROR_NONE) {
-		DBG(LOG_ERROR, "Failed to get link status. [%d]\n", res);
+		WDUG_LOGE( "Failed to get link status. [%d]\n", res);
 		return -1;
 	}
 
 	if (state < WIFI_DIRECT_STATE_ACTIVATING) {
-		DBG(LOG_VERBOSE, "No need to reset Wi-Fi Direct.\n");
+		WDUG_LOGI("No need to reset Wi-Fi Direct.\n");
 	} else {
 		/*if connected, disconnect all devices*/
 		if (WIFI_DIRECT_STATE_CONNECTED == state) {
 			res = wifi_direct_disconnect_all();
 			if (res != WIFI_DIRECT_ERROR_NONE) {
-				DBG(LOG_ERROR, "Failed to send disconnection request to all. [%d]\n", res);
+				WDUG_LOGE( "Failed to send disconnection request to all. [%d]\n", res);
 				return -1;
 			}
 		}
 
 		res = wifi_direct_deactivate();
 		if (res != WIFI_DIRECT_ERROR_NONE) {
-			DBG(LOG_ERROR, "Failed to reset Wi-Fi Direct. [%d]\n", res);
+			WDUG_LOGE( "Failed to reset Wi-Fi Direct. [%d]\n", res);
 			return -1;
 		}
 	}
 
 	res = wifi_direct_deinitialize();
 	if (res != WIFI_DIRECT_ERROR_NONE) {
-		DBG(LOG_ERROR, "Failed to deinitialize wifi direct. [%d]\n", res);
+		WDUG_LOGE( "Failed to deinitialize wifi direct. [%d]\n", res);
 		return -1;
 	}
 
-	__FUNC_EXIT__;
+	__WDUG_LOG_FUNC_EXIT__;
 	return 0;
 }
 

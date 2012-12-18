@@ -32,46 +32,52 @@
 
 #define MAC2STR(a) (a)[0], (a)[1], (a)[2], (a)[3], (a)[4], (a)[5]
 #define MACSTR "%02x:%02x:%02x:%02x:%02x:%02x"
-
-#ifdef VITA_FEATURE
-#include <dlog.h>
-
-#define WIFI_DIRECT_APP_MID		"wfd-app"
-
-#define WFD_APP_LOG_LOW		LOG_VERBOSE
-#define WFD_APP_LOG_HIGH		LOG_INFO
-#define WFD_APP_LOG_ERROR		LOG_ERROR
-#define WFD_APP_LOG_WARN		LOG_WARN
-#define WFD_APP_LOG_ASSERT		LOG_FATAL
-#define WFD_APP_LOG_EXCEPTION	LOG_FATAL
 #define WFD_MAX_SIZE            128
 #define WFD_MAC_ADDRESS_SIZE    18
 
-char *wfd_app_trim_path(const char *filewithpath);
-int wfd_app_gettid();
+#ifdef USE_DLOG
+#include <dlog.h>
 
-#define WFD_APP_LOG(log_level, format, args...) \
-	LOG(log_level, WIFI_DIRECT_APP_MID, "[%s:%04d,%d] " format, wfd_app_trim_path(__FILE__),  __LINE__, wfd_app_gettid(), ##args)
-#define __WFD_APP_FUNC_ENTER__	LOG(LOG_VERBOSE,  WIFI_DIRECT_APP_MID, "[%s:%04d,%d] Enter: %s()\n", wfd_app_trim_path(__FILE__), __LINE__, wfd_app_gettid(), __func__)
-#define __WFD_APP_FUNC_EXIT__	LOG(LOG_VERBOSE,  WIFI_DIRECT_APP_MID, "[%s:%04d,%d] Quit: %s()\n", wfd_app_trim_path(__FILE__), __LINE__, wfd_app_gettid(), __func__)
+#undef LOG_TAG
+#define LOG_TAG "WIFI_DIRECT_POPUP"
 
-#else /** _DLOG_UTIL */
+#define WDPOP_LOGV(format, args...) LOGV(format, ##args)
+#define WDPOP_LOGD(format, args...) LOGD(format, ##args)
+#define WDPOP_LOGI(format, args...) LOGI(format, ##args)
+#define WDPOP_LOGW(format, args...) LOGW(format, ##args)
+#define WDPOP_LOGE(format, args...) LOGE(format, ##args)
+#define WDPOP_LOGF(format, args...) LOGF(format, ##args)
 
-#define WFD_APP_LOG(log_level, format, args...) printf("[%s:%04d,%d] " format, wfd_app_trim_path(__FILE__), __LINE__, wfd_app_gettid(), ##args)
-#define __WFD_APP_FUNC_ENTER__	printf("[%s:%04d,%d] Entering: %s()\n", wfd_app_trim_path(__FILE__), __LINE__, wfd_app_gettid(), __func__)
-#define __WFD_APP_FUNC_EXIT__	printf("[%s:%04d,%d] Quit: %s()\n", wfd_app_trim_path(__FILE__), __LINE__, wfd_app_gettid(), __func__)
+#define __WDPOP_LOG_FUNC_ENTER__ LOGV("Enter")
+#define __WDPOP_LOG_FUNC_EXIT__ LOGV("Quit")
 
-#endif /** _USE_DLOG_UTIL */
-
-
-
-#define assertm_if(expr, fmt, arg...) do { \
+#define assertm_if(expr, fmt, args...) do { \
 	if (expr) { \
-	  WFD_APP_LOG(WFD_APP_LOG_ASSERT, " ##(%s) -> %s() assert!!## "fmt, #expr, __FUNCTION__, ##arg); \
+	  WDPOP_LOGF(" ##(%s) -> assert!!## "fmt, #expr, ##args); \
 		 exit(1); \
 	} \
 } while (0)
 
+#else /** _DLOG_UTIL */
 
+#define WDPOP_LOGV(format, args...) \
+	printf("[V/WIFI_DIRECT_POPUP] %s: %s()(%4d)> "format, __FILE__, __FUNCTION__, __LINE__, ##args)
+#define WDPOP_LOGD(format, args...) \
+	printf("[D/WIFI_DIRECT_POPUP] %s: %s()(%4d)> "format, __FILE__, __FUNCTION__, __LINE__, ##args)
+#define WDPOP_LOGI(format, args...) \
+	printf("[I/WIFI_DIRECT_POPUP] %s: %s()(%4d)> "format, __FILE__, __FUNCTION__, __LINE__, ##args)
+#define WDPOP_LOGW(format, args...) \
+	printf("[W/WIFI_DIRECT_POPUP] %s: %s()(%4d)> "format, __FILE__, __FUNCTION__, __LINE__, ##args)
+#define WDPOP_LOGE(format, args...) \
+	printf("[E/WIFI_DIRECT_POPUP] %s: %s()(%4d)> "format, __FILE__, __FUNCTION__, __LINE__, ##args)
+#define WDPOP_LOGF(format, args...) \
+	printf("[F/WIFI_DIRECT_POPUP] %s: %s()(%4d)> "format, __FILE__, __FUNCTION__, __LINE__, ##args)
+
+#define __WDPOP_LOG_FUNC_ENTER__ \
+	printf("[V/WIFI_DIRECT_POPUP] %s: %s()(%4d)> Enter", __FILE__, __FUNCTION__, __LINE__)
+#define __WDPOP_LOG_FUNC_EXIT__ \
+	printf("[V/WIFI_DIRECT_POPUP] %s: %s()(%4d)> Exit", __FILE__, __FUNCTION__, __LINE__)
+
+#endif /** _DLOG_UTIL */
 
 #endif /* __WFD_APP_UTIL_H__ */
