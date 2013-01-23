@@ -1,3 +1,11 @@
+ug-setting-wifidirect-efl (1.0.3) precise; urgency=low
+
+  * Keypad and display popup is changed
+  * Git: rsa/apps/home/ug-wifi-direct
+  * Tag: libug-setting-wifidirect-efl_1.0.3
+
+ -- Gibyoung Kim <laskgb.kim@samsung.com>  Tue, 22 Jan 2013 21:15:28 +0900
+
 ug-setting-wifidirect-efl (1.0.2) precise; urgency=low
 
   * DLog macro is changed

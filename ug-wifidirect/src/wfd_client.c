@@ -607,6 +607,8 @@ bool _wfd_connected_peer_cb(wifi_direct_connected_peer_info_s *peer, void *user_
 	WDUG_LOGI("\tStatus: [%d]\n", ugd->raw_connected_peers[peer_cnt].conn_status);
 	WDUG_LOGI("\tCategory: [%d]\n", ugd->raw_connected_peers[peer_cnt].category);
 	WDUG_LOGI("\tSSID: [%s]\n", ugd->raw_connected_peers[peer_cnt].ssid);
+	WDUG_LOGI("\tMAC addr: [" MACSTR "]\n", ugd->raw_connected_peers[peer_cnt].mac_addr);
+	WDUG_LOGI("\tIface addr: [" MACSTR "]\n", ugd->raw_connected_peers[peer_cnt].if_addr);
 
 	ugd->raw_connected_peer_cnt++;
 

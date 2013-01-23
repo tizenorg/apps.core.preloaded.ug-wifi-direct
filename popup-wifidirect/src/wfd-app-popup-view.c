@@ -742,7 +742,7 @@ void wfd_prepare_popup(int type, void *userdata)
 		pop->resp_data1 = WFD_POP_RESP_APRV_CONNECT_KEYPAD_YES;
 		pop->resp_data2 = WFD_POP_RESP_APRV_CONNECT_NO;
 
-		ad->popup = wfd_draw_pop_type_display(ad->win, pop);
+		ad->popup = wfd_draw_pop_type_c(ad->win, pop);
  		break;
 
 	case /* MT */ WFD_POP_PROG_CONNECT:

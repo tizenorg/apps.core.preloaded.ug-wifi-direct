@@ -547,9 +547,9 @@ void _cb_connection(int error_code, wifi_direct_connection_state_e connection_st
 		if (wps_mode == WIFI_DIRECT_WPS_TYPE_PBC) {
 			WDPOP_LOGD(
 					"wps_config is WIFI_DIRECT_WPS_TYPE_PBC. Ignore it..\n");
-		} else if (wps_mode == WIFI_DIRECT_WPS_TYPE_PIN_KEYPAD) {
+		} else if (wps_mode == WIFI_DIRECT_WPS_TYPE_PIN_DISPLAY) {
 			char *pin;
-			WDPOP_LOGD( "wps_config is WIFI_DIRECT_WPS_TYPE_PIN_KEYPAD\n");
+			WDPOP_LOGD( "wps_config is WIFI_DIRECT_WPS_TYPE_PIN_DISPLAY\n");
 
 			if (wifi_direct_generate_wps_pin() != WIFI_DIRECT_ERROR_NONE) {
 				WDPOP_LOGD( "wifi_direct_generate_wps_pin() is failed\n");
@@ -568,8 +568,8 @@ void _cb_connection(int error_code, wifi_direct_connection_state_e connection_st
 			WDPOP_LOGD( "pin=[%s]\n", ad->pin_number);
 
 			wfd_prepare_popup(WFD_POP_PROG_CONNECT_WITH_PIN, NULL);
-		} else if (wps_mode == WIFI_DIRECT_WPS_TYPE_PIN_DISPLAY) {
-			WDPOP_LOGD( "wps_config is WIFI_DIRECT_WPS_TYPE_PIN_DISPLAY\n");
+		} else if (wps_mode == WIFI_DIRECT_WPS_TYPE_PIN_KEYPAD) {
+			WDPOP_LOGD( "wps_config is WIFI_DIRECT_WPS_TYPE_PIN_KEYPAD\n");
 			wfd_prepare_popup(WFD_POP_PROG_CONNECT_WITH_KEYPAD, (void *) NULL);
 		} else {
 			WDPOP_LOGD( "wps_config is unkown!\n");

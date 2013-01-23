@@ -29,7 +29,7 @@
 #define LOCALEDIR "/usr/ug/res/locale"
 #define VCONF_WFD_APNAME "db/setting/device_name"
 
-#ifdef USE_DLOG
+#ifdef USG_DLOG
 #include <dlog.h>
 
 #undef LOG_TAG
