@@ -3,10 +3,10 @@
 
 Name:       libug-setting-wifidirect-efl
 Summary:    Wi-Fi Direct setting UI gadget 
-Version:    1.0.4
+Version:    1.0.5
 Release:    1
 Group:      TO_BE_FILLED
-License:    Samsung Proprietary License
+License:    Flora License
 Source0:    %{name}-%{version}.tar.gz
 Requires(post): /sbin/ldconfig   
 Requires(post): /usr/bin/sqlite3   
