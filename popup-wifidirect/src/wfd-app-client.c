@@ -513,13 +513,14 @@ void _cb_connection(int error_code, wifi_direct_connection_state_e connection_st
 			/* tickernoti popup */
 			snprintf(msg, WFD_POP_STR_MAX_LEN, IDS_WFD_POP_CONNECTED, ad->peer_name);
 			wfd_tickernoti_popup(msg);
+		} else if (error_code == WIFI_DIRECT_ERROR_AUTH_FAILED) {
+			WDPOP_LOGD(
+					"Error Code - WIFI_DIRECT_ERROR_AUTH_FAILED\n");
+			wfd_tickernoti_popup(_("IDS_WFD_POP_PIN_INVALID"));
 		} else {
 			if (error_code == WIFI_DIRECT_ERROR_CONNECTION_TIME_OUT) {
 				WDPOP_LOGD(
 						"Error Code - WIFI_DIRECT_ERROR_CONNECTION_TIME_OUT\n");
-			} else if (error_code == WIFI_DIRECT_ERROR_AUTH_FAILED) {
-				WDPOP_LOGD(
-						"Error Code - WIFI_DIRECT_ERROR_AUTH_FAILED\n");
 			} else if (error_code == WIFI_DIRECT_ERROR_CONNECTION_FAILED) {
 				WDPOP_LOGD(
 						"Error Code - WIFI_DIRECT_ERROR_CONNECTION_FAILED\n");

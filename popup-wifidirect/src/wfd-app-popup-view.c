@@ -129,46 +129,30 @@ static void __popup_resp_cb(void *data, Evas_Object * obj, void *event_info)
 		int len = strlen(ad->pin_number);
 		WDPOP_LOGD( "button ok: pin [%s]", ad->pin_number);
 
-		if (len > 7 && len < 64) {
-			int result = 0;
-			WDPOP_LOGD( "pin=[%s]\n", ad->pin_number);
+		int result = 0;
+		WDPOP_LOGD( "pin=[%s]\n", ad->pin_number);
 
-			result = wifi_direct_set_wps_pin(ad->pin_number);
-			if (result != WIFI_DIRECT_ERROR_NONE) {
-				/* tickernoti popup */
-				snprintf(msg, WFD_POP_STR_MAX_LEN, IDS_WFD_POP_CONNECT_FAILED, ad->peer_name);
-				wfd_tickernoti_popup(msg);
-				return;
-			}
+		result = wifi_direct_set_wps_pin(ad->pin_number);
+		if (result != WIFI_DIRECT_ERROR_NONE) {
+			/* tickernoti popup */
+			snprintf(msg, WFD_POP_STR_MAX_LEN, IDS_WFD_POP_CONNECT_FAILED, ad->peer_name);
+			wfd_tickernoti_popup(msg);
+			return;
+		}
 
-			//result = wifi_direct_activate_pushbutton();
-			result = wifi_direct_accept_connection(ad->peer_mac);
-			WDPOP_LOGD(
-					"wifi_direct_accept_connection(%s) result=[%d]\n",
-					ad->peer_mac, result);
-			if (result != WIFI_DIRECT_ERROR_NONE) {
-				WDPOP_LOGE(
-						"wifi_direct_accept_connection() FAILED!!\n");
-				evas_object_hide(ad->win);
-
-				/* tickernoti popup */
-				snprintf(msg, WFD_POP_STR_MAX_LEN, IDS_WFD_POP_CONNECT_FAILED, ad->peer_name);
-				wfd_tickernoti_popup(msg);
-			}
-		} else {
-			WDPOP_LOGE( "Error, Incorrect PIN!!\n");
+		//result = wifi_direct_activate_pushbutton();
+		result = wifi_direct_accept_connection(ad->peer_mac);
+		WDPOP_LOGD(
+				"wifi_direct_accept_connection(%s) result=[%d]\n",
+				ad->peer_mac, result);
+		if (result != WIFI_DIRECT_ERROR_NONE) {
+			WDPOP_LOGE(
+					"wifi_direct_accept_connection() FAILED!!\n");
+			evas_object_hide(ad->win);
 
 			/* tickernoti popup */
-			wfd_tickernoti_popup(_("IDS_WFD_POP_PIN_INVALID"));
-
-			/* redraw the popup */
-			if (WFD_POP_RESP_PROG_CONNECT_KEYPAD_OK == resp) {
-				wfd_prepare_popup(WFD_POP_PROG_CONNECT_WITH_KEYPAD, (void *) NULL);
-			} else {
-				wfd_prepare_popup(WFD_POP_APRV_CONNECTION_WPS_KEYPAD_REQ, (void *) NULL);
-			}
-
-			return;
+			snprintf(msg, WFD_POP_STR_MAX_LEN, IDS_WFD_POP_CONNECT_FAILED, ad->peer_name);
+			wfd_tickernoti_popup(msg);
 		}
 	}
 	break;
