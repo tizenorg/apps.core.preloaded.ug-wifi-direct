@@ -367,3 +367,8 @@ msgstr "Dostupni uređaji"
 msgid "IDS_WFD_POP_MULTI_CONNECT"
 msgstr "Možeš da povežeš do %d uređaja istovremeno"
 
+msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
+msgstr "Šifra predugačka"
+
+msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
+msgstr "Šifra prekratka"

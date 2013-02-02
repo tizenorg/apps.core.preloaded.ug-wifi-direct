@@ -367,3 +367,8 @@ msgstr "Dispositivi disponibili"
 msgid "IDS_WFD_POP_MULTI_CONNECT"
 msgstr "Potete connettere un massimo di %d dispositivi contemporaneamente"
 
+msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
+msgstr "Password troppo lunga"
+
+msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
+msgstr "Password troppo corta"

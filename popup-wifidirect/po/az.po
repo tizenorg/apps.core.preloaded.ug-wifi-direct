@@ -367,3 +367,8 @@ msgstr "Mümkün cihazlar"
 msgid "IDS_WFD_POP_MULTI_CONNECT"
 msgstr "Siz eyni zamanda maksimum %d cihaza qoşula bilərsiniz"
 
+msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
+msgstr "Parol çox uzundur"
+
+msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
+msgstr "Şifrə çox qısadır"

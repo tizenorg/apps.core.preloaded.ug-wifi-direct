@@ -79,6 +79,7 @@ msgstr "Accept"
 msgid "IDS_ST_BODY_ENTER_4_TO_8_DIGIT_PIN"
 msgstr "Enter 4 to 8 digit PIN"
 
+
 msgid "IDS_WFD_POP_PIN_INVALID"
 msgstr "PINs don't match!"
 
@@ -366,4 +367,10 @@ msgstr "Available devices"
 
 msgid "IDS_WFD_POP_MULTI_CONNECT"
 msgstr "You can connect up to %d devices at the same time"
+
+msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
+msgstr "Password too long"
+
+msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
+msgstr "Password too short"
 

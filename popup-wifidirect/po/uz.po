@@ -367,3 +367,8 @@ msgstr "Mavjud qurilmalar"
 msgid "IDS_WFD_POP_MULTI_CONNECT"
 msgstr "Bir vaqtda ko‘pi bilan %d qurilma ulanishi mumkin"
 
+msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
+msgstr "Parol juda uzun"
+
+msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
+msgstr "Parol juda qisqa"

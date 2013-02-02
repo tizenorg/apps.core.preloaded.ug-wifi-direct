@@ -367,3 +367,8 @@ msgstr "Beschikbare apparaten"
 msgid "IDS_WFD_POP_MULTI_CONNECT"
 msgstr "U kunt maximaal %d apparaten tegelijk verbinden"
 
+msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
+msgstr "Wachtwoord is te lang"
+
+msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
+msgstr "Wachtwoord te kort"

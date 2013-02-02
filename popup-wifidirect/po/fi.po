@@ -367,3 +367,8 @@ msgstr "Käytettävissä olevat laitteet"
 msgid "IDS_WFD_POP_MULTI_CONNECT"
 msgstr "Voit muodostaa yhteyden samanaikaisesti enintään %d laitteeseen"
 
+msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
+msgstr "Salasana on liian pitkä"
+
+msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
+msgstr "Salasana on liian lyhyt"

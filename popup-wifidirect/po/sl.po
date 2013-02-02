@@ -367,3 +367,8 @@ msgstr "Razpoložljive naprave"
 msgid "IDS_WFD_POP_MULTI_CONNECT"
 msgstr "Hkrati lahko povežete do %d naprav"
 
+msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
+msgstr "Geslo je predolgo"
+
+msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
+msgstr "Geslo je prekratko"

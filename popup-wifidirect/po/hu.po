@@ -367,3 +367,8 @@ msgstr "Elérhető eszközök"
 msgid "IDS_WFD_POP_MULTI_CONNECT"
 msgstr "Egyszerre legfeljebb %d eszközt csatlakoztathat"
 
+msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
+msgstr "A jelszó túl hosszú"
+
+msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
+msgstr "A jelszó túl rövid"

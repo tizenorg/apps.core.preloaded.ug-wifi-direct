@@ -129,6 +129,15 @@ static void __popup_resp_cb(void *data, Evas_Object * obj, void *event_info)
 		int len = strlen(ad->pin_number);
 		WDPOP_LOGD( "button ok: pin [%s]", ad->pin_number);
 
+		if (len != 8) {
+			if (len > 8)
+				wfd_tickernoti_popup(_("IDS_CST_BODY_PASSWORD_TOO_LONG"));
+			else
+				wfd_tickernoti_popup(_("IDS_ST_BODY_PASSWORD_TOO_SHORT"));
+			wfd_prepare_popup(WFD_POP_PROG_CONNECT_WITH_KEYPAD, (void *) NULL);
+			return;
+		}
+
 		int result = 0;
 		WDPOP_LOGD( "pin=[%s]\n", ad->pin_number);
 

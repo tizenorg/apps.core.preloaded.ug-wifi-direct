@@ -367,3 +367,8 @@ msgstr "可用的裝置"
 msgid "IDS_WFD_POP_MULTI_CONNECT"
 msgstr "最多可同時連接 %d 個裝置"
 
+msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
+msgstr "密碼太長"
+
+msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
+msgstr "密碼太短"

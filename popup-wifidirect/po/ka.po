@@ -367,3 +367,8 @@ msgstr "მისაწვდომი მოწყობილობები"
 msgid "IDS_WFD_POP_MULTI_CONNECT"
 msgstr "შეგიძლიათ ერთდროულად დაუკავშირდეთ %d-მდე მოწყობილობას"
 
+msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
+msgstr "პაროლი ძალზე გრძელია"
+
+msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
+msgstr "პაროლი ძალიან მოკლეა"

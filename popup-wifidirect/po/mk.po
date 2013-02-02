@@ -367,3 +367,8 @@ msgstr "Достапни уреди"
 msgid "IDS_WFD_POP_MULTI_CONNECT"
 msgstr "Може да се поврзете со најмногу %d уреди истовремено"
 
+msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
+msgstr "Лозинката е предолга"
+
+msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
+msgstr "Лозинката е прекратка"

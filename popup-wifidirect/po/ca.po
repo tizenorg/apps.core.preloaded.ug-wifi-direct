@@ -367,3 +367,8 @@ msgstr "Dispositius disponibles"
 msgid "IDS_WFD_POP_MULTI_CONNECT"
 msgstr "Pot connectar fins a %d dispositius simultàniament"
 
+msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
+msgstr "Contrasenya massa llarga"
+
+msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
+msgstr "Contrasenya massa curta"

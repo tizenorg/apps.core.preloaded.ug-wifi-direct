@@ -367,3 +367,9 @@ msgstr "Διαθέσιμες συσκευές"
 msgid "IDS_WFD_POP_MULTI_CONNECT"
 msgstr "Μπορείτε να συνδέσετε έως και %d συσκευές ταυτόχρονα"
 
+msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
+msgstr "Πολύ μεγάλος κωδικός πρόσβασης"
+
+msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
+msgstr "Πολύ σύντομος κωδικός πρόσβασης"
+

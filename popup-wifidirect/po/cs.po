@@ -367,3 +367,8 @@ msgstr "Dostupná zařízení"
 msgid "IDS_WFD_POP_MULTI_CONNECT"
 msgstr "Současně se můžete připojit max. k %d zařízením"
 
+msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
+msgstr "Heslo je příliš dlouhé"
+
+msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
+msgstr "Heslo je příliš krátké"

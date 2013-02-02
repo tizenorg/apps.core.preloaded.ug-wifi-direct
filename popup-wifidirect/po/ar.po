@@ -367,3 +367,9 @@ msgstr "الأجهزة المتاحة"
 msgid "IDS_WFD_POP_MULTI_CONNECT"
 msgstr "يمكنك الاتصال بما يصل إلى %d أجهزة في نفس الوقت"
 
+msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
+msgstr "كلمة المرور طويلة للغاية"
+
+msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
+msgstr "كلمة المرور قصيرة"
+

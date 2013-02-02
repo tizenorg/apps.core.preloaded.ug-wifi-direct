@@ -367,4 +367,8 @@ msgstr "उपलब्ध डिवाइसें"
 msgid "IDS_WFD_POP_MULTI_CONNECT"
 msgstr "आप एक ही समय में %d डिवाइसेस तक कनेक्ट कर सकते है"
 
+msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
+msgstr "पासवर्ड बहुत लंबा है"
 
+msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
+msgstr "पासवर्ड बहुत छोटा"

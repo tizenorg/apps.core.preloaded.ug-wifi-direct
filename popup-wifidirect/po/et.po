@@ -367,3 +367,8 @@ msgstr "Saadaolevad seadmed"
 msgid "IDS_WFD_POP_MULTI_CONNECT"
 msgstr "Korraga saate ühendada kuni %d seadet"
 
+msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
+msgstr "Parool on liiga pikk"
+
+msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
+msgstr "Parool on liiga lühike"

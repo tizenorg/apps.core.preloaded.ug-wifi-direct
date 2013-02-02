@@ -367,3 +367,8 @@ msgstr "Pieejamās ierīces"
 msgid "IDS_WFD_POP_MULTI_CONNECT"
 msgstr "Vienlaikus varat izveidot savienojumu ar %d ierīcēm"
 
+msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
+msgstr "Parole ir par garu"
+
+msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
+msgstr "Parole par īsu"

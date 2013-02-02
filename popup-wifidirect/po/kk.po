@@ -367,3 +367,8 @@ msgstr "Қол жетімді құрылғылар"
 msgid "IDS_WFD_POP_MULTI_CONNECT"
 msgstr "Бір уақытта %d құрылғыға дейін қосуға болады"
 
+msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
+msgstr "Құпиясөз тым ұзын"
+
+msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
+msgstr "Кілтсөз тым қысқа"

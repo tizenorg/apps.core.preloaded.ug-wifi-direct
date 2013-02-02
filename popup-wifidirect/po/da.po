@@ -367,3 +367,8 @@ msgstr "Tilgængelige enheder"
 msgid "IDS_WFD_POP_MULTI_CONNECT"
 msgstr "Du kan tilslutte op til %d enheder på samme tid"
 
+msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
+msgstr "Adgangskoden er for lang"
+
+msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
+msgstr "Adgangskode for kort"

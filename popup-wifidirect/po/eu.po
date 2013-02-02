@@ -367,3 +367,8 @@ msgstr "Eskura dauden gailuak"
 msgid "IDS_WFD_POP_MULTI_CONNECT"
 msgstr "%d gailu ere konekta ditzakezu aldi berean"
 
+msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
+msgstr "Pasahitz luzeegia"
+
+msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
+msgstr "Pasahitz laburregia"

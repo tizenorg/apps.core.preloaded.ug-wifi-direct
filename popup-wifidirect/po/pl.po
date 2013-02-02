@@ -367,3 +367,8 @@ msgstr "Dostępne urządzenia"
 msgid "IDS_WFD_POP_MULTI_CONNECT"
 msgstr "Urządzeń, z którymi można połączyć jednocześnie: %d"
 
+msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
+msgstr "Hasło jest zbyt długie"
+
+msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
+msgstr "Hasło jest za krótkie"

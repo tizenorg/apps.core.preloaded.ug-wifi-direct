@@ -367,3 +367,8 @@ msgstr "Доступні пристрої"
 msgid "IDS_WFD_POP_MULTI_CONNECT"
 msgstr "Одночасно можна підключити не більше %d пристроїв"
 
+msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
+msgstr "Задовгий пароль"
+
+msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
+msgstr "Пароль закороткий"

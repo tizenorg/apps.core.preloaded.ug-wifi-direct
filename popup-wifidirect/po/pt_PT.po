@@ -367,3 +367,8 @@ msgstr "Dispositivos disponíveis"
 msgid "IDS_WFD_POP_MULTI_CONNECT"
 msgstr "Pode ligar até %d dispositivos em simultâneo"
 
+msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
+msgstr "Palavra-passe demasiado longa"
+
+msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
+msgstr "Palavra-passe muito curta"

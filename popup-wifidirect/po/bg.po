@@ -367,3 +367,8 @@ msgstr "Достъпни устройства"
 msgid "IDS_WFD_POP_MULTI_CONNECT"
 msgstr "Можете да свържете до %d устройства едновременно"
 
+msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
+msgstr "Паролата е твърде дълга"
+
+msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
+msgstr "Паролата е твърде кратка"

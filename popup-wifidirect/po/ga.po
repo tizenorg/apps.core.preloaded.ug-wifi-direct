@@ -367,3 +367,8 @@ msgstr "Gléasanna atá ar fáil"
 msgid "IDS_WFD_POP_MULTI_CONNECT"
 msgstr "Is féidir leat suas le %d gléas a nascadh ag an am céanna"
 
+msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
+msgstr "Pasfhocal rófhada"
+
+msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
+msgstr "Pasfhocal ró-ghearr"

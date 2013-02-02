@@ -367,3 +367,8 @@ msgstr "Tiltæk tæki"
 msgid "IDS_WFD_POP_MULTI_CONNECT"
 msgstr "Hægt er að tengjast allt að %d tækjum samtímis"
 
+msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
+msgstr "Lykilorðið er of langt"
+
+msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
+msgstr "Aðgangsorð of stutt"

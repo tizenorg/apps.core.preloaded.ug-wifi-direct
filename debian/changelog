@@ -1,3 +1,11 @@
+ug-setting-wifidirect-efl (1.0.7) precise; urgency=low
+
+  * Update for STMS
+  * Git: rsa/apps/home/ug-wifi-direct
+  * Tag: libug-setting-wifidirect-efl_1.0.7
+
+ -- sunil85.kim <isurit@sunil85.kim>  Sat, 02 Feb 2013 22:31:22 +0900
+
 ug-setting-wifidirect-efl (1.0.6) precise; urgency=low
 
   * Fix bug(N_SE-23716)

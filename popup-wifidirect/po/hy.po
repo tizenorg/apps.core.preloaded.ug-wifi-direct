@@ -367,3 +367,8 @@ msgstr "Մատչելի սարքեր"
 msgid "IDS_WFD_POP_MULTI_CONNECT"
 msgstr "Կարող եք միաժամանակ միացնել մինչև %d սարք"
 
+msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
+msgstr "Գաղտնաբառը շատ երկար է"
+
+msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
+msgstr "Գաղտնաբառը չափազանց կարճ է"

@@ -367,3 +367,8 @@ msgstr "Dispositivos dispoñibles"
 msgid "IDS_WFD_POP_MULTI_CONNECT"
 msgstr "Podes conectar ata %d dispositivos á vez"
 
+msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
+msgstr "Contrasinal demasiado longo"
+
+msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
+msgstr "Contrasinal moi curto"

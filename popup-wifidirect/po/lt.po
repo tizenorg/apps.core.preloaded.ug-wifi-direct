@@ -367,3 +367,8 @@ msgstr "Galimi įrenginiai"
 msgid "IDS_WFD_POP_MULTI_CONNECT"
 msgstr "Vienu metu galite prijungti iki %d įrenginių"
 
+msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
+msgstr "Slaptažodis per ilgas"
+
+msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
+msgstr "Slaptažodis per trumpas"
