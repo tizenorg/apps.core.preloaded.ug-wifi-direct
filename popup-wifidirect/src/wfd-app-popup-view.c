@@ -84,6 +84,30 @@ static void __popup_resp_cb(void *data, Evas_Object * obj, void *event_info)
 	}
 	break;
 
+	case WFD_POP_RESP_APRV_CONNECT_INVITATION_YES:
+		WDPOP_LOGI(
+				"WFD_POP_RESP_APRV_CONNECT_INVITATION_YES [" MACSTR "]\n", MAC2STR(ad->peer_mac));
+		wfd_destroy_popup();
+
+		result = wifi_direct_connect(ad->peer_mac);
+		WDPOP_LOGD(
+				"wifi_direct_connect() result=[%d]\n",
+				result);
+		if (result == WIFI_DIRECT_ERROR_NONE) {
+			/* tickernoti popup */
+			wfd_tickernoti_popup(_("IDS_WFD_POP_CONNECTING"));
+		} else {
+			WDPOP_LOGE(
+					"wifi_direct_connect() FAILED!!\n");
+			evas_object_hide(ad->win);
+
+			/* tickernoti popup */
+			snprintf(msg, WFD_POP_STR_MAX_LEN, IDS_WFD_POP_CONNECT_FAILED, ad->peer_name);
+			wfd_tickernoti_popup(msg);
+		}
+
+	break;
+
 	case /* MT */ WFD_POP_RESP_APRV_CONNECT_DISPLAY_OK:
 	{
 		char *pin = NULL;
@@ -544,6 +568,8 @@ Evas_Object *wfd_draw_pop_type_display(Evas_Object * win, wfd_popup_t * pop)
 	wps_display_popup.step = 0;
 	wps_display_popup.progressbar = progressbar;
 	wps_display_popup.time = time;
+	if(pb_timer)
+		ecore_timer_del(pb_timer);
 	pb_timer = ecore_timer_add(1, _fn_pb_timer, &wps_display_popup);
 
 	/* add buttons */
@@ -709,6 +735,17 @@ void wfd_prepare_popup(int type, void *userdata)
 		snprintf(pop->label1, sizeof(pop->label1), "%s", dgettext("sys_string", "IDS_COM_SK_YES"));
 		snprintf(pop->label2, sizeof(pop->label2), "%s", dgettext("sys_string", "IDS_COM_SK_NO"));
 		pop->resp_data1 = WFD_POP_RESP_APRV_CONNECT_PBC_YES;
+		pop->resp_data2 = WFD_POP_RESP_APRV_CONNECT_NO;
+
+		ad->popup = wfd_draw_pop_type_c(ad->win, pop);
+		break;
+
+	case WFD_POP_APRV_CONNECTION_INVITATION_REQ:
+		snprintf(pop->text, sizeof(pop->text), IDS_WFD_POP_CONNECT_Q,
+				ad->peer_name);
+		snprintf(pop->label1, sizeof(pop->label1), "%s", dgettext("sys_string", "IDS_COM_SK_YES"));
+		snprintf(pop->label2, sizeof(pop->label2), "%s", dgettext("sys_string", "IDS_COM_SK_NO"));
+		pop->resp_data1 = WFD_POP_RESP_APRV_CONNECT_INVITATION_YES;
 		pop->resp_data2 = WFD_POP_RESP_APRV_CONNECT_NO;
 
 		ad->popup = wfd_draw_pop_type_c(ad->win, pop);

@@ -3,7 +3,7 @@
 
 Name:       libug-setting-wifidirect-efl
 Summary:    Wi-Fi Direct setting UI gadget 
-Version:    1.0.7
+Version:    1.0.8
 Release:    1
 Group:      TO_BE_FILLED
 License:    Flora License

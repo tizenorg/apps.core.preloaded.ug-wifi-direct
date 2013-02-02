@@ -1,3 +1,11 @@
+ug-setting-wifidirect-efl (1.0.8) precise; urgency=low
+
+  * Fix bug of invitation behavior
+  * Git: rsa/apps/home/ug-wifi-direct
+  * Tag: libug-setting-wifidirect-efl_1.0.8
+
+ -- Gibyoung Kim <laskgb.kim@samsung.com>  Sun, 03 Feb 2013 02:58:48 +0900
+
 ug-setting-wifidirect-efl (1.0.7) precise; urgency=low
 
   * Update for STMS

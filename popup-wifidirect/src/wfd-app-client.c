@@ -478,7 +478,8 @@ void _cb_connection(int error_code, wifi_direct_connection_state_e connection_st
 	}
 
 	/* when disconnection, mac_address is empty */
-	if (connection_state <= WIFI_DIRECT_CONNECTION_RSP) {
+	if (connection_state <= WIFI_DIRECT_CONNECTION_RSP ||
+		connection_state == WIFI_DIRECT_INVITATION_REQ) {
 		memset(ad->peer_mac, 0, sizeof(ad->peer_mac));
 		memset(ad->peer_name, 0, sizeof(ad->peer_name));
 		strncpy(ad->peer_mac, mac_address, strlen(mac_address));
@@ -645,6 +646,21 @@ void _cb_connection(int error_code, wifi_direct_connection_state_e connection_st
 		/* tickernoti popup */
 		wfd_tickernoti_popup(_("IDS_WFD_POP_CONNECTING"));
 	}
+	break;
+	case WIFI_DIRECT_INVITATION_REQ:
+	{
+		WDPOP_LOGD( "event ------------------ WIFI_DIRECT_INVITATION_REQ\n");
+		bool auto_connection_mode = FALSE;
+
+		wifi_direct_is_autoconnection_mode(&auto_connection_mode);
+		if (auto_connection_mode == TRUE) {
+			result = wifi_direct_connect(ad->peer_mac);
+			printf("wifi_direct_accept_connection() result=[%d]\n", result);
+		} else {
+			wfd_prepare_popup(WFD_POP_APRV_CONNECTION_INVITATION_REQ, NULL);
+		}
+	}
+	break;
 	default:
 		break;
 
