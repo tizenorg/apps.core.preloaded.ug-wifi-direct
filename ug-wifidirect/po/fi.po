@@ -1,0 +1,117 @@
+msgid "IDS_WFD_CONNECTED"
+msgstr "Yhdistetty"
+
+msgid "IDS_WFD_CONNECTING"
+msgstr "Yhdistetään..."
+
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "Yhteyttä katkaistaan..."
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "Yhdistetty"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "Tuntematon virhe"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "PIN-koodit eivät täsmää!"
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "Aktivoidaan..."
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "%d valittu"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "Kytketään pois päältä..."
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "Ei tuettu"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "Hae"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "Wi-Fi Direct -laitteet"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "Yhdistä napauttamalla"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "Yhdistä"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "Peruuta yhteys"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "Wi-Fi Directin tiedot"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "Wi-Fi Direct -toiminnon avulla Wi-Fi-laitteet voivat muodostaa suoria yhteyksiä, mikä tekee tulostamisesta, tiedostojen jakamisesta, synkronoinnista ja näytön jakamisesta entistä helpompaa ja mukavampaa. Muodostamalla yhteyden Wi-Fi Direct -toimintoa tukeviin laitteisiin voit jakaa sisältöä, synkronoida tietoja, pitää yhteyttä ystäviin, pelata pelejä, toistaa ääntä ja videoita sekä tehdä paljon muuta erilaisten sovellusten avulla"
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "Yhdistetyt laitteet"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "Varatut laitteet"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "Yhdistetty toiseen laitteeseen"
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "Yhdistetään..."
+
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "Odotetaan yhteyttä"
+
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "Yhteyden muodostaminen epäonnistui"
+
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "Moniyhteys"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "Katkaise kaikki"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "Katkaise yhteys"
+
+msgid "IDS_WFD_NOCONTENT"
+msgstr "Laitteita ei löytynyt"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection. Continue?"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Wi-Fi Direct -yhteys"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "Peruutetaanko Wi-Fi Direct -yhteys?"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "Ei laitteita"
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "Lopeta"
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "Käytöstä poistaminen epäonnistui"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "Aktivointi epäonnistui"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "Nykyinen yhteys katkaistaan. Jatketaanko?"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "Käytettävissä olevat laitteet"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "Voit muodostaa yhteyden samanaikaisesti enintään %d laitteeseen"
+

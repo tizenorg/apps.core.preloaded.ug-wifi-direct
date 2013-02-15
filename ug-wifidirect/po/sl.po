@@ -1,0 +1,117 @@
+msgid "IDS_WFD_CONNECTED"
+msgstr "Povezano"
+
+msgid "IDS_WFD_CONNECTING"
+msgstr "Povezujem..."
+
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "Prekinjam"
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "Povezano"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "Neznana napaka"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "Kodi PIN se ne ujemata!"
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "Vključujem..."
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "%d izbranih"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "Izključujem..."
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "Nepodprto"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "Preišči"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "Naprave Wi-Fi Direct"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "Pritisnite za povezavo"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "Poveži"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "Preklic povezave"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "O Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "Wi-Fi Direct napravam Wi-Fi olajša neposredno povezovanje, tiskanje, skupno rabo datotek, sinhronizacijo in skupno rabo zaslona. Povezava z napravami, ki podpirajo Wi-Fi Direct, z uporabo različnih programov omogoča skupno rabo vsebine, sinhronizacijo podatkov, druženje s prijatelji v družabnih omrežjih, igranje iger, predvajanje zvočnih in video vsebin ter še veliko več."
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "Povezane naprave"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "Zasedene naprave"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "Povezano z drugo napravo"
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "Povezujem..."
+
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "Čakanje na povezavo"
+
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "Povezava ni uspela"
+
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "Več povezav"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "Prekini vse"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "Prekini"
+
+msgid "IDS_WFD_NOCONTENT"
+msgstr "Ni najdenih naprav"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection. Continue?"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Povezava Wi-Fi Direct"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "Želite preklicati povezavo Wi-Fi Direct?"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "Ni naprav"
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "Ustavi"
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "Izklop ni uspel"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "Vklop ni uspel"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "Trenutna povezava bo prekinjena. Nadaljujem?"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "Razpoložljive naprave"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "Hkrati lahko povežete do %d naprav"
+

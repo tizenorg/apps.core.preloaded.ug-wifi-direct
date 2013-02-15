@@ -1,0 +1,374 @@
+msgid "IDS_WFD_CONNECTED"
+msgstr "Connectat"
+
+msgid "IDS_WFD_CONNECTING"
+msgstr "Connectant..."
+
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "Desconnectant..."
+
+msgid ""
+msgstr "Activant Wi-Fi..."
+
+msgid "IDS_WIFI_POP_DEACTIVATING_WI_FI_ING"
+msgstr "Desactivant Wi-Fi..."
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "Connectat"
+
+msgid "IDS_COM_POP_NETWORK_INTERNAL_ERR"
+msgstr "Error intern"
+
+msgid "IDS_COM_POP_RETRIEVED"
+msgstr "Recuperat"
+
+msgid "IDS_COM_POP_RETRIEVING_FAILED"
+msgstr "Error en recuperar"
+
+msgid "IDS_COM_SK_CANCEL"
+msgstr "Cancel·lar"
+
+msgid "IDS_ST_BODY_INTERNAL_ERROR"
+msgstr "Error intern"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "Error desconegut"
+
+msgid "IDS_COM_POP_NETWORK_ERROR"
+msgstr "Error de xarxa"
+
+msgid "IDS_COM_BODY_NO_SEARCH_RESULTS"
+msgstr "No hi ha cap resultat de cerca"
+
+msgid "IDS_COM_POP_SEARCHING"
+msgstr "Cercant..."
+
+msgid "IDS_WIFI_POP_DISCONNECTING_FAILED"
+msgstr "Error en desconnectar"
+
+msgid "IDS_ST_BODY_ENTER_NEW_PASSWORD"
+msgstr "Introduir nova contrasenya"
+
+msgid "IDS_COM_POP_UNKNOWN_ERROR_UNABLE_TO_LAUNCH_APPLICATION"
+msgstr "Error desconegut. No es pot executar l'aplicació"
+
+msgid "IDS_COM_POP_ACCEPT"
+msgstr "Acceptar"
+
+msgid "IDS_COM_POP_CONNECTING"
+msgstr "Connectant..."
+
+msgid "IDS_COM_POP_ERROR"
+msgstr "Error"
+
+msgid "IDS_COM_POP_REJECT"
+msgstr "Rebutjar"
+
+msgid "IDS_COM_POP_REJECTED"
+msgstr "Rebutjat"
+
+msgid "IDS_COM_BODY_SELECT_ALL"
+msgstr "Seleccioni-ho tot"
+
+msgid "IDS_COM_POP_FAILED"
+msgstr "Error"
+
+msgid "IDS_COM_SK_ACCEPT"
+msgstr "Acceptar"
+
+msgid "IDS_ST_BODY_ENTER_4_TO_8_DIGIT_PIN"
+msgstr "Introdueixi un PIN de 4 o 8 dígits"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "Els PIN no coincideixen!"
+
+msgid "IDS_ST_POP_YES"
+msgstr "Sí"
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "Activant..."
+
+msgid "IDS_COM_POP_DEACTIVATED"
+msgstr "Desactivat"
+
+msgid "IDS_COM_SK_OK"
+msgstr "Acceptar"
+
+msgid "IDS_COM_SK_YES"
+msgstr "Sí"
+
+msgid "IDS_WIFI_HEADER_MOBILE_HOTSPOT_VZW"
+msgstr "Mobile Hotspot"
+
+msgid "IDS_ST_BODY_ENTER_CURRENT_PASSWORD"
+msgstr "Introdueixi la contrasenya actual"
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "%d seleccionat"
+
+msgid "IDS_ST_POP_SEARCHING_ING"
+msgstr "Cercant..."
+
+msgid "IDS_COM_POP_NOTHING_SELECTED"
+msgstr "No s'ha seleccionat res"
+
+msgid "IDS_COM_OPT1_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_COM_POP_DISCONNECTED"
+msgstr "Desconnectat"
+
+msgid "IDS_WIFI_MBODY_MOBILE_HOTSPOT_VZW"
+msgstr "Mobile Hotspot"
+
+msgid "IDS_WIFI_BODY_IP_ADDRESS"
+msgstr "Adreça IP"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "Desactivant..."
+
+msgid "IDS_COM_POP_UNEXPECTED_ERROR"
+msgstr "Error imprevist"
+
+msgid "IDS_COM_POP_NETWORK_CONNECTION_ERROR"
+msgstr "Error de connexió de xarxa"
+
+msgid "IDS_COM_BODY_OPERATION_FAILED"
+msgstr "Operació fallida"
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "No s'admet"
+
+msgid "IDS_COM_POP_UNSUPPORTED"
+msgstr "No s'admet"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_COM_POP_ACCEPTED"
+msgstr "Acceptat"
+
+msgid "IDS_WIFI_BODY_MAC_ADDRESS"
+msgstr "Adreça MAC"
+
+msgid "IDS_WIFI_POP_AUTOMATIC_CONNECTION_NETWORK_WILL_DISABLED_CONTINUE_Q_MSG"
+msgstr "Es deshabilitarà la connexió automàtica a aquesta xarxa. Continuar?"
+
+msgid "IDS_COM_POP_PROGRESSING_ING"
+msgstr "En curs..."
+
+msgid "IDS_WIFI_BODY_CONNECT"
+msgstr "Connectar"
+
+msgid "IDS_WIFI_HEADER_WI_FI"
+msgstr "Wi-Fi"
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "Escanejar"
+
+msgid "IDS_WIFI_SK3_BACK"
+msgstr "Enrere"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "Dispositius Wi-Fi Direct"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "Toqui per connectar"
+
+msgid "IDS_WIFI_SK2_MULTI_CONNECT"
+msgstr "Connexió múltiple"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "Connectar"
+
+msgid "IDS_WIFI_OPT_MYNETWORKS_DISCONNECT"
+msgstr "Desconnectar"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "Cancel·lar connexió"
+
+msgid "IDS_COM_SK_CANCEL_A"
+msgstr "Canc"
+
+msgid "IDS_ST_HEADER_ACTIVATION"
+msgstr "Activació"
+
+msgid "IDS_COM_SK_CANCEL_LITE"
+msgstr "Canc"
+
+msgid "IDS_ST_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WIFI_BODY_WI_FI"
+msgstr "Wi-Fi"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Canc"
+
+msgid "IDS_WIFI_BUTTON_CANCEL"
+msgstr "Cancelar"
+
+msgid "IDS_WIFI_BODY_ALLSHARE_CAST"
+msgstr "AllShare Cast"
+
+msgid "IDS_WIFI_POP_MOBILEACCESSSERVICE_ACTIVATING_ING"
+msgstr "Activant..."
+
+msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_CONNECTION"
+msgstr "L'ús de Wi-Fi Direct desconnectarà la connexió Wi-Fi actual"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "Sobre Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "Wi-Fi Direct permet als dispositius Wi-Fi connectar-se directament, fent que tasques com imprimir, compartir fitxers, sincronitzar i compartir pantalla siguin molt més senzilles i còmodes. Connectar a dispositius que admeten Wi-Fi Direct fa possible compartir contingut, sincronitzar dades, socialitzar amb amics, jugar a jocs, reproduir àudio i vídeo, etc. amb diverses aplicacions"
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "Dispositius connectats"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "Dispositius ocupats"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "Connectat a un altre dispositiu"
+
+msgid "IDS_WIFI_POP_AP_DISCONNECTING_ING"
+msgstr "Desconnectant..."
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "Connectant..."
+
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "Esperant connexió"
+
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "Error en la connexió"
+
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "Connexió múltiple"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "Desconnectar tot"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "Desconnectar"
+
+msgid "IDS_WFD_NOCONTENT"
+msgstr "No s'han trobat dispositius"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "Deshabilitar Wi-Fi Direct després d'ús"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_ABB"
+msgstr "Deshab Wi-Fi Direct després ús"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY"
+msgstr "Deshabilitar Wi-Fi Direct després d'ús per estalviar bateria"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY_ABB"
+msgstr "Deshab Wi-Fi Direct després d'ús per estalviar bat"
+
+msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES"
+msgstr "Escanejar dispositius Wi-Fi Direct"
+
+msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES_CURRENT_NETWORK_WILL_BE_DISCONNECTED"
+msgstr "Escanejar dispositius Wi-Fi Direct. La xarxa actual es desconnectarà"
+
+msgid "IDS_WIFI_BODY_SEARCH_FOR_WI_FI_DIRECT_DEVICES_OR_SEARCH_FOR_DEVICES_ON_OTHER_WI_FI_NETWORKS"
+msgstr "Cercar dispositius Wi-Fi direct o dispositius d'altres xarxes Wi-Fi"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection. Continue?"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_CONNECTED"
+msgstr "Wi-Fi Direct connectat"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Connexió Wi-Fi Direct"
+
+msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_SETTINGS"
+msgstr "Ajustaments Wi-Fi Direct"
+
+msgid "IDS_WIFI_MBODY_CONFIGURE_WI_FI_DIRECT"
+msgstr "Configurar Wi-Fi Direct"
+
+msgid "IDS_WIFI_MBODY_DISCONNECT_WI_FI_DIRECT"
+msgstr "Desconnectar Wi-Fi Direct"
+
+msgid "IDS_WIFI_MBODY_WI_FI_DIRECT_STATUS"
+msgstr "Estat Wi-Fi Direct"
+
+msgid "IDS_WIFI_OPT1_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "Cancel·lar connexió Wi-Fi Direct?"
+
+msgid "IDS_WIFI_POP_CONNECTING_TO_WI_FI_NETWORK_WILL_DISCONNECT_DEVICE_CONNECTED_VIA_WI_FI_DIRECT"
+msgstr "Si es connecta a una xarxa Wi-Fi, es desconnectarà el dispositiu connectat mitjançant Wi-Fi Direct"
+
+msgid "IDS_WIFI_POP_CONNECT_TO_OTHER_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "Connectar a altres dispositius mitjançant Wi-Fi Direct"
+
+msgid "IDS_WIFI_POP_DISABLE_MOBILE_AP_TO_USE_WI_FI_DIRECT_Q"
+msgstr "Deshabilitar el punt d'accés mòbil per utilitzar Wi-Fi Direct?"
+
+msgid "IDS_WIFI_POP_DISCONNECT_CURRENT_WI_FI_DIRECT_DEVICE_TO_SEARCH_NETWORKS"
+msgstr "Desconnectar els dispositius Wi-Fi Direct actuals per cercar xarxes"
+
+msgid "IDS_WIFI_POP_ENABLING_WI_FI_DIRECT_WILL_TURN_OFF_WI_FI_AND_DISABLE_THE_PORTABLE_WI_FI_HOTSPOT"
+msgstr "Si habilita Wi-Fi Direct, s'apagarà el Wi-Fi i es deshabilitarà el punt calent Wi-Fi portàtil"
+
+msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISABLE_PORTABLE_WI_FI_HOTSPOT"
+msgstr "L'ús de Wi-Fi Direct deshabilitarà el punt calent Wi-Fi portàtil"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_ALREADY_IN_USE_TRY_LATER"
+msgstr "Wi-Fi Direct ja està en ús. Intenti-ho més tard"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_CONNECTION_REQUEST_AUTOMATICALLY_DENIED_TO_CONNECT_TURN_OFF_ALLSHARE_CAST"
+msgstr "Sol·licitud de connexió Wi-Fi Direct denegada automàticament. Per connectar, desactivi AllShare Cast"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_WILL_BE_DISCONNECTED_CONTINUE_Q"
+msgstr "Wi-Fi Direct es desconnectarà. Continuar?"
+
+msgid "IDS_WIFI_POP_WI_FI_IS_DISCONNECTED_WHILE_WI_FI_DIRECT_CONNECTS"
+msgstr "El Wi-Fi es desconnectarà mentre es connecta Wi-Fi Direct"
+
+msgid "IDS_WIFI_SK1_SEARCH_FOR_WI_FI_DIRECT_DEVICES"
+msgstr "Cercar dispositius Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "Sense dispositius"
+
+msgid "IDS_WIFI_SK4_SCAN"
+msgstr "Escan"
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "Aturar"
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "Error en desactivar"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "Activació fallida"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "Es desconnectarà la connexió actual. Continuar?"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "Dispositius disponibles"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "Pot connectar fins a %d dispositius simultàniament"
+
+msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
+msgstr "Contrasenya massa llarga"
+
+msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
+msgstr "Contrasenya massa curta"

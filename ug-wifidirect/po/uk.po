@@ -1,0 +1,117 @@
+msgid "IDS_WFD_CONNECTED"
+msgstr "З'єднано"
+
+msgid "IDS_WFD_CONNECTING"
+msgstr "З'єднання..."
+
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "Роз'єднання..."
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "З'єднано"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "Невідома помилка"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "PIN-коди не збігаються."
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "Активація..."
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "Вибрано %d"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "Деактивація..."
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "Не підтримується"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "Сканувати"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "Пристрої Wi-Fi Direct"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "Натисніть, щоб підключитися"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "З'єднати"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "Скасувати підключення"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "Про Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "Wi-Fi Direct дає змогу пристроям Wi-Fi здійснювати безпосереднє підключення, завдяки чому спільний доступ до файлів, синхронізація та друк стають набагато простішими та зручнішими. Підключення до пристроїв із підтримкою Wi-Fi Direct надає можливість відкрити спільний доступ до вмісту, синхронізувати дані, спілкуватись із друзями, грати в ігри, відтворювати аудіо, відео та інше, а також використовувати різноманітні програми."
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "Підключені пристрої"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "Зайняті пристрої"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "Підключено до іншого пристрою"
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "З'єднання..."
+
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "Очікується підключення"
+
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "Не вдалося підключитися"
+
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "Мульти-підключення"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "Відключити всі"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "Роз'єднати"
+
+msgid "IDS_WFD_NOCONTENT"
+msgstr "Не знайдено пристроїв"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection. Continue?"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Підключення Wi-Fi Direct"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "Скасувати підключення Wi-Fi Direct?"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "Немає пристроїв"
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "Стоп"
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "Збій деактивації"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "Збій активації"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "Поточне з’єднання буде роз’єднано. Продовжити?"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "Доступні пристрої"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "Одночасно можна підключити не більше %d пристроїв"
+

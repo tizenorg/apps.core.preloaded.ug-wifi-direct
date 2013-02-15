@@ -1,0 +1,117 @@
+msgid "IDS_WFD_CONNECTED"
+msgstr "Nasctha"
+
+msgid "IDS_WFD_CONNECTING"
+msgstr "Ag nascadh..."
+
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "Ag dínascadh..."
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "Nasctha"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "Earráid anaithnid"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "Ní mheaitseálann na PIN!"
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "Ag cur i ngníomh..."
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "%d roghnaithe"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "Ag díghníomhachtú..."
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "Gan tacú"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "Scan"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "Gléasanna Wi-Fi Direct"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "Tapáil chun nascadh"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "Nasc"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "Cuir nasc ar ceal"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "Eolas faoi Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "Cuireann Wi-Fi Direct ar chumas gléasanna Wi-Fi nascadh go díreach, rud a dhéanann priontáil. comhroinnt comhad, sioncronú agus comhroinnt scáileáin níos simplí áisiúla. Trí nascadh le gléasanna a bhfuil tacú iontu do Wi-Fi Direct, is féidir d'inneachar a chomhroinnt, do shonraí a shioncronú, teagmháil a dhéanamh le cairde, cluichí a imirt, ceol agus físeáin a sheinm, agus eile, trí fheidhmchláir éagsúla a úsáid"
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "Gléasanna nasctha"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "Gléasanna gnóthacha"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "Nasctha le gléas eile"
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "Ag nascadh..."
+
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "Ag feitheamh le nasc"
+
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "Theip ar nascadh"
+
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "Ilnasc"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "Dínasc gach rud"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "Dínasc"
+
+msgid "IDS_WFD_NOCONTENT"
+msgstr "Níor aimsíodh gléas"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection. Continue?"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Nasc Wi-Fi Direct"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "Cuir nasc Wi-Fi Direct ar ceal?"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "Níl gléasanna ann"
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "Stop"
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "Theip ar dhíghníomhachtú"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "Theip ar chur i ngníomh"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "Dínascfar an nasc reatha. Ar aghaidh?"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "Gléasanna atá ar fáil"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "Is féidir leat suas le %d gléas a nascadh ag an am céanna"
+

@@ -1,0 +1,117 @@
+msgid "IDS_WFD_CONNECTED"
+msgstr "Συνδέθηκε"
+
+msgid "IDS_WFD_CONNECTING"
+msgstr "Σύνδεση..."
+
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "Αποσύνδεση..."
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "Συνδέθηκε"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "Άγνωστο σφάλμα"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "Τα PIN δεν συμφωνούν!"
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "Ενεργοποίηση..."
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "Επιλέχθηκαν %d"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "Απενεργοποίηση.."
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "Δεν υποστηρίζεται"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "Σάρωση"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "Συσκευές Wi-Fi Direct"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "Πατήστε για σύνδεση"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "Σύνδεση"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "Ακύρωση σύνδεσης"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "Σχετικά με Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "Το Wi-Fi Direct επιτρέπει στις συσκευές Wi-Fi να συνδέονται απευθείας, γεγονός που κάνει τη διαδικασία εκτύπωσης, κοινής χρήσης αρχείων, συγχρονισμού και κοινής χρήσης οθόνης πιο απλή και πιο εύχρηστη. Η σύνδεση σε συσκευές που υποστηρίζουν Wi-Fi Direct σας επιτρέπει να μοιράζεστε περιεχόμενο, να συγχρονίζετε τα δεδομένα σας, να συναναστρέφεστε με τους φίλους σας, να παίζετε παιχνίδια, να ακούτε μουσική, να παρακολουθείτε ταινίες κ.ά., χρησιμοποιώντας διάφορες εφαρμογές"
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "Συνδεδεμένες συσκευές"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "Απασχολημένες συσκευές"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "Έχει συνδεθεί με άλλη συσκευή"
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "Σύνδεση..."
+
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "Αναμονή για σύνδεση"
+
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "Αποτυχία σύνδεσης"
+
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "Πολλαπλή σύνδεση"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "Αποσύνδεση όλων"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "Αποσύνδεση"
+
+msgid "IDS_WFD_NOCONTENT"
+msgstr "Δεν βρέθηκαν συσκευές"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection. Continue?"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Σύνδεση Wi-Fi Direct"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "Ακύρωση της σύνδεσης Wi-Fi Direct;"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "Καμία συσκευή"
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "Διακοπή"
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "Αποτυχία απενεργοποίησης"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "Αποτυχία ενεργοποίησης"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "Η τρέχουσα σύνδεση θα αποσυνδεθεί. Συνέχεια;"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "Διαθέσιμες συσκευές"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "Μπορείτε να συνδέσετε έως και %d συσκευές ταυτόχρονα"
+

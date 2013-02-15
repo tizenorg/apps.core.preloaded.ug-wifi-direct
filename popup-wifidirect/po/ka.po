@@ -1,0 +1,374 @@
+msgid "IDS_WFD_CONNECTED"
+msgstr "დაკავშირებულია"
+
+msgid "IDS_WFD_CONNECTING"
+msgstr "უკავშირდება..."
+
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "გამორთვა..."
+
+msgid ""
+msgstr "აქტიურდება Wi-Fi..."
+
+msgid "IDS_WIFI_POP_DEACTIVATING_WI_FI_ING"
+msgstr "თავიდან აქტიურდება Wi-Fi..."
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "დაკავშირებულია"
+
+msgid "IDS_COM_POP_NETWORK_INTERNAL_ERR"
+msgstr "შიდა შეცდომა"
+
+msgid "IDS_COM_POP_RETRIEVED"
+msgstr "მიღებულია"
+
+msgid "IDS_COM_POP_RETRIEVING_FAILED"
+msgstr "მიღება ვერ შესრულდა"
+
+msgid "IDS_COM_SK_CANCEL"
+msgstr "გაუქმება"
+
+msgid "IDS_ST_BODY_INTERNAL_ERROR"
+msgstr "შიდა შეცდომა"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "უცნობი შეცდომა"
+
+msgid "IDS_COM_POP_NETWORK_ERROR"
+msgstr "ქსელის შეცდომა"
+
+msgid "IDS_COM_BODY_NO_SEARCH_RESULTS"
+msgstr "ძიების შედეგი არ არის"
+
+msgid "IDS_COM_POP_SEARCHING"
+msgstr "იძებნება..."
+
+msgid "IDS_WIFI_POP_DISCONNECTING_FAILED"
+msgstr "ვერ გამოირთო"
+
+msgid "IDS_ST_BODY_ENTER_NEW_PASSWORD"
+msgstr "შეიყვანეთ ახალი პაროლი"
+
+msgid "IDS_COM_POP_UNKNOWN_ERROR_UNABLE_TO_LAUNCH_APPLICATION"
+msgstr "უცნობი შეცდომა მოხდა. პროგრამის ჩართვა შეუძლებელია"
+
+msgid "IDS_COM_POP_ACCEPT"
+msgstr "მიღება"
+
+msgid "IDS_COM_POP_CONNECTING"
+msgstr "უკავშირდება..."
+
+msgid "IDS_COM_POP_ERROR"
+msgstr "შეცდომა"
+
+msgid "IDS_COM_POP_REJECT"
+msgstr "უარყოფა"
+
+msgid "IDS_COM_POP_REJECTED"
+msgstr "უარყოფილია"
+
+msgid "IDS_COM_BODY_SELECT_ALL"
+msgstr "ყველას არჩევა"
+
+msgid "IDS_COM_POP_FAILED"
+msgstr "ვერ შესრულდა"
+
+msgid "IDS_COM_SK_ACCEPT"
+msgstr "მიღება"
+
+msgid "IDS_ST_BODY_ENTER_4_TO_8_DIGIT_PIN"
+msgstr "ჩაწერეთ 4-8-ციფრიანი PIN"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "PIN–ები არ თანხვდება!"
+
+msgid "IDS_ST_POP_YES"
+msgstr "დიახ"
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "აქტიურდება..."
+
+msgid "IDS_COM_POP_DEACTIVATED"
+msgstr "დეაქტივირებულია"
+
+msgid "IDS_COM_SK_OK"
+msgstr "OK"
+
+msgid "IDS_COM_SK_YES"
+msgstr "დიახ"
+
+msgid "IDS_WIFI_HEADER_MOBILE_HOTSPOT_VZW"
+msgstr "მობილური ცხელი წერტილი"
+
+msgid "IDS_ST_BODY_ENTER_CURRENT_PASSWORD"
+msgstr "ჩაწერეთ მიმდინარე პაროლი"
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "%d არჩეულია"
+
+msgid "IDS_ST_POP_SEARCHING_ING"
+msgstr "იძებნება..."
+
+msgid "IDS_COM_POP_NOTHING_SELECTED"
+msgstr "არაფერია არჩეული"
+
+msgid "IDS_COM_OPT1_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_COM_POP_DISCONNECTED"
+msgstr "გათიშულია"
+
+msgid "IDS_WIFI_MBODY_MOBILE_HOTSPOT_VZW"
+msgstr "მობილური ცხელი წერტილი"
+
+msgid "IDS_WIFI_BODY_IP_ADDRESS"
+msgstr "IP მისამართი"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "გამორთვა..."
+
+msgid "IDS_COM_POP_UNEXPECTED_ERROR"
+msgstr "მოულოდნელი შეცდომა"
+
+msgid "IDS_COM_POP_NETWORK_CONNECTION_ERROR"
+msgstr "ქსელთან დაკავშირების შეცდომა"
+
+msgid "IDS_COM_BODY_OPERATION_FAILED"
+msgstr "ოპერაცია ვერ შესრულდა"
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "გაუთვალისწინებელი"
+
+msgid "IDS_COM_POP_UNSUPPORTED"
+msgstr "გაუთვალისწინებელი"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_COM_POP_ACCEPTED"
+msgstr "მიღებულია"
+
+msgid "IDS_WIFI_BODY_MAC_ADDRESS"
+msgstr "MAC მისამართი"
+
+msgid "IDS_WIFI_POP_AUTOMATIC_CONNECTION_NETWORK_WILL_DISABLED_CONTINUE_Q_MSG"
+msgstr "ამ ქსელთან ავტომატური დაკავშირება გამოირთვება. განაგრძობთ?"
+
+msgid "IDS_COM_POP_PROGRESSING_ING"
+msgstr "მიმდინარეობს..."
+
+msgid "IDS_WIFI_BODY_CONNECT"
+msgstr "დაკავშირება"
+
+msgid "IDS_WIFI_HEADER_WI_FI"
+msgstr "Wi-Fi"
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "სკანირება"
+
+msgid "IDS_WIFI_SK3_BACK"
+msgstr "უკან"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "Wi-Fi Direct მოწყობილობები"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "დააკაკუნეთ, რომ დაუკავშირდეთ"
+
+msgid "IDS_WIFI_SK2_MULTI_CONNECT"
+msgstr "მრავალი კავშირი"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "კავშირი"
+
+msgid "IDS_WIFI_OPT_MYNETWORKS_DISCONNECT"
+msgstr "გათიშვა"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "დაკავშირების გაუქმება"
+
+msgid "IDS_COM_SK_CANCEL_A"
+msgstr "გაუქმ."
+
+msgid "IDS_ST_HEADER_ACTIVATION"
+msgstr "გააქტიურება"
+
+msgid "IDS_COM_SK_CANCEL_LITE"
+msgstr "გაუქმ."
+
+msgid "IDS_ST_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WIFI_BODY_WI_FI"
+msgstr "Wi-Fi"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "გაუქმ."
+
+msgid "IDS_WIFI_BUTTON_CANCEL"
+msgstr "გაუქმება"
+
+msgid "IDS_WIFI_BODY_ALLSHARE_CAST"
+msgstr "AllShare Cast"
+
+msgid "IDS_WIFI_POP_MOBILEACCESSSERVICE_ACTIVATING_ING"
+msgstr "აქტიურდება..."
+
+msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_CONNECTION"
+msgstr "Wi-Fi Direct-ის გამოყენების შედეგად გამოირთვება მიმდინარე Wi-Fi კავშირი"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "Wi-Fi Direct-ის შესახებ"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "Wi-Fi Direct ააქტიურებს Wi-Fi მოწყობილობებს, პირდაპირ დასაკავშირებლად, ამოსაბეჭდად, ფაილის გასაზიარებლად, სინქრონიზაციისთვის და ეკრანის გასაზიარებლად, გაცილებით მარტივად და უფრო მოხერხებულად. ისეთ მოწყობილობებთან დაკავშირება, რომლებშიც მუშაობს Wi-Fi Direct, გაძლევთ შესაძლებლობას გააზიაროთ მასალა, დაასინქრონოთ მონაცემები, დაამყაროთ ურთიერთობა მეგობრებთან, ითამაშოთ, ჩართოთ აუდიო, ვიდეო და ა.შ., სხვადასხვა პროგრამების გამოყენებით."
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "დაკავშირებული მოწყობილობები"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "დაკავებული აპარატები"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "დაკავშირებულია სხვა აპარატთან"
+
+msgid "IDS_WIFI_POP_AP_DISCONNECTING_ING"
+msgstr "გამორთვა..."
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "უკავშირდება..."
+
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "დაკავშირების ლოდინი"
+
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "ვერ დაკავშირდა"
+
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "მრავალი კავშირი"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "ყველა კავშირის გათიშვა"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "გათიშვა"
+
+msgid "IDS_WFD_NOCONTENT"
+msgstr "მოწყობილობები ვერ მოიძებნა"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "გამორთეთ Wi-Fi Direct"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_ABB"
+msgstr "გამორთეთ Wi-Fi Direct"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY"
+msgstr "გამორთეთ Wi-Fi Direct, ენერგიის დასაზოგად"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY_ABB"
+msgstr "გამორთეთ Wi-Fi Direct, ენერგიის დასაზოგად"
+
+msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES"
+msgstr "მოძებნეთ Wi-Fi Direct მოწყობილობები"
+
+msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES_CURRENT_NETWORK_WILL_BE_DISCONNECTED"
+msgstr "მოძებნეთ Wi-Fi Direct მოწყობილობები. მიმდინარე ქსელი გამოირთვება"
+
+msgid "IDS_WIFI_BODY_SEARCH_FOR_WI_FI_DIRECT_DEVICES_OR_SEARCH_FOR_DEVICES_ON_OTHER_WI_FI_NETWORKS"
+msgstr "Wi-Fi Direct მოწყობილობებს ან სხვა Wi-Fi ქსელში ჩართული მოწყობილობების ძებნა"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection. Continue?"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_CONNECTED"
+msgstr "Wi-Fi Direct დაკავშირდა"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Wi-Fi Direct კავშირი"
+
+msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_SETTINGS"
+msgstr "Wi-Fi Direct პარამეტრები"
+
+msgid "IDS_WIFI_MBODY_CONFIGURE_WI_FI_DIRECT"
+msgstr "დააკავშირეთ Wi-Fi Direct"
+
+msgid "IDS_WIFI_MBODY_DISCONNECT_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WIFI_MBODY_WI_FI_DIRECT_STATUS"
+msgstr "Wi-Fi Direct-ის სტატუსი"
+
+msgid "IDS_WIFI_OPT1_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "შეწყდეს Wi-Fi Direct კავშირი?"
+
+msgid "IDS_WIFI_POP_CONNECTING_TO_WI_FI_NETWORK_WILL_DISCONNECT_DEVICE_CONNECTED_VIA_WI_FI_DIRECT"
+msgstr "Wi-Fi ქსელთან დაკავშირების შედეგად შეწყდება კავშირი Wi-Fi Direct-ით დაკავშირებულ მოწყობილობასთან"
+
+msgid "IDS_WIFI_POP_CONNECT_TO_OTHER_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "სხვა მოწყობილობებთან დასაკავშირებლად გამოიყენეთ Wi-Fi Direct"
+
+msgid "IDS_WIFI_POP_DISABLE_MOBILE_AP_TO_USE_WI_FI_DIRECT_Q"
+msgstr "გამოირთოს Mobile AP, რომ გამოიყენოთ Wi-Fi Direct?"
+
+msgid "IDS_WIFI_POP_DISCONNECT_CURRENT_WI_FI_DIRECT_DEVICE_TO_SEARCH_NETWORKS"
+msgstr "გამორთეთ მიმდინარე Wi-Fi Direct მოწყობილობა, თუ გსურთ მოძებნოთ ქსელები"
+
+msgid "IDS_WIFI_POP_ENABLING_WI_FI_DIRECT_WILL_TURN_OFF_WI_FI_AND_DISABLE_THE_PORTABLE_WI_FI_HOTSPOT"
+msgstr "თუ ჩაირთვება Wi-Fi Direct, გამოირთვება Wi-Fi და გაითიშება Wi-Fi ცხელი წერტილი"
+
+msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISABLE_PORTABLE_WI_FI_HOTSPOT"
+msgstr "Wi-Fi Direct-ის გამოყენების შედეგად გამოირთვება პორტატული Wi-Fi ცხელი წერტილი"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_ALREADY_IN_USE_TRY_LATER"
+msgstr "Wi-Fi Direct უკვე გამოყენებაშია. ცადეთ მოგვიანებით"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_CONNECTION_REQUEST_AUTOMATICALLY_DENIED_TO_CONNECT_TURN_OFF_ALLSHARE_CAST"
+msgstr "Wi-Fi Direct კავშირის მოთხოვნა ავტომატურად უარყოფილია. იმისათვის რომ დაკავშირდეს, გამორთეთ AllShare Cast"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_WILL_BE_DISCONNECTED_CONTINUE_Q"
+msgstr "Wi-Fi Direct გაითიშება. განაგრძობთ?"
+
+msgid "IDS_WIFI_POP_WI_FI_IS_DISCONNECTED_WHILE_WI_FI_DIRECT_CONNECTS"
+msgstr "Wi-Fi გამორთულია, როცა ჩართულია Wi-Fi Direct"
+
+msgid "IDS_WIFI_SK1_SEARCH_FOR_WI_FI_DIRECT_DEVICES"
+msgstr "მოძებნეთ Wi-Fi Direct მოწყობილობები"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "მოწყობილობები არ არის"
+
+msgid "IDS_WIFI_SK4_SCAN"
+msgstr "სკანირება"
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "შეჩერება"
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "დეაქტივაცია ვერ შესრულდა"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "ვერ გააქტიურდა"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "მიმდინარე კავშირი გამოირთვება. განაგრძობთ?"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "მისაწვდომი მოწყობილობები"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "შეგიძლიათ ერთდროულად დაუკავშირდეთ %d-მდე მოწყობილობას"
+
+msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
+msgstr "პაროლი ძალზე გრძელია"
+
+msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
+msgstr "პაროლი ძალიან მოკლეა"

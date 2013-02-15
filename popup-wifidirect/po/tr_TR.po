@@ -1,0 +1,374 @@
+msgid "IDS_WFD_CONNECTED"
+msgstr "Bağlantı kuruldu"
+
+msgid "IDS_WFD_CONNECTING"
+msgstr "Bağlanılıyor..."
+
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "Bağlantı kesiliyor..."
+
+msgid ""
+msgstr "Wi-Fi etkinleştiriliyor..."
+
+msgid "IDS_WIFI_POP_DEACTIVATING_WI_FI_ING"
+msgstr "Wi-Fi devre dışı bırakılıyor..."
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "Bağlantı kuruldu"
+
+msgid "IDS_COM_POP_NETWORK_INTERNAL_ERR"
+msgstr "Dahili hata"
+
+msgid "IDS_COM_POP_RETRIEVED"
+msgstr "Alındı"
+
+msgid "IDS_COM_POP_RETRIEVING_FAILED"
+msgstr "Alma başarısız"
+
+msgid "IDS_COM_SK_CANCEL"
+msgstr "İptal"
+
+msgid "IDS_ST_BODY_INTERNAL_ERROR"
+msgstr "Dahili hata"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "Bilinmeyen hata"
+
+msgid "IDS_COM_POP_NETWORK_ERROR"
+msgstr "Şebeke hatası"
+
+msgid "IDS_COM_BODY_NO_SEARCH_RESULTS"
+msgstr "Hiç arama sonucu bulunamadı"
+
+msgid "IDS_COM_POP_SEARCHING"
+msgstr "Aranıyor..."
+
+msgid "IDS_WIFI_POP_DISCONNECTING_FAILED"
+msgstr "Bağlantı kesme başarısız"
+
+msgid "IDS_ST_BODY_ENTER_NEW_PASSWORD"
+msgstr "Yeni şifre girin"
+
+msgid "IDS_COM_POP_UNKNOWN_ERROR_UNABLE_TO_LAUNCH_APPLICATION"
+msgstr "Bilinmeyen hata. Uygulama başlatılamıyor"
+
+msgid "IDS_COM_POP_ACCEPT"
+msgstr "Kabul et"
+
+msgid "IDS_COM_POP_CONNECTING"
+msgstr "Bağlanılıyor..."
+
+msgid "IDS_COM_POP_ERROR"
+msgstr "Hata"
+
+msgid "IDS_COM_POP_REJECT"
+msgstr "Reddet"
+
+msgid "IDS_COM_POP_REJECTED"
+msgstr "Reddedildi"
+
+msgid "IDS_COM_BODY_SELECT_ALL"
+msgstr "Hepsini seç"
+
+msgid "IDS_COM_POP_FAILED"
+msgstr "Başarısız"
+
+msgid "IDS_COM_SK_ACCEPT"
+msgstr "Kabul et"
+
+msgid "IDS_ST_BODY_ENTER_4_TO_8_DIGIT_PIN"
+msgstr "4 ila 8 basamaklı PIN girin"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "PIN’ler uyuşmuyor!"
+
+msgid "IDS_ST_POP_YES"
+msgstr "Evet"
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "Etkinleştiriliyor…"
+
+msgid "IDS_COM_POP_DEACTIVATED"
+msgstr "Devre dışı bırakıldı"
+
+msgid "IDS_COM_SK_OK"
+msgstr "Tamam"
+
+msgid "IDS_COM_SK_YES"
+msgstr "Evet"
+
+msgid "IDS_WIFI_HEADER_MOBILE_HOTSPOT_VZW"
+msgstr "Mobile Hotspot"
+
+msgid "IDS_ST_BODY_ENTER_CURRENT_PASSWORD"
+msgstr "Geçerli şifreyi girin"
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "%d seçildi"
+
+msgid "IDS_ST_POP_SEARCHING_ING"
+msgstr "Aranıyor..."
+
+msgid "IDS_COM_POP_NOTHING_SELECTED"
+msgstr "Bir şey seçilmedi"
+
+msgid "IDS_COM_OPT1_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_COM_POP_DISCONNECTED"
+msgstr "Bağlantı kesildi"
+
+msgid "IDS_WIFI_MBODY_MOBILE_HOTSPOT_VZW"
+msgstr "Mobile Hotspot"
+
+msgid "IDS_WIFI_BODY_IP_ADDRESS"
+msgstr "IP adresi"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "Devreden çıkartılıyor..."
+
+msgid "IDS_COM_POP_UNEXPECTED_ERROR"
+msgstr "Beklenmedik hata"
+
+msgid "IDS_COM_POP_NETWORK_CONNECTION_ERROR"
+msgstr "Ağ bağlantısı hatası"
+
+msgid "IDS_COM_BODY_OPERATION_FAILED"
+msgstr "İşlem başarısız"
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "Desteklenmiyor"
+
+msgid "IDS_COM_POP_UNSUPPORTED"
+msgstr "Desteklenmiyor"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_COM_POP_ACCEPTED"
+msgstr "Kabul edildi"
+
+msgid "IDS_WIFI_BODY_MAC_ADDRESS"
+msgstr "MAC adresi"
+
+msgid "IDS_WIFI_POP_AUTOMATIC_CONNECTION_NETWORK_WILL_DISABLED_CONTINUE_Q_MSG"
+msgstr "Bu ağa otomatik bağlantı devre dışı bırakılacak. Devam edilsin mi?"
+
+msgid "IDS_COM_POP_PROGRESSING_ING"
+msgstr "Devam ediyor..."
+
+msgid "IDS_WIFI_BODY_CONNECT"
+msgstr "Bağlan"
+
+msgid "IDS_WIFI_HEADER_WI_FI"
+msgstr "Wi-Fi"
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "Tara"
+
+msgid "IDS_WIFI_SK3_BACK"
+msgstr "Geri"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "Wi-Fi Direct cihazları"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "Bağlanmak için dokunun"
+
+msgid "IDS_WIFI_SK2_MULTI_CONNECT"
+msgstr "Çoklu-bağlantı"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "Bağlan"
+
+msgid "IDS_WIFI_OPT_MYNETWORKS_DISCONNECT"
+msgstr "Bağlantıyı kes"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "Bağlantıyı iptal et"
+
+msgid "IDS_COM_SK_CANCEL_A"
+msgstr "İptal"
+
+msgid "IDS_ST_HEADER_ACTIVATION"
+msgstr "Etkinleştirme"
+
+msgid "IDS_COM_SK_CANCEL_LITE"
+msgstr "İptal"
+
+msgid "IDS_ST_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WIFI_BODY_WI_FI"
+msgstr "Wi-Fi"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "İptal"
+
+msgid "IDS_WIFI_BUTTON_CANCEL"
+msgstr "İptal"
+
+msgid "IDS_WIFI_BODY_ALLSHARE_CAST"
+msgstr "AllShare Cast"
+
+msgid "IDS_WIFI_POP_MOBILEACCESSSERVICE_ACTIVATING_ING"
+msgstr "Etkinleştiriliyor…"
+
+msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_CONNECTION"
+msgstr "Wi-Fi Direct kullanmak mevcut Wi-Fi bağlantısını kesecek"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "Wi-Fi Direct hakkında"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "Wi-Fi Direct Wi-Fi cihazlarının doğrudan bağlanmasını sağlar, yazdırmayı, dosya paylaşmayı, eşitlemeyi ve ekran paylaşımını daha basit ve daha güvenli hale getirir. Wi-Fi Direct destekli cihazlara bağlanmak, çeşitli uygulamalar kullanarak içeriklerinizi paylaşmayı, verilerinizi eşitlemeyi, arkadaşlarla sosyalleşmeyi, oyun oynamayı, ses, video oynatmayı ve fazlasını mümkün kılar"
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "Bağlı cihazlar"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "Meşgul cihazlar"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "Başka cihazla bağlandı"
+
+msgid "IDS_WIFI_POP_AP_DISCONNECTING_ING"
+msgstr "Bağlantı kesiliyor..."
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "Bağlanılıyor..."
+
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "Bağlantı bekleniyor"
+
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "Bağlanamadı"
+
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "Çoklu-bağlantı"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "Hepsini kes"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "Bağlantıyı kes"
+
+msgid "IDS_WFD_NOCONTENT"
+msgstr "Aygıt bulunamadı"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "Kullanımdan sonra Wi-Fi Direct devre dışı bırak"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_ABB"
+msgstr "Kul sonra Wi-Fi Direct dvr dş brkr"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY"
+msgstr "Pil tassarrufu için, kullandıktan snr Wi-Fi Direct devre dışı bırak"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY_ABB"
+msgstr "Pil ömrü içn, kllndktn snr Wi-Fi Direct dvr dş brkr"
+
+msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES"
+msgstr "Wi-Fi Direct cihazlarını tara"
+
+msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES_CURRENT_NETWORK_WILL_BE_DISCONNECTED"
+msgstr "Wi-Fi Direct cihazlarını tara. Mevcut ağ bağlantısı kesilecek"
+
+msgid "IDS_WIFI_BODY_SEARCH_FOR_WI_FI_DIRECT_DEVICES_OR_SEARCH_FOR_DEVICES_ON_OTHER_WI_FI_NETWORKS"
+msgstr "Wi-Fi direct cihazlarını ara veya diğer Wi-Fi ağlarındaki cihazları ara"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection. Continue?"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_CONNECTED"
+msgstr "Wi-Fi Direct bağlandı"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Wi-Fi Direct bağlantısı"
+
+msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_SETTINGS"
+msgstr "Wi-Fi Direct ayarları"
+
+msgid "IDS_WIFI_MBODY_CONFIGURE_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct'i yapılandır"
+
+msgid "IDS_WIFI_MBODY_DISCONNECT_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct bağlntsnı ks"
+
+msgid "IDS_WIFI_MBODY_WI_FI_DIRECT_STATUS"
+msgstr "Wi-Fi Direct durumu"
+
+msgid "IDS_WIFI_OPT1_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "Wi-Fi Direct bağlantısı iptal edilsin mi?"
+
+msgid "IDS_WIFI_POP_CONNECTING_TO_WI_FI_NETWORK_WILL_DISCONNECT_DEVICE_CONNECTED_VIA_WI_FI_DIRECT"
+msgstr "Wi-Fi ağına bağlanmak Wi-Fi Direct ile bağlanan cihazın bağlantısını kesecek"
+
+msgid "IDS_WIFI_POP_CONNECT_TO_OTHER_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct üzerinden diğer cihazlara bağlan"
+
+msgid "IDS_WIFI_POP_DISABLE_MOBILE_AP_TO_USE_WI_FI_DIRECT_Q"
+msgstr "Wi-Fi Direct kullanmak için Mobil AP kapatılsın mı?"
+
+msgid "IDS_WIFI_POP_DISCONNECT_CURRENT_WI_FI_DIRECT_DEVICE_TO_SEARCH_NETWORKS"
+msgstr "Ağları aramak için geçerli Wi-Fi Direct cihazı bağlantısını kesin"
+
+msgid "IDS_WIFI_POP_ENABLING_WI_FI_DIRECT_WILL_TURN_OFF_WI_FI_AND_DISABLE_THE_PORTABLE_WI_FI_HOTSPOT"
+msgstr "Wi-Fi Direct bağlantısını etkinleştirmek, Wi-Fi'yi kapatacak ve taşınabilir Wi-Fi alanını devre dışı bırakacaktır"
+
+msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISABLE_PORTABLE_WI_FI_HOTSPOT"
+msgstr "Wi-Fi Direct kullanmak taşınabilir Wi-Fi alanını devre dışı bırakacak"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_ALREADY_IN_USE_TRY_LATER"
+msgstr "Wi-Fi Direct zaten kullanımda. Daha sonra deneyin"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_CONNECTION_REQUEST_AUTOMATICALLY_DENIED_TO_CONNECT_TURN_OFF_ALLSHARE_CAST"
+msgstr "Wi-Fi Direct bağlantı talebi otomatik olarak reddedildi. Bağlanmak için AllShare Cast'i kapatın"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_WILL_BE_DISCONNECTED_CONTINUE_Q"
+msgstr "Wi-Fi Direct kapatılacak. Devam edilsin mi?"
+
+msgid "IDS_WIFI_POP_WI_FI_IS_DISCONNECTED_WHILE_WI_FI_DIRECT_CONNECTS"
+msgstr "Wi-Fi Direct bağlanırken Wi-Fi bağlantısı kesildi"
+
+msgid "IDS_WIFI_SK1_SEARCH_FOR_WI_FI_DIRECT_DEVICES"
+msgstr "Wi-Fi Direct cihazı ara"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "Cihaz yok"
+
+msgid "IDS_WIFI_SK4_SCAN"
+msgstr "Tara"
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "Durdur"
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "Devre dışı bırakma başarısız"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "Etkinleştirme başarısız"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "Geçerli bağlantı kesilecek. Devam edilsin mi?"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "Kullanılabilir cihazlar"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "Aynı anda en fazla %d cihaz bağlayabilirsiniz"
+
+msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
+msgstr "Şifre çok uzun"
+
+msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
+msgstr "Şifre çok kısa"

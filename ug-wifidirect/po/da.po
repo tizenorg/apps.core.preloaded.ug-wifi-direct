@@ -1,0 +1,117 @@
+msgid "IDS_WFD_CONNECTED"
+msgstr "Forbundet"
+
+msgid "IDS_WFD_CONNECTING"
+msgstr "Opretter forbindelse..."
+
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "Afbryder..."
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "Forbundet"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "Ukendt fejl"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "PIN-koder stemmer ikke overens!"
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "Aktiverer ..."
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "%d valgt"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "Deaktiverer..."
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "Understøttes ikke"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "Scanning"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "Wi-Fi Direct-enheder"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "Rør for at tilslutte"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "Forbind"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "Annuller forbindelse"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "Om Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "Wi-Fi Direct gør det muligt for Wi-Fi-enheder at tilslutte direkte og gøre udskrivning, fildeling, synkronisering og skærmdeling meget enklere og mere praktisk. Tilslutning til enheder, der understøtter Wi-Fi Direct, gør det muligt at dele dit indhold, synkronisere dine data, være social med venner, spille spil, lyd, video og mere ved hjælp af forskellige programmer"
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "Tilsluttede enheder"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "Optagne enheder"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "Sluttet til en anden enhed"
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "Opretter forbindelse..."
+
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "Venter på forbindelse"
+
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "Kunne ikke tilslutte"
+
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "Multi-forbind"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "Frakobl alle"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "Afbryd"
+
+msgid "IDS_WFD_NOCONTENT"
+msgstr "Ingen enheder fundet"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection. Continue?"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Wi-Fi Direct-forbindelse"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "Annuller Wi-Fi Direct-forbindelse?"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "Ingen enheder"
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "Stop"
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "Deaktivering mislykkedes"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "Aktivering mislykkedes"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "Den aktuelle forbindelse vil blive afbrudt. Vil du fortsætte?"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "Tilgængelige enheder"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "Du kan tilslutte op til %d enheder på samme tid"
+

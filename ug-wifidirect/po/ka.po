@@ -1,0 +1,117 @@
+msgid "IDS_WFD_CONNECTED"
+msgstr "დაკავშირებულია"
+
+msgid "IDS_WFD_CONNECTING"
+msgstr "უკავშირდება..."
+
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "გამორთვა..."
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "დაკავშირებულია"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "უცნობი შეცდომა"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "PIN–ები არ თანხვდება!"
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "აქტიურდება..."
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "%d არჩეულია"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "გამორთვა..."
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "გაუთვალისწინებელი"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "სკანირება"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "Wi-Fi Direct მოწყობილობები"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "დააკაკუნეთ, რომ დაუკავშირდეთ"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "კავშირი"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "დაკავშირების გაუქმება"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "Wi-Fi Direct-ის შესახებ"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "Wi-Fi Direct ააქტიურებს Wi-Fi მოწყობილობებს, პირდაპირ დასაკავშირებლად, ამოსაბეჭდად, ფაილის გასაზიარებლად, სინქრონიზაციისთვის და ეკრანის გასაზიარებლად, გაცილებით მარტივად და უფრო მოხერხებულად. ისეთ მოწყობილობებთან დაკავშირება, რომლებშიც მუშაობს Wi-Fi Direct, გაძლევთ შესაძლებლობას გააზიაროთ მასალა, დაასინქრონოთ მონაცემები, დაამყაროთ ურთიერთობა მეგობრებთან, ითამაშოთ, ჩართოთ აუდიო, ვიდეო და ა.შ., სხვადასხვა პროგრამების გამოყენებით."
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "დაკავშირებული მოწყობილობები"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "დაკავებული აპარატები"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "დაკავშირებულია სხვა აპარატთან"
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "უკავშირდება..."
+
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "დაკავშირების ლოდინი"
+
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "ვერ დაკავშირდა"
+
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "მრავალი კავშირი"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "ყველა კავშირის გათიშვა"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "გათიშვა"
+
+msgid "IDS_WFD_NOCONTENT"
+msgstr "მოწყობილობები ვერ მოიძებნა"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection. Continue?"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Wi-Fi Direct კავშირი"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "შეწყდეს Wi-Fi Direct კავშირი?"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "მოწყობილობები არ არის"
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "შეჩერება"
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "დეაქტივაცია ვერ შესრულდა"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "ვერ გააქტიურდა"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "მიმდინარე კავშირი გამოირთვება. განაგრძობთ?"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "მისაწვდომი მოწყობილობები"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "შეგიძლიათ ერთდროულად დაუკავშირდეთ %d-მდე მოწყობილობას"
+
