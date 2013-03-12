@@ -1,0 +1,374 @@
+msgid "IDS_WFD_CONNECTED"
+msgstr "已连接"
+
+msgid "IDS_WFD_CONNECTING"
+msgstr "连接中..."
+
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "正在断开..."
+
+msgid ""
+msgstr "正在激活Wi-Fi..."
+
+msgid "IDS_WIFI_POP_DEACTIVATING_WI_FI_ING"
+msgstr "正在取消Wi-Fi..."
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "已连接"
+
+msgid "IDS_COM_POP_NETWORK_INTERNAL_ERR"
+msgstr "内部错误"
+
+msgid "IDS_COM_POP_RETRIEVED"
+msgstr "已取回"
+
+msgid "IDS_COM_POP_RETRIEVING_FAILED"
+msgstr "取回失败"
+
+msgid "IDS_COM_SK_CANCEL"
+msgstr "取消"
+
+msgid "IDS_ST_BODY_INTERNAL_ERROR"
+msgstr "内部错误"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "未知错误"
+
+msgid "IDS_COM_POP_NETWORK_ERROR"
+msgstr "网络故障"
+
+msgid "IDS_COM_BODY_NO_SEARCH_RESULTS"
+msgstr "无搜索结果"
+
+msgid "IDS_COM_POP_SEARCHING"
+msgstr "正在搜索"
+
+msgid "IDS_WIFI_POP_DISCONNECTING_FAILED"
+msgstr "断开连接失败"
+
+msgid "IDS_ST_BODY_ENTER_NEW_PASSWORD"
+msgstr "输入新密码"
+
+msgid "IDS_COM_POP_UNKNOWN_ERROR_UNABLE_TO_LAUNCH_APPLICATION"
+msgstr "未知错误。无法启动应用程序"
+
+msgid "IDS_COM_POP_ACCEPT"
+msgstr "接受"
+
+msgid "IDS_COM_POP_CONNECTING"
+msgstr "连接中..."
+
+msgid "IDS_COM_POP_ERROR"
+msgstr "出错"
+
+msgid "IDS_COM_POP_REJECT"
+msgstr "拒绝"
+
+msgid "IDS_COM_POP_REJECTED"
+msgstr "被拒绝"
+
+msgid "IDS_COM_BODY_SELECT_ALL"
+msgstr "全选"
+
+msgid "IDS_COM_POP_FAILED"
+msgstr "失败"
+
+msgid "IDS_COM_SK_ACCEPT"
+msgstr "接受"
+
+msgid "IDS_ST_BODY_ENTER_4_TO_8_DIGIT_PIN"
+msgstr "输入4-8位数字的PIN码"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "PIN 码不匹配！"
+
+msgid "IDS_ST_POP_YES"
+msgstr "是"
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "激活中..."
+
+msgid "IDS_COM_POP_DEACTIVATED"
+msgstr "已取消"
+
+msgid "IDS_COM_SK_OK"
+msgstr "确定"
+
+msgid "IDS_COM_SK_YES"
+msgstr "是"
+
+msgid "IDS_WIFI_HEADER_MOBILE_HOTSPOT_VZW"
+msgstr "移动热点"
+
+msgid "IDS_ST_BODY_ENTER_CURRENT_PASSWORD"
+msgstr "输入当前密码"
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "已选择%d"
+
+msgid "IDS_ST_POP_SEARCHING_ING"
+msgstr "正在搜索"
+
+msgid "IDS_COM_POP_NOTHING_SELECTED"
+msgstr "未选择"
+
+msgid "IDS_COM_OPT1_WI_FI_DIRECT"
+msgstr "Wi-Fi直连"
+
+msgid "IDS_COM_POP_DISCONNECTED"
+msgstr "已断开"
+
+msgid "IDS_WIFI_MBODY_MOBILE_HOTSPOT_VZW"
+msgstr "移动热点"
+
+msgid "IDS_WIFI_BODY_IP_ADDRESS"
+msgstr "IP 地址"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "正在取消..."
+
+msgid "IDS_COM_POP_UNEXPECTED_ERROR"
+msgstr "意外错误"
+
+msgid "IDS_COM_POP_NETWORK_CONNECTION_ERROR"
+msgstr "网络连接错误"
+
+msgid "IDS_COM_BODY_OPERATION_FAILED"
+msgstr "操作失败"
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "不支持"
+
+msgid "IDS_COM_POP_UNSUPPORTED"
+msgstr "不支持"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi直连"
+
+msgid "IDS_COM_POP_ACCEPTED"
+msgstr "接收"
+
+msgid "IDS_WIFI_BODY_MAC_ADDRESS"
+msgstr "MAC 地址"
+
+msgid "IDS_WIFI_POP_AUTOMATIC_CONNECTION_NETWORK_WILL_DISABLED_CONTINUE_Q_MSG"
+msgstr "自动连接到此网络将被禁用。继续吗？"
+
+msgid "IDS_COM_POP_PROGRESSING_ING"
+msgstr "进行中..."
+
+msgid "IDS_WIFI_BODY_CONNECT"
+msgstr "连接"
+
+msgid "IDS_WIFI_HEADER_WI_FI"
+msgstr "Wi-Fi"
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "扫描"
+
+msgid "IDS_WIFI_SK3_BACK"
+msgstr "返回"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi直连"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "Wi-Fi直连设备"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "点击并连接"
+
+msgid "IDS_WIFI_SK2_MULTI_CONNECT"
+msgstr "多连接"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "连接"
+
+msgid "IDS_WIFI_OPT_MYNETWORKS_DISCONNECT"
+msgstr "断开"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "取消连接"
+
+msgid "IDS_COM_SK_CANCEL_A"
+msgstr "取消"
+
+msgid "IDS_ST_HEADER_ACTIVATION"
+msgstr "激活"
+
+msgid "IDS_COM_SK_CANCEL_LITE"
+msgstr "取消"
+
+msgid "IDS_ST_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi直连"
+
+msgid "IDS_WIFI_BODY_WI_FI"
+msgstr "Wi-Fi"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "取消"
+
+msgid "IDS_WIFI_BUTTON_CANCEL"
+msgstr "取消"
+
+msgid "IDS_WIFI_BODY_ALLSHARE_CAST"
+msgstr "AllShare Cast"
+
+msgid "IDS_WIFI_POP_MOBILEACCESSSERVICE_ACTIVATING_ING"
+msgstr "激活中..."
+
+msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_CONNECTION"
+msgstr "使用 Wi-Fi 直连将断开当前 Wi-Fi 连接"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "关于 Wi-Fi 直连"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "Wi-Fi 直连使 Wi-Fi 设备能直接连接，让打印、文件共享、同步和屏幕共享更简单更方便。连接至支持 Wi-Fi 直连的设备使其能使用各种应用程序共享您的内容、同步您的数据、与好友进行社交、玩游戏、播放音频、视频以及其他"
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "已连接设备"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "使用中的设备"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "已与另一设备连接"
+
+msgid "IDS_WIFI_POP_AP_DISCONNECTING_ING"
+msgstr "正在断开..."
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "连接中..."
+
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "等待连接"
+
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "连接失败"
+
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "多连接"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "断开所有"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "断开"
+
+msgid "IDS_WFD_NOCONTENT"
+msgstr "未找到设备"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "使用后禁用 Wi-Fi直连"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_ABB"
+msgstr "使用后禁用Wi-Fi直连"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY"
+msgstr "使用后禁用 Wi-Fi直连以节省电池电量"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY_ABB"
+msgstr "在使用后禁用Wi-Fi直连以节省电池"
+
+msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES"
+msgstr "扫描 Wi-Fi直连设备"
+
+msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES_CURRENT_NETWORK_WILL_BE_DISCONNECTED"
+msgstr "扫描Wi-Fi Direct设备。将断开当前网络"
+
+msgid "IDS_WIFI_BODY_SEARCH_FOR_WI_FI_DIRECT_DEVICES_OR_SEARCH_FOR_DEVICES_ON_OTHER_WI_FI_NETWORKS"
+msgstr "搜索Wi-Fi直接设备或在其它Wi-Fi网络上搜索设备"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "使用 Wi-Fi 直连将断开当前 Wi-Fi 连接。是否继续？"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "使用 Wi-Fi 直连将断开当前 Wi-Fi 网络共享。是否继续？"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_CONNECTED"
+msgstr "已连接Wi-Fi直连"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Wi-Fi直连连"
+
+msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_SETTINGS"
+msgstr "Wi-Fi直连设置"
+
+msgid "IDS_WIFI_MBODY_CONFIGURE_WI_FI_DIRECT"
+msgstr "配置Wi-Fi直连"
+
+msgid "IDS_WIFI_MBODY_DISCONNECT_WI_FI_DIRECT"
+msgstr "断开Wi-Fi直连"
+
+msgid "IDS_WIFI_MBODY_WI_FI_DIRECT_STATUS"
+msgstr "直接Wi-Fi状态"
+
+msgid "IDS_WIFI_OPT1_WI_FI_DIRECT"
+msgstr "Wi-Fi直连"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "是否取消 Wi-Fi直连 连接？"
+
+msgid "IDS_WIFI_POP_CONNECTING_TO_WI_FI_NETWORK_WILL_DISCONNECT_DEVICE_CONNECTED_VIA_WI_FI_DIRECT"
+msgstr "连接至 Wi-Fi 网络将断开通过 Wi-Fi 直连连接的设备"
+
+msgid "IDS_WIFI_POP_CONNECT_TO_OTHER_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "通过Wi-Fi直连连接到其它设备"
+
+msgid "IDS_WIFI_POP_DISABLE_MOBILE_AP_TO_USE_WI_FI_DIRECT_Q"
+msgstr "取消移动AP以使用Wi-Fi Direct？"
+
+msgid "IDS_WIFI_POP_DISCONNECT_CURRENT_WI_FI_DIRECT_DEVICE_TO_SEARCH_NETWORKS"
+msgstr "断开当前直接Wi-Fi设备以搜索网络"
+
+msgid "IDS_WIFI_POP_ENABLING_WI_FI_DIRECT_WILL_TURN_OFF_WI_FI_AND_DISABLE_THE_PORTABLE_WI_FI_HOTSPOT"
+msgstr "启用 Wi-Fi 直连将关闭 Wi-Fi 并禁用便携式热点"
+
+msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISABLE_PORTABLE_WI_FI_HOTSPOT"
+msgstr "使用 Wi-Fi 直连将禁用移动 Wi-Fi 热点"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_ALREADY_IN_USE_TRY_LATER"
+msgstr "Wi-Fi Direct已使用。请稍候"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_CONNECTION_REQUEST_AUTOMATICALLY_DENIED_TO_CONNECT_TURN_OFF_ALLSHARE_CAST"
+msgstr "Wi-Fi 直连连接请求被自动拒绝。若要连接，请关闭 AllShare Cast"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_WILL_BE_DISCONNECTED_CONTINUE_Q"
+msgstr "Wi-Fi直连将断开。继续？"
+
+msgid "IDS_WIFI_POP_WI_FI_IS_DISCONNECTED_WHILE_WI_FI_DIRECT_CONNECTS"
+msgstr "当连接直接Wi-Fi时Wi-Fi断开"
+
+msgid "IDS_WIFI_SK1_SEARCH_FOR_WI_FI_DIRECT_DEVICES"
+msgstr "搜索直接Wi-Fi设备"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "没有设备"
+
+msgid "IDS_WIFI_SK4_SCAN"
+msgstr "扫描"
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "停止"
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "停用失败"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "激活失败"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "当前连接将断开。 继续？"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "可用设备"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "您同时可连接最多 %d 台设备"
+
+msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
+msgstr "密码太长"
+
+msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
+msgstr "密码太短"

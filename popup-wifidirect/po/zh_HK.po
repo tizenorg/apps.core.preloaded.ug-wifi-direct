@@ -1,0 +1,374 @@
+msgid "IDS_WFD_CONNECTED"
+msgstr "已連接"
+
+msgid "IDS_WFD_CONNECTING"
+msgstr "連接中..."
+
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "正在中斷連接..."
+
+msgid ""
+msgstr "正在啟動 Wi-Fi..."
+
+msgid "IDS_WIFI_POP_DEACTIVATING_WI_FI_ING"
+msgstr "正在關閉 WiFi..."
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "已連接"
+
+msgid "IDS_COM_POP_NETWORK_INTERNAL_ERR"
+msgstr "內部錯誤"
+
+msgid "IDS_COM_POP_RETRIEVED"
+msgstr "已取回"
+
+msgid "IDS_COM_POP_RETRIEVING_FAILED"
+msgstr "取回失敗"
+
+msgid "IDS_COM_SK_CANCEL"
+msgstr "取消"
+
+msgid "IDS_ST_BODY_INTERNAL_ERROR"
+msgstr "內部錯誤"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "未知錯誤"
+
+msgid "IDS_COM_POP_NETWORK_ERROR"
+msgstr "網絡故障"
+
+msgid "IDS_COM_BODY_NO_SEARCH_RESULTS"
+msgstr "無搜尋結果"
+
+msgid "IDS_COM_POP_SEARCHING"
+msgstr "正在搜尋..."
+
+msgid "IDS_WIFI_POP_DISCONNECTING_FAILED"
+msgstr "中斷連接失敗"
+
+msgid "IDS_ST_BODY_ENTER_NEW_PASSWORD"
+msgstr "輸入新密碼"
+
+msgid "IDS_COM_POP_UNKNOWN_ERROR_UNABLE_TO_LAUNCH_APPLICATION"
+msgstr "不明錯誤。無法啟動應用程式"
+
+msgid "IDS_COM_POP_ACCEPT"
+msgstr "接受"
+
+msgid "IDS_COM_POP_CONNECTING"
+msgstr "連接中..."
+
+msgid "IDS_COM_POP_ERROR"
+msgstr "錯誤"
+
+msgid "IDS_COM_POP_REJECT"
+msgstr "拒絕"
+
+msgid "IDS_COM_POP_REJECTED"
+msgstr "已拒絕"
+
+msgid "IDS_COM_BODY_SELECT_ALL"
+msgstr "選擇全部"
+
+msgid "IDS_COM_POP_FAILED"
+msgstr "失敗"
+
+msgid "IDS_COM_SK_ACCEPT"
+msgstr "接受"
+
+msgid "IDS_ST_BODY_ENTER_4_TO_8_DIGIT_PIN"
+msgstr "輸入 4 至 8 位數 PIN 碼"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "PIN 碼不相符！"
+
+msgid "IDS_ST_POP_YES"
+msgstr "是　"
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "正在啟動..."
+
+msgid "IDS_COM_POP_DEACTIVATED"
+msgstr "已關閉"
+
+msgid "IDS_COM_SK_OK"
+msgstr "確定"
+
+msgid "IDS_COM_SK_YES"
+msgstr "是"
+
+msgid "IDS_WIFI_HEADER_MOBILE_HOTSPOT_VZW"
+msgstr "流動熱點"
+
+msgid "IDS_ST_BODY_ENTER_CURRENT_PASSWORD"
+msgstr "輸入目前密碼"
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "已選擇 %d"
+
+msgid "IDS_ST_POP_SEARCHING_ING"
+msgstr "正在搜尋..."
+
+msgid "IDS_COM_POP_NOTHING_SELECTED"
+msgstr "無已選擇項目"
+
+msgid "IDS_COM_OPT1_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_COM_POP_DISCONNECTED"
+msgstr "已中斷連接"
+
+msgid "IDS_WIFI_MBODY_MOBILE_HOTSPOT_VZW"
+msgstr "流動熱點"
+
+msgid "IDS_WIFI_BODY_IP_ADDRESS"
+msgstr "IP 位址"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "正在關閉..."
+
+msgid "IDS_COM_POP_UNEXPECTED_ERROR"
+msgstr "非預期的錯誤"
+
+msgid "IDS_COM_POP_NETWORK_CONNECTION_ERROR"
+msgstr "網絡連接錯誤"
+
+msgid "IDS_COM_BODY_OPERATION_FAILED"
+msgstr "操作失敗"
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "不支援"
+
+msgid "IDS_COM_POP_UNSUPPORTED"
+msgstr "不支援"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_COM_POP_ACCEPTED"
+msgstr "已接受"
+
+msgid "IDS_WIFI_BODY_MAC_ADDRESS"
+msgstr "MAC 地址"
+
+msgid "IDS_WIFI_POP_AUTOMATIC_CONNECTION_NETWORK_WILL_DISABLED_CONTINUE_Q_MSG"
+msgstr "自動連接此網絡將會關閉。繼續嗎?"
+
+msgid "IDS_COM_POP_PROGRESSING_ING"
+msgstr "正在進行..."
+
+msgid "IDS_WIFI_BODY_CONNECT"
+msgstr "連接"
+
+msgid "IDS_WIFI_HEADER_WI_FI"
+msgstr "Wi-Fi"
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "掃描"
+
+msgid "IDS_WIFI_SK3_BACK"
+msgstr "返回"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "Wi-Fi Direct 裝置"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "輕觸以連接"
+
+msgid "IDS_WIFI_SK2_MULTI_CONNECT"
+msgstr "多點連接"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "連接"
+
+msgid "IDS_WIFI_OPT_MYNETWORKS_DISCONNECT"
+msgstr "中斷連接"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "取消連接"
+
+msgid "IDS_COM_SK_CANCEL_A"
+msgstr "取消"
+
+msgid "IDS_ST_HEADER_ACTIVATION"
+msgstr "啟動"
+
+msgid "IDS_COM_SK_CANCEL_LITE"
+msgstr "取消"
+
+msgid "IDS_ST_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WIFI_BODY_WI_FI"
+msgstr "Wi-Fi"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "取消"
+
+msgid "IDS_WIFI_BUTTON_CANCEL"
+msgstr "取消"
+
+msgid "IDS_WIFI_BODY_ALLSHARE_CAST"
+msgstr "AllShare Cast"
+
+msgid "IDS_WIFI_POP_MOBILEACCESSSERVICE_ACTIVATING_ING"
+msgstr "正在啟動..."
+
+msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_CONNECTION"
+msgstr "使用 Wi-Fi Direct 將中斷目前 Wi-Fi 連接"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "關於 Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "Wi-Fi Direct 讓 Wi-Fi 裝置可直接連接、列印、檔案共享、同步和螢幕共享更加容易且簡便。與支援 Wi-Fi Direct 的裝置連接，使用各種應用程式分享您的內容、同步數據、社群活動、玩遊戲、聽音樂、看影片以及其他。"
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "已連接裝置"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "裝置忙碌"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "已與其他裝置連接"
+
+msgid "IDS_WIFI_POP_AP_DISCONNECTING_ING"
+msgstr "正在中斷連接..."
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "連接中..."
+
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "正在等待連接"
+
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "連接失敗"
+
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "多點連接"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "中斷所有連線"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "中斷連接"
+
+msgid "IDS_WFD_NOCONTENT"
+msgstr "找不到裝置"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "使用後停用 Wi-Fi Direct"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_ABB"
+msgstr "使用後停用 Wi-Fi Direct"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY"
+msgstr "使用後停用 Wi-Fi Direct 以節省電力"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY_ABB"
+msgstr "使用後停用 Wi-Fi Direct 以節省電池電力"
+
+msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES"
+msgstr "掃描 Wi-Fi Direct 裝置"
+
+msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES_CURRENT_NETWORK_WILL_BE_DISCONNECTED"
+msgstr "掃描 Wi-Fi Direct 裝置。將中斷目前網絡連接"
+
+msgid "IDS_WIFI_BODY_SEARCH_FOR_WI_FI_DIRECT_DEVICES_OR_SEARCH_FOR_DEVICES_ON_OTHER_WI_FI_NETWORKS"
+msgstr "搜尋 Wi-Fi Direct 裝置或搜尋其他 Wi-Fi 網絡上的裝置"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection. Continue?"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_CONNECTED"
+msgstr "Wi-Fi Direct 已連接"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Wi-Fi Direct 連接"
+
+msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_SETTINGS"
+msgstr "Wi-Fi Direct 設定"
+
+msgid "IDS_WIFI_MBODY_CONFIGURE_WI_FI_DIRECT"
+msgstr "配置 Wi-Fi Direct"
+
+msgid "IDS_WIFI_MBODY_DISCONNECT_WI_FI_DIRECT"
+msgstr "中斷 Wi-Fi Direct 的連接"
+
+msgid "IDS_WIFI_MBODY_WI_FI_DIRECT_STATUS"
+msgstr "Wi-Fi Direct 狀態"
+
+msgid "IDS_WIFI_OPT1_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "取消 Wi-Fi Direct 連接嗎？"
+
+msgid "IDS_WIFI_POP_CONNECTING_TO_WI_FI_NETWORK_WILL_DISCONNECT_DEVICE_CONNECTED_VIA_WI_FI_DIRECT"
+msgstr "連接至 Wi-Fi 網絡將中斷透過 Wi-Fi Direct 連接的裝置"
+
+msgid "IDS_WIFI_POP_CONNECT_TO_OTHER_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "透過 Wi-Fi Direct 連接至其他裝置"
+
+msgid "IDS_WIFI_POP_DISABLE_MOBILE_AP_TO_USE_WI_FI_DIRECT_Q"
+msgstr "停用 Mobile AP 以使用 Wi-Fi Direct 嗎？"
+
+msgid "IDS_WIFI_POP_DISCONNECT_CURRENT_WI_FI_DIRECT_DEVICE_TO_SEARCH_NETWORKS"
+msgstr "中斷目前 Wi-Fi Direct 裝置的連接以搜尋網絡"
+
+msgid "IDS_WIFI_POP_ENABLING_WI_FI_DIRECT_WILL_TURN_OFF_WI_FI_AND_DISABLE_THE_PORTABLE_WI_FI_HOTSPOT"
+msgstr "啟用 Wi-Fi Direct 將關閉 Wi-Fi 並停用便攜式 Wi-Fi 熱點"
+
+msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISABLE_PORTABLE_WI_FI_HOTSPOT"
+msgstr "使用 Wi-Fi Direct 將停用便攜式 Wi-Fi 熱點"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_ALREADY_IN_USE_TRY_LATER"
+msgstr "Wi-Fi Direct 已在使用中。請稍後再試"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_CONNECTION_REQUEST_AUTOMATICALLY_DENIED_TO_CONNECT_TURN_OFF_ALLSHARE_CAST"
+msgstr "已自動拒絕 Wi-Fi Direct 連接請求。若要連接，請關閉 AllShare Cast"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_WILL_BE_DISCONNECTED_CONTINUE_Q"
+msgstr "Wi-Fi Direct 將中斷連接。繼續嗎？"
+
+msgid "IDS_WIFI_POP_WI_FI_IS_DISCONNECTED_WHILE_WI_FI_DIRECT_CONNECTS"
+msgstr "Wi-Fi Direct 連接時會中斷 Wi-Fi 的連接"
+
+msgid "IDS_WIFI_SK1_SEARCH_FOR_WI_FI_DIRECT_DEVICES"
+msgstr "搜尋 Wi-Fi Direct 裝置"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "無裝置"
+
+msgid "IDS_WIFI_SK4_SCAN"
+msgstr "掃描"
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "停止"
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "關閉失敗"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "啟動失敗"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "目前連接將中斷。要繼續嗎？"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "可用的裝置"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "最多可同時連接 %d 個裝置"
+
+msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
+msgstr "密碼太長"
+
+msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
+msgstr "密碼太短"

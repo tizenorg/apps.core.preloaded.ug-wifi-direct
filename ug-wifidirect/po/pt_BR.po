@@ -1,0 +1,117 @@
+msgid "IDS_WFD_CONNECTED"
+msgstr "Conectado"
+
+msgid "IDS_WFD_CONNECTING"
+msgstr "Conectando..."
+
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "Desconectando..."
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "Conectado"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "Erro desconhecido"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "Os PINs não correspondem"
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "Ativando…"
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "%d selecionada"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "Desativando…"
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "Não suportado"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "Pesquisar"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "Dispositivos Wi-Fi Direct"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "Tocar para conectar"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "Conectar"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "Cancelar conexão"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "Sobre Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "O Wi-Fi Direct permite que dispositivos Wi-Fi se conectem diretamente, tornando a impressão, o compartilhamento de arquivos, a sincronização e o compartilhamento de telas muito mais simples e convenientes. Conectar a dispositivos compatíveis com Wi-Fi Direct torna possível compartilhar seu conteúdo, sincronizar dados, socializar com amigos, jogar, ouvir música, assistir vídeos e muito mais usando vários aplicativos"
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "Dispositivos conectados"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "Dispositivos ocupados"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "Conectado a outro dispositivo"
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "Conectando..."
+
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "Aguardando pela conexão"
+
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "Falha ao conectar"
+
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "Conexão múltipla"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "Desconectar tudo"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "Desativar"
+
+msgid "IDS_WFD_NOCONTENT"
+msgstr "Nenhum dispositivo encontrado"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection. Continue?"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Conexão Wi-Fi Direct"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "Cancelar conexão Wi-Fi Direct?"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "Nenhum dispositivo"
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "Parar"
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "Desativação falhou"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "Falha na ativação"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "A conexão atual será desconectada. Continuar?"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "Dispositivos disponíveis"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "Você pode conectar até %d dispositivos ao mesmo tempo"
+

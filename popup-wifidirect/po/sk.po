@@ -1,0 +1,374 @@
+msgid "IDS_WFD_CONNECTED"
+msgstr "Pripojené"
+
+msgid "IDS_WFD_CONNECTING"
+msgstr "Pripájanie..."
+
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "Odpájanie..."
+
+msgid ""
+msgstr "Aktivuje sa Wi-Fi..."
+
+msgid "IDS_WIFI_POP_DEACTIVATING_WI_FI_ING"
+msgstr "Deaktivuje sa Wi-Fi..."
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "Pripojené"
+
+msgid "IDS_COM_POP_NETWORK_INTERNAL_ERR"
+msgstr "Vnútorná chyba"
+
+msgid "IDS_COM_POP_RETRIEVED"
+msgstr "Načítané"
+
+msgid "IDS_COM_POP_RETRIEVING_FAILED"
+msgstr "Načítanie sa nepodarilo"
+
+msgid "IDS_COM_SK_CANCEL"
+msgstr "Zrušiť"
+
+msgid "IDS_ST_BODY_INTERNAL_ERROR"
+msgstr "Vnútorná chyba"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "Neznáma chyba"
+
+msgid "IDS_COM_POP_NETWORK_ERROR"
+msgstr "Chyba siete"
+
+msgid "IDS_COM_BODY_NO_SEARCH_RESULTS"
+msgstr "Žiadne výsledky vyhľadávania"
+
+msgid "IDS_COM_POP_SEARCHING"
+msgstr "Hľadanie..."
+
+msgid "IDS_WIFI_POP_DISCONNECTING_FAILED"
+msgstr "Odpojenie zlyhalo"
+
+msgid "IDS_ST_BODY_ENTER_NEW_PASSWORD"
+msgstr "Zadajte nové heslo"
+
+msgid "IDS_COM_POP_UNKNOWN_ERROR_UNABLE_TO_LAUNCH_APPLICATION"
+msgstr "Neznáma chyba. Aplikácia sa nedá spustiť"
+
+msgid "IDS_COM_POP_ACCEPT"
+msgstr "Prijať"
+
+msgid "IDS_COM_POP_CONNECTING"
+msgstr "Pripájanie..."
+
+msgid "IDS_COM_POP_ERROR"
+msgstr "Chyba"
+
+msgid "IDS_COM_POP_REJECT"
+msgstr "Odmietnuť"
+
+msgid "IDS_COM_POP_REJECTED"
+msgstr "Odmietnuté"
+
+msgid "IDS_COM_BODY_SELECT_ALL"
+msgstr "Vybrať všetky"
+
+msgid "IDS_COM_POP_FAILED"
+msgstr "Nepodarilo sa"
+
+msgid "IDS_COM_SK_ACCEPT"
+msgstr "Prijať"
+
+msgid "IDS_ST_BODY_ENTER_4_TO_8_DIGIT_PIN"
+msgstr "Zadajte 4- až 8-ciferný PIN"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "PIN kódy sa nezhodujú!"
+
+msgid "IDS_ST_POP_YES"
+msgstr "Áno"
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "Aktivácia..."
+
+msgid "IDS_COM_POP_DEACTIVATED"
+msgstr "Deaktivované"
+
+msgid "IDS_COM_SK_OK"
+msgstr "OK"
+
+msgid "IDS_COM_SK_YES"
+msgstr "Áno"
+
+msgid "IDS_WIFI_HEADER_MOBILE_HOTSPOT_VZW"
+msgstr "Mobile Hotspot"
+
+msgid "IDS_ST_BODY_ENTER_CURRENT_PASSWORD"
+msgstr "Zadajte aktuálne heslo"
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "Vybraté: %d"
+
+msgid "IDS_ST_POP_SEARCHING_ING"
+msgstr "Hľadanie..."
+
+msgid "IDS_COM_POP_NOTHING_SELECTED"
+msgstr "Nič nie je vybrané"
+
+msgid "IDS_COM_OPT1_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_COM_POP_DISCONNECTED"
+msgstr "Odpojené"
+
+msgid "IDS_WIFI_MBODY_MOBILE_HOTSPOT_VZW"
+msgstr "Mobile Hotspot"
+
+msgid "IDS_WIFI_BODY_IP_ADDRESS"
+msgstr "Adresa IP"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "Deaktivácia..."
+
+msgid "IDS_COM_POP_UNEXPECTED_ERROR"
+msgstr "Neočakávaná chyba"
+
+msgid "IDS_COM_POP_NETWORK_CONNECTION_ERROR"
+msgstr "Chyba pripojenia k sieti"
+
+msgid "IDS_COM_BODY_OPERATION_FAILED"
+msgstr "Operácia zlyhala"
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "Nepodporované"
+
+msgid "IDS_COM_POP_UNSUPPORTED"
+msgstr "Nie je podporované"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_COM_POP_ACCEPTED"
+msgstr "Prijaté"
+
+msgid "IDS_WIFI_BODY_MAC_ADDRESS"
+msgstr "Adresa MAC"
+
+msgid "IDS_WIFI_POP_AUTOMATIC_CONNECTION_NETWORK_WILL_DISABLED_CONTINUE_Q_MSG"
+msgstr "Automatické pripojenie na túto sieť bude zakázané. Pokračovať?"
+
+msgid "IDS_COM_POP_PROGRESSING_ING"
+msgstr "Vykonávanie..."
+
+msgid "IDS_WIFI_BODY_CONNECT"
+msgstr "Pripojiť"
+
+msgid "IDS_WIFI_HEADER_WI_FI"
+msgstr "Wi-Fi"
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "Vyhľadať"
+
+msgid "IDS_WIFI_SK3_BACK"
+msgstr "Späť"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "Zariadenia Wi-Fi Direct"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "Ťuknite na pripojenie"
+
+msgid "IDS_WIFI_SK2_MULTI_CONNECT"
+msgstr "Viacnásobné pripojenie"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "Pripojiť"
+
+msgid "IDS_WIFI_OPT_MYNETWORKS_DISCONNECT"
+msgstr "Odpojiť"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "Zrušiť pripojenie"
+
+msgid "IDS_COM_SK_CANCEL_A"
+msgstr "Zruš."
+
+msgid "IDS_ST_HEADER_ACTIVATION"
+msgstr "Aktivácia"
+
+msgid "IDS_COM_SK_CANCEL_LITE"
+msgstr "Zruš."
+
+msgid "IDS_ST_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WIFI_BODY_WI_FI"
+msgstr "Wi-Fi"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Zruš."
+
+msgid "IDS_WIFI_BUTTON_CANCEL"
+msgstr "Zrušiť"
+
+msgid "IDS_WIFI_BODY_ALLSHARE_CAST"
+msgstr "AllShare Cast"
+
+msgid "IDS_WIFI_POP_MOBILEACCESSSERVICE_ACTIVATING_ING"
+msgstr "Aktivácia..."
+
+msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_CONNECTION"
+msgstr "Použitím spojenia Wi-Fi Direct sa odpojí aktuálne spojenie Wi-Fi"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "Inform. o Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "Wi-Fi Direct umožňuje zariadeniam siete Wi-Fi pripájať sa priamo, čo umožňuje oveľa jednoduchšie a pohodlnejšie tlačiť, zdieľať súbory, synchronizovať a zdieľať obrazovku. Pripojenie k zariadeniam, ktoré podporujú technológiu Wi-Fi Direct, umožňuje zdieľať obsah, synchronizovať údaje, komunikovať s priateľmi, hrať hry, prehrávať zvuky, videá a ďalší obsah použitím rozličných aplikácií"
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "Pripojené zariadenia"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "﻿Zaneprázdnené zariadenia"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "Pripojené k inému zariadeniu"
+
+msgid "IDS_WIFI_POP_AP_DISCONNECTING_ING"
+msgstr "Odpájanie..."
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "Pripájanie..."
+
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "Čaká sa na pripojenie"
+
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "Nepodarilo sa pripojiť"
+
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "Viacnásobné pripojenie"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "Odpojiť všetky"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "Odpojiť"
+
+msgid "IDS_WFD_NOCONTENT"
+msgstr "Nenašli sa žiadne zariadenia"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "Vypnúť Wi-Fi Direct po použití"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_ABB"
+msgstr "Vypnúť Wi-Fi Direct po použití"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY"
+msgstr "Vypnúť Wi-Fi Direct po použití z dôvodu šetrenia batérie"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY_ABB"
+msgstr "Vypnúť Wi-Fi Direct po použití na šetrenie batérie"
+
+msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES"
+msgstr "Hľadanie zariadení Wi-Fi Direct"
+
+msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES_CURRENT_NETWORK_WILL_BE_DISCONNECTED"
+msgstr "Hľadanie zariadení Wi-Fi Direct. Aktuálna sieť sa odpojí"
+
+msgid "IDS_WIFI_BODY_SEARCH_FOR_WI_FI_DIRECT_DEVICES_OR_SEARCH_FOR_DEVICES_ON_OTHER_WI_FI_NETWORKS"
+msgstr "Hľadanie zariadení Wi-Fi Direct alebo hľadanie zariadení v iných sieťach Wi-Fi"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection. Continue?"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_CONNECTED"
+msgstr "Wi-Fi Direct je pripojené"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Pripojenie Wi-Fi Direct"
+
+msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_SETTINGS"
+msgstr "Nastavenia siete Wi-Fi Direct"
+
+msgid "IDS_WIFI_MBODY_CONFIGURE_WI_FI_DIRECT"
+msgstr "Konfigurovať Wi-Fi Direct"
+
+msgid "IDS_WIFI_MBODY_DISCONNECT_WI_FI_DIRECT"
+msgstr "Odpojiť Wi-Fi Direct"
+
+msgid "IDS_WIFI_MBODY_WI_FI_DIRECT_STATUS"
+msgstr "Stav siete Wi-Fi Direct"
+
+msgid "IDS_WIFI_OPT1_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "Zrušiť pripojenie Wi-Fi Direct?"
+
+msgid "IDS_WIFI_POP_CONNECTING_TO_WI_FI_NETWORK_WILL_DISCONNECT_DEVICE_CONNECTED_VIA_WI_FI_DIRECT"
+msgstr "Pripojením k sieti Wi-Fi sa odpojí zariadenie pripojené cez Wi-Fi Direct"
+
+msgid "IDS_WIFI_POP_CONNECT_TO_OTHER_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "Pripojiť k iným zariadeniam cez Wi-Fi Direct"
+
+msgid "IDS_WIFI_POP_DISABLE_MOBILE_AP_TO_USE_WI_FI_DIRECT_Q"
+msgstr "Zakázať mobilný prístupový bod na použitie služby Wi-Fi Direct?"
+
+msgid "IDS_WIFI_POP_DISCONNECT_CURRENT_WI_FI_DIRECT_DEVICE_TO_SEARCH_NETWORKS"
+msgstr "Pred hľadaním sietí odpojte aktuálne zariadenie Wi-Fi Direct"
+
+msgid "IDS_WIFI_POP_ENABLING_WI_FI_DIRECT_WILL_TURN_OFF_WI_FI_AND_DISABLE_THE_PORTABLE_WI_FI_HOTSPOT"
+msgstr "Aktiváciou spojenia Wi-Fi Direct sa vypne Wi-Fi a deaktivuje prenosný prístupový bod Wi-Fi"
+
+msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISABLE_PORTABLE_WI_FI_HOTSPOT"
+msgstr "Použitím spojenia Wi-Fi Direct sa vypne prenosný prístupový bod Wi-Fi"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_ALREADY_IN_USE_TRY_LATER"
+msgstr "Wi-Fi Direct sa už používa. Skúste to neskôr"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_CONNECTION_REQUEST_AUTOMATICALLY_DENIED_TO_CONNECT_TURN_OFF_ALLSHARE_CAST"
+msgstr "Žiadosť o pripojenie Wi-Fi Direct bola automaticky odmietnutá. Ak sa chcete pripojiť, vypnite AllShare Cast"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_WILL_BE_DISCONNECTED_CONTINUE_Q"
+msgstr "Wi-Fi Direct sa odpojí. Pokračovať?"
+
+msgid "IDS_WIFI_POP_WI_FI_IS_DISCONNECTED_WHILE_WI_FI_DIRECT_CONNECTS"
+msgstr "Sieť Wi-Fi je odpojená počas pripájania služby Wi-Fi Direct"
+
+msgid "IDS_WIFI_SK1_SEARCH_FOR_WI_FI_DIRECT_DEVICES"
+msgstr "Hľadať zariadenia Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "Žiadne zariadenia"
+
+msgid "IDS_WIFI_SK4_SCAN"
+msgstr "Prehľa-dať"
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "Stop"
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "Deaktivácia zlyhala"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "Aktivácia sa nepodarila"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "Aktuálne pripojenie bude odpojené. Pokračovať?"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "Dostupné zariadenia"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "Naraz môžete pripojiť max. %d zariadení"
+
+msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
+msgstr "Heslo je príliš dlhé"
+
+msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
+msgstr "Heslo je príliš krátke"

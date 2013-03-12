@@ -1,0 +1,374 @@
+msgid "IDS_WFD_CONNECTED"
+msgstr "Csatlakoztatva"
+
+msgid "IDS_WFD_CONNECTING"
+msgstr "Kapcsolódás..."
+
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "Szétkapcsolás..."
+
+msgid ""
+msgstr "Wi-Fi aktiválása..."
+
+msgid "IDS_WIFI_POP_DEACTIVATING_WI_FI_ING"
+msgstr "Wi-Fi deaktiválása..."
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "Csatlakoztatva"
+
+msgid "IDS_COM_POP_NETWORK_INTERNAL_ERR"
+msgstr "Belső hiba"
+
+msgid "IDS_COM_POP_RETRIEVED"
+msgstr "Letöltve"
+
+msgid "IDS_COM_POP_RETRIEVING_FAILED"
+msgstr "A letöltés sikertelen"
+
+msgid "IDS_COM_SK_CANCEL"
+msgstr "Mégse"
+
+msgid "IDS_ST_BODY_INTERNAL_ERROR"
+msgstr "Belső hiba"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "Ismeretlen hiba"
+
+msgid "IDS_COM_POP_NETWORK_ERROR"
+msgstr "Hálózati hiba"
+
+msgid "IDS_COM_BODY_NO_SEARCH_RESULTS"
+msgstr "Nincs találat"
+
+msgid "IDS_COM_POP_SEARCHING"
+msgstr "Keresés..."
+
+msgid "IDS_WIFI_POP_DISCONNECTING_FAILED"
+msgstr "Szétkapcsolás sikertelen"
+
+msgid "IDS_ST_BODY_ENTER_NEW_PASSWORD"
+msgstr "Írja be az új jelszót"
+
+msgid "IDS_COM_POP_UNKNOWN_ERROR_UNABLE_TO_LAUNCH_APPLICATION"
+msgstr "Ismeretlen eredetű hiba. Az alkalmazást nem lehet elindítani"
+
+msgid "IDS_COM_POP_ACCEPT"
+msgstr "Fogadás"
+
+msgid "IDS_COM_POP_CONNECTING"
+msgstr "Kapcsolódás..."
+
+msgid "IDS_COM_POP_ERROR"
+msgstr "Hiba"
+
+msgid "IDS_COM_POP_REJECT"
+msgstr "Elutasít"
+
+msgid "IDS_COM_POP_REJECTED"
+msgstr "Elutasítva"
+
+msgid "IDS_COM_BODY_SELECT_ALL"
+msgstr "Összes kijelölése"
+
+msgid "IDS_COM_POP_FAILED"
+msgstr "Sikertelen"
+
+msgid "IDS_COM_SK_ACCEPT"
+msgstr "Elfogad"
+
+msgid "IDS_ST_BODY_ENTER_4_TO_8_DIGIT_PIN"
+msgstr "4–8 számjegyű PIN kódot adjon meg"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "A PIN kódok nem egyeznek!"
+
+msgid "IDS_ST_POP_YES"
+msgstr "Igen"
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "Aktiválás..."
+
+msgid "IDS_COM_POP_DEACTIVATED"
+msgstr "Kikapcsolva"
+
+msgid "IDS_COM_SK_OK"
+msgstr "OK"
+
+msgid "IDS_COM_SK_YES"
+msgstr "Igen"
+
+msgid "IDS_WIFI_HEADER_MOBILE_HOTSPOT_VZW"
+msgstr "Mobile Hotspot"
+
+msgid "IDS_ST_BODY_ENTER_CURRENT_PASSWORD"
+msgstr "Adja meg a jelenlegi jelszót"
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "%d kiválasztva"
+
+msgid "IDS_ST_POP_SEARCHING_ING"
+msgstr "Keresés..."
+
+msgid "IDS_COM_POP_NOTHING_SELECTED"
+msgstr "Semmi nincs kiválasztva"
+
+msgid "IDS_COM_OPT1_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_COM_POP_DISCONNECTED"
+msgstr "Szétkapcsolva"
+
+msgid "IDS_WIFI_MBODY_MOBILE_HOTSPOT_VZW"
+msgstr "Mobile Hotspot"
+
+msgid "IDS_WIFI_BODY_IP_ADDRESS"
+msgstr "IP-cím"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "Deaktiválás..."
+
+msgid "IDS_COM_POP_UNEXPECTED_ERROR"
+msgstr "Váratlan hiba"
+
+msgid "IDS_COM_POP_NETWORK_CONNECTION_ERROR"
+msgstr "Hálózati kapcsolat hibája"
+
+msgid "IDS_COM_BODY_OPERATION_FAILED"
+msgstr "Sikertelen művelet"
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "Nem támogatott"
+
+msgid "IDS_COM_POP_UNSUPPORTED"
+msgstr "Nem támogatott"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_COM_POP_ACCEPTED"
+msgstr "Elfogadva"
+
+msgid "IDS_WIFI_BODY_MAC_ADDRESS"
+msgstr "MAC-cím"
+
+msgid "IDS_WIFI_POP_AUTOMATIC_CONNECTION_NETWORK_WILL_DISABLED_CONTINUE_Q_MSG"
+msgstr "Ezzel letiltja az automatikus kapcsolódást ehhez a hálózathoz. Folytatja?"
+
+msgid "IDS_COM_POP_PROGRESSING_ING"
+msgstr "Folyamatban..."
+
+msgid "IDS_WIFI_BODY_CONNECT"
+msgstr "Kapcsolódás"
+
+msgid "IDS_WIFI_HEADER_WI_FI"
+msgstr "Wi-Fi"
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "Keresés"
+
+msgid "IDS_WIFI_SK3_BACK"
+msgstr "Vissza"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "Wi-Fi Direct-eszközök"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "Érintse meg a kapcsolódáshoz"
+
+msgid "IDS_WIFI_SK2_MULTI_CONNECT"
+msgstr "Többszörös kapcsolat"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "Kapcsolódik"
+
+msgid "IDS_WIFI_OPT_MYNETWORKS_DISCONNECT"
+msgstr "Szétkapcsolás"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "Kapcsolat megszakítása"
+
+msgid "IDS_COM_SK_CANCEL_A"
+msgstr "Mégse"
+
+msgid "IDS_ST_HEADER_ACTIVATION"
+msgstr "Aktivál"
+
+msgid "IDS_COM_SK_CANCEL_LITE"
+msgstr "Mégse"
+
+msgid "IDS_ST_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WIFI_BODY_WI_FI"
+msgstr "Wi-Fi"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Mégse"
+
+msgid "IDS_WIFI_BUTTON_CANCEL"
+msgstr "Mégse"
+
+msgid "IDS_WIFI_BODY_ALLSHARE_CAST"
+msgstr "AllShare Cast"
+
+msgid "IDS_WIFI_POP_MOBILEACCESSSERVICE_ACTIVATING_ING"
+msgstr "Aktiválás..."
+
+msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_CONNECTION"
+msgstr "A Wi-Fi Direct használata esetén megszakad az aktuális Wi-Fi kapcsolat"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "A Wi-Fi Directről"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "A Wi-Fi Direct lehetővé teszi a Wi-Fi eszközök közvetlen csatlakoztatását, így jóval egyszerűbbé és kényelmesebbé válik a nyomtatás, fájlmegosztás, szinkronizálás és képernyőmegosztás. Wi-Fi Directet támogató eszközökhöz kapcsolódva tartalmat oszthat meg, adatokat szinkronizálhat, közösségi életet élhet ismerőseivel, játszhat, hangot, videót és egyebeket játszhat le, és különféle alkalmazásokat használhat"
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "Csatlakoztatott eszközök"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "Foglalt eszközök"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "Másik eszközhöz csatlakozik"
+
+msgid "IDS_WIFI_POP_AP_DISCONNECTING_ING"
+msgstr "Szétkapcsolás..."
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "Kapcsolódás..."
+
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "Várakozás kapcsolatra"
+
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "Nem sikerült kapcsolódni"
+
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "Többszörös kapcsolat"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "Összes szétkapcsolása"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "Szétkapcsolás"
+
+msgid "IDS_WFD_NOCONTENT"
+msgstr "Nem található eszköz"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "Használat után tiltsa le a Wi-Fi Direct funkciót"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_ABB"
+msgstr "Haszn. után tiltsa le a Wi-Fi Directet"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY"
+msgstr "Használat után akkukíméléshez le a Wi-Fi Direct funkciót"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY_ABB"
+msgstr "Haszn. után akkukíméléshez tiltsa le a Wi-Fi Directet"
+
+msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES"
+msgstr "Wi-Fi Direct-eszközök keresése"
+
+msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES_CURRENT_NETWORK_WILL_BE_DISCONNECTED"
+msgstr "Wi-Fi Direct-eszközök keresése. A jelenlegi hálózati kapcsolat megszűnik"
+
+msgid "IDS_WIFI_BODY_SEARCH_FOR_WI_FI_DIRECT_DEVICES_OR_SEARCH_FOR_DEVICES_ON_OTHER_WI_FI_NETWORKS"
+msgstr "Wi-Fi Direct-eszközök keresése vagy eszközkeresés más Wi-Fi hálózatokon"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection. Continue?"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_CONNECTED"
+msgstr "Wi-Fi Direct csatlakoztatva"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Wi-Fi Direct-kapcsolat"
+
+msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_SETTINGS"
+msgstr "Wi-Fi Direct-beállítások"
+
+msgid "IDS_WIFI_MBODY_CONFIGURE_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct konfig."
+
+msgid "IDS_WIFI_MBODY_DISCONNECT_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct-kapcs. bont."
+
+msgid "IDS_WIFI_MBODY_WI_FI_DIRECT_STATUS"
+msgstr "Wi-Fi Direct állapota"
+
+msgid "IDS_WIFI_OPT1_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "Megszakítja a Wi-Fi Direct-kapcsolatot?"
+
+msgid "IDS_WIFI_POP_CONNECTING_TO_WI_FI_NETWORK_WILL_DISCONNECT_DEVICE_CONNECTED_VIA_WI_FI_DIRECT"
+msgstr "Wi-Fi hálózathoz történő kapcsolódás esetén megszakad a kapcsolat a Wi-Fi Direct segítségével csatlakoztatott eszközzel"
+
+msgid "IDS_WIFI_POP_CONNECT_TO_OTHER_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "Kapcsolódás más eszközökhöz Wi-Fi Direct segítségével"
+
+msgid "IDS_WIFI_POP_DISABLE_MOBILE_AP_TO_USE_WI_FI_DIRECT_Q"
+msgstr "Kikapcsolja a mobil AP-ot a Wi-Fi Direct használatához?"
+
+msgid "IDS_WIFI_POP_DISCONNECT_CURRENT_WI_FI_DIRECT_DEVICE_TO_SEARCH_NETWORKS"
+msgstr "Hálózatkereséshez válassza le az aktuális Wi-Fi Direct-eszközt"
+
+msgid "IDS_WIFI_POP_ENABLING_WI_FI_DIRECT_WILL_TURN_OFF_WI_FI_AND_DISABLE_THE_PORTABLE_WI_FI_HOTSPOT"
+msgstr "A Wi-Fi Direct engedélyezésével kikapcsolja a Wi-Fi-t, és letiltja a mobil Wi-Fi hotspotot"
+
+msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISABLE_PORTABLE_WI_FI_HOTSPOT"
+msgstr "A Wi-Fi Direct használata esetén le lesz tiltva a mobil Wi-Fi hotspot"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_ALREADY_IN_USE_TRY_LATER"
+msgstr "A Wi-Fi Direct már használatban van. Próbálja meg később"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_CONNECTION_REQUEST_AUTOMATICALLY_DENIED_TO_CONNECT_TURN_OFF_ALLSHARE_CAST"
+msgstr "Wi-Fi Direct kapcsolódási kérés automatikusan elutasítva. A kapcsolódáshoz kapcsolja ki az AllShare Cast funkciót"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_WILL_BE_DISCONNECTED_CONTINUE_Q"
+msgstr "Megszűnik a Wi-Fi Direct-kapcsolat. Folytatja?"
+
+msgid "IDS_WIFI_POP_WI_FI_IS_DISCONNECTED_WHILE_WI_FI_DIRECT_CONNECTS"
+msgstr "Wi-Fi Direct-kapcsolódáskor a Wi-Fi kapcsolat megszűnik"
+
+msgid "IDS_WIFI_SK1_SEARCH_FOR_WI_FI_DIRECT_DEVICES"
+msgstr "Wi-Fi Direct-eszközök keresése"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "Nincs eszköz"
+
+msgid "IDS_WIFI_SK4_SCAN"
+msgstr "Keres"
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "Leállít"
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "Sikertelen deaktiválás"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "Nem sikerült aktiválni"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "A jelenlegi kapcsolat megszakad. Folytatja a műveletet?"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "Elérhető eszközök"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "Egyszerre legfeljebb %d eszközt csatlakoztathat"
+
+msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
+msgstr "A jelszó túl hosszú"
+
+msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
+msgstr "A jelszó túl rövid"

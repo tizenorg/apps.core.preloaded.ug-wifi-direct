@@ -1,0 +1,117 @@
+msgid "IDS_WFD_CONNECTED"
+msgstr "Подключено"
+
+msgid "IDS_WFD_CONNECTING"
+msgstr "Подключение..."
+
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "Отключение..."
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "Подключено"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "Неизвестная ошибка"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "PIN-коды не совпадают."
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "Включение..."
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "Выбрано: %d"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "Выключение..."
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "Не поддерживается"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "Поиск"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "Устройства Wi-Fi Direct"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "Нажмите для подключения"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "Подключиться"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "Отменить подключение"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "Сведения о Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "Wi-Fi Direct позволяет устройствам Wi-Fi подключаться друг к другу напрямую, упрощая печать, синхронизацию, а также общий доступ к файлам и экрану. Подключение к устройствам, поддерживающим Wi-Fi Direct, позволяет обмениваться файлами, синхронизировать данные, общаться с друзьями, играть в игры, просматривать видео и делать многое другое с помощью различных приложений"
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "Подключенные устройства"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "Занятые устройства"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "Подключено к другому устройству"
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "Подключение..."
+
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "Ожидание подключения"
+
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "Сбой подключения"
+
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "Множеств. подключение"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "Отключить все"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "Отключить"
+
+msgid "IDS_WFD_NOCONTENT"
+msgstr "Ни одного устройства не найдено"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection. Continue?"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Подключение Wi-Fi Direct"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "Отменить подключение Wi-Fi Direct?"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "Нет устройств"
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "Стоп"
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "Сбой выключения"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "Сбой активации"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "Текущее подключение будет разорвано. Продолжить?"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "Доступные устройства"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "Можно одновременно подключить до %d устройств"
+

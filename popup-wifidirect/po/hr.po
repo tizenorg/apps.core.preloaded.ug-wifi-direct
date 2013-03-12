@@ -1,0 +1,374 @@
+msgid "IDS_WFD_CONNECTED"
+msgstr "Spojeno"
+
+msgid "IDS_WFD_CONNECTING"
+msgstr "Spajanje..."
+
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "Odspajanje..."
+
+msgid ""
+msgstr "WiFi uključivanje..."
+
+msgid "IDS_WIFI_POP_DEACTIVATING_WI_FI_ING"
+msgstr "WiFi isključivanje..."
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "Spojeno"
+
+msgid "IDS_COM_POP_NETWORK_INTERNAL_ERR"
+msgstr "Interna greška"
+
+msgid "IDS_COM_POP_RETRIEVED"
+msgstr "Preuzeto"
+
+msgid "IDS_COM_POP_RETRIEVING_FAILED"
+msgstr "Preuzimanje neuspješno"
+
+msgid "IDS_COM_SK_CANCEL"
+msgstr "Prekid"
+
+msgid "IDS_ST_BODY_INTERNAL_ERROR"
+msgstr "Interna greška"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "Nepoznata greška"
+
+msgid "IDS_COM_POP_NETWORK_ERROR"
+msgstr "Greška mreže"
+
+msgid "IDS_COM_BODY_NO_SEARCH_RESULTS"
+msgstr "Nema traženih rezultata"
+
+msgid "IDS_COM_POP_SEARCHING"
+msgstr "Pretraživanje..."
+
+msgid "IDS_WIFI_POP_DISCONNECTING_FAILED"
+msgstr "Odspajanje neuspješno"
+
+msgid "IDS_ST_BODY_ENTER_NEW_PASSWORD"
+msgstr "Unesite novu šifru"
+
+msgid "IDS_COM_POP_UNKNOWN_ERROR_UNABLE_TO_LAUNCH_APPLICATION"
+msgstr "Nepoznata greška. Nemoguće pokrenuti aplikaciju"
+
+msgid "IDS_COM_POP_ACCEPT"
+msgstr "Prihvaćam"
+
+msgid "IDS_COM_POP_CONNECTING"
+msgstr "Spajanje..."
+
+msgid "IDS_COM_POP_ERROR"
+msgstr "Greška"
+
+msgid "IDS_COM_POP_REJECT"
+msgstr "Odbaci poziv"
+
+msgid "IDS_COM_POP_REJECTED"
+msgstr "Odbačeno"
+
+msgid "IDS_COM_BODY_SELECT_ALL"
+msgstr "Odaberi sve"
+
+msgid "IDS_COM_POP_FAILED"
+msgstr "Neuspješno"
+
+msgid "IDS_COM_SK_ACCEPT"
+msgstr "Prihvaćam"
+
+msgid "IDS_ST_BODY_ENTER_4_TO_8_DIGIT_PIN"
+msgstr "Unesite PIN od 4 do 8 znamenki"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "PIN-ovi se ne podudarajui!"
+
+msgid "IDS_ST_POP_YES"
+msgstr "Da"
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "Uključivanje..."
+
+msgid "IDS_COM_POP_DEACTIVATED"
+msgstr "Isključeno"
+
+msgid "IDS_COM_SK_OK"
+msgstr "OK"
+
+msgid "IDS_COM_SK_YES"
+msgstr "Da"
+
+msgid "IDS_WIFI_HEADER_MOBILE_HOTSPOT_VZW"
+msgstr "Mobilna pristupna točka"
+
+msgid "IDS_ST_BODY_ENTER_CURRENT_PASSWORD"
+msgstr "Unesite trenutačnu šifru"
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "%d odabrano"
+
+msgid "IDS_ST_POP_SEARCHING_ING"
+msgstr "Pretraživanje..."
+
+msgid "IDS_COM_POP_NOTHING_SELECTED"
+msgstr "Ništa odabrano"
+
+msgid "IDS_COM_OPT1_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_COM_POP_DISCONNECTED"
+msgstr "Odspojeno"
+
+msgid "IDS_WIFI_MBODY_MOBILE_HOTSPOT_VZW"
+msgstr "Mobilna pristupna točka"
+
+msgid "IDS_WIFI_BODY_IP_ADDRESS"
+msgstr "IP adresa"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "Isključivanje..."
+
+msgid "IDS_COM_POP_UNEXPECTED_ERROR"
+msgstr "Neočekivana pogreška"
+
+msgid "IDS_COM_POP_NETWORK_CONNECTION_ERROR"
+msgstr "Greška mrežne veze"
+
+msgid "IDS_COM_BODY_OPERATION_FAILED"
+msgstr "Neuspješno"
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "Nepodržan"
+
+msgid "IDS_COM_POP_UNSUPPORTED"
+msgstr "Nepodržano"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_COM_POP_ACCEPTED"
+msgstr "Prihvaćeno"
+
+msgid "IDS_WIFI_BODY_MAC_ADDRESS"
+msgstr "MAC adresa"
+
+msgid "IDS_WIFI_POP_AUTOMATIC_CONNECTION_NETWORK_WILL_DISABLED_CONTINUE_Q_MSG"
+msgstr "Isključiti će se automatsko spajanje na tu mrežu. Nastaviti?"
+
+msgid "IDS_COM_POP_PROGRESSING_ING"
+msgstr "U tijeku..."
+
+msgid "IDS_WIFI_BODY_CONNECT"
+msgstr "Spoji"
+
+msgid "IDS_WIFI_HEADER_WI_FI"
+msgstr "Wi-Fi"
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "Skeniraj"
+
+msgid "IDS_WIFI_SK3_BACK"
+msgstr "Nazad"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "Uređaji za Wi-Fi Direct"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "Dotaknite za spajanje"
+
+msgid "IDS_WIFI_SK2_MULTI_CONNECT"
+msgstr "Višestruko spajanje"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "Spoji"
+
+msgid "IDS_WIFI_OPT_MYNETWORKS_DISCONNECT"
+msgstr "Odspoji"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "Prekini vezu"
+
+msgid "IDS_COM_SK_CANCEL_A"
+msgstr "Prekid"
+
+msgid "IDS_ST_HEADER_ACTIVATION"
+msgstr "Uključivanje"
+
+msgid "IDS_COM_SK_CANCEL_LITE"
+msgstr "Prekid"
+
+msgid "IDS_ST_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WIFI_BODY_WI_FI"
+msgstr "Wi-Fi"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Prekid"
+
+msgid "IDS_WIFI_BUTTON_CANCEL"
+msgstr "Prekid"
+
+msgid "IDS_WIFI_BODY_ALLSHARE_CAST"
+msgstr "AllShare Cast"
+
+msgid "IDS_WIFI_POP_MOBILEACCESSSERVICE_ACTIVATING_ING"
+msgstr "Uključivanje..."
+
+msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_CONNECTION"
+msgstr "Korištenje Wi-Fi Direct prekida trenutnu Wi-Fi vezu"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "O Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "Wi-Fi Direct omogućuje da se Wi-Fi uređaji direktno spajaju, čime se izuzetno olakšava i pojednostavljuje ispis, dijeljenje datoteka, sinkroniziranje i dijeljenje zaslona. Spajanje s uređajima koji podržavaju Wi-Fi Direct omogućuje vam dijeljenje sadržaja, sinkroniziranje podataka, druženje s prijateljima, igranje igara, reproduciranje audia i videa te još mnogo toga pomoću raznih aplikacija"
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "Spojeni uređaji"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "Zauzeti uređaji"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "Spojen na drugi uređaj"
+
+msgid "IDS_WIFI_POP_AP_DISCONNECTING_ING"
+msgstr "Odspajanje..."
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "Spajanje..."
+
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "Čekanje veze"
+
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "Greška spajanja"
+
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "multi spajanje"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "Prekini sve"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "Prekini vezu"
+
+msgid "IDS_WFD_NOCONTENT"
+msgstr "Nisu pronađeni uređaji"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "Isključi Wi-Fi Direct nakon upotrebe"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_ABB"
+msgstr "Isklj. Wi-Fi Direct nakon upotrebe"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY"
+msgstr "Isključi Wi-Fi Direct nakon upotrebe radi uštede baterije"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY_ABB"
+msgstr "Isklj. Wi-Fi Direct nakon up. radi uštede baterije"
+
+msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES"
+msgstr "Traži Wi-Fi Direct uređaje"
+
+msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES_CURRENT_NETWORK_WILL_BE_DISCONNECTED"
+msgstr "Traži Wi-Fi Direct uređaje. Trenutna će se mreža isključiti"
+
+msgid "IDS_WIFI_BODY_SEARCH_FOR_WI_FI_DIRECT_DEVICES_OR_SEARCH_FOR_DEVICES_ON_OTHER_WI_FI_NETWORKS"
+msgstr "Traži Wi-Fi Direct uređaje ili traži uređaje na drugim Wi-Fi mrežama"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection. Continue?"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_CONNECTED"
+msgstr "Wi-Fi Direct spojen"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Wi-Fi Direct veza"
+
+msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_SETTINGS"
+msgstr "Postavke za Wi-Fi Direct"
+
+msgid "IDS_WIFI_MBODY_CONFIGURE_WI_FI_DIRECT"
+msgstr "Postavi Wi-Fi Direct"
+
+msgid "IDS_WIFI_MBODY_DISCONNECT_WI_FI_DIRECT"
+msgstr "Odspajanje Wi-Fi Direct"
+
+msgid "IDS_WIFI_MBODY_WI_FI_DIRECT_STATUS"
+msgstr "Wi-Fi Direct status"
+
+msgid "IDS_WIFI_OPT1_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "Poništiti Wi-Fi Direct vezu?"
+
+msgid "IDS_WIFI_POP_CONNECTING_TO_WI_FI_NETWORK_WILL_DISCONNECT_DEVICE_CONNECTED_VIA_WI_FI_DIRECT"
+msgstr "Spajanjem na Wi-Fi mrežu odspaja se uređaj spojen putem Wi-Fi Direct"
+
+msgid "IDS_WIFI_POP_CONNECT_TO_OTHER_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "Spojite se na druge uređaje pomoću Wi-Fi Direct"
+
+msgid "IDS_WIFI_POP_DISABLE_MOBILE_AP_TO_USE_WI_FI_DIRECT_Q"
+msgstr "Isključiti mobilnu pristupnu točku radi korištenja Wi-Fi Direct?"
+
+msgid "IDS_WIFI_POP_DISCONNECT_CURRENT_WI_FI_DIRECT_DEVICE_TO_SEARCH_NETWORKS"
+msgstr "Odspoji trenutne Wi-Fi Direct uređaje radi traženja mreža"
+
+msgid "IDS_WIFI_POP_ENABLING_WI_FI_DIRECT_WILL_TURN_OFF_WI_FI_AND_DISABLE_THE_PORTABLE_WI_FI_HOTSPOT"
+msgstr "Uključivanjem Wi-Fi Direct isključit će se Wi-Fi i prijenosna Wi-Fi pristupna točka"
+
+msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISABLE_PORTABLE_WI_FI_HOTSPOT"
+msgstr "Korištenjem Wi-Fi Direct isključit će prijenosnu Wi-Fi pristupnu točku"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_ALREADY_IN_USE_TRY_LATER"
+msgstr "Wi-Fi Direct se koristi. Pokušajte kasnije"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_CONNECTION_REQUEST_AUTOMATICALLY_DENIED_TO_CONNECT_TURN_OFF_ALLSHARE_CAST"
+msgstr "Zahtjev za Wi-Fi Direct vez automatski odbijen. Za povezivanje isključite AllShare Cast"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_WILL_BE_DISCONNECTED_CONTINUE_Q"
+msgstr "Isključit će se Wi-Fi Direct. Nastavak?"
+
+msgid "IDS_WIFI_POP_WI_FI_IS_DISCONNECTED_WHILE_WI_FI_DIRECT_CONNECTS"
+msgstr "Wi-Fi isključen dok se Wi-Fi Direct spaja"
+
+msgid "IDS_WIFI_SK1_SEARCH_FOR_WI_FI_DIRECT_DEVICES"
+msgstr "Traženje Wi-Fi Direct uređaja"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "Nema uređaja"
+
+msgid "IDS_WIFI_SK4_SCAN"
+msgstr "Skeniraj"
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "Zaustavi"
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "Isključivanje neuspješno"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "Aktivacija nije uspjela"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "Aktivna veza će se prekinuti. Nastaviti?"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "Dostupni uređaji"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "U svakom trenutku možete spojiti najviše %d uređaja"
+
+msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
+msgstr "Predugačka šifra"
+
+msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
+msgstr "Šifra prekratka"

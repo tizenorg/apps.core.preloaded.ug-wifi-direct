@@ -1,0 +1,117 @@
+msgid "IDS_WFD_CONNECTED"
+msgstr "已連接"
+
+msgid "IDS_WFD_CONNECTING"
+msgstr "連接中..."
+
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "正在中斷連接..."
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "已連接"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "未知錯誤"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "PIN 碼不相符！"
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "正在啟動..."
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "已選擇 %d"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "正在關閉..."
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "不支援"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "掃描"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "Wi-Fi Direct 裝置"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "輕觸以連接"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "連接"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "取消連接"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "關於 Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "Wi-Fi Direct 讓 Wi-Fi 裝置可直接連接、列印、檔案共享、同步和螢幕共享更加容易且簡便。與支援 Wi-Fi Direct 的裝置連接，使用各種應用程式分享您的內容、同步數據、社群活動、玩遊戲、聽音樂、看影片以及其他。"
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "已連接裝置"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "裝置忙碌"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "已與其他裝置連接"
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "連接中..."
+
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "正在等待連接"
+
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "連接失敗"
+
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "多點連接"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "中斷所有連線"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "中斷連接"
+
+msgid "IDS_WFD_NOCONTENT"
+msgstr "找不到裝置"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection. Continue?"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Wi-Fi Direct 連接"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "取消 Wi-Fi Direct 連接嗎？"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "無裝置"
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "停止"
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "關閉失敗"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "啟動失敗"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "目前連接將中斷。要繼續嗎？"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "可用的裝置"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "最多可同時連接 %d 個裝置"
+

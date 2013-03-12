@@ -1,0 +1,118 @@
+msgid "IDS_WFD_CONNECTED"
+msgstr "जोड़ा गया"
+
+msgid "IDS_WFD_CONNECTING"
+msgstr "जोड़ा जा रहा है…"
+
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "डिस्कनेक्ट हो रहा है..."
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "जोड़ा गया"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "अज्ञात त्रुटि"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "PIN मेल नही खाता!"
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "सक्रिय हो रहा है…"
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "%d चयनित"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "निष्क्रिय हो रहा है…"
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "असमर्थित"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi डायरेक्ट"
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "स्‍कैन"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "वाई-फाई डायरेक्ट डिवाइसें"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "कनेक्ट करने के लिए टैप करें"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "जोड़ें"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "कनेक्शन रद्द करें"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "Wi-Fi डायरेक्ट के बारे में"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "Wi-Fi डायरेक्ट Wi-Fi डिवाइसेस को सीधे कनेक्ट करना सक्षम करता है, जिस से प्रिंट करना, फ़ाइल साझाकरण, सिंक्रोनाइज करना, और स्‍क्रीन साझाकरण बहुत आसान और अधिक सुविधाजनक बन जाता है। Wi-Fi डायरेक्ट को समर्थित करने वाले डिवाइसेस के साथ कनेक्ट करने से विभिन्न एप्लीकेशंस का उपयोग करते हुए, आपकी सामग्री साझा करना, आपका डेटा सिंक्रोनाइज करना, मित्रों के साथ सोशलाइज़ करना, गेम्स प्ले करने, ऑडियो, वीडियोज़, और बहुत कुछ संभव हो जाता है"
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "कनेक्ट किए गए डिवाइसेस"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "व्यस्त डिवाइसेस"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "अन्‍य डिवाइस के साथ कनेक्ट किया गया"
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "जोड़ा जा रहा है…"
+
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "कनेक्शन के लिए प्रतीक्षारत"
+
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "कनेक्ट करने में असफल"
+
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "मल्टी-कनेक्ट"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "सभी डिस्कनेक्ट करें"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "डिसकनेक्ट"
+
+msgid "IDS_WFD_NOCONTENT"
+msgstr "कोई साधन नहीं मिला"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection. Continue?"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Wi-Fi डायरेक्ट कनेक्‍शन"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "Wi-Fi डायरेक्ट कनेक्‍शन रद्द करें?"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "डिवाइस नहीं"
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "रोकें"
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "निष्क्रियता विफल"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "सक्रियण विफल"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "वर्तमान कनेक्शन डिस्कनेक्ट किया जाएगा। जारी रखें?"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "उपलब्ध डिवाइसें"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "आप एक ही समय में %d डिवाइसेस तक कनेक्ट कर सकते है"
+
+

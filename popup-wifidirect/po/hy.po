@@ -1,0 +1,374 @@
+msgid "IDS_WFD_CONNECTED"
+msgstr "Միացված է"
+
+msgid "IDS_WFD_CONNECTING"
+msgstr "Միացում..."
+
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "Անջատվում է..."
+
+msgid ""
+msgstr "Wi-Fi-ի ակտիվացում..."
+
+msgid "IDS_WIFI_POP_DEACTIVATING_WI_FI_ING"
+msgstr "Wi-Fi-ի ապաակտիվացում..."
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "Միացված է"
+
+msgid "IDS_COM_POP_NETWORK_INTERNAL_ERR"
+msgstr "Ներքին սխալ"
+
+msgid "IDS_COM_POP_RETRIEVED"
+msgstr "Ստացված է"
+
+msgid "IDS_COM_POP_RETRIEVING_FAILED"
+msgstr "Ստացումը ձախողվեց"
+
+msgid "IDS_COM_SK_CANCEL"
+msgstr "Չեղարկել"
+
+msgid "IDS_ST_BODY_INTERNAL_ERROR"
+msgstr "Ներքին սխալ"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "Անորոշ սխալ"
+
+msgid "IDS_COM_POP_NETWORK_ERROR"
+msgstr "Ցանցի սխալ"
+
+msgid "IDS_COM_BODY_NO_SEARCH_RESULTS"
+msgstr "Որոնման արդյունքներ չկան"
+
+msgid "IDS_COM_POP_SEARCHING"
+msgstr "Որոնում է..."
+
+msgid "IDS_WIFI_POP_DISCONNECTING_FAILED"
+msgstr "Անջատումը ձախողվեց"
+
+msgid "IDS_ST_BODY_ENTER_NEW_PASSWORD"
+msgstr "Մուտքագրեք նոր գաղտնաբառը"
+
+msgid "IDS_COM_POP_UNKNOWN_ERROR_UNABLE_TO_LAUNCH_APPLICATION"
+msgstr "Անհայտ սխալ: Անհնար է գործարկել ծրագիրը"
+
+msgid "IDS_COM_POP_ACCEPT"
+msgstr "Ընդունել"
+
+msgid "IDS_COM_POP_CONNECTING"
+msgstr "Միացում..."
+
+msgid "IDS_COM_POP_ERROR"
+msgstr "Սխալ"
+
+msgid "IDS_COM_POP_REJECT"
+msgstr "Մերժել"
+
+msgid "IDS_COM_POP_REJECTED"
+msgstr "Մերժված է"
+
+msgid "IDS_COM_BODY_SELECT_ALL"
+msgstr "Ընտրել բոլորը"
+
+msgid "IDS_COM_POP_FAILED"
+msgstr "Ձախողվեց"
+
+msgid "IDS_COM_SK_ACCEPT"
+msgstr "Ընդունել"
+
+msgid "IDS_ST_BODY_ENTER_4_TO_8_DIGIT_PIN"
+msgstr "Մուտքագրել 4-ից 8 թվանշանով PIN"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "PIN-ը չի համընկնում։"
+
+msgid "IDS_ST_POP_YES"
+msgstr "Այո"
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "Ակտիվացվում է..."
+
+msgid "IDS_COM_POP_DEACTIVATED"
+msgstr "Ապաակտիվացված է"
+
+msgid "IDS_COM_SK_OK"
+msgstr "OK"
+
+msgid "IDS_COM_SK_YES"
+msgstr "Այո"
+
+msgid "IDS_WIFI_HEADER_MOBILE_HOTSPOT_VZW"
+msgstr "Շարժական թեժ կետ"
+
+msgid "IDS_ST_BODY_ENTER_CURRENT_PASSWORD"
+msgstr "Մուտքագրել ընթացիկ գաղտնաբառը"
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "%d ընտրվել է"
+
+msgid "IDS_ST_POP_SEARCHING_ING"
+msgstr "Որոնում է..."
+
+msgid "IDS_COM_POP_NOTHING_SELECTED"
+msgstr "Ոչինչ ընտրված չէ"
+
+msgid "IDS_COM_OPT1_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_COM_POP_DISCONNECTED"
+msgstr "Անջատված է"
+
+msgid "IDS_WIFI_MBODY_MOBILE_HOTSPOT_VZW"
+msgstr "Շարժական թեժ կետ"
+
+msgid "IDS_WIFI_BODY_IP_ADDRESS"
+msgstr "IP հասցե"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "Ապաակտիվացում..."
+
+msgid "IDS_COM_POP_UNEXPECTED_ERROR"
+msgstr "Անսպասելի սխալ"
+
+msgid "IDS_COM_POP_NETWORK_CONNECTION_ERROR"
+msgstr "Ցանցային կապակցման սխալ"
+
+msgid "IDS_COM_BODY_OPERATION_FAILED"
+msgstr "Գործողությունը ձախողվեց"
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "Չի սատարվում"
+
+msgid "IDS_COM_POP_UNSUPPORTED"
+msgstr "Չսատարվող"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_COM_POP_ACCEPTED"
+msgstr "Ընդունված է"
+
+msgid "IDS_WIFI_BODY_MAC_ADDRESS"
+msgstr "MAC հասցե"
+
+msgid "IDS_WIFI_POP_AUTOMATIC_CONNECTION_NETWORK_WILL_DISABLED_CONTINUE_Q_MSG"
+msgstr "Ինքնամիացումն այս ցանցին կկասեցվի: Շարունակե՞լ:"
+
+msgid "IDS_COM_POP_PROGRESSING_ING"
+msgstr "Ընթացքում է..."
+
+msgid "IDS_WIFI_BODY_CONNECT"
+msgstr "Միանալ"
+
+msgid "IDS_WIFI_HEADER_WI_FI"
+msgstr "Wi-Fi"
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "Զննել"
+
+msgid "IDS_WIFI_SK3_BACK"
+msgstr "ՀԵՏ"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "Wi-Fi Direct սարքեր"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "Թակել միանալու համար"
+
+msgid "IDS_WIFI_SK2_MULTI_CONNECT"
+msgstr "Բազմակի միացում"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "Միացնել"
+
+msgid "IDS_WIFI_OPT_MYNETWORKS_DISCONNECT"
+msgstr "Անջատվել"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "Դադարեցնել միացումը"
+
+msgid "IDS_COM_SK_CANCEL_A"
+msgstr "Չեղկլ"
+
+msgid "IDS_ST_HEADER_ACTIVATION"
+msgstr "Ակտիվացում"
+
+msgid "IDS_COM_SK_CANCEL_LITE"
+msgstr "Չեղկլ"
+
+msgid "IDS_ST_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WIFI_BODY_WI_FI"
+msgstr "Wi-Fi"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Չեղկլ"
+
+msgid "IDS_WIFI_BUTTON_CANCEL"
+msgstr "Չեղարկել"
+
+msgid "IDS_WIFI_BODY_ALLSHARE_CAST"
+msgstr "AllShare Cast"
+
+msgid "IDS_WIFI_POP_MOBILEACCESSSERVICE_ACTIVATING_ING"
+msgstr "Ակտիվացվում է..."
+
+msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_CONNECTION"
+msgstr "Wi-Fi Direct օգտագործելը կանջատի ընթացիկ Wi-Fi միացումը"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "Wi-Fi Direct-ի մասին"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "Wi-Fi Direct-ը Wi-Fi սարքերին ընձեռում է ուղղակիորեն միանալու հնարավորություն՝ տպելը, ֆայլեր համօգտագործելը, համաժամացնելը և էկրանը համօգտագործելը դարձնելով շատ ավելի հեշտ ու հարմարավետ: Wi-Fi Direct-ի աշխատանքն ապահովող սարքերին միանալը հնարավոր է դարձնում համօգտագործել Ձեր բովանդակությունը, համաժամացնել տվյալները, շփվել ընկերների հետ, խաղեր խաղալ, ձայնանյութեր ու տեսանյութեր նվագարկել և ավելին՝ օգտագործելով զանազան ծրագրեր"
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "Միացված սարքեր"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "Զբաղված սարքեր"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "Միացված է այլ սարքի հետ"
+
+msgid "IDS_WIFI_POP_AP_DISCONNECTING_ING"
+msgstr "Անջատվում է..."
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "Միացում..."
+
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "Սպասում է միացման"
+
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "Չհաջողվեց միանալ"
+
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "Բազմակի միացում"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "Անջատել բոլորը"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "Անջատել"
+
+msgid "IDS_WFD_NOCONTENT"
+msgstr "Սարքեր չեն գտնվել"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "Օգտագործումից հետո կասեցրեք Wi-Fi Direct-ը"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_ABB"
+msgstr "Օգտ. հետո կասեցրեք Wi-Fi Direct-ը"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY"
+msgstr "Օգտագործումից հետո կասեցրեք Wi-Fi Direct-ը՝ մարտկոցի լիցքը խնայելու համար"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY_ABB"
+msgstr "Օգտ. հետո կասեցրեք Wi-Fi Direct՝ մրտկց խնայելու հր"
+
+msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES"
+msgstr "Կատարել Wi-Fi Direct սարքերի տեսածրում"
+
+msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES_CURRENT_NETWORK_WILL_BE_DISCONNECTED"
+msgstr "Կատարել Wi-Fi Direct սարքերի տեսածրում: Ընթացիկ ցանցը կանջատվի"
+
+msgid "IDS_WIFI_BODY_SEARCH_FOR_WI_FI_DIRECT_DEVICES_OR_SEARCH_FOR_DEVICES_ON_OTHER_WI_FI_NETWORKS"
+msgstr "Որոնել Wi-Fi Direct սարքեր կամ որոնել սարքեր այլ Wi-Fi ցանցերում"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection. Continue?"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_CONNECTED"
+msgstr "Wi-Fi Direct-ը միացված է"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Wi-Fi Direct-ի միացում"
+
+msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_SETTINGS"
+msgstr "Wi-Fi Direct-ի դրվածքներ"
+
+msgid "IDS_WIFI_MBODY_CONFIGURE_WI_FI_DIRECT"
+msgstr "Կազմաձևել Wi-Fi Direct-ը"
+
+msgid "IDS_WIFI_MBODY_DISCONNECT_WI_FI_DIRECT"
+msgstr "Անջատել Wi-Fi Direct-ը"
+
+msgid "IDS_WIFI_MBODY_WI_FI_DIRECT_STATUS"
+msgstr "Wi-Fi Direct-ի կարգավիճակ"
+
+msgid "IDS_WIFI_OPT1_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "Դադարեցնե՞լ Wi-Fi Direct-ի միացումը:"
+
+msgid "IDS_WIFI_POP_CONNECTING_TO_WI_FI_NETWORK_WILL_DISCONNECT_DEVICE_CONNECTED_VIA_WI_FI_DIRECT"
+msgstr "Wi-Fi ցանցին միանալը կանջատի Wi-Fi Direct-ի միջոցով միացված սարքը"
+
+msgid "IDS_WIFI_POP_CONNECT_TO_OTHER_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "Միանալ այլ սարքերի Wi-Fi Direct-ի միջոցով"
+
+msgid "IDS_WIFI_POP_DISABLE_MOBILE_AP_TO_USE_WI_FI_DIRECT_Q"
+msgstr "Կասեցնե՞լ Mobile AP-ն՝ Wi-Fi Direct օգտագործելու համար:"
+
+msgid "IDS_WIFI_POP_DISCONNECT_CURRENT_WI_FI_DIRECT_DEVICE_TO_SEARCH_NETWORKS"
+msgstr "Անջատել ընթացիկ Wi-Fi Direct սարքը՝ ցանցեր որոնելու համար"
+
+msgid "IDS_WIFI_POP_ENABLING_WI_FI_DIRECT_WILL_TURN_OFF_WI_FI_AND_DISABLE_THE_PORTABLE_WI_FI_HOTSPOT"
+msgstr "Wi-Fi Direct-ի ընձեռումը կանջատի Wi-Fi-ը և կկասեցնի փոխադրովի Wi-Fi թեժ կետը"
+
+msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISABLE_PORTABLE_WI_FI_HOTSPOT"
+msgstr "Wi-Fi Direct օգտագործելը կկասեցնի փոխադրովի Wi-Fi թեժ կետը"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_ALREADY_IN_USE_TRY_LATER"
+msgstr "Wi-Fi Direct-ն արդեն օգտագործվում է: Փորձեք ավելի ուշ"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_CONNECTION_REQUEST_AUTOMATICALLY_DENIED_TO_CONNECT_TURN_OFF_ALLSHARE_CAST"
+msgstr "Wi-Fi Direct-ի միացման հարցումն ինքնաբերաբար մերժվեց: Միանալու համար անջատեք AllShare Cast-ը"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_WILL_BE_DISCONNECTED_CONTINUE_Q"
+msgstr "Wi-Fi Direct-ը կանջատվի. շարունակե՞լ:"
+
+msgid "IDS_WIFI_POP_WI_FI_IS_DISCONNECTED_WHILE_WI_FI_DIRECT_CONNECTS"
+msgstr "Wi-Fi-ն անջատվում է, երբ Wi-Fi Direct-ը միանում է"
+
+msgid "IDS_WIFI_SK1_SEARCH_FOR_WI_FI_DIRECT_DEVICES"
+msgstr "Որոնել Wi-Fi Direct սարքեր"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "Սարքեր չկան"
+
+msgid "IDS_WIFI_SK4_SCAN"
+msgstr "Տեսածրել"
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "Կանգնել"
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "Ապաակտիվացումը ձախողվեց"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "Ակտիվացումը ձախողվեց"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "Ընթացիկ կապակցումը կդադարեցվի։ Շարունակե՞լ"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "Մատչելի սարքեր"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "Կարող եք միաժամանակ միացնել մինչև %d սարք"
+
+msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
+msgstr "Գաղտնաբառը շատ երկար է"
+
+msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
+msgstr "Գաղտնաբառը չափազանց կարճ է"

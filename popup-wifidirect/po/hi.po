@@ -1,0 +1,374 @@
+msgid "IDS_WFD_CONNECTED"
+msgstr "जोड़ा गया"
+
+msgid "IDS_WFD_CONNECTING"
+msgstr "जोड़ा जा रहा है…"
+
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "डिस्कनेक्ट हो रहा है..."
+
+msgid ""
+msgstr "Wi-Fi सक्रिय हो रहा है..."
+
+msgid "IDS_WIFI_POP_DEACTIVATING_WI_FI_ING"
+msgstr "Wi-Fi निष्क्रिय हो रहा है…"
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "जोड़ा गया"
+
+msgid "IDS_COM_POP_NETWORK_INTERNAL_ERR"
+msgstr "आंतरिक त्रुटी"
+
+msgid "IDS_COM_POP_RETRIEVED"
+msgstr "पुनःप्राप्त किया गया"
+
+msgid "IDS_COM_POP_RETRIEVING_FAILED"
+msgstr "पुनः प्राप्त करना असफल"
+
+msgid "IDS_COM_SK_CANCEL"
+msgstr "रद्द"
+
+msgid "IDS_ST_BODY_INTERNAL_ERROR"
+msgstr "आंतरिक त्रुटी"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "अज्ञात त्रुटि"
+
+msgid "IDS_COM_POP_NETWORK_ERROR"
+msgstr "नेटवर्क त्रुटी"
+
+msgid "IDS_COM_BODY_NO_SEARCH_RESULTS"
+msgstr "कोई खोज परिणाम नहीं"
+
+msgid "IDS_COM_POP_SEARCHING"
+msgstr "खोज रहा है..."
+
+msgid "IDS_WIFI_POP_DISCONNECTING_FAILED"
+msgstr "डिसकनेक्ट करना विफल"
+
+msgid "IDS_ST_BODY_ENTER_NEW_PASSWORD"
+msgstr "नया पासवर्ड प्रविष्ट करें"
+
+msgid "IDS_COM_POP_UNKNOWN_ERROR_UNABLE_TO_LAUNCH_APPLICATION"
+msgstr "अज्ञात त्रुटि. अनुप्रयोग लॉन्च करने में अक्षम"
+
+msgid "IDS_COM_POP_ACCEPT"
+msgstr "स्‍वीकारें"
+
+msgid "IDS_COM_POP_CONNECTING"
+msgstr "जोड़ा जा रहा है…"
+
+msgid "IDS_COM_POP_ERROR"
+msgstr "त्रुटी"
+
+msgid "IDS_COM_POP_REJECT"
+msgstr "अस्वीकारें"
+
+msgid "IDS_COM_POP_REJECTED"
+msgstr "अस्‍वीकृत"
+
+msgid "IDS_COM_BODY_SELECT_ALL"
+msgstr "सभी चुनें"
+
+msgid "IDS_COM_POP_FAILED"
+msgstr "असफल हुआ"
+
+msgid "IDS_COM_SK_ACCEPT"
+msgstr "स्वीकारें"
+
+msgid "IDS_ST_BODY_ENTER_4_TO_8_DIGIT_PIN"
+msgstr "4 से 8 अंक का PIN दर्ज करें"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "PIN मेल नही खाता!"
+
+msgid "IDS_ST_POP_YES"
+msgstr "हां"
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "सक्रिय हो रहा है…"
+
+msgid "IDS_COM_POP_DEACTIVATED"
+msgstr "निष्क्रिय हुआ"
+
+msgid "IDS_COM_SK_OK"
+msgstr "ओके"
+
+msgid "IDS_COM_SK_YES"
+msgstr "हाँ"
+
+msgid "IDS_WIFI_HEADER_MOBILE_HOTSPOT_VZW"
+msgstr "मोबाइल हॉटस्पॉट"
+
+msgid "IDS_ST_BODY_ENTER_CURRENT_PASSWORD"
+msgstr "वर्तमान पासवर्ड दर्ज करें"
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "%d चयनित"
+
+msgid "IDS_ST_POP_SEARCHING_ING"
+msgstr "खोज रहा है..."
+
+msgid "IDS_COM_POP_NOTHING_SELECTED"
+msgstr "कुछ चयनित नहीं"
+
+msgid "IDS_COM_OPT1_WI_FI_DIRECT"
+msgstr "Wi-Fi डायरेक्ट"
+
+msgid "IDS_COM_POP_DISCONNECTED"
+msgstr "डिस्कनेक्ट हुआ"
+
+msgid "IDS_WIFI_MBODY_MOBILE_HOTSPOT_VZW"
+msgstr "मोबाइल हॉटस्पॉट"
+
+msgid "IDS_WIFI_BODY_IP_ADDRESS"
+msgstr "IP पता"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "निष्क्रिय हो रहा है…"
+
+msgid "IDS_COM_POP_UNEXPECTED_ERROR"
+msgstr "अनपेक्षित त्रुटी"
+
+msgid "IDS_COM_POP_NETWORK_CONNECTION_ERROR"
+msgstr "नेटवर्क कनेक्शन त्रुटी"
+
+msgid "IDS_COM_BODY_OPERATION_FAILED"
+msgstr "कार्रवाई विफल"
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "असमर्थित"
+
+msgid "IDS_COM_POP_UNSUPPORTED"
+msgstr "असमर्थित"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi डायरेक्ट"
+
+msgid "IDS_COM_POP_ACCEPTED"
+msgstr "स्‍वीकृत"
+
+msgid "IDS_WIFI_BODY_MAC_ADDRESS"
+msgstr "MAC पते"
+
+msgid "IDS_WIFI_POP_AUTOMATIC_CONNECTION_NETWORK_WILL_DISABLED_CONTINUE_Q_MSG"
+msgstr "इस नेटवर्क के साथ स्वचालित कनेक्शन अक्षम हो जाएगा। जारी रखें?"
+
+msgid "IDS_COM_POP_PROGRESSING_ING"
+msgstr "प्रगति पर..."
+
+msgid "IDS_WIFI_BODY_CONNECT"
+msgstr "जोड़ें"
+
+msgid "IDS_WIFI_HEADER_WI_FI"
+msgstr "Wi-Fi"
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "स्‍कैन"
+
+msgid "IDS_WIFI_SK3_BACK"
+msgstr "पीछे"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_ABB"
+msgstr "सीधे Wi-Fi"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "वाई-फाई डायरेक्ट डिवाइसें"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "कनेक्ट करने के लिए टैप करें"
+
+msgid "IDS_WIFI_SK2_MULTI_CONNECT"
+msgstr "मल्टी-कनेक्ट"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "जोड़ें"
+
+msgid "IDS_WIFI_OPT_MYNETWORKS_DISCONNECT"
+msgstr "डिस्कनेक्ट करें"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "कनेक्शन रद्द करें"
+
+msgid "IDS_COM_SK_CANCEL_A"
+msgstr "रद्द"
+
+msgid "IDS_ST_HEADER_ACTIVATION"
+msgstr "सक्रियण"
+
+msgid "IDS_COM_SK_CANCEL_LITE"
+msgstr "रद्द"
+
+msgid "IDS_ST_BODY_WI_FI_DIRECT_ABB"
+msgstr "सीधे Wi-Fi"
+
+msgid "IDS_WIFI_BODY_WI_FI"
+msgstr "Wi-Fi"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "रद्द"
+
+msgid "IDS_WIFI_BUTTON_CANCEL"
+msgstr "रद्द"
+
+msgid "IDS_WIFI_BODY_ALLSHARE_CAST"
+msgstr "AllShare Cast"
+
+msgid "IDS_WIFI_POP_MOBILEACCESSSERVICE_ACTIVATING_ING"
+msgstr "सक्रिय हो रहा है…"
+
+msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_CONNECTION"
+msgstr "Wi-Fi डायरेक्ट का उपयोग करने पर वर्तमान Wi-Fi कनेक्शन डिस्कनेक्ट हो जाएगा"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "Wi-Fi डायरेक्ट के बारे में"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "Wi-Fi डायरेक्ट Wi-Fi डिवाइसेस को सीधे कनेक्ट करना सक्षम करता है, जिस से प्रिंट करना, फ़ाइल साझाकरण, सिंक्रोनाइज करना, और स्‍क्रीन साझाकरण बहुत आसान और अधिक सुविधाजनक बन जाता है। Wi-Fi डायरेक्ट को समर्थित करने वाले डिवाइसेस के साथ कनेक्ट करने से विभिन्न एप्लीकेशंस का उपयोग करते हुए, आपकी सामग्री साझा करना, आपका डेटा सिंक्रोनाइज करना, मित्रों के साथ सोशलाइज़ करना, गेम्स प्ले करने, ऑडियो, वीडियोज़, और बहुत कुछ संभव हो जाता है"
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "कनेक्ट किए गए डिवाइसेस"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "व्यस्त डिवाइसेस"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "अन्‍य डिवाइस के साथ कनेक्ट किया गया"
+
+msgid "IDS_WIFI_POP_AP_DISCONNECTING_ING"
+msgstr "डिस्कनेक्ट हो रहा है..."
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "जोड़ा जा रहा है…"
+
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "कनेक्शन के लिए प्रतीक्षारत"
+
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "कनेक्ट करने में असफल"
+
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "मल्टी-कनेक्ट"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "सभी डिस्कनेक्ट करें"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "डिसकनेक्ट"
+
+msgid "IDS_WFD_NOCONTENT"
+msgstr "कोई साधन नहीं मिला"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "उपयोग के बाद Wi-Fi डायरेक्ट अक्षम करें"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_ABB"
+msgstr "उपयोग के बाद Wi-Fi डायरेक्ट अक्षम करें"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY"
+msgstr "बैटरी सुरक्षित करने के लिए उपयोग करने के बाद Wi-Fi डायरेक्ट अक्षम करें"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY_ABB"
+msgstr "बैटरी सुरक्षित करने के लिए उपयोग करने के बाद Wi-Fi डायरेक्ट अक्षम करें"
+
+msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES"
+msgstr "Wi-Fi डायरेक्ट डिवाइसों के लिए स्कैन करें"
+
+msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES_CURRENT_NETWORK_WILL_BE_DISCONNECTED"
+msgstr "Wi-Fi डायरेक्ट डिवाइसेस के लिए स्कैन करें। वर्तमान नेटवर्क डिस्कनेक्ट हो जाएगा"
+
+msgid "IDS_WIFI_BODY_SEARCH_FOR_WI_FI_DIRECT_DEVICES_OR_SEARCH_FOR_DEVICES_ON_OTHER_WI_FI_NETWORKS"
+msgstr "वाई-फ़ाई डायरेक्ट डिवाइसों को खोजें या अन्य वाई-फ़ाई नेटवर्क्स पर डिवाइसों को खोजें"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection. Continue?"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_CONNECTED"
+msgstr "वाई-फ़ाई डायरेक्ट कनेक्ट किया गया"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Wi-Fi डायरेक्ट कनेक्‍शन"
+
+msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_SETTINGS"
+msgstr "वाई-फ़ाई डायरेक्ट सेटिंग्स"
+
+msgid "IDS_WIFI_MBODY_CONFIGURE_WI_FI_DIRECT"
+msgstr "वाई-फ़ाई डायरेक्ट कॉन्फ़िगर करें"
+
+msgid "IDS_WIFI_MBODY_DISCONNECT_WI_FI_DIRECT"
+msgstr "वाई-फ़ाई डायरेक्ट डिस्कनेक्ट करें"
+
+msgid "IDS_WIFI_MBODY_WI_FI_DIRECT_STATUS"
+msgstr "वाई-फ़ाई डायरेक्ट स्थिति"
+
+msgid "IDS_WIFI_OPT1_WI_FI_DIRECT"
+msgstr "Wi-Fi डायरेक्ट"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "Wi-Fi डायरेक्ट कनेक्‍शन रद्द करें?"
+
+msgid "IDS_WIFI_POP_CONNECTING_TO_WI_FI_NETWORK_WILL_DISCONNECT_DEVICE_CONNECTED_VIA_WI_FI_DIRECT"
+msgstr "Wi-Fi नेटवर्क से कनेक्ट करने पर Wi-Fi डायरेक्ट के द्वारा कनेक्ट किया गया डिवाइस डिस्कनेक्ट हो जाएगा"
+
+msgid "IDS_WIFI_POP_CONNECT_TO_OTHER_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "वाई-फ़ाई डायरेक्ट के द्वारा अन्य डिवाइसों से कनेक्ट करें"
+
+msgid "IDS_WIFI_POP_DISABLE_MOBILE_AP_TO_USE_WI_FI_DIRECT_Q"
+msgstr "वाई-फ़ाई डायरेक्ट का उपयोग करने के लिए मोबाइल एपी अक्षम करें?"
+
+msgid "IDS_WIFI_POP_DISCONNECT_CURRENT_WI_FI_DIRECT_DEVICE_TO_SEARCH_NETWORKS"
+msgstr "नेटवर्क्स खोजने के लिए वर्तमान वाई-फ़ाई डायरेक्ट उपकरण डिस्कनेक्ट करें"
+
+msgid "IDS_WIFI_POP_ENABLING_WI_FI_DIRECT_WILL_TURN_OFF_WI_FI_AND_DISABLE_THE_PORTABLE_WI_FI_HOTSPOT"
+msgstr "Wi-Fi डायरेक्ट सक्षम करने पर Wi-Fi बंद हो जाएगा और पोर्टेबल Wi-Fi हॉटस्पॉट अक्षम हो जाएगा"
+
+msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISABLE_PORTABLE_WI_FI_HOTSPOT"
+msgstr "Wi-Fi डायरेक्ट का उपयोग करने पर पोर्टेबल Wi-Fi हॉटस्पॉट अक्षम कर देगा"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_ALREADY_IN_USE_TRY_LATER"
+msgstr "वाई-फाई डायरेक्ट पहले से उपयोग में है। बाद में प्रयास करें"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_CONNECTION_REQUEST_AUTOMATICALLY_DENIED_TO_CONNECT_TURN_OFF_ALLSHARE_CAST"
+msgstr "Wi-Fi डायरेक्ट कनेक्शन अनुरोध स्वचालित रूप से अस्‍वीकृत की गई। कनेक्ट करने के लिए, ऑलशेयर कास्ट बंद करें"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_WILL_BE_DISCONNECTED_CONTINUE_Q"
+msgstr "Wi-Fi डायरेक्ट डिस्कनेक्ट किया जाएगा। जारी रखें?"
+
+msgid "IDS_WIFI_POP_WI_FI_IS_DISCONNECTED_WHILE_WI_FI_DIRECT_CONNECTS"
+msgstr "वाई-फ़ाई डायरेक्ट कनेक्ट होने के दौरन वाई-फ़ाई डिसकनेक्ट किया गया"
+
+msgid "IDS_WIFI_SK1_SEARCH_FOR_WI_FI_DIRECT_DEVICES"
+msgstr "वाई-फ़ाई डायरेक्ट उपकरणों के लिए खोजें"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "डिवाइस नहीं"
+
+msgid "IDS_WIFI_SK4_SCAN"
+msgstr "स्कैन करें"
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "रोकें"
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "निष्क्रियता विफल"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "सक्रियण विफल"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "वर्तमान कनेक्शन डिस्कनेक्ट किया जाएगा। जारी रखें?"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "उपलब्ध डिवाइसें"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "आप एक ही समय में %d डिवाइसेस तक कनेक्ट कर सकते है"
+
+msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
+msgstr "पासवर्ड बहुत लंबा है"
+
+msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
+msgstr "पासवर्ड बहुत छोटा"

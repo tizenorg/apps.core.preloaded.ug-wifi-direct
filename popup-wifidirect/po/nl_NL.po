@@ -1,0 +1,374 @@
+msgid "IDS_WFD_CONNECTED"
+msgstr "Verbonden"
+
+msgid "IDS_WFD_CONNECTING"
+msgstr "Verbinden..."
+
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "Verbinding verbreken..."
+
+msgid ""
+msgstr "Wi-Fi activeren..."
+
+msgid "IDS_WIFI_POP_DEACTIVATING_WI_FI_ING"
+msgstr "Wi-Fi deactiveren..."
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "Verbonden"
+
+msgid "IDS_COM_POP_NETWORK_INTERNAL_ERR"
+msgstr "Interne fout"
+
+msgid "IDS_COM_POP_RETRIEVED"
+msgstr "Opgehaald"
+
+msgid "IDS_COM_POP_RETRIEVING_FAILED"
+msgstr "Ophalen mislukt"
+
+msgid "IDS_COM_SK_CANCEL"
+msgstr "Annuleren"
+
+msgid "IDS_ST_BODY_INTERNAL_ERROR"
+msgstr "Interne fout"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "Onbekende fout"
+
+msgid "IDS_COM_POP_NETWORK_ERROR"
+msgstr "Netwerkfout"
+
+msgid "IDS_COM_BODY_NO_SEARCH_RESULTS"
+msgstr "Geen zoekresultaten"
+
+msgid "IDS_COM_POP_SEARCHING"
+msgstr "Zoeken..."
+
+msgid "IDS_WIFI_POP_DISCONNECTING_FAILED"
+msgstr "Verbinding verbreken mislukt"
+
+msgid "IDS_ST_BODY_ENTER_NEW_PASSWORD"
+msgstr "Nieuw wachtwoord invoeren"
+
+msgid "IDS_COM_POP_UNKNOWN_ERROR_UNABLE_TO_LAUNCH_APPLICATION"
+msgstr "Onbekende fout. Kan applicatie niet starten"
+
+msgid "IDS_COM_POP_ACCEPT"
+msgstr "OK"
+
+msgid "IDS_COM_POP_CONNECTING"
+msgstr "Verbinden..."
+
+msgid "IDS_COM_POP_ERROR"
+msgstr "Fout"
+
+msgid "IDS_COM_POP_REJECT"
+msgstr "Weigeren"
+
+msgid "IDS_COM_POP_REJECTED"
+msgstr "Geweigerd"
+
+msgid "IDS_COM_BODY_SELECT_ALL"
+msgstr "Alles selecteren"
+
+msgid "IDS_COM_POP_FAILED"
+msgstr "Mislukt"
+
+msgid "IDS_COM_SK_ACCEPT"
+msgstr "OK"
+
+msgid "IDS_ST_BODY_ENTER_4_TO_8_DIGIT_PIN"
+msgstr "Pincode van 4 tot 8 cijfers ingeven"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "PIN's komen niet overeen!"
+
+msgid "IDS_ST_POP_YES"
+msgstr "Ja"
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "Inschakelen..."
+
+msgid "IDS_COM_POP_DEACTIVATED"
+msgstr "Uitgeschakeld"
+
+msgid "IDS_COM_SK_OK"
+msgstr "OK"
+
+msgid "IDS_COM_SK_YES"
+msgstr "Ja"
+
+msgid "IDS_WIFI_HEADER_MOBILE_HOTSPOT_VZW"
+msgstr "Mobile Hotspot"
+
+msgid "IDS_ST_BODY_ENTER_CURRENT_PASSWORD"
+msgstr "Huidig wachtwoord ingeven"
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "%d geselecteerd"
+
+msgid "IDS_ST_POP_SEARCHING_ING"
+msgstr "Zoeken..."
+
+msgid "IDS_COM_POP_NOTHING_SELECTED"
+msgstr "Niets geselecteerd"
+
+msgid "IDS_COM_OPT1_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_COM_POP_DISCONNECTED"
+msgstr "Verbinding verbroken"
+
+msgid "IDS_WIFI_MBODY_MOBILE_HOTSPOT_VZW"
+msgstr "Mobile Hotspot"
+
+msgid "IDS_WIFI_BODY_IP_ADDRESS"
+msgstr "IP-adres"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "Uitschakelen..."
+
+msgid "IDS_COM_POP_UNEXPECTED_ERROR"
+msgstr "Onverwachte fout"
+
+msgid "IDS_COM_POP_NETWORK_CONNECTION_ERROR"
+msgstr "Netwerkverbindingsfout"
+
+msgid "IDS_COM_BODY_OPERATION_FAILED"
+msgstr "Bewerking is mislukt"
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "Niet ondersteund"
+
+msgid "IDS_COM_POP_UNSUPPORTED"
+msgstr "Niet ondersteund"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_COM_POP_ACCEPTED"
+msgstr "Geaccepteerd"
+
+msgid "IDS_WIFI_BODY_MAC_ADDRESS"
+msgstr "MAC-adres"
+
+msgid "IDS_WIFI_POP_AUTOMATIC_CONNECTION_NETWORK_WILL_DISABLED_CONTINUE_Q_MSG"
+msgstr "Automatische verbinding met dit netwerk wordt uitgeschakeld. Doorgaan?"
+
+msgid "IDS_COM_POP_PROGRESSING_ING"
+msgstr "Bezig..."
+
+msgid "IDS_WIFI_BODY_CONNECT"
+msgstr "Verbinden"
+
+msgid "IDS_WIFI_HEADER_WI_FI"
+msgstr "Wi-Fi"
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "Scannen"
+
+msgid "IDS_WIFI_SK3_BACK"
+msgstr "Terug"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "Wi-Fi Direct-apparaten"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "Tik voor verbinding"
+
+msgid "IDS_WIFI_SK2_MULTI_CONNECT"
+msgstr "Meerdere verbindingen"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "Verbinden"
+
+msgid "IDS_WIFI_OPT_MYNETWORKS_DISCONNECT"
+msgstr "Verbinding verbreken"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "Verbinding annuleren"
+
+msgid "IDS_COM_SK_CANCEL_A"
+msgstr "Annul."
+
+msgid "IDS_ST_HEADER_ACTIVATION"
+msgstr "Inschakelen"
+
+msgid "IDS_COM_SK_CANCEL_LITE"
+msgstr "Annul."
+
+msgid "IDS_ST_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WIFI_BODY_WI_FI"
+msgstr "Wi-Fi"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Annul."
+
+msgid "IDS_WIFI_BUTTON_CANCEL"
+msgstr "Annuleer"
+
+msgid "IDS_WIFI_BODY_ALLSHARE_CAST"
+msgstr "AllShare Cast"
+
+msgid "IDS_WIFI_POP_MOBILEACCESSSERVICE_ACTIVATING_ING"
+msgstr "Inschakelen..."
+
+msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_CONNECTION"
+msgstr "Via Wi-Fi Direct wordt huidige Wi-Fi-verbinding beëindigd"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "Over Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "Wi-Fi Direct zorgt dat Wi-Fi-apparaten rechtstreeks kunnen worden verbonden, zodat afdrukken, bestanden delen, synchroniseren en het delen van schermen veel eenvoudiger en handiger verlopen. Als u apparaten verbindt die Wi-Fi Direct ondersteunen, kunt u via diverse applicaties inhoud delen, gegevens synchroniseren, contacten met vrienden onderhouden, gamen, en genieten van onder andere audio en video."
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "Verbonden apparaten"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "Bezette apparaten"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "Verbonden met ander apparaat"
+
+msgid "IDS_WIFI_POP_AP_DISCONNECTING_ING"
+msgstr "Verbinding verbreken..."
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "Verbinden..."
+
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "Wachten op verbinding"
+
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "Kan geen verbinding maken"
+
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "Meerdere verbindingen"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "Alle verbreken"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "Verb.verbr"
+
+msgid "IDS_WFD_NOCONTENT"
+msgstr "Geen apparaten gevonden"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "Wi-Fi Direct na gebruik uitschakelen"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_ABB"
+msgstr "Wi-Fi Direct na gebruik uitzetten"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY"
+msgstr "Wi-Fi Direct na gebruik uitschakelen om batterij te sparen"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY_ABB"
+msgstr "Wi-Fi Direct na gebruik uit om batterij te sparen"
+
+msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES"
+msgstr "Zoeken naar Wi-Fi Direct-apparaten"
+
+msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES_CURRENT_NETWORK_WILL_BE_DISCONNECTED"
+msgstr "Zoeken naar Wi-Fi Direct-apparaten. Huidige netwerkverbinding wordt verbroken"
+
+msgid "IDS_WIFI_BODY_SEARCH_FOR_WI_FI_DIRECT_DEVICES_OR_SEARCH_FOR_DEVICES_ON_OTHER_WI_FI_NETWORKS"
+msgstr "Zoeken naar Wi-Fi Direct-apparaten of zoeken naar apparaten op andere Wi-Fi-netwerken"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection. Continue?"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_CONNECTED"
+msgstr "Wi-Fi Direct verbonden"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Wi-Fi Direct-verbinding"
+
+msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_SETTINGS"
+msgstr "Wi-Fi Direct instellingen"
+
+msgid "IDS_WIFI_MBODY_CONFIGURE_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct configureren"
+
+msgid "IDS_WIFI_MBODY_DISCONNECT_WI_FI_DIRECT"
+msgstr "Verbinding Wi-Fi Direct verbreken"
+
+msgid "IDS_WIFI_MBODY_WI_FI_DIRECT_STATUS"
+msgstr "Wi-Fi Direct-status"
+
+msgid "IDS_WIFI_OPT1_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "Wi-Fi Direct-verbinding annuleren?"
+
+msgid "IDS_WIFI_POP_CONNECTING_TO_WI_FI_NETWORK_WILL_DISCONNECT_DEVICE_CONNECTED_VIA_WI_FI_DIRECT"
+msgstr "Als u verbinding maakt met het Wi-Fi-netwerk, wordt de verbinding verbroken met het apparaat dat via Wi-Fi Direct is verbonden"
+
+msgid "IDS_WIFI_POP_CONNECT_TO_OTHER_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "Verbinden met andere apparaten via Wi-Fi Direct"
+
+msgid "IDS_WIFI_POP_DISABLE_MOBILE_AP_TO_USE_WI_FI_DIRECT_Q"
+msgstr "Mobiel toegangspunt uitschakelen om Wi-Fi Direct te gebruiken?"
+
+msgid "IDS_WIFI_POP_DISCONNECT_CURRENT_WI_FI_DIRECT_DEVICE_TO_SEARCH_NETWORKS"
+msgstr "Verbinding met huidig Wi-Fi Direct-apparaat verbreken om netwerken te zoeken"
+
+msgid "IDS_WIFI_POP_ENABLING_WI_FI_DIRECT_WILL_TURN_OFF_WI_FI_AND_DISABLE_THE_PORTABLE_WI_FI_HOTSPOT"
+msgstr "Als u Wi-Fi Direct inschakelt, worden Wi-Fi en de draagbare Wi-Fi-hotspot uitgeschakeld"
+
+msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISABLE_PORTABLE_WI_FI_HOTSPOT"
+msgstr "Via Wi-Fi Direct wordt draagbare Wi-Fi-hotspot uitgeschakeld"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_ALREADY_IN_USE_TRY_LATER"
+msgstr "Wi-Fi Direct al in gebruik. Probeer het later"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_CONNECTION_REQUEST_AUTOMATICALLY_DENIED_TO_CONNECT_TURN_OFF_ALLSHARE_CAST"
+msgstr "Verbindingsverzoek Wi-Fi Direct automatisch geweigerd. Zet AllShare Cast uit om te verbinden"
+
+msgid "IDS_WIFI_POP_WI_FI_DIRECT_WILL_BE_DISCONNECTED_CONTINUE_Q"
+msgstr "Verbinding met Wi-Fi Direct wordt verbroken. Doorgaan?"
+
+msgid "IDS_WIFI_POP_WI_FI_IS_DISCONNECTED_WHILE_WI_FI_DIRECT_CONNECTS"
+msgstr "Verbinding met Wi-Fi wordt verbroken als verbinding met Wi-Fi Direct wordt gemaakt"
+
+msgid "IDS_WIFI_SK1_SEARCH_FOR_WI_FI_DIRECT_DEVICES"
+msgstr "Zoeken naar Wi-Fi Direct-apparaten"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "Geen apparaten"
+
+msgid "IDS_WIFI_SK4_SCAN"
+msgstr "Scan"
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "Stoppen"
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "Uitschakelen mislukt"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "Kan niet inschakelen..."
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "Huidige verbinding wordt verbroken. Doorgaan?"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "Beschikbare apparaten"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "U kunt maximaal %d apparaten tegelijk verbinden"
+
+msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
+msgstr "Wachtwoord is te lang"
+
+msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
+msgstr "Wachtwoord te kort"

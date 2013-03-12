@@ -1,0 +1,117 @@
+msgid "IDS_WFD_CONNECTED"
+msgstr "Connecté"
+
+msgid "IDS_WFD_CONNECTING"
+msgstr "Connexion..."
+
+msgid "IDS_WFD_DISCONNECTING"
+msgstr "Déconnexion..."
+
+msgid "IDS_WFD_POP_CONNECTED"
+msgstr "Connecté"
+
+msgid "IDS_WFD_POP_UNKNOWN_ERROR"
+msgstr "Erreur inconnue"
+
+msgid "IDS_WFD_POP_PIN_INVALID"
+msgstr "Les codes PIN ne correspondent pas !"
+
+msgid "IDS_WFD_BODY_ACTIVATING"
+msgstr "Activation en cours..."
+
+msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgstr "%d sélectionné(es)"
+
+msgid "IDS_WFD_BODY_DEACTIVATING"
+msgstr "Désactivation..."
+
+msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
+msgstr "Non pris en charge"
+
+msgid "IDS_WFD_HEADER_WIFI_DIRECT"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WFD_BUTTON_SCAN"
+msgstr "Analyser"
+
+msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
+msgstr "Périphériques Wi-Fi Direct"
+
+msgid "IDS_WFD_TAP_TO_CONNECT"
+msgstr "Appuyez pour vous connecter"
+
+msgid "IDS_WFD_BUTTON_CONNECT"
+msgstr "Connexion"
+
+msgid "IDS_WFD_BUTTON_CANCEL"
+msgstr "Annuler la connexion"
+
+msgid "IDS_WFD_TITLE_ABOUT_WIFI"
+msgstr "A propos Wi-Fi Direct"
+
+msgid "IDS_WFD_BODY_ABOUT_WIFI"
+msgstr "Wi-Fi Direct active les périphériques Wi-Fi pour se connecter directement, réaliser des impressions, partager des fichiers, synchroniser des données et partager des écrans de manière simple et pratique. La connexion aux périphériques qui prennent en charge Wi-Fi Direct permet de partager vos contenus, synchroniser vos données, communiquer avec vos amis, jouer à des jeux, écouter de la musique, visionner des vidéos, etc. via diverses applications"
+
+msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
+msgstr "Périphériques connectés"
+
+msgid "IDS_WFD_BODY_BUSY_DEVICES"
+msgstr "Périphériques occupés"
+
+msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
+msgstr "Connecté à un autre périphérique"
+
+msgid "IDS_WFD_POP_CONNECTING"
+msgstr "Connexion..."
+
+msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgstr "Connexion en cours"
+
+msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgstr "Echec de la connexion"
+
+msgid "IDS_WFD_BUTTON_MULTI"
+msgstr "Connexion multiple"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgstr "Tout déconnecter"
+
+msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgstr "Déconnecter"
+
+msgid "IDS_WFD_NOCONTENT"
+msgstr "Aucun périphérique détecté"
+
+msgid "IDS_WFD_POP_WIFI_OFF"
+msgstr "L'utilisation de Wi-Fi Direct va interrompre la connexion Wi-Fi actuelle. Continuer ?"
+
+msgid "IDS_WFD_POP_HOTSPOT_OFF"
+msgstr "L'utilisation de Wi-Fi Direct va désactiver le modem Wi-Fi. Continuer ?"
+
+msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgstr "Connexion Wi-Fi Direct"
+
+msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgstr "Annuler la connexion Wi-Fi Direct ?"
+
+msgid "IDS_WFD_BODY_NO_DEVICES"
+msgstr "Aucun périphérique"
+
+msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgstr "Arrêter"
+
+msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
+msgstr "Echec de la désactivation"
+
+msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgstr "Echec de l'activation"
+
+msgid "IDS_WFD_POP_DISCONNECT"
+msgstr "La connexion actuelle sera déconnectée. Continuer ?"
+
+msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgstr "Appareils disponibles"
+
+msgid "IDS_WFD_POP_MULTI_CONNECT"
+msgstr "Vous pouvez vous connecter à %d périphériques maximum simultanément"
+
