@@ -96,6 +96,36 @@ static char *_gl_header_label_get(void *data, Evas_Object *obj, const char *part
 }
 
 /**
+ *  This function let the ug call it when click header
+ *  @return   void
+ *  @param[in] data the pointer to the main data structure
+ *  @param[in] obj the pointer to the evas object
+ *  @param[in] event_info the pointer to the event information
+ */
+static void _gl_header_sel(void *data, Evas_Object *obj, void *event_info)
+{
+	__WDUG_LOG_FUNC_ENTER__;
+	struct ug_data *ugd = (struct ug_data *) data;
+
+	Elm_Object_Item *item = (Elm_Object_Item *)event_info;
+	if (item != NULL)
+		elm_genlist_item_selected_set(item, EINA_FALSE);
+
+	if (ugd == NULL)
+		WDUG_LOGE("Incorrect parameter(NULL)\n");
+	else {
+		if(!ugd->wfd_onoff) {
+			WDUG_LOGD("Wi-Fi direct switch on\n");
+			wfd_client_switch_on(ugd);
+		} else {
+			WDUG_LOGD("Wi-Fi direct switch off\n");
+			wfd_client_switch_off(ugd);
+		}
+	}
+	__WDUG_LOG_FUNC_EXIT__;
+}
+
+/**
  *	This function let the ug get the icon of header
  *	@return   the icon of header
  *	@param[in] data the pointer to the main data structure
@@ -122,6 +152,7 @@ static Evas_Object *_gl_header_icon_get(void *data, Evas_Object *obj, const char
 		onoff = elm_check_add(obj);
 		elm_object_style_set(onoff, "on&off");
 		elm_check_state_set(onoff, ugd->wfd_onoff);
+		evas_object_smart_callback_add(onoff, "changed", _gl_header_sel , ugd);
 		evas_object_show(onoff);
 	}
 

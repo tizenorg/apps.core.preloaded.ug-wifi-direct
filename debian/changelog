@@ -1,3 +1,11 @@
+ug-setting-wifidirect-efl (1.0.9) precise; urgency=low
+
+  * [N_SE-25814] Modify check button event
+  * Git: rsa/apps/home/ug-wifi-direct
+  * Tag: libug-setting-wifidirect-efl_1.0.9
+
+ -- sunil85.kim <isurit@sunil85.kim>  Wed, 13 Mar 2013 17:06:19 +0900
+
 ug-setting-wifidirect-efl (1.0.8) precise; urgency=low
 
   * Fix bug of invitation behavior
