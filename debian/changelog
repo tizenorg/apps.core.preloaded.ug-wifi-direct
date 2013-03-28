@@ -1,3 +1,11 @@
+ug-setting-wifidirect-efl (1.0.11) precise; urgency=low
+
+  * Fix bug N_SE-29625, N_SE-30229, N_SE-30234
+  * Git: rsa/apps/home/ug-wifi-direct
+  * Tag: libug-setting-wifidirect-efl_1.0.11
+
+ -- Gibyoung Kim <laskgb.kim@samsung.com>  Tur, 28 Mar 2013 12:25:01 +0900
+
 ug-setting-wifidirect-efl (1.0.10) precise; urgency=low
 
   * Update for SR
