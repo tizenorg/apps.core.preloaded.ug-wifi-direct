@@ -172,6 +172,32 @@ static void _gl_header_sel(void *data, Evas_Object *obj, void *event_info)
 }
 
 /**
+ *	This function let the ug call it when click genlist item
+ *	@return   void
+ *	@param[in] data the pointer to the main data structure
+ *	@param[in] obj the pointer to the evas object
+ *	@param[in] event_info the pointer to the event information
+ */
+static void _gl_item_sel(void *data, Evas_Object *obj, void *event_info)
+{
+	__WDUG_LOG_FUNC_ENTER__;
+	if (NULL == data) {
+		WDUG_LOGE("Incorrect parameter(NULL)\n");
+		__WDUG_LOG_FUNC_EXIT__;
+		return;
+	}
+
+	struct ug_data *ugd = (struct ug_data *) data;
+	Elm_Object_Item *item = (Elm_Object_Item *)event_info;
+
+	if (item != NULL) {
+		elm_genlist_item_selected_set(item, EINA_FALSE);
+	}
+
+	__WDUG_LOG_FUNC_EXIT__;
+}
+
+/**
  *	This function let the ug call it when click avaliable peer to connect
  *	@return   void
  *	@param[in] data the pointer to the main data structure
@@ -670,7 +696,7 @@ int _create_multi_button_genlist(void *data)
 			ugd->wfd_status == WIFI_DIRECT_STATE_CONNECTING) {
 			ugd->multi_button_sep_item = wfd_add_dialogue_separator(ugd->genlist, "dialogue/separator");
 			ugd->multi_button_item = elm_genlist_item_append(ugd->genlist, &button_itc, ugd, NULL,
-				ELM_GENLIST_ITEM_NONE, NULL, NULL);
+				ELM_GENLIST_ITEM_NONE, _gl_item_sel, (void *)ugd);
 		}
 	} else {
 		if (ugd->gl_available_peer_cnt > 1 ||
@@ -678,7 +704,7 @@ int _create_multi_button_genlist(void *data)
 			ugd->wfd_status == WIFI_DIRECT_STATE_CONNECTING) {
 			ugd->multi_button_sep_item = wfd_add_dialogue_separator(ugd->genlist, "dialogue/separator");
 			ugd->multi_button_item = elm_genlist_item_append(ugd->genlist, &button_itc, ugd, NULL,
-				ELM_GENLIST_ITEM_NONE, NULL, NULL);
+				ELM_GENLIST_ITEM_NONE, _gl_item_sel, (void *)ugd);
 		}
 	}
 

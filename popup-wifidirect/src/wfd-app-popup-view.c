@@ -400,6 +400,7 @@ static void _check_changed_cb(void *data, Evas_Object * obj, void *event_info)
 
 	Eina_Bool state = elm_check_state_get(obj);
 	elm_entry_password_set(ad->pin_entry, !state);
+	elm_entry_autocapital_type_set(ad->pin_entry, ELM_AUTOCAPITAL_TYPE_NONE);
 }
 
 /**
