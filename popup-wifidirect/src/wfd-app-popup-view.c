@@ -138,7 +138,8 @@ static void __popup_resp_cb(void *data, Evas_Object * obj, void *event_info)
 			WDPOP_LOGD(
 				"wifi_direct_accept_connection() failed. result=[%d]\n", result);
 			/* tickernoti popup */
-			wfd_tickernoti_popup(IDS_WFD_POP_CONNECT_FAILED);
+			snprintf(msg, WFD_POP_STR_MAX_LEN, IDS_WFD_POP_CONNECT_FAILED, ad->peer_name);
+			wfd_tickernoti_popup(msg);
 		}
 	}
 	break;
