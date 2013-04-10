@@ -362,7 +362,7 @@ static void _wfd_gl_multi_sel_cb(void *data, Evas_Object *obj, void *event_info)
 	}
 
 	elm_genlist_item_selected_set(item, EINA_FALSE);
-	index = elm_genlist_item_index_get(item) - 3; /* subtract the previous items */
+	index = elm_genlist_item_index_get(item) - 2; /* subtract the previous items */
 	WDUG_LOGD("selected index = %d \n", index);
 	if (index < 0) {
 		WDUG_LOGE("The index is invalid.\n");

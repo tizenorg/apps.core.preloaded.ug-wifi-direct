@@ -3,7 +3,7 @@
 
 Name:       libug-setting-wifidirect-efl
 Summary:    Wi-Fi Direct setting UI gadget 
-Version:    1.0.12
+Version:    1.0.13
 Release:    1
 Group:      TO_BE_FILLED
 License:    Flora License
@@ -46,8 +46,6 @@ BuildRequires:  pkgconfig(syspopup-caller)
 BuildRequires:  cmake
 BuildRequires:  gettext-devel
 
-#%define debug_package %{nil}  
-
 %description
 wifi direct client library (Shared Library)
 
@@ -77,9 +75,6 @@ make %{?jobs:-j%jobs}
 %install
 rm -rf %{buildroot}
 %make_install
-%__strip %{buildroot}/usr/ug/lib/libug-setting-wifidirect-efl.so.0.1.0
-%__strip %{buildroot}/usr/apps/org.tizen.wifi-direct-ugapp/bin/wifi-direct-ugapp
-%__strip %{buildroot}/usr/apps/org.tizen.wifi-direct-popup/bin/wifi-direct-popup
 
 %post
 mkdir -p /usr/ug/bin/
