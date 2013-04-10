@@ -1,3 +1,11 @@
+ug-setting-wifidirect-efl (1.0.13) precise; urgency=low
+
+  * Fix bug N_SE-31317, N_SE-31886(Connect to another device)
+  * Git: rsa/apps/home/ug-wifi-direct
+  * Tag: libug-setting-wifidirect-efl_1.0.13
+
+ -- Gibyoung Kim <laskgb.kim@samsung.com>  Wed, 10 Apr 2013 18:01:40 +0900
+
 ug-setting-wifidirect-efl (1.0.12) precise; urgency=low
 
   * Fix bug N_SE-32347(wrong string)
