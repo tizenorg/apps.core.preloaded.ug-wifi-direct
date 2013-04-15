@@ -171,11 +171,4 @@ extern void wfd_destroy_popup();
  */
 extern void wfd_prepare_popup(int type, void *userdata);
 
-/**
- *	This function let the app create a tickernoti syspopup
- *	@return   void
- *	@param[in] msg the pointer to message of tickernoti
- */
-extern void wfd_tickernoti_popup(char *msg);
-
 #endif                          /* __WFD_SYS_POPAPP_MAIN_H__ */

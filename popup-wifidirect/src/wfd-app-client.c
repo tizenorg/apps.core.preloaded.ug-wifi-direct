@@ -28,10 +28,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
+#include <notification.h>
+#include <vconf.h>
+
 #include "wfd-app.h"
 #include "wfd-app-util.h"
 #include "wfd-app-strings.h"
-#include <vconf.h>
 
 /**
  *	This function let the app make a callback for connected peer
@@ -513,11 +516,11 @@ void _cb_connection(int error_code, wifi_direct_connection_state_e connection_st
 
 			/* tickernoti popup */
 			snprintf(msg, WFD_POP_STR_MAX_LEN, IDS_WFD_POP_CONNECTED, ad->peer_name);
-			wfd_tickernoti_popup(msg);
+			notification_status_message_post(msg);
 		} else if (error_code == WIFI_DIRECT_ERROR_AUTH_FAILED) {
 			WDPOP_LOGD(
 					"Error Code - WIFI_DIRECT_ERROR_AUTH_FAILED\n");
-			wfd_tickernoti_popup(_("IDS_WFD_POP_PIN_INVALID"));
+			notification_status_message_post(_("IDS_WFD_POP_PIN_INVALID"));
 		} else {
 			if (error_code == WIFI_DIRECT_ERROR_CONNECTION_TIME_OUT) {
 				WDPOP_LOGD(
@@ -529,7 +532,7 @@ void _cb_connection(int error_code, wifi_direct_connection_state_e connection_st
 
 			/* tickernoti popup */
 			snprintf(msg, WFD_POP_STR_MAX_LEN, IDS_WFD_POP_CONNECT_FAILED, ad->peer_name);
-			wfd_tickernoti_popup(msg);
+			notification_status_message_post(msg);
 		}
 	}
 	break;
@@ -623,7 +626,7 @@ void _cb_connection(int error_code, wifi_direct_connection_state_e connection_st
 
 		/* tickernoti popup */
 		snprintf(msg, WFD_POP_STR_MAX_LEN, IDS_WFD_POP_DISCONNECTED, ad->peer_name);
-		wfd_tickernoti_popup(msg);
+		notification_status_message_post(msg);
 	}
 	break;
 
@@ -637,14 +640,14 @@ void _cb_connection(int error_code, wifi_direct_connection_state_e connection_st
 
 		/* tickernoti popup */
 		snprintf(msg, WFD_POP_STR_MAX_LEN, IDS_WFD_POP_DISCONNECTED, ad->peer_name);
-		wfd_tickernoti_popup(msg);
+		notification_status_message_post(msg);
 	}
 	break;
 	case WIFI_DIRECT_CONNECTION_IN_PROGRESS:
 	{
 		WDPOP_LOGD( "event ------------------ WIFI_DIRECT_CONNECTION_IN_PROGRESS\n");
 		/* tickernoti popup */
-		wfd_tickernoti_popup(_("IDS_WFD_POP_CONNECTING"));
+		notification_status_message_post(_("IDS_WFD_POP_CONNECTING"));
 	}
 	break;
 	case WIFI_DIRECT_INVITATION_REQ:
@@ -844,7 +847,6 @@ int deinit_wfd_popup_client(wfd_appdata_t *ad)
 	}
 
 	__WDPOP_LOG_FUNC_EXIT__;
-
 	if (ret == WIFI_DIRECT_ERROR_NONE) {
 		return TRUE;
 	} else {

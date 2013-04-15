@@ -28,6 +28,8 @@
 #include <libintl.h>
 #include <glib.h>
 
+#include <notification.h>
+
 #include "wifi-direct.h"
 #include "wfd-app.h"
 #include "wfd-app-strings.h"
@@ -39,7 +41,6 @@ extern unsigned char g_wfd_peer_mac[6];
 extern unsigned char g_wfd_peer_name[32];
 static Ecore_Timer *pb_timer = NULL;
 
-void wfd_tickernoti_popup(char *msg);
 
 /**
  *	This function let the ug make a callback for click the button in popup
@@ -71,7 +72,7 @@ static void __popup_resp_cb(void *data, Evas_Object * obj, void *event_info)
 				result);
 		if (result == WIFI_DIRECT_ERROR_NONE) {
 			/* tickernoti popup */
-			wfd_tickernoti_popup(_("IDS_WFD_POP_CONNECTING"));
+			notification_status_message_post(_("IDS_WFD_POP_CONNECTING"));
 		} else {
 			WDPOP_LOGE(
 					"wifi_direct_accept_connection() FAILED!!\n");
@@ -79,7 +80,7 @@ static void __popup_resp_cb(void *data, Evas_Object * obj, void *event_info)
 
 			/* tickernoti popup */
 			snprintf(msg, WFD_POP_STR_MAX_LEN, IDS_WFD_POP_CONNECT_FAILED, ad->peer_name);
-			wfd_tickernoti_popup(msg);
+			notification_status_message_post(msg);
 		}
 	}
 	break;
@@ -95,7 +96,7 @@ static void __popup_resp_cb(void *data, Evas_Object * obj, void *event_info)
 				result);
 		if (result == WIFI_DIRECT_ERROR_NONE) {
 			/* tickernoti popup */
-			wfd_tickernoti_popup(_("IDS_WFD_POP_CONNECTING"));
+			notification_status_message_post(_("IDS_WFD_POP_CONNECTING"));
 		} else {
 			WDPOP_LOGE(
 					"wifi_direct_connect() FAILED!!\n");
@@ -103,7 +104,7 @@ static void __popup_resp_cb(void *data, Evas_Object * obj, void *event_info)
 
 			/* tickernoti popup */
 			snprintf(msg, WFD_POP_STR_MAX_LEN, IDS_WFD_POP_CONNECT_FAILED, ad->peer_name);
-			wfd_tickernoti_popup(msg);
+			notification_status_message_post(msg);
 		}
 
 	break;
@@ -139,7 +140,7 @@ static void __popup_resp_cb(void *data, Evas_Object * obj, void *event_info)
 				"wifi_direct_accept_connection() failed. result=[%d]\n", result);
 			/* tickernoti popup */
 			snprintf(msg, WFD_POP_STR_MAX_LEN, IDS_WFD_POP_CONNECT_FAILED, ad->peer_name);
-			wfd_tickernoti_popup(msg);
+			notification_status_message_post(msg);
 		}
 	}
 	break;
@@ -156,9 +157,9 @@ static void __popup_resp_cb(void *data, Evas_Object * obj, void *event_info)
 
 		if (len != 8) {
 			if (len > 8)
-				wfd_tickernoti_popup(_("IDS_CST_BODY_PASSWORD_TOO_LONG"));
+				notification_status_message_post(_("IDS_CST_BODY_PASSWORD_TOO_LONG"));
 			else
-				wfd_tickernoti_popup(_("IDS_ST_BODY_PASSWORD_TOO_SHORT"));
+				notification_status_message_post(_("IDS_ST_BODY_PASSWORD_TOO_SHORT"));
 			wfd_prepare_popup(WFD_POP_PROG_CONNECT_WITH_KEYPAD, (void *) NULL);
 			return;
 		}
@@ -170,7 +171,7 @@ static void __popup_resp_cb(void *data, Evas_Object * obj, void *event_info)
 		if (result != WIFI_DIRECT_ERROR_NONE) {
 			/* tickernoti popup */
 			snprintf(msg, WFD_POP_STR_MAX_LEN, IDS_WFD_POP_CONNECT_FAILED, ad->peer_name);
-			wfd_tickernoti_popup(msg);
+			notification_status_message_post(msg);
 			return;
 		}
 
@@ -186,7 +187,7 @@ static void __popup_resp_cb(void *data, Evas_Object * obj, void *event_info)
 
 			/* tickernoti popup */
 			snprintf(msg, WFD_POP_STR_MAX_LEN, IDS_WFD_POP_CONNECT_FAILED, ad->peer_name);
-			wfd_tickernoti_popup(msg);
+			notification_status_message_post(msg);
 		}
 	}
 	break;
@@ -821,64 +822,3 @@ void wfd_prepare_popup(int type, void *userdata)
 	__WDPOP_LOG_FUNC_EXIT__;
 	return;
 }
-
-/**
- *	This function let the app create a tickernoti syspopup
- *	@return   void
- *	@param[in] msg the pointer to message of tickernoti
- */
-void wfd_tickernoti_popup(char *msg)
-{
-	__WDPOP_LOG_FUNC_ENTER__;
-
-	int ret = -1;
-	bundle *b = NULL;
-
-	b = bundle_create();
-	if (!b) {
-		WDPOP_LOGD( "FAIL: bundle_create()\n");
-		return;
-	}
-
-	/* tickernoti style */
-	ret = bundle_add(b, "0", "info");
-	if (ret) {
-		WDPOP_LOGD( "Fail to add tickernoti style\n");
-		bundle_free(b);
-		return;
-	}
-
-	/* popup text */
-	ret = bundle_add(b, "1", msg);
-	if (ret) {
-		WDPOP_LOGD( "Fail to add popup text\n");
-		bundle_free(b);
-		return;
-	}
-
-	/* orientation of tickernoti */
-	ret = bundle_add(b, "2", "0");
-	if (ret) {
-		WDPOP_LOGD( "Fail to add orientation of tickernoti\n");
-		bundle_free(b);
-		return;
-	}
-
-	/* timeout(second) of tickernoti */
-	ret = bundle_add(b, "3", "3");
-	if (ret) {
-		WDPOP_LOGD( "Fail to add timeout of tickernoti\n");
-		bundle_free(b);
-		return;
-	}
-
-	/* launch tickernoti */
-	ret = syspopup_launch(TICKERNOTI_SYSPOPUP, b);
-	if (ret) {
-		WDPOP_LOGD( "Fail to launch syspopup\n");
-	}
-
-	bundle_free(b);
-	__WDPOP_LOG_FUNC_EXIT__;
-}
-
