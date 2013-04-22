@@ -1,3 +1,11 @@
+ug-setting-wifidirect-efl (1.0.15) precise; urgency=low
+
+  * License file changed
+  * Git: rsa/apps/home/ug-wifi-direct
+  * Tag: libug-setting-wifidirect-efl_1.0.15
+
+ -- Gibyoung Kim <laskgb.kim@samsung.com>  Mon, 22 Apr 2013 19:52:15 +0900
+
 ug-setting-wifidirect-efl (1.0.14) precise; urgency=low
 
   * Fix bug N_SE-34398(Wrong PIN message not displayed)
