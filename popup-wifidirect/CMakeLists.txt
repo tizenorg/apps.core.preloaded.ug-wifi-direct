@@ -12,7 +12,6 @@ SET(IMGDIR "${RESDIR}/images")
 SET(SRCS
 	src/wfd-app-main.c
 	src/wfd-app-client.c
-	src/wfd-app-util.c
 	src/wfd-app-popup-view.c
 )
 

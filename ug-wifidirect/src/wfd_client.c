@@ -598,10 +598,13 @@ bool _wfd_connected_peer_cb(wifi_direct_connected_peer_info_s *peer, void *user_
 
 	WDUG_LOGI("%dth connected peer. [%s] [%s]\n", peer_cnt, peer->device_name, peer->mac_address);
 
-	strncpy(ugd->raw_connected_peers[peer_cnt].ssid, peer->device_name, sizeof(ugd->raw_connected_peers[peer_cnt].ssid));
+	strncpy(ugd->raw_connected_peers[peer_cnt].ssid, peer->device_name, SSID_LENGTH);
+	ugd->raw_connected_peers[peer_cnt].ssid[SSID_LENGTH-1] = '\0';
 	ugd->raw_connected_peers[peer_cnt].category = peer->primary_device_type;
 	strncpy(ugd->raw_connected_peers[peer_cnt].mac_addr, peer->mac_address, MAC_LENGTH);
+	ugd->raw_connected_peers[peer_cnt].mac_addr[MAC_LENGTH-1] = '\0';
 	strncpy(ugd->raw_connected_peers[peer_cnt].if_addr, peer->interface_address, MAC_LENGTH);
+	ugd->raw_connected_peers[peer_cnt].if_addr[MAC_LENGTH-1] = '\0';
 	ugd->raw_connected_peers[peer_cnt].conn_status = PEER_CONN_STATUS_CONNECTED;
 
 	WDUG_LOGI("\tStatus: [%d]\n", ugd->raw_connected_peers[peer_cnt].conn_status);
