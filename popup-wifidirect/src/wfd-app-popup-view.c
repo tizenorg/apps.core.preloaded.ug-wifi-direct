@@ -128,6 +128,7 @@ static void __popup_resp_cb(void *data, Evas_Object * obj, void *event_info)
 		}
 
 		strncpy(ad->pin_number, pin, 64);
+		ad->pin_number[63] = '\0';
 		free(pin);
 		pin = NULL;
 		WDPOP_LOGD( "button ok: pin [%s]", ad->pin_number);
@@ -377,7 +378,9 @@ static void _smart_ime_cb(void *data, Evas_Object * obj, void *event_info)
 	const char *txt = elm_entry_markup_to_utf8(elm_entry_entry_get((const Evas_Object *) imf_context));
 	if (NULL != txt) {
 		WDPOP_LOGD( "* text [%s], len=[%d]", txt, strlen(txt));
-		strncpy(ad->pin_number, txt, sizeof(ad->pin_number));
+		strncpy(ad->pin_number, txt, 64);
+		ad->pin_number[63] = '\0';
+		free(txt);
 	} else {
 		WDPOP_LOGD( "Err!");
 	}

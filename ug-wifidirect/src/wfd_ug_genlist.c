@@ -450,15 +450,11 @@ static Evas_Object *_gl_peer_icon_get(void *data, Evas_Object *obj, const char *
 			break;
 		}
 
-		if (img_path != NULL) {
-			icon = elm_icon_add(obj);
-			elm_icon_file_set(icon, img_path, NULL);
-			evas_object_size_hint_aspect_set(icon, EVAS_ASPECT_CONTROL_VERTICAL, 1, 1);
-			elm_icon_resizable_set(icon, 1, 1);
-			evas_object_show(icon);
-		} else {
-			return NULL;
-		}
+		icon = elm_icon_add(obj);
+		elm_icon_file_set(icon, img_path, NULL);
+		evas_object_size_hint_aspect_set(icon, EVAS_ASPECT_CONTROL_VERTICAL, 1, 1);
+		elm_icon_resizable_set(icon, 1, 1);
+		evas_object_show(icon);
 	}
 
 	__WDUG_LOG_FUNC_EXIT__;

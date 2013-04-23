@@ -11,7 +11,6 @@ SET(IMGDIR "${RESDIR}/images")
 
 SET(SRCS
 	src/wfd-ugapp-main.c
-	src/wfd-ugapp-util.c
 )
 
 INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/include)

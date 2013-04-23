@@ -168,9 +168,9 @@ void _add_wfd_peers_connected_notification(void *user_data)
 	res = notification_set_execute_option(ad->noti, NOTIFICATION_EXECUTE_TYPE_SINGLE_LAUNCH, /*Button Text*/NULL, NULL, b);
 	if (res != NOTIFICATION_ERROR_NONE) {
 		WDPOP_LOGD( "Failed to notification_set_execute_option. [%d]", res);
+		bundle_free(b);
 		return;
 	}
-
 	bundle_free(b);
 
 	/* set display application list */
@@ -241,9 +241,9 @@ void _add_wfd_turn_off_notification(void *user_data)
 	res = notification_set_execute_option(ad->noti, NOTIFICATION_EXECUTE_TYPE_SINGLE_LAUNCH, /*Button Text*/NULL, NULL, b);
 	if (res != NOTIFICATION_ERROR_NONE) {
 		WDPOP_LOGD( "Failed to notification_set_execute_option. [%d]", res);
+		bundle_free(b);
 		return;
 	}
-
 	bundle_free(b);
 
 	/* set display application list */
@@ -396,6 +396,7 @@ bool _wfd_app_discoverd_peer_cb(wifi_direct_discovered_peer_info_s *peer, void *
 	if (NULL != peer->mac_address) {
 		WDPOP_LOGD( "discovered peer mac[%s]\n", peer->mac_address);
 		strncpy(ad->discovered_peers[ad->discovered_peer_count].mac_address, peer->mac_address, 18);
+		ad->discovered_peers[ad->discovered_peer_count].mac_address[17] = '\0';
 	} else {
 		WDPOP_LOGD( "peer's mac is NULL\n");
 	}
@@ -567,6 +568,7 @@ void _cb_connection(int error_code, wifi_direct_connection_state_e connection_st
 			}
 
 			strncpy(ad->pin_number, pin, 64);
+			ad->pin_number[63] = '\0';
 			free(pin);
 			pin = NULL;
 
@@ -800,12 +802,7 @@ int init_wfd_popup_client(wfd_appdata_t *ad)
 	}
 
 	__WDPOP_LOG_FUNC_EXIT__;
-
-	if (ret == WIFI_DIRECT_ERROR_NONE) {
-		return TRUE;
-	} else {
-		return FALSE;
-	}
+	return TRUE;
 }
 
 /**
