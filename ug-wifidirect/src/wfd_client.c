@@ -1,9 +1,9 @@
 /*
 *  WiFi-Direct UG
 *
-* Copyright 2012  Samsung Electronics Co., Ltd
+* Copyright 2012-2013 Samsung Electronics Co., Ltd
 
-* Licensed under the Flora License, Version 1.0 (the "License");
+* Licensed under the Flora License, Version 1.1 (the "License");
 * you may not use this file except in compliance with the License.
 * You may obtain a copy of the License at
 
@@ -549,10 +549,13 @@ bool _wfd_discoverd_peer_cb(wifi_direct_discovered_peer_info_s *peer, void *user
 
 	WDUG_LOGI("%dth discovered peer. [%s] [%s]\n", peer_cnt, peer->device_name, peer->mac_address);
 
-	strncpy(ugd->raw_discovered_peers[peer_cnt].ssid, peer->device_name, sizeof(ugd->raw_discovered_peers[peer_cnt].ssid));
+	strncpy(ugd->raw_discovered_peers[peer_cnt].ssid, peer->device_name, SSID_LENGTH);
+	ugd->raw_discovered_peers[peer_cnt].ssid[SSID_LENGTH-1] = '\0';
 	ugd->raw_discovered_peers[peer_cnt].category = peer->primary_device_type;
 	strncpy(ugd->raw_discovered_peers[peer_cnt].mac_addr, peer->mac_address, MAC_LENGTH);
+	ugd->raw_discovered_peers[peer_cnt].mac_addr[MAC_LENGTH-1] = '\0';
 	strncpy(ugd->raw_discovered_peers[peer_cnt].if_addr, peer->interface_address, MAC_LENGTH);
+	ugd->raw_discovered_peers[peer_cnt].if_addr[MAC_LENGTH-1] = '\0';
 	ugd->raw_discovered_peers[peer_cnt].is_group_owner = peer->is_group_owner;
 	ugd->raw_discovered_peers[peer_cnt].is_persistent_group_owner = peer->is_persistent_group_owner;
 	ugd->raw_discovered_peers[peer_cnt].is_connected = peer->is_connected;
