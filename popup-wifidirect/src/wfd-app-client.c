@@ -56,7 +56,9 @@ bool _wfd_connected_peer_cb(wifi_direct_connected_peer_info_s *peer, void *user_
 	WDPOP_LOGD( "%dth connected peer. [%s]\n", peer_cnt, peer->device_name);
 
 	strncpy(ad->raw_connected_peers[peer_cnt].ssid, peer->device_name, sizeof(ad->raw_connected_peers[peer_cnt].ssid));
+	ad->raw_connected_peers[peer_cnt].ssid[31] = '\0';
 	strncpy(ad->raw_connected_peers[peer_cnt].mac_address, peer->mac_address, WFD_MAC_ADDRESS_SIZE);
+	ad->raw_connected_peers[peer_cnt].mac_address[17] = '\0';
 	WDPOP_LOGD( "\tSSID: [%s]\n", ad->raw_connected_peers[peer_cnt].ssid);
 	ad->raw_connected_peer_cnt++;
 
@@ -389,6 +391,7 @@ bool _wfd_app_discoverd_peer_cb(wifi_direct_discovered_peer_info_s *peer, void *
 	if (NULL != peer->device_name) {
 		WDPOP_LOGD( "discovered peer ssid[%s]\n", peer->device_name);
 		strncpy(ad->discovered_peers[ad->discovered_peer_count].ssid, peer->device_name, 32);
+		ad->discovered_peers[ad->discovered_peer_count].ssid[31] = '\0';
 	} else {
 		WDPOP_LOGD( "peer's device name is NULL\n");
 	}
@@ -487,6 +490,7 @@ void _cb_connection(int error_code, wifi_direct_connection_state_e connection_st
 		memset(ad->peer_mac, 0, sizeof(ad->peer_mac));
 		memset(ad->peer_name, 0, sizeof(ad->peer_name));
 		strncpy(ad->peer_mac, mac_address, strlen(mac_address));
+		ad->peer_mac[17] = '\0';
 		peer_info = _wfd_app_find_peer_by_mac_address(ad, mac_address);
 
 		if (NULL == peer_info) {
@@ -496,10 +500,12 @@ void _cb_connection(int error_code, wifi_direct_connection_state_e connection_st
 		} else {
 			WDPOP_LOGD( "SSID from connection is %s.\n", peer_info->ssid);
 			strncpy(ad->peer_name, peer_info->ssid, strlen(peer_info->ssid));
+			ad->peer_name[31] = '\0';
 		}
 
 		if (0 == strlen(ad->peer_name)) {
 			strncpy(ad->peer_name, ad->peer_mac, strlen(ad->peer_mac));
+			ad->peer_name[31] = '\0';
 		}
 	}
 
