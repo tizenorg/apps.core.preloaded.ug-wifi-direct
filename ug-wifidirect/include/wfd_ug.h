@@ -54,23 +54,15 @@
 
 #else /** _DLOG_UTIL */
 
-#define WDUG_LOGV(format, args...) \
-	printf("[V/UG_WIFI_DIRECT] %s: %s()(%4d)> "format, __FILE__, __FUNCTION__, __LINE__, ##args)
-#define WDUG_LOGD(format, args...) \
-	printf("[D/UG_WIFI_DIRECT] %s: %s()(%4d)> "format, __FILE__, __FUNCTION__, __LINE__, ##args)
-#define WDUG_LOGI(format, args...) \
-	printf("[I/UG_WIFI_DIRECT] %s: %s()(%4d)> "format, __FILE__, __FUNCTION__, __LINE__, ##args)
-#define WDUG_LOGW(format, args...) \
-	printf("[W/UG_WIFI_DIRECT] %s: %s()(%4d)> "format, __FILE__, __FUNCTION__, __LINE__, ##args)
-#define WDUG_LOGE(format, args...) \
-	printf("[E/UG_WIFI_DIRECT] %s: %s()(%4d)> "format, __FILE__, __FUNCTION__, __LINE__, ##args)
-#define WDUG_LOGF(format, args...) \
-	printf("[F/UG_WIFI_DIRECT] %s: %s()(%4d)> "format, __FILE__, __FUNCTION__, __LINE__, ##args)
+#define WDUG_LOGV(format, args...)
+#define WDUG_LOGD(format, args...)
+#define WDUG_LOGI(format, args...)
+#define WDUG_LOGW(format, args...)
+#define WDUG_LOGE(format, args...)
+#define WDUG_LOGF(format, args...)
 
-#define __WDUG_LOG_FUNC_ENTER__ \
-	printf("[V/UG_WIFI_DIRECT] %s: %s()(%4d)> Enter", __FILE__, __FUNCTION__, __LINE__)
-#define __WDUG_LOG_FUNC_EXIT__ \
-	printf("[V/UG_WIFI_DIRECT] %s: %s()(%4d)> Exit", __FILE__, __FUNCTION__, __LINE__)
+#define __WDUG_LOG_FUNC_ENTER__
+#define __WDUG_LOG_FUNC_EXIT__
 
 #endif /** _DLOG_UTIL */
 

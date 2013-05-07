@@ -606,7 +606,7 @@ void _cb_connection(int error_code, wifi_direct_connection_state_e connection_st
 
 		if (auto_connection_mode == TRUE) {
 			result = wifi_direct_accept_connection(ad->peer_mac);
-			printf("wifi_direct_accept_connection() result=[%d]\n", result);
+			WDPOP_LOGD("wifi_direct_accept_connection() result=[%d]\n", result);
 		} else {
 			if (wps_mode == WIFI_DIRECT_WPS_TYPE_PBC) {
 				WDPOP_LOGD( "wps_config is WIFI_DIRECT_WPS_TYPE_PBC\n");
@@ -666,7 +666,7 @@ void _cb_connection(int error_code, wifi_direct_connection_state_e connection_st
 		wifi_direct_is_autoconnection_mode(&auto_connection_mode);
 		if (auto_connection_mode == TRUE) {
 			result = wifi_direct_connect(ad->peer_mac);
-			printf("wifi_direct_accept_connection() result=[%d]\n", result);
+			WDPOP_LOGD("wifi_direct_accept_connection() result=[%d]\n", result);
 		} else {
 			wfd_prepare_popup(WFD_POP_APRV_CONNECTION_INVITATION_REQ, NULL);
 		}
