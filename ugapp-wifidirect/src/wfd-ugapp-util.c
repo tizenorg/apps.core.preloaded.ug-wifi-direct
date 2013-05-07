@@ -67,7 +67,7 @@ int wfd_app_gettid()
 #ifdef __NR_gettid
 	return syscall(__NR_gettid);
 #else
-	fprintf(stderr, "__NR_gettid is not defined, please include linux/unistd.h ");
+	WDUA_LOGE("__NR_gettid is not defined, please include linux/unistd.h ");
 	return -1;
 #endif
 }
