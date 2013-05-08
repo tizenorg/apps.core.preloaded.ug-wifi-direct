@@ -55,23 +55,15 @@
 } while (0)
 
 #else /** _DLOG_UTIL */
-#define WDUA_LOGV(format, args...) \
-	printf("[V/WIFI_DIRECT_UGAPP] %s: %s()(%4d)> "format, __FILE__, __FUNCTION__, __LINE__, ##args)
-#define WDUA_LOGD(format, args...) \
-	printf("[D/WIFI_DIRECT_UGAPP] %s: %s()(%4d)> "format, __FILE__, __FUNCTION__, __LINE__, ##args)
-#define WDUA_LOGI(format, args...) \
-	printf("[I/WIFI_DIRECT_UGAPP] %s: %s()(%4d)> "format, __FILE__, __FUNCTION__, __LINE__, ##args)
-#define WDUA_LOGW(format, args...) \
-	printf("[W/WIFI_DIRECT_UGAPP] %s: %s()(%4d)> "format, __FILE__, __FUNCTION__, __LINE__, ##args)
-#define WDUA_LOGE(format, args...) \
-	printf("[E/WIFI_DIRECT_UGAPP] %s: %s()(%4d)> "format, __FILE__, __FUNCTION__, __LINE__, ##args)
-#define WDUA_LOGF(format, args...) \
-	printf("[F/WIFI_DIRECT_UGAPP] %s: %s()(%4d)> "format, __FILE__, __FUNCTION__, __LINE__, ##args)
+#define WDUA_LOGV(format, args...)
+#define WDUA_LOGD(format, args...)
+#define WDUA_LOGI(format, args...)
+#define WDUA_LOGW(format, args...)
+#define WDUA_LOGE(format, args...)
+#define WDUA_LOGF(format, args...)
 
-#define __WDUA_LOG_FUNC_ENTER__\
-	printf("[V/WIFI_DIRECT_UGAPP] %s: %s()(%4d)> Enter", __FILE__, __FUNCTION__, __LINE__)
-#define __WDUA_LOG_FUNC_EXIT__ \
-	printf("[V/WIFI_DIRECT_UGAPP] %s: %s()(%4d)> Exit", __FILE__, __FUNCTION__, __LINE__)
+#define __WDUA_LOG_FUNC_ENTER__
+#define __WDUA_LOG_FUNC_EXIT__
 
 #endif /** _DLOG_UTIL */
 
