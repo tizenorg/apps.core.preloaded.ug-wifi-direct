@@ -3,7 +3,7 @@
 
 Name:       libug-setting-wifidirect-efl
 Summary:    Wi-Fi Direct setting UI gadget 
-Version:    1.0.20
+Version:    1.0.21
 Release:    1
 Group:      TO_BE_FILLED
 License:    Flora License
@@ -99,6 +99,7 @@ ln -sf /usr/bin/ug-client /usr/ug/bin/ug-setting-wifidirect-efl
 #/usr/share/applications/org.tizen.wifi-direct-popup.desktop
 #for appfw new manifest
 /usr/share/packages/org.tizen.wifi-direct-popup.xml
+%{_sysconfdir}/smack/accesses.d/org.tizen.wifi-direct-popup.rule
 
 %files -n org.tizen.wifi-direct-ugapp
 %manifest org.tizen.wifi-direct-ugapp.manifest
@@ -107,4 +108,4 @@ ln -sf /usr/bin/ug-client /usr/ug/bin/ug-setting-wifidirect-efl
 #/usr/share/applications/org.tizen.wifi-direct-ugapp.desktop
 #for appfw new manifest
 /usr/share/packages/org.tizen.wifi-direct-ugapp.xml
-
+%{_sysconfdir}/smack/accesses.d/org.tizen.wifi-direct-ugapp.rule
