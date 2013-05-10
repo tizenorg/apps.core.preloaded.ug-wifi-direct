@@ -1,4 +1,7 @@
 <manifest>
+	<define>
+		<domain name="org.tizen.wifi-direct-popup"/>
+	</define>
 	<request>
 		<domain name="_"/>
 	</request>
