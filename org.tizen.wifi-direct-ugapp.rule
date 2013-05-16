@@ -8,7 +8,6 @@ org.tizen.wifi-direct-ugapp system::use_internet r----
 org.tizen.wifi-direct-ugapp xorg rw---
 org.tizen.app-tray org.tizen.wifi-direct-ugapp r-x--
 org.tizen.wifi-direct-ugapp pulseaudio rwxat
-e17 org.tizen.wifi-direct-ugapp -w---
 org.tizen.wifi-direct-ugapp wifi_direct_manager rw---
 org.tizen.wifi-direct-ugapp sound_server rwx--
 org.tizen.wifi-direct-ugapp isf rwx--
@@ -18,3 +17,5 @@ org.tizen.wifi-direct-ugapp resman::db rw---
 org.tizen.wifi-direct-ugapp data-provider-master rw---
 org.tizen.wifi-direct-ugapp org.tizen.indicator rw---
 org.tizen.wifi-direct-ugapp org.tizen.setting rw---
+e17 org.tizen.wifi-direct-ugapp rw---
+org.tizen.wifi-direct-ugapp e17 rw---
