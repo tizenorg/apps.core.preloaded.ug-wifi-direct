@@ -18,4 +18,5 @@ org.tizen.wifi-direct-popup syspopup::db rw---
 org.tizen.wifi-direct-popup notification::db rw---
 org.tizen.wifi-direct-popup sys-assert::core rwxat
 org.tizen.wifi-direct-popup data-provider-master rw---
-e17 org.tizen.wifi-direct-popup -w---
+e17 org.tizen.wifi-direct-popup rw---
+org.tizen.wifi-direct-popup e17 rw---
