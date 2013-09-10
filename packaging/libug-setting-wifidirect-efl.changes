@@ -1,0 +1,60 @@
+* Tue Sep 10 2013 Maciej Wereski <m.wereski@partner.samsung.com> accepted/tizen/20130530.164440@dd01a4a
+- Fix RPMLINT and add changes file
+- Merge branch 'master' into tizen_2.1
+- SMACK rule appended
+- Merge branch 'master' into tizen_2.1
+- install SMACK rule file
+- Merge branch 'master' into tizen_2.1
+- SMACK applyed
+- Merge branch 'master' into tizen_2.1
+- printf removed
+- printf removed
+- Merge branch 'master' into tizen_2.1
+- prevent issue fixed
+- Merge branch 'master' into tizen_2.1
+- NOTICE file updated
+- Merge branch 'master' into tizen_2.1
+- Boilerplate is modified
+- Merge branch 'master' into tizen_2.1
+- License version update and prevent issue resolved
+- License file updated
+- License file updated
+- Merge branch 'master' into tizen_2.1
+- Prevent issue resolved
+- Merge branch 'master' into tizen_2.1
+- License site changed
+- Merge branch 'master' into tizen_2.1
+- License file changed
+- Merge branch 'master' into tizen_2.1
+- Fix bug N_SE-34398(Wrong PIN message not displayed)
+- Merge branch 'master' into tizen_2.1
+- Fix bug N_SE-31317, N_SE-31886(Connect to another device)
+- Merge branch 'master' into tizen_2.1
+- Fix bug N_SE-31347(Wrong string)
+- package update
+- Fix Bug N_SE-29625, N_SE-30229, N_SE-30234
+- Update for SR
+- [N_SE-25814] Modify check button event
+- Tizen 2.1 base
+- Fix bug of invitation behavior
+- Update for STMS
+- Fix bug(N_SE-23716)
+- Package update
+- Fix bug of UG launching failure
+- Keypad and display popup is changed
+- Package upload(version 1.0.2)
+- DLog macro is changed
+- manifest file name is changed
+- Package upload
+- Applied changes from wifi-direct and EFL
+- Applied changes from EFL and wifi-direct APIS
+- applied the new partition rule.
+- Added SMACK manifests from private repository.
+- set the value false of taskmanager in xml so that pop-up App does not appear in TaskManager.
+- fixed text bug
+- changed to support multi-languages.
+- removed code related with tethering.
+- tizen 2.0beta Change-Id: Ibd5455c39cb9f809e0518f481c13356d1a4ea37e
+- apply FSL(Flora Software License)
+- Initial empty repository
+
