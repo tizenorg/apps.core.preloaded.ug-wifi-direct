@@ -5,8 +5,8 @@ Name:       libug-setting-wifidirect-efl
 Summary:    Wi-Fi Direct setting UI gadget 
 Version:    1.0.21
 Release:    1
-Group:      TO_BE_FILLED
-License:    Flora License
+Group:      Network & Connectivity/Wireless
+License:    Flora
 Source0:    %{name}-%{version}.tar.gz
 Requires(post): /sbin/ldconfig   
 Requires(post): /usr/bin/sqlite3   
@@ -79,7 +79,9 @@ rm -rf %{buildroot}
 %post
 mkdir -p /usr/ug/bin/
 ln -sf /usr/bin/ug-client /usr/ug/bin/ug-setting-wifidirect-efl
-%postun
+/sbin/ldconfig
+
+%postun -p /sbin/ldconfig
 
 
 %files
