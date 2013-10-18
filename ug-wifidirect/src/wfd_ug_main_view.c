@@ -24,6 +24,7 @@
 #include <glib.h>
 
 #include <Elementary.h>
+#include <efl_assist.h>
 #include <vconf.h>
 #include <ui-gadget-module.h>
 #include <wifi-direct.h>
@@ -39,14 +40,14 @@
  *	@param[in] obj the pointer to the evas object
  *	@param[in] event_info the pointer to the event information
  */
-void _back_btn_cb(void *data, Evas_Object * obj, void *event_info)
+Eina_Bool _back_btn_cb(void *data, Elm_Object_Item *it)
 {
 	__WDUG_LOG_FUNC_ENTER__;
 	struct ug_data *ugd = (struct ug_data *) data;
 
 	if (!ugd) {
 		WDUG_LOGE("The param is NULL\n");
-		return;
+		return FALSE;
 	}
 
 	wfd_ug_view_free_peers(ugd);
@@ -56,7 +57,7 @@ void _back_btn_cb(void *data, Evas_Object * obj, void *event_info)
 	ret = service_create(&service);
 	if (ret) {
 		WDUG_LOGE("Failed to create service");
-		return;
+		return FALSE;
 	}
 
 	wfd_refresh_wifi_direct_state(ugd);
@@ -71,7 +72,7 @@ void _back_btn_cb(void *data, Evas_Object * obj, void *event_info)
 	ug_destroy_me(ugd->ug);
 
 	__WDUG_LOG_FUNC_EXIT__;
-	return;
+	return FALSE;
 }
 
 /**
@@ -94,7 +95,7 @@ void _scan_btn_cb(void *data, Evas_Object *obj, void *event_info)
 		return;
 	}
 
-	btn_text = (char *)elm_object_text_get(obj);
+	btn_text = elm_object_item_part_text_get(ugd->scan_btn, "default");
 	if (NULL == btn_text) {
 		WDUG_LOGE("Incorrect button text(NULL)\n");
 		return;
@@ -381,8 +382,8 @@ void wfd_ug_view_refresh_button(void *obj, const char *text, int enable)
 	}
 
 	WDUG_LOGD("Set the attributes of button: text[%s], enabled[%d]\n", text, enable);
-	elm_object_text_set(obj, text);
-	elm_object_disabled_set(obj, !enable);
+	elm_object_item_part_text_set(obj, "default", text);
+	elm_object_item_disabled_set(obj, !enable);
 
 	__WDUG_LOG_FUNC_EXIT__;
 }
@@ -1184,6 +1185,8 @@ void create_wfd_ug_view(void *data)
 	}
 
 	ugd->naviframe = elm_naviframe_add(ugd->base);
+	elm_naviframe_prev_btn_auto_pushed_set(ugd->naviframe, EINA_FALSE);
+	ea_object_event_callback_add(ugd->naviframe, EA_CALLBACK_BACK, ea_naviframe_back_cb, NULL);
 	elm_object_part_content_set(ugd->base, "elm.swallow.content", ugd->naviframe);
 	evas_object_show(ugd->naviframe);
 
@@ -1204,13 +1207,17 @@ void create_wfd_ug_view(void *data)
 		ugd->wfd_onoff = TRUE;
 	}
 
-	navi_item = elm_naviframe_item_push(ugd->naviframe, _("IDS_WFD_HEADER_WIFI_DIRECT"), ugd->back_btn, NULL, ugd->genlist, NULL);
+	navi_item = elm_naviframe_item_push(ugd->naviframe, _("IDS_WFD_HEADER_WIFI_DIRECT"), NULL/*ugd->back_btn*/, NULL, ugd->genlist, NULL);
+	elm_naviframe_item_pop_cb_set(navi_item, _back_btn_cb, ugd);
 	/* create scan button */
-	ugd->scan_btn = elm_button_add(ugd->naviframe);
-	elm_object_style_set(ugd->scan_btn, "naviframe/toolbar/default");
-	elm_object_text_set(ugd->scan_btn, _("IDS_WFD_BUTTON_SCAN"));
-	evas_object_smart_callback_add(ugd->scan_btn, "clicked", _scan_btn_cb, (void *)ugd);
-	elm_object_item_part_content_set(navi_item, "toolbar_button1", ugd->scan_btn);
+	Evas_Object *toolbar = elm_toolbar_add(ugd->naviframe);
+	elm_object_style_set(toolbar, "default");
+	elm_toolbar_shrink_mode_set(toolbar, ELM_TOOLBAR_SHRINK_EXPAND);
+	elm_toolbar_transverse_expanded_set(toolbar, EINA_TRUE);
+	elm_toolbar_select_mode_set(toolbar, ELM_OBJECT_SELECT_MODE_NONE);
+
+	ugd->scan_btn = elm_toolbar_item_append(toolbar, NULL, _("IDS_WFD_BUTTON_SCAN"), _scan_btn_cb, (void*) ugd);
+	elm_object_item_part_content_set(navi_item, "toolbar", toolbar);
 
 	__WDUG_LOG_FUNC_EXIT__;
 }

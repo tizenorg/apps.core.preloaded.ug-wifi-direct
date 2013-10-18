@@ -2,8 +2,8 @@
 %define PREFIX /usr/ug
 
 Name:       libug-setting-wifidirect-efl
-Summary:    Wi-Fi Direct setting UI gadget 
-Version:    1.0.21
+Summary:    Wi-Fi Direct setting UI gadget
+Version:    1.1.4
 Release:    1
 Group:      Network & Connectivity/Wireless
 License:    Flora
@@ -14,7 +14,6 @@ Requires(postun): /sbin/ldconfig
 BuildRequires:  cmake   
 BuildRequires:  edje-tools   
 BuildRequires:  gettext-tools
-BuildRequires:  pkgconfig(dbus-glib-1)
 BuildRequires:  pkgconfig(dlog)
 BuildRequires:  pkgconfig(vconf)
 BuildRequires:  pkgconfig(appcore-efl)
@@ -43,6 +42,7 @@ BuildRequires:  pkgconfig(capi-system-runtime-info)
 BuildRequires:  pkgconfig(capi-system-device) 
 BuildRequires:  pkgconfig(notification)
 BuildRequires:  pkgconfig(syspopup-caller)
+BuildRequires:  pkgconfig(efl-assist)
 BuildRequires:  cmake
 BuildRequires:  gettext-devel
 

@@ -201,7 +201,7 @@ void _wifid_create_multiconnect_view(struct ug_data *ugd);
  *	@param[in] obj the pointer to the evas object
  *	@param[in] event_info the pointer to the event information
  */
-void _back_btn_cb(void *data, Evas_Object * obj, void *event_info);
+Eina_Bool _back_btn_cb(void *data, Elm_Object_Item *it);
 
 /**
  *	This function let the ug call it when click 'scan' button
