@@ -23,6 +23,7 @@
 #include <glib.h>
 
 #include <Elementary.h>
+#include <efl_assist.h>
 #include <vconf.h>
 #include <ui-gadget-module.h>
 #include <wifi-direct.h>
@@ -230,11 +231,11 @@ void wfd_ug_act_popup(void *data, const char *message, int popup_type)
 
 	/* set the different text by type */
 	if (popup_type == POPUP_TYPE_WIFI_OFF || popup_type == POPUP_TYPE_HOTSPOT_OFF) {
-		elm_object_text_set(btn1, S_("IDS_COM_SK_YES"));
-		elm_object_text_set(btn2, S_("IDS_COM_SK_NO"));
+		elm_object_text_set(btn1, S_("IDS_COM_SK_NO"));
+		elm_object_text_set(btn2, S_("IDS_COM_SK_YES"));
 	} else {
-		elm_object_text_set(btn1, S_("IDS_COM_SK_OK"));
-		elm_object_text_set(btn2, S_("IDS_COM_SK_CANCEL"));
+		elm_object_text_set(btn1, S_("IDS_COM_SK_CANCEL"));
+		elm_object_text_set(btn2, S_("IDS_COM_SK_OK"));
 	}
 
 	elm_object_part_content_set(popup, "button1", btn1);
@@ -242,16 +243,18 @@ void wfd_ug_act_popup(void *data, const char *message, int popup_type)
 
 	/* set the different callback by type */
 	if (popup_type == POPUP_TYPE_WIFI_OFF) {
-		evas_object_smart_callback_add(btn1, "clicked", _wfd_ug_act_popup_wifi_ok_cb, (void *)ugd);
-		evas_object_smart_callback_add(btn2, "clicked", _wfd_ug_act_popup_wifi_cancel_cb, (void *)ugd);
+		evas_object_smart_callback_add(btn1, "clicked", _wfd_ug_act_popup_wifi_cancel_cb, (void*) ugd);
+		ea_object_event_callback_add(popup, EA_CALLBACK_BACK, _wfd_ug_act_popup_wifi_cancel_cb, (void*) ugd);
+		evas_object_smart_callback_add(btn2, "clicked", _wfd_ug_act_popup_wifi_ok_cb, (void*) ugd);
 	} else if (popup_type == POPUP_TYPE_HOTSPOT_OFF) {
-		evas_object_smart_callback_add(btn1, "clicked", _wfd_ug_act_popup_hotspot_ok_cb, (void *)ugd);
-		evas_object_smart_callback_add(btn2, "clicked", _wfd_ug_act_popup_hotspot_cancel_cb, (void *)ugd);
-	} else if (popup_type == POP_TYPE_DISCONNECT ||
-		popup_type == POP_TYPE_DISCONNECT_ALL ||
-		popup_type == POP_TYPE_SCAN_AGAIN) {
-		evas_object_smart_callback_add(btn1, "clicked", _wfd_ug_act_popup_disconnect_all_ok_cb, (void *)ugd);
-		evas_object_smart_callback_add(btn2, "clicked", _wfd_ug_act_popup_disconnect_all_cancel_cb, (void *)ugd);
+		evas_object_smart_callback_add(btn1, "clicked", _wfd_ug_act_popup_hotspot_cancel_cb, (void*) ugd);
+		ea_object_event_callback_add(popup, EA_CALLBACK_BACK, _wfd_ug_act_popup_hotspot_cancel_cb, (void*) ugd);
+		evas_object_smart_callback_add(btn2, "clicked", _wfd_ug_act_popup_hotspot_ok_cb, (void*) ugd);
+	} else if (popup_type == POP_TYPE_DISCONNECT || popup_type == POP_TYPE_DISCONNECT_ALL ||
+				popup_type == POP_TYPE_SCAN_AGAIN) {
+		evas_object_smart_callback_add(btn1, "clicked", _wfd_ug_act_popup_disconnect_all_cancel_cb, (void*) ugd);
+		ea_object_event_callback_add(popup, EA_CALLBACK_BACK, _wfd_ug_act_popup_disconnect_all_cancel_cb, (void*) ugd);
+		evas_object_smart_callback_add(btn2, "clicked", _wfd_ug_act_popup_disconnect_all_ok_cb, (void*) ugd);
 	}
 
 	evas_object_show(popup);
@@ -356,6 +359,7 @@ void wfd_ug_warn_popup(void *data, const char *message, int popup_type)
 	Evas_Object *btn = NULL;
 
 	popup = elm_popup_add(ugd->base);
+	ea_object_event_callback_add(popup, EA_CALLBACK_BACK, ea_popup_back_cb, NULL);
 	evas_object_size_hint_weight_set(popup, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
 	elm_object_part_text_set(popup, "title,text", _("IDS_WFD_POP_TITILE_CONNECTION"));
 	elm_object_text_set(popup, message);
