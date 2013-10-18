@@ -8,6 +8,7 @@ pkg_check_modules(pkgs REQUIRED appcore-efl appsvc ui-gadget-1 x11 dlog
 	notification
 	capi-appfw-application
 	syspopup-caller
+	efl-assist
 	)
 
 FOREACH(flag ${pkgs_CFLAGS})

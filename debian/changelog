@@ -1,3 +1,35 @@
+ug-setting-wifidirect-efl (1.1.4) precise; urgency=low
+
+  * fix bug(N_SE-51208: connected notification)
+  * Git: rsa/apps/home/ug-wifi-direct
+  * Tag: libug-setting-wifidirect-efl_1.1.4
+
+ -- Gibyoung Kim <laskgb.kim@samsung.com>  Wed, 17 Jul 2013 18:12:15 +0900
+
+ug-setting-wifidirect-efl (1.1.3) precise; urgency=low
+
+  * fix bug(N_SE-45954: PIN string is cut)
+  * Git: rsa/apps/home/ug-wifi-direct
+  * Tag: libug-setting-wifidirect-efl_1.1.3
+
+ -- Gibyoung Kim <laskgb.kim@samsung.com>  Wed, 17 Jul 2013 18:12:15 +0900
+
+ug-setting-wifidirect-efl (1.1.1) precise; urgency=low
+
+  * Black theme applied
+  * Git: rsa/apps/home/ug-wifi-direct
+  * Tag: libug-setting-wifidirect-efl_1.1.1
+
+ -- Gibyoung Kim <laskgb.kim@samsung.com>  Tue, 25 Jun 2013 22:39:42 +0900
+
+ug-setting-wifidirect-efl (1.1.0) precise; urgency=low
+
+  * added HW back key handling
+  * Git: rsa/apps/home/ug-wifi-direct
+  * Tag: libug-setting-wifidirect-efl_1.1.0
+
+ -- Gibyoung Kim <laskgb.kim@samsung.com>  Mon, 24 Jun 2013 11:43:29 +0900
+
 ug-setting-wifidirect-efl (1.0.21) precise; urgency=low
 
   * SMACK applyed

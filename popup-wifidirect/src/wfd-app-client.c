@@ -154,34 +154,6 @@ void _add_wfd_peers_connected_notification(void *user_data)
 		return;
 	}
 
-	noti_err = notification_set_text(ad->noti, NOTIFICATION_TEXT_TYPE_CONTENT,
-		"Tap to change settings", NULL, NOTIFICATION_VARIABLE_TYPE_NONE);
-	if (noti_err != NOTIFICATION_ERROR_NONE) {
-		WDPOP_LOGD( "Fail to notification_set_text. (%d)\n", noti_err);
-		return;
-	}
-
-	bundle *b = NULL;
-	b = bundle_create();
-	appsvc_set_pkgname(b, PACKAGE);
-	appsvc_add_data(b, NOTIFICATION_BUNDLE_PARAM, NOTIFICATION_BUNDLE_VALUE);
-
-	int res = NOTIFICATION_ERROR_NONE;
-	res = notification_set_execute_option(ad->noti, NOTIFICATION_EXECUTE_TYPE_SINGLE_LAUNCH, /*Button Text*/NULL, NULL, b);
-	if (res != NOTIFICATION_ERROR_NONE) {
-		WDPOP_LOGD( "Failed to notification_set_execute_option. [%d]", res);
-		bundle_free(b);
-		return;
-	}
-	bundle_free(b);
-
-	/* set display application list */
-	noti_err = notification_set_display_applist(ad->noti, NOTIFICATION_DISPLAY_APP_NOTIFICATION_TRAY);
-	if (noti_err != NOTIFICATION_ERROR_NONE) {
-		WDPOP_LOGD( "Fail to notification_set_display_applist : %d\n", noti_err);
-		return;
-	}
-
 	/* notify the quick panel */
 	noti_err = notification_insert(ad->noti, NULL);
 	if (noti_err != NOTIFICATION_ERROR_NONE) {
@@ -552,9 +524,9 @@ void _cb_connection(int error_code, wifi_direct_connection_state_e connection_st
 
 		WDPOP_LOGD(
 				"event ------------------ WIFI_DIRECT_CONNECTION_WPS_REQ\n");
-		result = wifi_direct_get_wps_type(&wps_mode);
+		result = wifi_direct_get_local_wps_type(&wps_mode);
 		WDPOP_LOGD(
-				"wifi_direct_get_wps_type() result=[%d]\n", result);
+				"wifi_direct_get_local_wps_type() result=[%d]\n", result);
 
 		if (wps_mode == WIFI_DIRECT_WPS_TYPE_PBC) {
 			WDPOP_LOGD(
@@ -598,8 +570,8 @@ void _cb_connection(int error_code, wifi_direct_connection_state_e connection_st
 		wifi_direct_wps_type_e wps_mode;
 		bool auto_connection_mode;
 
-		result = wifi_direct_get_wps_type(&wps_mode);
-		WDPOP_LOGD( "wifi_direct_get_wps_type() result=[%d]\n", result);
+		result = wifi_direct_get_local_wps_type(&wps_mode);
+		WDPOP_LOGD( "wifi_direct_get_local_wps_type() result=[%d]\n", result);
 
 		result = wifi_direct_is_autoconnection_mode(&auto_connection_mode);
 		WDPOP_LOGD( "wifi_direct_is_autoconnection_mode() result=[%d]\n", result);

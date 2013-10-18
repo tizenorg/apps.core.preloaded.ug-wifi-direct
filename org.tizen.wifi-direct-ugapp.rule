@@ -15,6 +15,8 @@ org.tizen.wifi-direct-ugapp dbus r-x--
 org.tizen.wifi-direct-ugapp ail::db rw---
 org.tizen.wifi-direct-ugapp resman::db rw---
 org.tizen.wifi-direct-ugapp data-provider-master rw---
+org.tizen.wifi-direct-ugapp data-provider-master::notification rw
+org.tizen.wifi-direct-ugapp data-provider-master::notification.client w
 org.tizen.wifi-direct-ugapp org.tizen.indicator rw---
 org.tizen.wifi-direct-ugapp org.tizen.setting rw---
 e17 org.tizen.wifi-direct-ugapp rw---

@@ -29,6 +29,7 @@
 #include <glib.h>
 
 #include <notification.h>
+#include <efl_assist.h>
 
 #include "wifi-direct.h"
 #include "wfd-app.h"
@@ -279,6 +280,7 @@ static Evas_Object *wfd_draw_pop_type_a(Evas_Object * win, wfd_popup_t * pop)
 	Evas_Object *popup;
 
 	popup = elm_popup_add(win);
+	ea_object_event_callback_add(popup, EA_CALLBACK_BACK, ea_popup_back_cb, NULL);
 	evas_object_size_hint_weight_set(popup, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
 	elm_object_text_set(popup, pop->text);
 	elm_popup_timeout_set(popup, pop->timeout);
@@ -310,6 +312,7 @@ static Evas_Object *wfd_draw_pop_type_b(Evas_Object * win, wfd_popup_t * pop)
 	elm_object_text_set(btn, pop->label1);
 	elm_object_part_content_set(popup, "button1", btn);
 	evas_object_smart_callback_add(btn, "clicked", __popup_resp_cb, (void *) pop->resp_data1);
+	ea_object_event_callback_add(popup, EA_CALLBACK_BACK, __popup_resp_cb, (void*) pop->resp_data1);
 
 	evas_object_show(popup);
 	evas_object_show(win);
@@ -339,14 +342,16 @@ static Evas_Object *wfd_draw_pop_type_c(Evas_Object * win, wfd_popup_t * pop)
 	elm_object_text_set(btn1, pop->label1);
 	elm_object_part_content_set(popup, "button1", btn1);
 	evas_object_smart_callback_add(btn1, "clicked", __popup_resp_cb,
-		(void *) pop->resp_data1);
+		(void*) pop->resp_data1);
+	ea_object_event_callback_add(popup, EA_CALLBACK_BACK, __popup_resp_cb,
+		(void*) pop->resp_data1);
 
 	btn2 = elm_button_add(popup);
 	elm_object_style_set(btn2, "popup_button/default");
 	elm_object_text_set(btn2, pop->label2);
 	elm_object_part_content_set(popup, "button2", btn2);
 	evas_object_smart_callback_add(btn2, "clicked", __popup_resp_cb,
-		(void *) pop->resp_data2);
+		(void*) pop->resp_data2);
 
 	evas_object_show(popup);
 	evas_object_show(win);
@@ -546,8 +551,8 @@ Evas_Object *wfd_draw_pop_type_display(Evas_Object * win, wfd_popup_t * pop)
 	elm_object_style_set(label, "popup/default");
 	elm_label_line_wrap_set(label, ELM_WRAP_MIXED);
 	elm_object_text_set(label, pop->text);
-	evas_object_size_hint_weight_set(label, EVAS_HINT_EXPAND, 0.0);
-	evas_object_size_hint_align_set(label, EVAS_HINT_FILL, 0.0);
+	evas_object_size_hint_weight_set(label, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
+	evas_object_size_hint_align_set(label, EVAS_HINT_FILL, EVAS_HINT_FILL);
 	elm_box_pack_end(box, label);
 	evas_object_show(label);
 
@@ -587,7 +592,9 @@ Evas_Object *wfd_draw_pop_type_display(Evas_Object * win, wfd_popup_t * pop)
 		elm_object_text_set(btn1, pop->label1);
 		elm_object_part_content_set(popup, "button1", btn1);
 		evas_object_smart_callback_add(btn1, "clicked", __popup_resp_cb,
-			(void *) pop->resp_data1);
+			(void*) pop->resp_data1);
+		ea_object_event_callback_add(popup, EA_CALLBACK_BACK, __popup_resp_cb,
+			(void*) pop->resp_data1);
 	}
 
 	if (pop->resp_data2 == WFD_POP_RESP_APRV_CONNECT_NO) {
@@ -597,7 +604,7 @@ Evas_Object *wfd_draw_pop_type_display(Evas_Object * win, wfd_popup_t * pop)
 		elm_object_text_set(btn2, pop->label2);
 		elm_object_part_content_set(popup, "button2", btn2);
 		evas_object_smart_callback_add(btn2, "clicked", __popup_resp_cb,
-			(void *) pop->resp_data2);
+			(void*) pop->resp_data2);
 	}
 
 	elm_object_content_set(popup, box);
@@ -658,7 +665,7 @@ Evas_Object *wfd_draw_pop_type_keypad(Evas_Object * win, wfd_popup_t * pop)
 	elm_object_style_set(label, "popup/default");
 	elm_label_line_wrap_set(label, ELM_WRAP_MIXED);
 	elm_object_text_set(label, pop->text);
-	evas_object_size_hint_weight_set(label, EVAS_HINT_EXPAND, 0.0);
+	evas_object_size_hint_weight_set(label, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
 	evas_object_size_hint_align_set(label, EVAS_HINT_FILL, EVAS_HINT_FILL);
 	elm_box_pack_end(box, label);
 	evas_object_show(label);
@@ -700,6 +707,8 @@ Evas_Object *wfd_draw_pop_type_keypad(Evas_Object * win, wfd_popup_t * pop)
 	elm_object_text_set(btn1, pop->label1);
 	elm_object_part_content_set(pinpopup, "button1", btn1);
 	evas_object_smart_callback_add(btn1, "clicked", __popup_resp_cb, (void *)pop->resp_data1);
+	ea_object_event_callback_add(pinpopup, EA_CALLBACK_BACK, __popup_resp_cb,
+		(void*) pop->resp_data1);
 
 	btn2 = elm_button_add(pinpopup);
 	elm_object_style_set(btn2, "popup_button/default");
@@ -738,10 +747,10 @@ void wfd_prepare_popup(int type, void *userdata)
 	case /* MT */ WFD_POP_APRV_CONNECTION_WPS_PUSHBUTTON_REQ:
 		snprintf(pop->text, sizeof(pop->text), IDS_WFD_POP_CONNECT_Q,
 				ad->peer_name);
-		snprintf(pop->label1, sizeof(pop->label1), "%s", dgettext("sys_string", "IDS_COM_SK_YES"));
-		snprintf(pop->label2, sizeof(pop->label2), "%s", dgettext("sys_string", "IDS_COM_SK_NO"));
-		pop->resp_data1 = WFD_POP_RESP_APRV_CONNECT_PBC_YES;
-		pop->resp_data2 = WFD_POP_RESP_APRV_CONNECT_NO;
+		snprintf(pop->label1, sizeof(pop->label1), "%s", dgettext("sys_string", "IDS_COM_SK_NO"));
+		snprintf(pop->label2, sizeof(pop->label2), "%s", dgettext("sys_string", "IDS_COM_SK_YES"));
+		pop->resp_data1 = WFD_POP_RESP_APRV_CONNECT_NO;
+		pop->resp_data2 = WFD_POP_RESP_APRV_CONNECT_PBC_YES;
 
 		ad->popup = wfd_draw_pop_type_c(ad->win, pop);
 		break;
@@ -749,10 +758,10 @@ void wfd_prepare_popup(int type, void *userdata)
 	case WFD_POP_APRV_CONNECTION_INVITATION_REQ:
 		snprintf(pop->text, sizeof(pop->text), IDS_WFD_POP_CONNECT_Q,
 				ad->peer_name);
-		snprintf(pop->label1, sizeof(pop->label1), "%s", dgettext("sys_string", "IDS_COM_SK_YES"));
-		snprintf(pop->label2, sizeof(pop->label2), "%s", dgettext("sys_string", "IDS_COM_SK_NO"));
-		pop->resp_data1 = WFD_POP_RESP_APRV_CONNECT_INVITATION_YES;
-		pop->resp_data2 = WFD_POP_RESP_APRV_CONNECT_NO;
+		snprintf(pop->label1, sizeof(pop->label1), "%s", dgettext("sys_string", "IDS_COM_SK_NO"));
+		snprintf(pop->label2, sizeof(pop->label2), "%s", dgettext("sys_string", "IDS_COM_SK_YES"));
+		pop->resp_data1 = WFD_POP_RESP_APRV_CONNECT_NO;
+		pop->resp_data2 = WFD_POP_RESP_APRV_CONNECT_INVITATION_YES;
 
 		ad->popup = wfd_draw_pop_type_c(ad->win, pop);
  		break;
@@ -760,11 +769,11 @@ void wfd_prepare_popup(int type, void *userdata)
 	case /* MT */ WFD_POP_APRV_CONNECTION_WPS_DISPLAY_REQ:
 		snprintf(pop->text, sizeof(pop->text), IDS_WFD_POP_ENTER_PIN_WITH_KEYPAD,
 				ad->peer_name);
-		snprintf(pop->label1, sizeof(pop->label1), "%s", dgettext("sys_string", "IDS_COM_SK_OK"));
-		snprintf(pop->label2, sizeof(pop->label2), "%s", dgettext("sys_string", "IDS_COM_POP_CANCEL"));
+		snprintf(pop->label1, sizeof(pop->label1), "%s", dgettext("sys_string", "IDS_COM_POP_CANCEL"));
+		snprintf(pop->label2, sizeof(pop->label2), "%s", dgettext("sys_string", "IDS_COM_SK_OK"));
 		pop->timeout = WFD_POP_TIMER_120;
-		pop->resp_data1 = WFD_POP_RESP_APRV_CONNECT_DISPLAY_OK;
-		pop->resp_data2 = WFD_POP_RESP_APRV_CONNECT_NO;
+		pop->resp_data1 = WFD_POP_RESP_APRV_CONNECT_NO;
+		pop->resp_data2 = WFD_POP_RESP_APRV_CONNECT_DISPLAY_OK;
 
 		ad->popup = wfd_draw_pop_type_c(ad->win, pop);
  		break;
@@ -772,11 +781,11 @@ void wfd_prepare_popup(int type, void *userdata)
 	case /* MT */ WFD_POP_APRV_CONNECTION_WPS_KEYPAD_REQ:
 		snprintf(pop->text, sizeof(pop->text), IDS_WFD_POP_ENTER_PIN,
 				ad->peer_name, WFD_POP_TIMER_120);
-		snprintf(pop->label1, sizeof(pop->label1), "%s", dgettext("sys_string", "IDS_COM_SK_OK"));
-		snprintf(pop->label2, sizeof(pop->label2), "%s", dgettext("sys_string", "IDS_COM_POP_CANCEL"));
+		snprintf(pop->label1, sizeof(pop->label1), "%s", dgettext("sys_string", "IDS_COM_POP_CANCEL"));
+		snprintf(pop->label2, sizeof(pop->label2), "%s", dgettext("sys_string", "IDS_COM_SK_OK"));
 		pop->timeout = WFD_POP_TIMER_120;
-		pop->resp_data1 = WFD_POP_RESP_APRV_CONNECT_KEYPAD_YES;
-		pop->resp_data2 = WFD_POP_RESP_APRV_CONNECT_NO;
+		pop->resp_data1 = WFD_POP_RESP_APRV_CONNECT_NO;
+		pop->resp_data2 = WFD_POP_RESP_APRV_CONNECT_KEYPAD_YES;
 
 		ad->popup = wfd_draw_pop_type_c(ad->win, pop);
  		break;
@@ -793,11 +802,11 @@ void wfd_prepare_popup(int type, void *userdata)
 	case /* MO */ WFD_POP_PROG_CONNECT_WITH_KEYPAD:
 		snprintf(pop->text, sizeof(pop->text), IDS_WFD_POP_CONNECTING_WITH_KEYPAD,
 				ad->peer_name, WFD_POP_TIMER_120, ad->peer_name);
-		snprintf(pop->label1, sizeof(pop->label1), "%s", dgettext("sys_string", "IDS_COM_SK_OK"));
-		snprintf(pop->label2, sizeof(pop->label2), "%s", dgettext("sys_string", "IDS_COM_POP_CANCEL"));
+		snprintf(pop->label1, sizeof(pop->label1), "%s", dgettext("sys_string", "IDS_COM_POP_CANCEL"));
+		snprintf(pop->label2, sizeof(pop->label2), "%s", dgettext("sys_string", "IDS_COM_SK_OK"));
 		pop->timeout = WFD_POP_TIMER_120;
-		pop->resp_data1 = WFD_POP_RESP_PROG_CONNECT_KEYPAD_OK;
-		pop->resp_data2 = WFD_POP_RESP_APRV_CONNECT_NO;
+		pop->resp_data1 = WFD_POP_RESP_APRV_CONNECT_NO;
+		pop->resp_data2 = WFD_POP_RESP_PROG_CONNECT_KEYPAD_OK;
 
 		ad->popup = wfd_draw_pop_type_keypad(ad->win, pop);
  		break;

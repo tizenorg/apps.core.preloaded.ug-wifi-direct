@@ -78,7 +78,6 @@ void _wifid_create_about_view(struct ug_data *ugd)
 	__WDUG_LOG_FUNC_ENTER__;
 
 	Evas_Object *back_btn = NULL;
-	Elm_Object_Item *navi_item = NULL;
 	Evas_Object *genlist = NULL;
 	Elm_Object_Item *item = NULL;
 
@@ -110,7 +109,7 @@ void _wifid_create_about_view(struct ug_data *ugd)
 	evas_object_smart_callback_add(back_btn, "clicked", _about_view_back_btn_cb, (void *)ugd);
 	elm_object_focus_allow_set(back_btn, EINA_FALSE);
 
-	navi_item = elm_naviframe_item_push(ugd->naviframe, IDS_WFD_TITLE_ABOUT_WIFI_DIRECT, back_btn, NULL, genlist, NULL);
+	elm_naviframe_item_push(ugd->naviframe, IDS_WFD_TITLE_ABOUT_WIFI_DIRECT, back_btn, NULL, genlist, NULL);
 
 	__WDUG_LOG_FUNC_EXIT__;
 }

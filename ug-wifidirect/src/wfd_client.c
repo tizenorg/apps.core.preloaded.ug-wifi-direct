@@ -517,7 +517,7 @@ void _activation_cb(int error_code, wifi_direct_device_state_e device_state, voi
 		wfd_ug_view_refresh_button(ugd->scan_btn, _("IDS_WFD_BUTTON_SCAN"), TRUE);
 	}
 
-	if (ugd->multi_connect_btn) {
+	if (ugd->multi_scan_btn) {
 		wfd_ug_view_refresh_button(ugd->multi_scan_btn, _("IDS_WFD_BUTTON_SCAN"), TRUE);
 	}
 
