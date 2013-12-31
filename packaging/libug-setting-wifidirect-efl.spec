@@ -43,6 +43,7 @@ BuildRequires:  pkgconfig(capi-system-runtime-info)
 BuildRequires:  pkgconfig(capi-system-device) 
 BuildRequires:  pkgconfig(notification)
 BuildRequires:  pkgconfig(syspopup-caller)
+BuildRequires:  pkgconfig(wifi-direct)
 BuildRequires:  cmake
 BuildRequires:  gettext-devel
 
@@ -101,7 +102,7 @@ ln -sf /usr/bin/ug-client /usr/ug/bin/ug-setting-wifidirect-efl
 #/usr/share/applications/org.tizen.wifi-direct-popup.desktop
 #for appfw new manifest
 /usr/share/packages/org.tizen.wifi-direct-popup.xml
-%{_sysconfdir}/smack/accesses.d/org.tizen.wifi-direct-popup.rule
+%config %{_sysconfdir}/smack/accesses.d/org.tizen.wifi-direct-popup.rule
 
 %files -n org.tizen.wifi-direct-ugapp
 %manifest org.tizen.wifi-direct-ugapp.manifest
@@ -110,4 +111,4 @@ ln -sf /usr/bin/ug-client /usr/ug/bin/ug-setting-wifidirect-efl
 #/usr/share/applications/org.tizen.wifi-direct-ugapp.desktop
 #for appfw new manifest
 /usr/share/packages/org.tizen.wifi-direct-ugapp.xml
-%{_sysconfdir}/smack/accesses.d/org.tizen.wifi-direct-ugapp.rule
+%config %{_sysconfdir}/smack/accesses.d/org.tizen.wifi-direct-ugapp.rule

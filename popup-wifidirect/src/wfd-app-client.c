@@ -552,9 +552,9 @@ void _cb_connection(int error_code, wifi_direct_connection_state_e connection_st
 
 		WDPOP_LOGD(
 				"event ------------------ WIFI_DIRECT_CONNECTION_WPS_REQ\n");
-		result = wifi_direct_get_wps_type(&wps_mode);
+		result = wifi_direct_get_local_wps_type(&wps_mode);
 		WDPOP_LOGD(
-				"wifi_direct_get_wps_type() result=[%d]\n", result);
+				"wifi_direct_get_local_wps_type() result=[%d]\n", result);
 
 		if (wps_mode == WIFI_DIRECT_WPS_TYPE_PBC) {
 			WDPOP_LOGD(
@@ -598,8 +598,8 @@ void _cb_connection(int error_code, wifi_direct_connection_state_e connection_st
 		wifi_direct_wps_type_e wps_mode;
 		bool auto_connection_mode;
 
-		result = wifi_direct_get_wps_type(&wps_mode);
-		WDPOP_LOGD( "wifi_direct_get_wps_type() result=[%d]\n", result);
+		result = wifi_direct_get_local_wps_type(&wps_mode);
+		WDPOP_LOGD( "wifi_direct_get_local_wps_type() result=[%d]\n", result);
 
 		result = wifi_direct_is_autoconnection_mode(&auto_connection_mode);
 		WDPOP_LOGD( "wifi_direct_is_autoconnection_mode() result=[%d]\n", result);
