@@ -1,8 +1,8 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
 
 INCLUDE(FindPkgConfig)
-pkg_check_modules(pkgs REQUIRED appcore-efl appsvc ui-gadget-1 x11 dlog
-	elementary ecore-x
+pkg_check_modules(pkgs REQUIRED appcore-efl appsvc ui-gadget-1 dlog
+	elementary
 	capi-network-tethering network pmapi
 	wifi-direct
 	notification

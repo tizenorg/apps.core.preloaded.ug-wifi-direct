@@ -49,7 +49,6 @@ static void _win_del(void *data, Evas_Object *obj, void *event)
 static Evas_Object *_create_win(Evas_Object *parent, const char *name)
 {
 	Evas_Object *eo;
-	int w, h;
 
 	/* eo = elm_win_add(parent, name, ELM_WIN_BASIC); */
 	eo = elm_win_add(NULL, name, ELM_WIN_NOTIFICATION);
@@ -58,8 +57,6 @@ static Evas_Object *_create_win(Evas_Object *parent, const char *name)
 		elm_win_borderless_set(eo, EINA_TRUE);
 		elm_win_alpha_set(eo, EINA_TRUE);
 		evas_object_smart_callback_add(eo, "delete,request", _win_del, NULL);
-		ecore_x_window_size_get(ecore_x_window_root_first_get(), &w, &h);
-		evas_object_resize(eo, w, h);
 		evas_object_raise(eo);
 	}
 
@@ -89,10 +86,6 @@ static int _app_create(void *data)
 	elm_win_indicator_mode_set(ad->win, ELM_WIN_INDICATOR_SHOW);
 
 	int r;
-
-	if (!ecore_x_display_get()) {
-		return -1;
-	}
 
 	r = appcore_set_i18n(PACKAGE, NULL);
 	if (r != 0) {
