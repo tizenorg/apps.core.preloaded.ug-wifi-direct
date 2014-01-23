@@ -30,7 +30,6 @@
 #define __WFD_SYS_POPAPP_MAIN_H__
 
 #include <appcore-efl.h>
-#include <Ecore_X.h>
 #include <Elementary.h>
 #include <appsvc.h>
 #include <aul.h>

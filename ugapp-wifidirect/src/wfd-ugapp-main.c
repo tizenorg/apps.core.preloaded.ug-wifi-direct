@@ -26,6 +26,7 @@
  */
 
 #include <ui-gadget-module.h>
+#include <ui-gadget.h>
 #include <libintl.h>
 
 #include "wfd-ugapp.h"
@@ -122,7 +123,6 @@ static void _win_del(void *data, Evas_Object * obj, void *event)
 static Evas_Object *_create_win(Evas_Object * parent, const char *name)
 {
 	Evas_Object *eo;
-	int w, h;
 
 	eo = elm_win_add(parent, name, ELM_WIN_BASIC);
 	if (eo) {
@@ -130,8 +130,6 @@ static Evas_Object *_create_win(Evas_Object * parent, const char *name)
 		elm_win_alpha_set(eo, EINA_TRUE);
 		elm_win_conformant_set(eo, EINA_TRUE);
 		evas_object_smart_callback_add(eo, "delete,request", _win_del, NULL);
-		ecore_x_window_size_get(ecore_x_window_root_first_get(), &w, &h);
-		evas_object_resize(eo, w, h);
 		evas_object_show(eo);
 	}
 
@@ -273,10 +271,6 @@ static int _app_create(void *data)
 	elm_object_content_set(ad->conform, ad->top_layout);
 
 	int r;
-
-	if (!ecore_x_display_get()) {
-		return -1;
-	}
 
 	r = appcore_set_i18n(PACKAGE, NULL);
 	if (r != 0) {

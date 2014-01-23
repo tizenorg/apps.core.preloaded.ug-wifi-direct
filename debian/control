@@ -7,7 +7,6 @@ Build-Depends: 	debhelper (>= 5),
 		libappcore-efl-dev,
 		libappsvc-dev,
 		libelm-dev,
-		libslp-utilx-dev,
 		libui-gadget-dev,
 		libwifi-direct-dev,
 		libmobile-ap-dev,
@@ -18,7 +17,7 @@ Standards-Version: 3.7.2
 Package: libug-setting-wifidirect-efl
 Section: net
 Architecture: any
-Depends: ${misc:Depends}, libappcore-efl-0, libslp-utilx-0, libui-gadget-0, libvconf-0, libwifi-direct, libmobile-ap-0, libnetwork-0
+Depends: ${misc:Depends}, libappcore-efl-0, libui-gadget-0, libvconf-0, libwifi-direct, libmobile-ap-0, libnetwork-0
 Description: Wi-Fi Direct Setting application
 
 Package: libug-setting-wifidirect-efl-dbg
