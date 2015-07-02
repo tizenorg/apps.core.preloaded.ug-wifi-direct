@@ -8,7 +8,6 @@ SET(RESDIR "${PREFIX}/res")
 SET(LOCALEDIR "${RESDIR}/locale")
 SET(EDJDIR "${RESDIR}/edje")
 SET(IMGDIR "${RESDIR}/images")
-SET(SMACKDIR "/etc/smack/accesses.d")
 
 SET(SRCS
 	src/wfd-ugapp-main.c
@@ -39,4 +38,3 @@ INSTALL(TARGETS ${PROJECT_NAME} DESTINATION ${BINDIR})
 #for appfw new manifest
 CONFIGURE_FILE(${CMAKE_CURRENT_SOURCE_DIR}/${PACKAGE_NAME}.xml ${CMAKE_BINARY_DIR}/${PACKAGE_NAME}.xml)
 INSTALL(FILES ${CMAKE_CURRENT_SOURCE_DIR}/${PACKAGE_NAME}.xml DESTINATION "/usr/share/packages/")
-INSTALL(FILES ${CMAKE_SOURCE_DIR}/org.tizen.wifi-direct-ugapp.rule DESTINATION ${SMACKDIR})
