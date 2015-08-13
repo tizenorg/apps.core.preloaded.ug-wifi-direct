@@ -1,263 +1,338 @@
-msgid "IDS_WFD_CONNECTED"
-msgstr "Подключено"
+msgid "IDS_WIFI_BODY_ENTER_YOUR_ID"
+msgstr "Введите свой идентификатор."
 
-msgid "IDS_WFD_CONNECTING"
-msgstr "Подключение..."
+msgid "IDS_COM_POP_MAXIMUM_NUMBER_OF_CHARACTERS_REACHED"
+msgstr "Достигнуто максимальное число символов."
 
-msgid "IDS_WFD_DISCONNECTING"
-msgstr "Отключение..."
-
-msgid ""
-msgstr "Активация Wi-Fi..."
-
-msgid "IDS_WIFI_POP_DEACTIVATING_WI_FI_ING"
-msgstr "Выключение Wi-Fi..."
-
-msgid "IDS_WFD_POP_CONNECTED"
-msgstr "Подключено"
-
-msgid "IDS_COM_POP_NETWORK_INTERNAL_ERR"
-msgstr "Внутренняя ошибка"
-
-msgid "IDS_COM_POP_RETRIEVED"
-msgstr "Получено"
-
-msgid "IDS_COM_POP_RETRIEVING_FAILED"
-msgstr "Сбой загрузки"
-
-msgid "IDS_COM_SK_CANCEL"
-msgstr "Отмена"
-
-msgid "IDS_ST_BODY_INTERNAL_ERROR"
-msgstr "Внутренняя ошибка"
-
-msgid "IDS_WFD_POP_UNKNOWN_ERROR"
-msgstr "Неизвестная ошибка"
-
-msgid "IDS_COM_POP_NETWORK_ERROR"
-msgstr "Ошибка сети"
-
-msgid "IDS_COM_BODY_NO_SEARCH_RESULTS"
-msgstr "Нет результатов поиска"
-
-msgid "IDS_COM_POP_SEARCHING"
-msgstr "Поиск..."
-
-msgid "IDS_WIFI_POP_DISCONNECTING_FAILED"
-msgstr "Сбой отключения"
-
-msgid "IDS_ST_BODY_ENTER_NEW_PASSWORD"
-msgstr "Введите новый пароль"
-
-msgid "IDS_COM_POP_UNKNOWN_ERROR_UNABLE_TO_LAUNCH_APPLICATION"
-msgstr "Неизвестная ошибка. Не удается запустить приложение"
-
-msgid "IDS_COM_POP_ACCEPT"
-msgstr "Принять"
-
-msgid "IDS_COM_POP_CONNECTING"
-msgstr "Подключение..."
-
-msgid "IDS_COM_POP_ERROR"
-msgstr "Ошибка"
-
-msgid "IDS_COM_POP_REJECT"
-msgstr "Отказ"
-
-msgid "IDS_COM_POP_REJECTED"
-msgstr "Отклонено"
-
-msgid "IDS_COM_BODY_SELECT_ALL"
-msgstr "Выбрать все"
-
-msgid "IDS_COM_POP_FAILED"
-msgstr "Сбой"
-
-msgid "IDS_COM_SK_ACCEPT"
-msgstr "Принять"
-
-msgid "IDS_ST_BODY_ENTER_4_TO_8_DIGIT_PIN"
-msgstr "Введите PIN-код, содержащий от 4 до 8 цифр"
-
-msgid "IDS_WFD_POP_PIN_INVALID"
-msgstr "PIN-коды не совпадают."
-
-msgid "IDS_ST_POP_YES"
-msgstr "Да"
-
-msgid "IDS_WFD_BODY_ACTIVATING"
-msgstr "Включение..."
-
-msgid "IDS_COM_POP_DEACTIVATED"
-msgstr "Выключено"
-
-msgid "IDS_COM_SK_OK"
-msgstr "Да"
-
-msgid "IDS_COM_SK_YES"
-msgstr "Да"
-
-msgid "IDS_WIFI_HEADER_MOBILE_HOTSPOT_VZW"
-msgstr "Мобильная точка доступа"
-
-msgid "IDS_ST_BODY_ENTER_CURRENT_PASSWORD"
-msgstr "Введите текущий пароль"
-
-msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgid "IDS_ST_HEADER_PD_SELECTED"
 msgstr "Выбрано: %d"
 
-msgid "IDS_ST_POP_SEARCHING_ING"
-msgstr "Поиск..."
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "Включить"
 
-msgid "IDS_COM_POP_NOTHING_SELECTED"
-msgstr "Ничего не выбрано"
+msgid "IDS_WIFI_BODY_DOT"
+msgstr "."
 
-msgid "IDS_COM_OPT1_WI_FI_DIRECT"
-msgstr "Wi-Fi Direct"
+msgid "IDS_WIFI_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_PD_REACHED"
+msgstr "Достигнуто максимальное число символов (%d)"
 
-msgid "IDS_COM_POP_DISCONNECTED"
-msgstr "Отключено"
+msgid "IDS_WIFI_TPOP_FAILED_TO_OBTAIN_IP_ADDRESS"
+msgstr "Не удалось получить IP-адрес."
 
-msgid "IDS_WIFI_MBODY_MOBILE_HOTSPOT_VZW"
-msgstr "Мобильная точка доступа"
+msgid "IDS_WIFI_TPOP_CONNECTED_TO_WI_FI_NETWORK_PS"
+msgstr "Подключено к сети Wi-Fi %s"
 
-msgid "IDS_WIFI_BODY_IP_ADDRESS"
-msgstr "IP-адрес"
+msgid "IDS_WIFI_TMBODY_NEVER_M_ALWAYS_OFF"
+msgstr "Никогда"
 
-msgid "IDS_WFD_BODY_DEACTIVATING"
-msgstr "Выключение..."
+msgid "IDS_WIFI_TMBODY_DOWNLOAD_DATA_VIA_WI_FI_AND_4G"
+msgstr "Загружать через Wi-Fi и 4G"
 
-msgid "IDS_COM_POP_UNEXPECTED_ERROR"
-msgstr "Непредвиденная ошибка"
+msgid "IDS_WIFI_TMBODY_DOWNLOAD_DATA_VIA_WI_FI_AND_3G"
+msgstr "Загружать через Wi-Fi и 3G"
 
-msgid "IDS_COM_POP_NETWORK_CONNECTION_ERROR"
-msgstr "Ошибка подключения к сети"
+msgid "IDS_WIFI_SK_WPS_PIN"
+msgstr "PIN-код WPS"
 
-msgid "IDS_COM_BODY_OPERATION_FAILED"
-msgstr "Сбой операции"
+msgid "IDS_WIFI_SK_FORGET"
+msgstr "Забыть"
 
-msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
-msgstr "Не поддерживается"
+msgid "IDS_WIFI_SK_CANCEL"
+msgstr "Отмена"
 
-msgid "IDS_COM_POP_UNSUPPORTED"
-msgstr "Не поддерживается"
+msgid "IDS_WIFI_SK2_OK"
+msgstr "Да"
 
-msgid "IDS_WFD_HEADER_WIFI_DIRECT"
-msgstr "Wi-Fi Direct"
+msgid "IDS_WIFI_SBODY_CONNECTED_M_STATUS"
+msgstr "Подключено"
 
-msgid "IDS_COM_POP_ACCEPTED"
-msgstr "Принято"
+msgid "IDS_WIFI_SBODY_AUTOMATICALLY_SWITCH_BETWEEN_WI_FI_AND_MOBILE_NETWORKS_TO_MAINTAIN_A_STABLE_INTERNET_CONNECTION"
+msgstr "Автоматически переключаться между Wi-Fi и мобильными сетями для обеспечения стабильного подключения к Интернету."
 
-msgid "IDS_WIFI_BODY_MAC_ADDRESS"
-msgstr "MAC-адрес"
+msgid "IDS_WIFI_SBODY_AUTHENTICATION_ERROR_OCCURRED_M_STATUS"
+msgstr "Произошла ошибка проверки подлинности"
 
-msgid "IDS_WIFI_POP_AUTOMATIC_CONNECTION_NETWORK_WILL_DISABLED_CONTINUE_Q_MSG"
-msgstr "Автоматическое подключение к этой сети будет отключено. Продолжить?"
+msgid "IDS_WIFI_POP_WI_FI_AND_MOBILE_NETWORKS_WILL_BE_USED_TOGETHER_TO_DOWNLOAD_FILES_FASTER_MSG"
+msgstr "Wi-Fi и мобильные сети будут использоваться вместе, чтобы быстрее загружать файлы. При этом трафик может увеличиться."
 
-msgid "IDS_COM_POP_PROGRESSING_ING"
-msgstr "В процессе..."
+msgid "IDS_WIFI_POP_SMART_NETWORK_SWITCH_HAS_BEEN_ENABLED_MSG"
+msgstr "Смарт-переключатель сети включен. Эта функция обеспечивает стабильное подключение к Интернету путем переключения между мобильной сетью и сетью Wi-Fi. При этом трафик может увеличиться."
 
-msgid "IDS_WIFI_BODY_CONNECT"
-msgstr "Подключиться"
+msgid "IDS_WIFI_POP_PS_IS_SELECTED_N_NIF_YOU_ARE_UNABLE_TO_CONNECT_TO_AN_AP_CHANGE_THE_SIM_CARD_USED_FOR_VERIFICATION_BY_GOING_TO_SIM_CARD_MANAGER_MSG"
+msgstr "Выбрана %s.\n\nЕсли не удается подключиться к точке доступа, смените SIM-карту, используемую для проверки, открыв диспетчер SIM-карт. Выберите SIM-карту, которую нужно использовать для мобильных данных и MMS. Кроме того, можно отключить SIM-карту, которую вы не хотите использовать."
 
-msgid "IDS_WIFI_HEADER_WI_FI"
-msgstr "Wi-Fi"
+msgid "IDS_WIFI_POP_PRESS_WPS_ON_YOUR_WI_FI_ACCESS_POINT_WITHIN_PD_MINUTES"
+msgstr "Нажмите кнопку WPS на точке доступа Wi-Fi в течение %d мин."
 
-msgid "IDS_WFD_BUTTON_SCAN"
+msgid "IDS_WIFI_POP_OPEN"
+msgstr "Открытый"
+
+msgid "IDS_WIFI_POP_NO_WI_FI_AP_FOUND"
+msgstr "Точка доступа Wi-Fi не найдена."
+
+msgid "IDS_WIFI_POP_CURRENT_NETWORK_WILL_BE_DISCONNECTED"
+msgstr "Текущая сеть будет отключена."
+
+msgid "IDS_WIFI_OPT_WPS"
+msgstr "WPS"
+
+msgid "IDS_WIFI_OPT_SHOW_PASSWORD"
+msgstr "Показать пароль"
+
+msgid "IDS_WIFI_OPT_MOBILEACCESSSERVICEATCIVATION_ON"
+msgstr "Включено"
+
+msgid "IDS_WIFI_OPT_MOBILEACCESSSERVICEATCIVATION_OFF"
+msgstr "Выключено"
+
+msgid "IDS_WIFI_OPT_FORGET_NETWORK"
+msgstr "Забыть сеть"
+
+msgid "IDS_WIFI_MBODY_SMART_NETWORK_SWITCH"
+msgstr "Переключатель сетей"
+
+msgid "IDS_WIFI_MBODY_SIGNAL_STRENGTH_KOR_SKT"
+msgstr "Уровень сигнала"
+
+msgid "IDS_WIFI_MBODY_REDUCE_MOBILE_DATA_USAGE"
+msgstr "Снижать расход трафика"
+
+msgid "IDS_WIFI_MBODY_PRIORITISE_SPEED"
+msgstr "Приоритет скорости"
+
+msgid "IDS_WIFI_MBODY_NETWORK_BONDING"
+msgstr "Объединение сетей"
+
+msgid "IDS_WIFI_HEADER_WI_FI_NETWORK_INFO_ABB"
+msgstr "Сведения о сети Wi-Fi"
+
+msgid "IDS_WIFI_HEADER_SELECT_WPS_METHOD_ABB"
+msgstr "Выбрать метод WPS"
+
+msgid "IDS_WIFI_HEADER_PROXY_ADDRESS"
+msgstr "Адрес прокси"
+
+msgid "IDS_WIFI_HEADER_PASSWORD"
+msgstr "Пароль"
+
+msgid "IDS_WIFI_HEADER_ENTER_PASSWORD"
+msgstr "Введите пароль."
+
+msgid "IDS_WIFI_BUTTON_WPS_BUTTON"
+msgstr "Кнопка WPS"
+
+msgid "IDS_WIFI_BUTTON_SCAN"
 msgstr "Поиск"
 
-msgid "IDS_WIFI_SK3_BACK"
-msgstr "Назад"
+msgid "IDS_WIFI_BUTTON_FIND_HIDDEN_NETWORK"
+msgstr "Найти скрытую сеть"
+
+msgid "IDS_WIFI_BODY_WI_FI_NETWORKS_AVAILABLE_ABB"
+msgstr "Доступны сети Wi-Fi."
 
 msgid "IDS_WIFI_BODY_WI_FI_DIRECT_ABB"
-msgstr "Wi-Fi Direct"
-
-msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
-msgstr "Устройства Wi-Fi Direct"
-
-msgid "IDS_WFD_TAP_TO_CONNECT"
-msgstr "Нажмите для подключения"
-
-msgid "IDS_WIFI_SK2_MULTI_CONNECT"
-msgstr "Мульти-подключение"
-
-msgid "IDS_WFD_BUTTON_CONNECT"
-msgstr "Подключиться"
-
-msgid "IDS_WIFI_OPT_MYNETWORKS_DISCONNECT"
-msgstr "Отключить"
-
-msgid "IDS_WFD_BUTTON_CANCEL"
-msgstr "Отменить подключение"
-
-msgid "IDS_COM_SK_CANCEL_A"
-msgstr "Отмена"
-
-msgid "IDS_ST_HEADER_ACTIVATION"
-msgstr "Активация"
-
-msgid "IDS_COM_SK_CANCEL_LITE"
-msgstr "Отмена"
-
-msgid "IDS_ST_BODY_WI_FI_DIRECT_ABB"
 msgstr "Wi-Fi Direct"
 
 msgid "IDS_WIFI_BODY_WI_FI"
 msgstr "Wi-Fi"
 
-msgid "IDS_COM_SK_CANCEL_ABB"
-msgstr "Отмена"
+msgid "IDS_WIFI_BODY_WHILE_CHARGING_ONLY_ABB"
+msgstr "Только во время зарядки"
 
-msgid "IDS_WIFI_BUTTON_CANCEL"
-msgstr "Отмена"
+msgid "IDS_WIFI_BODY_WEAK_M_STRENGTH"
+msgstr "Слабый"
 
-msgid "IDS_WIFI_BODY_ALLSHARE_CAST"
-msgstr "AllShare Cast"
+msgid "IDS_WIFI_BODY_USER_CERTIFICATE_ABB"
+msgstr "Сертиф. пользов."
 
-msgid "IDS_WIFI_POP_MOBILEACCESSSERVICE_ACTIVATING_ING"
-msgstr "Включение..."
+msgid "IDS_WIFI_BODY_UNSPECIFIED"
+msgstr "Не указано"
 
-msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_CONNECTION"
-msgstr "Включение Wi-Fi Direct закроет текущее соединение Wi-Fi"
+msgid "IDS_WIFI_BODY_UNKNOWN"
+msgstr "Неизвестно"
 
-msgid "IDS_WFD_TITLE_ABOUT_WIFI"
-msgstr "Сведения о Wi-Fi Direct"
+msgid "IDS_WIFI_BODY_TO_DOWNLOAD_LARGE_FILES_FASTER_USE_WI_FI_AND_MOBILE_NETWORKS_TOGETHER_T_HELP"
+msgstr "Чтобы быстрее загружать большие файлы, используйте одновременно Wi-Fi и мобильные сети."
 
-msgid "IDS_WFD_BODY_ABOUT_WIFI"
-msgstr "Wi-Fi Direct позволяет устройствам Wi-Fi подключаться друг к другу напрямую, упрощая печать, синхронизацию, а также общий доступ к файлам и экрану. Подключение к устройствам, поддерживающим Wi-Fi Direct, позволяет обмениваться файлами, синхронизировать данные, общаться с друзьями, играть в игры, просматривать видео и делать многое другое с помощью различных приложений"
+msgid "IDS_WIFI_BODY_SUBNET_MASK"
+msgstr "Маска подсети"
 
-msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
-msgstr "Подключенные устройства"
+msgid "IDS_WIFI_BODY_STATIC_IP"
+msgstr "Статический IP-адрес"
 
-msgid "IDS_WFD_BODY_BUSY_DEVICES"
-msgstr "Занятые устройства"
+msgid "IDS_WIFI_BODY_SSID"
+msgstr "SSID"
 
-msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
-msgstr "Подключено к другому устройству"
+msgid "IDS_WIFI_BODY_SORT_BY"
+msgstr "Сортировка"
 
-msgid "IDS_WIFI_POP_AP_DISCONNECTING_ING"
-msgstr "Отключение..."
+msgid "IDS_WIFI_BODY_SCANNING_ING"
+msgstr "Поиск..."
 
-msgid "IDS_WFD_POP_CONNECTING"
+msgid "IDS_WIFI_BODY_RECEIVE_NOTIFICATIONS_WHEN_NETWORKS_ARE_AVAILABLE"
+msgstr "Получать уведомления о доступности сетей."
+
+msgid "IDS_WIFI_BODY_PROXY_PORT"
+msgstr "Порт прокси"
+
+msgid "IDS_WIFI_BODY_NAME"
+msgstr "Имя"
+
+msgid "IDS_WIFI_BODY_MAC_ADDRESS"
+msgstr "MAC-адрес"
+
+msgid "IDS_WIFI_BODY_IP_ADDRESS"
+msgstr "IP-адрес"
+
+msgid "IDS_WIFI_BODY_IDENTITY"
+msgstr "Удостоверение"
+
+msgid "IDS_WIFI_BODY_GATEWAY_ADDRESS"
+msgstr "Адрес шлюза"
+
+msgid "IDS_WIFI_BODY_ENTER_IDENTITY"
+msgstr "Введите удостоверение."
+
+msgid "IDS_WIFI_BODY_EAP_METHOD"
+msgstr "Метод EAP"
+
+msgid "IDS_WIFI_BODY_EAP"
+msgstr "EAP"
+
+msgid "IDS_WIFI_BODY_DNS_2"
+msgstr "DNS 2"
+
+msgid "IDS_WIFI_BODY_DNS_1"
+msgstr "DNS 1"
+
+msgid "IDS_WIFI_BODY_CONNECTING_ING"
 msgstr "Подключение..."
 
-msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgid "IDS_WIFI_BODY_CONNECT"
+msgstr "Подключиться"
+
+msgid "IDS_WIFI_BODY_CONFIGURATION_SAVED_M_STATUS"
+msgstr "Соxранено"
+
+msgid "IDS_WIFI_BODY_A_WI_FI_NETWORK_HAS_BEEN_DETECTED_YOU_WILL_BE_CONNECTED"
+msgstr "Обнаружена сеть Wi-Fi. Вы будете подключены к ней"
+
+msgid "IDS_WIFI_BODY_ADVANCED_SETTINGS"
+msgstr "Дополнительно"
+
+msgid "IDS_COM_SK_NO"
+msgstr "Нет"
+
+msgid "IDS_COM_POP_SECURITY_POLICY_RESTRICTS_USE_OF_WI_FI"
+msgstr "Политика безопасности ограничивает использование Wi-Fi."
+
+msgid "IDS_WIFI_SBODY_TAP_HERE_TO_CONNECT"
+msgstr "Нажмите здесь для подключения."
+
+msgid "IDS_WIFI_POP_YOUR_DEVICE_IS_CONNECTING_TO_P1SS_HOWEVER_THIS_NETWORK_MAY_NOT_PROVIDE_INTERNET_ACCESS_MSG"
+msgstr "Ваше устройство подключается к %1$s. Возможно, эта сеть не обеспечивает доступ к Интернету.\nНажмите “ОК”, чтобы подключиться к %1$s сейчас, но предотвратить подключение к этой сети в будущем с помощью смарт-переключения сети."
+
+msgid "IDS_WIFI_POP_BOTH_WI_FI_AND_MOBILE_AP_CANNOT_BE_ACTIVATED_AT_THE_SAME_TIME_DEACTIVATE_MOBILE_AP_Q"
+msgstr "Нельзя активировать одновременно Wi-Fi и Mobile AP. Отключить Mobile AP?"
+
+msgid "IDS_WIFI_HEADER_SIGN_IN_TO_WI_FI_NETWORK_ABB"
+msgstr "Войти в сеть Wi-Fi"
+
+msgid "IDS_WIFI_HEADER_INTERNET_MAY_NOT_BE_AVAILABLE_ABB"
+msgstr "Интернет может быть недоступен"
+
+msgid "IDS_WIFI_BUTTON_DONT_ASK_AGAIN"
+msgstr "Больше не спрашивать"
+
+msgid "IDS_WIFI_BODY_OPEN_WI_FI_SETTINGS_ABB"
+msgstr "Открыть параметры Wi-Fi"
+
+msgid "IDS_BT_BODY_NO_DEVICES_FOUND_ABB"
+msgstr "Устройства не найдены"
+
+msgid "IDS_BR_SK_YES"
+msgstr "Да"
+
+msgid "IDS_BR_SK_NO"
+msgstr "Нет"
+
+msgid "IDS_BR_SK_CANCEL"
+msgstr "Отмена"
+
+msgid "IDS_ST_HEADER_RENAME_DEVICE"
+msgstr "Переименовать устройство"
+
+msgid "IDS_ST_HEADER_MY_DEVICE_NAME"
+msgstr "Имя устройства"
+
+msgid "IDS_COM_POP_FAILED"
+msgstr "Сбой."
+
+msgid "IDS_COM_POP_CANCEL"
+msgstr "Отмена"
+
+msgid "IDS_COM_BODY_CONNECTED_M_STATUS"
+msgstr "Подключено"
+
+msgid "IDS_BR_SK_OK"
+msgstr "OK"
+
+msgid "IDS_ST_POP_DEVICE_NAMES_ARE_DISPLAYED_TO_DISTINGUISH_EACH_OF_THE_DEVICES_AVAILABLE_MSG"
+msgstr "Имена устройств позволяют различать доступные устройства в списке устройств поблизости, а также при подключении через Bluetooth, Wi-Fi Direct и другими способами."
+
+msgid "IDS_ST_SK_RENAME"
+msgstr "Переименовать"
+
+msgid "IDS_ST_BODY_TAP_TO_CHANGE_SETTINGS"
+msgstr "Нажмите, чтобы изменить параметры."
+
+msgid "IDS_ST_POP_INVALID_CHARACTER_ENTERED_TRY_AGAIN"
+msgstr "Введен недопустимый символ. Повторите попытку"
+
+msgid "IDS_ST_POP_NOT_SUPPORTED"
+msgstr "Не поддерживается."
+
+msgid "IDS_CHATON_BODY_AVAILABLE"
+msgstr "Доступно"
+
+msgid "IDS_CHATON_HEADER_CONNECTION_FAILED_ABB2"
+msgstr "Сбой при подключении"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_DEVICES"
+msgstr "Устройства Wi-Fi Direct"
+
+msgid "IDS_WIFI_POP_TAP_TO_CONNECT"
+msgstr "Нажмите для подключения."
+
+msgid "IDS_WIFI_SK2_CANCEL_CONNECTION"
+msgstr "Отменить подключение"
+
+msgid "IDS_ST_HEADER_CONNECTED_DEVICES"
+msgstr "Подключенные устройства"
+
+msgid "IDS_WIFI_BODY_SELECT_ALL"
+msgstr "Выделить все"
+
+msgid "IDS_ST_HEADER_BUSY_DEVICES"
+msgstr "Занятые устройства"
+
+msgid "IDS_ST_BODY_CONNECTED_WITH_ANOTHER_DEVICE_ABB"
+msgstr "Подключено к другому устройству"
+
+msgid "IDS_WIFI_BODY_WAITING_FOR_CONNECTION_M_STATUS_ABB"
 msgstr "Ожидание подключения"
 
-msgid "IDS_WFD_FAILED_TO_CONNECT"
-msgstr "Сбой подключения"
+msgid "IDS_ST_POP_FAILED_TO_CONNECT"
+msgstr "Сбой подключения."
 
-msgid "IDS_WFD_BUTTON_MULTI"
+msgid "IDS_WIFI_BUTTON_MULTI_CONNECT"
 msgstr "Множеств. подключение"
 
-msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgid "IDS_WIFI_BUTTON_DISCONNECT_ALL"
 msgstr "Отключить все"
 
-msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgid "IDS_WIFI_SK_DISCONNECT"
 msgstr "Отключить"
-
-msgid "IDS_WFD_NOCONTENT"
-msgstr "Ни одного устройства не найдено"
 
 msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE"
 msgstr "Отключите WiFi Direct после использования"
@@ -271,104 +346,126 @@ msgstr "Отключите WiFi Direct после использования д�
 msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY_ABB"
 msgstr "Отключите WiFi Direct после использования для сбережения энергии"
 
-msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES"
-msgstr "Поиск устройств Wi-Fi Direct"
+msgid "IDS_WIFI_BODY_PS_IS_REQUESTING_A_WI_FI_DIRECT_CONNECTION_ALLOW_Q"
+msgstr "%s запрашивает подключение Wi-Fi Direct. Разрешить?"
 
-msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES_CURRENT_NETWORK_WILL_BE_DISCONNECTED"
-msgstr "Поиск устройств Wi-Fi Direct. Текущая сеть будет отключена"
+msgid "IDS_WIFI_BODY_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_CONNECTION_CONTINUE_Q"
+msgstr "При использовании Wi-Fi Direct функция Wi-Fi будет отключена. Продолжить?"
 
-msgid "IDS_WIFI_BODY_SEARCH_FOR_WI_FI_DIRECT_DEVICES_OR_SEARCH_FOR_DEVICES_ON_OTHER_WI_FI_NETWORKS"
-msgstr "Поиск устройств Wi-Fi Direct или устройств в других сетях Wi-Fi"
+msgid "IDS_WIFI_BODY_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_TETHERING_CONTINUE_Q"
+msgstr "При использовании Wi-Fi Direct модем Wi-Fi будет отключен. Продолжить?"
 
-msgid "IDS_WFD_POP_WIFI_OFF"
-msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection. Continue?"
-
-msgid "IDS_WFD_POP_HOTSPOT_OFF"
-msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
-
-msgid "IDS_WIFI_BODY_WI_FI_DIRECT_CONNECTED"
-msgstr "Установлено подключение к Wi-Fi Direct"
-
-msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_CONNECTION_ABB"
 msgstr "Подключение Wi-Fi Direct"
-
-msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_SETTINGS"
-msgstr "Параметры Wi-Fi Direct"
-
-msgid "IDS_WIFI_MBODY_CONFIGURE_WI_FI_DIRECT"
-msgstr "Настроить Wi-Fi Direct"
 
 msgid "IDS_WIFI_MBODY_DISCONNECT_WI_FI_DIRECT"
 msgstr "Отключить Wi-Fi Direct"
 
-msgid "IDS_WIFI_MBODY_WI_FI_DIRECT_STATUS"
-msgstr "Состояние Wi-Fi Direct"
-
-msgid "IDS_WIFI_OPT1_WI_FI_DIRECT"
-msgstr "Wi-Fi Direct"
-
-msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgid "IDS_WIFI_POP_CANCEL_WI_FI_DIRECT_CONNECTION_Q"
 msgstr "Отменить подключение Wi-Fi Direct?"
 
-msgid "IDS_WIFI_POP_CONNECTING_TO_WI_FI_NETWORK_WILL_DISCONNECT_DEVICE_CONNECTED_VIA_WI_FI_DIRECT"
-msgstr "Подключение к сети Wi-Fi приведет к отключению устройства от Wi-Fi Direct"
-
 msgid "IDS_WIFI_POP_CONNECT_TO_OTHER_DEVICES_VIA_WI_FI_DIRECT"
-msgstr "Подключение к другим устройствам через Wi-Fi Direct"
+msgstr "Подключение к другим устройствам через Wi-Fi Direct."
 
-msgid "IDS_WIFI_POP_DISABLE_MOBILE_AP_TO_USE_WI_FI_DIRECT_Q"
-msgstr "Отключить Mobile AP для использования Wi-Fi Direct?"
-
-msgid "IDS_WIFI_POP_DISCONNECT_CURRENT_WI_FI_DIRECT_DEVICE_TO_SEARCH_NETWORKS"
-msgstr "Для поиска сетей отключите текущее устройство Wi-Fi Direct"
-
-msgid "IDS_WIFI_POP_ENABLING_WI_FI_DIRECT_WILL_TURN_OFF_WI_FI_AND_DISABLE_THE_PORTABLE_WI_FI_HOTSPOT"
-msgstr "При включении Wi-Fi Direct сеть Wi-Fi и переносная точка доступа Wi-Fi будут отключены"
-
-msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISABLE_PORTABLE_WI_FI_HOTSPOT"
-msgstr "Включение Wi-Fi Direct отключит точку доступа Wi-Fi"
-
-msgid "IDS_WIFI_POP_WI_FI_DIRECT_ALREADY_IN_USE_TRY_LATER"
-msgstr "Wi-Fi Direct уже используется. Повторите попытку позже"
-
-msgid "IDS_WIFI_POP_WI_FI_DIRECT_CONNECTION_REQUEST_AUTOMATICALLY_DENIED_TO_CONNECT_TURN_OFF_ALLSHARE_CAST"
-msgstr "Запрос подключения Wi-Fi Direct автоматически отклонен. Для подключения выключите функцию AllShare Cast"
-
-msgid "IDS_WIFI_POP_WI_FI_DIRECT_WILL_BE_DISCONNECTED_CONTINUE_Q"
-msgstr "Сеть Wi-Fi Direct будет отключена. Продолжить?"
-
-msgid "IDS_WIFI_POP_WI_FI_IS_DISCONNECTED_WHILE_WI_FI_DIRECT_CONNECTS"
-msgstr "Сеть Wi-Fi отключается на время подключения Wi-Fi Direct"
-
-msgid "IDS_WIFI_SK1_SEARCH_FOR_WI_FI_DIRECT_DEVICES"
-msgstr "Поиск устройств Wi-Fi Direct"
-
-msgid "IDS_WFD_BODY_NO_DEVICES"
-msgstr "Нет устройств"
+msgid "IDS_WIFI_POP_THERE_HAS_BEEN_NO_ACTIVITY_FOR_PD_MINUTES_SINCE_WI_FI_DIRECT_WAS_ENABLED_MSG"
+msgstr "В течение %d мин. после подключения Wi-Fi Direct отсутствовала активность. Чтобы продлить время работы от батареи, функция Wi-Fi Direct была отключена."
 
 msgid "IDS_WIFI_SK4_SCAN"
 msgstr "Поиск"
 
-msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgid "IDS_WIFI_SK_STOP"
 msgstr "Стоп"
 
-msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
-msgstr "Сбой выключения"
+msgid "IDS_WIFI_POP_DEACTIVATION_FAILED"
+msgstr "Сбой выключения."
 
-msgid "IDS_WFD_POP_ACTIVATE_FAIL"
-msgstr "Сбой активации"
+msgid "IDS_WIMAX_POP_ACTIVATION_FAILED"
+msgstr "Сбой активации."
 
-msgid "IDS_WFD_POP_DISCONNECT"
+msgid "IDS_WIFI_POP_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_CONTINUE_Q"
 msgstr "Текущее подключение будет разорвано. Продолжить?"
 
-msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgid "IDS_ST_POP_YOU_CAN_CONNECT_UP_TO_PD_DEVICES_AT_THE_SAME_TIME"
+msgstr "Можно одновременно подключить до %d устройств."
+
+msgid "IDS_WIFI_HEADER_AVAILABLE_DEVICES_ABB"
 msgstr "Доступные устройства"
 
-msgid "IDS_WFD_POP_MULTI_CONNECT"
-msgstr "Можно одновременно подключить до %d устройств"
+msgid "IDS_WIFI_POP_FAILED_TO_CONNECT_TO_PS"
+msgstr "Сбой подключения к %s."
 
-msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
-msgstr "Слишком длинный пароль"
+msgid "IDS_ST_POP_DEVICE_CONNECTED_TO_ANOTHER_DEVICE"
+msgstr "Подключено к другому устройству."
 
-msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
-msgstr "Недостаточная длина пароля"
+msgid "IDS_WIFI_BODY_CONNECTED_TO_PS"
+msgstr "Подключено к %s."
+
+msgid "IDS_COM_BODY_PINS_DO_NOT_MATCH"
+msgstr "PIN-коды не совпадают."
+
+msgid "IDS_COM_POP_DEACTIVATING_ING"
+msgstr "Выключение..."
+
+msgid "IDS_WIFI_BODY_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_SO_THAT_SCANNING_CAN_START_CONTINUE_Q"
+msgstr "Подключение будет разорвано, чтобы начать поиск. Продолжить?"
+
+msgid "IDS_WIFI_HEADER_DEVICES_THAT_FAILED_TO_CONNECT"
+msgstr "Устройства, которым не удалось подключиться"
+
+msgid "IDS_WIFI_POP_ENTER_PIN_TO_CONNECT_TO_PS"
+msgstr "Введите PIN-код для соединения с %s."
+
+msgid "IDS_WIFI_POP_CONNECT_TO_PS_IN_PD_SECONDS"
+msgstr "Подключение к устройству %s через %d сек."
+
+msgid "IDS_WIFI_POP_PIN_CODE_PS"
+msgstr "PIN-код: %s"
+
+msgid "IDS_DLNA_HEADER_SELECT_DEVICES_ABB"
+msgstr "Выбрать устройства"
+
+msgid "IDS_WIFI_BODY_THE_WI_FI_DIRECT_CONNECTION_HAS_BEEN_LOST"
+msgstr "Подключение Wi-Fi Direct разорвано."
+
+msgid "IDS_ST_BODY_CONNECT_WITH_PS_IN_PD_SECS_ABB"
+msgstr "Подключение к %s через %d сек."
+
+msgid "IDS_ST_BODY_RENAME_DEVICE_ABB"
+msgstr "Переименовать устройство"
+
+msgid "IDS_WIFI_POP_PIN"
+msgstr "PIN"
+
+msgid "IDS_WIFI_HEADER_UNABLE_TO_CONNECT_ABB2"
+msgstr "Не удалось подключиться"
+
+msgid "IDS_WIFI_BUTTON_STOP_CONNECTION_ABB"
+msgstr "Останов. подключ-е"
+
+msgid "IDS_WIFI_BUTTON_ALLOW"
+msgstr "Разрешить"
+
+msgid "IDS_COM_POP_ACTIVATING"
+msgstr "Включение..."
+
+msgid "IDS_WIFI_SK_CONNECT"
+msgstr "Подключиться"
+
+msgid "IDS_WIFI_BODY_CONNECTED"
+msgstr "Подключено."
+
+msgid "IDS_STU_HEADER_ENTER_DEVICE_NAME"
+msgstr "Введите имя устройства"
+
+msgid "IDS_ST_POP_CONNECTED_WITH_PD_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "Подключено к %d устройств. через Wi-Fi Direct."
+
+msgid "IDS_WIFI_SBODY_NOT_CONNECTED_M_STATUS_ABB"
+msgstr "Не подключено"
+
+msgid "IDS_WIFI_POP_THIS_WI_FI_DIRECT_CONNECTION_WILL_BE_CANCELLED"
+msgstr "Это подключение к Wi-Fi Direct будет отменено."
+
+msgid "IDS_WIFI_BODY_TO_SAVE_BATTERY_POWER_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "Для экономии заряда аккумулятора отключите технологию Wi-Fi Direct после использования."
+

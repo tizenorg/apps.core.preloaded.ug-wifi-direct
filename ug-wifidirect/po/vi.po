@@ -1,0 +1,249 @@
+msgid "IDS_BT_BODY_NO_DEVICES_FOUND_ABB"
+msgstr "Không tìm thấy thiết bị nào"
+
+msgid "IDS_ST_HEADER_MY_DEVICE_NAME"
+msgstr "Tên thiết bị của bạn"
+
+msgid "IDS_ST_HEADER_RENAME_DEVICE"
+msgstr "Đổi tên thiết bị"
+
+msgid "IDS_ST_POP_DEVICE_NAMES_ARE_DISPLAYED_TO_DISTINGUISH_EACH_OF_THE_DEVICES_AVAILABLE_MSG"
+msgstr "Các tên thiết bị được hiển thị để phân biệt mỗi thiết bị có trong danh sách thiết bị ở gần và thông qua Bluetooth, Wi-Fi Direct và các phương pháp khác."
+
+msgid "IDS_COM_POP_MAXIMUM_NUMBER_OF_CHARACTERS_REACHED"
+msgstr "Đã đạt số ký tự tối đa."
+
+msgid "IDS_WIFI_BODY_CONNECTING_ING"
+msgstr "Đang kết nối..."
+
+msgid "IDS_BR_SK_CANCEL"
+msgstr "Hủy"
+
+msgid "IDS_BR_SK_YES"
+msgstr "OK"
+
+msgid "IDS_BR_SK_NO"
+msgstr "Không"
+
+msgid "IDS_WIFI_SK2_OK"
+msgstr "OK"
+
+msgid "IDS_WIFI_SK_CANCEL"
+msgstr "Hủy"
+
+msgid "IDS_COM_POP_FAILED"
+msgstr "Lỗi."
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "Bật"
+
+msgid "IDS_ST_HEADER_PD_SELECTED"
+msgstr "Đã chọn %d"
+
+msgid "IDS_COM_BODY_CONNECTED_M_STATUS"
+msgstr "Đã kết nối"
+
+msgid "IDS_ST_POP_INVALID_CHARACTER_ENTERED_TRY_AGAIN"
+msgstr "Ký tự đã nhập không hợp lệ. Hãy thử lại"
+
+msgid "IDS_ST_BODY_TAP_TO_CHANGE_SETTINGS"
+msgstr "Chạm để thay đổi cài đặt"
+
+msgid "IDS_COM_POP_CANCEL"
+msgstr "Thoát"
+
+msgid "IDS_BR_SK_OK"
+msgstr "OK"
+
+msgid "IDS_ST_POP_NOT_SUPPORTED"
+msgstr "Không tương thích."
+
+msgid "IDS_COM_POP_SECURITY_POLICY_RESTRICTS_USE_OF_WI_FI"
+msgstr "Chính sách bảo mật hạn chế việc sử dụng Wi-Fi."
+
+msgid "IDS_ST_SK_RENAME"
+msgstr "Đổi tên"
+
+msgid "IDS_CHATON_BODY_AVAILABLE"
+msgstr "Sẵn sàng"
+
+msgid "IDS_CHATON_HEADER_CONNECTION_FAILED_ABB2"
+msgstr "Kết nối bị lỗi"
+
+msgid "IDS_COM_SK_NO"
+msgstr "Không"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_DEVICES"
+msgstr "Thiết bị Wi-Fi Direct"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WIFI_POP_TAP_TO_CONNECT"
+msgstr "Chạm để kết nối."
+
+msgid "IDS_WIFI_SK2_CANCEL_CONNECTION"
+msgstr "Hủy kết nối"
+
+msgid "IDS_ST_HEADER_CONNECTED_DEVICES"
+msgstr "Thiết bị đã kết nối"
+
+msgid "IDS_WIFI_BODY_SELECT_ALL"
+msgstr "Chọn tất cả"
+
+msgid "IDS_ST_HEADER_BUSY_DEVICES"
+msgstr "Thiết bị bận"
+
+msgid "IDS_ST_BODY_CONNECTED_WITH_ANOTHER_DEVICE_ABB"
+msgstr "Đã kết nối với thiết bị khác"
+
+msgid "IDS_WIFI_BODY_WAITING_FOR_CONNECTION_M_STATUS_ABB"
+msgstr "Đang chờ để kết nối"
+
+msgid "IDS_ST_POP_FAILED_TO_CONNECT"
+msgstr "Lỗi kết nối."
+
+msgid "IDS_WIFI_BUTTON_MULTI_CONNECT"
+msgstr "Đa kết nối"
+
+msgid "IDS_WIFI_BUTTON_DISCONNECT_ALL"
+msgstr "Ngắt toàn bộ kết nối"
+
+msgid "IDS_WIFI_SK_DISCONNECT"
+msgstr "Ngắt"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "Tắt Wi-Fi Direct sau khi sử dụng"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_ABB"
+msgstr "Tắt Wi-Fi Direct sau khi sử dụng"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY"
+msgstr "Tắt Wi-Fi Direct sau khi sử dụng để tiết kiệm pin"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY_ABB"
+msgstr "Tắt Wi-Fi Direct sau khi sử dụng để tiết kiệm pin"
+
+msgid "IDS_WIFI_BODY_PS_IS_REQUESTING_A_WI_FI_DIRECT_CONNECTION_ALLOW_Q"
+msgstr "%s yêu cầu một kết nối Wi-Fi Direct. Cho phép?"
+
+msgid "IDS_WIFI_BODY_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_CONNECTION_CONTINUE_Q"
+msgstr "Việc sử dụng Wi-Fi Direct sẽ ngắt kết nối Wi-Fi hiện tại. Tiếp tục?"
+
+msgid "IDS_WIFI_BODY_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_TETHERING_CONTINUE_Q"
+msgstr "Việc sử dụng Wi-Fi Direct sẽ ngắt kết nối Wi-Fi hiện tại. Tiếp tục?"
+
+msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_CONNECTION_ABB"
+msgstr "Kết nối Wi-Fi Direct"
+
+msgid "IDS_WIFI_MBODY_DISCONNECT_WI_FI_DIRECT"
+msgstr "Ngắt kết nối Wi-Fi Direct"
+
+msgid "IDS_WIFI_POP_CANCEL_WI_FI_DIRECT_CONNECTION_Q"
+msgstr "Hủy bỏ kết nối Wi-Fi Direct?"
+
+msgid "IDS_WIFI_POP_CONNECT_TO_OTHER_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "Kết nối đến thiết bị khác qua Wi-Fi Direct."
+
+msgid "IDS_WIFI_POP_THERE_HAS_BEEN_NO_ACTIVITY_FOR_PD_MINUTES_SINCE_WI_FI_DIRECT_WAS_ENABLED_MSG"
+msgstr "Không có hoạt động nào trong %d phút kể từ khi Wi-Fi Direct được bật. Để kéo dài tuổi thọ pin, Wi-Fi Direct đã tắt."
+
+msgid "IDS_WIFI_SK4_SCAN"
+msgstr "Dò"
+
+msgid "IDS_WIFI_SK_STOP"
+msgstr "Dừng"
+
+msgid "IDS_WIFI_POP_DEACTIVATION_FAILED"
+msgstr "Xảy ra lỗi."
+
+msgid "IDS_WIMAX_POP_ACTIVATION_FAILED"
+msgstr "Kích hoạt bị lỗi."
+
+msgid "IDS_WIFI_POP_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_CONTINUE_Q"
+msgstr "Kết nối hiện tại sẽ bị ngắt. Tiếp tục?"
+
+msgid "IDS_ST_POP_YOU_CAN_CONNECT_UP_TO_PD_DEVICES_AT_THE_SAME_TIME"
+msgstr "Bạn có thể kết nối tối đa %d thiết bị cùng lúc."
+
+msgid "IDS_WIFI_HEADER_AVAILABLE_DEVICES_ABB"
+msgstr "Các thiết bị sẵn có"
+
+msgid "IDS_WIFI_POP_FAILED_TO_CONNECT_TO_PS"
+msgstr "Không thể kết nối đến %s."
+
+msgid "IDS_ST_POP_DEVICE_CONNECTED_TO_ANOTHER_DEVICE"
+msgstr "Thiết bị đã kết nối đến thiết bị khác."
+
+msgid "IDS_WIFI_BODY_CONNECTED_TO_PS"
+msgstr "Đã kết nối đến %s."
+
+msgid "IDS_COM_BODY_PINS_DO_NOT_MATCH"
+msgstr "Mã PIN không khớp."
+
+msgid "IDS_COM_POP_DEACTIVATING_ING"
+msgstr "Đang tắt..."
+
+msgid "IDS_WIFI_BODY_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_SO_THAT_SCANNING_CAN_START_CONTINUE_Q"
+msgstr "Kết nối hiện tại sẽ bị ngắt để quá trình dò tìm có thể bắt đầu. Tiếp tục?"
+
+msgid "IDS_WIFI_HEADER_DEVICES_THAT_FAILED_TO_CONNECT"
+msgstr "Các thiết bị kết nối không thành công"
+
+msgid "IDS_WIFI_POP_ENTER_PIN_TO_CONNECT_TO_PS"
+msgstr "Nhập PIN để kết nối đến %s."
+
+msgid "IDS_WIFI_POP_CONNECT_TO_PS_IN_PD_SECONDS"
+msgstr "Kết nối với %s trong %d giây."
+
+msgid "IDS_WIFI_POP_PIN_CODE_PS"
+msgstr "Mã PIN %s"
+
+msgid "IDS_DLNA_HEADER_SELECT_DEVICES_ABB"
+msgstr "Chọn thiết bị"
+
+msgid "IDS_WIFI_BODY_THE_WI_FI_DIRECT_CONNECTION_HAS_BEEN_LOST"
+msgstr "Đã mất kết nối Wi-Fi Direct."
+
+msgid "IDS_ST_BODY_CONNECT_WITH_PS_IN_PD_SECS_ABB"
+msgstr "Kết nối với %s trong %d giây."
+
+msgid "IDS_ST_BODY_RENAME_DEVICE_ABB"
+msgstr "Đổi tên thiết bị"
+
+msgid "IDS_WIFI_POP_PIN"
+msgstr "PIN"
+
+msgid "IDS_WIFI_HEADER_UNABLE_TO_CONNECT_ABB2"
+msgstr "Không thể kết nối"
+
+msgid "IDS_WIFI_BUTTON_STOP_CONNECTION_ABB"
+msgstr "Dừng kết nối"
+
+msgid "IDS_WIFI_BUTTON_ALLOW"
+msgstr "Cho phép"
+
+msgid "IDS_COM_POP_ACTIVATING"
+msgstr "Đang bật..."
+
+msgid "IDS_WIFI_SK_CONNECT"
+msgstr "Kết nối"
+
+msgid "IDS_WIFI_BODY_CONNECTED"
+msgstr "Đã kết nối."
+
+msgid "IDS_STU_HEADER_ENTER_DEVICE_NAME"
+msgstr "Nhập tên thiết bị"
+
+msgid "IDS_ST_POP_CONNECTED_WITH_PD_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "Đã kết nối với %d thiết bị qua Wi-Fi Direct."
+
+msgid "IDS_WIFI_SBODY_NOT_CONNECTED_M_STATUS_ABB"
+msgstr "Chưa kết nối"
+
+msgid "IDS_WIFI_POP_THIS_WI_FI_DIRECT_CONNECTION_WILL_BE_CANCELLED"
+msgstr "Kết nối Wi-Fi Direct này sẽ bị hủy."
+
+msgid "IDS_WIFI_BODY_TO_SAVE_BATTERY_POWER_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "Để tiết kiệm nguồn pin, tắt Wi-Fi Direct sau khi sử dụng."
+

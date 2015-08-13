@@ -1,248 +1,535 @@
+#define RENAME_POPUP_ENTRY_2BUTTON_BG_MIN 0 374
+#define TOOLBAR_H 108
+#define INDICATOR_H 32
+#define TITLE_P_H 65
+#define TITLE_L_H 30
+#define TOOLBAR_H 108
+#define POPUP_WITH_2_GL_ITEMS 200
+
+#define RESOURCE_IMAGE( FILE_NAME ) \
+   group { \
+      name: FILE_NAME; \
+      images.image: FILE_NAME COMP; \
+      parts { \
+         part { name: "image"; \
+            description { \
+               state: "default" 0.0; \
+               image.normal: FILE_NAME; \
+               aspect: 1 1; \
+               aspect_preference: BOTH; \
+            } \
+	    repeat_events: 1; \
+         } \
+      } \
+   }
+
+#define RESOURCE_IMAGE_MORE( FILE_NAME ) \
+   group { \
+      name: FILE_NAME; \
+      images.image: FILE_NAME COMP; \
+      parts { \
+         part { name: "image"; \
+            description { \
+               state: "default" 0.0; \
+               image.normal: FILE_NAME; \
+			   fixed: 1 1; \
+			   min: 60 60; \
+			   max: 60 60; \
+            } \
+         } \
+      } \
+   }
+
+#define IMG_SELECT_ALL  "icon_select_all.png"
+
+images {
+	image: IMG_SELECT_ALL COMP;
+}
+
 collections {
+	RESOURCE_IMAGE("A09_device_computer.png");
+	RESOURCE_IMAGE("A09_device_input_device.png");
+	RESOURCE_IMAGE("A09_device_printer.png");
+	RESOURCE_IMAGE("A09_device_camera.png");
+	RESOURCE_IMAGE("A09_device_storage.png");
+	RESOURCE_IMAGE("A09_device_network_infrastructure.png");
+	RESOURCE_IMAGE("A09_device_display.png");
+	RESOURCE_IMAGE("A09_device_multimedia.png");
+	RESOURCE_IMAGE("A09_device_gaming.png");
+	RESOURCE_IMAGE("A09_device_telephone.png");
+	RESOURCE_IMAGE("A09_device_headset.png");
+	RESOURCE_IMAGE("A09_device_unknown.png");
+
+	RESOURCE_IMAGE("U04_device_BD.png");
+	RESOURCE_IMAGE("U04_device_Dongle.png");
+	RESOURCE_IMAGE("U04_device_Home_Theater.png");
+	RESOURCE_IMAGE("U04_device_STB.png");
+
+	RESOURCE_IMAGE("A09_device_headphone.png");
+	RESOURCE_IMAGE("A09_device_Medical.png");
+	RESOURCE_IMAGE("A09_device_mouse.png");
+
+	base_scale: 1.8;
+
+	styles{
+		style {
+			name: "textblock_style";
+			base: "font=Tizen tyle=Regular font_size=32 align=left color=#808080 linesize=38 wrap=word";
+			tag:  "br" "\n";
+			tag:  "hilight" "+ font_weight=Bold";
+			tag:  "b" "+ font_weight=Bold";
+			tag:  "tab" "\t";
+		}
+	}
+
 	group {
-		name: "progress_popup";
+	name: "icon.select_all";
+	images { image: IMG_SELECT_ALL COMP; }
+	parts {
+		part { name: "icon";
+			type: IMAGE;
+			mouse_events: 0;
+			description {
+				state: "default" 0.0;
+				aspect: 1.0 1.0;
+				aspect_preference: BOTH;
+				image.normal: IMG_SELECT_ALL;
+			}
+		}
+	}
+}
+
+	group {
+		name: "genlist_button";
 		parts {
 			part {
 				name: "base";
 				type: RECT;
 				description {
 					state: "default" 0.0;
-					min: 426 270;
-					fixed: 1 1;
-					rel1 { relative: 0 0; /*offset: 0 0;*/ }
-					rel2 { relative: 1 1; /*offset: -1 -1;*/ }
+					align: 0.5 0.5;
 					color: 0 0 0 0;
 				}
 			}
 
 			part {
-				name: "popup_pb";
+				name: "elm.swallow.icon";
 				type: SWALLOW;
 				description {
 					state: "default" 0.0;
-					min: 118 100;
-					max: 118 100;
-					rel1 { relative: 0.0 0.0; }
-					rel2 { relative: 0.2 1.0;  }
+					min: 0 72;
+					fixed: 0 1;
+					rel1 {
+						relative: 0.1 0.1; to: "base";
+					}
+					rel2 {
+						relative: 0.9 0.9; to: "base";
+					}
+				}
+			}
+		}
+	}
+	group {
+		name: "main_rename_device_ly";
+		parts {
+			part {
+				name:"pad_t";
+				type: SPACER;
+				scale: 1;
+				description {
+					state: "default" 0.0;
+					min: 0 0;
+					align: 0.5 0.0;
+					fixed: 0 1;
+					rel2.relative: 1.0 0.0;
 				}
 			}
 			part {
-				name: "popup_progress_text";
+				name:"elm.swallow.layout";
 				type: SWALLOW;
+				scale: 1;
+				mouse_events: 1;
+				repeat_events: 1;
 				description {
 					state: "default" 0.0;
-					rel1 { relative: 0.2 0.1; to: "base";}
-					rel2 { relative: 1.0 0.9; to: "base";}
+					min: 0 POPUP_WITH_2_GL_ITEMS;
+					align: 0.5 1.0;
+					fixed: 1 0;
+					rel1 {
+						relative: 1.0 1.0;
+						to_x: "pad_l";
+						to_y: "pad_t";
+					}
+					rel2 {
+						relative: 0.0 0.0;
+						to_x: "pad_r";
+						to_y: "pad_b";
+					}
+				}
+			}
+
+			part {
+				name:"pad_b";
+				type: SPACER;
+				scale: 1;
+				description {
+					state: "default" 0.0;
+					align: 0.5 1.0;
+					min: 0 0;
+					fixed: 0 1;
+					rel1.relative: 0.0 1.0;
+				}
+			}
+
+			part {
+				name: "pad_l";
+				type: SPACER;
+				scale: 1;
+				description {
+					state: "default" 0.0;
+					min: 0 0;
+					fixed: 0 0;
+					align: 0.0 0.0;
+					rel1 {
+						relative: 0.0 0.0;
+					}
+					rel2 {
+						relative: 0.0 1.0;
+					}
+				 }
+			}
+
+			part {
+				name: "pad_r";
+				type: SPACER;
+				scale: 1;
+				description {
+					state: "default" 0.0;
+					min: 0 0;
+					fixed: 0 0;
+					align: 1.0 0.0;
+					rel1 {
+						relative: 1.0 0.0;
+					}
+					rel2 {
+						relative: 1.0 1.0;
+					}
 				}
 			}
 		}
 	}
 
-    group { name: "elm/genlist/item/variable_height/default/default";
-        alias: "elm/genlist/item_odd/variable_height/default/default";
+	group {
+		name: "help_layout";
+		parts{
+                        part
+                        {
+                                name: "left_pad";
+                                type: RECT;
+                                scale: 1;
+                                description
+                                {
+                                        state: "default" 0.0;
+                                        color : 0 0 0 0;
+                                        min: 38 32;
+					max: 38 32;
+					fixed: 1 1;
+                                        rel1 {relative: 0 0;}
+                                        align: 0 0;
+                                }
+                        }
+                        part
+                        {
+                                name: "right_pad";
+                                type: RECT;
+                                scale: 1;
+                                description
+                                {
+                                        state: "default" 0.0;
+                                        color : 0 0 0 0;
+                                        min: 30 32;
+					max: 30 32;
+					fixed: 1 1;
+                                        rel2 {relative: 1 1;}
+                                        align: 1 1;
+                                }
+                        }
+                        part
+                        {
+				name: "entry_part";
+				type: SWALLOW;
+				mouse_events: 1;
+				scale:1;
 
-        data.item: "stacking" "above";
-        data.item: "selectraise" "on";
-        data.item: "texts" "elm.text";
-        data.item: "contents" "elm.icon";
-        data.item: "treesize" "20";
-        images {
-            image: "00_list_bar_press_1x80.png" COMP;
-        }
-        parts {
-            part { name: "base";
-                type: RECT;
-	            repeat_events: 1;
-    	        scale: 1;
-    	        description { state: "default" 0.0;
-    	            min: 0 0;
-         	        color: 0 0 0 0;
+                                description
+                                {
+                                        state: "default" 0.0;
+					align: 0 0;
+					fixed: 1 1;
+                                        rel1 {relative: 1 1; to: "left_pad";}
+                                        rel2 {relative: 0 0; to: "right_pad";}
+                                }
+                        }
+		}
+	}
+
+	group { name: "main_layout";
+		parts {
+			part { name: "bg";
+				type: RECT;
+				scale: 1;
+				description { state: "default" 0.0;
+				rel1 { relative: 0.0 0.0;}
+				rel2 { relative: 1.0 1.0; }
+				color: 0 0 0 0;
+				}
+				description { state: "horizontal" 0.0;
+					rel1 { relative: 0.0 0.0;}
+					rel2 { relative: 1.0 1.0; }
+					color: 0 0 0 0;
+				}
+			}
+			part {
+				name: "button_bg";
+				type: RECT;
+				scale: 1;
+				description {
+					state: "default" 0.0;
+					min: 400 TOOLBAR_H;
+					max: -1 TOOLBAR_H;
+					fixed: 0 0;
+					rel1 {
+						relative: 0.0 1.0;
+						offset: 0 -TOOLBAR_H;
+					}
+					rel2 {
+						relative: 1.0 1.0;
+						offset: 0 0;
+					}
+					color_class: "B062";
+				}
+			}
+			part {
+				name: "button.big";
+				type: SWALLOW;
+				scale: 1;
+				description {
+					state: "default" 0.0;
+					min: 0 74;
+					max: -1 TOOLBAR_H;
+					fixed: 0 0;
+					rel1 {
+						relative: 0.0 1.0;
+						offset: 21 -TOOLBAR_H;
+					}
+					rel2 {
+						relative: 1.0 1.0;
+						offset: -21 0;
+					}
+				}
+				description { state: "horizontal" 0.0;
+					inherit: "default" 0.0;
+				}
+			}
+			part {
+				name: "button.prev";
+				type: SWALLOW;
+				scale: 1;
+				description {
+					state: "default" 0.0;
+					min: 0 74;
+					max: -1 TOOLBAR_H;
+					fixed: 0 0;
+					rel1 {
+						relative: 0.0 1.0;
+						offset: 21 -TOOLBAR_H;
+					}
+					rel2 {
+						relative: 0.5 1.0;
+						offset: -6 0;
+					}
+				}
+				description { state: "horizontal" 0.0;
+					inherit: "default" 0.0;
+				}
+			}
+			part {
+				name: "button.next";
+				type: SWALLOW;
+				scale: 1;
+				description {
+					state: "default" 0.0;
+					min: 0 74;
+					max: -1 TOOLBAR_H;
+					fixed: 0 0;
+					rel1 {
+						relative: 0.5 1.0;
+						offset: 6 -TOOLBAR_H;
+					}
+					rel2 {
+						relative: 1.0 1.0;
+						offset: -21 0;
+					}
+				}
+				description { state: "horizontal" 0.0;
+					inherit: "default" 0.0;
+				}
+			}
+			part { name: "genlist-bg";
+				type: RECT;
+				scale: 1;
+				description { state: "default" 0.0;
+					rel1 {
+						relative: 0.0 0.0;
+						to: "bg";
+					}
+					rel2 {
+						to: "bg";
+						offset: 0 -TOOLBAR_H;
+					}
+					color_class: "B041";
+				}
+				description { state: "horizontal" 0.0;
+					rel1 {
+						relative: 0.0 0.0;
+						to: "bg";
+					}
+					rel2 {
+						to: "bg";
+						offset: 0 -TOOLBAR_H;
+					}
+					color_class: "B041";
+				}
+			}
+			part { name: "elm.swallow.content";
+				type: SWALLOW;
+				scale: 1;
+				description { state: "default" 0.0;
+					fixed: 0 0;
+					rel1 {
+						relative: 0.0 0.0;
+						to: "bg";
+					}
+					rel2 {
+						to: "bg";
+						offset: 0 -TOOLBAR_H;
+					}
+				}
+				description { state: "horizontal" 0.0;
+					fixed: 0 0;
+					rel1 {
+						relative: 0.0 0.0;
+						to: "bg";
+					}
+					rel2 {
+						to: "bg";
+						offset: 0 -TOOLBAR_H;
+					}
+				}
+			}
+		}
+	}
+
+	//this is for custom genlist item
+	group { name: "elm/genlist/item/custom.multiview.subtitle/default";
+
+	   data.item: "stacking" "above";
+	   data.item: "selectraise" "on";
+	   data.item: "texts" "elm.text";
+	   data.item: "contents" "elm.icon";
+
+	parts {
+		part {
+		 	name: "base";
+		 	type: RECT;
+		 	mouse_events: 0;
+		 	scale: 1;
+		 	description {
+				state: "default" 0.0;
+			 	color: 255 255 255 0;
+			 	min: 0 76;
+		 	}
+	 	}
+		part {
+			name: "left_padding";
+			type: SPACER;
+			scale: 1;
+			description {
+				state: "default" 0.0;
+				min: 28 0;
+				fixed: 1 0;
+				align: 0.0 0.0;
+				rel1 {
+					relative: 0.0 0.0;
+				}
+				rel2 {
+					relative: 0.0 1.0;
+				}
+			}
+		}
+	 	part {
+		 	name: "elm.text";
+		 	scale: 1;
+		 	type: TEXT;
+		 	mouse_events: 0;
+		 	description {
+				state: "default" 0.0;
+			 	align: 0.0 0.0;
+				min: 360 0;
+				fixed: 1 0;
+				color_class: "T027";
+			 	rel1 {
+					relative: 1.0 0.0; to: "left_padding";
+			 	}
+			 	rel2 {
+				 	relative: 1.0 1.0; to: "left_padding";
+			 	}
+				text {
+				 	align: 0.0 0.5;
+				 	min: 0 1;
+				 	font: "Tizen:style=Regular";
+				 	size: 32;
+				 	text_class: "list_item";
+			 	}
+		 	}
+	 	}
+	 	part {
+		 	name: "elm.icon";
+		 	scale: 0;
+		 	type: SWALLOW;
+		 	description {
+				state: "default" 0.0;
+			 	align: 1.0 0.0;
+				fixed: 1 1;
+			 	rel1 {
+				 	relative: 1.0 23/76; to: "base";
+			 	}
+			 	rel2 {
+				 	relative: 1.0 59/76; to: "base"; offset: -26 0;
+			 	}
+			 	min: 36 36;
+				max: 36 36;
+		 	}
+	 	}
+
+                part { name: "bottom_line";
+                        scale: 1;
+                        type: RECT;
+                        description {
+                                state: "default" 0.0;
+				min: 0 4;
+				color_class: "W021L2";
+				fixed: 0 1;
+				align: 0.5 1.0;
+                                rel1 {
+                                        relative: 0.0 1.0; to_x: "base"; to_y: "elm.icon"; offset: 4 13;
+                                }
+                                rel2 {
+                                        relative: 1.0 1.0; to_x: "base"; to_y: "elm.icon"; offset: -5 17;
+                                }
+                                visible: 1;
+                        }
                 }
-            }
-
-         part { name: "bg_image";
-            clip_to: "disclip";
-            mouse_events: 0;
-            description { state: "default" 0.0;
-               visible: 0;
-               image.normal: "00_list_bar_press_1x80.png";
-            }
-            description { state: "selected" 0.0;
-               inherit: "default" 0.0;
-               visible: 1;
-            }
-         }
-
-         part { name: "bottom_line"; 
-            type: RECT;
-            clip_to: "disclip";
-            mouse_events: 0;
-            description { state: "default" 0.0;
-               min: 0 1;
-               fixed: 0 1;
-               visible: 1;
-               color: 212 212 212 255;
-               rel1 {
-                  relative: 0.0 1.0;
-                  offset: 0 -1;
-               }
-            }
-         }
-
-         part { name: "elm.padding.left";
-            type: RECT;
-            scale: 1;
-            description {
-               state: "default" 0.0;
-               min: 15 0;
-               fixed: 1 0;
-               visible: 0;
-               rel2.relative: 0.0 1.0;
-               align: 0.0 0.0;
-            }
-         }
-
-       part { name: "elm.padding.right";
-            type: RECT;
-            scale: 1;
-            description { state: "default" 0.0;
-               min: 15 0;
-               fixed: 1 0;
-               visible: 0;
-               rel1.relative: 1.0  0.0;
-               align: 1.0 0.0;
-            }
-         }
-
-       part { name: "elm.padding.top";
-            type: RECT;
-            scale: 1;
-            description {
-               state: "default" 0.0;
-               min: 0 10;
-               fixed: 0 1;
-               visible: 0;
-               rel2.relative: 1.0 0.0;
-               align: 0.0 0.0;
-            }
-         }
-
-       part { name: "elm.padding.bottom";
-            type: RECT;
-            scale: 1;
-            description {
-               state: "default" 0.0;
-               min: 0 10;
-               fixed: 0 1;
-               visible: 0;
-               rel1.relative: 0.0 1.0;
-               align: 0.0 1.0;
-            }
-         }
-
-         part { name: "elm.text";
-            clip_to: "text_clip";
-            type: TEXTBLOCK;
-            mouse_events: 0;
-            scale: 1;
-            description { state: "default" 0.0;
-               align: 0.0 0.5;
-               min: 460 0;
-               fixed: 1 0;
-               rel1 {
-                  relative: 1 1.0;
-                  to_x: "elm.padding.left";
-                  to_y: "elm.padding.top";
-               }
-               rel2 {
-                  relative: 1 0.0;
-                  to_x: "elm.padding.left";
-                  to_y: "elm.padding.bottom";
-               }
-               text {
-                  style: textblock_style_variable_height;
-                  min: 1 1;
-                  align: 0 0.5;
-               }
-            }
-         }
-         part { name: "text_clip";
-            clip_to: "disclip";
-            type: RECT;
-            description { state: "default" 0.0;
-               align: 0.0 0.5;
-               rel1 {
-                  relative: 1 1;
-                  to_x: "elm.padding.left";
-                  to_y: "elm.padding.top";
-               }
-               rel2 {
-                  relative: 0 0;
-                  to_x: "elm.padding.right";
-                  to_y: "elm.padding.bottom";
-               }
-            }
-         }
-         part { name: "elm.icon";
-            clip_to: "disclip";
-            type: SWALLOW;
-            mouse_events: 1;
-            scale: 1;
-            description { state: "default" 0.0;
-               align: 0.5 0.5;
-               rel1 {
-                  relative: 1 1;
-                  to_x: "elm.padding.left";
-                  to_y: "elm.padding.top";
-               }
-               rel2 {
-                  relative: 0 0;
-                  to_x: "elm.padding.right";
-                  to_y: "elm.padding.bottom";
-               }
-            }
-         }
-
-        part { name: "disclip";
-            type: RECT;
-            description { state: "default" 0.0;
-               rel1.to: "base";
-               rel2.to: "base";
-            }
-            description { state: "disabled" 0.0;
-               inherit: "default" 0.0;
-//               color: 255 255 255 64;
-               color: 0 0 0 0;
-            }
-         }
-
-      }
-      programs {
-         program { name: "go_active";
-            signal: "elm,state,selected";
-            source: "elm";
-            action: STATE_SET "selected" 0.0;
-            target: "bg_image";
-         }
-         program { name: "go_passive";
-            signal: "elm,state,unselected";
-            source: "elm";
-            action: STATE_SET "default" 0.0;
-            target: "bg_image";
-            transition: LINEAR 0.1;
-         }
-         program { name: "go_disabled";
-            signal: "elm,state,disabled";
-            source: "elm";
-            action: STATE_SET "disabled" 0.0;
-            target: "disclip";
-         }
-         program { name: "go_enabled";
-            signal: "elm,state,enabled";
-            source: "elm";
-            action: STATE_SET "default" 0.0;
-            target: "disclip";
-         }
-      }
-   }
+       	    }
+	}
 }

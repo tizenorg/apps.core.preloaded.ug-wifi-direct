@@ -1,13 +1,13 @@
 /*
 *  WiFi-Direct UG
 *
-* Copyright 2012 Samsung Electronics Co., Ltd
+* Copyright 2012  Samsung Electronics Co., Ltd
 
-* Licensed under the Flora License, Version 1.1 (the "License");
+* Licensed under the Flora License, Version 1.0 (the "License");
 * you may not use this file except in compliance with the License.
 * You may obtain a copy of the License at
 
-* http://floralicense.org/license
+* http://www.tizenopensource.org/license
 
 * Unless required by applicable law or agreed to in writing, software
 * distributed under the License is distributed on an "AS IS" BASIS,
@@ -21,82 +21,118 @@
 #ifndef __WFD_UG_H__
 #define __WFD_UG_H__
 
+#include <dlog.h>
+#include <notification.h>
 #include <ui-gadget-module.h>
+
 #include <tethering.h>
+
 #include <wifi-direct.h>
+#include <efl-assist/efl_assist.h>
+
+#include <glib-object.h>
+#include <gio/gio.h>
+#include <glib.h>
+#include <assert.h>
 
 #define PACKAGE "ug-setting-wifidirect-efl"
-#define LOCALEDIR "/usr/ug/res/locale"
-#define VCONF_WFD_APNAME "db/setting/device_name"
+#define LOCALEDIR "/usr/share/locale"
+#define COLOR_TABLE "/usr/apps/setting-wifidirect-efl/shared/res/tables/setting-wifidirect-efl_ChangeableColorTable.xml"
+#define FONT_TABLE "/usr/apps/setting-wifidirect-efl/shared/res/tables/setting-wifidirect-efl_FontInfoTable.xml"
 
-#ifdef USE_DLOG
-#include <dlog.h>
+#define DIRECT_TAG  "wfd_ug"
+/* TODO:: To change the log level as LOG_INFO */
+#define DBG(log_level, format, args...) \
+	LOG(LOG_ERROR, DIRECT_TAG, "[%s()][%d] " format, __FUNCTION__, __LINE__, ##args)
+#define DBG_SECURE(log_level, format, args...) \
+	SECURE_LOG(LOG_ERROR, DIRECT_TAG, "[%s()][%d] " format, __FUNCTION__, __LINE__, ##args)
 
-#undef LOG_TAG
-#define LOG_TAG "UG_WIFI_DIRECT"
+#define MAC2SECSTR(a) (a)[0], (a)[4], (a)[5]
+#define MACSECSTR "%02x:%02x:%02x"
+#if 0
+#define IP2SECSTR(a) (a)[0], (a)[3]
+#define IPSECSTR "%d..%d"
+#endif
 
-#define WDUG_LOGV(format, args...) LOGV(format, ##args)
-#define WDUG_LOGD(format, args...) LOGD(format, ##args)
-#define WDUG_LOGI(format, args...) LOGI(format, ##args)
-#define WDUG_LOGW(format, args...) LOGW(format, ##args)
-#define WDUG_LOGE(format, args...) LOGE(format, ##args)
-#define WDUG_LOGF(format, args...) LOGF(format, ##args)
+#define __FUNC_ENTER__  DBG(LOG_INFO, "+\n")
+#define __FUNC_EXIT__   DBG(LOG_INFO, "-\n")
+#if 0
+#define __FUNC_ENTER__
+#define __FUNC_EXIT__
+#endif
 
-#define __WDUG_LOG_FUNC_ENTER__ LOGV("Enter")
-#define __WDUG_LOG_FUNC_EXIT__ LOGV("Quit")
+#define VCONF_WFD_APNAME			"db/setting/device_name"
 
-#define assertm_if(expr, fmt, args...) do { \
+#define assertm_if(expr, fmt, arg...) do { \
 	if (expr) { \
-	  WDUG_LOGF(" ##(%s) -> assert!!## "fmt, #expr, ##args); \
+	  DBG(LOG_VERBOSE, " ##(%s) -> %s() assert!!## "fmt, #expr, __FUNCTION__, ##arg); \
 		 assert(1); \
 	} \
 } while (0)
 
-#else /** _DLOG_UTIL */
+#define WFD_IF_DEL_OBJ(obj) \
+		do { \
+			if(obj) { \
+				evas_object_del(obj); \
+				obj = NULL; \
+			} \
+		} while (0)
 
-#define WDUG_LOGV(format, args...)
-#define WDUG_LOGD(format, args...)
-#define WDUG_LOGI(format, args...)
-#define WDUG_LOGW(format, args...)
-#define WDUG_LOGE(format, args...)
-#define WDUG_LOGF(format, args...)
+#define WFD_IF_DEL_ITEM(obj) \
+		do { \
+			if(obj) { \
+				elm_object_item_del(obj); \
+				obj = NULL; \
+			} \
+		} while (0)
 
-#define __WDUG_LOG_FUNC_ENTER__
-#define __WDUG_LOG_FUNC_EXIT__
+#define WFD_RET_IF(expr, fmt, args...) \
+		do { \
+			if(expr) { \
+				DBG(LOG_ERROR, "[%s] Return, message "fmt, #expr, ##args );\
+				return; \
+			} \
+		} while (0)
 
-#endif /** _DLOG_UTIL */
+#define WFD_RETV_IF(expr, val, fmt, args...) \
+		do { \
+			if(expr) { \
+				DBG(LOG_ERROR,"[%s] Return value, message "fmt, #expr, ##args );\
+				return (val); \
+			} \
+		} while (0)
 
-#define MAC2STR(a) (a)[0], (a)[1], (a)[2], (a)[3], (a)[4], (a)[5]
-#define MACSTR "%02x:%02x:%02x:%02x:%02x:%02x"
+#define WFD_IF_FREE_MEM(mem) \
+		do { \
+			if(mem) { \
+				free(mem); \
+				mem = NULL; \
+			} \
+		} while (0)
 
 #define AP_NAME_LENGTH_MAX		32
 #define AP_PASSWORD_LENGTH_MAX	64
 #define AP_PASSWORD_LENGTH_MIN	8
 #define AP_REJECT_CHAR_LIST		"=,"
 
-#define DEFAULT_DEV_NAME        "Tizen"
+#define DEFAULT_DEV_NAME        "ZEQ"
 #define MAC_LENGTH  18
 #define SSID_LENGTH 32
+#define MAX_CONNECTED_PEER_NUM 7
 #define MAX_PEER_NUM 10
-#define MAX_POPUP_PEER_NUM 7
 #define MAX_POPUP_TEXT_SIZE 256
-#define MAX_DISPLAY_TIME_OUT	30
+#define MAX_DISPLAY_TIME_OUT 3
 #define MAX_NO_ACTION_TIME_OUT	300            /*5min*/
-#define MAX_SCAN_TIME_OUT 30
+#define MAX_SCAN_TIME_OUT 0
+
+#define GENLIST_HEADER_POS 1
+#define SR_CHECKBOX_ON_MSG "on/off button on"
+#define SR_CHECKBOX_OFF_MSG "on/off button off"
+#define SR_BUTTON_MSG "multiple connect button"
 
 #define _(s)        dgettext(PACKAGE, s)
 #define N_(s)      dgettext_noop(s)
 #define S_(s)      dgettext("sys_string", s)
-
-#if 1
-/* To-Do : Text should be translated. */
-#define IDS_WFD_POP_SCAN_AGAIN "Current connection will be disconnected so that scanning can start.Continue?"
-#define IDS_WFD_POP_WARN_BUSY_DEVICE "Unavailable device. Device is connected to another device."
-#define IDS_WFD_POP_AUTOMATIC_TURN_OFF "There has been no activity for 5 minutes since Wi-Fi Direct was enabled. To extend battery life, Wi-Fi Direct has been disabled."
-#define IDS_WFD_BODY_FAILED_DEVICES "Failed Devices"
-#define IDS_WFD_TITLE_ABOUT_WIFI_DIRECT "About Wi-Fi Direct"
-#endif
-
 
 #define WFD_GLOBALIZATION_STR_LENGTH 256
 
@@ -115,23 +151,30 @@ typedef enum {
 	PEER_CONN_STATUS_WAIT_FOR_CONNECT,
 } conn_status_e;
 
+typedef enum {
+	WIFI_DIRECT_DISCOVERY_NONE,
+	WIFI_DIRECT_DISCOVERY_SOCIAL_CHANNEL_START,
+	WIFI_DIRECT_DISCOVERY_FULL_SCAN_START,
+	WIFI_DIRECT_DISCOVERY_STOPPED,
+	WIFI_DIRECT_DISCOVERY_BACKGROUND,
+} discovery_status_e;
 
-typedef struct {
+
+typedef struct device_type_s_{
 	char ssid[SSID_LENGTH];
 	unsigned int category;
+	unsigned int sub_category;
 	char mac_addr[MAC_LENGTH];
 	char if_addr[MAC_LENGTH];
 	conn_status_e conn_status;
 	bool is_group_owner;  /** Is an active P2P Group Owner */
 	bool is_persistent_group_owner;  /** Is a stored Persistent GO */
 	bool is_connected;  /** Is peer connected*/
-	Elm_Object_Item *gl_item;
-} device_type_s;
-
-typedef struct {
+	bool is_alive;
 	bool dev_sel_state;
-	device_type_s peer;
-} wfd_multi_sel_data_s;
+	Elm_Object_Item *gl_item;
+	struct device_type_s_ *next;
+} device_type_s;
 
 struct ug_data {
 	Evas_Object *base;
@@ -139,24 +182,50 @@ struct ug_data {
 
 	Evas_Object *win;
 	Evas_Object *bg;
+	Evas_Object *layout;
 	Evas_Object *naviframe;
+	Elm_Object_Item *navi_item;
+	Elm_Object_Item *multi_navi_item;
+	Elm_Object_Item *head;
 	Evas_Object *genlist;
 	Evas_Object *multiconn_view_genlist;
+	Evas_Object *multiconn_layout;
 	Evas_Object *popup;
 	Evas_Object *act_popup;
 	Evas_Object *warn_popup;
-
-	Elm_Object_Item *head;
+	Evas_Object *rename_popup;
+	Evas_Object *ctxpopup;
 	Evas_Object *scan_btn;
-	Evas_Object *multi_scan_btn;
-	Evas_Object *multi_connect_btn;
+	Evas_Object *disconnect_btn;
+	Evas_Object *toolbar;
+	Evas_Object *rename_entry;
+	Evas_Object *rename_button;
+
+#ifdef WFD_ON_OFF_GENLIST
+	Evas_Object *on_off_check;
+#endif
+
+	Evas_Object *scan_toolbar;
+	Evas_Object *multiconn_scan_stop_btn;
+	Evas_Object *multiconn_conn_btn;
+	Evas_Object *select_all_icon;
+
+
+
+	Elm_Object_Item *multi_connect_toolbar_item;
+	Elm_Object_Item *multi_view_connect_toolbar_item;
+
+	Elm_Object_Item *select_all_view_genlist;
+#ifdef WFD_ON_OFF_GENLIST
+	Elm_Object_Item *item_wifi_onoff;
+#endif
+	Elm_Object_Item *device_name_item;
+	Elm_Genlist_Item_Class *rename_entry_itc;
+	Elm_Genlist_Item_Class *rename_desc_itc;
+	Elm_Object_Item *multi_connect_sep_item;
 
 	Elm_Object_Item *nodevice_title_item;
 	Elm_Object_Item *nodevice_item;
-
-	Elm_Object_Item *about_wfd_item;
-	Elm_Object_Item *about_wfd_sep_high_item;
-	Elm_Object_Item *about_wfd_sep_low_item;
 
 	Elm_Object_Item *conn_wfd_item;
 	Elm_Object_Item *conn_failed_wfd_item;
@@ -164,15 +233,11 @@ struct ug_data {
 	Elm_Object_Item *busy_wfd_item;
 	Elm_Object_Item *multi_connect_wfd_item;
 
-	Elm_Object_Item *multi_button_item;
-	Elm_Object_Item *multi_button_sep_item;
-
-	Elm_Object_Item *mcview_select_all_item;
 	Elm_Object_Item *mcview_title_item;
 	Elm_Object_Item *mcview_nodevice_item;
+	Elm_Object_Item *more_btn_multiconnect_item;
 
 	Evas_Object *back_btn;
-	Evas_Object *multi_btn;
 
 	// Notify
 	Evas_Object *notify;
@@ -180,30 +245,40 @@ struct ug_data {
 
 	int head_text_mode;
 
+	char *mac_addr_connecting;
+	char *mac_addr_req;
+
+	//Connection is incoming or not
+	bool is_conn_incoming;
+
+
+	// title mode of device list
+	int title_content_mode;
+
 	// Raw peer data
-	device_type_s raw_connected_peers[MAX_PEER_NUM];
+	device_type_s raw_connected_peers[MAX_CONNECTED_PEER_NUM];
 	int raw_connected_peer_cnt;
-	device_type_s raw_discovered_peers[MAX_PEER_NUM];
+	GList *raw_discovered_peer_list;
 	int raw_discovered_peer_cnt;
 
 	// Peer data in the Genlist
-	device_type_s gl_connected_peers[MAX_PEER_NUM];
 	int gl_connected_peer_cnt;
+	device_type_s *gl_conn_peers_start;
 
-	device_type_s gl_connected_failed_peers[MAX_PEER_NUM];
 	int gl_connected_failed_peer_cnt;
+	device_type_s *gl_failed_peers_start;
 
-	device_type_s gl_available_peers[MAX_PEER_NUM];
 	int gl_available_peer_cnt;
+	device_type_s *gl_avlb_peers_start;
 
-	device_type_s gl_busy_peers[MAX_PEER_NUM];
 	int gl_busy_peer_cnt;
+	device_type_s *gl_busy_peers_start;
 
 	device_type_s raw_multi_selected_peers[MAX_PEER_NUM];
 	int raw_multi_selected_peer_cnt;
 
-	device_type_s gl_multi_connect_peers[MAX_PEER_NUM];
 	int gl_multi_connect_peer_cnt;
+	device_type_s *gl_mul_conn_peers_start;
 
 	// My status
 	bool I_am_group_owner;
@@ -211,11 +286,13 @@ struct ug_data {
 
 	// Following variables are used at the Multi connect view.
 	wfd_multi_connect_mode_e multi_connect_mode;
-	wfd_multi_sel_data_s multi_conn_dev_list[MAX_PEER_NUM];
+	device_type_s *multi_conn_dev_list_start;
 	int gl_available_dev_cnt_at_multiconn_view;
 	int g_source_multi_connect_next;
 
+#ifdef WFD_ON_OFF_GENLIST
 	int wfd_onoff;
+#endif
 	wifi_direct_state_e wfd_status;
 	char *dev_name;
 	char *dev_pass;
@@ -226,23 +303,75 @@ struct ug_data {
 
 	// Tethering
 	bool is_hotspot_off;
+	bool is_hotspot_locally_disabled;
 	tethering_h hotspot_handle;
 
-	// Used for automatic turn off
-	int last_wfd_status;
-	int last_wfd_time;
-	Ecore_Timer *monitor_timer;
+	// wfds service
+	char *wfds;
 
-	// Re-discover or not
-	bool is_re_discover;
+	// Device filter
+	int device_filter;
+
+	// Whether support auto exit after successed connection
+	bool is_auto_exit;
+
+	//Whether support multi connection
+	bool is_multi_connect;
+	bool is_select_all_checked;
+
+	//view type for search
+	char *view_type;
+
+	//Title of UG
+	char *title;
+
+	// The ip address of connected peer
+	char *peer_ip_address;
+
+	// The service name that supported WFDSP
+	char *service_name;
+
+	// Whether initialize wfd-namager ok
+	bool is_init_ok;
+
+	//timer for deleting progress bar
+	int timer_stop_progress_bar;
+
+	//timer for multi connect reset
+	int timer_multi_reset;
+
+	//if all the items are selected or not
+	bool is_multi_check_all_selected;
+
+	//timer for remove not alive peer
+	int timer_delete_not_alive_peer;
+
+	//wifi direct discovery status
+	int wfd_discovery_status;
+
+	bool is_paused;
+
+#ifdef WFD_DBUS_LAUNCH
+	GCancellable *dbus_cancellable;
+	GDBusConnection *conn;
+#endif
+#if defined(EA)
+	Ea_Theme_Color_Table *color_table;
+	Ea_Theme_Font_Table *font_table;
+#endif
 };
 
-extern Elm_Gen_Item_Class head_itc;
-extern Elm_Gen_Item_Class name_itc;
+extern Elm_Gen_Item_Class device_name_title_itc;
+#ifdef WFD_ON_OFF_GENLIST
+extern Elm_Gen_Item_Class wfd_onoff_itc;
+#endif
+extern Elm_Gen_Item_Class device_name_itc;
 extern Elm_Gen_Item_Class title_itc;
+extern Elm_Gen_Item_Class multi_view_title_itc;
 extern Elm_Gen_Item_Class peer_itc;
+extern Elm_Gen_Item_Class title_no_device_itc;
 extern Elm_Gen_Item_Class noitem_itc;
-extern Elm_Gen_Item_Class button_itc;
+extern Elm_Gen_Item_Class title_available_itc;
 
 extern Elm_Gen_Item_Class title_conn_itc;
 extern Elm_Gen_Item_Class peer_conn_itc;
@@ -252,9 +381,30 @@ extern Elm_Gen_Item_Class peer_busy_itc;
 
 extern Elm_Gen_Item_Class title_multi_connect_itc;
 extern Elm_Gen_Item_Class peer_multi_connect_itc;
+extern Elm_Gen_Item_Class select_all_multi_connect_itc;
 
 extern Elm_Gen_Item_Class title_conn_failed_itc;
 extern Elm_Gen_Item_Class peer_conn_failed_itc;
+
+/**
+ *	This function let the ug destroy the ug
+ *	@return   void
+ *	@param[in] data the pointer to the main data structure
+ */
+void wfd_destroy_ug(void *data);
+
+/**
+ *	This function is called when ON/OFF button is turned ON/OFF
+ *	@return   void
+ *	@param[in] data the pointer to the main data structure
+ *	@param[in] object
+ *	@param[in] event
+ */
+void _onoff_changed_cb(void *data, Evas_Object *obj, void *event_info);
+void toolbar_language_changed(void *data, Evas_Object *obj, void *event_info);
+void ctxpopup_dismissed_cb(void *data, Evas_Object *obj, void *event_info);
+void wfd_free_nodivice_item(struct ug_data *ugd);
+void discover_cb(int error_code, wifi_direct_discovery_state_e discovery_state, void *user_data);
 
 
 #endif  /* __WFD_UG_H__ */

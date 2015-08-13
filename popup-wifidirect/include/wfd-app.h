@@ -1,13 +1,13 @@
 /*
 *  WiFi-Direct UG
 *
-* Copyright 2012 Samsung Electronics Co., Ltd
+* Copyright 2012  Samsung Electronics Co., Ltd
 
-* Licensed under the Flora License, Version 1.1 (the "License");
+* Licensed under the Flora License, Version 1.0 (the "License");
 * you may not use this file except in compliance with the License.
 * You may obtain a copy of the License at
 
-* http://floralicense.org/license
+* http://www.tizenopensource.org/license
 
 * Unless required by applicable law or agreed to in writing, software
 * distributed under the License is distributed on an "AS IS" BASIS,
@@ -29,34 +29,44 @@
 #ifndef __WFD_SYS_POPAPP_MAIN_H__
 #define __WFD_SYS_POPAPP_MAIN_H__
 
-#include <appcore-efl.h>
-#include <Ecore_X.h>
-#include <Elementary.h>
-#include <appsvc.h>
-#include <aul.h>
-#include <notification.h>
-#include <syspopup_caller.h>
-#include "wifi-direct.h"
+#include <wifi-direct.h>
 
 #define PACKAGE "org.tizen.wifi-direct-popup"
+#define PACKAGE_ALLSHARE_CAST "org.tizen.allshare-cast-popup"
 #define EDJ_NAME RESDIR"/edje/wifi-direct-popup.edj"
-#define WFD_MAX_PEER_NUM	10
+#define WFD_MAX_CONNECTED_PEER	7
 #define WFD_POP_STR_MAX_LEN	256
 #define NO_ACTION_TIME_OUT	300            /*5min*/
 
 #define NOTIFICATION_BUNDLE_PARAM "NotiType"
 #define NOTIFICATION_BUNDLE_VALUE "WiFi-Direct"
-#define TICKERNOTI_SYSPOPUP "tickernoti-syspopup"
-
 
 #define LOCALE_FILE_NAME "wifi-direct-popup"
 #define LOCALEDIR "/usr/apps/org.tizen.wifi-direct-popup/res/locale"
+#define WFD_NOTI_ICON_PATH "/usr/apps/org.tizen.quickpanel/shared/res/noti_icons/Wi-Fi/noti_wifi_direct_auto_off.png"
+#define WFD_INDICATOR_ICON_PATH "/usr/apps/org.tizen.wifi-direct-popup/res/images/B03_wi-fi_direct_on_connected.png"
+#define WFD_ACTIVATED_NOTI_ICON_PATH "/usr/apps/org.tizen.wifi-direct-popup/res/images/B03_wi-fi_direct_on_not_connected.png"
+#define WFD_EDJ_POPUP_PATH "/usr/apps/org.tizen.wifi-direct-popup/res/edje/wfd_popup.edj"
+#define SCREEN_MIRRIONG_INDICATOR_ICON_PATH "/usr/apps/org.tizen.wifi-direct-popup/res/images/B03_event_screen_mirroring.png"
+#define SCREEN_MIRRIONG_INDICATOR_PLAY_ICON_PATH "/usr/apps/org.tizen.wifi-direct-popup/res/images/B03_event_screen_mirroring_play.png"
+#define SCREEN_MIRRIONG_NOTI_ICON_PATH "/usr/apps/org.tizen.wifi-direct-popup/res/images/ug-setting-allshare-cast-efl.png"
 
 #define _(s)        dgettext(LOCALE_FILE_NAME, s)
 #define N_(s)      dgettext_noop(s)
 #define S_(s)      dgettext("sys_string", s)
 
+#define MAX_NO_ACTION_TIME_OUT	300            /*5min*/
+#define MAX_POPUP_TEXT_SIZE 256
+#define DEV_NAME_LENGTH 32
+#define MACSTR_LENGTH 17
+#define PIN_LENGTH 64
 
+#ifndef FALSE
+#define FALSE (0)
+#endif
+#ifndef TRUE
+#define TRUE (!FALSE)
+#endif
 
 enum {
 	WFD_POP_TIMER_3 = 3,
@@ -69,7 +79,6 @@ enum {
 	WFD_POP_APRV_CONNECTION_WPS_PUSHBUTTON_REQ,
 	WFD_POP_APRV_CONNECTION_WPS_DISPLAY_REQ,
 	WFD_POP_APRV_CONNECTION_WPS_KEYPAD_REQ,
-	WFD_POP_APRV_CONNECTION_INVITATION_REQ,
 
 	WFD_POP_PROG_CONNECT,
 	WFD_POP_PROG_DISCONNECT,
@@ -85,7 +94,6 @@ enum {
 	WFD_POP_RESP_OK,
 	WFD_POP_RESP_CANCEL,
 	WFD_POP_RESP_APRV_CONNECT_PBC_YES = 1,
-	WFD_POP_RESP_APRV_CONNECT_INVITATION_YES,
 	WFD_POP_RESP_APRV_CONNECT_DISPLAY_OK,
 	WFD_POP_RESP_APRV_CONNECT_KEYPAD_YES,
 	WFD_POP_RESP_APRV_CONNECT_NO,
@@ -93,6 +101,13 @@ enum {
 	WFD_POP_RESP_APRV_ENTER_PIN_YES,
 	WFD_POP_RESP_APRV_ENTER_PIN_NO,
 };
+
+#ifdef WFD_SCREEN_MIRRORING_ENABLED
+enum {
+	WFD_POP_SCREEN_MIRROR_NONE,
+	WFD_POP_SCREEN_MIRROR_DISCONNECT_BY_RECONNECT_WIFI_AP,
+};
+#endif
 
 typedef struct {
 	int type;
@@ -108,29 +123,71 @@ typedef struct {
 typedef struct {
 	char ssid[32];
 	char mac_address[18];
+	unsigned int category;
+	bool is_miracast_device;
 } wfd_device_info_t;
+
+typedef struct {
+	int status;
+	char peer_name[DEV_NAME_LENGTH+1];
+	char peer_addr[MACSTR_LENGTH+1];
+	unsigned int device_type;
+	int wifi_display;
+	wifi_direct_wps_type_e wps_type;
+	char wps_pin[PIN_LENGTH+1];
+	bool auto_conn;
+} wfd_connection_info_s;
 
 typedef struct {
 	Evas_Object *win;
 	Evas_Object *popup;
 	Evas_Object *pin_entry;
+	Evas_Object *conformant;
+	Evas_Object *layout;
+	Evas_Object *back_grnd;
 	wfd_popup_t *popup_data;
 	uint popup_timeout_handle;
-	char pin_number[64];
-	char peer_mac[18];
-	char peer_name[32];
-	wfd_device_info_t *discovered_peers;
-	int discovered_peer_count;
+
+	wfd_connection_info_s *connection;
 
 	/* notification */
-	notification_h noti;
-	wfd_device_info_t raw_connected_peers[WFD_MAX_PEER_NUM];
+#ifdef NOT_CONNECTED_INDICATOR_ICON
+	notification_h noti_wifi_direct_on;
+#endif
+	notification_h noti_wifi_direct_connected;
+	notification_h noti_screen_mirroring_on;
+	notification_h noti_screen_mirroring_play;
+	wfd_device_info_t raw_connected_peers[WFD_MAX_CONNECTED_PEER];
 	int raw_connected_peer_cnt;
 
 	/* Transmit timer */
 	wifi_direct_state_e wfd_status;
 	int last_wfd_transmit_time;
 	Ecore_Timer *transmit_timer;
+
+	/* auto deactivation after 5 mins if not connected*/
+#ifdef WFD_FIVE_MIN_IDLE_DEACTIVATION
+	Ecore_Timer *monitor_timer;
+#endif
+	wifi_direct_state_e last_wfd_status;
+	int last_wfd_time;
+
+	Ecore_Event_Handler *rotate_event_handler;
+
+#ifdef WFD_SCREEN_MIRRORING_ENABLED
+	int screen_mirroring_state;
+#endif
+	int timeout;
+
+	Elm_Genlist_Item_Class *pin_entry_itc;
+	Elm_Genlist_Item_Class *pin_desc_itc;
+	Elm_Genlist_Item_Class *paswd_itc;
+
+	/*Mac address for connecting device*/
+	char mac_addr_connecting[MACSTR_LENGTH];
+
+	/* Down Key Press Handler */
+	Ecore_Event_Handler *downkey_handler;
 } wfd_appdata_t;
 
 typedef struct {
@@ -146,15 +203,20 @@ extern wfd_appdata_t *wfd_get_appdata();
  *	@return   If success, return TRUE, else return FALSE
  *	@param[in] ad the pointer to the main data structure
  */
-int init_wfd_popup_client(wfd_appdata_t *ad);
+bool init_wfd_client(wfd_appdata_t *ad);
 
 /**
  *	This function let the app do de-initialization
  *	@return   If success, return TRUE, else return FALSE
  *	@param[in] ad the pointer to the main data structure
  */
-int deinit_wfd_popup_client(wfd_appdata_t *ad);
+int deinit_wfd_client(wfd_appdata_t *ad);
 
+void wfd_app_util_del_notification(wfd_appdata_t *ad);
+Eina_Bool wfd_automatic_deactivated_for_connection_cb(void *user_data);
+int wfd_app_util_deregister_hard_key_down_cb(void *data);
+int wfd_app_get_connected_peers(void *user_data);
+int wfd_app_client_switch_off(void *data);
 
 /**
  *	This function let the app destroy the popup

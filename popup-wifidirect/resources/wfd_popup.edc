@@ -1,0 +1,478 @@
+#define EDITFIELD_TOP_PADDING 20
+#define EDITFIELD_BOTTOM_PADDING 20
+#define EDITFIELD_RIGHT_PADDING 20
+#define EDITFIELD_RIGHT_TEXT_PADDING 56
+#define EDITFIELD_RIGHT_ERASER_PADDING 10
+#define EDITFIELD_HEIGHT_INC 66
+#define EDITFIELD_INPUTFIELD_BORDER_INC 9 9 9 9
+#define EDITFIELD_LEFT_PADDING_SEARCHFIELD_INC 16
+#define EDITFIELD_RIGHT_PADDING_SEARCHFIELD_INC 48
+#define EDITFIELD_TITLE_COLOR_INC 128 128 128 255
+#define EDITFIELD_TITLE_SIZE_INC 38
+#define EDITFIELD_GUIDE_TEXT_COLOR_INC 121 131 138 255
+#define EDITFIELD_DEFAULT_ERASER_MINW_INC 48
+#define EDITFIELD_DEFAULT_ERASER_MINH_INC 48
+#define EDITFIELD_SEARCHBAR_ERASER_EVENT_MINW_INC 38
+#define EDITFIELD_SEARCHBAR_ERASER_EVENT_MINH_INC 50
+#define ENTRY_TEXT_SIZE_INC 44
+#define CHECK_HEIGHT_INC 63
+#define CHECK_RECT_HEIGHT_INC 90
+
+#define WPS_POPUP_PADDING_LEFT_MIN_INC 15 0
+#define WPS_POPUP_TEXT_SLIDER_PADDING_LEFT_MIN_INC 15 27
+#define WPS_POPUP_TEXT_SLIDER_PADDING_LEFT_MAX_INC 15 27
+#define WPS_POPUP_TEXT_SLIDER_PADDING_RIGHT_MIN_INC 15 27
+#define WPS_POPUP_TEXT_SLIDER_PADDING_RIGHT_MAX_INC 15 27
+#define PBC_POPUP_TEXT_SLIDER_TEXT_DISCRIPTION_MIN_INC 266 76
+#define WPS_POPUP_TEXT_SLIDER_BG_MIN_INC 266 42
+#define WPS_POPUP_SLIDER_VIEW_LAYOUT_PADDING_TOP_MIN_INC 266 28
+#define WPS_POPUP_SLIDER_VIEW_LAYOUT_SWALLOW_MIN_INC 266 10
+
+
+collections {
+
+	base_scale: 1.8;
+
+	group { name: "pin_popup_entryview";
+		parts {
+			part {
+				name: "base";
+				type: RECT;
+				scale: 1;
+				description {
+					state: "default" 0.0;
+					align: 0.0 0.0;
+					visible: 0;
+					rel1 {
+						relative: 0.0 0.0;
+					}
+					rel2 {
+						relative: 1.0 1.0;
+					}
+				}
+			}
+		part {
+			name: "pad_t";
+			type: SPACER;
+			scale: 1;
+			description {
+				state: "default" 0.0;
+				align: 0.5 0.0;
+				min: 0 32;
+				fixed: 0 1;
+				rel1 {
+					relative: 1.0 0.0;to_x: "pad_l";
+				}
+				rel2 {
+					relative: 0.0 0.0;to_x: "pad_r";
+				}
+			}
+		}
+		part {
+			name: "pad_l";
+			type: SPACER;
+			scale: 1;
+			description { 
+				state: "default" 0.0;
+				min: 50 0;
+				max: 50 0;
+				fixed: 1 0;
+				rel1 {
+					relative: 0.0 0.0;
+					to: "base";
+				}
+				rel2 {
+					relative: 0.0 1.0;
+					to: "base";
+				}
+				align: 0.0 0.0;
+			}
+		}
+		part {
+			name: "pad_r";
+			type: SPACER;
+			scale: 1;
+			description {
+				state: "default" 0.0;
+				min: 50 0;
+				max: 50 0;
+				fixed: 1 0;
+				rel1 {
+					relative: 1.0 0.0;
+					to: "base";
+				}
+				rel2 {
+					relative: 1.0 1.0;
+					to: "base";
+				}
+				align: 1.0 0.0;
+			}
+		}
+		part {
+			name:"elm.swallow.text";
+			type: SWALLOW;
+			scale: 1;
+			description {
+				state: "default" 0.0;
+				align:0 0;
+				rel1 {
+					relative: 1.0 1.0;
+					to_x: "pad_l";
+					to_y: "pad_t";
+				}
+				rel2 {
+					relative: 0.0 0.0;
+					to_x: "pad_r";
+				}
+			}
+		}
+		part {
+			name: "pad_m_1";
+			type: SPACER;
+			scale: 1;
+			description {
+				state: "default" 0.0;
+				min: 0 20;
+				fixed: 1 0;
+				align:0 0;
+				rel1 {
+					relative: 1.0 1.0;
+					to_x: "pad_l";
+					to_y: "elm.swallow.text";
+				}
+				rel2 {
+					relative: 0.0 0.0;
+					to_x: "pad_r";
+				}
+			}
+		}
+		part {
+			name:"elm.swallow.entry";
+			type: SWALLOW;
+			scale: 1;
+			description {
+				state: "default" 0.0;
+				min: 0 66;
+				fixed: 1 0;
+				align:0 0;
+				rel1 {
+					relative: 1.0 1.0;
+					to_x: "pad_l";
+					to_y: "pad_m_1";
+				}
+				rel2 {
+					relative: 0.0 0.0;
+					to_x: "pad_r";
+				}
+			}
+		}
+		part {
+			name: "pad_m_2";
+			type: SPACER;
+			scale: 1;
+			description {
+				state: "default" 0.0;
+				min: 0 20;
+				fixed: 1 0;
+				align:0 0;
+				rel1 {
+					relative: 1.0 1.0;
+					to_x: "pad_l";
+					to_y: "elm.swallow.entry";
+				}
+				rel2 {
+					relative: 0.0 0.0;
+					to_x: "pad_r";
+				}
+			}
+		}
+		part {
+			name:"elm.swallow.check";
+			type: SWALLOW;
+			scale: 1;
+			description {
+				state: "default" 0.0;
+				min: 0 63;
+				fixed: 1 0;
+				align:0 0;
+				rel1 {
+					relative: 1.0 1.0;
+					to_x: "pad_l";
+					to_y: "pad_m_2";
+				}
+				rel2 {
+					relative: 0.0 0.0;
+					to_x: "pad_r";
+				}
+			}
+		}
+		part {
+			name: "pad_m_3";
+			type: SPACER;
+			scale: 1;
+			description {
+				state: "default" 0.0;
+				min: 0 32;
+				fixed: 1 0;
+				align:0 0;
+				rel1 {
+					relative: 1.0 1.0;
+					to_x: "pad_l";
+					to_y: "elm.swallow.check";
+				}
+				rel2 {
+					relative: 0.0 0.0;
+					to_x: "pad_r";
+				}
+			}
+		}
+	}
+}
+
+
+group {
+	name: "popup_pbc_button_layout";
+	styles {
+		style { name: "popup_processing_style";
+			base: "font=Tizen:style=Regular align=left font_size=30 color=#000000 color_class=T123 wrap=mixed ellipsis=1.0 text_class=T123";
+			tag:  "br" "\n";
+			tag:  "tab" "\t";
+		}
+	}
+
+	parts {
+		 part {
+			name: "base";
+			type: SPACER;
+			scale: 1;
+			description {
+				state: "default" 0.0;
+				min: 480 210;
+			}
+		}
+		part {
+			name: "pad_top_left";
+			type: SPACER;
+			scale: 1;
+			description {
+				state: "default" 0.0;
+				align: 0.0 0.0;
+				min: WPS_POPUP_TEXT_SLIDER_PADDING_LEFT_MIN_INC;
+				max: WPS_POPUP_TEXT_SLIDER_PADDING_LEFT_MAX_INC;
+				fixed: 1 1;
+				rel1 {
+					relative: 0.0 0.0;
+					to: "base";
+				}
+				rel2 {
+					relative: 0.0 0.0;
+					to: "base";
+				}
+			}
+		}
+		part {
+			name: "pad_left";
+			type: SPACER;
+			scale: 1;
+			description {
+				state: "default" 0.0;
+				min: WPS_POPUP_PADDING_LEFT_MIN_INC 0;
+				fixed: 1 0;
+				rel1 {
+					to: "base";
+					relative: 0.0 0.0;
+				}
+				rel2 {
+					to: "base";
+					relative: 0.0 1.0;
+				}
+				align: 0.0 0.0;
+			}
+		}
+		part {
+			name: "pad_right_bottom";
+			type: SPACER;
+			scale: 1;
+			description {
+				state: "default" 0.0;
+				min: WPS_POPUP_TEXT_SLIDER_PADDING_RIGHT_MIN_INC;
+				max: WPS_POPUP_TEXT_SLIDER_PADDING_RIGHT_MAX_INC;
+				fixed: 1 1;
+				rel1 {
+					relative: 1.0 1.0;
+					to: "base";
+				}
+				rel2 {
+					to: "base";
+					relative: 1.0 1.0;
+				}
+				align: 1.0 1.0;
+			}
+		}
+		part { name: "elm.text.description";
+			type: TEXTBLOCK;
+			scale: 1;
+			description { state: "default" 0.0;
+				fixed: 0 1;
+				min: PBC_POPUP_TEXT_SLIDER_TEXT_DISCRIPTION_MIN_INC;
+				rel1 {
+					relative: 1.0 1.0;
+					to: "pad_top_left";
+				}
+				rel2 {
+				relative: 0.0 1.0;
+					to_x: "pad_right_bottom";
+					to_y: "pad_top_left";
+				}
+				text {
+					style: "popup_processing_style";
+					min: 0 1;
+				}
+				align: 0.5 0.5;
+			}
+		}
+		part { name: "slider_bg";
+			type: SWALLOW;
+			scale: 1;
+			description { state: "default" 0.0;
+				fixed: 0 1;
+				min: WPS_POPUP_TEXT_SLIDER_BG_MIN_INC;
+				rel1 {
+					relative: 0.0 1.0;
+					to_y: "elm.text.description";
+				}
+				rel2 {
+					relative: 1.0 1.0;
+					to_y: "elm.text.description";
+				}
+				align: 0.0 0.0;
+			}
+		}
+		part { name: "slider_top_pad";
+			type: SPACER;
+			scale: 1;
+			description { state: "default" 0.0;
+				min: WPS_POPUP_SLIDER_VIEW_LAYOUT_PADDING_TOP_MIN_INC;
+				fixed: 0 1;
+				rel1 {
+					relative: 1.0 0.0;
+					to_x: "pad_top_left";
+					to_y: "slider_bg";
+				}
+				rel2 {
+					relative: 0.0 0.0;
+					to_x: "pad_right_bottom";
+					to_y: "slider_bg";
+				}
+				align: 0.5 0.0;
+			}
+		}
+		part { name: "slider";
+			type: SWALLOW;
+			scale: 1;
+			description { state: "default" 0.0;
+				fixed: 0 1;
+				min: WPS_POPUP_SLIDER_VIEW_LAYOUT_SWALLOW_MIN_INC;
+				rel1 {
+					relative: 0.0 1.0;
+					to: "slider_top_pad";
+				}
+				rel2.to: "slider_top_pad";
+			}
+		}
+		part { name: "timer_bg";
+			type: SWALLOW;
+			scale: 1;
+			description { state: "default" 0.0;
+				fixed: 0 1;
+				min: 266 60;
+				rel1 {
+				relative: 0.0 1.0;
+					to_y: "slider";
+				}
+				rel2 {
+					relative: 1.0 1.0;
+					to_y: "slider";
+				}
+				align: 0.0 0.0;
+			}
+		}
+		part { name: "timer_top_pad";
+			type: SPACER;
+			scale: 1;
+			description { state: "default" 0.0;
+				min: 0 7;
+				fixed: 0 1;
+				rel1 {
+				relative: 1.0 0.0;
+					to_x: "pad_top_left";
+					to_y: "timer_bg";
+				}
+				rel2 {
+					relative: 0.0 0.0;
+					to_x: "pad_right_bottom";
+					to_y: "timer_bg";
+				}
+				align: 0.5 0.0;
+			}
+		}
+		part {
+			name: "timer_label";
+			type: SWALLOW;
+			scale: 1;
+			description {
+				state: "default" 0.0;
+				fixed: 0 1;
+				min: 100 40;
+				rel1 {
+					relative: 0.0 1.0;
+					to: "timer_top_pad";
+					offset: 0 40;
+				}
+				rel2.to: "timer_top_pad";
+			}
+		}
+	}
+}
+
+
+group {
+	name: "popup_wps_pin_layout";
+	inherit: "popup_pbc_button_layout";
+	parts {
+		 part {
+			name: "base";
+			type: RECT;
+			scale: 1;
+			description {
+				state: "default" 0.0;
+				align: 0.0 0.0;
+				visible: 0;
+				min: 480 260;
+			}
+		}
+		part { name: "elm.text.description";
+			type: TEXTBLOCK;
+			scale: 1;
+			description { state: "default" 0.0;
+				fixed: 0 1;
+				min: 266 120;
+				rel1 {
+					relative: 1.0 1.0;
+					to: "pad_top_left";
+				}
+				rel2 {
+					relative: 0.0 1.0;
+					to_x: "pad_right_bottom";
+					to_y: "pad_top_left";
+				}
+				text {
+					style: "popup_processing_style";
+					min: 0 1;
+				}
+				align: 0.0 0.0;
+			}
+		}
+	}
+}
+}

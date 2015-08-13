@@ -1,13 +1,13 @@
 /*
 *  WiFi-Direct UG
 *
-* Copyright 2012 Samsung Electronics Co., Ltd
+* Copyright 2012  Samsung Electronics Co., Ltd
 
-* Licensed under the Flora License, Version 1.1 (the "License");
+* Licensed under the Flora License, Version 1.0 (the "License");
 * you may not use this file except in compliance with the License.
 * You may obtain a copy of the License at
 
-* http://floralicense.org/license
+* http://www.tizenopensource.org/license
 
 * Unless required by applicable law or agreed to in writing, software
 * distributed under the License is distributed on an "AS IS" BASIS,
@@ -51,17 +51,26 @@ typedef enum {
 
 /**
  *	This function let the ug get wi-fi direct status from vconf
+ *	@return   If success, return the wfd status, else return -1
+ *	@param[in] void
+ */
+int wfd_get_vconf_status();
+
+/**
+ *	This function let the ug get device name from vconf
  *	@return   If success, return 0, else return -1
  *	@param[in] data the pointer to the main data structure
  */
-int wfd_get_vconf_status(void *data);
+int wfd_get_vconf_device_name(void *data);
 
+#ifndef MODEL_BUILD_FEATURE_WLAN_CONCURRENT_MODE
 /**
  *	This function let the ug turn wifi off
  *	@return   If success, return 0, else return -1
  *	@param[in] data the pointer to the main data structure
  */
 int wfd_wifi_off(void *data);
+#endif /* MODEL_BUILD_FEATURE_WLAN_CONCURRENT_MODE */
 
 /**
  *	This function let the ug turn AP on
@@ -84,6 +93,14 @@ int wfd_mobile_ap_off(void *data);
  */
 int init_wfd_client(void *data);
 
+
+/**
+ *	This function let the ug load wfd manager
+ *	@return   If success, return 0, else return -1
+ *	@param[in] data the pointer to the main data structure
+ */
+int launch_wifi_direct_manager(void *data);
+
 /**
  *	This function let the ug do de-initialization
  *	@return   If success, return 0, else return -1
@@ -105,6 +122,7 @@ int wfd_client_switch_on(void *data);
  */
 int wfd_client_switch_off(void *data);
 
+#ifdef WFD_ON_OFF_GENLIST
 /**
  *	This function let the ug turn wi-fi direct on/off forcely
  *	@return   If success, return 0, else return -1
@@ -112,6 +130,7 @@ int wfd_client_switch_off(void *data);
   *	@param[in] onoff whether to turn on/off wi-fi direct
  */
 int wfd_client_swtch_force(void *data, int onoff);
+#endif
 
 /**
  *	This function let the ug create a group
@@ -139,5 +158,14 @@ int wfd_client_disconnect(const char *mac_addr);
  *	@param[in] go_intent the intent parameter
  */
 int wfd_client_set_p2p_group_owner_intent(int go_intent);
+
+/**
+ *	This function let the ug destroy tethering
+ *	@return   void
+ *	@param[in] ugd the pointer to the main data structure
+ */
+void wfd_client_destroy_tethering(struct ug_data *ugd);
+
+void wfd_client_free_raw_discovered_peers(struct ug_data *ugd);
 
 #endif /* __WFD_CLIENT_H__ */

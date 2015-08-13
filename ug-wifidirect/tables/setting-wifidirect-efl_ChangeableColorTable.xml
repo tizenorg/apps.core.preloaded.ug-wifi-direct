@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ChangeableColorTables>
+	<ChangeableColorTable num="1">
+		<Theme style="Dark">
+		</Theme>
+		<Theme style="Light">
+			<ChangeableColorInfo id="AO001" inputColor="1" hue="0" saturation="0" value="0" alpha="80" />
+		</Theme>
+	</ChangeableColorTable>
+	<ChangeableColorTable num="2">
+		<Theme style="Dark">
+		</Theme>
+		<Theme style="Light">
+			<ChangeableColorInfo id="AO001" inputColor="1" hue="0" saturation="0" value="0" alpha="80" maxValue="94" />
+		</Theme>
+	</ChangeableColorTable>
+	<ChangeableColorTable num="3">
+		<Theme style="Dark">
+		</Theme>
+		<Theme style="Light">
+			<ChangeableColorInfo id="AO001" inputColor="1" hue="0" saturation="0" value="0" alpha="80" />
+		</Theme>
+	</ChangeableColorTable>
+</ChangeableColorTables>

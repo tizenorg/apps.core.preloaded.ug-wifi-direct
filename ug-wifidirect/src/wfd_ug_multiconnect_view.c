@@ -1,13 +1,13 @@
 /*
 *  WiFi-Direct UG
 *
-* Copyright 2012 Samsung Electronics Co., Ltd
+* Copyright 2012  Samsung Electronics Co., Ltd
 
-* Licensed under the Flora License, Version 1.1 (the "License");
+* Licensed under the Flora License, Version 1.0 (the "License");
 * you may not use this file except in compliance with the License.
 * You may obtain a copy of the License at
 
-* http://floralicense.org/license
+* http://www.tizenopensource.org/license
 
 * Unless required by applicable law or agreed to in writing, software
 * distributed under the License is distributed on an "AS IS" BASIS,
@@ -18,8 +18,6 @@
 */
 
 #include <libintl.h>
-
-#include <assert.h>
 #include <glib.h>
 
 #include <Elementary.h>
@@ -31,7 +29,6 @@
 #include "wfd_ug_view.h"
 #include "wfd_client.h"
 
-Elm_Gen_Item_Class select_all_itc;
 Elm_Gen_Item_Class device_itc;
 
 /**
@@ -41,21 +38,61 @@ Elm_Gen_Item_Class device_itc;
  *	@param[in] obj the pointer to the evas object
  *	@param[in] event_info the pointer to the event information
  */
-void _multiconnect_view_back_btn_cb(void *data, Evas_Object * obj, void *event_info)
+Eina_Bool _multiconnect_view_pop_cb(void *data, Elm_Object_Item *it)
 {
-	__WDUG_LOG_FUNC_ENTER__;
+	__FUNC_ENTER__;
 	struct ug_data *ugd = (struct ug_data *)data;
+	int ret = 0;
+	device_type_s *peer_for_free = NULL;
+	device_type_s *peer = NULL;
 
 	if (!ugd) {
-		WDUG_LOGE("The param is NULL\n");
-		return;
+		DBG(LOG_ERROR, "The param is NULL\n");
+		return EINA_FALSE;
 	}
 
-	ugd->multiconn_view_genlist = NULL;
-	elm_naviframe_item_pop(ugd->naviframe);
+	peer = ugd->multi_conn_dev_list_start;
 
-	__WDUG_LOG_FUNC_EXIT__;
-	return;
+	while (peer != NULL) {
+		DBG(LOG_INFO, "Free peer, ssid:%s\n", peer->ssid);
+		peer_for_free = peer;
+		peer = peer->next;
+		free(peer_for_free);
+		peer_for_free = NULL;
+	}
+
+	ugd->multi_conn_dev_list_start = NULL;
+	ugd->multiconn_view_genlist = NULL;
+	ugd->mcview_title_item = NULL;
+	ugd->mcview_nodevice_item = NULL;
+	ugd->multi_navi_item = NULL;
+	ugd->multiconn_conn_btn = NULL;
+	ugd->multiconn_layout = NULL;
+	ugd->multiconn_scan_stop_btn = NULL;
+
+	DBG(LOG_INFO, "MultiConnectMode: %d\n", ugd->multi_connect_mode);
+
+	/* if pressing connect for multi-connecting, it should not start discovery again */
+	if (ugd->multi_connect_mode == WFD_MULTI_CONNECT_MODE_NONE) {
+		if (ugd->view_type == NULL) {
+			ugd->wfd_discovery_status = WIFI_DIRECT_DISCOVERY_SOCIAL_CHANNEL_START;
+			DBG(LOG_INFO, "Discovery started\n");
+			ret = wifi_direct_start_discovery_specific_channel(false, 1,
+				WIFI_DIRECT_DISCOVERY_SOCIAL_CHANNEL);
+			if (ret != WIFI_DIRECT_ERROR_NONE) {
+				ugd->wfd_discovery_status = WIFI_DIRECT_DISCOVERY_NONE;
+				DBG(LOG_ERROR, "Failed to start discovery. [%d]\n", ret);
+				wifi_direct_cancel_discovery();
+			}
+		} else if (g_strcmp0(_(ugd->view_type),
+			_("IDS_WIFI_BUTTON_MULTI_CONNECT")) == 0) {
+			DBG(LOG_INFO, "Discovery not started\n");
+			ug_destroy_me(ugd->ug);
+		}
+	}
+
+	__FUNC_EXIT__;
+	return EINA_TRUE;
 }
 
 /**
@@ -65,21 +102,29 @@ void _multiconnect_view_back_btn_cb(void *data, Evas_Object * obj, void *event_i
  */
 gboolean __wfd_multi_connect_reset_cb(void *data)
 {
-	__WDUG_LOG_FUNC_ENTER__;
-	int i = 0;
-	struct ug_data *ugd = (struct ug_data *)data;
+	__FUNC_ENTER__;
 
-	/* remove the failed peers*/
-	for (i = 0; i < ugd->raw_multi_selected_peer_cnt; i++) {
-		if (ugd->raw_multi_selected_peers[i].conn_status == PEER_CONN_STATUS_FAILED_TO_CONNECT) {
-			memset(&ugd->raw_multi_selected_peers[i], 0x00, sizeof(device_type_s));
-			ugd->raw_multi_selected_peer_cnt--;
-		}
+	if (!data) {
+		DBG(LOG_ERROR, "The param is NULL\n");
+		return false;
 	}
 
-	wfd_ug_view_update_peers(ugd);
+	device_type_s *peer = NULL;
+	struct ug_data *ugd = (struct ug_data *)data;
 
-	__WDUG_LOG_FUNC_EXIT__;
+	peer = ugd->gl_mul_conn_peers_start;
+	while (peer != NULL) {
+		elm_object_item_del(peer->gl_item);
+		peer->gl_item = NULL;
+		peer = peer->next;
+	}
+
+	WFD_IF_DEL_ITEM(ugd->multi_connect_wfd_item);
+	WFD_IF_DEL_ITEM(ugd->multi_connect_sep_item);
+
+	wfd_ug_update_available_peers(ugd);
+
+	__FUNC_EXIT__;
 	return false;
 }
 
@@ -90,7 +135,8 @@ gboolean __wfd_multi_connect_reset_cb(void *data)
  */
 void wfd_free_multi_selected_peers(void *data)
 {
-	__WDUG_LOG_FUNC_ENTER__;
+	__FUNC_ENTER__;
+
 	int i = 0;
 	struct ug_data *ugd = (struct ug_data *)data;
 
@@ -105,7 +151,7 @@ void wfd_free_multi_selected_peers(void *data)
 	ugd->raw_multi_selected_peer_cnt = 0;
 	ugd->multi_connect_mode = WFD_MULTI_CONNECT_MODE_NONE;
 
-	__WDUG_LOG_FUNC_EXIT__;
+	__FUNC_EXIT__;
 
 }
 
@@ -116,19 +162,43 @@ void wfd_free_multi_selected_peers(void *data)
  */
 int wfd_stop_multi_connect(void *data)
 {
-	__WDUG_LOG_FUNC_ENTER__;
+	__FUNC_ENTER__;
 	struct ug_data *ugd = (struct ug_data *)data;
+
+	if (ugd->act_popup) {
+		evas_object_del(ugd->act_popup);
+		ugd->act_popup = NULL;
+	}
 
 	/* change the title of failed peers */
 	ugd->multi_connect_mode = WFD_MULTI_CONNECT_MODE_COMPLETED;
 	wfd_ug_view_refresh_glitem(ugd->multi_connect_wfd_item);
+	wfd_ug_update_toolbar(ugd);
 
-	wfd_client_set_p2p_group_owner_intent(7);
+	if (ugd->gl_connected_peer_cnt > 0) {
+		wfd_client_set_p2p_group_owner_intent(7);
+	} else {
+		wifi_direct_destroy_group();
+	}
 
+	if(ugd->timer_multi_reset > 0) {
+		g_source_remove(ugd->timer_multi_reset);
+	}
 	/* after 30s, remove the failed peers */
-	g_timeout_add(30000 /*ms*/, __wfd_multi_connect_reset_cb, ugd);
+	ugd->timer_multi_reset = g_timeout_add(30000 /*ms*/,
+		__wfd_multi_connect_reset_cb, ugd);
 
-	__WDUG_LOG_FUNC_EXIT__;
+	if (ugd->g_source_multi_connect_next > 0) {
+		g_source_remove(ugd->g_source_multi_connect_next);
+	}
+	ugd->g_source_multi_connect_next = 0;
+
+	/*when multi-connect end and auto_exit is true, exit UG*/
+	if (ugd->is_auto_exit) {
+		_wfd_ug_auto_exit(ugd);
+	}
+
+	__FUNC_EXIT__;
 	return 0;
 }
 
@@ -139,7 +209,7 @@ int wfd_stop_multi_connect(void *data)
  */
 int wfd_start_multi_connect(void *data)
 {
-	__WDUG_LOG_FUNC_ENTER__;
+	__FUNC_ENTER__;
 	struct ug_data *ugd = (struct ug_data *)data;
 	int res;
 
@@ -148,20 +218,38 @@ int wfd_start_multi_connect(void *data)
 
 		res = wfd_client_group_add();
 		if (res == -1) {
-			WDUG_LOGE("Failed to add group");
+			DBG(LOG_ERROR, "Failed to add group");
 			wfd_free_multi_selected_peers(ugd);
 
-			__WDUG_LOG_FUNC_EXIT__;
+			__FUNC_EXIT__;
 			return -1;
 		}
-
 	} else {
-		WDUG_LOGD("No selected peers.\n");
+		DBG(LOG_INFO, "No selected peers.\n");
 		return -1;
 	}
 
-	__WDUG_LOG_FUNC_EXIT__;
+	__FUNC_EXIT__;
 	return 0;
+}
+
+void wfd_sort_multi_selected_peers(struct ug_data *ugd)
+{
+	__FUNC_ENTER__;
+	int i = 0;
+	int j = 0;
+	device_type_s peer;
+
+	for(i = 0; i < ugd->raw_multi_selected_peer_cnt; i++) {
+		for(j = 0; j < ugd->raw_multi_selected_peer_cnt-i-1; j++) {
+			if (strcasecmp(ugd->raw_multi_selected_peers[j].ssid, ugd->raw_multi_selected_peers[j + 1].ssid) > 0) {
+				peer = ugd->raw_multi_selected_peers[j];
+				ugd->raw_multi_selected_peers[j] = ugd->raw_multi_selected_peers[j + 1];
+				ugd->raw_multi_selected_peers[j + 1] = peer;
+			}
+		}
+	}
+	__FUNC_EXIT__;
 }
 
 /**
@@ -171,21 +259,24 @@ int wfd_start_multi_connect(void *data)
  */
 gboolean wfd_multi_connect_next_cb(void *data)
 {
-	__WDUG_LOG_FUNC_ENTER__;
+	__FUNC_ENTER__;
 	struct ug_data *ugd = (struct ug_data *)data;
 	int i;
 	int res;
 
 	// Reset g_source handler..
+	if (ugd->g_source_multi_connect_next > 0) {
+		g_source_remove(ugd->g_source_multi_connect_next);
+	}
 	ugd->g_source_multi_connect_next = 0;
 
 	if (ugd->raw_multi_selected_peer_cnt > 0) {
 		ugd->multi_connect_mode = WFD_MULTI_CONNECT_MODE_IN_PROGRESS;
 		for (i = 0; i < ugd->raw_multi_selected_peer_cnt; i++) {
 			if (ugd->raw_multi_selected_peers[i].conn_status == PEER_CONN_STATUS_WAIT_FOR_CONNECT) {
+				ugd->mac_addr_connecting = ugd->raw_multi_selected_peers[i].mac_addr;
 				res = wfd_client_connect(ugd->raw_multi_selected_peers[i].mac_addr);
 				if (res == -1) {
-					WDUG_LOGD("Failed to connect [%s].\n", ugd->raw_multi_selected_peers[i].ssid);
 					ugd->raw_multi_selected_peers[i].conn_status = PEER_CONN_STATUS_FAILED_TO_CONNECT;
 				} else {
 					ugd->raw_multi_selected_peers[i].conn_status = PEER_CONN_STATUS_CONNECTING;
@@ -196,15 +287,14 @@ gboolean wfd_multi_connect_next_cb(void *data)
 
 		if (i >= ugd->raw_multi_selected_peer_cnt) {
 			// All selected peers are touched.
-			WDUG_LOGD("Stop Multi Connect...\n");
+			DBG(LOG_INFO, "Stop Multi Connect...\n");
 			wfd_stop_multi_connect(ugd);
 		}
 	} else {
-		WDUG_LOGD("No selected peers.\n");
-		return -1;
+		DBG(LOG_INFO, "No selected peers.\n");
 	}
 
-	__WDUG_LOG_FUNC_EXIT__;
+	__FUNC_EXIT__;
 	return false;
 }
 
@@ -217,121 +307,64 @@ gboolean wfd_multi_connect_next_cb(void *data)
  */
 void _connect_btn_cb(void *data, Evas_Object *obj, void *event_info)
 {
-	__WDUG_LOG_FUNC_ENTER__;
+	__FUNC_ENTER__;
 	struct ug_data *ugd = (struct ug_data *)data;
-	int i = 0;
 	int count = 0;
 	char popup_text[MAX_POPUP_TEXT_SIZE] = {0};
-	WDUG_LOGD("_connect_btn_cb \n");
+	device_type_s *peer = NULL;
 
-	for (i = 0; i < ugd->gl_available_peer_cnt ; i++) {
-		if (TRUE == ugd->multi_conn_dev_list[i].dev_sel_state) {
-			WDUG_LOGD("ugd->peers[i].mac_addr = %s, i = %d\n", ugd->multi_conn_dev_list[i].peer.mac_addr, i);
+	peer = ugd->multi_conn_dev_list_start;
+	while (peer != NULL) {
+		if(peer->dev_sel_state) {
+			count++;
+		}
+		peer = peer->next;
+	}
+	DBG(LOG_INFO, "MultiSelected Peer Count: %d", count);
 
-			memcpy(&ugd->raw_multi_selected_peers[count], &ugd->multi_conn_dev_list[i].peer, sizeof(device_type_s));
+	/* if more than 7 device selected, show the popup */
+	if (count > MAX_CONNECTED_PEER_NUM) {
+		snprintf(popup_text, MAX_POPUP_TEXT_SIZE, _("IDS_ST_POP_YOU_CAN_CONNECT_UP_TO_PD_DEVICES_AT_THE_SAME_TIME"), MAX_CONNECTED_PEER_NUM);
+		wfd_ug_warn_popup(ugd, popup_text, POP_TYPE_MULTI_CONNECT_POPUP);
+		__FUNC_EXIT__;
+		return;
+	}
+
+	peer = ugd->multi_conn_dev_list_start;
+	count = 0;
+	while (peer != NULL) {
+		if(peer->dev_sel_state) {
+			DBG(LOG_INFO, "peer_name[%s] select state[%d]", peer->ssid, peer->dev_sel_state);
+			memcpy(&ugd->raw_multi_selected_peers[count], peer, sizeof(device_type_s));
 			ugd->raw_multi_selected_peers[count].conn_status = PEER_CONN_STATUS_WAIT_FOR_CONNECT;
 			count++;
 		}
+		peer = peer->next;
 	}
 
+	DBG(LOG_INFO, "MultiSelected Peer Count2: %d", count);
 	ugd->raw_multi_selected_peer_cnt = count;
-
-	/* if more than 7 device selected, show the popup */
-	if (count > MAX_POPUP_PEER_NUM) {
-		snprintf(popup_text, MAX_POPUP_TEXT_SIZE, _("IDS_WFD_POP_MULTI_CONNECT"), count);
-		wfd_ug_warn_popup(ugd, popup_text, POP_TYPE_MULTI_CONNECT_POPUP);
-	}
+	wfd_sort_multi_selected_peers(ugd);
+	wfd_cancel_progressbar_stop_timer(ugd);
+	wfd_cancel_not_alive_delete_timer(ugd);
 
 	/* start multi connection */
 	wfd_start_multi_connect(ugd);
 
 	elm_naviframe_item_pop(ugd->naviframe);
 
-	//ToDo: Do we need to free multiconn_view_genlist?
-	ugd->multiconn_view_genlist = NULL;
-	_change_multi_button_title(ugd);
-
-	__WDUG_LOG_FUNC_EXIT__;
+	__FUNC_EXIT__;
 	return;
 }
 
-/**
- *	This function let the ug delete 'select(n)' notify
- *	@return   void
- *	@param[in] data the pointer to the main data structure
- */
-static void _wfd_multi_del_select_info_label(void *data)
+void wfd_naviframe_title_set(struct ug_data *ugd, const char *title)
 {
-	__WDUG_LOG_FUNC_ENTER__;
-	struct ug_data *ugd = (struct ug_data *)data;
-
-	if (NULL == ugd) {
-		WDUG_LOGE("The param is NULL\n");
+	if (!ugd || !ugd->multi_navi_item) {
+		DBG(LOG_ERROR, "The param is NULL\n");
 		return;
 	}
 
-	if (ugd->notify) {
-		evas_object_del(ugd->notify);
-		ugd->notify = NULL;
-	}
-
-	if (ugd->notify_layout) {
-		evas_object_del(ugd->notify_layout);
-		ugd->notify_layout = NULL;
-	}
-
-	__WDUG_LOG_FUNC_EXIT__;
-	return;
-}
-
-/**
- *	This function let the ug add 'select(n)' notify
- *	@return   void
- *	@param[in] data the pointer to the main data structure
- *	@param[in] count the number of selected peers
- */
-static void _wfd_multi_add_select_info_label(void *data, int count)
-{
-	__WDUG_LOG_FUNC_ENTER__;
-
-	char select_lablel[MAX_POPUP_TEXT_SIZE] = {0};
-	struct ug_data *ugd = (struct ug_data *)data;
-
-	if (NULL == ugd || count <= 0) {
-		WDUG_LOGE("The param is NULL\n");
-		return;
-	}
-
-	/* delete previous notify */
-	_wfd_multi_del_select_info_label(ugd);
-
-	/* add notify */
-	ugd->notify = elm_notify_add(ugd->base);
-	if (NULL == ugd->notify) {
-		WDUG_LOGE("Add notify failed\n");
-		return;
-	}
-
-	/* set the align to center of bottom */
-	elm_notify_align_set(ugd->notify, ELM_NOTIFY_ALIGN_FILL, 1.0);
-
-	ugd->notify_layout = elm_layout_add(ugd->notify);
-	if (NULL == ugd->notify_layout) {
-		evas_object_del(ugd->notify);
-		ugd->notify = NULL;
-		return;
-	}
-
-	elm_layout_theme_set(ugd->notify_layout, "standard", "selectioninfo", "vertical/bottom_64");
-	elm_object_content_set(ugd->notify, ugd->notify_layout);
-
-	snprintf(select_lablel, MAX_POPUP_TEXT_SIZE, _("IDS_WFD_POP_SELECTED_DEVICE_NUM"), count);
-	elm_object_part_text_set(ugd->notify_layout, "elm.text", select_lablel);
-	elm_notify_timeout_set(ugd->notify, 3);
-	evas_object_show(ugd->notify);
-
-	__WDUG_LOG_FUNC_EXIT__;
-	return;
+	elm_object_item_part_text_set(ugd->multi_navi_item, "default", title);
 }
 
 /**
@@ -343,134 +376,85 @@ static void _wfd_multi_add_select_info_label(void *data, int count)
  */
 static void _wfd_gl_multi_sel_cb(void *data, Evas_Object *obj, void *event_info)
 {
-	__WDUG_LOG_FUNC_ENTER__;
+	__FUNC_ENTER__;
 
-	int i = 0;
-	int index = 0;
 	int sel_count = 0;
 	bool is_sel = FALSE;
-	bool is_selct_all = TRUE;
-	Eina_Bool state = 0;
+
+	Eina_Bool state = EINA_FALSE;
 	Evas_Object *chk_box = NULL;
-	char msg[MAX_POPUP_TEXT_SIZE] = {0};
-	struct ug_data *ugd = (struct ug_data *)data;
-	Elm_Object_Item *item = (Elm_Object_Item *)event_info;
+	const char *object_type = NULL;
+	struct ug_data *ugd = (struct ug_data *)wfd_get_ug_data();
+	device_type_s *peer = (device_type_s *)data;
 
-	if (NULL == ugd || NULL == item) {
-		WDUG_LOGE("The param is NULL\n");
+	if (NULL == ugd) {
+		DBG(LOG_ERROR, "ugd is NULL\n");
 		return;
 	}
 
-	elm_genlist_item_selected_set(item, EINA_FALSE);
-	index = elm_genlist_item_index_get(item) - 2; /* subtract the previous items */
-	WDUG_LOGD("selected index = %d \n", index);
-	if (index < 0) {
-		WDUG_LOGE("The index is invalid.\n");
-		return;
+	ugd->is_multi_check_all_selected = TRUE;
+
+	if(event_info != NULL) {
+		Evas_Object *content = elm_object_item_part_content_get(event_info, "elm.icon.2");
+		chk_box = elm_object_part_content_get(content, "elm.swallow.content");
+		state = elm_check_state_get(chk_box);
+		DBG(LOG_INFO, "state = %d \n", state);
+		if (chk_box ==  NULL) {
+			DBG(LOG_INFO, "Check box is null\n");
+		}
 	}
 
-	chk_box = elm_object_item_part_content_get((Elm_Object_Item *)event_info, "elm.icon.1");
-	state = elm_check_state_get(chk_box);
-	WDUG_LOGD("state = %d \n", state);
-	elm_check_state_set(chk_box, !state);
+	object_type = evas_object_type_get(obj);
+	 if (g_strcmp0(object_type, "elm_genlist") == 0) {
+		Elm_Object_Item *item = (Elm_Object_Item *)event_info;
+		if (item) {
+			elm_genlist_item_selected_set(item, EINA_FALSE);
+		}
+		DBG(LOG_INFO, "State elm_genlist %d\n", state);
+		elm_check_state_set(chk_box, !state);
+		peer->dev_sel_state = !state;
+	} else if (g_strcmp0(object_type, "elm_check") == 0){
+		DBG(LOG_INFO, "elm_check state; %d\n", peer->dev_sel_state);
+		peer->dev_sel_state = !peer->dev_sel_state;
+	}
 
-	ugd->multi_conn_dev_list[index].dev_sel_state = !state;
-	WDUG_LOGD("ptr->dev_sel_state = %d \n", ugd->multi_conn_dev_list[index].dev_sel_state);
-	WDUG_LOGD("ptr->peer.mac_addr = %s \n", ugd->multi_conn_dev_list[index].peer.mac_addr);
+	DBG(LOG_INFO, "ptr->dev_sel_state = %d \n", peer->dev_sel_state);
+	DBG_SECURE(LOG_INFO, "ptr->peer.mac_addr = ["MACSECSTR"]\n",
+		MAC2SECSTR(peer->mac_addr));
 
-	/* update the checkbox and button */
-	for (; i < ugd->gl_available_dev_cnt_at_multiconn_view; i++) {
-		if (ugd->multi_conn_dev_list[i].dev_sel_state) {
+	peer = ugd->multi_conn_dev_list_start;
+	while (peer != NULL) {
+		if(peer->dev_sel_state) {
 			is_sel = TRUE;
 			sel_count++;
 		} else {
-			is_selct_all = FALSE;
+			ugd->is_multi_check_all_selected = FALSE;
 		}
+		peer = peer->next;
 	}
 
-	chk_box = elm_object_item_part_content_get(ugd->mcview_select_all_item, "elm.icon");
-	elm_check_state_set(chk_box, is_selct_all);
-
-	if (ugd->multi_connect_btn) {
-		wfd_ug_view_refresh_button(ugd->multi_connect_btn, _("IDS_WFD_BUTTON_CONNECT"), is_sel);
-	}
-
-	if (sel_count > 0) {
-		snprintf(msg, MAX_POPUP_TEXT_SIZE, _("IDS_WFD_POP_SELECTED_DEVICE_NUM"), sel_count);
-		_wfd_multi_add_select_info_label(ugd, sel_count);
+	if (is_sel) {
+		char title[MAX_POPUP_TEXT_SIZE] = {0};
+		snprintf(title, MAX_POPUP_TEXT_SIZE, _("IDS_ST_HEADER_PD_SELECTED"), sel_count);
+		wfd_naviframe_title_set(ugd, title);
 	} else {
-		_wfd_multi_del_select_info_label(ugd);
+		wfd_naviframe_title_set(ugd, _("IDS_DLNA_HEADER_SELECT_DEVICES_ABB"));
 	}
 
-	__WDUG_LOG_FUNC_EXIT__;
-}
-
-/**
- *	This function let the ug call it when click the 'select all' item in multi connect view
- *	@return   void
- *	@param[in] data the pointer to the main data structure
- *	@param[in] obj the pointer to the evas object
- *	@param[in] event_info the pointer to the event information
- */
-static void _wfd_gl_sel_cb(void *data, Evas_Object *obj, void *event_info)
-{
-	int sel_count = 0;
-	char msg[MAX_POPUP_TEXT_SIZE] = {0};
-	struct ug_data *ugd = (struct ug_data *)data;
-
-	elm_genlist_item_selected_set((Elm_Object_Item *)event_info, EINA_FALSE);
-
-	if (NULL == ugd || NULL == obj) {
-		WDUG_LOGE("NULL parameters.\n");
-		return;
-	}
-
-	Evas_Object *sel_chkbox = elm_object_item_part_content_get(ugd->mcview_select_all_item, "elm.icon");
-	if (sel_chkbox == NULL) {
-		WDUG_LOGD("select-all chkbox is NULL\n");
-		return;
-	}
-
-	Eina_Bool state = elm_check_state_get(sel_chkbox);
-	if (state == TRUE) {
-		state = FALSE;
-	} else {
-		state = TRUE;
-	}
-
-	elm_check_state_set(sel_chkbox, state);
-	WDUG_LOGD("state = %d \n", state);
-
-	int i = 0;
-	bool is_sel = FALSE;
-	Elm_Object_Item *item = NULL;
-	Evas_Object *chk_box = NULL;
-
-	/* set the state of all the available devices */
-	for (i = 0; i < ugd->gl_available_dev_cnt_at_multiconn_view; i++) {
-		is_sel = state;
-		ugd->multi_conn_dev_list[i].dev_sel_state = state;
-		item = ugd->multi_conn_dev_list[i].peer.gl_item;
-		chk_box = elm_object_item_part_content_get(item, "elm.icon.1");
-		elm_check_state_set(chk_box, state);
-
-		if (state) {
-			sel_count++;
+	state = elm_check_state_get(ugd->select_all_icon);
+	if (ugd->multiconn_layout) {
+		if (state != EINA_TRUE && ugd->is_multi_check_all_selected == TRUE) {
+			elm_check_state_set(ugd->select_all_icon, TRUE);
+			ugd->is_select_all_checked = TRUE;
+		} else if (ugd->is_multi_check_all_selected == FALSE) {
+			elm_check_state_set(ugd->select_all_icon, FALSE);
+			ugd->is_select_all_checked = FALSE;
 		}
+		wfd_ug_view_refresh_button(ugd->multiconn_conn_btn,
+			"IDS_WIFI_SK_CONNECT", is_sel);
 	}
 
-	/* update the connect button */
-	if (ugd->multi_connect_btn) {
-		wfd_ug_view_refresh_button(ugd->multi_connect_btn, _("IDS_WFD_BUTTON_CONNECT"), is_sel);
-	}
-
-	/* tickernoti popup */
-	if (sel_count > 0) {
-		snprintf(msg, MAX_POPUP_TEXT_SIZE, _("IDS_WFD_POP_SELECTED_DEVICE_NUM"), sel_count);
-		_wfd_multi_add_select_info_label(ugd, sel_count);
-	} else {
-		_wfd_multi_del_select_info_label(ugd);
-	}
+	__FUNC_EXIT__;
 }
 
 /**
@@ -482,15 +466,26 @@ static void _wfd_gl_sel_cb(void *data, Evas_Object *obj, void *event_info)
  */
 static char *_wfd_gl_device_label_get(void *data, Evas_Object *obj, const char *part)
 {
-	WDUG_LOGD("part %s", part);
+	__FUNC_ENTER__;
+	DBG(LOG_INFO, "part %s", part);
 	device_type_s *peer = (device_type_s *)data;
+	char *ssid;
 
 	if (NULL == peer) {
 		return NULL;
 	}
 
-	if (!strcmp(part, "elm.text")) {
-		return strdup(peer->ssid);
+	if (!g_strcmp0(part, "elm.text.main.left")) {
+		if (strlen(peer->ssid) != 0) {
+			ssid = elm_entry_utf8_to_markup(peer->ssid);
+			if (NULL == ssid) {
+				DBG(LOG_ERROR, "elm_entry_utf8_to_markup failed.\n");
+				__FUNC_EXIT__;
+				return NULL;
+			}
+			__FUNC_EXIT__;
+			return ssid;
+		}
 	}
 	return NULL;
 }
@@ -502,68 +497,48 @@ static char *_wfd_gl_device_label_get(void *data, Evas_Object *obj, const char *
  */
 static char *__wfd_get_device_icon_path(device_type_s *peer)
 {
-	char *img_path = NULL;
+	__FUNC_ENTER__;
+	char *img_name = NULL;
 
 	switch (peer->category) {
 	case WFD_DEVICE_TYPE_COMPUTER:
-		img_path = WFD_ICON_DEVICE_COMPUTER;
+		img_name = WFD_ICON_DEVICE_COMPUTER;
 		break;
 	case WFD_DEVICE_TYPE_INPUT_DEVICE:
-		img_path = WFD_ICON_DEVICE_INPUT_DEVICE;
+		img_name = WFD_ICON_DEVICE_INPUT_DEVICE;
 		break;
 	case WFD_DEVICE_TYPE_PRINTER:
-		img_path = WFD_ICON_DEVICE_PRINTER;
+		img_name = WFD_ICON_DEVICE_PRINTER;
 		break;
 	case WFD_DEVICE_TYPE_CAMERA:
-		img_path = WFD_ICON_DEVICE_CAMERA;
+		img_name = WFD_ICON_DEVICE_CAMERA;
 		break;
 	case WFD_DEVICE_TYPE_STORAGE:
-		img_path = WFD_ICON_DEVICE_STORAGE;
+		img_name = WFD_ICON_DEVICE_STORAGE;
 		break;
 	case WFD_DEVICE_TYPE_NW_INFRA:
-		img_path = WFD_ICON_DEVICE_NETWORK_INFRA;
+		img_name = WFD_ICON_DEVICE_NETWORK_INFRA;
 		break;
 	case WFD_DEVICE_TYPE_DISPLAYS:
-		img_path = WFD_ICON_DEVICE_DISPLAY;
+		img_name = WFD_ICON_DEVICE_DISPLAY;
 		break;
 	case WFD_DEVICE_TYPE_MM_DEVICES:
-		img_path = WFD_ICON_DEVICE_MULTIMEDIA_DEVICE;
+		img_name = WFD_ICON_DEVICE_MULTIMEDIA;
 		break;
 	case WFD_DEVICE_TYPE_GAME_DEVICES:
-		img_path = WFD_ICON_DEVICE_GAMING_DEVICE;
+		img_name = WFD_ICON_DEVICE_GAMING;
 		break;
 	case WFD_DEVICE_TYPE_TELEPHONE:
-		img_path = WFD_ICON_DEVICE_TELEPHONE;
+		img_name = WFD_ICON_DEVICE_TELEPHONE;
 		break;
 	case WFD_DEVICE_TYPE_AUDIO:
-		img_path = WFD_ICON_DEVICE_AUDIO_DEVICE;
+		img_name = WFD_ICON_DEVICE_HEADSET;
 		break;
 	default:
-		img_path = WFD_ICON_DEVICE_COMPUTER;
+		img_name = WFD_ICON_DEVICE_UNKNOWN;
 		break;
 	}
-
-	return img_path;
-}
-
-
-/**
- *	This function let the ug call it when click the check box
- *	@return   void
- *	@param[in] data the pointer to the main data structure
- *	@param[in] obj the pointer to the evas object
- *	@param[in] event_info the pointer to the event information
- */
-static void _wfd_check_clicked_cb(void *data, Evas_Object *obj, void *event_info)
-{
-	if (NULL == obj) {
-		WDUG_LOGE("NULL parameters.\n");
-		return;
-	}
-
-	Eina_Bool state = elm_check_state_get(obj);
-	elm_check_state_set(obj, !state);
-	WDUG_LOGD("state = %d \n", state);
+	return img_name;
 }
 
 /**
@@ -575,106 +550,132 @@ static void _wfd_check_clicked_cb(void *data, Evas_Object *obj, void *event_info
  */
 static Evas_Object *_wfd_gl_device_icon_get(void *data, Evas_Object *obj, const char *part)
 {
-	char *img_path = NULL;
+	__FUNC_ENTER__;
+	char *img_name = NULL;
 	device_type_s *peer = (device_type_s *) data;
 	Evas_Object *icon = NULL;
+	Evas_Object *icon_layout = NULL;
 
-	WDUG_LOGD("Part %s", part);
 
-	if (!strcmp(part, "elm.icon.1")) {
-		WDUG_LOGD("Part %s", part);
-		icon = elm_check_add(obj);
-		elm_check_state_set(icon, EINA_FALSE);
-		evas_object_smart_callback_add(icon, "changed", _wfd_check_clicked_cb, (void *)data);
-	} else if (!strcmp(part, "elm.icon.2")) {
-		img_path = __wfd_get_device_icon_path(peer);
-		icon = elm_icon_add(obj);
-		elm_icon_file_set(icon, img_path, NULL);
-		evas_object_size_hint_aspect_set(icon, EVAS_ASPECT_CONTROL_VERTICAL, 1, 1);
-		elm_icon_resizable_set(icon, 1, 1);
+	DBG(LOG_INFO, "Part %s", part);
+
+	if (!g_strcmp0(part, "elm.icon.2")) {
+		icon_layout = elm_layout_add(obj);
+		elm_layout_theme_set(icon_layout, "layout", "list/C/type.2", "default");
+		DBG(LOG_INFO, "Part %s", part);
+		icon = elm_check_add(icon_layout);
+		elm_object_style_set(icon, "default/genlist");
+		evas_object_propagate_events_set(icon, EINA_FALSE);
+		if (peer->dev_sel_state == EINA_TRUE) {
+			elm_check_state_set(icon, EINA_TRUE);
+		}
+		evas_object_smart_callback_add(icon,
+			"changed", _wfd_gl_multi_sel_cb, (void *)data);
+		elm_layout_content_set(icon_layout, "elm.swallow.content", icon);
+	}else if (!g_strcmp0(part, "elm.icon.1")) {
+		DBG(LOG_INFO, "Part %s", part);
+		icon_layout = elm_layout_add(obj);
+		elm_layout_theme_set(icon_layout, "layout", "list/B/type.3", "default");
+		img_name = __wfd_get_device_icon_path(peer);
+		icon = elm_image_add(icon_layout);
+		elm_image_file_set(icon, WFD_UG_EDJ_PATH, img_name);
+		evas_object_size_hint_align_set(icon, EVAS_HINT_FILL, EVAS_HINT_FILL);
+		evas_object_size_hint_weight_set(icon, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
+		evas_object_color_set(icon, 2, 61, 132, 204);
 		evas_object_show(icon);
+		evas_object_propagate_events_set(icon, EINA_FALSE);
+		elm_layout_content_set(icon_layout, "elm.swallow.content", icon);
 	}
-
-	return icon;
+	evas_object_show(icon_layout);
+	return icon_layout;
 }
 
 /**
- *	This function let the ug get the label of select all
- *	@return   the label of select all
- *	@param[in] data the pointer to the main data structure
- *	@param[in] obj the pointer to the evas object
- *	@param[in] part the pointer to the part of item
- */
-static char *_wfd_gl_select_all_label_get(void *data, Evas_Object *obj, const char *part)
+ *	This function let the ug call it when unresized event is received
+*/
+static void _gl_unrealized(void *data, Evas_Object *obj, void *event_info)
 {
-	if (!strcmp(part, "elm.text")) {
-		WDUG_LOGD("Adding text %s", part);
-		return strdup("Select all");
+	__FUNC_ENTER__;
+	struct ug_data *ugd = (struct ug_data *)data;
+	int sel_count = 0;
+	bool is_sel = FALSE;
+	device_type_s *peer = NULL;
+
+	if (!ugd->multiconn_conn_btn) {
+		DBG(LOG_INFO, "popup naviframe, no need to update UI\n");
+		return;
 	}
-	return NULL;
+
+	if (ugd->gl_available_dev_cnt_at_multiconn_view > 0) {
+		peer = ugd->multi_conn_dev_list_start;
+		while (peer != NULL) {
+			if(peer->dev_sel_state) {
+				is_sel = TRUE;
+				sel_count++;
+			}
+			peer = peer->next;
+		}
+	}
+
+	if (is_sel) {
+		char title[MAX_POPUP_TEXT_SIZE] = {0};
+		snprintf(title, MAX_POPUP_TEXT_SIZE, _("IDS_ST_HEADER_PD_SELECTED"), sel_count);
+		wfd_naviframe_title_set(ugd, title);
+	} else {
+		wfd_naviframe_title_set(ugd, _("IDS_DLNA_HEADER_SELECT_DEVICES_ABB"));
+	}
+
+	if (ugd->multiconn_conn_btn) {
+		wfd_ug_view_refresh_button(ugd->multiconn_conn_btn,
+			"IDS_WIFI_SK_CONNECT", is_sel);
+	}
+
+	__FUNC_EXIT__;
 }
 
 /**
- *	This function let the ug get the icon of select all
- *	@return   the icon of select all
- *	@param[in] data the pointer to the main data structure
- *	@param[in] obj the pointer to the evas object
- *	@param[in] part the pointer to the part of item
- */
-static Evas_Object *_wfd_gl_select_all_icon_get(void *data, Evas_Object *obj, const char *part)
-{
-	Evas_Object *icon = NULL;
-
-	if (!strcmp(part, "elm.icon")) {
-		WDUG_LOGD("Part %s", part);
-		icon = elm_check_add(obj);
-		elm_check_state_set(icon, EINA_FALSE);
-		evas_object_smart_callback_add(icon, "changed", _wfd_check_clicked_cb, (void *)data);
-	}
-
-	return icon;
-}
-
-/**
- *	This function let the ug fee the multi connect devices
+ *	This function let the ug free the multi connect devices
  *	@return   0
  *	@param[in] data the pointer to the main data structure
  */
 int wfd_free_multiconnect_device(struct ug_data *ugd)
 {
-	__WDUG_LOG_FUNC_ENTER__;
-
-	int i = 0;
+	__FUNC_ENTER__;
 
 	if (ugd->multiconn_view_genlist == NULL) {
 		return 0;
 	}
 
-	if (ugd->mcview_title_item != NULL) {
-		elm_object_item_del(ugd->mcview_title_item);
-		ugd->mcview_title_item = NULL;
-	}
-
-	if (ugd->mcview_select_all_item != NULL) {
-		elm_object_item_del(ugd->mcview_select_all_item);
-		ugd->mcview_select_all_item = NULL;
-	}
-
-	if (ugd->mcview_nodevice_item != NULL) {
-		elm_object_item_del(ugd->mcview_nodevice_item);
-		ugd->mcview_nodevice_item = NULL;
-	}
-
-	for (i = 0; i < ugd->gl_available_dev_cnt_at_multiconn_view;  i++) {
-		if (ugd->multi_conn_dev_list[i].peer.gl_item != NULL) {
-			elm_object_item_del(ugd->multi_conn_dev_list[i].peer.gl_item);
-			ugd->multi_conn_dev_list[i].peer.gl_item = NULL;
-		}
-	}
 	ugd->gl_available_dev_cnt_at_multiconn_view = 0;
+	if (ugd->multi_conn_dev_list_start != NULL) {
+		wfd_ug_view_free_peer(ugd->multi_conn_dev_list_start);
+		ugd->multi_conn_dev_list_start = NULL;
+	}
 
-	__WDUG_LOG_FUNC_EXIT__;
+	__FUNC_EXIT__;
 	return 0;
+}
+
+/**
+ *	This function let the ug create "no device found" item
+*/
+Evas_Object *_create_no_device_multiconnect_genlist(struct ug_data *ugd)
+{
+	__FUNC_ENTER__;
+
+	if (NULL == ugd) {
+		DBG(LOG_ERROR, "NULL parameters.\n");
+		return NULL;
+	}
+
+	if (!ugd->mcview_nodevice_item) {
+		ugd->mcview_nodevice_item = elm_genlist_item_append(ugd->multiconn_view_genlist, &noitem_itc, (void *)ugd, NULL, ELM_GENLIST_ITEM_NONE, NULL, NULL);
+		if(ugd->mcview_nodevice_item != NULL)
+			elm_genlist_item_select_mode_set(ugd->mcview_nodevice_item , ELM_OBJECT_SELECT_MODE_DISPLAY_ONLY);
+	}
+
+	__FUNC_EXIT__;
+	return ugd->multiconn_view_genlist;
 }
 
 /**
@@ -682,64 +683,229 @@ int wfd_free_multiconnect_device(struct ug_data *ugd)
  *	@return   0
  *	@param[in] data the pointer to the main data structure
  */
-int wfd_update_multiconnect_device(struct ug_data *ugd)
+int wfd_update_multiconnect_device(struct ug_data *ugd, bool is_free_all_peers)
 {
-	__WDUG_LOG_FUNC_ENTER__;
+	__FUNC_ENTER__;
 
 	int count = 0;
 	device_type_s *device = NULL;
 	Evas_Object *genlist = NULL;
-	int i = 0;
+	Elm_Object_Item *item = NULL;
+	int res = 0;
 
 	genlist = ugd->multiconn_view_genlist;
 	if (ugd->multiconn_view_genlist == NULL) {
 		return 0;
 	}
 
-	wfd_free_multiconnect_device(ugd);
+	if (is_free_all_peers) {
+		wfd_free_multiconnect_device(ugd);
+	}
 
-	count = 0;
-	for (i = 0; i < ugd->raw_discovered_peer_cnt; i++) {
-		device = &ugd->raw_discovered_peers[i];
-		if (device->is_connected == FALSE) {
+	GList *iterator = NULL;
+	for (iterator = ugd->raw_discovered_peer_list; iterator; iterator = iterator->next) {
+		device = (device_type_s *)iterator->data;
+		if (device->is_connected == FALSE && device->is_group_owner == FALSE) {
 			count++;
 		}
 	}
-	ugd->gl_available_dev_cnt_at_multiconn_view = count;
 
-	if (ugd->gl_available_dev_cnt_at_multiconn_view == 0) {
-		WDUG_LOGE("There are No peers\n");
-		ugd->mcview_title_item = elm_genlist_item_append(genlist, &title_itc, ugd, NULL, ELM_GENLIST_ITEM_NONE, NULL, NULL);
-		elm_genlist_item_select_mode_set(ugd->mcview_title_item, ELM_OBJECT_SELECT_MODE_DISPLAY_ONLY);
-		ugd->mcview_nodevice_item = elm_genlist_item_append(genlist, &noitem_itc, (void *)ugd, NULL, ELM_GENLIST_ITEM_NONE, NULL, NULL);
-		elm_genlist_item_select_mode_set(ugd->mcview_nodevice_item , ELM_OBJECT_SELECT_MODE_DISPLAY_ONLY);
+	if (count == 0) {
+		DBG(LOG_INFO, "There are No peers\n");
+		if (!ugd->mcview_title_item) {
+			ugd->mcview_title_item = elm_genlist_item_append(genlist, &multi_view_title_itc, ugd, NULL, ELM_GENLIST_ITEM_NONE, NULL, NULL);
+			if(ugd->mcview_title_item != NULL)
+				elm_genlist_item_select_mode_set(ugd->mcview_title_item, ELM_OBJECT_SELECT_MODE_DISPLAY_ONLY);
+		} else {
+			wfd_ug_view_refresh_glitem(ugd->mcview_title_item);
+		}
+		elm_check_state_set(ugd->select_all_icon, EINA_FALSE);
+		ugd->is_select_all_checked = FALSE;
+		wfd_free_multiconnect_device(ugd);
+		wfd_naviframe_title_set(ugd, _("IDS_DLNA_HEADER_SELECT_DEVICES_ABB"));
 	} else {
-		ugd->mcview_title_item = elm_genlist_item_append(genlist, &title_itc, ugd, NULL, ELM_GENLIST_ITEM_NONE, NULL, NULL);
-		elm_genlist_item_select_mode_set(ugd->mcview_title_item, ELM_OBJECT_SELECT_MODE_DISPLAY_ONLY);
-		ugd->mcview_select_all_item = elm_genlist_item_append(genlist, &select_all_itc, ugd, NULL, ELM_GENLIST_ITEM_NONE, _wfd_gl_sel_cb, ugd);
+		WFD_IF_DEL_ITEM(ugd->mcview_nodevice_item);
+		wfd_ug_view_refresh_glitem(ugd->mcview_title_item);
 
-		count = 0;
-		for (i = 0; i < ugd->raw_discovered_peer_cnt; i++) {
-			device = &ugd->raw_discovered_peers[i];
-			if (device->is_connected == FALSE) {
-				WDUG_LOGD("%dth peer being added on genlist\n", i);
+		for (iterator = ugd->raw_discovered_peer_list; iterator; iterator = iterator->next) {
+			device = (device_type_s *)iterator->data;
+			if (device->is_connected == FALSE && device->is_group_owner == FALSE) {
+				if (!find_peer_in_glist(ugd->multi_conn_dev_list_start, device->mac_addr)) {
+					item = get_insert_postion(device, ugd->mcview_title_item, ugd->gl_available_dev_cnt_at_multiconn_view);
+					res = insert_gl_item(genlist, item, &device_itc, &ugd->multi_conn_dev_list_start,
+								device, _wfd_gl_multi_sel_cb);
+					if (res != 0) {
+						break;
+					}
+					elm_check_state_set(ugd->select_all_icon, EINA_FALSE);
+					ugd->is_select_all_checked = FALSE;
 
-				if (ugd->multi_conn_dev_list[count].peer.gl_item != NULL) {
-					elm_object_item_del(ugd->multi_conn_dev_list[count].peer.gl_item);
+					ugd->gl_available_dev_cnt_at_multiconn_view++;
 				}
-
-				ugd->multi_conn_dev_list[count].peer.gl_item = NULL;
-				memcpy(&ugd->multi_conn_dev_list[count].peer, device, sizeof(device_type_s));
-				ugd->multi_conn_dev_list[count].dev_sel_state = FALSE;
-				ugd->multi_conn_dev_list[count].peer.gl_item = elm_genlist_item_append(genlist, &device_itc,
-					(void *)&ugd->multi_conn_dev_list[count].peer, NULL, ELM_GENLIST_ITEM_NONE, _wfd_gl_multi_sel_cb, ugd);
-				count++;
 			}
 		}
 	}
+	ugd->is_multi_check_all_selected = FALSE;
 
-	__WDUG_LOG_FUNC_EXIT__;
+	__FUNC_EXIT__;
 	return 0;
+}
+
+void wfd_genlist_select_all_check_changed_cb(void *data, Evas_Object * obj, void *event_info)
+{
+	__FUNC_ENTER__;
+	Elm_Object_Item *item = NULL;
+	Evas_Object *chk_box = NULL;
+	Evas_Object *content = NULL;
+	const char *object_type;
+	Eina_Bool state;
+
+
+	struct ug_data *ugd = (struct ug_data *)data;
+	if (NULL == ugd || NULL == obj) {
+		DBG(LOG_ERROR, "NULL parameters.\n");
+		return;
+	}
+
+	if (ugd->multi_conn_dev_list_start == NULL) {
+		elm_genlist_item_selected_set(ugd->select_all_view_genlist, EINA_FALSE);
+		elm_check_state_set(ugd->select_all_icon, EINA_FALSE);
+		ugd->is_select_all_checked = FALSE;
+
+		DBG(LOG_INFO, "No devices in multi-connect view.\n");
+		return;
+	}
+
+	device_type_s *peer = ugd->multi_conn_dev_list_start;
+	elm_genlist_item_selected_set(ugd->select_all_view_genlist, EINA_FALSE);
+
+
+	object_type = evas_object_type_get(obj);
+	 if (g_strcmp0(object_type, "elm_genlist") == 0) {
+		state = elm_check_state_get(ugd->select_all_icon);
+		elm_check_state_set(ugd->select_all_icon, !state);
+		ugd->is_select_all_checked = !state;
+	}
+
+	state = elm_check_state_get(ugd->select_all_icon);
+	DBG(LOG_INFO, "state = %d",state);
+	if (state == EINA_TRUE) {
+		if (ugd->is_multi_check_all_selected == FALSE) {
+			int sel_count = 0;
+			while (peer != NULL) {
+				peer->dev_sel_state = TRUE;
+				item = peer->gl_item;
+				content = elm_object_item_part_content_get(item, "elm.icon.2");
+				chk_box = elm_object_part_content_get(content, "elm.swallow.content");
+				elm_check_state_set(chk_box, TRUE);
+				sel_count++;
+				peer = peer->next;
+			}
+			ugd->is_multi_check_all_selected = TRUE;
+
+			char title[MAX_POPUP_TEXT_SIZE] = {0};
+			snprintf(title, MAX_POPUP_TEXT_SIZE,
+				_("IDS_ST_HEADER_PD_SELECTED"), sel_count);
+			wfd_naviframe_title_set(ugd, title);
+
+			if (ugd->multiconn_layout) {
+				wfd_ug_view_refresh_button(ugd->multiconn_conn_btn,
+					"IDS_WIFI_SK_CONNECT", TRUE);
+			}
+		}
+	} else {
+		while (peer != NULL) {
+			peer->dev_sel_state = FALSE;
+			item = peer->gl_item;
+			content = elm_object_item_part_content_get(item, "elm.icon.2");
+			chk_box = elm_object_part_content_get(content, "elm.swallow.content");
+			elm_check_state_set(chk_box, FALSE);
+			peer = peer->next;
+		}
+		ugd->is_multi_check_all_selected = FALSE;
+		wfd_naviframe_title_set(ugd,
+			_("IDS_DLNA_HEADER_SELECT_DEVICES_ABB"));
+
+		if (ugd->multiconn_layout) {
+			wfd_ug_view_refresh_button(ugd->multiconn_conn_btn,
+				"IDS_WIFI_SK_CONNECT", FALSE);
+		}
+	}
+}
+
+/**
+ *	This function let the ug call it when click 'scan' button
+ *	@return   void
+ *	@param[in] data the pointer to the main data structure
+ *	@param[in] obj the pointer to the evas object
+ *	@param[in] event_info the pointer to the event information
+ */
+void _multi_scan_btn_cb(void *data, Evas_Object *obj, void *event_info)
+{
+	__FUNC_ENTER__;
+	int ret = -1;
+	const char *btn_text = NULL;
+	device_type_s *peer = NULL;
+	struct ug_data *ugd = (struct ug_data *) data;
+
+	if (NULL == ugd) {
+		DBG(LOG_ERROR, "Incorrect parameter(NULL)\n");
+		return;
+	}
+
+	if (ugd->multiconn_conn_btn) {
+		peer = ugd->multi_conn_dev_list_start;
+		while (peer) {
+			if(peer->dev_sel_state) {
+				wfd_ug_view_refresh_button(ugd->multiconn_conn_btn, "IDS_WIFI_SK_CONNECT", TRUE);
+				break;
+			}
+			peer = peer->next;
+		}
+		if (!peer) {
+			wfd_ug_view_refresh_button(ugd->multiconn_conn_btn, "IDS_WIFI_SK_CONNECT", FALSE);
+		}
+	}
+
+	btn_text = elm_object_text_get(ugd->multiconn_scan_stop_btn);
+	if (NULL == btn_text) {
+		DBG(LOG_ERROR, "Incorrect button text(NULL)\n");
+		return;
+	}
+
+	if (0 == strcmp(btn_text, _("IDS_WIFI_SK4_SCAN"))) {
+		wfd_refresh_wifi_direct_state(ugd);
+		DBG(LOG_INFO, "Start discovery again, status: %d\n", ugd->wfd_status);
+
+		/* if connected, show the popup*/
+		if (ugd->wfd_status >= WIFI_DIRECT_STATE_CONNECTED) {
+			wfd_ug_act_popup(ugd, _("IDS_WIFI_BODY_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_SO_THAT_SCANNING_CAN_START_CONTINUE_Q"), POP_TYPE_SCAN_AGAIN);
+		} else if (WIFI_DIRECT_STATE_DEACTIVATED == ugd->wfd_status) {
+			wfd_client_switch_on(ugd);
+			__FUNC_EXIT__;
+			return;
+		} else {
+			WFD_IF_DEL_ITEM(ugd->mcview_nodevice_item);
+			ugd->wfd_discovery_status = WIFI_DIRECT_DISCOVERY_SOCIAL_CHANNEL_START;
+			ret = wifi_direct_start_discovery_specific_channel(false, 1, WIFI_DIRECT_DISCOVERY_SOCIAL_CHANNEL);
+			if (ret != WIFI_DIRECT_ERROR_NONE) {
+				ugd->wfd_discovery_status = WIFI_DIRECT_DISCOVERY_NONE;
+				DBG(LOG_ERROR, "Failed to start discovery. [%d]\n", ret);
+				wifi_direct_cancel_discovery();
+			}
+		}
+		elm_object_domain_translatable_text_set(ugd->multiconn_scan_stop_btn,
+				PACKAGE, "IDS_WIFI_SK_STOP");
+	} else if (0 == strcmp(btn_text, _("IDS_WIFI_SK_STOP"))) {
+		DBG(LOG_INFO, "Stop pressed.\n");
+		ugd->wfd_discovery_status = WIFI_DIRECT_DISCOVERY_STOPPED;
+		wfd_cancel_progressbar_stop_timer(ugd);
+		wfd_delete_progressbar_cb(ugd);
+		wfd_cancel_not_alive_delete_timer(ugd);
+	}
+
+	__FUNC_EXIT__;
+	return;
 }
 
 /**
@@ -749,59 +915,88 @@ int wfd_update_multiconnect_device(struct ug_data *ugd)
  */
 void wfd_create_multiconnect_view(struct ug_data *ugd)
 {
-	__WDUG_LOG_FUNC_ENTER__;
+	__FUNC_ENTER__;
 
-	Evas_Object *back_btn = NULL;
 	Evas_Object *genlist = NULL;
 	Elm_Object_Item *navi_item = NULL;
+	Evas_Object *btn1 = NULL;
+	Evas_Object *btn2 = NULL;
+	Evas_Object *layout = NULL;
 
 	if (ugd == NULL) {
-		WDUG_LOGE("Incorrect parameter(NULL)");
+		DBG(LOG_ERROR, "Incorrect parameter(NULL)");
 		return;
 	}
 
-	select_all_itc.item_style = "1text.1icon.3";
-	select_all_itc.func.text_get = _wfd_gl_select_all_label_get;
-	select_all_itc.func.content_get = _wfd_gl_select_all_icon_get;
-	select_all_itc.func.state_get = NULL;
-	select_all_itc.func.del = NULL;
-
-	device_itc.item_style = "1text.2icon.2";
+	device_itc.item_style = "1line";
 	device_itc.func.text_get = _wfd_gl_device_label_get;
 	device_itc.func.content_get = _wfd_gl_device_icon_get;
 	device_itc.func.state_get = NULL;
 	device_itc.func.del = NULL;
 
-	WDUG_LOGD("_wifid_create_multiconnect_view");
-	back_btn = elm_button_add(ugd->naviframe);
-	elm_object_style_set(back_btn, "naviframe/back_btn/default");
-	evas_object_smart_callback_add(back_btn, "clicked", _multiconnect_view_back_btn_cb, (void *)ugd);
-	elm_object_focus_allow_set(back_btn, EINA_FALSE);
+	/* Create layout */
+	layout = elm_layout_add(ugd->naviframe);
+	elm_layout_file_set(layout, WFD_UG_EDJ_PATH, "main_layout");
+	ugd->multiconn_layout = layout;
 
-	genlist = elm_genlist_add(ugd->naviframe);
+
+	genlist = elm_genlist_add(ugd->multiconn_layout);
+	elm_genlist_mode_set(genlist, ELM_LIST_COMPRESS);
+	evas_object_size_hint_weight_set(genlist, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
+	evas_object_size_hint_align_set(genlist, EVAS_HINT_FILL, EVAS_HINT_FILL);
+	evas_object_smart_callback_add(genlist, "unrealized", _gl_unrealized, ugd);
+
+	elm_object_part_content_set(layout, "elm.swallow.content", genlist);
+	elm_genlist_fx_mode_set(genlist, EINA_FALSE);
+	elm_genlist_homogeneous_set(genlist, EINA_TRUE);
+#if defined(GENLIST_REALIZATION_MOTE_SET)
+	elm_genlist_realization_mode_set(genlist, TRUE);
+#endif
+
 	ugd->multiconn_view_genlist = genlist;
 	ugd->mcview_title_item = NULL;
-
-	wfd_update_multiconnect_device(ugd);
-
+	ugd->mcview_nodevice_item = NULL;
+	ugd->gl_available_dev_cnt_at_multiconn_view = 0;
 	evas_object_show(genlist);
 
-	navi_item = elm_naviframe_item_push(ugd->naviframe, _("Multi connect"), back_btn, NULL, genlist, NULL);
+	navi_item = elm_naviframe_item_push(ugd->naviframe,
+		"IDS_DLNA_HEADER_SELECT_DEVICES_ABB", NULL, NULL, layout, NULL);
+	elm_object_item_domain_text_translatable_set(navi_item, PACKAGE, EINA_TRUE);
 
-	/* create scan button */
-	ugd->multi_scan_btn = elm_button_add(ugd->naviframe);
-	elm_object_style_set(ugd->multi_scan_btn, "naviframe/toolbar/default");
-	elm_object_text_set(ugd->multi_scan_btn, _("IDS_WFD_BUTTON_SCAN"));
-	evas_object_smart_callback_add(ugd->multi_scan_btn, "clicked", _scan_btn_cb, (void *)ugd);
-	elm_object_item_part_content_set(navi_item, "toolbar_button1", ugd->multi_scan_btn);
+	elm_naviframe_item_pop_cb_set(navi_item, _multiconnect_view_pop_cb, (void *)ugd);
+	ugd->select_all_view_genlist = elm_genlist_item_append(genlist,
+			&select_all_multi_connect_itc, ugd, NULL, ELM_GENLIST_ITEM_NONE,
+			wfd_genlist_select_all_check_changed_cb, (void *)ugd );
 
-	/* create connect button */
-	ugd->multi_connect_btn = elm_button_add(ugd->naviframe);
-	elm_object_style_set(ugd->multi_connect_btn, "naviframe/toolbar/default");
-	elm_object_text_set(ugd->multi_connect_btn, _("IDS_WFD_BUTTON_CONNECT"));
-	evas_object_smart_callback_add(ugd->multi_connect_btn, "clicked", _connect_btn_cb, (void *)ugd);
-	elm_object_disabled_set(ugd->multi_connect_btn, EINA_TRUE);
-	elm_object_item_part_content_set(navi_item, "toolbar_button2", ugd->multi_connect_btn);
 
-	__WDUG_LOG_FUNC_EXIT__;
+	btn1 = elm_button_add(ugd->multiconn_layout);
+	elm_object_style_set(btn1, "bottom");
+	if (ugd->view_type && g_strcmp0(_(ugd->view_type),
+		_("IDS_WIFI_BUTTON_MULTI_CONNECT")) == 0) {
+		elm_object_domain_translatable_text_set(btn1, PACKAGE,
+				"IDS_WIFI_SK4_SCAN");
+	} else {
+		elm_object_domain_translatable_text_set(btn1, PACKAGE,
+				"IDS_WIFI_SK_STOP");
+	}
+	elm_object_part_content_set(ugd->multiconn_layout, "button.prev", btn1);
+	evas_object_smart_callback_add(btn1, "clicked",_multi_scan_btn_cb, (void *)ugd);
+	evas_object_show(btn1);
+	ugd->multiconn_scan_stop_btn = btn1;
+
+	btn2 = elm_button_add(ugd->multiconn_layout);
+	elm_object_style_set(btn2, "bottom");
+	elm_object_domain_translatable_text_set(btn2, PACKAGE,
+			"IDS_WIFI_SK_CONNECT");
+	elm_object_part_content_set(ugd->multiconn_layout, "button.next", btn2);
+	evas_object_smart_callback_add(btn2, "clicked",_connect_btn_cb, (void *)ugd);
+	evas_object_show(btn2);
+	ugd->multiconn_conn_btn = btn2;
+	elm_object_disabled_set(ugd->multiconn_conn_btn, EINA_TRUE);
+
+	ugd->multi_navi_item = navi_item;
+
+	wfd_update_multiconnect_device(ugd, true);
+
+	__FUNC_EXIT__;
 }

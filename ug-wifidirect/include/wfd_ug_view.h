@@ -1,13 +1,13 @@
 /*
 *  WiFi-Direct UG
 *
-* Copyright 2012 Samsung Electronics Co., Ltd
+* Copyright 2012  Samsung Electronics Co., Ltd
 
-* Licensed under the Flora License, Version 1.1 (the "License");
+* Licensed under the Flora License, Version 1.0 (the "License");
 * you may not use this file except in compliance with the License.
 * You may obtain a copy of the License at
 
-* http://floralicense.org/license
+* http://www.tizenopensource.org/license
 
 * Unless required by applicable law or agreed to in writing, software
 * distributed under the License is distributed on an "AS IS" BASIS,
@@ -21,58 +21,61 @@
 #define __WFD_UG_VIEW_H__
 
 #include <glib.h>
-#include <syspopup_caller.h>
 
-#define EDJDIR "/usr/ug/res/edje/ug-setting-wifidirect-efl"
+#define EDJDIR "/usr/apps/setting-wifidirect-efl/res/edje/ug-setting-wifidirect-efl"
 #define WFD_UG_EDJ_PATH  EDJDIR"/wfd_ug.edj"
-#define WFD_IMG_DIR "/usr/ug/res/images/ug-setting-wifidirect-efl"
-#define TICKERNOTI_SYSPOPUP "tickernoti-syspopup"
-
+#define WFD_IMG_DIR "/usr/apps/setting-wifidirect-efl/res/images/ug-setting-wifidirect-efl"
 
 /* Define icons */
+#define WFD_ICON_DEVICE_COMPUTER			"A09_device_computer.png"
+#define WFD_ICON_DEVICE_INPUT_DEVICE		"A09_device_input_device.png"
+#define WFD_ICON_DEVICE_PRINTER				"A09_device_printer.png"
+#define WFD_ICON_DEVICE_CAMERA				"A09_device_camera.png"
+#define WFD_ICON_DEVICE_STORAGE				"A09_device_storage.png"
+#define WFD_ICON_DEVICE_NETWORK_INFRA		"A09_device_network_infrastructure.png"
+#define WFD_ICON_DEVICE_DISPLAY				"A09_device_display.png"
+#define WFD_ICON_DEVICE_MULTIMEDIA			"A09_device_multimedia.png"
+#define WFD_ICON_DEVICE_GAMING				"A09_device_gaming.png"
+#define WFD_ICON_DEVICE_TELEPHONE			"A09_device_telephone.png"
+#define WFD_ICON_DEVICE_HEADSET				"A09_device_headset.png"
+#define WFD_ICON_DEVICE_UNKNOWN				"A09_device_unknown.png"
+#define WFD_ICON_DEVICE_BD					"U04_device_BD.png"
+#define WFD_ICON_DEVICE_DONGLE				"U04_device_Dongle.png"
+#define WFD_ICON_DEVICE_HOME_THEATER		"U04_device_Home_Theater.png"
+#define WFD_ICON_DEVICE_STB					"U04_device_STB.png"
 
-#define WFD_ICON_DEVICE_COMPUTER			WFD_IMG_DIR"/A09_device_computer.png"
-#define WFD_ICON_DEVICE_INPUT_DEVICE			WFD_IMG_DIR"/A09_device_input_device.png"
-#define WFD_ICON_DEVICE_PRINTER				WFD_IMG_DIR"/A09_device_printer.png"
-#define WFD_ICON_DEVICE_CAMERA				WFD_IMG_DIR"/A09_device_camera.png"
-#define WFD_ICON_DEVICE_STORAGE				WFD_IMG_DIR"/A09_device_storage.png"
-#define WFD_ICON_DEVICE_NETWORK_INFRA			WFD_IMG_DIR"/A09_device_network_infrastructure.png"
-#define WFD_ICON_DEVICE_DISPLAY				WFD_IMG_DIR"/A09_device_display.png"
-#define WFD_ICON_DEVICE_MULTIMEDIA_DEVICE		WFD_IMG_DIR"/A09_device_multimedia_devices.png"
-#define WFD_ICON_DEVICE_GAMING_DEVICE			WFD_IMG_DIR"/A09_device_gaming_devices.png"
-#define WFD_ICON_DEVICE_TELEPHONE			WFD_IMG_DIR"/A09_device_telephone.png"
-#define WFD_ICON_DEVICE_AUDIO_DEVICE			WFD_IMG_DIR"/A09_device_audio_devices.png"
+/* Not support */
+#define WFD_ICON_DEVICE_HEADPHONE			"A09_device_headphone.png"
+#define WFD_ICON_DEVICE_MEDICAL				"A09_device_Medical.png"
+#define WFD_ICON_DEVICE_MOUSE				"A09_device_mouse.png"
 
-#define WFD_ICON_DEVICE_COMPUTER_CONNECT		WFD_IMG_DIR"/A09_device_computer_connect.png"
-#define WFD_ICON_DEVICE_INPUT_DEVICE_CONNECT		WFD_IMG_DIR"/A09_device_input_device_connect.png"
-#define WFD_ICON_DEVICE_PRINTER_CONNECT			WFD_IMG_DIR"/A09_device_printer_connect.png"
-#define WFD_ICON_DEVICE_CAMERA_CONNECT			WFD_IMG_DIR"/A09_device_camera_connect.png"
-#define WFD_ICON_DEVICE_STORAGE_CONNECT			WFD_IMG_DIR"/A09_device_storage_connect.png"
-#define WFD_ICON_DEVICE_NETWORK_INFRA_CONNECT		WFD_IMG_DIR"/A09_device_network_infrastructure_connect.png"
-#define WFD_ICON_DEVICE_DISPLAY_CONNECT			WFD_IMG_DIR"/A09_device_display_connect.png"
-#define WFD_ICON_DEVICE_MULTIMEDIA_DEVICE_CONNECT	WFD_IMG_DIR"/A09_device_multimedia_devices_connect.png"
-#define WFD_ICON_DEVICE_GAMING_DEVICE_CONNECT		WFD_IMG_DIR"/A09_device_gaming_devices_connect.png"
-#define WFD_ICON_DEVICE_TELEPHONE_CONNECT		WFD_IMG_DIR"/A09_device_telephone_connect.png"
-#define WFD_ICON_DEVICE_AUDIO_DEVICE_CONNECT		WFD_IMG_DIR"/A09_device_audio_devices_connect.png"
-
-#define WFD_ICON_CONNECTED				WFD_IMG_DIR"/A09_Connect.png"
-
+#define WFD_ICON_DEVICE_MORE_HELP				"A09_popup_help.png"
 
 enum {
 	HEAD_TEXT_TYPE_DIRECT,
 	HEAD_TEXT_TYPE_DEACTIVATING,
 	HEAD_TEXT_TYPE_ACTIVATING,
 	HEAD_TEXT_TYPE_ACTIVATED,
-	HEAD_TEXT_TYPE_SCANING,
 };
 
 enum {
+	TITLE_CONTENT_TYPE_NONE,
+	TITLE_CONTENT_TYPE_SCANNING,
+	TITLE_CONTENT_TYPE_FOUND,
+};
+
+
+enum {
 	/* User confirm */
+#ifndef MODEL_BUILD_FEATURE_WLAN_CONCURRENT_MODE
 	POPUP_TYPE_WIFI_OFF,
-	POPUP_TYPE_HOTSPOT_OFF,
+#endif
+
+	POPUP_TYPE_HOTSPOT_OFF = 1,
 
 	/* Activation */
 	POPUP_TYPE_ACTIVATE_FAIL,
+	POPUP_TYPE_ACTIVATE_FAIL_POLICY_RESTRICTS,
 	POPUP_TYPE_DEACTIVATE_FAIL,
 
 	/* Connection */
@@ -81,13 +84,17 @@ enum {
 	POPUP_TYPE_LINK_FAIL,
 	POPUP_TYPE_UNKNOWN_ERROR,
 
+	POPUP_TYPE_INFO,
 	POPUP_TYPE_TERMINATE,
+	POPUP_TYPE_TERMINATE_DEACTIVATE_FAIL,
+	POPUP_TYPE_TERMINATE_NOT_SUPPORT,
 
 	/* Disconnect */
 	POP_TYPE_DISCONNECT,
 
-	/* Disconnect All*/
-	POP_TYPE_DISCONNECT_ALL,
+	POP_TYPE_CANCEL_CONNECT,
+
+	POP_TYPE_ACCEPT_CONNECTION,
 
 	/* Scan again */
 	POP_TYPE_SCAN_AGAIN,
@@ -121,18 +128,19 @@ void destroy_wfd_ug_view(void *data);
 /**
  *	This function let the ug update the genlist item
  *	@return   void
- *	@param[in] obj the pointer to genlist item
+ *	@param[in] gl_item the pointer to genlist item
  */
-void wfd_ug_view_refresh_glitem(void *obj);
+void wfd_ug_view_refresh_glitem(Elm_Object_Item *gl_item);
 
 /**
  *	This function let the ug refresh the attributes of button
  *	@return   void
- *	@param[in] obj the pointer to the button
+ *	@param[in] tb_item the pointer to the toolbar button
  *	@param[in] text the pointer to the text of button
  *	@param[in] enable whether the button is disabled
  */
-void wfd_ug_view_refresh_button(void *obj, const char *text, int enable);
+void wfd_ug_view_refresh_button(Evas_Object *tb_item, const char *text,
+		int enable);
 
 /**
  *	This function let the ug update the peers
@@ -174,20 +182,6 @@ void wfg_ug_act_popup_remove(void *data);
 void wfd_ug_warn_popup(void *data, const char *message, int popup_type);
 
 /**
- *	This function let the ug change the text of multi button
- *	@return   If success, return 0, else return -1
- *	@param[in] data the pointer to the main data structure
- */
-int _change_multi_button_title(void *data);
-
-/**
- *	This function let the ug create about view
- *	@return   void
- *	@param[in] ugd the pointer to the main data structure
- */
-void _wifid_create_about_view(struct ug_data *ugd);
-
-/**
  *	This function let the ug create the view for multi connection
  *	@return   void
  *	@param[in] ugd the pointer to the main data structure
@@ -201,7 +195,7 @@ void _wifid_create_multiconnect_view(struct ug_data *ugd);
  *	@param[in] obj the pointer to the evas object
  *	@param[in] event_info the pointer to the event information
  */
-void _back_btn_cb(void *data, Evas_Object * obj, void *event_info);
+Eina_Bool _back_btn_cb(void *data, Elm_Object_Item *it);
 
 /**
  *	This function let the ug call it when click 'scan' button
@@ -213,13 +207,22 @@ void _back_btn_cb(void *data, Evas_Object * obj, void *event_info);
 void _scan_btn_cb(void *data, Evas_Object * obj, void *event_info);
 
 /**
- *	This function let the ug call it when click 'multi connect' button
+ *	This function let the ug call it when click 'disconnect' button
  *	@return   void
  *	@param[in] data the pointer to the main data structure
  *	@param[in] obj the pointer to the evas object
  *	@param[in] event_info the pointer to the event information
  */
-void _wifid_create_multibutton_cb(void *data, Evas_Object *obj, void *event_info);
+void _wfd_ug_disconnect_button_cb(void *data, Evas_Object *obj, void *event_info);
+
+/**
+ *	This function let the ug call it when click "Cancel Connection" button
+ *	@return   void
+ *	@param[in] data the pointer to the main data structure
+ *	@param[in] obj the pointer to the evas object
+ *	@param[in] event_info the pointer to the event information
+ */
+void _wfd_ug_cancel_connection_button_cb(void *data, Evas_Object *obj, void *event_info);
 
 /**
  *	This function let the ug get the found peers
@@ -227,6 +230,13 @@ void _wifid_create_multibutton_cb(void *data, Evas_Object *obj, void *event_info
  *	@param[in] ugd the pointer to the main data structure
  */
 int wfd_ug_get_discovered_peers(struct ug_data *ugd);
+
+/**
+ *	This function let the ug get the connecting peer mac
+ *	@return   If success, return 0, else return -1
+ *	@param[in] ugd the pointer to the main data structure
+ */
+int wfd_ug_get_connecting_peer(struct ug_data *ugd);
 
 /**
  *	This function let the ug get the connected peers
@@ -241,7 +251,7 @@ int wfd_ug_get_connected_peers(struct ug_data *ugd);
  *	@param[in] ugd the pointer to the main data structure
  *	@param[in] device the pointer to the number of connected failed devices
  */
-int wfd_get_device_status(void *data, device_type_s *device);
+//int wfd_get_device_status(void *data, device_type_s *device);
 
 /**
  *	This function let the ug refresh current status of wi-fi direct
@@ -277,10 +287,11 @@ gboolean wfd_multi_connect_next_cb(void *data);
  *	@param[in] genlist the pointer to the genlist
  *	@param[in] separator_style the style of separator
  */
-Elm_Object_Item *wfd_add_dialogue_separator(Evas_Object *genlist, const char *separator_style);
+Elm_Object_Item *wfd_add_dialogue_separator(Evas_Object *genlist,
+		const char *separator_style);
 
 /**
- *	This function let the ug fee the multi connect devices
+ *	This function let the ug free the multi connect devices
  *	@return   0
  *	@param[in] data the pointer to the main data structure
  */
@@ -289,9 +300,10 @@ int wfd_free_multiconnect_device(struct ug_data *ugd);
 /**
  *	This function let the ug update the multi connect devices
  *	@return   0
- *	@param[in] data the pointer to the main data structure
+ *	@param[in] ugd the pointer to the main data structure
+ *	@param[in] is_free_all_peers true to free all peers
  */
-int wfd_update_multiconnect_device(struct ug_data *ugd);
+int wfd_update_multiconnect_device(struct ug_data *ugd, bool is_free_all_peers);
 
 /**
  *	This function let the ug create the view for multi connection
@@ -300,5 +312,168 @@ int wfd_update_multiconnect_device(struct ug_data *ugd);
  */
 void wfd_create_multiconnect_view(struct ug_data *ugd);
 
+/**
+ *	This function let the ug delete search progressbar
+ *	@return   void
+ *	@param[in] user_data the pointer to the main data structure
+ */
+int wfd_delete_progressbar_cb(void *user_data);
+
+/**
+ *	This function let the ug insert peer item to genlist
+ *	@return   int
+ *	@param[in] genlist the pointer to genlist
+ *	@param[in] item the pointer to item to insert after
+ *      @param[in] itc Elm_Gen_Item_Class
+ *	@param[in] start_pos the pointer to the start position of peer array
+ *	@param[in] peer_for_insert the pointer to the peer to insert
+ *	@param[in] callback callback for peer select
+ */
+int insert_gl_item(Evas_Object *genlist, Elm_Object_Item *item,
+		Elm_Gen_Item_Class *itc, device_type_s **start_pos,
+		device_type_s *peer_for_insert, void *callback);
+
+/**
+ *	This function let the ug get the insert position for next item
+ *	@return  item the position to insert after
+ *	@param[in] peer the pointer to peer to search
+ *	@param[in] pre_item the title item of peer list
+ *	@param[in] peer_cnt the count of gl peers
+ */
+Elm_Object_Item *get_insert_postion(device_type_s *peer,
+		Elm_Object_Item *pre_item, int peer_cnt);
+
+/**
+ *	This function let the ug find a peer in genlist
+ *	@return  peer the pointer of peer that found
+ *	@param[in] start_pos the start position of peers list
+ *	@param[in] mac_addr the mac_addr of peer for search
+ */
+device_type_s *find_peer_in_glist(device_type_s *start_pos, const char *mac_addr);
+
+/**
+ *	This function let the ug free gl peers
+ *	@return   void
+ *	@param[in] gl_peers_start the start pointer of peer list that for free
+ */
+void wfd_ug_view_free_peer(device_type_s *gl_peers_start);
+
+/**
+ *	This function let the ug exits automatically after successed connection
+ *	@return   void
+ *	@param[in] user_data the pointer to the main data structure
+ */
+void _wfd_ug_auto_exit(void *user_data);
+
+/**
+ *	This function let the ug update the buttons of toolbar
+ *	@return   void
+ *	@param[in] ugd the pointer to the main data structure
+ */
+void wfd_ug_update_toolbar(struct ug_data *ugd);
+
+/**
+ *	This function let the ug update the available and busy peers
+ *	@return   void
+ *	@param[in] data the pointer to the main data structure
+ */
+void wfd_ug_update_available_peers(void *data);
+
+/**
+ *	This function let the ug init the genlist
+ *	@return   void
+ *	@param[in] data the pointer to the main data structure
+ *	@param[in] is_free_all_peers true to free all peer items
+ */
+void wfd_ug_view_init_genlist(void *data, bool is_free_all_peers);
+
+/**
+ *	This function let the ug delete dead peers
+ *	@return   void
+ *	@param[in] ugd the pointer to the main data structure
+ *	@param[in] start_pos the pointer to start of peer list
+ *	@param[in] cnt the pointer to the number of peets in list
+ */
+void delete_not_alive_peers(struct ug_data *ugd, device_type_s **start_pos,
+		int *cnt);
+
+/**
+ *	This function let the ug mark up the dead peers
+ *	@return   void
+ *	@param[in] ugd the pointer to the main data structure
+ *	@param[in] start_pos the pointer to start of peer list
+ */
+void set_not_alive_peers(device_type_s *start_pos);
+
+/**
+ *	This function let the ug update connected peers
+ *	@return   void
+ *	@param[in] data the pointer to the main data structure
+ */
+void wfd_ug_update_connected_peers(void *data);
+
+/**
+ *	This function let the ug update the multi-connect peers
+ *	@return   void
+ *	@param[in] data the pointer to the main data structure
+ */
+void wfd_ug_view_update_multiconn_peers(void *data);
+
+/**
+ *	This function let the ug update the failed peers
+ *	@return   void
+ *	@param[in] data the pointer to the main data structure
+ */
+void wfd_ug_update_failed_peers(void *data);
+
+/**
+ *	This function let the ug cancel progressbar stop timer
+ *	@return   void
+ *	@param[in] ugd the pointer to the main data structure
+ */
+void wfd_cancel_progressbar_stop_timer(struct ug_data *ugd);
+
+/**
+ *	This function let the ug cancel not-alive devices delete timer
+ *	@return   void
+ *	@param[in] ugd the pointer to the main data structure
+ */
+void wfd_cancel_not_alive_delete_timer(struct ug_data *ugd);
+
+/**
+ *	This function let the ug move ctxpopup to specified location
+ *	@return   void
+ */
+void _ctxpopup_move();
+
+int _create_available_dev_genlist(void *data);
+
+Evas_Object *_create_no_device_genlist(void *data);
+
+Evas_Object *_create_no_device_multiconnect_genlist(struct ug_data *ugd);
+
+/**
+ *	This function let the ug create rename popup
+ *	@return   void
+ *	@param[in] data the pointer to the main data structure
+ */
+
+void _gl_rename_device_sel(void *data, Evas_Object *obj, void *event_info);
+
+#ifdef WFD_ON_OFF_GENLIST
+/**
+ *	This function let the ug create on off check
+ *	@return   void
+ *	@param[in] parent the pointer to the naviframe
+ */
+void wfd_ug_create_on_off_check(struct ug_data *ugd);
+#endif
+/**
+ *	This function is called after select all button is checked to select all available devices
+ *	@return   void
+ *	@param[in] data the pointer to the main data structure
+ */
+void wfd_genlist_select_all_check_changed_cb(void *data, Evas_Object *obj,
+		void *event_info);
 
 #endif  /* __WFD_UG_VIEW_H__ */

@@ -1,263 +1,338 @@
-msgid "IDS_WFD_CONNECTED"
-msgstr "Savienots"
+msgid "IDS_WIFI_BODY_ENTER_YOUR_ID"
+msgstr "Ievadiet savu ID kodu."
 
-msgid "IDS_WFD_CONNECTING"
-msgstr "Savieno..."
+msgid "IDS_COM_POP_MAXIMUM_NUMBER_OF_CHARACTERS_REACHED"
+msgstr "Sasniegts maksimālais rakstzīmju skaits."
 
-msgid "IDS_WFD_DISCONNECTING"
-msgstr "Atvieno..."
+msgid "IDS_ST_HEADER_PD_SELECTED"
+msgstr "Izvēlēti: %d"
 
-msgid ""
-msgstr "Aktivizē Wi-Fi..."
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "Aktivizēt"
 
-msgid "IDS_WIFI_POP_DEACTIVATING_WI_FI_ING"
-msgstr "Deaktivizē Wi-Fi..."
+msgid "IDS_WIFI_BODY_DOT"
+msgstr "."
 
-msgid "IDS_WFD_POP_CONNECTED"
-msgstr "Savienots"
+msgid "IDS_WIFI_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_PD_REACHED"
+msgstr "Sasniegts maksimālais rakstzīmju skaits (%d)"
 
-msgid "IDS_COM_POP_NETWORK_INTERNAL_ERR"
-msgstr "Iekšēja kļūda"
+msgid "IDS_WIFI_TPOP_FAILED_TO_OBTAIN_IP_ADDRESS"
+msgstr "Neizdevās iegūt IP adresi."
 
-msgid "IDS_COM_POP_RETRIEVED"
-msgstr "Izgūts"
+msgid "IDS_WIFI_TPOP_CONNECTED_TO_WI_FI_NETWORK_PS"
+msgstr "Izveidots savienojums ar Wi-Fi tīklu %s"
 
-msgid "IDS_COM_POP_RETRIEVING_FAILED"
-msgstr "Izguve neizdevās"
+msgid "IDS_WIFI_TMBODY_NEVER_M_ALWAYS_OFF"
+msgstr "Nekad"
 
-msgid "IDS_COM_SK_CANCEL"
+msgid "IDS_WIFI_TMBODY_DOWNLOAD_DATA_VIA_WI_FI_AND_4G"
+msgstr "Lejupielādēt, izm. Wi-Fi un 4G"
+
+msgid "IDS_WIFI_TMBODY_DOWNLOAD_DATA_VIA_WI_FI_AND_3G"
+msgstr "Lejupielādēt, izm. Wi-Fi un 3G"
+
+msgid "IDS_WIFI_SK_WPS_PIN"
+msgstr "WPS PIN"
+
+msgid "IDS_WIFI_SK_FORGET"
+msgstr "Aizmirst"
+
+msgid "IDS_WIFI_SK_CANCEL"
 msgstr "Atcelt"
 
-msgid "IDS_ST_BODY_INTERNAL_ERROR"
-msgstr "Iekšēja kļūda"
-
-msgid "IDS_WFD_POP_UNKNOWN_ERROR"
-msgstr "Nezināma kļūda"
-
-msgid "IDS_COM_POP_NETWORK_ERROR"
-msgstr "Tīkla kļūda"
-
-msgid "IDS_COM_BODY_NO_SEARCH_RESULTS"
-msgstr "Nav meklēšanas rezultātu"
-
-msgid "IDS_COM_POP_SEARCHING"
-msgstr "Meklē..."
-
-msgid "IDS_WIFI_POP_DISCONNECTING_FAILED"
-msgstr "Atvienošanās neizdevās"
-
-msgid "IDS_ST_BODY_ENTER_NEW_PASSWORD"
-msgstr "Ievadiet jauno paroli"
-
-msgid "IDS_COM_POP_UNKNOWN_ERROR_UNABLE_TO_LAUNCH_APPLICATION"
-msgstr "Nezināma kļūda. Nevar palaist programmu"
-
-msgid "IDS_COM_POP_ACCEPT"
-msgstr "Pieņemt"
-
-msgid "IDS_COM_POP_CONNECTING"
-msgstr "Savieno..."
-
-msgid "IDS_COM_POP_ERROR"
-msgstr "Kļūda"
-
-msgid "IDS_COM_POP_REJECT"
-msgstr "Noraidīt"
-
-msgid "IDS_COM_POP_REJECTED"
-msgstr "Noraidīts"
-
-msgid "IDS_COM_BODY_SELECT_ALL"
-msgstr "Izv. visu"
-
-msgid "IDS_COM_POP_FAILED"
-msgstr "Neizdevās"
-
-msgid "IDS_COM_SK_ACCEPT"
-msgstr "Pieņemt"
-
-msgid "IDS_ST_BODY_ENTER_4_TO_8_DIGIT_PIN"
-msgstr "Ievadiet 4 līdz 8 ciparu PIN kodu"
-
-msgid "IDS_WFD_POP_PIN_INVALID"
-msgstr "PIN kods neatbilst!"
-
-msgid "IDS_ST_POP_YES"
-msgstr "Jā"
-
-msgid "IDS_WFD_BODY_ACTIVATING"
-msgstr "Aktivizē..."
-
-msgid "IDS_COM_POP_DEACTIVATED"
-msgstr "Deaktivizēts"
-
-msgid "IDS_COM_SK_OK"
+msgid "IDS_WIFI_SK2_OK"
 msgstr "Labi"
 
-msgid "IDS_COM_SK_YES"
-msgstr "Jā"
+msgid "IDS_WIFI_SBODY_CONNECTED_M_STATUS"
+msgstr "Savienots"
 
-msgid "IDS_WIFI_HEADER_MOBILE_HOTSPOT_VZW"
-msgstr "Mobilais tīklājs"
+msgid "IDS_WIFI_SBODY_AUTOMATICALLY_SWITCH_BETWEEN_WI_FI_AND_MOBILE_NETWORKS_TO_MAINTAIN_A_STABLE_INTERNET_CONNECTION"
+msgstr "Automātiski pārslēdzieties no mobilā tīkla uz Wi-Fi tīklu un pretēji, lai saglabātu stabilu interneta savienojumu."
 
-msgid "IDS_ST_BODY_ENTER_CURRENT_PASSWORD"
-msgstr "Ievadiet pašreizējo paroli"
+msgid "IDS_WIFI_SBODY_AUTHENTICATION_ERROR_OCCURRED_M_STATUS"
+msgstr "Radās autentifikācijas kļūda"
 
-msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
-msgstr "%d izvēlētas"
+msgid "IDS_WIFI_POP_WI_FI_AND_MOBILE_NETWORKS_WILL_BE_USED_TOGETHER_TO_DOWNLOAD_FILES_FASTER_MSG"
+msgstr "Wi-Fi un mobilie tīkli tiks izmantoti kopā, lai lejupielādētu failus ātrāk. Tas var palielināt mobilo datu lietojumu."
 
-msgid "IDS_ST_POP_SEARCHING_ING"
-msgstr "Meklē..."
+msgid "IDS_WIFI_POP_SMART_NETWORK_SWITCH_HAS_BEEN_ENABLED_MSG"
+msgstr "Viedā tīkla pārslēgšana ir aktivizēta. Šī funkcija palīdz nodrošināt stabilu interneta savienojumu, pārslēdzoties starp mobilajiem un Wi-Fi tīkliem. Tas var palielināt datu lietojumu."
 
-msgid "IDS_COM_POP_NOTHING_SELECTED"
-msgstr "Nekas nav izvēlēts"
+msgid "IDS_WIFI_POP_PS_IS_SELECTED_N_NIF_YOU_ARE_UNABLE_TO_CONNECT_TO_AN_AP_CHANGE_THE_SIM_CARD_USED_FOR_VERIFICATION_BY_GOING_TO_SIM_CARD_MANAGER_MSG"
+msgstr "Ir izvēlēta %s.\n\nJa nevarat izveidot savienojumu ar AP, nomainiet verifikācijai izmantoto SIM karti, atverot programmu SIM kartes pārvaldnieks. Pēc tam izvēlieties SIM karti, ko lietot mobilajiem datiem un multiziņām. SIM karti, ko nevēlaties lietot, varat arī atvienot."
 
-msgid "IDS_COM_OPT1_WI_FI_DIRECT"
-msgstr "Wi-Fi Direct"
+msgid "IDS_WIFI_POP_PRESS_WPS_ON_YOUR_WI_FI_ACCESS_POINT_WITHIN_PD_MINUTES"
+msgstr "%d minūšu laikā uz Wi-Fi piekļuves punkta nospiediet WPS."
 
-msgid "IDS_COM_POP_DISCONNECTED"
-msgstr "Atvienots"
+msgid "IDS_WIFI_POP_OPEN"
+msgstr "Atvērt"
 
-msgid "IDS_WIFI_MBODY_MOBILE_HOTSPOT_VZW"
-msgstr "Mobilais tīklājs"
+msgid "IDS_WIFI_POP_NO_WI_FI_AP_FOUND"
+msgstr "Nav atrasts neviens Wi-Fi piekļuves punkts."
 
-msgid "IDS_WIFI_BODY_IP_ADDRESS"
-msgstr "IP adrese"
+msgid "IDS_WIFI_POP_CURRENT_NETWORK_WILL_BE_DISCONNECTED"
+msgstr "Pašreizējais tīkls tiks atvienots."
 
-msgid "IDS_WFD_BODY_DEACTIVATING"
-msgstr "Deaktivizē..."
+msgid "IDS_WIFI_OPT_WPS"
+msgstr "WPS"
 
-msgid "IDS_COM_POP_UNEXPECTED_ERROR"
-msgstr "Negaidīta kļūda"
+msgid "IDS_WIFI_OPT_SHOW_PASSWORD"
+msgstr "Rādīt paroli"
 
-msgid "IDS_COM_POP_NETWORK_CONNECTION_ERROR"
-msgstr "Tīkla savienojuma kļūda"
+msgid "IDS_WIFI_OPT_MOBILEACCESSSERVICEATCIVATION_ON"
+msgstr "Ieslēgt"
 
-msgid "IDS_COM_BODY_OPERATION_FAILED"
-msgstr "Darbība neizdevās"
+msgid "IDS_WIFI_OPT_MOBILEACCESSSERVICEATCIVATION_OFF"
+msgstr "Izslēgt"
 
-msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
-msgstr "Nav nodrošināts"
+msgid "IDS_WIFI_OPT_FORGET_NETWORK"
+msgstr "Aizmirst tīklu"
 
-msgid "IDS_COM_POP_UNSUPPORTED"
-msgstr "Neatbalstīts"
+msgid "IDS_WIFI_MBODY_SMART_NETWORK_SWITCH"
+msgstr "Viedā tīkla pārslēgšana"
 
-msgid "IDS_WFD_HEADER_WIFI_DIRECT"
-msgstr "Wi-Fi Direct"
+msgid "IDS_WIFI_MBODY_SIGNAL_STRENGTH_KOR_SKT"
+msgstr "Signāla stiprums"
 
-msgid "IDS_COM_POP_ACCEPTED"
-msgstr "Pieņemts"
+msgid "IDS_WIFI_MBODY_REDUCE_MOBILE_DATA_USAGE"
+msgstr "Samaz. mobilo datu liet."
 
-msgid "IDS_WIFI_BODY_MAC_ADDRESS"
-msgstr "MAC adrese"
+msgid "IDS_WIFI_MBODY_PRIORITISE_SPEED"
+msgstr "Ātrums ir prioritāte"
 
-msgid "IDS_WIFI_POP_AUTOMATIC_CONNECTION_NETWORK_WILL_DISABLED_CONTINUE_Q_MSG"
-msgstr "Automātiskais savienojums ar šo tīklu tiks deaktivizēts. Vai turpināt?"
+msgid "IDS_WIFI_MBODY_NETWORK_BONDING"
+msgstr "Tīkla saistīšana"
 
-msgid "IDS_COM_POP_PROGRESSING_ING"
-msgstr "Notiek darbība..."
+msgid "IDS_WIFI_HEADER_WI_FI_NETWORK_INFO_ABB"
+msgstr "Wi-Fi tīkla informācija"
 
-msgid "IDS_WIFI_BODY_CONNECT"
-msgstr "Savienot"
+msgid "IDS_WIFI_HEADER_SELECT_WPS_METHOD_ABB"
+msgstr "WPS metodes izvēle"
 
-msgid "IDS_WIFI_HEADER_WI_FI"
-msgstr "Wi-Fi"
+msgid "IDS_WIFI_HEADER_PROXY_ADDRESS"
+msgstr "Starpniekservera adrese"
 
-msgid "IDS_WFD_BUTTON_SCAN"
+msgid "IDS_WIFI_HEADER_PASSWORD"
+msgstr "Parole"
+
+msgid "IDS_WIFI_HEADER_ENTER_PASSWORD"
+msgstr "Ievadiet paroli."
+
+msgid "IDS_WIFI_BUTTON_WPS_BUTTON"
+msgstr "WPS poga"
+
+msgid "IDS_WIFI_BUTTON_SCAN"
 msgstr "Meklēt"
 
-msgid "IDS_WIFI_SK3_BACK"
-msgstr "Atpakaļ"
+msgid "IDS_WIFI_BUTTON_FIND_HIDDEN_NETWORK"
+msgstr "Atrast slēptu tīklu"
+
+msgid "IDS_WIFI_BODY_WI_FI_NETWORKS_AVAILABLE_ABB"
+msgstr "Pieejami Wi-Fi tīkli."
 
 msgid "IDS_WIFI_BODY_WI_FI_DIRECT_ABB"
-msgstr "Wi-Fi Direct"
-
-msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
-msgstr "Wi-Fi Direct ierīces"
-
-msgid "IDS_WFD_TAP_TO_CONNECT"
-msgstr "Pieskarieties, lai izveidotu savienojumu"
-
-msgid "IDS_WIFI_SK2_MULTI_CONNECT"
-msgstr "Vairāki savienojumi"
-
-msgid "IDS_WFD_BUTTON_CONNECT"
-msgstr "Savienot"
-
-msgid "IDS_WIFI_OPT_MYNETWORKS_DISCONNECT"
-msgstr "Atvienot"
-
-msgid "IDS_WFD_BUTTON_CANCEL"
-msgstr "Atcelt savienojumu"
-
-msgid "IDS_COM_SK_CANCEL_A"
-msgstr "Atcelt"
-
-msgid "IDS_ST_HEADER_ACTIVATION"
-msgstr "Aktivizēšana"
-
-msgid "IDS_COM_SK_CANCEL_LITE"
-msgstr "Atcelt"
-
-msgid "IDS_ST_BODY_WI_FI_DIRECT_ABB"
 msgstr "Wi-Fi Direct"
 
 msgid "IDS_WIFI_BODY_WI_FI"
 msgstr "Wi-Fi"
 
-msgid "IDS_COM_SK_CANCEL_ABB"
-msgstr "Atcelt"
+msgid "IDS_WIFI_BODY_WHILE_CHARGING_ONLY_ABB"
+msgstr "Tikai uzlādes laikā"
 
-msgid "IDS_WIFI_BUTTON_CANCEL"
-msgstr "Atcelt"
+msgid "IDS_WIFI_BODY_WEAK_M_STRENGTH"
+msgstr "Vājš"
 
-msgid "IDS_WIFI_BODY_ALLSHARE_CAST"
-msgstr "AllShare Cast"
+msgid "IDS_WIFI_BODY_USER_CERTIFICATE_ABB"
+msgstr "Liet.sertifikāts"
 
-msgid "IDS_WIFI_POP_MOBILEACCESSSERVICE_ACTIVATING_ING"
-msgstr "Aktivizē..."
+msgid "IDS_WIFI_BODY_UNSPECIFIED"
+msgstr "Nav norādīts"
 
-msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_CONNECTION"
-msgstr "Izmantojot Wi-Fi Direct, tiks pārtraukts pašreizējais Wi-Fi savienojums"
+msgid "IDS_WIFI_BODY_UNKNOWN"
+msgstr "Nezināms"
 
-msgid "IDS_WFD_TITLE_ABOUT_WIFI"
-msgstr "Par Wi-Fi Direct"
+msgid "IDS_WIFI_BODY_TO_DOWNLOAD_LARGE_FILES_FASTER_USE_WI_FI_AND_MOBILE_NETWORKS_TOGETHER_T_HELP"
+msgstr "Lai ātrāk lejupielādētu lielus failus, izmantojiet gan Wi-Fi, gan mobilos tīklus."
 
-msgid "IDS_WFD_BODY_ABOUT_WIFI"
-msgstr "Wi-Fi Direct ļauj daudz ērtāk un vienkāršāk Wi-Fi ierīcēm izveidot tiešu savienojumu, drukāt, kopīgot failus, sinhronizēt un koplietot ekrānu. Izveidojot savienojumu ar ierīcēm, kas atbalsta Wi-Fi Direct, un izmantojot dažādas programmas, var kopīgot saturu, sinhronizēt datus, sazināties ar draugiem, spēlēt spēles, atskaņot audio un video failus, kā arī veikt citas darbības"
+msgid "IDS_WIFI_BODY_SUBNET_MASK"
+msgstr "Apakštīkla maska"
 
-msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
-msgstr "Pievienotās ierīces"
+msgid "IDS_WIFI_BODY_STATIC_IP"
+msgstr "Statiska IP"
 
-msgid "IDS_WFD_BODY_BUSY_DEVICES"
-msgstr "Aizņemtās ierīces"
+msgid "IDS_WIFI_BODY_SSID"
+msgstr "SSID"
 
-msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
-msgstr "Izveidots savien. ar citu ierīci"
+msgid "IDS_WIFI_BODY_SORT_BY"
+msgstr "Kārtot pēc"
 
-msgid "IDS_WIFI_POP_AP_DISCONNECTING_ING"
-msgstr "Atvieno..."
+msgid "IDS_WIFI_BODY_SCANNING_ING"
+msgstr "Meklē..."
 
-msgid "IDS_WFD_POP_CONNECTING"
+msgid "IDS_WIFI_BODY_RECEIVE_NOTIFICATIONS_WHEN_NETWORKS_ARE_AVAILABLE"
+msgstr "Saņemt paziņojumus, kad tīkli ir pieejami"
+
+msgid "IDS_WIFI_BODY_PROXY_PORT"
+msgstr "Starpniekservera ports"
+
+msgid "IDS_WIFI_BODY_NAME"
+msgstr "Vārds"
+
+msgid "IDS_WIFI_BODY_MAC_ADDRESS"
+msgstr "MAC adrese"
+
+msgid "IDS_WIFI_BODY_IP_ADDRESS"
+msgstr "IP adrese"
+
+msgid "IDS_WIFI_BODY_IDENTITY"
+msgstr "Identitāte"
+
+msgid "IDS_WIFI_BODY_GATEWAY_ADDRESS"
+msgstr "Vārtejas adrese"
+
+msgid "IDS_WIFI_BODY_ENTER_IDENTITY"
+msgstr "Ievadiet identitāti."
+
+msgid "IDS_WIFI_BODY_EAP_METHOD"
+msgstr "EAP metode"
+
+msgid "IDS_WIFI_BODY_EAP"
+msgstr "EAP"
+
+msgid "IDS_WIFI_BODY_DNS_2"
+msgstr "DNS 2"
+
+msgid "IDS_WIFI_BODY_DNS_1"
+msgstr "DNS 1"
+
+msgid "IDS_WIFI_BODY_CONNECTING_ING"
 msgstr "Savieno..."
 
-msgid "IDS_WFD_WAITING_FOR_CONNECT"
+msgid "IDS_WIFI_BODY_CONNECT"
+msgstr "Savienot"
+
+msgid "IDS_WIFI_BODY_CONFIGURATION_SAVED_M_STATUS"
+msgstr "Saglabāts"
+
+msgid "IDS_WIFI_BODY_A_WI_FI_NETWORK_HAS_BEEN_DETECTED_YOU_WILL_BE_CONNECTED"
+msgstr "Noteikts Wi-Fi tīkls. Tiks izveidots savienojums."
+
+msgid "IDS_WIFI_BODY_ADVANCED_SETTINGS"
+msgstr "Papildu iestatījumi"
+
+msgid "IDS_COM_SK_NO"
+msgstr "Nē"
+
+msgid "IDS_COM_POP_SECURITY_POLICY_RESTRICTS_USE_OF_WI_FI"
+msgstr "Drošības politika ierobežo Wi-Fi lietošanu."
+
+msgid "IDS_WIFI_SBODY_TAP_HERE_TO_CONNECT"
+msgstr "Pieskarieties šeit, lai izveidotu savienojumu."
+
+msgid "IDS_WIFI_POP_YOUR_DEVICE_IS_CONNECTING_TO_P1SS_HOWEVER_THIS_NETWORK_MAY_NOT_PROVIDE_INTERNET_ACCESS_MSG"
+msgstr "Jūsu ierīce veido savienojumu ar %1$s. Taču šis tīkls var nenodrošināt piekļuvi internetam.\nPieskarieties pie Labi, lai šobrīd saglabātu savienojumu ar %1$s, bet vienlaikus neļautu turpmāk viedajai tīkla pārslēgšanai veidot savienojumu ar šo tīklu."
+
+msgid "IDS_WIFI_POP_BOTH_WI_FI_AND_MOBILE_AP_CANNOT_BE_ACTIVATED_AT_THE_SAME_TIME_DEACTIVATE_MOBILE_AP_Q"
+msgstr "Vienlaikus nevar aktivizēt Wi-Fi un Mobile AP. Vai deaktivizēt Mobile AP?"
+
+msgid "IDS_WIFI_HEADER_SIGN_IN_TO_WI_FI_NETWORK_ABB"
+msgstr "Pierakstieties Wi-Fi tīk."
+
+msgid "IDS_WIFI_HEADER_INTERNET_MAY_NOT_BE_AVAILABLE_ABB"
+msgstr "Internets var nebūt pieejams"
+
+msgid "IDS_WIFI_BUTTON_DONT_ASK_AGAIN"
+msgstr "Vairs nevaicāt"
+
+msgid "IDS_WIFI_BODY_OPEN_WI_FI_SETTINGS_ABB"
+msgstr "Atvērt Wi-Fi iestatījumus"
+
+msgid "IDS_BT_BODY_NO_DEVICES_FOUND_ABB"
+msgstr "Nav atrasta neviena ierīce"
+
+msgid "IDS_BR_SK_YES"
+msgstr "Jā"
+
+msgid "IDS_BR_SK_NO"
+msgstr "Nē"
+
+msgid "IDS_BR_SK_CANCEL"
+msgstr "Atcelt"
+
+msgid "IDS_ST_HEADER_RENAME_DEVICE"
+msgstr "Pārdēvēt ierīci"
+
+msgid "IDS_ST_HEADER_MY_DEVICE_NAME"
+msgstr "Manas ierīces nosaukums"
+
+msgid "IDS_COM_POP_FAILED"
+msgstr "Neizdevās."
+
+msgid "IDS_COM_POP_CANCEL"
+msgstr "Atcelt"
+
+msgid "IDS_COM_BODY_CONNECTED_M_STATUS"
+msgstr "Savienots"
+
+msgid "IDS_BR_SK_OK"
+msgstr "Labi"
+
+msgid "IDS_ST_POP_DEVICE_NAMES_ARE_DISPLAYED_TO_DISTINGUISH_EACH_OF_THE_DEVICES_AVAILABLE_MSG"
+msgstr "Tiek parādīti ierīču nosaukumi, lai atšķirtu katru ierīci, kas pieejama tuvējo ierīču sarakstā vai izmantojot Bluetooth, Wi-Fi Direct un citas metodes."
+
+msgid "IDS_ST_SK_RENAME"
+msgstr "Pārdēvēt"
+
+msgid "IDS_ST_BODY_TAP_TO_CHANGE_SETTINGS"
+msgstr "Pieskarieties, lai mainītu iestatījumus"
+
+msgid "IDS_ST_POP_INVALID_CHARACTER_ENTERED_TRY_AGAIN"
+msgstr "Ievadīta nederīga rakstzīme. Mēģiniet vēlreiz"
+
+msgid "IDS_ST_POP_NOT_SUPPORTED"
+msgstr "Nav nodrošināts."
+
+msgid "IDS_CHATON_BODY_AVAILABLE"
+msgstr "Pieejams"
+
+msgid "IDS_CHATON_HEADER_CONNECTION_FAILED_ABB2"
+msgstr "Savienoj. neizdevās"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_DEVICES"
+msgstr "Wi-Fi Direct ierīces"
+
+msgid "IDS_WIFI_POP_TAP_TO_CONNECT"
+msgstr "Pieskarieties, lai izveidotu savienojumu."
+
+msgid "IDS_WIFI_SK2_CANCEL_CONNECTION"
+msgstr "Atcelt savienojumu"
+
+msgid "IDS_ST_HEADER_CONNECTED_DEVICES"
+msgstr "Pievienotās ierīces"
+
+msgid "IDS_WIFI_BODY_SELECT_ALL"
+msgstr "Izv. visu"
+
+msgid "IDS_ST_HEADER_BUSY_DEVICES"
+msgstr "Aizņemtās ierīces"
+
+msgid "IDS_ST_BODY_CONNECTED_WITH_ANOTHER_DEVICE_ABB"
+msgstr "Izveidots savien. ar citu ierīci"
+
+msgid "IDS_WIFI_BODY_WAITING_FOR_CONNECTION_M_STATUS_ABB"
 msgstr "Gaida savienojumu"
 
-msgid "IDS_WFD_FAILED_TO_CONNECT"
-msgstr "Neizdevās izveidot savienojumu"
+msgid "IDS_ST_POP_FAILED_TO_CONNECT"
+msgstr "Neizdevās izveidot savienojumu."
 
-msgid "IDS_WFD_BUTTON_MULTI"
+msgid "IDS_WIFI_BUTTON_MULTI_CONNECT"
 msgstr "Vairāki savienojumi"
 
-msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgid "IDS_WIFI_BUTTON_DISCONNECT_ALL"
 msgstr "Atvienot visu"
 
-msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgid "IDS_WIFI_SK_DISCONNECT"
 msgstr "Atvienot"
-
-msgid "IDS_WFD_NOCONTENT"
-msgstr "Nav atrasta neviena ierīce"
 
 msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE"
 msgstr "Pēc lietošanas deaktivizēt Wi-Fi Direct"
@@ -271,104 +346,126 @@ msgstr "Lai taupītu enerģiju, pēc lietošanas deaktivizēt Wi-Fi Direct"
 msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY_ABB"
 msgstr "Deakt. Wi-Fi Direct pēc liet., lai taup. enerģiju"
 
-msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES"
-msgstr "Meklēt Wi-Fi Direct ierīces"
+msgid "IDS_WIFI_BODY_PS_IS_REQUESTING_A_WI_FI_DIRECT_CONNECTION_ALLOW_Q"
+msgstr "%s pieprasa Wi-Fi Direct savienojumu. Vai atļaut?"
 
-msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES_CURRENT_NETWORK_WILL_BE_DISCONNECTED"
-msgstr "Meklēt Wi-Fi Direct ierīces. Pašreizējais tīkls tiks atvienots"
+msgid "IDS_WIFI_BODY_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_CONNECTION_CONTINUE_Q"
+msgstr "Izmantojot Wi-Fi Direct, tiks pārtraukts pašreizējais Wi-Fi savienojums. Vai turpināt?"
 
-msgid "IDS_WIFI_BODY_SEARCH_FOR_WI_FI_DIRECT_DEVICES_OR_SEARCH_FOR_DEVICES_ON_OTHER_WI_FI_NETWORKS"
-msgstr "Meklēt Wi-Fi Direct ierīces vai ierīces citos Wi-Fi tīklos"
+msgid "IDS_WIFI_BODY_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_TETHERING_CONTINUE_Q"
+msgstr "Izmantojot Wi-Fi Direct, tiks pārtraukta pašreizējā Wi-Fi piesaiste. Vai turpināt?"
 
-msgid "IDS_WFD_POP_WIFI_OFF"
-msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection. Continue?"
-
-msgid "IDS_WFD_POP_HOTSPOT_OFF"
-msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
-
-msgid "IDS_WIFI_BODY_WI_FI_DIRECT_CONNECTED"
-msgstr "Izveidots Wi-Fi Direct savienojums"
-
-msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_CONNECTION_ABB"
 msgstr "Wi-Fi Direct savienojums"
-
-msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_SETTINGS"
-msgstr "Wi-Fi Direct iestatījumi"
-
-msgid "IDS_WIFI_MBODY_CONFIGURE_WI_FI_DIRECT"
-msgstr "Konfigurēt Wi-Fi Direct"
 
 msgid "IDS_WIFI_MBODY_DISCONNECT_WI_FI_DIRECT"
 msgstr "Atvienot Wi-Fi Direct"
 
-msgid "IDS_WIFI_MBODY_WI_FI_DIRECT_STATUS"
-msgstr "Wi-Fi Direct statuss"
-
-msgid "IDS_WIFI_OPT1_WI_FI_DIRECT"
-msgstr "Wi-Fi Direct"
-
-msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgid "IDS_WIFI_POP_CANCEL_WI_FI_DIRECT_CONNECTION_Q"
 msgstr "Vai atcelt Wi-Fi Direct savienojumu?"
 
-msgid "IDS_WIFI_POP_CONNECTING_TO_WI_FI_NETWORK_WILL_DISCONNECT_DEVICE_CONNECTED_VIA_WI_FI_DIRECT"
-msgstr "Izveidojot savienojumu ar Wi-Fi tīklu, tiks atvienota ar Wi-Fi Direct pievienotā ierīce"
-
 msgid "IDS_WIFI_POP_CONNECT_TO_OTHER_DEVICES_VIA_WI_FI_DIRECT"
-msgstr "Izveidot savienojumu ar citām ierīcēm, izmantojot Wi-Fi Direct"
+msgstr "Izveidot savienojumu ar citām ierīcēm, izmantojot Wi-Fi Direct."
 
-msgid "IDS_WIFI_POP_DISABLE_MOBILE_AP_TO_USE_WI_FI_DIRECT_Q"
-msgstr "Vai deaktivizēt Mobile AP, lai lietotu Wi-Fi Direct?"
-
-msgid "IDS_WIFI_POP_DISCONNECT_CURRENT_WI_FI_DIRECT_DEVICE_TO_SEARCH_NETWORKS"
-msgstr "Atvienojiet pašreizējo Wi-Fi Direct ierīci, lai meklētu tīklus"
-
-msgid "IDS_WIFI_POP_ENABLING_WI_FI_DIRECT_WILL_TURN_OFF_WI_FI_AND_DISABLE_THE_PORTABLE_WI_FI_HOTSPOT"
-msgstr "Iespējojot funkciju „Wi-Fi Direct”, tiks izslēgts „Wi-Fi” un atspējota pārvietojamā „Wi-Fi” tīklāja funkcija"
-
-msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISABLE_PORTABLE_WI_FI_HOTSPOT"
-msgstr "Izmantojot Wi-Fi Direct, tiks deaktivizēts pārvietojamais Wi-Fi tīklājs"
-
-msgid "IDS_WIFI_POP_WI_FI_DIRECT_ALREADY_IN_USE_TRY_LATER"
-msgstr "Wi-Fi Direct jau tiek lietots. Mēģiniet vēlāk"
-
-msgid "IDS_WIFI_POP_WI_FI_DIRECT_CONNECTION_REQUEST_AUTOMATICALLY_DENIED_TO_CONNECT_TURN_OFF_ALLSHARE_CAST"
-msgstr "Wi-Fi Direct savienojuma pieprasījums tika automātiski noraidīts. Lai izveidotu savienojumu, izslēdziet AllShare Cast"
-
-msgid "IDS_WIFI_POP_WI_FI_DIRECT_WILL_BE_DISCONNECTED_CONTINUE_Q"
-msgstr "Wi-Fi Direct tiks atvienots. Vai turpināt?"
-
-msgid "IDS_WIFI_POP_WI_FI_IS_DISCONNECTED_WHILE_WI_FI_DIRECT_CONNECTS"
-msgstr "Wi-Fi Direct savienojuma izveides laikā, Wi-Fi ir atvienots"
-
-msgid "IDS_WIFI_SK1_SEARCH_FOR_WI_FI_DIRECT_DEVICES"
-msgstr "Meklēt Wi-Fi Direct ier."
-
-msgid "IDS_WFD_BODY_NO_DEVICES"
-msgstr "Nav ierīču"
+msgid "IDS_WIFI_POP_THERE_HAS_BEEN_NO_ACTIVITY_FOR_PD_MINUTES_SINCE_WI_FI_DIRECT_WAS_ENABLED_MSG"
+msgstr "Kopš Wi-Fi Direct aktivizēšanas %d minūtes nav veikta neviena darbība. Lai pagarinātu akumulatora darbības laiku, Wi-Fi Direct tika deaktivizēts."
 
 msgid "IDS_WIFI_SK4_SCAN"
 msgstr "Meklēt"
 
-msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgid "IDS_WIFI_SK_STOP"
 msgstr "Apturēt"
 
-msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
-msgstr "Deaktivizēšana neizdevās"
+msgid "IDS_WIFI_POP_DEACTIVATION_FAILED"
+msgstr "Deaktivizēšana neizdevās."
 
-msgid "IDS_WFD_POP_ACTIVATE_FAIL"
-msgstr "Aktivizēšana neizdevās"
+msgid "IDS_WIMAX_POP_ACTIVATION_FAILED"
+msgstr "Aktivizēšana neizdevās."
 
-msgid "IDS_WFD_POP_DISCONNECT"
+msgid "IDS_WIFI_POP_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_CONTINUE_Q"
 msgstr "Pašreizējais savienojums tiks pārtraukts. Vai turpināt?"
 
-msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgid "IDS_ST_POP_YOU_CAN_CONNECT_UP_TO_PD_DEVICES_AT_THE_SAME_TIME"
+msgstr "Vienlaikus varat izveidot savienojumu ar %d ierīcēm."
+
+msgid "IDS_WIFI_HEADER_AVAILABLE_DEVICES_ABB"
 msgstr "Pieejamās ierīces"
 
-msgid "IDS_WFD_POP_MULTI_CONNECT"
-msgstr "Vienlaikus varat izveidot savienojumu ar %d ierīcēm"
+msgid "IDS_WIFI_POP_FAILED_TO_CONNECT_TO_PS"
+msgstr "Neizdevās izveidot savienojumu ar %s."
 
-msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
-msgstr "Parole ir par garu"
+msgid "IDS_ST_POP_DEVICE_CONNECTED_TO_ANOTHER_DEVICE"
+msgstr "Ierīcē ir izveidots savienojums ar citu ierīci."
 
-msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
-msgstr "Parole par īsu"
+msgid "IDS_WIFI_BODY_CONNECTED_TO_PS"
+msgstr "Izveidots savienojums ar %s."
+
+msgid "IDS_COM_BODY_PINS_DO_NOT_MATCH"
+msgstr "PIN kodi nesakrīt."
+
+msgid "IDS_COM_POP_DEACTIVATING_ING"
+msgstr "Deaktivizē..."
+
+msgid "IDS_WIFI_BODY_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_SO_THAT_SCANNING_CAN_START_CONTINUE_Q"
+msgstr "Lai varētu sākt meklēšanu, pašreizējais savienojums tiks pārtraukts. Vai turpināt?"
+
+msgid "IDS_WIFI_HEADER_DEVICES_THAT_FAILED_TO_CONNECT"
+msgstr "Ierīces, kurām neizdevās izveidot savienojumu"
+
+msgid "IDS_WIFI_POP_ENTER_PIN_TO_CONNECT_TO_PS"
+msgstr "Lai izveidotu savienojumu ar %s, ievadiet PIN kodu."
+
+msgid "IDS_WIFI_POP_CONNECT_TO_PS_IN_PD_SECONDS"
+msgstr "Izveidot savienojumu ar %s pēc %d sekundēm."
+
+msgid "IDS_WIFI_POP_PIN_CODE_PS"
+msgstr "PIN kods %s"
+
+msgid "IDS_DLNA_HEADER_SELECT_DEVICES_ABB"
+msgstr "Izvēlieties ierīces"
+
+msgid "IDS_WIFI_BODY_THE_WI_FI_DIRECT_CONNECTION_HAS_BEEN_LOST"
+msgstr "Wi-Fi Direct savienojums ir zaudēts."
+
+msgid "IDS_ST_BODY_CONNECT_WITH_PS_IN_PD_SECS_ABB"
+msgstr "Pēc %d sek. izv. savien. ar %s."
+
+msgid "IDS_ST_BODY_RENAME_DEVICE_ABB"
+msgstr "Pārdēvēt ierīci"
+
+msgid "IDS_WIFI_POP_PIN"
+msgstr "PIN"
+
+msgid "IDS_WIFI_HEADER_UNABLE_TO_CONNECT_ABB2"
+msgstr "Nevar izveidot savienojumu"
+
+msgid "IDS_WIFI_BUTTON_STOP_CONNECTION_ABB"
+msgstr "Pārtraukt savien."
+
+msgid "IDS_WIFI_BUTTON_ALLOW"
+msgstr "Atļaut"
+
+msgid "IDS_COM_POP_ACTIVATING"
+msgstr "Aktivizē..."
+
+msgid "IDS_WIFI_SK_CONNECT"
+msgstr "Savienot"
+
+msgid "IDS_WIFI_BODY_CONNECTED"
+msgstr "Savienots."
+
+msgid "IDS_STU_HEADER_ENTER_DEVICE_NAME"
+msgstr "Ievadiet ierīces nosaukumu"
+
+msgid "IDS_ST_POP_CONNECTED_WITH_PD_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "Izmantojot Wi-Fi Direct, ir izveidots savienojums ar %d ierīcēm."
+
+msgid "IDS_WIFI_SBODY_NOT_CONNECTED_M_STATUS_ABB"
+msgstr "Nav pievienots"
+
+msgid "IDS_WIFI_POP_THIS_WI_FI_DIRECT_CONNECTION_WILL_BE_CANCELLED"
+msgstr "Šis Wi-Fi Direct savienojums tiks atcelts."
+
+msgid "IDS_WIFI_BODY_TO_SAVE_BATTERY_POWER_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "Lai taupītu akumulatora enerģiju, pēc lietošanas deaktivizējiet Wi-Fi Direct."
+

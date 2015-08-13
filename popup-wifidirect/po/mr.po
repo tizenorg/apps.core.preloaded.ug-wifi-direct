@@ -1,0 +1,249 @@
+msgid "IDS_BT_BODY_NO_DEVICES_FOUND_ABB"
+msgstr "कोणतीही उपकरणे सापडली नाहीत"
+
+msgid "IDS_ST_HEADER_MY_DEVICE_NAME"
+msgstr "माझे उपकरण नाव"
+
+msgid "IDS_ST_HEADER_RENAME_DEVICE"
+msgstr "उपकरणाचे नामांतर करा"
+
+msgid "IDS_ST_POP_DEVICE_NAMES_ARE_DISPLAYED_TO_DISTINGUISH_EACH_OF_THE_DEVICES_AVAILABLE_MSG"
+msgstr "जवळ पासच्या उपकरणच्या सूचीमध्ये उपलब्ध असलेल्या प्रत्येक उपकरणला वेगळे दशविण्यासाठी उपकरणची नावे, आणि ब्लुटूथ, Wi-Fi Direct मार्गे, आणि इतर पध्दतीने प्रदर्शित केली जातील."
+
+msgid "IDS_COM_POP_MAXIMUM_NUMBER_OF_CHARACTERS_REACHED"
+msgstr "वर्णांच्या अधिकतम संख्येपर्यंत पोहोचले."
+
+msgid "IDS_WIFI_BODY_CONNECTING_ING"
+msgstr "जोडले जात आहे..."
+
+msgid "IDS_BR_SK_CANCEL"
+msgstr "रद्द"
+
+msgid "IDS_BR_SK_YES"
+msgstr "होय"
+
+msgid "IDS_BR_SK_NO"
+msgstr "नाही"
+
+msgid "IDS_WIFI_SK2_OK"
+msgstr "ठीक"
+
+msgid "IDS_WIFI_SK_CANCEL"
+msgstr "रद्द"
+
+msgid "IDS_COM_POP_FAILED"
+msgstr "नापास."
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "सक्रिय"
+
+msgid "IDS_ST_HEADER_PD_SELECTED"
+msgstr "%d निवडले"
+
+msgid "IDS_COM_BODY_CONNECTED_M_STATUS"
+msgstr "जोडले"
+
+msgid "IDS_ST_POP_INVALID_CHARACTER_ENTERED_TRY_AGAIN"
+msgstr "अवैध वर्ण प्रविष्ट केले. पुन्हा प्रयत्न करा."
+
+msgid "IDS_ST_BODY_TAP_TO_CHANGE_SETTINGS"
+msgstr "सेटिंग्स बदलण्यासाठी टॅप करा."
+
+msgid "IDS_COM_POP_CANCEL"
+msgstr "रद्द"
+
+msgid "IDS_BR_SK_OK"
+msgstr "ठीक"
+
+msgid "IDS_ST_POP_NOT_SUPPORTED"
+msgstr "समर्थन नसलेला."
+
+msgid "IDS_COM_POP_SECURITY_POLICY_RESTRICTS_USE_OF_WI_FI"
+msgstr "सुरक्षा धोरण Wi-Fi चा वापर प्रतिबं‍धित करते."
+
+msgid "IDS_ST_SK_RENAME"
+msgstr "नाव बदला"
+
+msgid "IDS_CHATON_BODY_AVAILABLE"
+msgstr "उपलब्ध"
+
+msgid "IDS_CHATON_HEADER_CONNECTION_FAILED_ABB2"
+msgstr "कनेक्शन अयशस्वी"
+
+msgid "IDS_COM_SK_NO"
+msgstr "नाही"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_DEVICES"
+msgstr "Wi-Fi Direct उपकरणे"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WIFI_POP_TAP_TO_CONNECT"
+msgstr "जोडण्यासाठी टॅप करा."
+
+msgid "IDS_WIFI_SK2_CANCEL_CONNECTION"
+msgstr "कनेक्शन रद्द करा"
+
+msgid "IDS_ST_HEADER_CONNECTED_DEVICES"
+msgstr "जोडलेली उपकरणे"
+
+msgid "IDS_WIFI_BODY_SELECT_ALL"
+msgstr "सर्व निवडा"
+
+msgid "IDS_ST_HEADER_BUSY_DEVICES"
+msgstr "व्यस्त उपकरणे"
+
+msgid "IDS_ST_BODY_CONNECTED_WITH_ANOTHER_DEVICE_ABB"
+msgstr "अन्य उपकरणला कनेक्ट केले"
+
+msgid "IDS_WIFI_BODY_WAITING_FOR_CONNECTION_M_STATUS_ABB"
+msgstr "कनेक्शन साठी प्रतीक्षारत"
+
+msgid "IDS_ST_POP_FAILED_TO_CONNECT"
+msgstr "कनेक्ट करण्यास अयशस्वी."
+
+msgid "IDS_WIFI_BUTTON_MULTI_CONNECT"
+msgstr "बहु-कनेक्ट"
+
+msgid "IDS_WIFI_BUTTON_DISCONNECT_ALL"
+msgstr "सर्व डिस्कनेक्ट करा"
+
+msgid "IDS_WIFI_SK_DISCONNECT"
+msgstr "खंडीत"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "वापरा नंतर Wi-Fi Direct अक्षम करा"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_ABB"
+msgstr "Wi-Fi Direct वापरा नंतर अक्षम करेल"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY"
+msgstr "वापरा नंतर बॅटरी जतन करण्यास Wi-Fi Direct अक्षम करा"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY_ABB"
+msgstr "वापरल्या नंतर बॅटरी जतन करण्‍यास Wi-Fi Direct अक्षम करेल"
+
+msgid "IDS_WIFI_BODY_PS_IS_REQUESTING_A_WI_FI_DIRECT_CONNECTION_ALLOW_Q"
+msgstr "%s एका Wi-Fi Direct कनेक्शनसाठी विनंती करत आहेत. अनुमती द्यायची?"
+
+msgid "IDS_WIFI_BODY_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_CONNECTION_CONTINUE_Q"
+msgstr "Wi-Fi Direct वापरून सद्य Wi-Fi कनेक्शन डिस्कनेक्ट होईल. सुरू ठेवायचे?"
+
+msgid "IDS_WIFI_BODY_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_TETHERING_CONTINUE_Q"
+msgstr "Wi-Fi Direct वापरून सद्य Wi-Fi टेथरिंग डिस्कनेक्ट होईल. सुरू ठेवायचे?"
+
+msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_CONNECTION_ABB"
+msgstr "Wi-Fi Direct कनेक्शन"
+
+msgid "IDS_WIFI_MBODY_DISCONNECT_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct डिसकनेक्ट"
+
+msgid "IDS_WIFI_POP_CANCEL_WI_FI_DIRECT_CONNECTION_Q"
+msgstr "Wi-Fi Direct कनेक्शन रद्द करायचे?"
+
+msgid "IDS_WIFI_POP_CONNECT_TO_OTHER_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct द्वारे अन्य उपकरणशी कनेक्ट करा."
+
+msgid "IDS_WIFI_POP_THERE_HAS_BEEN_NO_ACTIVITY_FOR_PD_MINUTES_SINCE_WI_FI_DIRECT_WAS_ENABLED_MSG"
+msgstr "येथे %d मिनिटांसाठी कोणतीच क्रिया नाही कारण Wi-Fi Direct सक्रिय होते. बॅटरी लाइफ वाढवण्यास, Wi-Fi Direct अक्षम केले आहे."
+
+msgid "IDS_WIFI_SK4_SCAN"
+msgstr "स्कॅन करा"
+
+msgid "IDS_WIFI_SK_STOP"
+msgstr "थांबा"
+
+msgid "IDS_WIFI_POP_DEACTIVATION_FAILED"
+msgstr "निष्क्रियता अयशस्वी."
+
+msgid "IDS_WIMAX_POP_ACTIVATION_FAILED"
+msgstr "सक्रीयकरण अयशस्वी."
+
+msgid "IDS_WIFI_POP_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_CONTINUE_Q"
+msgstr "सध्याची जोडणी खंडित होईल. पुढे चालु ठेवायचे?"
+
+msgid "IDS_ST_POP_YOU_CAN_CONNECT_UP_TO_PD_DEVICES_AT_THE_SAME_TIME"
+msgstr "आपण एकाच वेळी %d उपकरणांन पर्यंत कनेक्ट करू शकता."
+
+msgid "IDS_WIFI_HEADER_AVAILABLE_DEVICES_ABB"
+msgstr "उपलब्ध उपकरणे"
+
+msgid "IDS_WIFI_POP_FAILED_TO_CONNECT_TO_PS"
+msgstr "%s ला कनेक्ट करण्यात अपयश."
+
+msgid "IDS_ST_POP_DEVICE_CONNECTED_TO_ANOTHER_DEVICE"
+msgstr "उपकरण अन्य उपकरणला कनेक्ट केले."
+
+msgid "IDS_WIFI_BODY_CONNECTED_TO_PS"
+msgstr "%s ला जोडले."
+
+msgid "IDS_COM_BODY_PINS_DO_NOT_MATCH"
+msgstr "PIN जुळले नाहीत."
+
+msgid "IDS_COM_POP_DEACTIVATING_ING"
+msgstr "निष्क्रिय करणे चालू आहे..."
+
+msgid "IDS_WIFI_BODY_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_SO_THAT_SCANNING_CAN_START_CONTINUE_Q"
+msgstr "सद्य कनेक्शन डिस्कनेक्ट केले जाईल जेणे करून स्कॅनिंग सुरू होवू शकेल. चालू ठेवायचे?"
+
+msgid "IDS_WIFI_HEADER_DEVICES_THAT_FAILED_TO_CONNECT"
+msgstr "ज्या उपकरणांना कनेक्ट करण्यात अयशस्वी"
+
+msgid "IDS_WIFI_POP_ENTER_PIN_TO_CONNECT_TO_PS"
+msgstr "%s ला कनेक्ट करण्यासाठी PIN प्रविष्ट करा."
+
+msgid "IDS_WIFI_POP_CONNECT_TO_PS_IN_PD_SECONDS"
+msgstr "%d सेकंदांमध्ये %s शी कनेक्ट करा."
+
+msgid "IDS_WIFI_POP_PIN_CODE_PS"
+msgstr "PIN कोड %s"
+
+msgid "IDS_DLNA_HEADER_SELECT_DEVICES_ABB"
+msgstr "उपकरणे निवडा"
+
+msgid "IDS_WIFI_BODY_THE_WI_FI_DIRECT_CONNECTION_HAS_BEEN_LOST"
+msgstr "Wi-Fi Direct जोडणी गमावली आहे."
+
+msgid "IDS_ST_BODY_CONNECT_WITH_PS_IN_PD_SECS_ABB"
+msgstr "%s शी %d सेकंदांमध्ये कनेक्ट करा."
+
+msgid "IDS_ST_BODY_RENAME_DEVICE_ABB"
+msgstr "उपकरणाचे नामांतर करा"
+
+msgid "IDS_WIFI_POP_PIN"
+msgstr "PIN"
+
+msgid "IDS_WIFI_HEADER_UNABLE_TO_CONNECT_ABB2"
+msgstr "कनेक्‍ट करण्‍यात अक्षम"
+
+msgid "IDS_WIFI_BUTTON_STOP_CONNECTION_ABB"
+msgstr "कनेक्‍शन थांबवा"
+
+msgid "IDS_WIFI_BUTTON_ALLOW"
+msgstr "अनुमती द्या"
+
+msgid "IDS_COM_POP_ACTIVATING"
+msgstr "सक्रिय केली जात आहे..."
+
+msgid "IDS_WIFI_SK_CONNECT"
+msgstr "जोडा"
+
+msgid "IDS_WIFI_BODY_CONNECTED"
+msgstr "जोडले."
+
+msgid "IDS_STU_HEADER_ENTER_DEVICE_NAME"
+msgstr "उपकरण नाव प्रविष्‍ट करा"
+
+msgid "IDS_ST_POP_CONNECTED_WITH_PD_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct द्वारे %d उपकरणशी कनेक्ट केले."
+
+msgid "IDS_WIFI_SBODY_NOT_CONNECTED_M_STATUS_ABB"
+msgstr "कनेक्ट केलेले नाही"
+
+msgid "IDS_WIFI_POP_THIS_WI_FI_DIRECT_CONNECTION_WILL_BE_CANCELLED"
+msgstr "हे Wi-Fi Direct कनेक्शन रद्द करण्यात येईल."
+
+msgid "IDS_WIFI_BODY_TO_SAVE_BATTERY_POWER_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "बॅटरी पॉवर जतन करण्यासाठी, वापरानंतर Wi-Fi Direct अक्षम करा."
+

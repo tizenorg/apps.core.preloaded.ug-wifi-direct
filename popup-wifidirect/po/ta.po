@@ -1,0 +1,249 @@
+msgid "IDS_BT_BODY_NO_DEVICES_FOUND_ABB"
+msgstr "சாதனங்கள் எதுவும் கண்டறியப்படவில்லை"
+
+msgid "IDS_ST_HEADER_MY_DEVICE_NAME"
+msgstr "எனது சாதனப் பெயர்"
+
+msgid "IDS_ST_HEADER_RENAME_DEVICE"
+msgstr "சாதனம் மறுபெயரிடுக"
+
+msgid "IDS_ST_POP_DEVICE_NAMES_ARE_DISPLAYED_TO_DISTINGUISH_EACH_OF_THE_DEVICES_AVAILABLE_MSG"
+msgstr "அருகிலுள்ள சாதனங்களில் கிடைக்கின்ற மற்றும் ப்ளூடூத், Wi-Fi Direct மற்றும் பிற முறைகள் வழியாக சாதனங்கள் ஒவ்வொன்றையும் வேறுபடுத்துவதற்கு சாதனப் பெயர்கள் காட்டப்படுகின்றன."
+
+msgid "IDS_COM_POP_MAXIMUM_NUMBER_OF_CHARACTERS_REACHED"
+msgstr "அதிகபட்ச எழுத்துக்களின் எண்ணிக்கையை அடைந்தது."
+
+msgid "IDS_WIFI_BODY_CONNECTING_ING"
+msgstr "இணைகிறது…"
+
+msgid "IDS_BR_SK_CANCEL"
+msgstr "ரத்து"
+
+msgid "IDS_BR_SK_YES"
+msgstr "ஆம்"
+
+msgid "IDS_BR_SK_NO"
+msgstr "இல்லை"
+
+msgid "IDS_WIFI_SK2_OK"
+msgstr "சரி"
+
+msgid "IDS_WIFI_SK_CANCEL"
+msgstr "ரத்து"
+
+msgid "IDS_COM_POP_FAILED"
+msgstr "தோல்வியுற்றது."
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "செயல்படுத்துக"
+
+msgid "IDS_ST_HEADER_PD_SELECTED"
+msgstr "%d தேர்வாகியுள்ளன"
+
+msgid "IDS_COM_BODY_CONNECTED_M_STATUS"
+msgstr "இணைக்கபட்டது"
+
+msgid "IDS_ST_POP_INVALID_CHARACTER_ENTERED_TRY_AGAIN"
+msgstr "தவறான எழுத்து உள்ளிடப்பட்டது. மீண்டும் முயலுக."
+
+msgid "IDS_ST_BODY_TAP_TO_CHANGE_SETTINGS"
+msgstr "அமைவுகளை மாற்ற டேப் செய்க."
+
+msgid "IDS_COM_POP_CANCEL"
+msgstr "ரத்து"
+
+msgid "IDS_BR_SK_OK"
+msgstr "சரி"
+
+msgid "IDS_ST_POP_NOT_SUPPORTED"
+msgstr "ஆதரிக்கவில்லை."
+
+msgid "IDS_COM_POP_SECURITY_POLICY_RESTRICTS_USE_OF_WI_FI"
+msgstr "Wi-Fi பயன்படுத்துவதை பாதுகாப்பு கொள்கை தடைசெய்கிறது."
+
+msgid "IDS_ST_SK_RENAME"
+msgstr "மறுபெயர்"
+
+msgid "IDS_CHATON_BODY_AVAILABLE"
+msgstr "கிடைக்கக்கூடிய"
+
+msgid "IDS_CHATON_HEADER_CONNECTION_FAILED_ABB2"
+msgstr "இணைப்பு தோல்வி"
+
+msgid "IDS_COM_SK_NO"
+msgstr "இல்லை"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_DEVICES"
+msgstr "Wi-Fi Direct சாதனங்கள்"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WIFI_POP_TAP_TO_CONNECT"
+msgstr "இணைப்பதற்கு டேப் செய்க."
+
+msgid "IDS_WIFI_SK2_CANCEL_CONNECTION"
+msgstr "இணைப்பை ரத்துசெய்க"
+
+msgid "IDS_ST_HEADER_CONNECTED_DEVICES"
+msgstr "இணைக்கப்பட்ட சாதனங்கள்"
+
+msgid "IDS_WIFI_BODY_SELECT_ALL"
+msgstr "எல்லாம் தேர்வு"
+
+msgid "IDS_ST_HEADER_BUSY_DEVICES"
+msgstr "பிஸியாக உள்ள சாதனங்கள்"
+
+msgid "IDS_ST_BODY_CONNECTED_WITH_ANOTHER_DEVICE_ABB"
+msgstr "மற்றொரு சாதனத்துடன் இணைக்கப்பட்டது"
+
+msgid "IDS_WIFI_BODY_WAITING_FOR_CONNECTION_M_STATUS_ABB"
+msgstr "இணைப்புக்காக காத்திருக்கிறது"
+
+msgid "IDS_ST_POP_FAILED_TO_CONNECT"
+msgstr "இணைப்பு தோல்வி."
+
+msgid "IDS_WIFI_BUTTON_MULTI_CONNECT"
+msgstr "பல-இணைப்பு"
+
+msgid "IDS_WIFI_BUTTON_DISCONNECT_ALL"
+msgstr "அனைத்தையும் துண்டிக்கவும்"
+
+msgid "IDS_WIFI_SK_DISCONNECT"
+msgstr "துண்டி"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "பயன்பாட்டிற்கு பிறகு Wi-Fi Direct செயல்நீக்கவும்"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_ABB"
+msgstr "உபயோகம். பிறகு Wi-Fi Direct செயல்நீக்கு"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY"
+msgstr "மின்கலம் சேமிக்க பயன்பாட்டிற்கு பிறகு Wi-Fi Direct செயல்நீக்கவும்"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY_ABB"
+msgstr "மின்கலம் சேமிக்கவென உபயோகத்திற்கு பிறகு Wi-Fi Direct செயல்நீக்கவும்"
+
+msgid "IDS_WIFI_BODY_PS_IS_REQUESTING_A_WI_FI_DIRECT_CONNECTION_ALLOW_Q"
+msgstr "%s Wi-Fi Direct இணைப்பைக் கோருகிறது. அனுமதிக்கவா?"
+
+msgid "IDS_WIFI_BODY_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_CONNECTION_CONTINUE_Q"
+msgstr "Wi-Fi Direct பயன்படுத்துவது நடப்பு Wi-Fi இணைப்பைத் துண்டிக்கும். தொடரவா?"
+
+msgid "IDS_WIFI_BODY_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_TETHERING_CONTINUE_Q"
+msgstr "Wi-Fi Direct பயன்படுத்துவது நடப்பு Wi-Fi இணைப்பைத் துண்டிக்கும். தொடரவா?"
+
+msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_CONNECTION_ABB"
+msgstr "Wi-Fi Direct இணைப்பு"
+
+msgid "IDS_WIFI_MBODY_DISCONNECT_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct துண்டி."
+
+msgid "IDS_WIFI_POP_CANCEL_WI_FI_DIRECT_CONNECTION_Q"
+msgstr "Wi-Fi Direct இணைப்பை ரத்துசெய்யவா?"
+
+msgid "IDS_WIFI_POP_CONNECT_TO_OTHER_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct வழியே மற்ற சாதனங்களுடன் இணைக்கவும்."
+
+msgid "IDS_WIFI_POP_THERE_HAS_BEEN_NO_ACTIVITY_FOR_PD_MINUTES_SINCE_WI_FI_DIRECT_WAS_ENABLED_MSG"
+msgstr "Wi-Fi Direct செயல்படுத்தப்பட்டிருப்பதில் இருந்து %d நிமிடங்களுக்கு செயல்பாடுகள் எதுவுமில்லை. மின்கல ஆயுளை நீட்டிக்க Wi-Fi Direct செயல்நீக்கப்பட்டது."
+
+msgid "IDS_WIFI_SK4_SCAN"
+msgstr "ஸ்கேன்"
+
+msgid "IDS_WIFI_SK_STOP"
+msgstr "நிறுத்துக"
+
+msgid "IDS_WIFI_POP_DEACTIVATION_FAILED"
+msgstr "செயல்நீக்குதல் தோல்வி."
+
+msgid "IDS_WIMAX_POP_ACTIVATION_FAILED"
+msgstr "செயல்படுத்துவதில் தோல்வி."
+
+msgid "IDS_WIFI_POP_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_CONTINUE_Q"
+msgstr "தற்போதைய இணைப்பு துண்டிக்கப்படும். தொடரவா?"
+
+msgid "IDS_ST_POP_YOU_CAN_CONNECT_UP_TO_PD_DEVICES_AT_THE_SAME_TIME"
+msgstr "ஒரே நேரத்தில் %d சாதனங்கள் வரை நீங்கள் இணைக்கலாம்."
+
+msgid "IDS_WIFI_HEADER_AVAILABLE_DEVICES_ABB"
+msgstr "கிடைக்கும் சாதனங்கள்"
+
+msgid "IDS_WIFI_POP_FAILED_TO_CONNECT_TO_PS"
+msgstr "%s உடன் இணைத்தல் தோல்வி."
+
+msgid "IDS_ST_POP_DEVICE_CONNECTED_TO_ANOTHER_DEVICE"
+msgstr "சாதனம் மற்றொரு சாதனத்துடன் இணைக்கப்பட்டது."
+
+msgid "IDS_WIFI_BODY_CONNECTED_TO_PS"
+msgstr "%s உடன் இணைக்கப்பட்டது."
+
+msgid "IDS_COM_BODY_PINS_DO_NOT_MATCH"
+msgstr "PINs பொருந்தவில்லை."
+
+msgid "IDS_COM_POP_DEACTIVATING_ING"
+msgstr "செயலிழக்கிறது..."
+
+msgid "IDS_WIFI_BODY_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_SO_THAT_SCANNING_CAN_START_CONTINUE_Q"
+msgstr "ஸ்கேனிங் துவங்கும் விதத்தில் தற்போதைய இணைப்பு துண்டிக்கப்படும். தொடரவா?"
+
+msgid "IDS_WIFI_HEADER_DEVICES_THAT_FAILED_TO_CONNECT"
+msgstr "இணைப்பதில் தோல்வியுற்ற சாதனங்கள்"
+
+msgid "IDS_WIFI_POP_ENTER_PIN_TO_CONNECT_TO_PS"
+msgstr "%s உடன் இணைக்க PIN உள்ளிடுக."
+
+msgid "IDS_WIFI_POP_CONNECT_TO_PS_IN_PD_SECONDS"
+msgstr "%d நொடிகளில் %s என்பதில் இணைக்கவும்."
+
+msgid "IDS_WIFI_POP_PIN_CODE_PS"
+msgstr "PIN %s"
+
+msgid "IDS_DLNA_HEADER_SELECT_DEVICES_ABB"
+msgstr "சாதனங்களை தேர்வு செய்க"
+
+msgid "IDS_WIFI_BODY_THE_WI_FI_DIRECT_CONNECTION_HAS_BEEN_LOST"
+msgstr "Wi-Fi Direct இணைப்பு தவறிவிட்டது."
+
+msgid "IDS_ST_BODY_CONNECT_WITH_PS_IN_PD_SECS_ABB"
+msgstr "%s உடன் %d விநாடிகளில் இணைக்கவும்."
+
+msgid "IDS_ST_BODY_RENAME_DEVICE_ABB"
+msgstr "சாதனத்தை மறுபெயரிடவும்"
+
+msgid "IDS_WIFI_POP_PIN"
+msgstr "PIN"
+
+msgid "IDS_WIFI_HEADER_UNABLE_TO_CONNECT_ABB2"
+msgstr "இணைக்க இயலவில்லை"
+
+msgid "IDS_WIFI_BUTTON_STOP_CONNECTION_ABB"
+msgstr "இணைப்பை நிறுத்தவும்"
+
+msgid "IDS_WIFI_BUTTON_ALLOW"
+msgstr "அனுமதி"
+
+msgid "IDS_COM_POP_ACTIVATING"
+msgstr "இயக்கத்தில்…"
+
+msgid "IDS_WIFI_SK_CONNECT"
+msgstr "இணை"
+
+msgid "IDS_WIFI_BODY_CONNECTED"
+msgstr "இணைக்கபட்டது."
+
+msgid "IDS_STU_HEADER_ENTER_DEVICE_NAME"
+msgstr "சாதனப் பெயரை உள்ளிடவும்"
+
+msgid "IDS_ST_POP_CONNECTED_WITH_PD_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct வழியாக %d சாதனங்களுடன் இணைக்கப்பட்டது."
+
+msgid "IDS_WIFI_SBODY_NOT_CONNECTED_M_STATUS_ABB"
+msgstr "இணைக்கப்படவில்லை"
+
+msgid "IDS_WIFI_POP_THIS_WI_FI_DIRECT_CONNECTION_WILL_BE_CANCELLED"
+msgstr "இந்த Wi-Fi Direct இணைப்பு ரத்து செய்யப்படும்."
+
+msgid "IDS_WIFI_BODY_TO_SAVE_BATTERY_POWER_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "மின்கலன் ஆற்றலைச் சேமிக்கவென பயன்பாட்டுக்குப் பிறகு Wi-Fi Direct  செயல்நீக்கவும்."
+

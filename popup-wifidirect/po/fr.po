@@ -1,0 +1,471 @@
+msgid "IDS_WIFI_BODY_ENTER_YOUR_ID"
+msgstr "Entrez votre ID."
+
+msgid "IDS_COM_POP_MAXIMUM_NUMBER_OF_CHARACTERS_REACHED"
+msgstr "Nb max de caractères atteint"
+
+msgid "IDS_ST_HEADER_PD_SELECTED"
+msgstr "%d sélectionné(es)"
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "Activer"
+
+msgid "IDS_WIFI_BODY_DOT"
+msgstr "."
+
+msgid "IDS_WIFI_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_PD_REACHED"
+msgstr "Le nombre maximum de caractères (%d) est atteint."
+
+msgid "IDS_WIFI_TPOP_FAILED_TO_OBTAIN_IP_ADDRESS"
+msgstr "Impossible d'obtenir l'adresse IP."
+
+msgid "IDS_WIFI_TPOP_CONNECTED_TO_WI_FI_NETWORK_PS"
+msgstr "Connecté au réseau Wi-Fi %s."
+
+msgid "IDS_WIFI_TMBODY_NEVER_M_ALWAYS_OFF"
+msgstr "Jamais"
+
+msgid "IDS_WIFI_TMBODY_DOWNLOAD_DATA_VIA_WI_FI_AND_4G"
+msgstr "Téléch. données via Wi-Fi et 4G"
+
+msgid "IDS_WIFI_TMBODY_DOWNLOAD_DATA_VIA_WI_FI_AND_3G"
+msgstr "Téléch. données via Wi-Fi et 3G"
+
+msgid "IDS_WIFI_SK_WPS_PIN"
+msgstr "PIN WPS"
+
+msgid "IDS_WIFI_SK_FORGET"
+msgstr "Oublier"
+
+msgid "IDS_WIFI_SK_CANCEL"
+msgstr "Annuler"
+
+msgid "IDS_WIFI_SK2_OK"
+msgstr "OK"
+
+msgid "IDS_WIFI_SBODY_CONNECTED_M_STATUS"
+msgstr "Connecté"
+
+msgid "IDS_WIFI_SBODY_AUTOMATICALLY_SWITCH_BETWEEN_WI_FI_AND_MOBILE_NETWORKS_TO_MAINTAIN_A_STABLE_INTERNET_CONNECTION"
+msgstr "Basculez automatiquement entre le Wi-Fi et les réseaux mobiles pour conserver une connexion Internet stable."
+
+msgid "IDS_WIFI_SBODY_AUTHENTICATION_ERROR_OCCURRED_M_STATUS"
+msgstr "Une erreur d'authentification est survenue"
+
+msgid "IDS_WIFI_POP_WI_FI_AND_MOBILE_NETWORKS_WILL_BE_USED_TOGETHER_TO_DOWNLOAD_FILES_FASTER_MSG"
+msgstr "Les réseaux Wi-Fi et mobile seront utilisés en même temps pour télécharger les fichiers plus rapidement. Cela risque d'augmenter votre utilisation des données mobiles."
+
+msgid "IDS_WIFI_POP_SMART_NETWORK_SWITCH_HAS_BEEN_ENABLED_MSG"
+msgstr "Réseau intelligent a été activé. Cette fonction permet de maintenir une connexion Internet stable en jonglant entre les réseaux mobiles et Wi-Fi. Ceci peut augmenter votre utilisation des données."
+
+msgid "IDS_WIFI_POP_PS_IS_SELECTED_N_NIF_YOU_ARE_UNABLE_TO_CONNECT_TO_AN_AP_CHANGE_THE_SIM_CARD_USED_FOR_VERIFICATION_BY_GOING_TO_SIM_CARD_MANAGER_MSG"
+msgstr "%s est sélectionné.\n\nSi vous ne parvenez pas à vous connecter à un point d'accès, changez la carte SIM utilisée aux fins de la vérification en accédant au gestionnaire de carte SIM. Sélectionnez alors la carte SIM que vous souhaitez utiliser pour les données mobiles et les MMS. Vous pouvez aussi démonter la carte SIM que vous ne prévoyez pas d'utiliser."
+
+msgid "IDS_WIFI_POP_PRESS_WPS_ON_YOUR_WI_FI_ACCESS_POINT_WITHIN_PD_MINUTES"
+msgstr "Appuyez sur la touche WPS de votre point d'accès Wi-Fi sous %d minutes."
+
+msgid "IDS_WIFI_POP_OPEN"
+msgstr "Ouvert"
+
+msgid "IDS_WIFI_POP_NO_WI_FI_AP_FOUND"
+msgstr "Aucune application Wi-Fi trouvée."
+
+msgid "IDS_WIFI_POP_CURRENT_NETWORK_WILL_BE_DISCONNECTED"
+msgstr "Le réseau actuel sera déconnecté."
+
+msgid "IDS_WIFI_OPT_WPS"
+msgstr "WPS"
+
+msgid "IDS_WIFI_OPT_SHOW_PASSWORD"
+msgstr "Afficher le mot de passe"
+
+msgid "IDS_WIFI_OPT_MOBILEACCESSSERVICEATCIVATION_ON"
+msgstr "Activé"
+
+msgid "IDS_WIFI_OPT_MOBILEACCESSSERVICEATCIVATION_OFF"
+msgstr "Désactivé"
+
+msgid "IDS_WIFI_OPT_FORGET_NETWORK"
+msgstr "Oublier le réseau"
+
+msgid "IDS_WIFI_MBODY_SMART_NETWORK_SWITCH"
+msgstr "Bascul. réseau intellig."
+
+msgid "IDS_WIFI_MBODY_SIGNAL_STRENGTH_KOR_SKT"
+msgstr "Force du signal"
+
+msgid "IDS_WIFI_MBODY_REDUCE_MOBILE_DATA_USAGE"
+msgstr "Réduire util. donn. mob."
+
+msgid "IDS_WIFI_MBODY_PRIORITISE_SPEED"
+msgstr "Prioriser la vitesse"
+
+msgid "IDS_WIFI_MBODY_NETWORK_BONDING"
+msgstr "Association de réseaux"
+
+msgid "IDS_WIFI_HEADER_WI_FI_NETWORK_INFO_ABB"
+msgstr "Infos sur le réseau Wi-Fi"
+
+msgid "IDS_WIFI_HEADER_SELECT_WPS_METHOD_ABB"
+msgstr "Sélectionner la méthode WPS"
+
+msgid "IDS_WIFI_HEADER_PROXY_ADDRESS"
+msgstr "Adresse du proxy"
+
+msgid "IDS_WIFI_HEADER_PASSWORD"
+msgstr "Mot de passe"
+
+msgid "IDS_WIFI_HEADER_ENTER_PASSWORD"
+msgstr "Saisir le mot de passe."
+
+msgid "IDS_WIFI_BUTTON_WPS_BUTTON"
+msgstr "Touche WPS"
+
+msgid "IDS_WIFI_BUTTON_SCAN"
+msgstr "Rechercher"
+
+msgid "IDS_WIFI_BUTTON_FIND_HIDDEN_NETWORK"
+msgstr "Réseau sécurisé"
+
+msgid "IDS_WIFI_BODY_WI_FI_NETWORKS_AVAILABLE_ABB"
+msgstr "Réseaux Wi-Fi disponibles"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WIFI_BODY_WI_FI"
+msgstr "Wi-Fi"
+
+msgid "IDS_WIFI_BODY_WHILE_CHARGING_ONLY_ABB"
+msgstr "Uniq. lors du chargement"
+
+msgid "IDS_WIFI_BODY_WEAK_M_STRENGTH"
+msgstr "Faible"
+
+msgid "IDS_WIFI_BODY_USER_CERTIFICATE_ABB"
+msgstr "Certif. utilisat."
+
+msgid "IDS_WIFI_BODY_UNSPECIFIED"
+msgstr "Non défini"
+
+msgid "IDS_WIFI_BODY_UNKNOWN"
+msgstr "Inconnu"
+
+msgid "IDS_WIFI_BODY_TO_DOWNLOAD_LARGE_FILES_FASTER_USE_WI_FI_AND_MOBILE_NETWORKS_TOGETHER_T_HELP"
+msgstr "Pour télécharger des fichiers volumineux plus rapidement, utilisez les réseaux mobile et Wi-Fi en même temps."
+
+msgid "IDS_WIFI_BODY_SUBNET_MASK"
+msgstr "Masque de sous-réseau"
+
+msgid "IDS_WIFI_BODY_STATIC_IP"
+msgstr "IP statique"
+
+msgid "IDS_WIFI_BODY_SSID"
+msgstr "SSID"
+
+msgid "IDS_WIFI_BODY_SORT_BY"
+msgstr "Trier par"
+
+msgid "IDS_WIFI_BODY_SCANNING_ING"
+msgstr "Recherche..."
+
+msgid "IDS_WIFI_BODY_RECEIVE_NOTIFICATIONS_WHEN_NETWORKS_ARE_AVAILABLE"
+msgstr "Recevoir des notifications lorsque des réseaux sont disponibles"
+
+msgid "IDS_WIFI_BODY_PROXY_PORT"
+msgstr "Port du proxy"
+
+msgid "IDS_WIFI_BODY_NAME"
+msgstr "Nom"
+
+msgid "IDS_WIFI_BODY_MAC_ADDRESS"
+msgstr "Adresse MAC"
+
+msgid "IDS_WIFI_BODY_IP_ADDRESS"
+msgstr "Adresse IP"
+
+msgid "IDS_WIFI_BODY_IDENTITY"
+msgstr "Identité"
+
+msgid "IDS_WIFI_BODY_GATEWAY_ADDRESS"
+msgstr "Adresse de passerelle"
+
+msgid "IDS_WIFI_BODY_ENTER_IDENTITY"
+msgstr "Indiquer une identité."
+
+msgid "IDS_WIFI_BODY_EAP_METHOD"
+msgstr "Méthode EAP"
+
+msgid "IDS_WIFI_BODY_EAP"
+msgstr "EAP"
+
+msgid "IDS_WIFI_BODY_DNS_2"
+msgstr "DNS 2"
+
+msgid "IDS_WIFI_BODY_DNS_1"
+msgstr "DNS 1"
+
+msgid "IDS_WIFI_BODY_CONNECTING_ING"
+msgstr "Connexion..."
+
+msgid "IDS_WIFI_BODY_CONNECT"
+msgstr "Connexion"
+
+msgid "IDS_WIFI_BODY_CONFIGURATION_SAVED_M_STATUS"
+msgstr "Enregistré"
+
+msgid "IDS_WIFI_BODY_A_WI_FI_NETWORK_HAS_BEEN_DETECTED_YOU_WILL_BE_CONNECTED"
+msgstr "Un réseau Wi-Fi a été détecté. Vous allez être connecté."
+
+msgid "IDS_WIFI_BODY_ADVANCED_SETTINGS"
+msgstr "Paramètres avancés"
+
+msgid "IDS_COM_SK_NO"
+msgstr "Non"
+
+msgid "IDS_COM_POP_SECURITY_POLICY_RESTRICTS_USE_OF_WI_FI"
+msgstr "La politique de sécurité limite l'utilisation du Wi-Fi."
+
+msgid "IDS_WIFI_SBODY_TAP_HERE_TO_CONNECT"
+msgstr "Appuyez ici pour vous connecter."
+
+msgid "IDS_WIFI_POP_YOUR_DEVICE_IS_CONNECTING_TO_P1SS_HOWEVER_THIS_NETWORK_MAY_NOT_PROVIDE_INTERNET_ACCESS_MSG"
+msgstr "Votre appareil se connecte à %1$s. Cependant, ce réseau peut ne pas fournir d'accès à Internet.\nAppuyez sur OK pour rester connecté à %1$s maintenant tout en empêchant la fonction Réseau intelligent de se connecter à ce réseau à l'avenir."
+
+msgid "IDS_WIFI_POP_BOTH_WI_FI_AND_MOBILE_AP_CANNOT_BE_ACTIVATED_AT_THE_SAME_TIME_DEACTIVATE_MOBILE_AP_Q"
+msgstr "Activation simultanée du Wi-Fi et du point d'accès mobile impossible. Désactiver le point d'accès mobile ?"
+
+msgid "IDS_WIFI_HEADER_SIGN_IN_TO_WI_FI_NETWORK_ABB"
+msgstr "Connexion au réseau Wi-Fi"
+
+msgid "IDS_WIFI_HEADER_INTERNET_MAY_NOT_BE_AVAILABLE_ABB"
+msgstr "Intern. peut ne pas être disp."
+
+msgid "IDS_WIFI_BUTTON_DONT_ASK_AGAIN"
+msgstr "Ne plus demander"
+
+msgid "IDS_WIFI_BODY_OPEN_WI_FI_SETTINGS_ABB"
+msgstr "Ouvrir paramètres Wi-Fi"
+
+msgid "IDS_BT_BODY_NO_DEVICES_FOUND_ABB"
+msgstr "Aucun appareil détecté"
+
+msgid "IDS_BR_SK_YES"
+msgstr "Oui"
+
+msgid "IDS_BR_SK_NO"
+msgstr "Non"
+
+msgid "IDS_BR_SK_CANCEL"
+msgstr "Annuler"
+
+msgid "IDS_ST_HEADER_RENAME_DEVICE"
+msgstr "Renommer le périphérique"
+
+msgid "IDS_ST_HEADER_MY_DEVICE_NAME"
+msgstr "Nom de mon périphérique"
+
+msgid "IDS_COM_POP_FAILED"
+msgstr "Échec"
+
+msgid "IDS_COM_POP_CANCEL"
+msgstr "Annuler"
+
+msgid "IDS_COM_BODY_CONNECTED_M_STATUS"
+msgstr "Connecté"
+
+msgid "IDS_BR_SK_OK"
+msgstr "OK"
+
+msgid "IDS_ST_POP_DEVICE_NAMES_ARE_DISPLAYED_TO_DISTINGUISH_EACH_OF_THE_DEVICES_AVAILABLE_MSG"
+msgstr "Les noms des appareils sont affichés pour vous permettre de distinguer les appareils disponibles dans la liste des appareils à proximité, ainsi que via Bluetooth, Wi-Fi Direct ou par d'autres méthodes."
+
+msgid "IDS_ST_SK_RENAME"
+msgstr "Renommer"
+
+msgid "IDS_ST_BODY_TAP_TO_CHANGE_SETTINGS"
+msgstr "Appuyez pour modifier les paramètres"
+
+msgid "IDS_ST_POP_INVALID_CHARACTER_ENTERED_TRY_AGAIN"
+msgstr "Caractère non valide saisi. Réessayez."
+
+msgid "IDS_ST_POP_NOT_SUPPORTED"
+msgstr "Non pris en charge"
+
+msgid "IDS_CHATON_BODY_AVAILABLE"
+msgstr "Disponible"
+
+msgid "IDS_CHATON_HEADER_CONNECTION_FAILED_ABB2"
+msgstr "Échec de connexion"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_DEVICES"
+msgstr "Périphériques Wi-Fi Direct"
+
+msgid "IDS_WIFI_POP_TAP_TO_CONNECT"
+msgstr "Appuyez pour vous connecter."
+
+msgid "IDS_WIFI_SK2_CANCEL_CONNECTION"
+msgstr "Annuler la connexion"
+
+msgid "IDS_ST_HEADER_CONNECTED_DEVICES"
+msgstr "Périphériques connectés"
+
+msgid "IDS_WIFI_BODY_SELECT_ALL"
+msgstr "Sélect. tout"
+
+msgid "IDS_ST_HEADER_BUSY_DEVICES"
+msgstr "Périphériques occupés"
+
+msgid "IDS_ST_BODY_CONNECTED_WITH_ANOTHER_DEVICE_ABB"
+msgstr "Connecté à un autre périphérique"
+
+msgid "IDS_WIFI_BODY_WAITING_FOR_CONNECTION_M_STATUS_ABB"
+msgstr "Connexion en cours"
+
+msgid "IDS_ST_POP_FAILED_TO_CONNECT"
+msgstr "Échec de la connexion."
+
+msgid "IDS_WIFI_BUTTON_MULTI_CONNECT"
+msgstr "Connexion multiple"
+
+msgid "IDS_WIFI_BUTTON_DISCONNECT_ALL"
+msgstr "Tout déconnecter"
+
+msgid "IDS_WIFI_SK_DISCONNECT"
+msgstr "Déconnecter"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "Désactiver Wi-Fi Direct après utilisation"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_ABB"
+msgstr "Désact Wi-Fi Direct après utilisat."
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY"
+msgstr "Désactiver Wi-Fi Direct après utilisation pour économiser de la batterie"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY_ABB"
+msgstr "Désact Wi-Fi Direct apr util pour économ batterie"
+
+msgid "IDS_WIFI_BODY_PS_IS_REQUESTING_A_WI_FI_DIRECT_CONNECTION_ALLOW_Q"
+msgstr "%s demande l'autorisation d'établir une connexion via Wi-Fi Direct. Accepter ?"
+
+msgid "IDS_WIFI_BODY_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_CONNECTION_CONTINUE_Q"
+msgstr "L'utilisation de Wi-Fi Direct va interrompre la connexion Wi-Fi actuelle. Continuer ?"
+
+msgid "IDS_WIFI_BODY_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_TETHERING_CONTINUE_Q"
+msgstr "L'utilisation du Wi-Fi Direct va désactiver le modem Wi-Fi. Continuer ?"
+
+msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_CONNECTION_ABB"
+msgstr "Connexion Wi-Fi Direct"
+
+msgid "IDS_WIFI_MBODY_DISCONNECT_WI_FI_DIRECT"
+msgstr "Déconnexion de Wi-Fi Direct"
+
+msgid "IDS_WIFI_POP_CANCEL_WI_FI_DIRECT_CONNECTION_Q"
+msgstr "Annuler la connexion Wi-Fi Direct ?"
+
+msgid "IDS_WIFI_POP_CONNECT_TO_OTHER_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "Se connecter à d'autres périphériques via Wi-Fi Direct."
+
+msgid "IDS_WIFI_POP_THERE_HAS_BEEN_NO_ACTIVITY_FOR_PD_MINUTES_SINCE_WI_FI_DIRECT_WAS_ENABLED_MSG"
+msgstr "Aucune activité pendant %d minutes depuis que Wi-Fi Direct est activé. Wi-Fi Direct a été désactivé pour étendre la durée de vie de la batterie."
+
+msgid "IDS_WIFI_SK4_SCAN"
+msgstr "Rechercher"
+
+msgid "IDS_WIFI_SK_STOP"
+msgstr "Arrêter"
+
+msgid "IDS_WIFI_POP_DEACTIVATION_FAILED"
+msgstr "Échec de la désactivation."
+
+msgid "IDS_WIMAX_POP_ACTIVATION_FAILED"
+msgstr "Échec de l'activation."
+
+msgid "IDS_WIFI_POP_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_CONTINUE_Q"
+msgstr "La connexion actuelle sera interrompue. Continuer ?"
+
+msgid "IDS_ST_POP_YOU_CAN_CONNECT_UP_TO_PD_DEVICES_AT_THE_SAME_TIME"
+msgstr "Vous pouvez vous connecter à %d périphériques maximum simultanément."
+
+msgid "IDS_WIFI_HEADER_AVAILABLE_DEVICES_ABB"
+msgstr "Périph. disponibles"
+
+msgid "IDS_WIFI_POP_FAILED_TO_CONNECT_TO_PS"
+msgstr "Impossible de se connecter à %s."
+
+msgid "IDS_ST_POP_DEVICE_CONNECTED_TO_ANOTHER_DEVICE"
+msgstr "Périphérique connecté à un autre périphérique"
+
+msgid "IDS_WIFI_BODY_CONNECTED_TO_PS"
+msgstr "Connecté à %s"
+
+msgid "IDS_COM_BODY_PINS_DO_NOT_MATCH"
+msgstr "Les codes PIN ne correspondent pas."
+
+msgid "IDS_COM_POP_DEACTIVATING_ING"
+msgstr "Désactivation..."
+
+msgid "IDS_WIFI_BODY_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_SO_THAT_SCANNING_CAN_START_CONTINUE_Q"
+msgstr "La connexion actuelle va être interrompue pour que la recherche puisse démarrer. Continuer ?"
+
+msgid "IDS_WIFI_HEADER_DEVICES_THAT_FAILED_TO_CONNECT"
+msgstr "Périphériques dont la connexion a échoué"
+
+msgid "IDS_WIFI_POP_ENTER_PIN_TO_CONNECT_TO_PS"
+msgstr "Entrez le code PIN pour vous connecter à %s."
+
+msgid "IDS_WIFI_POP_CONNECT_TO_PS_IN_PD_SECONDS"
+msgstr "Connexion à %s dans %d secondes"
+
+msgid "IDS_WIFI_POP_PIN_CODE_PS"
+msgstr "Code PIN %s"
+
+msgid "IDS_DLNA_HEADER_SELECT_DEVICES_ABB"
+msgstr "Sélectionner des appareils"
+
+msgid "IDS_WIFI_BODY_THE_WI_FI_DIRECT_CONNECTION_HAS_BEEN_LOST"
+msgstr "La connexion Wi-Fi Direct a été perdue."
+
+msgid "IDS_ST_BODY_CONNECT_WITH_PS_IN_PD_SECS_ABB"
+msgstr "Connexion à %s dans %d sec."
+
+msgid "IDS_ST_BODY_RENAME_DEVICE_ABB"
+msgstr "Renommer le périphérique"
+
+msgid "IDS_WIFI_POP_PIN"
+msgstr "Code PIN"
+
+msgid "IDS_WIFI_HEADER_UNABLE_TO_CONNECT_ABB2"
+msgstr "Connexion impossible"
+
+msgid "IDS_WIFI_BUTTON_STOP_CONNECTION_ABB"
+msgstr "Arrêter connexion"
+
+msgid "IDS_WIFI_BUTTON_ALLOW"
+msgstr "Autoriser"
+
+msgid "IDS_COM_POP_ACTIVATING"
+msgstr "Activation en cours..."
+
+msgid "IDS_WIFI_SK_CONNECT"
+msgstr "Connexion"
+
+msgid "IDS_WIFI_BODY_CONNECTED"
+msgstr "Connecté"
+
+msgid "IDS_STU_HEADER_ENTER_DEVICE_NAME"
+msgstr "Entrer un nom pour l'appareil"
+
+msgid "IDS_ST_POP_CONNECTED_WITH_PD_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "Connecté à %d périphériques via Wi-Fi Direct"
+
+msgid "IDS_WIFI_SBODY_NOT_CONNECTED_M_STATUS_ABB"
+msgstr "Non connecté"
+
+msgid "IDS_WIFI_POP_THIS_WI_FI_DIRECT_CONNECTION_WILL_BE_CANCELLED"
+msgstr "Cette connexion Wi-Fi Direct sera annulée."
+
+msgid "IDS_WIFI_BODY_TO_SAVE_BATTERY_POWER_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "Désactivez Wi-Fi Direct après utilisation pour économiser la batterie."
+

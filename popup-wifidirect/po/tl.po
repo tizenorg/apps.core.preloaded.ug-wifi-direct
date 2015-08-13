@@ -1,0 +1,249 @@
+msgid "IDS_BT_BODY_NO_DEVICES_FOUND_ABB"
+msgstr "Walang mga device na nakita"
+
+msgid "IDS_ST_HEADER_MY_DEVICE_NAME"
+msgstr "Pangalan ng aking device"
+
+msgid "IDS_ST_HEADER_RENAME_DEVICE"
+msgstr "Palitan ang pangalan ng device"
+
+msgid "IDS_ST_POP_DEVICE_NAMES_ARE_DISPLAYED_TO_DISTINGUISH_EACH_OF_THE_DEVICES_AVAILABLE_MSG"
+msgstr "Ipinapakita ang mga pangalan ng device para makilala ang bawat device na available sa listahan ng mga device na malapit, at sa pamamagitan ng Bluetooth, Wi-Fi Direct, at iba pang mga paraan."
+
+msgid "IDS_COM_POP_MAXIMUM_NUMBER_OF_CHARACTERS_REACHED"
+msgstr "Naabot na ang maximum na bilang ng mga character."
+
+msgid "IDS_WIFI_BODY_CONNECTING_ING"
+msgstr "Kumokonekta..."
+
+msgid "IDS_BR_SK_CANCEL"
+msgstr "Ikansela"
+
+msgid "IDS_BR_SK_YES"
+msgstr "Oo"
+
+msgid "IDS_BR_SK_NO"
+msgstr "Hindi"
+
+msgid "IDS_WIFI_SK2_OK"
+msgstr "OK"
+
+msgid "IDS_WIFI_SK_CANCEL"
+msgstr "Ikansela"
+
+msgid "IDS_COM_POP_FAILED"
+msgstr "Nabigo."
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "Paganahin"
+
+msgid "IDS_ST_HEADER_PD_SELECTED"
+msgstr "%d ang pinili"
+
+msgid "IDS_COM_BODY_CONNECTED_M_STATUS"
+msgstr "Nakakonekta"
+
+msgid "IDS_ST_POP_INVALID_CHARACTER_ENTERED_TRY_AGAIN"
+msgstr "Nagpasok ng di-wastong character. Subukang muli"
+
+msgid "IDS_ST_BODY_TAP_TO_CHANGE_SETTINGS"
+msgstr "I-tap upang baguhin ang mga setting"
+
+msgid "IDS_COM_POP_CANCEL"
+msgstr "Kanselahin"
+
+msgid "IDS_BR_SK_OK"
+msgstr "OK"
+
+msgid "IDS_ST_POP_NOT_SUPPORTED"
+msgstr "Hindi sinusuportahan."
+
+msgid "IDS_COM_POP_SECURITY_POLICY_RESTRICTS_USE_OF_WI_FI"
+msgstr "Pinaghihigpitan ng patakaran sa seguridad ang paggamit ng Wi-Fi."
+
+msgid "IDS_ST_SK_RENAME"
+msgstr "I-rename"
+
+msgid "IDS_CHATON_BODY_AVAILABLE"
+msgstr "Available"
+
+msgid "IDS_CHATON_HEADER_CONNECTION_FAILED_ABB2"
+msgstr "Hindi nakakonekta"
+
+msgid "IDS_COM_SK_NO"
+msgstr "Hindi"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_DEVICES"
+msgstr "Mga Wi-Fi Direct na device"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WIFI_POP_TAP_TO_CONNECT"
+msgstr "I-tap upang kumonekta."
+
+msgid "IDS_WIFI_SK2_CANCEL_CONNECTION"
+msgstr "Kanselahin ang koneksyon."
+
+msgid "IDS_ST_HEADER_CONNECTED_DEVICES"
+msgstr "Mga nakakonektang device"
+
+msgid "IDS_WIFI_BODY_SELECT_ALL"
+msgstr "Piliin lahat"
+
+msgid "IDS_ST_HEADER_BUSY_DEVICES"
+msgstr "Mga busy na device"
+
+msgid "IDS_ST_BODY_CONNECTED_WITH_ANOTHER_DEVICE_ABB"
+msgstr "Nakakonekta sa isa pang device."
+
+msgid "IDS_WIFI_BODY_WAITING_FOR_CONNECTION_M_STATUS_ABB"
+msgstr "Hintayin ang koneksyon"
+
+msgid "IDS_ST_POP_FAILED_TO_CONNECT"
+msgstr "Hindi nakakonekta."
+
+msgid "IDS_WIFI_BUTTON_MULTI_CONNECT"
+msgstr "Multi-connect"
+
+msgid "IDS_WIFI_BUTTON_DISCONNECT_ALL"
+msgstr "Idiskonekta lahat"
+
+msgid "IDS_WIFI_SK_DISCONNECT"
+msgstr "Diskonekta"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "Huwag paganahin ang Wi-Fi Direct matapos gamitin"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_ABB"
+msgstr "Patayin ang Wi-Fi Direct pagkagamit"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY"
+msgstr "Huwag paganahin ang Wi-Fi Direct matapos gamitin upang makatipid ng baterya"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY_ABB"
+msgstr "Patayin Wi-Fi Direct pagkagamit para tipid baterya"
+
+msgid "IDS_WIFI_BODY_PS_IS_REQUESTING_A_WI_FI_DIRECT_CONNECTION_ALLOW_Q"
+msgstr "Humihiling si %s ng koneksyon sa Wi-Fi Direct. Payagan?"
+
+msgid "IDS_WIFI_BODY_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_CONNECTION_CONTINUE_Q"
+msgstr "Kapag ginamit ang Wi-Fi Direct, madidiskonekta ang kasalukuyang koneksyon sa Wi-Fi. Magpatuloy?"
+
+msgid "IDS_WIFI_BODY_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_TETHERING_CONTINUE_Q"
+msgstr "Kapag ginamit ang Wi-Fi Direct, madidiskonekta ang kasalukuyang Wi-Fi tethering. Magpatuloy?"
+
+msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_CONNECTION_ABB"
+msgstr "Wi-Fi Direct connection"
+
+msgid "IDS_WIFI_MBODY_DISCONNECT_WI_FI_DIRECT"
+msgstr "Disconnect Wi-Fi Direct"
+
+msgid "IDS_WIFI_POP_CANCEL_WI_FI_DIRECT_CONNECTION_Q"
+msgstr "Kanselahin ang koneksyon sa Wi-Fi Direct?"
+
+msgid "IDS_WIFI_POP_CONNECT_TO_OTHER_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "Kumonekta sa iba pang mga device sa pamamagitan ng Wi-Fi Direct."
+
+msgid "IDS_WIFI_POP_THERE_HAS_BEEN_NO_ACTIVITY_FOR_PD_MINUTES_SINCE_WI_FI_DIRECT_WAS_ENABLED_MSG"
+msgstr "Walang naging aktibidad sa loob ng %d (na) minuto mula nang pinagana ang Wi-Fi Direct. Upang pahabain ang buhay ng baterya, hindi pinagana ang Wi-Fi Direct."
+
+msgid "IDS_WIFI_SK4_SCAN"
+msgstr "I-scan"
+
+msgid "IDS_WIFI_SK_STOP"
+msgstr "Ihinto"
+
+msgid "IDS_WIFI_POP_DEACTIVATION_FAILED"
+msgstr "Nabigo ang pag-deactivate."
+
+msgid "IDS_WIMAX_POP_ACTIVATION_FAILED"
+msgstr "Nabigo ang pag-activate."
+
+msgid "IDS_WIFI_POP_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_CONTINUE_Q"
+msgstr "Madidiskonekta ang kasalukuyang koneksyon. Magpatuloy?"
+
+msgid "IDS_ST_POP_YOU_CAN_CONNECT_UP_TO_PD_DEVICES_AT_THE_SAME_TIME"
+msgstr "Maaari kang magkonekta ng hanggang %d device nang sabay-sabay."
+
+msgid "IDS_WIFI_HEADER_AVAILABLE_DEVICES_ABB"
+msgstr "Mga available device"
+
+msgid "IDS_WIFI_POP_FAILED_TO_CONNECT_TO_PS"
+msgstr "Nabigong kumonekta sa %s."
+
+msgid "IDS_ST_POP_DEVICE_CONNECTED_TO_ANOTHER_DEVICE"
+msgstr "Nakakonekta ang device sa isa pang device."
+
+msgid "IDS_WIFI_BODY_CONNECTED_TO_PS"
+msgstr "Nakakonekta sa %s."
+
+msgid "IDS_COM_BODY_PINS_DO_NOT_MATCH"
+msgstr "Hindi nagtutugma ang mga PIN."
+
+msgid "IDS_COM_POP_DEACTIVATING_ING"
+msgstr "Dini-deactivate..."
+
+msgid "IDS_WIFI_BODY_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_SO_THAT_SCANNING_CAN_START_CONTINUE_Q"
+msgstr "Madidiskonekta ang kasalukuyang koneksyon upang makapagsimula ang pag-scan. Magpatuloy?"
+
+msgid "IDS_WIFI_HEADER_DEVICES_THAT_FAILED_TO_CONNECT"
+msgstr "Mga device na hindi nakakonekta."
+
+msgid "IDS_WIFI_POP_ENTER_PIN_TO_CONNECT_TO_PS"
+msgstr "Ipasok ang PIN upang kumonekta sa %s."
+
+msgid "IDS_WIFI_POP_CONNECT_TO_PS_IN_PD_SECONDS"
+msgstr "Kumonekta sa %s sa loob ng %d (na) segundo."
+
+msgid "IDS_WIFI_POP_PIN_CODE_PS"
+msgstr "PIN %s"
+
+msgid "IDS_DLNA_HEADER_SELECT_DEVICES_ABB"
+msgstr "Pumili ng mga device"
+
+msgid "IDS_WIFI_BODY_THE_WI_FI_DIRECT_CONNECTION_HAS_BEEN_LOST"
+msgstr "Nawala ang koneksyon sa Wi-Fi Direct."
+
+msgid "IDS_ST_BODY_CONNECT_WITH_PS_IN_PD_SECS_ABB"
+msgstr "Kumonekta sa %s sa %d seg."
+
+msgid "IDS_ST_BODY_RENAME_DEVICE_ABB"
+msgstr "Palitan ang pangalan ng device."
+
+msgid "IDS_WIFI_POP_PIN"
+msgstr "PIN"
+
+msgid "IDS_WIFI_HEADER_UNABLE_TO_CONNECT_ABB2"
+msgstr "Hindi makakonekta"
+
+msgid "IDS_WIFI_BUTTON_STOP_CONNECTION_ABB"
+msgstr "Ihinto koneksyon"
+
+msgid "IDS_WIFI_BUTTON_ALLOW"
+msgstr "Payagan"
+
+msgid "IDS_COM_POP_ACTIVATING"
+msgstr "Ina-activate..."
+
+msgid "IDS_WIFI_SK_CONNECT"
+msgstr "Kumonekta"
+
+msgid "IDS_WIFI_BODY_CONNECTED"
+msgstr "Nakakonekta."
+
+msgid "IDS_STU_HEADER_ENTER_DEVICE_NAME"
+msgstr "Ipasok ang pangalan ng device"
+
+msgid "IDS_ST_POP_CONNECTED_WITH_PD_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "Nakakonekta sa %d device sa pamamagitan ng Wi-Fi Direct."
+
+msgid "IDS_WIFI_SBODY_NOT_CONNECTED_M_STATUS_ABB"
+msgstr "Hindi nakakonekta"
+
+msgid "IDS_WIFI_POP_THIS_WI_FI_DIRECT_CONNECTION_WILL_BE_CANCELLED"
+msgstr "Kakanselahin ang koneksyon sa Wi-Fi Direct na ito."
+
+msgid "IDS_WIFI_BODY_TO_SAVE_BATTERY_POWER_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "Upang magtipid ng power ng baterya, huwag paganahin ang Wi-Fi Direct pagkatapos gamitin."
+

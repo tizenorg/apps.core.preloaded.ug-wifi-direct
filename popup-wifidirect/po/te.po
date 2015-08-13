@@ -1,0 +1,249 @@
+msgid "IDS_BT_BODY_NO_DEVICES_FOUND_ABB"
+msgstr "పరికరాలు కనుగొనబడలేదు"
+
+msgid "IDS_ST_HEADER_MY_DEVICE_NAME"
+msgstr "నా పరికరం పేరు"
+
+msgid "IDS_ST_HEADER_RENAME_DEVICE"
+msgstr "పరికరం పేరు మార్చు"
+
+msgid "IDS_ST_POP_DEVICE_NAMES_ARE_DISPLAYED_TO_DISTINGUISH_EACH_OF_THE_DEVICES_AVAILABLE_MSG"
+msgstr "అందుబాటులో ఉన్న ప్రతి పరికరం ప్రత్యేకంగా కనిపించడానికి సమీప పరికరాల జాబితాలో పరికరం పేర్లు మరియు బ్లూటూత్, Wi-Fi Direct మరియు ఇతర పద్ధతులు ద్వారా ప్రదర్శించబడతాయి."
+
+msgid "IDS_COM_POP_MAXIMUM_NUMBER_OF_CHARACTERS_REACHED"
+msgstr "అక్షరాల గరిష్ఠ సంఖ్యకు చేరుకున్నారు."
+
+msgid "IDS_WIFI_BODY_CONNECTING_ING"
+msgstr "కనెక్ట్ అవుతోంది..."
+
+msgid "IDS_BR_SK_CANCEL"
+msgstr "రద్దు"
+
+msgid "IDS_BR_SK_YES"
+msgstr "అవును"
+
+msgid "IDS_BR_SK_NO"
+msgstr "కాదు"
+
+msgid "IDS_WIFI_SK2_OK"
+msgstr "సరే"
+
+msgid "IDS_WIFI_SK_CANCEL"
+msgstr "రద్దు"
+
+msgid "IDS_COM_POP_FAILED"
+msgstr "విఫలమైనది."
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "ఎనేబుల్ చేయి"
+
+msgid "IDS_ST_HEADER_PD_SELECTED"
+msgstr "%d ఎన్నుకోబడింది"
+
+msgid "IDS_COM_BODY_CONNECTED_M_STATUS"
+msgstr "కనెక్ట్ చేయబడింది"
+
+msgid "IDS_ST_POP_INVALID_CHARACTER_ENTERED_TRY_AGAIN"
+msgstr "చెల్లని అక్షరం నమోదు చేయబడింది. మళ్లీ ప్రయత్నించండి."
+
+msgid "IDS_ST_BODY_TAP_TO_CHANGE_SETTINGS"
+msgstr "సెట్టింగ్‌లను మార్చడానికి ట్యాప్ చేయండి."
+
+msgid "IDS_COM_POP_CANCEL"
+msgstr "రద్దు"
+
+msgid "IDS_BR_SK_OK"
+msgstr "సరే"
+
+msgid "IDS_ST_POP_NOT_SUPPORTED"
+msgstr "మద్దతు లేదు."
+
+msgid "IDS_COM_POP_SECURITY_POLICY_RESTRICTS_USE_OF_WI_FI"
+msgstr "Wi-Fi యొక్క ఉపయోగంను భద్రత పాలసీ పరిమితం చేస్తుంది."
+
+msgid "IDS_ST_SK_RENAME"
+msgstr "పేరు మార్చు"
+
+msgid "IDS_CHATON_BODY_AVAILABLE"
+msgstr "లభ్యము"
+
+msgid "IDS_CHATON_HEADER_CONNECTION_FAILED_ABB2"
+msgstr "కనెక్షన్ విఫలమైంది"
+
+msgid "IDS_COM_SK_NO"
+msgstr "కాదు"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_DEVICES"
+msgstr "Wi-Fi డైరెక్ట్ పరికరాలు"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WIFI_POP_TAP_TO_CONNECT"
+msgstr "కనెక్ట్ చేసేందుకు టాప్ చేయండి."
+
+msgid "IDS_WIFI_SK2_CANCEL_CONNECTION"
+msgstr "కనెక్షన్‌ని రద్దు చేయి"
+
+msgid "IDS_ST_HEADER_CONNECTED_DEVICES"
+msgstr "కనెక్ట్ అయిన పరికరాలు"
+
+msgid "IDS_WIFI_BODY_SELECT_ALL"
+msgstr "అన్నీ ఎంచుకోండి"
+
+msgid "IDS_ST_HEADER_BUSY_DEVICES"
+msgstr "పనిలో ఉన్న పరికరాలు"
+
+msgid "IDS_ST_BODY_CONNECTED_WITH_ANOTHER_DEVICE_ABB"
+msgstr "మరొక పరికరంతో కనెక్టయింది"
+
+msgid "IDS_WIFI_BODY_WAITING_FOR_CONNECTION_M_STATUS_ABB"
+msgstr "అనుసంధానం కోసం వేచి ఉంది"
+
+msgid "IDS_ST_POP_FAILED_TO_CONNECT"
+msgstr "కనెక్ట్ చెయ్యడంలో విఫలమైంది."
+
+msgid "IDS_WIFI_BUTTON_MULTI_CONNECT"
+msgstr "బహుళ అనుసంధానం"
+
+msgid "IDS_WIFI_BUTTON_DISCONNECT_ALL"
+msgstr "అన్నింటీ అనుసంధానాన్ని తీసివేయి"
+
+msgid "IDS_WIFI_SK_DISCONNECT"
+msgstr "డిస్కనెక్ట్ చేయి"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "ఉపయోగించిన తర్వాత Wi-Fi డైరెక్టును నిలిపివేయి"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_ABB"
+msgstr "ఉపయోగించిన తర్వాత Wi-Fi డైరెక్టును నిలిపివేయండి"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY"
+msgstr "బ్యాటరీని ఆదా చేయడానికి ఉపయోగించిన తర్వాత Wi-Fi డైరెక్టును నిలిపివేయి"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY_ABB"
+msgstr "బ్యాటరీ ఆదా చేయడానికి ఉపయోగించిన తర్వాత Wi-Fi డైరెక్టును నిలిపివేయండి"
+
+msgid "IDS_WIFI_BODY_PS_IS_REQUESTING_A_WI_FI_DIRECT_CONNECTION_ALLOW_Q"
+msgstr "%s Wi-Fi డైరెక్ట్ అనుసంధానాన్ని అభ్యర్థిస్తోంది. అనుమతించాలా?"
+
+msgid "IDS_WIFI_BODY_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_CONNECTION_CONTINUE_Q"
+msgstr "Wi-Fi డైరెక్టును ఉపయోగించడం వల్ల ప్రస్తుత Wi-Fi కనెక్షన్ డిస్‌కనెక్ట్ చేయబడుతుంది. కొనసాగించాలా?"
+
+msgid "IDS_WIFI_BODY_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_TETHERING_CONTINUE_Q"
+msgstr "Wi-Fi డైరెక్టును ఉపయోగించడం వల్ల ప్రస్తుత Wi-Fi టీథరింగ్ డిస్‌కనెక్ట్ చేయబడుతుంది. కొనసాగించాలా?"
+
+msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_CONNECTION_ABB"
+msgstr "Wi-Fi డైరెక్ట్ కనెక్షన్"
+
+msgid "IDS_WIFI_MBODY_DISCONNECT_WI_FI_DIRECT"
+msgstr "Wi-Fi డైరెక్ట్ డిస్కనెక్ట్ చేయి"
+
+msgid "IDS_WIFI_POP_CANCEL_WI_FI_DIRECT_CONNECTION_Q"
+msgstr "Wi-Fi Direct కనెక్షన్ రద్దు చెయ్యాలా?"
+
+msgid "IDS_WIFI_POP_CONNECT_TO_OTHER_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "Wi-Fi డైరెక్ట్ ద్వారా ఇతర పరికరాలను కనెక్ట్ చేయండి."
+
+msgid "IDS_WIFI_POP_THERE_HAS_BEEN_NO_ACTIVITY_FOR_PD_MINUTES_SINCE_WI_FI_DIRECT_WAS_ENABLED_MSG"
+msgstr "Wi-Fi Direct ప్రారంభించబడిన తర్వాత %d నిమిషాలు కోసం కార్యాచరణ లేదు. బ్యాటరీ జీవితాన్ని విస్తరించడానికి, Wi-Fi Direct నిలిపివేయబడింది."
+
+msgid "IDS_WIFI_SK4_SCAN"
+msgstr "స్కాన్"
+
+msgid "IDS_WIFI_SK_STOP"
+msgstr "ఆపు"
+
+msgid "IDS_WIFI_POP_DEACTIVATION_FAILED"
+msgstr "డియాక్టివేషన్ విఫలమయింది."
+
+msgid "IDS_WIMAX_POP_ACTIVATION_FAILED"
+msgstr "యాక్టివేషన్ విఫలమైంది."
+
+msgid "IDS_WIFI_POP_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_CONTINUE_Q"
+msgstr "ప్రస్తుత కనెక్షన్ డిస్కనెక్ట్ చేయబడుతుంది. కొనసాగవచ్చా?"
+
+msgid "IDS_ST_POP_YOU_CAN_CONNECT_UP_TO_PD_DEVICES_AT_THE_SAME_TIME"
+msgstr "ఒకేసారి మీరు %d పరికరాల వరకు కనెక్ట్ చేయవచ్చు."
+
+msgid "IDS_WIFI_HEADER_AVAILABLE_DEVICES_ABB"
+msgstr "లభ్యంలో ఉన్న పరికరాలు"
+
+msgid "IDS_WIFI_POP_FAILED_TO_CONNECT_TO_PS"
+msgstr "%s కు కనెక్ట్ అవ్వడంలో విఫలమైంది."
+
+msgid "IDS_ST_POP_DEVICE_CONNECTED_TO_ANOTHER_DEVICE"
+msgstr "పరికరం మరొక పరికరం కు కనెక్టయింది."
+
+msgid "IDS_WIFI_BODY_CONNECTED_TO_PS"
+msgstr "%s కు కనెక్టయింది."
+
+msgid "IDS_COM_BODY_PINS_DO_NOT_MATCH"
+msgstr "PINs సరిపోలలేదు."
+
+msgid "IDS_COM_POP_DEACTIVATING_ING"
+msgstr "డియాక్టివేట్ చేస్తోంది..."
+
+msgid "IDS_WIFI_BODY_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_SO_THAT_SCANNING_CAN_START_CONTINUE_Q"
+msgstr "ప్రస్తుత అనుసంధానం తొలగించబడుతుంది దీని వలన స్కానింగ్ ప్రారంభించవచ్చు. కొనసాగాలా?"
+
+msgid "IDS_WIFI_HEADER_DEVICES_THAT_FAILED_TO_CONNECT"
+msgstr "కనెక్ట్ కావడంలో విఫలమైన పరికరాలు"
+
+msgid "IDS_WIFI_POP_ENTER_PIN_TO_CONNECT_TO_PS"
+msgstr "%s తో కనెక్ట్ చేసేందుకు పిన్‌ను నమోదు చెయ్యండి."
+
+msgid "IDS_WIFI_POP_CONNECT_TO_PS_IN_PD_SECONDS"
+msgstr "%d సెకన్లల్లో %s కు అనుసంధానించండి."
+
+msgid "IDS_WIFI_POP_PIN_CODE_PS"
+msgstr "PIN %s"
+
+msgid "IDS_DLNA_HEADER_SELECT_DEVICES_ABB"
+msgstr "పరికరాలను ఎంచుకోండి"
+
+msgid "IDS_WIFI_BODY_THE_WI_FI_DIRECT_CONNECTION_HAS_BEEN_LOST"
+msgstr "Wi-Fi Direct అనుసంధానం పోయింది."
+
+msgid "IDS_ST_BODY_CONNECT_WITH_PS_IN_PD_SECS_ABB"
+msgstr "%d సెకన్లులలో %s తో కనెక్ట్ చేయి."
+
+msgid "IDS_ST_BODY_RENAME_DEVICE_ABB"
+msgstr "పరికరం పేరు మార్చు"
+
+msgid "IDS_WIFI_POP_PIN"
+msgstr "PIN"
+
+msgid "IDS_WIFI_HEADER_UNABLE_TO_CONNECT_ABB2"
+msgstr "కనెక్ట్ చేయడం సాధ్యం కాదు"
+
+msgid "IDS_WIFI_BUTTON_STOP_CONNECTION_ABB"
+msgstr "కనెక్షన్‌ని ఆపివేయి"
+
+msgid "IDS_WIFI_BUTTON_ALLOW"
+msgstr "అనుమతించు"
+
+msgid "IDS_COM_POP_ACTIVATING"
+msgstr "యాక్టివేట్ చేస్తోంది..."
+
+msgid "IDS_WIFI_SK_CONNECT"
+msgstr "కనెక్ట్"
+
+msgid "IDS_WIFI_BODY_CONNECTED"
+msgstr "కనెక్టయింది."
+
+msgid "IDS_STU_HEADER_ENTER_DEVICE_NAME"
+msgstr "పరికరం పేరును నమోదు చేయండి"
+
+msgid "IDS_ST_POP_CONNECTED_WITH_PD_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct ద్వారా %d పరికరాల తో కనెక్టయింది."
+
+msgid "IDS_WIFI_SBODY_NOT_CONNECTED_M_STATUS_ABB"
+msgstr "కనెక్ట్ చేయబడలేదు"
+
+msgid "IDS_WIFI_POP_THIS_WI_FI_DIRECT_CONNECTION_WILL_BE_CANCELLED"
+msgstr "ఈ Wi-Fi Direct అనుసంధానం రద్దు చేయబడుతుంది."
+
+msgid "IDS_WIFI_BODY_TO_SAVE_BATTERY_POWER_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "బ్యాటరీ శక్తిని ఆదా చేయడానికి, ఉపయోగించిన తర్వాత Wi-Fi డైరెక్ట్ డిసేబుల్ చేయండి."
+

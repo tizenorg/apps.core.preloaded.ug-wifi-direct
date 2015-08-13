@@ -1,263 +1,338 @@
-msgid "IDS_WFD_CONNECTED"
-msgstr "تم التوصيل"
+msgid "IDS_WIFI_BODY_ENTER_YOUR_ID"
+msgstr "أدخل المعرف"
 
-msgid "IDS_WFD_CONNECTING"
-msgstr "جاري التوصيل"
+msgid "IDS_COM_POP_MAXIMUM_NUMBER_OF_CHARACTERS_REACHED"
+msgstr "تم الوصول إلى أقصى عدد من الحروف."
 
-msgid "IDS_WFD_DISCONNECTING"
-msgstr "جاري الفصل..."
-
-msgid ""
-msgstr "جاري تنشيط Wi-Fi..."
-
-msgid "IDS_WIFI_POP_DEACTIVATING_WI_FI_ING"
-msgstr "جاري إلعاء تنشيط Wi-Fi..."
-
-msgid "IDS_WFD_POP_CONNECTED"
-msgstr "تم التوصيل"
-
-msgid "IDS_COM_POP_NETWORK_INTERNAL_ERR"
-msgstr "خطأ داخلي"
-
-msgid "IDS_COM_POP_RETRIEVED"
-msgstr "تم التحميل"
-
-msgid "IDS_COM_POP_RETRIEVING_FAILED"
-msgstr "فشل التحميل"
-
-msgid "IDS_COM_SK_CANCEL"
-msgstr "إلغاء"
-
-msgid "IDS_ST_BODY_INTERNAL_ERROR"
-msgstr "خطأ داخلي"
-
-msgid "IDS_WFD_POP_UNKNOWN_ERROR"
-msgstr "خطأ غير معروف"
-
-msgid "IDS_COM_POP_NETWORK_ERROR"
-msgstr "خطأ في الشبكة"
-
-msgid "IDS_COM_BODY_NO_SEARCH_RESULTS"
-msgstr "لا توجد نتائج للبحث"
-
-msgid "IDS_COM_POP_SEARCHING"
-msgstr "قيد البحث"
-
-msgid "IDS_WIFI_POP_DISCONNECTING_FAILED"
-msgstr "فشل قطع الاتصال"
-
-msgid "IDS_ST_BODY_ENTER_NEW_PASSWORD"
-msgstr "أدخل كلمة المرور الجديدة"
-
-msgid "IDS_COM_POP_UNKNOWN_ERROR_UNABLE_TO_LAUNCH_APPLICATION"
-msgstr "خطأ غير معروف. يتعذر تشغيل التطبيق"
-
-msgid "IDS_COM_POP_ACCEPT"
-msgstr "قبول"
-
-msgid "IDS_COM_POP_CONNECTING"
-msgstr "جاري التوصيل"
-
-msgid "IDS_COM_POP_ERROR"
-msgstr "خطأ"
-
-msgid "IDS_COM_POP_REJECT"
-msgstr "رفض"
-
-msgid "IDS_COM_POP_REJECTED"
-msgstr "مرفوضة"
-
-msgid "IDS_COM_BODY_SELECT_ALL"
-msgstr "اختيار الكل"
-
-msgid "IDS_COM_POP_FAILED"
-msgstr "فشل"
-
-msgid "IDS_COM_SK_ACCEPT"
-msgstr "قبول"
-
-msgid "IDS_ST_BODY_ENTER_4_TO_8_DIGIT_PIN"
-msgstr "أدخل رمز PIN يتكون من 4 إلى 8 أرقام"
-
-msgid "IDS_WFD_POP_PIN_INVALID"
-msgstr "عدم تطابق رموز PIN!"
-
-msgid "IDS_ST_POP_YES"
-msgstr "نعم"
-
-msgid "IDS_WFD_BODY_ACTIVATING"
-msgstr "جاري التفعيل..."
-
-msgid "IDS_COM_POP_DEACTIVATED"
-msgstr "غير مفعل"
-
-msgid "IDS_COM_SK_OK"
-msgstr "موافق"
-
-msgid "IDS_COM_SK_YES"
-msgstr "نعم"
-
-msgid "IDS_WIFI_HEADER_MOBILE_HOTSPOT_VZW"
-msgstr "Mobile Hotspot"
-
-msgid "IDS_ST_BODY_ENTER_CURRENT_PASSWORD"
-msgstr "أدخل كلمة المرور الحالية"
-
-msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgid "IDS_ST_HEADER_PD_SELECTED"
 msgstr "تم تحديد %d"
 
-msgid "IDS_ST_POP_SEARCHING_ING"
-msgstr "قيد البحث"
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "تفعيل"
 
-msgid "IDS_COM_POP_NOTHING_SELECTED"
-msgstr "لا شيء محدد"
+msgid "IDS_WIFI_BODY_DOT"
+msgstr "."
 
-msgid "IDS_COM_OPT1_WI_FI_DIRECT"
-msgstr "Wi-Fi Direct"
+msgid "IDS_WIFI_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_PD_REACHED"
+msgstr "تم الوصول إلى الحد الأقصى من عدد الأحرف %d"
 
-msgid "IDS_COM_POP_DISCONNECTED"
-msgstr "تم الفصل"
+msgid "IDS_WIFI_TPOP_FAILED_TO_OBTAIN_IP_ADDRESS"
+msgstr "فشل الحصول على عنوان IP."
 
-msgid "IDS_WIFI_MBODY_MOBILE_HOTSPOT_VZW"
-msgstr "Mobile Hotspot"
+msgid "IDS_WIFI_TPOP_CONNECTED_TO_WI_FI_NETWORK_PS"
+msgstr "تم الاتصال بشبكة Wi-Fi التي تحمل الاسم %s"
 
-msgid "IDS_WIFI_BODY_IP_ADDRESS"
-msgstr "عنوان IP"
+msgid "IDS_WIFI_TMBODY_NEVER_M_ALWAYS_OFF"
+msgstr "أبدًا"
 
-msgid "IDS_WFD_BODY_DEACTIVATING"
-msgstr "جاري إلغاء التفعيل..."
+msgid "IDS_WIFI_TMBODY_DOWNLOAD_DATA_VIA_WI_FI_AND_4G"
+msgstr "تنزيل البيانات عبر شبكة Wi-Fi و4G"
 
-msgid "IDS_COM_POP_UNEXPECTED_ERROR"
-msgstr "خطأ غير متوقع"
+msgid "IDS_WIFI_TMBODY_DOWNLOAD_DATA_VIA_WI_FI_AND_3G"
+msgstr "تنزيل البيانات عبر شبكة Wi-Fi و3G"
 
-msgid "IDS_COM_POP_NETWORK_CONNECTION_ERROR"
-msgstr "خطأ في اتصال الشبكة"
+msgid "IDS_WIFI_SK_WPS_PIN"
+msgstr "WPS PIN"
 
-msgid "IDS_COM_BODY_OPERATION_FAILED"
-msgstr "فشلت العملية"
+msgid "IDS_WIFI_SK_FORGET"
+msgstr "تجاهل"
 
-msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
-msgstr "غير مدعوم"
+msgid "IDS_WIFI_SK_CANCEL"
+msgstr "إلغاء"
 
-msgid "IDS_COM_POP_UNSUPPORTED"
-msgstr "غير مدعوم"
+msgid "IDS_WIFI_SK2_OK"
+msgstr "موافق"
 
-msgid "IDS_WFD_HEADER_WIFI_DIRECT"
-msgstr "Wi-Fi Direct"
+msgid "IDS_WIFI_SBODY_CONNECTED_M_STATUS"
+msgstr "تم الاتصال"
 
-msgid "IDS_COM_POP_ACCEPTED"
-msgstr "تم القبول"
+msgid "IDS_WIFI_SBODY_AUTOMATICALLY_SWITCH_BETWEEN_WI_FI_AND_MOBILE_NETWORKS_TO_MAINTAIN_A_STABLE_INTERNET_CONNECTION"
+msgstr "التبديل تلقائيا بين شبكات Wi-Fi والهاتف المحمول للحفاظ على اتصال إنترنت ثابت."
 
-msgid "IDS_WIFI_BODY_MAC_ADDRESS"
-msgstr "عنوان MAC"
+msgid "IDS_WIFI_SBODY_AUTHENTICATION_ERROR_OCCURRED_M_STATUS"
+msgstr "حدث خطأ في المصادقة"
 
-msgid "IDS_WIFI_POP_AUTOMATIC_CONNECTION_NETWORK_WILL_DISABLED_CONTINUE_Q_MSG"
-msgstr "الاتصال التلقائي بهذه الشبكة سيتم تعطيله. متابعة؟"
+msgid "IDS_WIFI_POP_WI_FI_AND_MOBILE_NETWORKS_WILL_BE_USED_TOGETHER_TO_DOWNLOAD_FILES_FASTER_MSG"
+msgstr "سيتم استخدام شبكة Wi-Fi وشبكات الهاتف المحمول معًا لتنزيل الملفات بشكل أسرع. قد يزيد ذلك استخدام بيانات هاتفك المحمول."
 
-msgid "IDS_COM_POP_PROGRESSING_ING"
-msgstr "جاري..."
+msgid "IDS_WIFI_POP_SMART_NETWORK_SWITCH_HAS_BEEN_ENABLED_MSG"
+msgstr "تم تفعيل تبديل الشبكة الذكي. تساعد هذه الوظيفة على المحافظة على اتصال إنترنت ثابت عبر التبديل بين شبكات جهاز المحمول وWi-Fi. قد يزيد هذا من استخدام البيانات."
 
-msgid "IDS_WIFI_BODY_CONNECT"
-msgstr "توصيل"
+msgid "IDS_WIFI_POP_PS_IS_SELECTED_N_NIF_YOU_ARE_UNABLE_TO_CONNECT_TO_AN_AP_CHANGE_THE_SIM_CARD_USED_FOR_VERIFICATION_BY_GOING_TO_SIM_CARD_MANAGER_MSG"
+msgstr "تم تحديد %s.‏\n\nإذا تعذر عليك الاتصال بنقطة الوصول، فغيّر بطاقة SIM المستخدمة للتحقق عبر الانتقال إلى إدارة بطاقة SIM. ثم حدد بطاقة SIM التي تريد استخدامها لبيانات الهاتف المحمول ورسائل الوسائط المتعددة. بدلاً من ذلك، يمكنك إلغاء تحميل بطاقة SIM التي لا تريد استخدامها."
 
-msgid "IDS_WIFI_HEADER_WI_FI"
-msgstr "Wi-Fi"
+msgid "IDS_WIFI_POP_PRESS_WPS_ON_YOUR_WI_FI_ACCESS_POINT_WITHIN_PD_MINUTES"
+msgstr "اضغط WPS في نقطة وصول Wi-Fi خلال %d دقيقة."
 
-msgid "IDS_WFD_BUTTON_SCAN"
+msgid "IDS_WIFI_POP_OPEN"
+msgstr "مفتوح"
+
+msgid "IDS_WIFI_POP_NO_WI_FI_AP_FOUND"
+msgstr "لا يتوفر Wi-Fi."
+
+msgid "IDS_WIFI_POP_CURRENT_NETWORK_WILL_BE_DISCONNECTED"
+msgstr "سيتم قطع اتصال الشبكة الحالية."
+
+msgid "IDS_WIFI_OPT_WPS"
+msgstr "WPS"
+
+msgid "IDS_WIFI_OPT_SHOW_PASSWORD"
+msgstr "عرض كلمة المرور"
+
+msgid "IDS_WIFI_OPT_MOBILEACCESSSERVICEATCIVATION_ON"
+msgstr "مفعل"
+
+msgid "IDS_WIFI_OPT_MOBILEACCESSSERVICEATCIVATION_OFF"
+msgstr "غير مفعل"
+
+msgid "IDS_WIFI_OPT_FORGET_NETWORK"
+msgstr "نسيان الشبكة"
+
+msgid "IDS_WIFI_MBODY_SMART_NETWORK_SWITCH"
+msgstr "تبديل الشبكة الذكي"
+
+msgid "IDS_WIFI_MBODY_SIGNAL_STRENGTH_KOR_SKT"
+msgstr "قوة الإشارة"
+
+msgid "IDS_WIFI_MBODY_REDUCE_MOBILE_DATA_USAGE"
+msgstr "تخفيض استخدام بيانات الهاتف المحمول"
+
+msgid "IDS_WIFI_MBODY_PRIORITISE_SPEED"
+msgstr "جعل السرعة أولوية"
+
+msgid "IDS_WIFI_MBODY_NETWORK_BONDING"
+msgstr "ربط الشبكات"
+
+msgid "IDS_WIFI_HEADER_WI_FI_NETWORK_INFO_ABB"
+msgstr "معلومات حول شبكة Wi-Fi"
+
+msgid "IDS_WIFI_HEADER_SELECT_WPS_METHOD_ABB"
+msgstr "تحديد طريقة WPS"
+
+msgid "IDS_WIFI_HEADER_PROXY_ADDRESS"
+msgstr "عنوان التفويض"
+
+msgid "IDS_WIFI_HEADER_PASSWORD"
+msgstr "كلمة المرور"
+
+msgid "IDS_WIFI_HEADER_ENTER_PASSWORD"
+msgstr "أدخل كلمة المرور."
+
+msgid "IDS_WIFI_BUTTON_WPS_BUTTON"
+msgstr "زر WPS"
+
+msgid "IDS_WIFI_BUTTON_SCAN"
 msgstr "بحث"
 
-msgid "IDS_WIFI_SK3_BACK"
-msgstr "رجوع"
+msgid "IDS_WIFI_BUTTON_FIND_HIDDEN_NETWORK"
+msgstr "العثور على الشبكة المخفية"
+
+msgid "IDS_WIFI_BODY_WI_FI_NETWORKS_AVAILABLE_ABB"
+msgstr "شبكات Wi-Fi متاحة."
 
 msgid "IDS_WIFI_BODY_WI_FI_DIRECT_ABB"
-msgstr "Wi-Fi مباشر"
-
-msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
-msgstr "أجهزة Wi-Fi Direct"
-
-msgid "IDS_WFD_TAP_TO_CONNECT"
-msgstr "انقر للتوصيل"
-
-msgid "IDS_WIFI_SK2_MULTI_CONNECT"
-msgstr "اتصال متعدد"
-
-msgid "IDS_WFD_BUTTON_CONNECT"
-msgstr "توصيل"
-
-msgid "IDS_WIFI_OPT_MYNETWORKS_DISCONNECT"
-msgstr "فصل"
-
-msgid "IDS_WFD_BUTTON_CANCEL"
-msgstr "إلغاء الاتصال"
-
-msgid "IDS_COM_SK_CANCEL_A"
-msgstr "إلغاء"
-
-msgid "IDS_ST_HEADER_ACTIVATION"
-msgstr "التفعيل"
-
-msgid "IDS_COM_SK_CANCEL_LITE"
-msgstr "إلغاء"
-
-msgid "IDS_ST_BODY_WI_FI_DIRECT_ABB"
-msgstr "Wi-Fi مباشر"
+msgstr "مباشر Wi-Fi"
 
 msgid "IDS_WIFI_BODY_WI_FI"
 msgstr "Wi-Fi"
 
-msgid "IDS_COM_SK_CANCEL_ABB"
+msgid "IDS_WIFI_BODY_WHILE_CHARGING_ONLY_ABB"
+msgstr "أثناء الشحن فقط"
+
+msgid "IDS_WIFI_BODY_WEAK_M_STRENGTH"
+msgstr "ضعيفة"
+
+msgid "IDS_WIFI_BODY_USER_CERTIFICATE_ABB"
+msgstr "شهادة المستخدم"
+
+msgid "IDS_WIFI_BODY_UNSPECIFIED"
+msgstr "غير محدد"
+
+msgid "IDS_WIFI_BODY_UNKNOWN"
+msgstr "غير معروف"
+
+msgid "IDS_WIFI_BODY_TO_DOWNLOAD_LARGE_FILES_FASTER_USE_WI_FI_AND_MOBILE_NETWORKS_TOGETHER_T_HELP"
+msgstr "لتنزيل ملفات أكبر حجمًا بشكل أسرع، استخدم شبكة Wi-Fi وشبكات الهواتف المحمولة معاً ."
+
+msgid "IDS_WIFI_BODY_SUBNET_MASK"
+msgstr "قناع الشبكة الفرعية"
+
+msgid "IDS_WIFI_BODY_STATIC_IP"
+msgstr "ثابت IP"
+
+msgid "IDS_WIFI_BODY_SSID"
+msgstr "SSID"
+
+msgid "IDS_WIFI_BODY_SORT_BY"
+msgstr "فرز بواسطة"
+
+msgid "IDS_WIFI_BODY_SCANNING_ING"
+msgstr "جاري البحث..."
+
+msgid "IDS_WIFI_BODY_RECEIVE_NOTIFICATIONS_WHEN_NETWORKS_ARE_AVAILABLE"
+msgstr "استلام إشعارات عند توفّر الشبكات"
+
+msgid "IDS_WIFI_BODY_PROXY_PORT"
+msgstr "منفذ الوكيل"
+
+msgid "IDS_WIFI_BODY_NAME"
+msgstr "الاسم"
+
+msgid "IDS_WIFI_BODY_MAC_ADDRESS"
+msgstr "عنوان MAC"
+
+msgid "IDS_WIFI_BODY_IP_ADDRESS"
+msgstr "عنوان IP"
+
+msgid "IDS_WIFI_BODY_IDENTITY"
+msgstr "الهوية"
+
+msgid "IDS_WIFI_BODY_GATEWAY_ADDRESS"
+msgstr "عنوان البوابة"
+
+msgid "IDS_WIFI_BODY_ENTER_IDENTITY"
+msgstr "أدخل الهوية."
+
+msgid "IDS_WIFI_BODY_EAP_METHOD"
+msgstr "أسلوب EAP"
+
+msgid "IDS_WIFI_BODY_EAP"
+msgstr "EAP"
+
+msgid "IDS_WIFI_BODY_DNS_2"
+msgstr "DNS2"
+
+msgid "IDS_WIFI_BODY_DNS_1"
+msgstr "DNS1"
+
+msgid "IDS_WIFI_BODY_CONNECTING_ING"
+msgstr "جار التوصيل..."
+
+msgid "IDS_WIFI_BODY_CONNECT"
+msgstr "توصيل"
+
+msgid "IDS_WIFI_BODY_CONFIGURATION_SAVED_M_STATUS"
+msgstr "تم الحفظ."
+
+msgid "IDS_WIFI_BODY_A_WI_FI_NETWORK_HAS_BEEN_DETECTED_YOU_WILL_BE_CONNECTED"
+msgstr "تم اكتشاف شبكة Wi-Fi. سيتم الاتصال."
+
+msgid "IDS_WIFI_BODY_ADVANCED_SETTINGS"
+msgstr "ضبط متقدم"
+
+msgid "IDS_COM_SK_NO"
+msgstr "لا"
+
+msgid "IDS_COM_POP_SECURITY_POLICY_RESTRICTS_USE_OF_WI_FI"
+msgstr "سياسة الأمان تقيد استخدام Wi-Fi."
+
+msgid "IDS_WIFI_SBODY_TAP_HERE_TO_CONNECT"
+msgstr "انقر هنا للاتصال."
+
+msgid "IDS_WIFI_POP_YOUR_DEVICE_IS_CONNECTING_TO_P1SS_HOWEVER_THIS_NETWORK_MAY_NOT_PROVIDE_INTERNET_ACCESS_MSG"
+msgstr "يتم توصيل جهازك بـ %1$s. ولكن، قد لا توفر هذه الشبكة الوصول إلى الإنترنت.\nانقر فوق موافق لتبقى على اتصال بـ %1$s الآن، وقم أيضا بمنع تبديل الشبكة الذكي من الاتصال بهذه الشبكة في المستقبل."
+
+msgid "IDS_WIFI_POP_BOTH_WI_FI_AND_MOBILE_AP_CANNOT_BE_ACTIVATED_AT_THE_SAME_TIME_DEACTIVATE_MOBILE_AP_Q"
+msgstr "لا يمكن تنشيط كل من Wi-Fi وMobile AP في الوقت نفسه. هل تريد إلغاء تنشيط Mobile AP؟"
+
+msgid "IDS_WIFI_HEADER_SIGN_IN_TO_WI_FI_NETWORK_ABB"
+msgstr "تسجيل الدخول لشبكة Wi-Fi"
+
+msgid "IDS_WIFI_HEADER_INTERNET_MAY_NOT_BE_AVAILABLE_ABB"
+msgstr "قد لا يتوفر الإنترنت"
+
+msgid "IDS_WIFI_BUTTON_DONT_ASK_AGAIN"
+msgstr "عدم السؤال مرة أخرى"
+
+msgid "IDS_WIFI_BODY_OPEN_WI_FI_SETTINGS_ABB"
+msgstr "فتح إعدادات Wi-Fi"
+
+msgid "IDS_BT_BODY_NO_DEVICES_FOUND_ABB"
+msgstr "لم يتم العثور على أجهزة"
+
+msgid "IDS_BR_SK_YES"
+msgstr "نعم"
+
+msgid "IDS_BR_SK_NO"
+msgstr "لا"
+
+msgid "IDS_BR_SK_CANCEL"
 msgstr "إلغاء"
 
-msgid "IDS_WIFI_BUTTON_CANCEL"
+msgid "IDS_ST_HEADER_RENAME_DEVICE"
+msgstr "إعادة تسمية الجهاز"
+
+msgid "IDS_ST_HEADER_MY_DEVICE_NAME"
+msgstr "اسم الجهاز"
+
+msgid "IDS_COM_POP_FAILED"
+msgstr "فشل."
+
+msgid "IDS_COM_POP_CANCEL"
 msgstr "إلغاء"
 
-msgid "IDS_WIFI_BODY_ALLSHARE_CAST"
-msgstr "AllShare Cast"
+msgid "IDS_COM_BODY_CONNECTED_M_STATUS"
+msgstr "تم التوصيل."
 
-msgid "IDS_WIFI_POP_MOBILEACCESSSERVICE_ACTIVATING_ING"
-msgstr "جاري التفعيل..."
+msgid "IDS_BR_SK_OK"
+msgstr "موافق"
 
-msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_CONNECTION"
-msgstr "سيؤدي استخدام Wi-Fi Direct إلى قطع اتصال Wi-Fi الحالي"
+msgid "IDS_ST_POP_DEVICE_NAMES_ARE_DISPLAYED_TO_DISTINGUISH_EACH_OF_THE_DEVICES_AVAILABLE_MSG"
+msgstr "تعرض أسماء الأجهزة لتمييز كل جهاز متوفر في قائمة الأجهزة القريبة، عبر البلوتوث ومباشر Wi-Fi وغيرها من الطرق."
 
-msgid "IDS_WFD_TITLE_ABOUT_WIFI"
-msgstr "حول Wi-Fi Direct"
+msgid "IDS_ST_SK_RENAME"
+msgstr "تغيير الاسم"
 
-msgid "IDS_WFD_BODY_ABOUT_WIFI"
-msgstr "تعمل شبكة Wi-Fi Direct على تفعيل أجهزة Wi-Fi للاتصال مباشرة والطباعة ومشاركة الملفات والمزامنة ومشاركة الشاشة بسهولة وراحة أكبر. ومن خلال الاتصال بالأجهزة التي تدعم شبكة Wi-Fi Direct، يمكن مشاركة المحتوى ومزامنة البيانات والتواصل مع الأصدقاء على المستوى الاجتماعي وتشغيل الألعاب والصوت ومقاطع الفيديو وغير ذلك المزيد باستخدام تطبيقات متعددة"
+msgid "IDS_ST_BODY_TAP_TO_CHANGE_SETTINGS"
+msgstr "انقر لتغيير الضبط"
 
-msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
-msgstr "الأجهزة المتصلة"
+msgid "IDS_ST_POP_INVALID_CHARACTER_ENTERED_TRY_AGAIN"
+msgstr "تم إدخال حرف غير صالح. حاول مرة أخرى."
 
-msgid "IDS_WFD_BODY_BUSY_DEVICES"
-msgstr "الأجهزة المشغولة"
+msgid "IDS_ST_POP_NOT_SUPPORTED"
+msgstr "غير مدعوم."
 
-msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
-msgstr "متصل بجهاز آخر"
+msgid "IDS_CHATON_BODY_AVAILABLE"
+msgstr "متوفر"
 
-msgid "IDS_WIFI_POP_AP_DISCONNECTING_ING"
-msgstr "جاري الفصل..."
-
-msgid "IDS_WFD_POP_CONNECTING"
-msgstr "جاري التوصيل"
-
-msgid "IDS_WFD_WAITING_FOR_CONNECT"
-msgstr "في انتظار الاتصال"
-
-msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgid "IDS_CHATON_HEADER_CONNECTION_FAILED_ABB2"
 msgstr "فشل الاتصال"
 
-msgid "IDS_WFD_BUTTON_MULTI"
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_DEVICES"
+msgstr "أجهزة Wi-Fi Direct"
+
+msgid "IDS_WIFI_POP_TAP_TO_CONNECT"
+msgstr "انقر للتوصيل."
+
+msgid "IDS_WIFI_SK2_CANCEL_CONNECTION"
+msgstr "إلغاء الاتصال"
+
+msgid "IDS_ST_HEADER_CONNECTED_DEVICES"
+msgstr "الأجهزة المتصلة"
+
+msgid "IDS_WIFI_BODY_SELECT_ALL"
+msgstr "اختيار الكل"
+
+msgid "IDS_ST_HEADER_BUSY_DEVICES"
+msgstr "الأجهزة المشغولة"
+
+msgid "IDS_ST_BODY_CONNECTED_WITH_ANOTHER_DEVICE_ABB"
+msgstr "متصل بجهاز آخر"
+
+msgid "IDS_WIFI_BODY_WAITING_FOR_CONNECTION_M_STATUS_ABB"
+msgstr "في انتظار الاتصال"
+
+msgid "IDS_ST_POP_FAILED_TO_CONNECT"
+msgstr "فشل الاتصال."
+
+msgid "IDS_WIFI_BUTTON_MULTI_CONNECT"
 msgstr "اتصال متعدد"
 
-msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgid "IDS_WIFI_BUTTON_DISCONNECT_ALL"
 msgstr "فصل الكل"
 
-msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgid "IDS_WIFI_SK_DISCONNECT"
 msgstr "فصل"
-
-msgid "IDS_WFD_NOCONTENT"
-msgstr "لم يتم العثور على أجهزة"
 
 msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE"
 msgstr "إلغاء تفعيل Wi-Fi Direct بعد استخدامها"
@@ -271,105 +346,126 @@ msgstr "إلغاء تفعيل Wi-Fi Direct بعد استخدامها لتوفي�
 msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY_ABB"
 msgstr "إلغاء تفعيل Wi-Fi Direct بعد استخدامها لتوفير البطارية"
 
-msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES"
-msgstr "‏‫المسح بحثا عن أجهزة Wi-Fi Direct"
+msgid "IDS_WIFI_BODY_PS_IS_REQUESTING_A_WI_FI_DIRECT_CONNECTION_ALLOW_Q"
+msgstr "يطلب %s الاتصال بشبكة Wi-Fi Direct. هل تريد السماح؟"
 
-msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES_CURRENT_NETWORK_WILL_BE_DISCONNECTED"
-msgstr "المسح بحثا عن أجهزة Wi-Fi مباشر. سيتم قطع اتصال الشبكة الحالية"
+msgid "IDS_WIFI_BODY_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_CONNECTION_CONTINUE_Q"
+msgstr "سيؤدي استخدام Wi-Fi Direct إلى قطع اتصال Wi-Fi الحالي. متابعة؟"
 
-msgid "IDS_WIFI_BODY_SEARCH_FOR_WI_FI_DIRECT_DEVICES_OR_SEARCH_FOR_DEVICES_ON_OTHER_WI_FI_NETWORKS"
-msgstr "البحث عن أجهزة Wi-Fi Direct أو البحث عن أجهزة على شبكات Wi-Fi أخرى"
+msgid "IDS_WIFI_BODY_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_TETHERING_CONTINUE_Q"
+msgstr "سيؤدي استخدام Wi-Fi Direct إلى قطع تقييد Wi-Fi الحالي. متابعة؟"
 
-msgid "IDS_WFD_POP_WIFI_OFF"
-msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection. Continue?"
-
-msgid "IDS_WFD_POP_HOTSPOT_OFF"
-msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
-
-msgid "IDS_WIFI_BODY_WI_FI_DIRECT_CONNECTED"
-msgstr "Wi-Fi مباشر متصل"
-
-msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_CONNECTION_ABB"
 msgstr "اتصال Wi-Fi مباشر"
-
-msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_SETTINGS"
-msgstr "إعدادات Wi-Fi مباشر"
-
-msgid "IDS_WIFI_MBODY_CONFIGURE_WI_FI_DIRECT"
-msgstr "تهيئة Wi-Fi مباشر"
 
 msgid "IDS_WIFI_MBODY_DISCONNECT_WI_FI_DIRECT"
 msgstr "قطع اتصال Wi-Fi مباشر"
 
-msgid "IDS_WIFI_MBODY_WI_FI_DIRECT_STATUS"
-msgstr "حالة Wi-Fi مباشر"
-
-msgid "IDS_WIFI_OPT1_WI_FI_DIRECT"
-msgstr "Wi-Fi Direct"
-
-msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgid "IDS_WIFI_POP_CANCEL_WI_FI_DIRECT_CONNECTION_Q"
 msgstr "هل تريد إلغاء اتصال Wi-Fi Direct؟"
 
-msgid "IDS_WIFI_POP_CONNECTING_TO_WI_FI_NETWORK_WILL_DISCONNECT_DEVICE_CONNECTED_VIA_WI_FI_DIRECT"
-msgstr "سوف يؤدي الاتصال بشبكة Wi-Fi إلى قطع اتصال الجهاز المتصل عبر شبكة Wi-Fi Direct"
-
 msgid "IDS_WIFI_POP_CONNECT_TO_OTHER_DEVICES_VIA_WI_FI_DIRECT"
-msgstr "الاتصال بأجهزة أخرى عبر Wi-Fi مباشر"
+msgstr "الاتصال بأجهزة أخرى عبر Wi-Fi مباشر."
 
-msgid "IDS_WIFI_POP_DISABLE_MOBILE_AP_TO_USE_WI_FI_DIRECT_Q"
-msgstr "تعطيل نقطة وصول المحمول لاستخدام Wi-Fi Direct؟"
-
-msgid "IDS_WIFI_POP_DISCONNECT_CURRENT_WI_FI_DIRECT_DEVICE_TO_SEARCH_NETWORKS"
-msgstr "سيتم قطع اتصال جهاز Wi-Fi Direct الحالي للبحث عن الشبكات"
-
-msgid "IDS_WIFI_POP_ENABLING_WI_FI_DIRECT_WILL_TURN_OFF_WI_FI_AND_DISABLE_THE_PORTABLE_WI_FI_HOTSPOT"
-msgstr "يؤدي تفعيل شبكة Wi-Fi Direct إلى إيقاف تشغيل شبكة Wi-Fi وإلغاء تفعيل نقطة اتصال Wi-Fi النقالة"
-
-msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISABLE_PORTABLE_WI_FI_HOTSPOT"
-msgstr "سيؤدي استخدام شبكة Wi-Fi Direct إلغاء تفعيل نقطة اتصال Wi-Fi النقالة"
-
-msgid "IDS_WIFI_POP_WI_FI_DIRECT_ALREADY_IN_USE_TRY_LATER"
-msgstr "Wi-Fi Direct قيد الاستخدام بالفعل. حاول فيما بعد‬"
-
-msgid "IDS_WIFI_POP_WI_FI_DIRECT_CONNECTION_REQUEST_AUTOMATICALLY_DENIED_TO_CONNECT_TURN_OFF_ALLSHARE_CAST"
-msgstr "تم ‏‫رفض طلب الاتصال بشبكة Wi-Fi Direct تلقائيا. للاتصال، أوقف تشغيل AllShare Cast"
-
-msgid "IDS_WIFI_POP_WI_FI_DIRECT_WILL_BE_DISCONNECTED_CONTINUE_Q"
-msgstr "سيتم قطع اتصال Wi-Fi Direct. هل تريد المتابعة؟"
-
-msgid "IDS_WIFI_POP_WI_FI_IS_DISCONNECTED_WHILE_WI_FI_DIRECT_CONNECTS"
-msgstr "تم قطع اتصال Wi-Fi أثناء توصيل Wi-Fi Direct"
-
-msgid "IDS_WIFI_SK1_SEARCH_FOR_WI_FI_DIRECT_DEVICES"
-msgstr "البحث عن أجهزة Wi-Fi Direct"
-
-msgid "IDS_WFD_BODY_NO_DEVICES"
-msgstr "لا توجد أجهزة"
+msgid "IDS_WIFI_POP_THERE_HAS_BEEN_NO_ACTIVITY_FOR_PD_MINUTES_SINCE_WI_FI_DIRECT_WAS_ENABLED_MSG"
+msgstr "لم يوجد أي نشاط لمدة %d دقائق منذ تفعيل شبكة Wi-Fi Direct. ولإطالة عمر البطارية، تم إلغاء تفعيل Wi-Fi Direct."
 
 msgid "IDS_WIFI_SK4_SCAN"
 msgstr "بحث"
 
-msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgid "IDS_WIFI_SK_STOP"
 msgstr "إيقاف"
 
-msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
-msgstr "فشل إلغاء التنشيط"
+msgid "IDS_WIFI_POP_DEACTIVATION_FAILED"
+msgstr "فشل إلغاء التنشيط."
 
-msgid "IDS_WFD_POP_ACTIVATE_FAIL"
-msgstr "فشل التنشيط"
+msgid "IDS_WIMAX_POP_ACTIVATION_FAILED"
+msgstr "فشل التنشيط."
 
-msgid "IDS_WFD_POP_DISCONNECT"
+msgid "IDS_WIFI_POP_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_CONTINUE_Q"
 msgstr "سيتم قطع الاتصال الحالي. متابعة؟"
 
-msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgid "IDS_ST_POP_YOU_CAN_CONNECT_UP_TO_PD_DEVICES_AT_THE_SAME_TIME"
+msgstr "يمكنك الاتصال بما يصل إلى %d أجهزة في نفس الوقت."
+
+msgid "IDS_WIFI_HEADER_AVAILABLE_DEVICES_ABB"
 msgstr "الأجهزة المتاحة"
 
-msgid "IDS_WFD_POP_MULTI_CONNECT"
-msgstr "يمكنك الاتصال بما يصل إلى %d أجهزة في نفس الوقت"
+msgid "IDS_WIFI_POP_FAILED_TO_CONNECT_TO_PS"
+msgstr "فشل في الاتصال بـ %s."
 
-msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
-msgstr "كلمة المرور طويلة للغاية"
+msgid "IDS_ST_POP_DEVICE_CONNECTED_TO_ANOTHER_DEVICE"
+msgstr "تم توصيل الجهاز بجهاز آخر."
 
-msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
-msgstr "كلمة المرور قصيرة"
+msgid "IDS_WIFI_BODY_CONNECTED_TO_PS"
+msgstr "تم توصيله بـ %s."
+
+msgid "IDS_COM_BODY_PINS_DO_NOT_MATCH"
+msgstr "رموز PIN غير متطابقة."
+
+msgid "IDS_COM_POP_DEACTIVATING_ING"
+msgstr "جاري إلغاء التفعيل..."
+
+msgid "IDS_WIFI_BODY_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_SO_THAT_SCANNING_CAN_START_CONTINUE_Q"
+msgstr "سيتم قطع الاتصال الحالي حتى يبدأ المسح. هل تريد المتابعة؟"
+
+msgid "IDS_WIFI_HEADER_DEVICES_THAT_FAILED_TO_CONNECT"
+msgstr "الأجهزة التي فشلت في الاتصال"
+
+msgid "IDS_WIFI_POP_ENTER_PIN_TO_CONNECT_TO_PS"
+msgstr "أدخل رمز PIN للاتصال بـ %s."
+
+msgid "IDS_WIFI_POP_CONNECT_TO_PS_IN_PD_SECONDS"
+msgstr "اتصال بـ %s في خلال %d ثوان."
+
+msgid "IDS_WIFI_POP_PIN_CODE_PS"
+msgstr "%s لرمز PIN"
+
+msgid "IDS_DLNA_HEADER_SELECT_DEVICES_ABB"
+msgstr "تحديد أجهزة"
+
+msgid "IDS_WIFI_BODY_THE_WI_FI_DIRECT_CONNECTION_HAS_BEEN_LOST"
+msgstr "تم فقد اتصال Wi-Fi Direct"
+
+msgid "IDS_ST_BODY_CONNECT_WITH_PS_IN_PD_SECS_ABB"
+msgstr "اتصال بـ %s في خلال %d ثوان."
+
+msgid "IDS_ST_BODY_RENAME_DEVICE_ABB"
+msgstr "إعادة تسمية الجهاز"
+
+msgid "IDS_WIFI_POP_PIN"
+msgstr "PIN"
+
+msgid "IDS_WIFI_HEADER_UNABLE_TO_CONNECT_ABB2"
+msgstr "يتعذر الاتصال"
+
+msgid "IDS_WIFI_BUTTON_STOP_CONNECTION_ABB"
+msgstr "إيقاف الاتصال"
+
+msgid "IDS_WIFI_BUTTON_ALLOW"
+msgstr "السماح"
+
+msgid "IDS_COM_POP_ACTIVATING"
+msgstr "جاري التفعيل..."
+
+msgid "IDS_WIFI_SK_CONNECT"
+msgstr "توصيل"
+
+msgid "IDS_WIFI_BODY_CONNECTED"
+msgstr "تم التوصيل."
+
+msgid "IDS_STU_HEADER_ENTER_DEVICE_NAME"
+msgstr "إدخال اسم الجهاز"
+
+msgid "IDS_ST_POP_CONNECTED_WITH_PD_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "تم توصيله بـ %d أجهزة عبر Wi-Fi Direct."
+
+msgid "IDS_WIFI_SBODY_NOT_CONNECTED_M_STATUS_ABB"
+msgstr "غير متصل"
+
+msgid "IDS_WIFI_POP_THIS_WI_FI_DIRECT_CONNECTION_WILL_BE_CANCELLED"
+msgstr "سيتم إلغاء اتصال مباشر Wi-Fi هذا."
+
+msgid "IDS_WIFI_BODY_TO_SAVE_BATTERY_POWER_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "لتوفير طاقة البطارية، ألغ تفعيل شبكة Wi-Fi Direct بعد استخدامها."
 

@@ -1,117 +1,471 @@
-msgid "IDS_WFD_CONNECTED"
-msgstr "Қосылды"
+msgid "IDS_WIFI_BODY_ENTER_YOUR_ID"
+msgstr "Идентификаторыңызды енгізіңіз."
 
-msgid "IDS_WFD_CONNECTING"
-msgstr "Қосылуда..."
+msgid "IDS_COM_POP_MAXIMUM_NUMBER_OF_CHARACTERS_REACHED"
+msgstr "Таңбалардың ен көп саны артты."
 
-msgid "IDS_WFD_DISCONNECTING"
-msgstr "Ажырату"
-
-msgid "IDS_WFD_POP_CONNECTED"
-msgstr "Қосылды"
-
-msgid "IDS_WFD_POP_UNKNOWN_ERROR"
-msgstr "Белгісіз қате"
-
-msgid "IDS_WFD_POP_PIN_INVALID"
-msgstr "PIN кодтары сәйкес келмейді!"
-
-msgid "IDS_WFD_BODY_ACTIVATING"
-msgstr "Қосу..."
-
-msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgid "IDS_ST_HEADER_PD_SELECTED"
 msgstr "%d таңдалды"
 
-msgid "IDS_WFD_BODY_DEACTIVATING"
-msgstr "Өшірілуде.."
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "Қосу"
 
-msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
-msgstr "Ұстамайды"
+msgid "IDS_WIFI_BODY_DOT"
+msgstr "."
 
-msgid "IDS_WFD_HEADER_WIFI_DIRECT"
-msgstr "Wi-Fi Direct"
+msgid "IDS_WIFI_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_PD_REACHED"
+msgstr "Ең көп таңбалар санына (%d) жетті"
 
-msgid "IDS_WFD_BUTTON_SCAN"
-msgstr "Қарап шығу"
+msgid "IDS_WIFI_TPOP_FAILED_TO_OBTAIN_IP_ADDRESS"
+msgstr "IP мекенжайын алу сәтсіз аяқталды."
 
-msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
-msgstr "Wi-Fi Direct құрылғылары"
+msgid "IDS_WIFI_TPOP_CONNECTED_TO_WI_FI_NETWORK_PS"
+msgstr "%s Wi-Fi желісіне қосылды"
 
-msgid "IDS_WFD_TAP_TO_CONNECT"
-msgstr "Қосылу үшін түртіңіз"
+msgid "IDS_WIFI_TMBODY_NEVER_M_ALWAYS_OFF"
+msgstr "Ешқашан"
 
-msgid "IDS_WFD_BUTTON_CONNECT"
-msgstr "Қосылу"
+msgid "IDS_WIFI_TMBODY_DOWNLOAD_DATA_VIA_WI_FI_AND_4G"
+msgstr "Дерек-ді Wi-Fi ж. 4G арқ. жүк-у"
 
-msgid "IDS_WFD_BUTTON_CANCEL"
-msgstr "Байланыстан бас тарту"
+msgid "IDS_WIFI_TMBODY_DOWNLOAD_DATA_VIA_WI_FI_AND_3G"
+msgstr "Дерек-ді Wi-Fi ж. 3G арқ. жүк-у"
 
-msgid "IDS_WFD_TITLE_ABOUT_WIFI"
-msgstr "Wi-Fi Direct туралы"
+msgid "IDS_WIFI_SK_WPS_PIN"
+msgstr "WPS PIN"
 
-msgid "IDS_WFD_BODY_ABOUT_WIFI"
-msgstr "Wi-Fi Direct қызметі басып шығара, файлдарды бөлісе, синхрондай және экранды аса қарапайым әрі қолайлы бөлісе отырып, Wi-Fi құрылғыларына тікелей қосылуға мүмкіндік береді. Wi-Fi Direct қызметіне қолдау көрсететін құрылғыларға қосылу әр түрлі бағдарламалар арқылы мазмұнды бөлуісуге, деректерді синхрондауға, достармен араласуға, ойындар, дыбыс, бейне ойнатуға және т.б. әрекеттерге мүмкіндік береді"
+msgid "IDS_WIFI_SK_FORGET"
+msgstr "Ұмыту"
 
-msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
-msgstr "Қосылған құрылғылар"
-
-msgid "IDS_WFD_BODY_BUSY_DEVICES"
-msgstr "Бос емес құрылғылар"
-
-msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
-msgstr "Басқа құрылғымен қосылды"
-
-msgid "IDS_WFD_POP_CONNECTING"
-msgstr "Қосылуда..."
-
-msgid "IDS_WFD_WAITING_FOR_CONNECT"
-msgstr "Байланыс күтілуде"
-
-msgid "IDS_WFD_FAILED_TO_CONNECT"
-msgstr "Қосылмады"
-
-msgid "IDS_WFD_BUTTON_MULTI"
-msgstr "Бірнеше байланыс"
-
-msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
-msgstr "Барлығын ажырату"
-
-msgid "IDS_WFD_BUTTON_DISCONNECT"
-msgstr "Ажырату"
-
-msgid "IDS_WFD_NOCONTENT"
-msgstr "Құрылғылар табылмады"
-
-msgid "IDS_WFD_POP_WIFI_OFF"
-msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection. Continue?"
-
-msgid "IDS_WFD_POP_HOTSPOT_OFF"
-msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
-
-msgid "IDS_WFD_POP_TITILE_CONNECTION"
-msgstr "Wi-Fi Direct байланысы"
-
-msgid "IDS_WFD_POP_CANCEL_CONNECT"
-msgstr "Wi-Fi Direct байланысынан бас тарту керек пе?"
-
-msgid "IDS_WFD_BODY_NO_DEVICES"
-msgstr "Құрылғылар жоқ"
-
-msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgid "IDS_WIFI_SK_CANCEL"
 msgstr "Тоқтату"
 
-msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
-msgstr "Сөндірілген жоқ"
+msgid "IDS_WIFI_SK2_OK"
+msgstr "OK"
 
-msgid "IDS_WFD_POP_ACTIVATE_FAIL"
+msgid "IDS_WIFI_SBODY_CONNECTED_M_STATUS"
+msgstr "Қосылды"
+
+msgid "IDS_WIFI_SBODY_AUTOMATICALLY_SWITCH_BETWEEN_WI_FI_AND_MOBILE_NETWORKS_TO_MAINTAIN_A_STABLE_INTERNET_CONNECTION"
+msgstr "Тұрақты интернет қосылымын қамтамасыз ету үшін Wi-Fi және ұялы байланыс желілері арасында автоматты ауыстырыңыз."
+
+msgid "IDS_WIFI_SBODY_AUTHENTICATION_ERROR_OCCURRED_M_STATUS"
+msgstr "Түпнұсқалық растама қатесі орын алды"
+
+msgid "IDS_WIFI_POP_WI_FI_AND_MOBILE_NETWORKS_WILL_BE_USED_TOGETHER_TO_DOWNLOAD_FILES_FASTER_MSG"
+msgstr "Wi-Fi және ұялы деректер файлдарды жылдамырақ жүктеу үшін бірге пайдаланылатын болады. Бұл ұялы деректерді пайдалануды көбейтуі мүмкін."
+
+msgid "IDS_WIFI_POP_SMART_NETWORK_SWITCH_HAS_BEEN_ENABLED_MSG"
+msgstr "Смарт желіні ауыстыру қосылды. Бұл функция ұялы және Wi-Fi желілері арасында ауыстыру арқылы тұрақты Интернет байланысын ұстануға көмектеседі. Бұл деректерді пайдалануды көбейтуі мүмкін."
+
+msgid "IDS_WIFI_POP_PS_IS_SELECTED_N_NIF_YOU_ARE_UNABLE_TO_CONNECT_TO_AN_AP_CHANGE_THE_SIM_CARD_USED_FOR_VERIFICATION_BY_GOING_TO_SIM_CARD_MANAGER_MSG"
+msgstr "%s таңдалды.\n\nAP қосыла алмасаңыз, SIM карта реттеушісіне өту арқылы растау үшін пайдаланылған SIM картаны ауыстырыңыз. Осыдан кейін ұялы деректер мен мультимедиа хабарлары үшін пайдаланғыңыз келетін SIM картаны таңдаңыз. Балама түрде, пайдаланғыңыз келмейтін SIM картаны алып тастауға болады."
+
+msgid "IDS_WIFI_POP_PRESS_WPS_ON_YOUR_WI_FI_ACCESS_POINT_WITHIN_PD_MINUTES"
+msgstr "Wi-Fi қатынас нүктесіндегі WPS пернесін %d минут ішінде басыңыз."
+
+msgid "IDS_WIFI_POP_OPEN"
+msgstr "Ашу"
+
+msgid "IDS_WIFI_POP_NO_WI_FI_AP_FOUND"
+msgstr "Ешқандай Wi-Fi AP табылмады."
+
+msgid "IDS_WIFI_POP_CURRENT_NETWORK_WILL_BE_DISCONNECTED"
+msgstr "Ағымдағы желі ажыратылады."
+
+msgid "IDS_WIFI_OPT_WPS"
+msgstr "WPS"
+
+msgid "IDS_WIFI_OPT_SHOW_PASSWORD"
+msgstr "Құпиясөзді көрсету"
+
+msgid "IDS_WIFI_OPT_MOBILEACCESSSERVICEATCIVATION_ON"
+msgstr "Қосылған"
+
+msgid "IDS_WIFI_OPT_MOBILEACCESSSERVICEATCIVATION_OFF"
+msgstr "Өшірілген"
+
+msgid "IDS_WIFI_OPT_FORGET_NETWORK"
+msgstr "Желіні ұмыту"
+
+msgid "IDS_WIFI_MBODY_SMART_NETWORK_SWITCH"
+msgstr "Смарт желіні ауыстыру"
+
+msgid "IDS_WIFI_MBODY_SIGNAL_STRENGTH_KOR_SKT"
+msgstr "Сигнал деңгейі"
+
+msgid "IDS_WIFI_MBODY_REDUCE_MOBILE_DATA_USAGE"
+msgstr "Ұялы дер. пайдал. азайту"
+
+msgid "IDS_WIFI_MBODY_PRIORITISE_SPEED"
+msgstr "Жылдамдықты приоритеттеу"
+
+msgid "IDS_WIFI_MBODY_NETWORK_BONDING"
+msgstr "Желіні біріктіру"
+
+msgid "IDS_WIFI_HEADER_WI_FI_NETWORK_INFO_ABB"
+msgstr "Wi-Fi желілер туралы ақпарат"
+
+msgid "IDS_WIFI_HEADER_SELECT_WPS_METHOD_ABB"
+msgstr "WPS әдісін таңдау"
+
+msgid "IDS_WIFI_HEADER_PROXY_ADDRESS"
+msgstr "Прокси адресі"
+
+msgid "IDS_WIFI_HEADER_PASSWORD"
+msgstr "Кілтсөз"
+
+msgid "IDS_WIFI_HEADER_ENTER_PASSWORD"
+msgstr "Кілтсөз енгізіңіз."
+
+msgid "IDS_WIFI_BUTTON_WPS_BUTTON"
+msgstr "WPS түймесі"
+
+msgid "IDS_WIFI_BUTTON_SCAN"
+msgstr "Қарап шығу"
+
+msgid "IDS_WIFI_BUTTON_FIND_HIDDEN_NETWORK"
+msgstr "Жасырын желіні табу"
+
+msgid "IDS_WIFI_BODY_WI_FI_NETWORKS_AVAILABLE_ABB"
+msgstr "Wi-Fi желілері қол жетімді."
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WIFI_BODY_WI_FI"
+msgstr "Wi-Fi"
+
+msgid "IDS_WIFI_BODY_WHILE_CHARGING_ONLY_ABB"
+msgstr "Тек зарядтау кезінде"
+
+msgid "IDS_WIFI_BODY_WEAK_M_STRENGTH"
+msgstr "Әлсіз"
+
+msgid "IDS_WIFI_BODY_USER_CERTIFICATE_ABB"
+msgstr "Пайдал-шы куәлігі"
+
+msgid "IDS_WIFI_BODY_UNSPECIFIED"
+msgstr "Анықталмаған"
+
+msgid "IDS_WIFI_BODY_UNKNOWN"
+msgstr "Белгісіз"
+
+msgid "IDS_WIFI_BODY_TO_DOWNLOAD_LARGE_FILES_FASTER_USE_WI_FI_AND_MOBILE_NETWORKS_TOGETHER_T_HELP"
+msgstr "Үлкен файлдарды жылдамырақ жүктеу үшін, Wi-Fi және ұялы желілерді бірге пайдаланыңыз."
+
+msgid "IDS_WIFI_BODY_SUBNET_MASK"
+msgstr "Бағыныңқы желі енгізу бүркеніші"
+
+msgid "IDS_WIFI_BODY_STATIC_IP"
+msgstr "Статикалық IP-мекен-жай"
+
+msgid "IDS_WIFI_BODY_SSID"
+msgstr "SSID"
+
+msgid "IDS_WIFI_BODY_SORT_BY"
+msgstr "Бойынша сұрыптау"
+
+msgid "IDS_WIFI_BODY_SCANNING_ING"
+msgstr "Көшірілуде..."
+
+msgid "IDS_WIFI_BODY_RECEIVE_NOTIFICATIONS_WHEN_NETWORKS_ARE_AVAILABLE"
+msgstr "Хабарландыруларды желілер қол жетімді болған кезде қабылдау"
+
+msgid "IDS_WIFI_BODY_PROXY_PORT"
+msgstr "Порт прокси"
+
+msgid "IDS_WIFI_BODY_NAME"
+msgstr "Аты"
+
+msgid "IDS_WIFI_BODY_MAC_ADDRESS"
+msgstr "MAC мекенжайы"
+
+msgid "IDS_WIFI_BODY_IP_ADDRESS"
+msgstr "IP-мекен-жай"
+
+msgid "IDS_WIFI_BODY_IDENTITY"
+msgstr "Тұлғалық"
+
+msgid "IDS_WIFI_BODY_GATEWAY_ADDRESS"
+msgstr "Ену нүктесінің адресі"
+
+msgid "IDS_WIFI_BODY_ENTER_IDENTITY"
+msgstr "Идентификаторды енгізу."
+
+msgid "IDS_WIFI_BODY_EAP_METHOD"
+msgstr "EAP әдісі"
+
+msgid "IDS_WIFI_BODY_EAP"
+msgstr "EAP"
+
+msgid "IDS_WIFI_BODY_DNS_2"
+msgstr "DNS 2"
+
+msgid "IDS_WIFI_BODY_DNS_1"
+msgstr "DNS 1"
+
+msgid "IDS_WIFI_BODY_CONNECTING_ING"
+msgstr "Қосылуда..."
+
+msgid "IDS_WIFI_BODY_CONNECT"
+msgstr "Қосу"
+
+msgid "IDS_WIFI_BODY_CONFIGURATION_SAVED_M_STATUS"
+msgstr "Сақталған"
+
+msgid "IDS_WIFI_BODY_A_WI_FI_NETWORK_HAS_BEEN_DETECTED_YOU_WILL_BE_CONNECTED"
+msgstr "Wi-Fi желісі табылды. Қосылым орнатылады"
+
+msgid "IDS_WIFI_BODY_ADVANCED_SETTINGS"
+msgstr "Қосымша қондырғылар"
+
+msgid "IDS_COM_SK_NO"
+msgstr "Жоқ"
+
+msgid "IDS_COM_POP_SECURITY_POLICY_RESTRICTS_USE_OF_WI_FI"
+msgstr "Қауіпсіздік саясаты Wi-Fi пайдаланылуын шектейді."
+
+msgid "IDS_WIFI_SBODY_TAP_HERE_TO_CONNECT"
+msgstr "Қосылу үшін мына жерді түртіңіз."
+
+msgid "IDS_WIFI_POP_YOUR_DEVICE_IS_CONNECTING_TO_P1SS_HOWEVER_THIS_NETWORK_MAY_NOT_PROVIDE_INTERNET_ACCESS_MSG"
+msgstr "Құрылғыңыз %1$s қосылуда. Дегенмен бұл желі интернетке кіру рұқсатын бермеуі мүмкін.\nҚазір %1$s қосылулы тұру үшін OK түймесін түртіңіз, бірақ болашақта Смарт желі қосқышының осы желіге қосылуын шектейді."
+
+msgid "IDS_WIFI_POP_BOTH_WI_FI_AND_MOBILE_AP_CANNOT_BE_ACTIVATED_AT_THE_SAME_TIME_DEACTIVATE_MOBILE_AP_Q"
+msgstr "Wi-Fi және Mobile AP екеуін де бір уақытта іске қосу мүмкін емес. Mobile AP мүмкіндігін өшіру керек пе?"
+
+msgid "IDS_WIFI_HEADER_SIGN_IN_TO_WI_FI_NETWORK_ABB"
+msgstr "Wi-Fi желісіне кіру"
+
+msgid "IDS_WIFI_HEADER_INTERNET_MAY_NOT_BE_AVAILABLE_ABB"
+msgstr "Инт.қол жетімсіз болуы мүмкін"
+
+msgid "IDS_WIFI_BUTTON_DONT_ASK_AGAIN"
+msgstr "Қайтадан сұрамаңыз"
+
+msgid "IDS_WIFI_BODY_OPEN_WI_FI_SETTINGS_ABB"
+msgstr "Wi-Fi параметрлерін ашу"
+
+msgid "IDS_BT_BODY_NO_DEVICES_FOUND_ABB"
+msgstr "Құрылғылар табылмады"
+
+msgid "IDS_BR_SK_YES"
+msgstr "Иә"
+
+msgid "IDS_BR_SK_NO"
+msgstr "Жоқ"
+
+msgid "IDS_BR_SK_CANCEL"
+msgstr "Тоқтату"
+
+msgid "IDS_ST_HEADER_RENAME_DEVICE"
+msgstr "Құрылғы атын өзгерту"
+
+msgid "IDS_ST_HEADER_MY_DEVICE_NAME"
+msgstr "Менің құрылғымның аты"
+
+msgid "IDS_COM_POP_FAILED"
+msgstr "Үзіліп кетті"
+
+msgid "IDS_COM_POP_CANCEL"
+msgstr "Тоқтату"
+
+msgid "IDS_COM_BODY_CONNECTED_M_STATUS"
+msgstr "Қосылды"
+
+msgid "IDS_BR_SK_OK"
+msgstr "OK"
+
+msgid "IDS_ST_POP_DEVICE_NAMES_ARE_DISPLAYED_TO_DISTINGUISH_EACH_OF_THE_DEVICES_AVAILABLE_MSG"
+msgstr "Құрылғы атаулары жақын құрылғылар тізімінде қол жетімді құрылғылар ақылы көрсетіледі."
+
+msgid "IDS_ST_SK_RENAME"
+msgstr "Бсқш атау"
+
+msgid "IDS_ST_BODY_TAP_TO_CHANGE_SETTINGS"
+msgstr "Параметрлерді өзгерту үшін түртіңіз"
+
+msgid "IDS_ST_POP_INVALID_CHARACTER_ENTERED_TRY_AGAIN"
+msgstr "Қате таңба енгізілді. Әрекетті қайталаңыз"
+
+msgid "IDS_ST_POP_NOT_SUPPORTED"
+msgstr "Ұстамайды"
+
+msgid "IDS_CHATON_BODY_AVAILABLE"
+msgstr "Байланыс аясы"
+
+msgid "IDS_CHATON_HEADER_CONNECTION_FAILED_ABB2"
+msgstr "Қосылмады"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_DEVICES"
+msgstr "Wi-Fi Direct құрылғылары"
+
+msgid "IDS_WIFI_POP_TAP_TO_CONNECT"
+msgstr "Қосылу үшін түртіңіз."
+
+msgid "IDS_WIFI_SK2_CANCEL_CONNECTION"
+msgstr "Байланыстан бас тарту"
+
+msgid "IDS_ST_HEADER_CONNECTED_DEVICES"
+msgstr "Қосылған құрылғылар"
+
+msgid "IDS_WIFI_BODY_SELECT_ALL"
+msgstr "Бәрін бөлектеу"
+
+msgid "IDS_ST_HEADER_BUSY_DEVICES"
+msgstr "Бос емес құрылғылар"
+
+msgid "IDS_ST_BODY_CONNECTED_WITH_ANOTHER_DEVICE_ABB"
+msgstr "Басқа құрылғымен қосылды"
+
+msgid "IDS_WIFI_BODY_WAITING_FOR_CONNECTION_M_STATUS_ABB"
+msgstr "Байланыс күтілуде"
+
+msgid "IDS_ST_POP_FAILED_TO_CONNECT"
+msgstr "Қосылмады."
+
+msgid "IDS_WIFI_BUTTON_MULTI_CONNECT"
+msgstr "Бірнеше байланыс"
+
+msgid "IDS_WIFI_BUTTON_DISCONNECT_ALL"
+msgstr "Барлығын ажырату"
+
+msgid "IDS_WIFI_SK_DISCONNECT"
+msgstr "Ажырату"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "Пайдаланғаннан кейін Wi-Fi Direct өшіру"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_ABB"
+msgstr "Пайдаланған соң Wi-Fi Direct өшір-з"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY"
+msgstr "Батареяны үнемдеу үшін пайдаланғаннан кейін Wi-Fi Direct өшіру"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY_ABB"
+msgstr "Батарея үнемдеу үшін пайдал. соң Wi-Fi Direct өш-з"
+
+msgid "IDS_WIFI_BODY_PS_IS_REQUESTING_A_WI_FI_DIRECT_CONNECTION_ALLOW_Q"
+msgstr "%s Wi-Fi Direct байланысын сұрауда. Рұқсат ету керек пе?"
+
+msgid "IDS_WIFI_BODY_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_CONNECTION_CONTINUE_Q"
+msgstr "Wi-Fi Direct пайдалану ағымдағы Wi-Fi байланысын өшіреді. Жалғастыру керек пе?"
+
+msgid "IDS_WIFI_BODY_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_TETHERING_CONTINUE_Q"
+msgstr "Wi-Fi Direct пайдалану ағымдағы Wi-Fi байланыстыруды ажыратады. Жалғастыру керек пе?"
+
+msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_CONNECTION_ABB"
+msgstr "Wi-Fi Direct байланысы"
+
+msgid "IDS_WIFI_MBODY_DISCONNECT_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct ажыратыңыз"
+
+msgid "IDS_WIFI_POP_CANCEL_WI_FI_DIRECT_CONNECTION_Q"
+msgstr "Wi-Fi Direct байланысынан бас тарту керек пе?"
+
+msgid "IDS_WIFI_POP_CONNECT_TO_OTHER_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "Wi-Fi Direct арқылы басқа құрылғыларға қосылыңыз."
+
+msgid "IDS_WIFI_POP_THERE_HAS_BEEN_NO_ACTIVITY_FOR_PD_MINUTES_SINCE_WI_FI_DIRECT_WAS_ENABLED_MSG"
+msgstr "Wi-Fi Direct қосылғандықтан, %d минут бойы әрекет болмады. Батарея пайдалану мерзімін ұзарту үшін Wi-Fi Direct өшірілді."
+
+msgid "IDS_WIFI_SK4_SCAN"
+msgstr "Қарап шығу"
+
+msgid "IDS_WIFI_SK_STOP"
+msgstr "Үзіліс"
+
+msgid "IDS_WIFI_POP_DEACTIVATION_FAILED"
+msgstr "Сөндірілген жоқ."
+
+msgid "IDS_WIMAX_POP_ACTIVATION_FAILED"
 msgstr "Активтендіру сәтсіз"
 
-msgid "IDS_WFD_POP_DISCONNECT"
+msgid "IDS_WIFI_POP_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_CONTINUE_Q"
 msgstr "Ағымдағы байланыс ажыратылады. Жалғастыру керек пе?"
 
-msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
-msgstr "Қол жетімді құрылғылар"
+msgid "IDS_ST_POP_YOU_CAN_CONNECT_UP_TO_PD_DEVICES_AT_THE_SAME_TIME"
+msgstr "Бір уақытта %d құрылғыға дейін қосуға болады."
 
-msgid "IDS_WFD_POP_MULTI_CONNECT"
-msgstr "Бір уақытта %d құрылғыға дейін қосуға болады"
+msgid "IDS_WIFI_HEADER_AVAILABLE_DEVICES_ABB"
+msgstr "Қол жетімді құр-лар"
+
+msgid "IDS_WIFI_POP_FAILED_TO_CONNECT_TO_PS"
+msgstr "%s қосылым сәтсіз аяқталды."
+
+msgid "IDS_ST_POP_DEVICE_CONNECTED_TO_ANOTHER_DEVICE"
+msgstr "Құрылғы басқа құрылғыға қосылды."
+
+msgid "IDS_WIFI_BODY_CONNECTED_TO_PS"
+msgstr "%s құрылғысына қосылды."
+
+msgid "IDS_COM_BODY_PINS_DO_NOT_MATCH"
+msgstr "PIN кодтары сәйкес келмейді."
+
+msgid "IDS_COM_POP_DEACTIVATING_ING"
+msgstr "Өшірілуде.."
+
+msgid "IDS_WIFI_BODY_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_SO_THAT_SCANNING_CAN_START_CONTINUE_Q"
+msgstr "Іздеуді бастау үшін ағымдағы байланыс ажыратылады. Жалғастыру керек пе?"
+
+msgid "IDS_WIFI_HEADER_DEVICES_THAT_FAILED_TO_CONNECT"
+msgstr "Қосылмаған құрылғылар"
+
+msgid "IDS_WIFI_POP_ENTER_PIN_TO_CONNECT_TO_PS"
+msgstr "%s құрылғысына қосылу үшін PIN кодын енгізіңіз."
+
+msgid "IDS_WIFI_POP_CONNECT_TO_PS_IN_PD_SECONDS"
+msgstr "%2$d секундтан кейін %1$s құрылғысына қосылу."
+
+msgid "IDS_WIFI_POP_PIN_CODE_PS"
+msgstr "PIN коды %s"
+
+msgid "IDS_DLNA_HEADER_SELECT_DEVICES_ABB"
+msgstr "Құрылғыларды таңдау"
+
+msgid "IDS_WIFI_BODY_THE_WI_FI_DIRECT_CONNECTION_HAS_BEEN_LOST"
+msgstr "Wi-Fi Direct байланысы жоғалды."
+
+msgid "IDS_ST_BODY_CONNECT_WITH_PS_IN_PD_SECS_ABB"
+msgstr "%s құрыл-мен %d сек кейін қосылу."
+
+msgid "IDS_ST_BODY_RENAME_DEVICE_ABB"
+msgstr "Құрылғы атын өзгерту"
+
+msgid "IDS_WIFI_POP_PIN"
+msgstr "PIN"
+
+msgid "IDS_WIFI_HEADER_UNABLE_TO_CONNECT_ABB2"
+msgstr "Қосылу мүмкін емес"
+
+msgid "IDS_WIFI_BUTTON_STOP_CONNECTION_ABB"
+msgstr "Байланысты тоқтату"
+
+msgid "IDS_WIFI_BUTTON_ALLOW"
+msgstr "Рұқсат ету"
+
+msgid "IDS_COM_POP_ACTIVATING"
+msgstr "Қосу..."
+
+msgid "IDS_WIFI_SK_CONNECT"
+msgstr "Қосылу"
+
+msgid "IDS_WIFI_BODY_CONNECTED"
+msgstr "Қосылды"
+
+msgid "IDS_STU_HEADER_ENTER_DEVICE_NAME"
+msgstr "Құрылғы атауын енгізу"
+
+msgid "IDS_ST_POP_CONNECTED_WITH_PD_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "%d құрылғымен Wi-Fi Direct арқылы қосылды."
+
+msgid "IDS_WIFI_SBODY_NOT_CONNECTED_M_STATUS_ABB"
+msgstr "Қосылмаған"
+
+msgid "IDS_WIFI_POP_THIS_WI_FI_DIRECT_CONNECTION_WILL_BE_CANCELLED"
+msgstr "Бұл Wi-Fi Direct қосылымынан бас тартылады."
+
+msgid "IDS_WIFI_BODY_TO_SAVE_BATTERY_POWER_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "Батарея зарядын үнемдеу үшін пайдаланғаннан кейін Wi-Fi Direct өшіріңіз."
 

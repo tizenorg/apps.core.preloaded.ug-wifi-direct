@@ -1,13 +1,18 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
 
 INCLUDE(FindPkgConfig)
-pkg_check_modules(pkgs REQUIRED appcore-efl appsvc ui-gadget-1 x11 dlog
-	elementary ecore-x
-	capi-network-tethering network pmapi
-	wifi-direct
+pkg_check_modules(pkgs REQUIRED appcore-efl appsvc ui-gadget-1 dlog
+	elementary
+	capi-network-tethering
+	network
+	capi-network-wifi-direct
 	notification
 	capi-appfw-application
-	syspopup-caller
+	feedback
+	dbus-1
+	deviced efl-assist
+	capi-ui-efl-util
+	efl-extension
 	)
 
 FOREACH(flag ${pkgs_CFLAGS})
@@ -16,5 +21,4 @@ ENDFOREACH(flag)
 
 ADD_SUBDIRECTORY(popup-wifidirect)
 ADD_SUBDIRECTORY(ug-wifidirect)
-ADD_SUBDIRECTORY(ugapp-wifidirect)
 

@@ -1,13 +1,13 @@
 /*
 *  WiFi-Direct UG
 *
-* Copyright 2012 Samsung Electronics Co., Ltd
+* Copyright 2012  Samsung Electronics Co., Ltd
 
-* Licensed under the Flora License, Version 1.1 (the "License");
+* Licensed under the Flora License, Version 1.0 (the "License");
 * you may not use this file except in compliance with the License.
 * You may obtain a copy of the License at
 
-* http://floralicense.org/license
+* http://www.tizenopensource.org/license
 
 * Unless required by applicable law or agreed to in writing, software
 * distributed under the License is distributed on an "AS IS" BASIS,
@@ -29,47 +29,92 @@
 #ifndef __WFD_APP_UTIL_H__
 #define __WFD_APP_UTIL_H__
 
+#ifdef VITA_FEATURE
+#include <dlog.h>
 
-#define MAC2STR(a) (a)[0], (a)[1], (a)[2], (a)[3], (a)[4], (a)[5]
-#define MACSTR "%02x:%02x:%02x:%02x:%02x:%02x"
+#define WIFI_DIRECT_APP_MID		"wfd-app"
+
+#define WFD_APP_LOG_LOW	LOG_INFO
+#define WFD_APP_LOG_HIGH	LOG_INFO
+#define WFD_APP_LOG_ERROR	LOG_ERROR
+#define WFD_APP_LOG_WARN	LOG_WARN
+#define WFD_APP_LOG_ASSERT	LOG_FATAL
+#define WFD_APP_LOG_EXCEPTION	LOG_FATAL
 #define WFD_MAX_SIZE            128
 #define WFD_MAC_ADDRESS_SIZE    18
 
-#ifdef USE_DLOG
-#include <dlog.h>
+char *wfd_app_trim_path(const char *filewithpath);
+int wfd_app_gettid();
+/* TODO:: To change the log level as LOG_INFO */
+#define WFD_APP_LOG(log_level, format, args...) \
+	LOG(LOG_ERROR, WIFI_DIRECT_APP_MID, "[%s:%04d,%d] " format, wfd_app_trim_path(__FILE__),  __LINE__, wfd_app_gettid(), ##args)
+#define WFD_APP_LOGSECURE(log_level, format, args...) \
+	SECURE_LOG(LOG_ERROR, WIFI_DIRECT_APP_MID, "[%s:%04d,%d] " format, wfd_app_trim_path(__FILE__),  __LINE__, wfd_app_gettid(), ##args)
 
-#undef LOG_TAG
-#define LOG_TAG "WIFI_DIRECT_POPUP"
+#if 0
+#define __WFD_APP_FUNC_ENTER__	LOG(LOG_VERBOSE,  WIFI_DIRECT_APP_MID, "[%s:%04d,%d] Enter: %s()\n", wfd_app_trim_path(__FILE__), __LINE__, wfd_app_gettid(), __func__)
+#define __WFD_APP_FUNC_EXIT__	LOG(LOG_VERBOSE,  WIFI_DIRECT_APP_MID, "[%s:%04d,%d] Quit: %s()\n", wfd_app_trim_path(__FILE__), __LINE__, wfd_app_gettid(), __func__)
+#else
+#define __WFD_APP_FUNC_ENTER__
+#define __WFD_APP_FUNC_EXIT__
+#endif
 
-#define WDPOP_LOGV(format, args...) LOGV(format, ##args)
-#define WDPOP_LOGD(format, args...) LOGD(format, ##args)
-#define WDPOP_LOGI(format, args...) LOGI(format, ##args)
-#define WDPOP_LOGW(format, args...) LOGW(format, ##args)
-#define WDPOP_LOGE(format, args...) LOGE(format, ##args)
-#define WDPOP_LOGF(format, args...) LOGF(format, ##args)
+#else /** _DLOG_UTIL */
 
-#define __WDPOP_LOG_FUNC_ENTER__ LOGV("Enter")
-#define __WDPOP_LOG_FUNC_EXIT__ LOGV("Quit")
+#define WFD_APP_LOG(log_level, format, args...) printf("[%s:%04d,%d] " format, wfd_app_trim_path(__FILE__), __LINE__, wfd_app_gettid(), ##args)
+#if 0
+#define __WFD_APP_FUNC_ENTER__	printf("[%s:%04d,%d] Entering: %s()\n", wfd_app_trim_path(__FILE__), __LINE__, wfd_app_gettid(), __func__)
+#define __WFD_APP_FUNC_EXIT__	printf("[%s:%04d,%d] Quit: %s()\n", wfd_app_trim_path(__FILE__), __LINE__, wfd_app_gettid(), __func__)
+#else
+#define __WFD_APP_FUNC_ENTER__
+#define __WFD_APP_FUNC_EXIT__
+#endif
 
-#define assertm_if(expr, fmt, args...) do { \
+#endif /** _USE_DLOG_UTIL */
+
+#define WFD_RET_IF(expr, fmt, args...) \
+	do { \
+		if(expr) { \
+			WFD_APP_LOG(WFD_APP_LOG_ERROR, "[%s] Return, message "fmt, #expr, ##args );\
+			return; \
+		} \
+	} while (0)
+
+#define WFD_IF_FREE_MEM(mem) \
+	do { \
+		if(mem) { \
+			free(mem); \
+			mem = NULL; \
+		} \
+	} while (0)
+
+#define WFD_RETV_IF(expr, val, fmt, args...) \
+	do { \
+		if(expr) { \
+			WFD_APP_LOG(WFD_APP_LOG_ERROR, "[%s] Return value, message "fmt, #expr, ##args );\
+			return (val); \
+		} \
+	} while (0)
+
+#define assertm_if(expr, fmt, arg...) do { \
 	if (expr) { \
-	  WDPOP_LOGF(" ##(%s) -> assert!!## "fmt, #expr, ##args); \
+	  WFD_APP_LOG(WFD_APP_LOG_ASSERT, " ##(%s) -> %s() assert!!## "fmt, #expr, __FUNCTION__, ##arg); \
 		 exit(1); \
 	} \
 } while (0)
 
-#else /** _DLOG_UTIL */
+int wfd_app_util_register_hard_key_down_cb(void *data);
+int wfd_app_util_register_vconf_callbacks(void *data);
+int wfd_app_util_deregister_vconf_callbacks(void *data);
 
-#define WDPOP_LOGV(format, args...)
-#define WDPOP_LOGD(format, args...)
-#define WDPOP_LOGI(format, args...)
-#define WDPOP_LOGW(format, args...)
-#define WDPOP_LOGE(format, args...)
-#define WDPOP_LOGF(format, args...)
+void wfd_app_util_del_notification(wfd_appdata_t *ad);
+#ifdef NOT_CONNECTED_INDICATOR_ICON
+void wfd_app_util_add_indicator_icon(void *user_data);
+#endif
+void wfd_app_util_add_wfd_turn_off_notification(void *user_data);
 
-#define __WDPOP_LOG_FUNC_ENTER__
-#define __WDPOP_LOG_FUNC_EXIT__
-
-#endif /** _DLOG_UTIL */
-
+#ifdef WFD_SCREEN_MIRRORING_ENABLED
+void wfd_app_util_set_screen_mirroring_deactivated(wfd_appdata_t *ad);
+#endif
+void wfd_app_util_del_wfd_connected_notification(wfd_appdata_t *ad);
 #endif /* __WFD_APP_UTIL_H__ */

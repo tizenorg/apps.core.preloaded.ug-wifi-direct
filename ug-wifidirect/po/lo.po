@@ -1,0 +1,249 @@
+msgid "IDS_BT_BODY_NO_DEVICES_FOUND_ABB"
+msgstr "ບໍ່ພົບອຸປະກອນ"
+
+msgid "IDS_ST_HEADER_MY_DEVICE_NAME"
+msgstr "ຊື່ເຄື່ອງຂອງຂ້ອຍ"
+
+msgid "IDS_ST_HEADER_RENAME_DEVICE"
+msgstr "ຕັ້ງຊື່ເຄື່ອງໃໝ່"
+
+msgid "IDS_ST_POP_DEVICE_NAMES_ARE_DISPLAYED_TO_DISTINGUISH_EACH_OF_THE_DEVICES_AVAILABLE_MSG"
+msgstr "ຊື່ເຄື່ອງສະແດງຂຶ້ນ ເພື່ອຈໍາແນກຄວາມແຕກຕ່າງຂອງເຄື່ອງແຕ່ລະອັນທີ່ມີຢູ່ໃນລາຍການເຄື່ອງໃກ້ຄຽງ, ແລະຜ່ານບລູທູດ, Wi-Fi Direct, ແລະວິທີອື່ນໆ."
+
+msgid "IDS_COM_POP_MAXIMUM_NUMBER_OF_CHARACTERS_REACHED"
+msgstr "ຮອດຈໍານວນຕົວອັກສອນສູງສຸດແລ້ວ."
+
+msgid "IDS_WIFI_BODY_CONNECTING_ING"
+msgstr "ກໍາລັງເຊື່ອມຕໍ່..."
+
+msgid "IDS_BR_SK_CANCEL"
+msgstr "ຍົກເລີກ"
+
+msgid "IDS_BR_SK_YES"
+msgstr "ແມ່ນ"
+
+msgid "IDS_BR_SK_NO"
+msgstr "ບໍ່"
+
+msgid "IDS_WIFI_SK2_OK"
+msgstr "ຕົກລົງ"
+
+msgid "IDS_WIFI_SK_CANCEL"
+msgstr "ຍົກເລີກ"
+
+msgid "IDS_COM_POP_FAILED"
+msgstr "ບໍ່ສໍາເລັດ"
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "ເປີດໃຫ້ໃຊ້ງານໄດ້"
+
+msgid "IDS_ST_HEADER_PD_SELECTED"
+msgstr "%d ໄດ້ຖືກເລືອກ"
+
+msgid "IDS_COM_BODY_CONNECTED_M_STATUS"
+msgstr "ເຊື່ອມຕໍ່ແລ້ວ"
+
+msgid "IDS_ST_POP_INVALID_CHARACTER_ENTERED_TRY_AGAIN"
+msgstr "ໄດ້ໃສ່ຕົວອັກສອນທີ່ບໍ່ຖືກຕ້ອງ. ລອງໃໝ່ອີກ"
+
+msgid "IDS_ST_BODY_TAP_TO_CHANGE_SETTINGS"
+msgstr "ແຕະເພື່ອປ່ຽນການຕັ້ງຄ່າ"
+
+msgid "IDS_COM_POP_CANCEL"
+msgstr "ຍົກເລີກ"
+
+msgid "IDS_BR_SK_OK"
+msgstr "ຕົກລົງ"
+
+msgid "IDS_ST_POP_NOT_SUPPORTED"
+msgstr "ບໍ່ເຂົ້າກັນໄດ້."
+
+msgid "IDS_COM_POP_SECURITY_POLICY_RESTRICTS_USE_OF_WI_FI"
+msgstr "ນະໂຍບາຍດ້ານຄວາມປອດໄພຈໍາກັດການໃຊ້ Wi-Fi."
+
+msgid "IDS_ST_SK_RENAME"
+msgstr "ຕັ້ງຊື່ໃໝ່"
+
+msgid "IDS_CHATON_BODY_AVAILABLE"
+msgstr "ມີຢູ່"
+
+msgid "IDS_CHATON_HEADER_CONNECTION_FAILED_ABB2"
+msgstr "ການເຊື່ອມຕໍ່ບໍ່ສໍາເລັດ"
+
+msgid "IDS_COM_SK_NO"
+msgstr "ບໍ່"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_DEVICES"
+msgstr "ເຄື່ອງ Wi-Fi ໄດເຣັກ"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
+
+msgid "IDS_WIFI_POP_TAP_TO_CONNECT"
+msgstr "ແຕະເພື່ອເຊື່ອມຕໍ່."
+
+msgid "IDS_WIFI_SK2_CANCEL_CONNECTION"
+msgstr "ຍົກເລີກການເຊື່ອມຕໍ່"
+
+msgid "IDS_ST_HEADER_CONNECTED_DEVICES"
+msgstr "ເຄື່ອງເຊື່ອມຕໍ່ແລ້ວ"
+
+msgid "IDS_WIFI_BODY_SELECT_ALL"
+msgstr "ເລືອກທັງໝົດ"
+
+msgid "IDS_ST_HEADER_BUSY_DEVICES"
+msgstr "ເຄື່ອງບໍ່ຫວ່າງ"
+
+msgid "IDS_ST_BODY_CONNECTED_WITH_ANOTHER_DEVICE_ABB"
+msgstr "ເຊື່ອມຕໍ່ກັບເຄື່ອງອື່ນແລ້ວ"
+
+msgid "IDS_WIFI_BODY_WAITING_FOR_CONNECTION_M_STATUS_ABB"
+msgstr "ກໍາລັງລໍຖ້າການເຊື່ອມຕໍ່"
+
+msgid "IDS_ST_POP_FAILED_TO_CONNECT"
+msgstr "ເຊື່ອມຕໍ່ບໍ່ສໍາເລັດ."
+
+msgid "IDS_WIFI_BUTTON_MULTI_CONNECT"
+msgstr "ເຊື່ອມຕໍ່ຫຼາຍທາງ"
+
+msgid "IDS_WIFI_BUTTON_DISCONNECT_ALL"
+msgstr "ປິດເຊື່ອມຕໍ່ທັງໝົດ"
+
+msgid "IDS_WIFI_SK_DISCONNECT"
+msgstr "ຢຸດເຊື່ອມຕໍ່"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "ປິດໃຊ້ Wi-Fi ໄດເຣັກ ຫຼັງຈາກເຊົາໃຊ້"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_ABB"
+msgstr "ປິດໃຊ້ Wi-Fi ໄດເຣັກ ຫຼັງຈາກເຊົາໃຊ້"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY"
+msgstr "ປິດໃຊ້ Wi-Fi ໄດເຣັກ ຫຼັງຈາກເຊົາໃຊ້ ເພື່ອປະຢັດແບັດເຕີຣີ"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY_ABB"
+msgstr "ປິດໃຊ້ Wi-Fi ໄດເຣັກ ຫຼັງຈາກເຊົາໃຊ້ ເພື່ອປະຢັດແບັດເຕີຣີ"
+
+msgid "IDS_WIFI_BODY_PS_IS_REQUESTING_A_WI_FI_DIRECT_CONNECTION_ALLOW_Q"
+msgstr "%s ກໍາລັງສະເໜີຂໍການເຊື່ອມຕໍ່ Wi-Fi. ອະນຸຍາດບໍ?"
+
+msgid "IDS_WIFI_BODY_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_CONNECTION_CONTINUE_Q"
+msgstr "ການໃຊ້ Wi-Fi Direct ຈະປິດການເຊື່ອມຕໍ່ Wi-Fi ຂອງທ່ານ. ດໍາເນີນການຕໍ່ບໍ?"
+
+msgid "IDS_WIFI_BODY_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_TETHERING_CONTINUE_Q"
+msgstr "ການໃຊ້ Wi-Fi Direct ຈະປິດການຕໍ່ Wi-Fi ປະຈຸບັນຂອງທ່ານ. ດໍາເນີນການຕໍ່ບໍ?"
+
+msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_CONNECTION_ABB"
+msgstr "ການເຊື່ອມຕໍ່ Wi-Fi Direct"
+
+msgid "IDS_WIFI_MBODY_DISCONNECT_WI_FI_DIRECT"
+msgstr "Disconnect Wi-Fi Direct"
+
+msgid "IDS_WIFI_POP_CANCEL_WI_FI_DIRECT_CONNECTION_Q"
+msgstr "ຍົກເລີກການເຊື່ອມຕໍ່ Wi-Fi Direct ບໍ?"
+
+msgid "IDS_WIFI_POP_CONNECT_TO_OTHER_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "Connect to other devices via Wi-Fi Direct."
+
+msgid "IDS_WIFI_POP_THERE_HAS_BEEN_NO_ACTIVITY_FOR_PD_MINUTES_SINCE_WI_FI_DIRECT_WAS_ENABLED_MSG"
+msgstr "ບໍ່ມີກິດຈະກໍາໃດເປັນເວລາ %d ນາທີ ຕັ້ງແຕ່ໄດ້ເປີດໃຊ້ Wi-Fi ໄດເຣັກ. ເພື່ອໃຫ້ແບັດເຕີຣີກຸ້ມດົນ, ໄດ້ປິດໃຊ້ Wi-Fi ໄດເຣັກ."
+
+msgid "IDS_WIFI_SK4_SCAN"
+msgstr "ສະແກນ"
+
+msgid "IDS_WIFI_SK_STOP"
+msgstr "ຢຸດ"
+
+msgid "IDS_WIFI_POP_DEACTIVATION_FAILED"
+msgstr "ການປິດໃຊ້ງານບໍ່ສໍາເລັດ."
+
+msgid "IDS_WIMAX_POP_ACTIVATION_FAILED"
+msgstr "ການເປີດໃຊ້ງານລົ້ມເຫຼວ."
+
+msgid "IDS_WIFI_POP_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_CONTINUE_Q"
+msgstr "ການເຊື່ອມຕໍ່ປະຈຸບັນຈະຖືກຕັດ. ດໍາເນີນການຕໍ່ບໍ?"
+
+msgid "IDS_ST_POP_YOU_CAN_CONNECT_UP_TO_PD_DEVICES_AT_THE_SAME_TIME"
+msgstr "ທ່ານສາມາດເຊື່ອມຕໍ່ໄດ້ເຖິງ %d ເຄື່ອງໃນເວລາດຽວກັນ."
+
+msgid "IDS_WIFI_HEADER_AVAILABLE_DEVICES_ABB"
+msgstr "ເຄື່ອງທີ່ໃຊ້ງານໄດ້"
+
+msgid "IDS_WIFI_POP_FAILED_TO_CONNECT_TO_PS"
+msgstr "ເຊື່ອມຕໍ່ກັບ %s ບໍ່ສໍາເລັດ."
+
+msgid "IDS_ST_POP_DEVICE_CONNECTED_TO_ANOTHER_DEVICE"
+msgstr "ຕໍ່ເຄື່ອງໃສ່ກັບເຄື່ອງອື່ນແລ້ວ."
+
+msgid "IDS_WIFI_BODY_CONNECTED_TO_PS"
+msgstr "ໄດ້ເຊື່ອມຕໍ່ໃສ່ %s."
+
+msgid "IDS_COM_BODY_PINS_DO_NOT_MATCH"
+msgstr "ບັນດາລະຫັດ PIN ບໍ່ຖືກຕ້ອງ."
+
+msgid "IDS_COM_POP_DEACTIVATING_ING"
+msgstr "ກໍາລັງປິດໃຊ້..."
+
+msgid "IDS_WIFI_BODY_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_SO_THAT_SCANNING_CAN_START_CONTINUE_Q"
+msgstr "ການເຊື່ອມຕໍ່ປະຈຸບັນຈະຖືກຢຸດ ເພື່ອໃຫ້ສາມາດເລີ່ມຕົ້ນການສະແກນໄດ້. ດໍາເນີນການຕໍ່ບໍ?"
+
+msgid "IDS_WIFI_HEADER_DEVICES_THAT_FAILED_TO_CONNECT"
+msgstr "ເຄື່ອງອຸປະກອນທີ່ເຊື່ອມຕໍ່ບໍ່ໄດ້"
+
+msgid "IDS_WIFI_POP_ENTER_PIN_TO_CONNECT_TO_PS"
+msgstr "ປ້ອນ PIN ເພື່ອເຊື່ອມຕໍ່ກັບ %s."
+
+msgid "IDS_WIFI_POP_CONNECT_TO_PS_IN_PD_SECONDS"
+msgstr "ເຊື່ອມຕໍ່ກັບ %s ໃນ %d ວິນາທີ."
+
+msgid "IDS_WIFI_POP_PIN_CODE_PS"
+msgstr "PIN %s"
+
+msgid "IDS_DLNA_HEADER_SELECT_DEVICES_ABB"
+msgstr "ເລືອກເຄື່ອງ"
+
+msgid "IDS_WIFI_BODY_THE_WI_FI_DIRECT_CONNECTION_HAS_BEEN_LOST"
+msgstr "ການເຊື່ອມຕໍ່ Wi-Fi Direct ຖືກຕັດ."
+
+msgid "IDS_ST_BODY_CONNECT_WITH_PS_IN_PD_SECS_ABB"
+msgstr "ເຊື່ອມຕໍ່ດ້ວຍ %s ໃນ %d ວິນາທີ."
+
+msgid "IDS_ST_BODY_RENAME_DEVICE_ABB"
+msgstr "ຕັ້ງຊື່ເຄື່ອງໃໝ່"
+
+msgid "IDS_WIFI_POP_PIN"
+msgstr "PIN"
+
+msgid "IDS_WIFI_HEADER_UNABLE_TO_CONNECT_ABB2"
+msgstr "ບໍ່ສາມາດເຊື່ອມຕໍ່ໄດ້"
+
+msgid "IDS_WIFI_BUTTON_STOP_CONNECTION_ABB"
+msgstr "ຢຸດການເຊື່ອມຕໍ່"
+
+msgid "IDS_WIFI_BUTTON_ALLOW"
+msgstr "ອະນຸຍາດ"
+
+msgid "IDS_COM_POP_ACTIVATING"
+msgstr "ກໍາລັງເປີດໃຊ້ງານ..."
+
+msgid "IDS_WIFI_SK_CONNECT"
+msgstr "​ເຊື່​ອມຕໍ່"
+
+msgid "IDS_WIFI_BODY_CONNECTED"
+msgstr "ເຊື່ອມຕໍ່ແລ້ວ."
+
+msgid "IDS_STU_HEADER_ENTER_DEVICE_NAME"
+msgstr "ໃສ່ຊື່ເຄື່ອງເຂົ້າໄປ"
+
+msgid "IDS_ST_POP_CONNECTED_WITH_PD_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "ເຊື່ອມຕໍ່ດ້ວຍ %d ຜ່ານ Wi-Fi Direct ແລ້ວ."
+
+msgid "IDS_WIFI_SBODY_NOT_CONNECTED_M_STATUS_ABB"
+msgstr "ບໍ່ໄດ້ເຊື່ອມຕໍ່"
+
+msgid "IDS_WIFI_POP_THIS_WI_FI_DIRECT_CONNECTION_WILL_BE_CANCELLED"
+msgstr "ການເຊື່ອມຕໍ່ Wi-Fi Direct ນີ້ຈະຖືກຍົກເລີກ."
+
+msgid "IDS_WIFI_BODY_TO_SAVE_BATTERY_POWER_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "ເພື່ອປະຫຍັດໄຟແບັດເຕີຣີ, ປິດໃຊ້ງານ Wi-Fi Direct ຫຼັງຈາກໃຊ້ແລ້ວ."
+

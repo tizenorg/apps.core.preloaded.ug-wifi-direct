@@ -1,263 +1,338 @@
-msgid "IDS_WFD_CONNECTED"
-msgstr "დაკავშირებულია"
+msgid "IDS_WIFI_BODY_ENTER_YOUR_ID"
+msgstr "შეიყვანეთ თქვენი ID."
 
-msgid "IDS_WFD_CONNECTING"
-msgstr "უკავშირდება..."
+msgid "IDS_COM_POP_MAXIMUM_NUMBER_OF_CHARACTERS_REACHED"
+msgstr "მიღწეულია სიმბოლოების მაქსიმალური რაოდენობა."
 
-msgid "IDS_WFD_DISCONNECTING"
-msgstr "გამორთვა..."
-
-msgid ""
-msgstr "აქტიურდება Wi-Fi..."
-
-msgid "IDS_WIFI_POP_DEACTIVATING_WI_FI_ING"
-msgstr "თავიდან აქტიურდება Wi-Fi..."
-
-msgid "IDS_WFD_POP_CONNECTED"
-msgstr "დაკავშირებულია"
-
-msgid "IDS_COM_POP_NETWORK_INTERNAL_ERR"
-msgstr "შიდა შეცდომა"
-
-msgid "IDS_COM_POP_RETRIEVED"
-msgstr "მიღებულია"
-
-msgid "IDS_COM_POP_RETRIEVING_FAILED"
-msgstr "მიღება ვერ შესრულდა"
-
-msgid "IDS_COM_SK_CANCEL"
-msgstr "გაუქმება"
-
-msgid "IDS_ST_BODY_INTERNAL_ERROR"
-msgstr "შიდა შეცდომა"
-
-msgid "IDS_WFD_POP_UNKNOWN_ERROR"
-msgstr "უცნობი შეცდომა"
-
-msgid "IDS_COM_POP_NETWORK_ERROR"
-msgstr "ქსელის შეცდომა"
-
-msgid "IDS_COM_BODY_NO_SEARCH_RESULTS"
-msgstr "ძიების შედეგი არ არის"
-
-msgid "IDS_COM_POP_SEARCHING"
-msgstr "იძებნება..."
-
-msgid "IDS_WIFI_POP_DISCONNECTING_FAILED"
-msgstr "ვერ გამოირთო"
-
-msgid "IDS_ST_BODY_ENTER_NEW_PASSWORD"
-msgstr "შეიყვანეთ ახალი პაროლი"
-
-msgid "IDS_COM_POP_UNKNOWN_ERROR_UNABLE_TO_LAUNCH_APPLICATION"
-msgstr "უცნობი შეცდომა მოხდა. პროგრამის ჩართვა შეუძლებელია"
-
-msgid "IDS_COM_POP_ACCEPT"
-msgstr "მიღება"
-
-msgid "IDS_COM_POP_CONNECTING"
-msgstr "უკავშირდება..."
-
-msgid "IDS_COM_POP_ERROR"
-msgstr "შეცდომა"
-
-msgid "IDS_COM_POP_REJECT"
-msgstr "უარყოფა"
-
-msgid "IDS_COM_POP_REJECTED"
-msgstr "უარყოფილია"
-
-msgid "IDS_COM_BODY_SELECT_ALL"
-msgstr "ყველას არჩევა"
-
-msgid "IDS_COM_POP_FAILED"
-msgstr "ვერ შესრულდა"
-
-msgid "IDS_COM_SK_ACCEPT"
-msgstr "მიღება"
-
-msgid "IDS_ST_BODY_ENTER_4_TO_8_DIGIT_PIN"
-msgstr "ჩაწერეთ 4-8-ციფრიანი PIN"
-
-msgid "IDS_WFD_POP_PIN_INVALID"
-msgstr "PIN–ები არ თანხვდება!"
-
-msgid "IDS_ST_POP_YES"
-msgstr "დიახ"
-
-msgid "IDS_WFD_BODY_ACTIVATING"
-msgstr "აქტიურდება..."
-
-msgid "IDS_COM_POP_DEACTIVATED"
-msgstr "დეაქტივირებულია"
-
-msgid "IDS_COM_SK_OK"
-msgstr "OK"
-
-msgid "IDS_COM_SK_YES"
-msgstr "დიახ"
-
-msgid "IDS_WIFI_HEADER_MOBILE_HOTSPOT_VZW"
-msgstr "მობილური ცხელი წერტილი"
-
-msgid "IDS_ST_BODY_ENTER_CURRENT_PASSWORD"
-msgstr "ჩაწერეთ მიმდინარე პაროლი"
-
-msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgid "IDS_ST_HEADER_PD_SELECTED"
 msgstr "%d არჩეულია"
 
-msgid "IDS_ST_POP_SEARCHING_ING"
-msgstr "იძებნება..."
-
-msgid "IDS_COM_POP_NOTHING_SELECTED"
-msgstr "არაფერია არჩეული"
-
-msgid "IDS_COM_OPT1_WI_FI_DIRECT"
-msgstr "Wi-Fi Direct"
-
-msgid "IDS_COM_POP_DISCONNECTED"
-msgstr "გათიშულია"
-
-msgid "IDS_WIFI_MBODY_MOBILE_HOTSPOT_VZW"
-msgstr "მობილური ცხელი წერტილი"
-
-msgid "IDS_WIFI_BODY_IP_ADDRESS"
-msgstr "IP მისამართი"
-
-msgid "IDS_WFD_BODY_DEACTIVATING"
-msgstr "გამორთვა..."
-
-msgid "IDS_COM_POP_UNEXPECTED_ERROR"
-msgstr "მოულოდნელი შეცდომა"
-
-msgid "IDS_COM_POP_NETWORK_CONNECTION_ERROR"
-msgstr "ქსელთან დაკავშირების შეცდომა"
-
-msgid "IDS_COM_BODY_OPERATION_FAILED"
-msgstr "ოპერაცია ვერ შესრულდა"
-
-msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
-msgstr "გაუთვალისწინებელი"
-
-msgid "IDS_COM_POP_UNSUPPORTED"
-msgstr "გაუთვალისწინებელი"
-
-msgid "IDS_WFD_HEADER_WIFI_DIRECT"
-msgstr "Wi-Fi Direct"
-
-msgid "IDS_COM_POP_ACCEPTED"
-msgstr "მიღებულია"
-
-msgid "IDS_WIFI_BODY_MAC_ADDRESS"
-msgstr "MAC მისამართი"
-
-msgid "IDS_WIFI_POP_AUTOMATIC_CONNECTION_NETWORK_WILL_DISABLED_CONTINUE_Q_MSG"
-msgstr "ამ ქსელთან ავტომატური დაკავშირება გამოირთვება. განაგრძობთ?"
-
-msgid "IDS_COM_POP_PROGRESSING_ING"
-msgstr "მიმდინარეობს..."
-
-msgid "IDS_WIFI_BODY_CONNECT"
-msgstr "დაკავშირება"
-
-msgid "IDS_WIFI_HEADER_WI_FI"
-msgstr "Wi-Fi"
-
-msgid "IDS_WFD_BUTTON_SCAN"
-msgstr "სკანირება"
-
-msgid "IDS_WIFI_SK3_BACK"
-msgstr "უკან"
-
-msgid "IDS_WIFI_BODY_WI_FI_DIRECT_ABB"
-msgstr "Wi-Fi Direct"
-
-msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
-msgstr "Wi-Fi Direct მოწყობილობები"
-
-msgid "IDS_WFD_TAP_TO_CONNECT"
-msgstr "დააკაკუნეთ, რომ დაუკავშირდეთ"
-
-msgid "IDS_WIFI_SK2_MULTI_CONNECT"
-msgstr "მრავალი კავშირი"
-
-msgid "IDS_WFD_BUTTON_CONNECT"
-msgstr "კავშირი"
-
-msgid "IDS_WIFI_OPT_MYNETWORKS_DISCONNECT"
-msgstr "გათიშვა"
-
-msgid "IDS_WFD_BUTTON_CANCEL"
-msgstr "დაკავშირების გაუქმება"
-
-msgid "IDS_COM_SK_CANCEL_A"
-msgstr "გაუქმ."
-
-msgid "IDS_ST_HEADER_ACTIVATION"
+msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "გააქტიურება"
 
-msgid "IDS_COM_SK_CANCEL_LITE"
-msgstr "გაუქმ."
+msgid "IDS_WIFI_BODY_DOT"
+msgstr "."
 
-msgid "IDS_ST_BODY_WI_FI_DIRECT_ABB"
+msgid "IDS_WIFI_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_PD_REACHED"
+msgstr "მიღწეულია სიმბოლოების მაქსიმალური რაოდენობა %d"
+
+msgid "IDS_WIFI_TPOP_FAILED_TO_OBTAIN_IP_ADDRESS"
+msgstr "IP მისამართის მიღება ვერ მოხდა."
+
+msgid "IDS_WIFI_TPOP_CONNECTED_TO_WI_FI_NETWORK_PS"
+msgstr "დაუკავშირდა Wi-Fi ქსელს %s"
+
+msgid "IDS_WIFI_TMBODY_NEVER_M_ALWAYS_OFF"
+msgstr "არასოდეს"
+
+msgid "IDS_WIFI_TMBODY_DOWNLOAD_DATA_VIA_WI_FI_AND_4G"
+msgstr "ჩამოტვირთვა Wi-Fi და 4G-ით"
+
+msgid "IDS_WIFI_TMBODY_DOWNLOAD_DATA_VIA_WI_FI_AND_3G"
+msgstr "ჩამოტვირთვა Wi-Fi და 3G-ით"
+
+msgid "IDS_WIFI_SK_WPS_PIN"
+msgstr "WPS PIN"
+
+msgid "IDS_WIFI_SK_FORGET"
+msgstr "დავიწყება"
+
+msgid "IDS_WIFI_SK_CANCEL"
+msgstr "გაუქმება"
+
+msgid "IDS_WIFI_SK2_OK"
+msgstr "OK"
+
+msgid "IDS_WIFI_SBODY_CONNECTED_M_STATUS"
+msgstr "დაკავშირებული"
+
+msgid "IDS_WIFI_SBODY_AUTOMATICALLY_SWITCH_BETWEEN_WI_FI_AND_MOBILE_NETWORKS_TO_MAINTAIN_A_STABLE_INTERNET_CONNECTION"
+msgstr "ავტომატურად გადართეთ Wi-Fi-სა და მობილურ ქსელებს შორის, რათა შენარჩუნდეს უწყვეტი კავშირი ინტერნეტთან."
+
+msgid "IDS_WIFI_SBODY_AUTHENTICATION_ERROR_OCCURRED_M_STATUS"
+msgstr "მოხდა ავტორიზაციის შეცდომა"
+
+msgid "IDS_WIFI_POP_WI_FI_AND_MOBILE_NETWORKS_WILL_BE_USED_TOGETHER_TO_DOWNLOAD_FILES_FASTER_MSG"
+msgstr "ფაილების უფრო სწრაფად ჩამოტვირთვისთვის ერთად იქნება გამოყენებული Wi-Fi და მობილური ქსელები. ამით შეიძლება გაიზარდოს მობილურ მონაცემთა გამოყენება."
+
+msgid "IDS_WIFI_POP_SMART_NETWORK_SWITCH_HAS_BEEN_ENABLED_MSG"
+msgstr "ჩაირთო ქსელის ინტელექტუალური გადართვა. ეს ფუნქცია ხელს უწყობს სტაბილური კავშირის შენარჩუნებას ინტერნეტთან, რისთვისაც ახდენს გადართვას მობილურ და Wi-Fi ქსელებს შორის. ამით შეიძლება გაიზარდოს მონაცემთა გამოყენება."
+
+msgid "IDS_WIFI_POP_PS_IS_SELECTED_N_NIF_YOU_ARE_UNABLE_TO_CONNECT_TO_AN_AP_CHANGE_THE_SIM_CARD_USED_FOR_VERIFICATION_BY_GOING_TO_SIM_CARD_MANAGER_MSG"
+msgstr "არჩეულია %s.\n\nთუ წვდომის წერტილს ვერ უკავშირდებით, გადადით SIM ბარათების მმართველზე და შეცვალეთ დამოწმებისთვის გამოყენებული SIM ბარათი. შემდეგ აირჩიეთ SIM ბარათი, რომლის გამოყენებაც გსურთ მობილურ მონაცემთა ქსელისა და მულტიმედიური შეტყობინებებისთვის. სხვაგვარად, შეგიძლიათ გათიშოთ SIM ბარათი, რომლის გამოყენებაც არ გსურთ."
+
+msgid "IDS_WIFI_POP_PRESS_WPS_ON_YOUR_WI_FI_ACCESS_POINT_WITHIN_PD_MINUTES"
+msgstr "მაქსიმუმ %d წუთში დააჭირეთ WPS–ს თქვენი Wi-Fi წვდომის წერტილზე."
+
+msgid "IDS_WIFI_POP_OPEN"
+msgstr "გახსნა"
+
+msgid "IDS_WIFI_POP_NO_WI_FI_AP_FOUND"
+msgstr "Wi-Fi AP ვერ მოიძებნა."
+
+msgid "IDS_WIFI_POP_CURRENT_NETWORK_WILL_BE_DISCONNECTED"
+msgstr "მიმდინარე ქსელი გამოირთვება."
+
+msgid "IDS_WIFI_OPT_WPS"
+msgstr "WPS"
+
+msgid "IDS_WIFI_OPT_SHOW_PASSWORD"
+msgstr "პაროლის გამოჩენა"
+
+msgid "IDS_WIFI_OPT_MOBILEACCESSSERVICEATCIVATION_ON"
+msgstr "ჩართვა"
+
+msgid "IDS_WIFI_OPT_MOBILEACCESSSERVICEATCIVATION_OFF"
+msgstr "გამორთ."
+
+msgid "IDS_WIFI_OPT_FORGET_NETWORK"
+msgstr "ქსელის დავიწყება"
+
+msgid "IDS_WIFI_MBODY_SMART_NETWORK_SWITCH"
+msgstr "ინტელექტუალური გადართვა"
+
+msgid "IDS_WIFI_MBODY_SIGNAL_STRENGTH_KOR_SKT"
+msgstr "სიგნალის სიმძლავრე"
+
+msgid "IDS_WIFI_MBODY_REDUCE_MOBILE_DATA_USAGE"
+msgstr "შემცირდეს გამოყენება"
+
+msgid "IDS_WIFI_MBODY_PRIORITISE_SPEED"
+msgstr "სიჩქარის პრიორიტეტი"
+
+msgid "IDS_WIFI_MBODY_NETWORK_BONDING"
+msgstr "ქსელების დაკავშირება"
+
+msgid "IDS_WIFI_HEADER_WI_FI_NETWORK_INFO_ABB"
+msgstr "Wi-Fi ქსელის ინფორმაცია"
+
+msgid "IDS_WIFI_HEADER_SELECT_WPS_METHOD_ABB"
+msgstr "აირჩიეთ WPS მეთოდი"
+
+msgid "IDS_WIFI_HEADER_PROXY_ADDRESS"
+msgstr "პროქსი სერვერის მისამართი"
+
+msgid "IDS_WIFI_HEADER_PASSWORD"
+msgstr "პაროლი"
+
+msgid "IDS_WIFI_HEADER_ENTER_PASSWORD"
+msgstr "პაროლის შეყვანა."
+
+msgid "IDS_WIFI_BUTTON_WPS_BUTTON"
+msgstr "WPS ღილაკი"
+
+msgid "IDS_WIFI_BUTTON_SCAN"
+msgstr "სკანირება"
+
+msgid "IDS_WIFI_BUTTON_FIND_HIDDEN_NETWORK"
+msgstr "ფარული ქსელის ძებნა"
+
+msgid "IDS_WIFI_BODY_WI_FI_NETWORKS_AVAILABLE_ABB"
+msgstr "Wi-Fi ქსელები მისაწვდომია."
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_ABB"
 msgstr "Wi-Fi Direct"
 
 msgid "IDS_WIFI_BODY_WI_FI"
 msgstr "Wi-Fi"
 
-msgid "IDS_COM_SK_CANCEL_ABB"
-msgstr "გაუქმ."
+msgid "IDS_WIFI_BODY_WHILE_CHARGING_ONLY_ABB"
+msgstr "მხოლოდ დამუხტვის დროს"
 
-msgid "IDS_WIFI_BUTTON_CANCEL"
-msgstr "გაუქმება"
+msgid "IDS_WIFI_BODY_WEAK_M_STRENGTH"
+msgstr "სუსტი"
 
-msgid "IDS_WIFI_BODY_ALLSHARE_CAST"
-msgstr "AllShare Cast"
+msgid "IDS_WIFI_BODY_USER_CERTIFICATE_ABB"
+msgstr "მომხ. სერთიფიკატი"
 
-msgid "IDS_WIFI_POP_MOBILEACCESSSERVICE_ACTIVATING_ING"
-msgstr "აქტიურდება..."
+msgid "IDS_WIFI_BODY_UNSPECIFIED"
+msgstr "დაუზუსტებელი"
 
-msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_CONNECTION"
-msgstr "Wi-Fi Direct-ის გამოყენების შედეგად გამოირთვება მიმდინარე Wi-Fi კავშირი"
+msgid "IDS_WIFI_BODY_UNKNOWN"
+msgstr "უცნობი"
 
-msgid "IDS_WFD_TITLE_ABOUT_WIFI"
-msgstr "Wi-Fi Direct-ის შესახებ"
+msgid "IDS_WIFI_BODY_TO_DOWNLOAD_LARGE_FILES_FASTER_USE_WI_FI_AND_MOBILE_NETWORKS_TOGETHER_T_HELP"
+msgstr "დიდი ფაილების მოგვიანებით ჩამოტვირთვისთვის ერთად გამოიყენეთ Wi-Fi და მობილური ქსელი."
 
-msgid "IDS_WFD_BODY_ABOUT_WIFI"
-msgstr "Wi-Fi Direct ააქტიურებს Wi-Fi მოწყობილობებს, პირდაპირ დასაკავშირებლად, ამოსაბეჭდად, ფაილის გასაზიარებლად, სინქრონიზაციისთვის და ეკრანის გასაზიარებლად, გაცილებით მარტივად და უფრო მოხერხებულად. ისეთ მოწყობილობებთან დაკავშირება, რომლებშიც მუშაობს Wi-Fi Direct, გაძლევთ შესაძლებლობას გააზიაროთ მასალა, დაასინქრონოთ მონაცემები, დაამყაროთ ურთიერთობა მეგობრებთან, ითამაშოთ, ჩართოთ აუდიო, ვიდეო და ა.შ., სხვადასხვა პროგრამების გამოყენებით."
+msgid "IDS_WIFI_BODY_SUBNET_MASK"
+msgstr "ქვექსელის ნიღაბი"
 
-msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
-msgstr "დაკავშირებული მოწყობილობები"
+msgid "IDS_WIFI_BODY_STATIC_IP"
+msgstr "სტატიკური IP"
 
-msgid "IDS_WFD_BODY_BUSY_DEVICES"
-msgstr "დაკავებული აპარატები"
+msgid "IDS_WIFI_BODY_SSID"
+msgstr "SSID"
 
-msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
-msgstr "დაკავშირებულია სხვა აპარატთან"
+msgid "IDS_WIFI_BODY_SORT_BY"
+msgstr "გადარჩევა"
 
-msgid "IDS_WIFI_POP_AP_DISCONNECTING_ING"
-msgstr "გამორთვა..."
+msgid "IDS_WIFI_BODY_SCANNING_ING"
+msgstr "მიმდ. სკანირება"
 
-msgid "IDS_WFD_POP_CONNECTING"
+msgid "IDS_WIFI_BODY_RECEIVE_NOTIFICATIONS_WHEN_NETWORKS_ARE_AVAILABLE"
+msgstr "მიიღეთ შეტყობინებები, როდესაც ქსელი მისაწვდომი გახდება"
+
+msgid "IDS_WIFI_BODY_PROXY_PORT"
+msgstr "პროქსი სერვერის პორტი"
+
+msgid "IDS_WIFI_BODY_NAME"
+msgstr "სახელი"
+
+msgid "IDS_WIFI_BODY_MAC_ADDRESS"
+msgstr "MAC მისამართი"
+
+msgid "IDS_WIFI_BODY_IP_ADDRESS"
+msgstr "IP მისამართი"
+
+msgid "IDS_WIFI_BODY_IDENTITY"
+msgstr "პირადობა"
+
+msgid "IDS_WIFI_BODY_GATEWAY_ADDRESS"
+msgstr "გასასვლელის მისამართი"
+
+msgid "IDS_WIFI_BODY_ENTER_IDENTITY"
+msgstr "შეიყვანეთ საიდენტიფიკაციო ინფორმაცია."
+
+msgid "IDS_WIFI_BODY_EAP_METHOD"
+msgstr "EAP მეთოდი"
+
+msgid "IDS_WIFI_BODY_EAP"
+msgstr "EAP"
+
+msgid "IDS_WIFI_BODY_DNS_2"
+msgstr "DNS 2"
+
+msgid "IDS_WIFI_BODY_DNS_1"
+msgstr "DNS 1"
+
+msgid "IDS_WIFI_BODY_CONNECTING_ING"
 msgstr "უკავშირდება..."
 
-msgid "IDS_WFD_WAITING_FOR_CONNECT"
-msgstr "დაკავშირების ლოდინი"
+msgid "IDS_WIFI_BODY_CONNECT"
+msgstr "დაკავშირება"
 
-msgid "IDS_WFD_FAILED_TO_CONNECT"
+msgid "IDS_WIFI_BODY_CONFIGURATION_SAVED_M_STATUS"
+msgstr "შენახულია"
+
+msgid "IDS_WIFI_BODY_A_WI_FI_NETWORK_HAS_BEEN_DETECTED_YOU_WILL_BE_CONNECTED"
+msgstr "ნაპოვნია Wi-Fi ქსელი. დამყარდება კავშირი"
+
+msgid "IDS_WIFI_BODY_ADVANCED_SETTINGS"
+msgstr "დამატებითი პარამეტრები"
+
+msgid "IDS_COM_SK_NO"
+msgstr "არა"
+
+msgid "IDS_COM_POP_SECURITY_POLICY_RESTRICTS_USE_OF_WI_FI"
+msgstr "უსაფრთხოების პოლიტიკა ზღუდავს Wi-Fi-ის გამოყენებას."
+
+msgid "IDS_WIFI_SBODY_TAP_HERE_TO_CONNECT"
+msgstr "შეეხეთ აქ და დაუკავშირდით."
+
+msgid "IDS_WIFI_POP_YOUR_DEVICE_IS_CONNECTING_TO_P1SS_HOWEVER_THIS_NETWORK_MAY_NOT_PROVIDE_INTERNET_ACCESS_MSG"
+msgstr "თქვენი მოწყობილობა უკავშირდება %1$s-ს. ამასთან, ამ ქსელმა შეიძლება არ მოგცეთ წვდომა ინტერნეტზე.\nშეეხეთ OK-ს და შეინარჩუნეთ კავშირი %1$s-თან ახლა, მაგრამ ასევე აუკრძალეთ ქსელის ინტელექტუალურ გადართვას კავშირის დამყარება ამ ქსელთან მომავალში."
+
+msgid "IDS_WIFI_POP_BOTH_WI_FI_AND_MOBILE_AP_CANNOT_BE_ACTIVATED_AT_THE_SAME_TIME_DEACTIVATE_MOBILE_AP_Q"
+msgstr "Wi-Fi და Mobile AP ვერ გააქტიურდება ერთიდაიმავე დროს. გამოირთოს Mobile AP?"
+
+msgid "IDS_WIFI_HEADER_SIGN_IN_TO_WI_FI_NETWORK_ABB"
+msgstr "Wi-Fi ქსელში შესვლა"
+
+msgid "IDS_WIFI_HEADER_INTERNET_MAY_NOT_BE_AVAILABLE_ABB"
+msgstr "შესაძლოა, ინტერნეტი არ იყოს"
+
+msgid "IDS_WIFI_BUTTON_DONT_ASK_AGAIN"
+msgstr "აღარ მკითხო"
+
+msgid "IDS_WIFI_BODY_OPEN_WI_FI_SETTINGS_ABB"
+msgstr "Wi-Fi პარამეტრების გახსნა"
+
+msgid "IDS_BT_BODY_NO_DEVICES_FOUND_ABB"
+msgstr "მოწყობილობები ვერ მოიძებნა"
+
+msgid "IDS_BR_SK_YES"
+msgstr "კი"
+
+msgid "IDS_BR_SK_NO"
+msgstr "არა"
+
+msgid "IDS_BR_SK_CANCEL"
+msgstr "გაუქმება"
+
+msgid "IDS_ST_HEADER_RENAME_DEVICE"
+msgstr "მოწყობილობის სახელის შეცვლა"
+
+msgid "IDS_ST_HEADER_MY_DEVICE_NAME"
+msgstr "ჩემი მოწყობილობის სახელი"
+
+msgid "IDS_COM_POP_FAILED"
+msgstr "ვერ შესრულდა."
+
+msgid "IDS_COM_POP_CANCEL"
+msgstr "გაუქმება"
+
+msgid "IDS_COM_BODY_CONNECTED_M_STATUS"
+msgstr "დაკავშირებულია"
+
+msgid "IDS_BR_SK_OK"
+msgstr "კი"
+
+msgid "IDS_ST_POP_DEVICE_NAMES_ARE_DISPLAYED_TO_DISTINGUISH_EACH_OF_THE_DEVICES_AVAILABLE_MSG"
+msgstr "ნაჩვენებია მოწყობილობების სახელები, რათა განასხვაოთ ახლომდებარე მოწყობილობების სიაში მყოფი თითოეული მათგანი, რომელთანაც შეიძლება კავშირის დამყარება Bluetooth-ით, Wi-Fi Direct-ითა და სხვა მეთოდებით."
+
+msgid "IDS_ST_SK_RENAME"
+msgstr "გადარქმ."
+
+msgid "IDS_ST_BODY_TAP_TO_CHANGE_SETTINGS"
+msgstr "შეეხეთ და შეცვალეთ პარამეტრები"
+
+msgid "IDS_ST_POP_INVALID_CHARACTER_ENTERED_TRY_AGAIN"
+msgstr "აკრეფილია არასწორი სიმბოლო. კიდევ მოსინჯეთ"
+
+msgid "IDS_ST_POP_NOT_SUPPORTED"
+msgstr "გაუთვალისწინებელი."
+
+msgid "IDS_CHATON_BODY_AVAILABLE"
+msgstr "მისაწვდომია"
+
+msgid "IDS_CHATON_HEADER_CONNECTION_FAILED_ABB2"
 msgstr "ვერ დაკავშირდა"
 
-msgid "IDS_WFD_BUTTON_MULTI"
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_DEVICES"
+msgstr "Wi-Fi Direct მოწყობილობები"
+
+msgid "IDS_WIFI_POP_TAP_TO_CONNECT"
+msgstr "დააკაკუნეთ, რომ დაუკავშირდეთ."
+
+msgid "IDS_WIFI_SK2_CANCEL_CONNECTION"
+msgstr "დაკავშირების გაუქმება"
+
+msgid "IDS_ST_HEADER_CONNECTED_DEVICES"
+msgstr "დაკავშირებული მოწყობილობები"
+
+msgid "IDS_WIFI_BODY_SELECT_ALL"
+msgstr "ყველას არჩევა"
+
+msgid "IDS_ST_HEADER_BUSY_DEVICES"
+msgstr "დაკავებული აპარატები"
+
+msgid "IDS_ST_BODY_CONNECTED_WITH_ANOTHER_DEVICE_ABB"
+msgstr "დაკავშირებულია სხვა აპარატთან"
+
+msgid "IDS_WIFI_BODY_WAITING_FOR_CONNECTION_M_STATUS_ABB"
+msgstr "დაკავშირების ლოდინი"
+
+msgid "IDS_ST_POP_FAILED_TO_CONNECT"
+msgstr "ვერ დაკავშირდა."
+
+msgid "IDS_WIFI_BUTTON_MULTI_CONNECT"
 msgstr "მრავალი კავშირი"
 
-msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
+msgid "IDS_WIFI_BUTTON_DISCONNECT_ALL"
 msgstr "ყველა კავშირის გათიშვა"
 
-msgid "IDS_WFD_BUTTON_DISCONNECT"
+msgid "IDS_WIFI_SK_DISCONNECT"
 msgstr "გათიშვა"
-
-msgid "IDS_WFD_NOCONTENT"
-msgstr "მოწყობილობები ვერ მოიძებნა"
 
 msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE"
 msgstr "გამორთეთ Wi-Fi Direct"
@@ -271,104 +346,126 @@ msgstr "გამორთეთ Wi-Fi Direct, ენერგიის და�
 msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY_ABB"
 msgstr "გამორთეთ Wi-Fi Direct, ენერგიის დასაზოგად"
 
-msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES"
-msgstr "მოძებნეთ Wi-Fi Direct მოწყობილობები"
+msgid "IDS_WIFI_BODY_PS_IS_REQUESTING_A_WI_FI_DIRECT_CONNECTION_ALLOW_Q"
+msgstr "%s ითხოვს Wi-Fi Direct კავშირს. დართავთ ნებას?"
 
-msgid "IDS_WIFI_BODY_SCAN_FOR_WI_FI_DIRECT_DEVICES_CURRENT_NETWORK_WILL_BE_DISCONNECTED"
-msgstr "მოძებნეთ Wi-Fi Direct მოწყობილობები. მიმდინარე ქსელი გამოირთვება"
+msgid "IDS_WIFI_BODY_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_CONNECTION_CONTINUE_Q"
+msgstr "თუ Wi-Fi Direct-ს გამოიყენებთ, გამოირთვება მიმდინარე Wi-Fi კავშირი. განაგრძობთ?"
 
-msgid "IDS_WIFI_BODY_SEARCH_FOR_WI_FI_DIRECT_DEVICES_OR_SEARCH_FOR_DEVICES_ON_OTHER_WI_FI_NETWORKS"
-msgstr "Wi-Fi Direct მოწყობილობებს ან სხვა Wi-Fi ქსელში ჩართული მოწყობილობების ძებნა"
+msgid "IDS_WIFI_BODY_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_TETHERING_CONTINUE_Q"
+msgstr "Wi-Fi Direct -ის გამოყენება შეაფერხებს მიმდინარე უკაბელო Wi-Fi-ის მუშაობას.  განვაგრძოთ?"
 
-msgid "IDS_WFD_POP_WIFI_OFF"
-msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection. Continue?"
-
-msgid "IDS_WFD_POP_HOTSPOT_OFF"
-msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
-
-msgid "IDS_WIFI_BODY_WI_FI_DIRECT_CONNECTED"
-msgstr "Wi-Fi Direct დაკავშირდა"
-
-msgid "IDS_WFD_POP_TITILE_CONNECTION"
+msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_CONNECTION_ABB"
 msgstr "Wi-Fi Direct კავშირი"
-
-msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_SETTINGS"
-msgstr "Wi-Fi Direct პარამეტრები"
-
-msgid "IDS_WIFI_MBODY_CONFIGURE_WI_FI_DIRECT"
-msgstr "დააკავშირეთ Wi-Fi Direct"
 
 msgid "IDS_WIFI_MBODY_DISCONNECT_WI_FI_DIRECT"
 msgstr "Wi-Fi Direct"
 
-msgid "IDS_WIFI_MBODY_WI_FI_DIRECT_STATUS"
-msgstr "Wi-Fi Direct-ის სტატუსი"
-
-msgid "IDS_WIFI_OPT1_WI_FI_DIRECT"
-msgstr "Wi-Fi Direct"
-
-msgid "IDS_WFD_POP_CANCEL_CONNECT"
+msgid "IDS_WIFI_POP_CANCEL_WI_FI_DIRECT_CONNECTION_Q"
 msgstr "შეწყდეს Wi-Fi Direct კავშირი?"
 
-msgid "IDS_WIFI_POP_CONNECTING_TO_WI_FI_NETWORK_WILL_DISCONNECT_DEVICE_CONNECTED_VIA_WI_FI_DIRECT"
-msgstr "Wi-Fi ქსელთან დაკავშირების შედეგად შეწყდება კავშირი Wi-Fi Direct-ით დაკავშირებულ მოწყობილობასთან"
-
 msgid "IDS_WIFI_POP_CONNECT_TO_OTHER_DEVICES_VIA_WI_FI_DIRECT"
-msgstr "სხვა მოწყობილობებთან დასაკავშირებლად გამოიყენეთ Wi-Fi Direct"
+msgstr "სხვა მოწყობილობებთან დასაკავშირებლად გამოიყენეთ Wi-Fi Direct."
 
-msgid "IDS_WIFI_POP_DISABLE_MOBILE_AP_TO_USE_WI_FI_DIRECT_Q"
-msgstr "გამოირთოს Mobile AP, რომ გამოიყენოთ Wi-Fi Direct?"
-
-msgid "IDS_WIFI_POP_DISCONNECT_CURRENT_WI_FI_DIRECT_DEVICE_TO_SEARCH_NETWORKS"
-msgstr "გამორთეთ მიმდინარე Wi-Fi Direct მოწყობილობა, თუ გსურთ მოძებნოთ ქსელები"
-
-msgid "IDS_WIFI_POP_ENABLING_WI_FI_DIRECT_WILL_TURN_OFF_WI_FI_AND_DISABLE_THE_PORTABLE_WI_FI_HOTSPOT"
-msgstr "თუ ჩაირთვება Wi-Fi Direct, გამოირთვება Wi-Fi და გაითიშება Wi-Fi ცხელი წერტილი"
-
-msgid "IDS_WIFI_POP_USING_WI_FI_DIRECT_WILL_DISABLE_PORTABLE_WI_FI_HOTSPOT"
-msgstr "Wi-Fi Direct-ის გამოყენების შედეგად გამოირთვება პორტატული Wi-Fi ცხელი წერტილი"
-
-msgid "IDS_WIFI_POP_WI_FI_DIRECT_ALREADY_IN_USE_TRY_LATER"
-msgstr "Wi-Fi Direct უკვე გამოყენებაშია. ცადეთ მოგვიანებით"
-
-msgid "IDS_WIFI_POP_WI_FI_DIRECT_CONNECTION_REQUEST_AUTOMATICALLY_DENIED_TO_CONNECT_TURN_OFF_ALLSHARE_CAST"
-msgstr "Wi-Fi Direct კავშირის მოთხოვნა ავტომატურად უარყოფილია. იმისათვის რომ დაკავშირდეს, გამორთეთ AllShare Cast"
-
-msgid "IDS_WIFI_POP_WI_FI_DIRECT_WILL_BE_DISCONNECTED_CONTINUE_Q"
-msgstr "Wi-Fi Direct გაითიშება. განაგრძობთ?"
-
-msgid "IDS_WIFI_POP_WI_FI_IS_DISCONNECTED_WHILE_WI_FI_DIRECT_CONNECTS"
-msgstr "Wi-Fi გამორთულია, როცა ჩართულია Wi-Fi Direct"
-
-msgid "IDS_WIFI_SK1_SEARCH_FOR_WI_FI_DIRECT_DEVICES"
-msgstr "მოძებნეთ Wi-Fi Direct მოწყობილობები"
-
-msgid "IDS_WFD_BODY_NO_DEVICES"
-msgstr "მოწყობილობები არ არის"
+msgid "IDS_WIFI_POP_THERE_HAS_BEEN_NO_ACTIVITY_FOR_PD_MINUTES_SINCE_WI_FI_DIRECT_WAS_ENABLED_MSG"
+msgstr "მოქმედებები არ შესრულებულა Wi-Fi Direct-ის გააქტიურებიდან %d წუთის განმავლობაში. კვების ელემენტის სიცოცხლის გასაზრდელად, გამოირთო Wi-Fi Direct."
 
 msgid "IDS_WIFI_SK4_SCAN"
 msgstr "სკანირება"
 
-msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgid "IDS_WIFI_SK_STOP"
 msgstr "შეჩერება"
 
-msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
-msgstr "დეაქტივაცია ვერ შესრულდა"
+msgid "IDS_WIFI_POP_DEACTIVATION_FAILED"
+msgstr "დეაქტივაცია ვერ შესრულდა."
 
-msgid "IDS_WFD_POP_ACTIVATE_FAIL"
-msgstr "ვერ გააქტიურდა"
+msgid "IDS_WIMAX_POP_ACTIVATION_FAILED"
+msgstr "ვერ გააქტიურდა."
 
-msgid "IDS_WFD_POP_DISCONNECT"
+msgid "IDS_WIFI_POP_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_CONTINUE_Q"
 msgstr "მიმდინარე კავშირი გამოირთვება. განაგრძობთ?"
 
-msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
-msgstr "მისაწვდომი მოწყობილობები"
+msgid "IDS_ST_POP_YOU_CAN_CONNECT_UP_TO_PD_DEVICES_AT_THE_SAME_TIME"
+msgstr "შეგიძლიათ ერთდროულად დაუკავშირდეთ %d-მდე მოწყობილობას."
 
-msgid "IDS_WFD_POP_MULTI_CONNECT"
-msgstr "შეგიძლიათ ერთდროულად დაუკავშირდეთ %d-მდე მოწყობილობას"
+msgid "IDS_WIFI_HEADER_AVAILABLE_DEVICES_ABB"
+msgstr "ხელმისაწვდომები"
 
-msgid "IDS_CST_BODY_PASSWORD_TOO_LONG"
-msgstr "პაროლი ძალზე გრძელია"
+msgid "IDS_WIFI_POP_FAILED_TO_CONNECT_TO_PS"
+msgstr "ვერ დაკავშირდა %s."
 
-msgid "IDS_ST_BODY_PASSWORD_TOO_SHORT"
-msgstr "პაროლი ძალიან მოკლეა"
+msgid "IDS_ST_POP_DEVICE_CONNECTED_TO_ANOTHER_DEVICE"
+msgstr "მოწყობილობა დაკავშირებულია სხვა მოწყობილობასთან."
+
+msgid "IDS_WIFI_BODY_CONNECTED_TO_PS"
+msgstr "დაკავშირებულია %s."
+
+msgid "IDS_COM_BODY_PINS_DO_NOT_MATCH"
+msgstr "PIN-ები არ თანხვდება."
+
+msgid "IDS_COM_POP_DEACTIVATING_ING"
+msgstr "გამორთვა..."
+
+msgid "IDS_WIFI_BODY_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_SO_THAT_SCANNING_CAN_START_CONTINUE_Q"
+msgstr "მიმდინარე კავშირი შეწყდება, რომ დაიწყოს ძებნა. განაგრძობთ?"
+
+msgid "IDS_WIFI_HEADER_DEVICES_THAT_FAILED_TO_CONNECT"
+msgstr "მოწყობილობები, რომლებიც ვერ დაკავშირდა"
+
+msgid "IDS_WIFI_POP_ENTER_PIN_TO_CONNECT_TO_PS"
+msgstr "ჩაწერეთ PIN, რომ დაკავშირდეს %s."
+
+msgid "IDS_WIFI_POP_CONNECT_TO_PS_IN_PD_SECONDS"
+msgstr "დააკავშირეთ %s, %d წამში."
+
+msgid "IDS_WIFI_POP_PIN_CODE_PS"
+msgstr "PIN კოდი %s"
+
+msgid "IDS_DLNA_HEADER_SELECT_DEVICES_ABB"
+msgstr "მოწყობილობების არჩევა"
+
+msgid "IDS_WIFI_BODY_THE_WI_FI_DIRECT_CONNECTION_HAS_BEEN_LOST"
+msgstr "Wi-Fi Direct კავშირი დაიკარგა."
+
+msgid "IDS_ST_BODY_CONNECT_WITH_PS_IN_PD_SECS_ABB"
+msgstr "დაკავშირდეს %s %d წამში."
+
+msgid "IDS_ST_BODY_RENAME_DEVICE_ABB"
+msgstr "მოწყობილობის სახელის შეცვლა"
+
+msgid "IDS_WIFI_POP_PIN"
+msgstr "P I N"
+
+msgid "IDS_WIFI_HEADER_UNABLE_TO_CONNECT_ABB2"
+msgstr "ვერ უკავშირდება"
+
+msgid "IDS_WIFI_BUTTON_STOP_CONNECTION_ABB"
+msgstr "კავშირის შეწყვეტა"
+
+msgid "IDS_WIFI_BUTTON_ALLOW"
+msgstr "ნებართვა"
+
+msgid "IDS_COM_POP_ACTIVATING"
+msgstr "აქტიურდება..."
+
+msgid "IDS_WIFI_SK_CONNECT"
+msgstr "კავშირი"
+
+msgid "IDS_WIFI_BODY_CONNECTED"
+msgstr "დაკავშირებულია."
+
+msgid "IDS_STU_HEADER_ENTER_DEVICE_NAME"
+msgstr "ჩაწერეთ მოწყობილობის სახელი"
+
+msgid "IDS_ST_POP_CONNECTED_WITH_PD_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "დაკავშირებულია %d მოწყობილობასთან Wi-Fi Direct-ით."
+
+msgid "IDS_WIFI_SBODY_NOT_CONNECTED_M_STATUS_ABB"
+msgstr "კავშირი არაა"
+
+msgid "IDS_WIFI_POP_THIS_WI_FI_DIRECT_CONNECTION_WILL_BE_CANCELLED"
+msgstr "ეს Wi-Fi Direct კავშირი გაუქმდება."
+
+msgid "IDS_WIFI_BODY_TO_SAVE_BATTERY_POWER_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "ენერგიის დაზოგვის მიზნოთ, გამორთეთ Wi-Fi Direct, მისი გამოყენების შემდეგ."
+

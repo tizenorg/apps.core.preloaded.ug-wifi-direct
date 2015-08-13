@@ -1,117 +1,471 @@
-msgid "IDS_WFD_CONNECTED"
-msgstr "Поврзано"
+msgid "IDS_WIFI_BODY_ENTER_YOUR_ID"
+msgstr "Внесете идентификација."
 
-msgid "IDS_WFD_CONNECTING"
-msgstr "Поврзување..."
+msgid "IDS_COM_POP_MAXIMUM_NUMBER_OF_CHARACTERS_REACHED"
+msgstr "Достигнат е максималниот број знаци."
 
-msgid "IDS_WFD_DISCONNECTING"
-msgstr "Врската се прекинува..."
-
-msgid "IDS_WFD_POP_CONNECTED"
-msgstr "Поврзано"
-
-msgid "IDS_WFD_POP_UNKNOWN_ERROR"
-msgstr "Непозната грешка"
-
-msgid "IDS_WFD_POP_PIN_INVALID"
-msgstr "PIN-овите не се совпаѓаат!"
-
-msgid "IDS_WFD_BODY_ACTIVATING"
-msgstr "Се активира..."
-
-msgid "IDS_WFD_POP_SELECTED_DEVICE_NUM"
+msgid "IDS_ST_HEADER_PD_SELECTED"
 msgstr "Избрани се %d"
 
-msgid "IDS_WFD_BODY_DEACTIVATING"
-msgstr "Се исклучува..."
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "Вклучи"
 
-msgid "IDS_WFD_POP_NOT_SUPPORTED_DEVICE"
-msgstr "Не е поддржано"
+msgid "IDS_WIFI_BODY_DOT"
+msgstr "."
 
-msgid "IDS_WFD_HEADER_WIFI_DIRECT"
-msgstr "Wi-Fi Direct"
+msgid "IDS_WIFI_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_PD_REACHED"
+msgstr "Достигнат е максималниот број знаци %d."
 
-msgid "IDS_WFD_BUTTON_SCAN"
+msgid "IDS_WIFI_TPOP_FAILED_TO_OBTAIN_IP_ADDRESS"
+msgstr "Не можеше да се добие IP-адреса."
+
+msgid "IDS_WIFI_TPOP_CONNECTED_TO_WI_FI_NETWORK_PS"
+msgstr "Поврзано со мрежа Wi-Fi %s."
+
+msgid "IDS_WIFI_TMBODY_NEVER_M_ALWAYS_OFF"
+msgstr "Никогаш"
+
+msgid "IDS_WIFI_TMBODY_DOWNLOAD_DATA_VIA_WI_FI_AND_4G"
+msgstr "Презем.подат. преку Wi-Fi и 4G"
+
+msgid "IDS_WIFI_TMBODY_DOWNLOAD_DATA_VIA_WI_FI_AND_3G"
+msgstr "Презем.подат. преку Wi-Fi и 3G"
+
+msgid "IDS_WIFI_SK_WPS_PIN"
+msgstr "PIN за WPS"
+
+msgid "IDS_WIFI_SK_FORGET"
+msgstr "Заборави"
+
+msgid "IDS_WIFI_SK_CANCEL"
+msgstr "Откажи"
+
+msgid "IDS_WIFI_SK2_OK"
+msgstr "OK"
+
+msgid "IDS_WIFI_SBODY_CONNECTED_M_STATUS"
+msgstr "Поврзано"
+
+msgid "IDS_WIFI_SBODY_AUTOMATICALLY_SWITCH_BETWEEN_WI_FI_AND_MOBILE_NETWORKS_TO_MAINTAIN_A_STABLE_INTERNET_CONNECTION"
+msgstr "Автоматски префрлувај меѓу Wi-Fi и мобилни мрежи за да се одржи стабилна врска со интернет."
+
+msgid "IDS_WIFI_SBODY_AUTHENTICATION_ERROR_OCCURRED_M_STATUS"
+msgstr "Дојде до грешка при потврдувањето"
+
+msgid "IDS_WIFI_POP_WI_FI_AND_MOBILE_NETWORKS_WILL_BE_USED_TOGETHER_TO_DOWNLOAD_FILES_FASTER_MSG"
+msgstr "Wi-Fi и мобилни мрежи ќе се користат заедно за преземање фајлови побрзо. Тоа може да го зголеми користењето мобилни податоци."
+
+msgid "IDS_WIFI_POP_SMART_NETWORK_SWITCH_HAS_BEEN_ENABLED_MSG"
+msgstr "Вклучено е Паметно менување мрежи. Функцијава помага да се одржи стабилно поврзување со интернет менувајќи меѓу мобилни и мрежи Wi-Fi. Тоа може да го зголеми користењето податоци."
+
+msgid "IDS_WIFI_POP_PS_IS_SELECTED_N_NIF_YOU_ARE_UNABLE_TO_CONNECT_TO_AN_AP_CHANGE_THE_SIM_CARD_USED_FOR_VERIFICATION_BY_GOING_TO_SIM_CARD_MANAGER_MSG"
+msgstr "Избрано е %s.\n\nАко не можете да се поврзете со пристапна точка, сменете ја SIM-картичката за потврда преку уредувањето SIM-картички. Потоа изберете ја SIM-картичката што сакате да ја користите за Мобилни податоци и мултимедијални пораки. Можете и да ја демонтирате SIM-картичката што не сакате да ја користите."
+
+msgid "IDS_WIFI_POP_PRESS_WPS_ON_YOUR_WI_FI_ACCESS_POINT_WITHIN_PD_MINUTES"
+msgstr "Притиснете WPS на пристапната точка за Wi-Fi во рок од %d минути."
+
+msgid "IDS_WIFI_POP_OPEN"
+msgstr "Отворени"
+
+msgid "IDS_WIFI_POP_NO_WI_FI_AP_FOUND"
+msgstr "Нема пристапна точка за Wi-Fi."
+
+msgid "IDS_WIFI_POP_CURRENT_NETWORK_WILL_BE_DISCONNECTED"
+msgstr "Ќе се прекине врската со моменталната мрежа."
+
+msgid "IDS_WIFI_OPT_WPS"
+msgstr "WPS"
+
+msgid "IDS_WIFI_OPT_SHOW_PASSWORD"
+msgstr "Прикажи лозинка"
+
+msgid "IDS_WIFI_OPT_MOBILEACCESSSERVICEATCIVATION_ON"
+msgstr "Вклучено"
+
+msgid "IDS_WIFI_OPT_MOBILEACCESSSERVICEATCIVATION_OFF"
+msgstr "Исклучено"
+
+msgid "IDS_WIFI_OPT_FORGET_NETWORK"
+msgstr "Заборави мрежа"
+
+msgid "IDS_WIFI_MBODY_SMART_NETWORK_SWITCH"
+msgstr "Паметно менување мрежи"
+
+msgid "IDS_WIFI_MBODY_SIGNAL_STRENGTH_KOR_SKT"
+msgstr "Јачина на сигналот"
+
+msgid "IDS_WIFI_MBODY_REDUCE_MOBILE_DATA_USAGE"
+msgstr "Намали моб.корист.под."
+
+msgid "IDS_WIFI_MBODY_PRIORITISE_SPEED"
+msgstr "Брзината на прво место"
+
+msgid "IDS_WIFI_MBODY_NETWORK_BONDING"
+msgstr "Поврзување мрежи"
+
+msgid "IDS_WIFI_HEADER_WI_FI_NETWORK_INFO_ABB"
+msgstr "Информации за мрежа Wi-Fi"
+
+msgid "IDS_WIFI_HEADER_SELECT_WPS_METHOD_ABB"
+msgstr "Изберете начин за WPS"
+
+msgid "IDS_WIFI_HEADER_PROXY_ADDRESS"
+msgstr "Адреса на прокси"
+
+msgid "IDS_WIFI_HEADER_PASSWORD"
+msgstr "Лозинка"
+
+msgid "IDS_WIFI_HEADER_ENTER_PASSWORD"
+msgstr "Внесете лозинка."
+
+msgid "IDS_WIFI_BUTTON_WPS_BUTTON"
+msgstr "Копче WPS"
+
+msgid "IDS_WIFI_BUTTON_SCAN"
 msgstr "Скенирај"
 
-msgid "IDS_WFD_BODY_WIFI_DIRECT_DEVICES"
-msgstr "Уреди за Wi-Fi Direct"
+msgid "IDS_WIFI_BUTTON_FIND_HIDDEN_NETWORK"
+msgstr "Најди скриена мрежа"
 
-msgid "IDS_WFD_TAP_TO_CONNECT"
-msgstr "Допрете за поврзување"
+msgid "IDS_WIFI_BODY_WI_FI_NETWORKS_AVAILABLE_ABB"
+msgstr "Достапни се мрежи Wi-Fi."
 
-msgid "IDS_WFD_BUTTON_CONNECT"
-msgstr "Поврзи"
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_ABB"
+msgstr "Wi-Fi Direct"
 
-msgid "IDS_WFD_BUTTON_CANCEL"
-msgstr "Откажи поврзување"
+msgid "IDS_WIFI_BODY_WI_FI"
+msgstr "Wi-Fi"
 
-msgid "IDS_WFD_TITLE_ABOUT_WIFI"
-msgstr "За Wi-Fi Direct"
+msgid "IDS_WIFI_BODY_WHILE_CHARGING_ONLY_ABB"
+msgstr "Само при полнење"
 
-msgid "IDS_WFD_BODY_ABOUT_WIFI"
-msgstr "Wi-Fi Direct овозможува уреди Wi-Fi да се поврзуваат директно, со што печатењето, делењето фајлови, синхронизирањето и делењето екран е многу поедноставно и позгодно. Поврзувањето со уреди што поддржуваат Wi-Fi Direct овозможува да се делат вашите содржини, да ги синхронизирате податоците, да се дружите со пријатели, да играте игри, аудиа и видеа и многу повеќе, со помош на разни апликации"
+msgid "IDS_WIFI_BODY_WEAK_M_STRENGTH"
+msgstr "Слаб"
 
-msgid "IDS_WFD_BODY_CONNECTED_DEVICES"
-msgstr "Поврзани уреди"
+msgid "IDS_WIFI_BODY_USER_CERTIFICATE_ABB"
+msgstr "Кор. сертификат"
 
-msgid "IDS_WFD_BODY_BUSY_DEVICES"
-msgstr "Зафатени уреди"
+msgid "IDS_WIFI_BODY_UNSPECIFIED"
+msgstr "Неодредено"
 
-msgid "IDS_WFD_CONNECTED_WITH_OTHER_DEVICE"
-msgstr "Поврзани со друг уред"
+msgid "IDS_WIFI_BODY_UNKNOWN"
+msgstr "Непознато"
 
-msgid "IDS_WFD_POP_CONNECTING"
+msgid "IDS_WIFI_BODY_TO_DOWNLOAD_LARGE_FILES_FASTER_USE_WI_FI_AND_MOBILE_NETWORKS_TOGETHER_T_HELP"
+msgstr "За да преземате големи фајлови побрзо, користете Wi-Fi и мобилни мрежи заедно."
+
+msgid "IDS_WIFI_BODY_SUBNET_MASK"
+msgstr "Подмрежна маска"
+
+msgid "IDS_WIFI_BODY_STATIC_IP"
+msgstr "Статичен IP"
+
+msgid "IDS_WIFI_BODY_SSID"
+msgstr "SSID"
+
+msgid "IDS_WIFI_BODY_SORT_BY"
+msgstr "Подреди според"
+
+msgid "IDS_WIFI_BODY_SCANNING_ING"
+msgstr "Пребарување..."
+
+msgid "IDS_WIFI_BODY_RECEIVE_NOTIFICATIONS_WHEN_NETWORKS_ARE_AVAILABLE"
+msgstr "Примај известувања кога се достапни мрежи"
+
+msgid "IDS_WIFI_BODY_PROXY_PORT"
+msgstr "Порт за прокси"
+
+msgid "IDS_WIFI_BODY_NAME"
+msgstr "Име"
+
+msgid "IDS_WIFI_BODY_MAC_ADDRESS"
+msgstr "MAC-адреса"
+
+msgid "IDS_WIFI_BODY_IP_ADDRESS"
+msgstr "IP адреса"
+
+msgid "IDS_WIFI_BODY_IDENTITY"
+msgstr "Идентитет"
+
+msgid "IDS_WIFI_BODY_GATEWAY_ADDRESS"
+msgstr "Адреса на порта"
+
+msgid "IDS_WIFI_BODY_ENTER_IDENTITY"
+msgstr "Внесете идентитет."
+
+msgid "IDS_WIFI_BODY_EAP_METHOD"
+msgstr "Начин за EAP"
+
+msgid "IDS_WIFI_BODY_EAP"
+msgstr "EAP"
+
+msgid "IDS_WIFI_BODY_DNS_2"
+msgstr "DNS 2"
+
+msgid "IDS_WIFI_BODY_DNS_1"
+msgstr "DNS 1"
+
+msgid "IDS_WIFI_BODY_CONNECTING_ING"
 msgstr "Поврзување..."
 
-msgid "IDS_WFD_WAITING_FOR_CONNECT"
-msgstr "Се чека поврзување"
+msgid "IDS_WIFI_BODY_CONNECT"
+msgstr "Поврзи"
 
-msgid "IDS_WFD_FAILED_TO_CONNECT"
-msgstr "Не можеше да се поврзе"
+msgid "IDS_WIFI_BODY_CONFIGURATION_SAVED_M_STATUS"
+msgstr "Меморирано"
 
-msgid "IDS_WFD_BUTTON_MULTI"
-msgstr "Мулти-поврзување"
+msgid "IDS_WIFI_BODY_A_WI_FI_NETWORK_HAS_BEEN_DETECTED_YOU_WILL_BE_CONNECTED"
+msgstr "Откриена е мрежа Wi-Fi. Ќе се поврзете."
 
-msgid "IDS_WFD_BUTTON_DISCONNECT_ALL"
-msgstr "Прекини ги сите"
+msgid "IDS_WIFI_BODY_ADVANCED_SETTINGS"
+msgstr "Напредни опции"
 
-msgid "IDS_WFD_BUTTON_DISCONNECT"
-msgstr "Прекини врска"
+msgid "IDS_COM_SK_NO"
+msgstr "Не"
 
-msgid "IDS_WFD_NOCONTENT"
-msgstr "Нема уред"
+msgid "IDS_COM_POP_SECURITY_POLICY_RESTRICTS_USE_OF_WI_FI"
+msgstr "Политиката на безбедност го ограничува користењето Wi-Fi."
 
-msgid "IDS_WFD_POP_WIFI_OFF"
-msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi connection. Continue?"
+msgid "IDS_WIFI_SBODY_TAP_HERE_TO_CONNECT"
+msgstr "Допрете тука за да се поврзете."
 
-msgid "IDS_WFD_POP_HOTSPOT_OFF"
-msgstr "Using Wi-Fi Direct will disconnect current Wi-Fi tethering. Continue?"
+msgid "IDS_WIFI_POP_YOUR_DEVICE_IS_CONNECTING_TO_P1SS_HOWEVER_THIS_NETWORK_MAY_NOT_PROVIDE_INTERNET_ACCESS_MSG"
+msgstr "Уредот е поврзан со %1$s. Меѓутоа, мрежата можеби не овозможува пристап на интернет.\nДопрете OK за да останете поврзани со %1$s сега, но спречете го и Паметно менување мрежа да се поврзува со оваа мрежа во иднина."
 
-msgid "IDS_WFD_POP_TITILE_CONNECTION"
-msgstr "Поврзување Wi-Fi Direct"
+msgid "IDS_WIFI_POP_BOTH_WI_FI_AND_MOBILE_AP_CANNOT_BE_ACTIVATED_AT_THE_SAME_TIME_DEACTIVATE_MOBILE_AP_Q"
+msgstr "Не може истовремено да се активни и Wi-Fi и мобилна пристапна точка. Да се исклучи мобилната пристапна точка?"
 
-msgid "IDS_WFD_POP_CANCEL_CONNECT"
-msgstr "Да се откаже поврзување Wi-Fi Direct?"
+msgid "IDS_WIFI_HEADER_SIGN_IN_TO_WI_FI_NETWORK_ABB"
+msgstr "Запиши се на Wi-Fi мрежа"
 
-msgid "IDS_WFD_BODY_NO_DEVICES"
+msgid "IDS_WIFI_HEADER_INTERNET_MAY_NOT_BE_AVAILABLE_ABB"
+msgstr "Интернет може да не е достапен"
+
+msgid "IDS_WIFI_BUTTON_DONT_ASK_AGAIN"
+msgstr "Не прашувај повторно"
+
+msgid "IDS_WIFI_BODY_OPEN_WI_FI_SETTINGS_ABB"
+msgstr "Отвори опции за Wi-Fi"
+
+msgid "IDS_BT_BODY_NO_DEVICES_FOUND_ABB"
 msgstr "Нема уреди"
 
-msgid "IDS_WFD_BUTTON_STOPSCAN"
+msgid "IDS_BR_SK_YES"
+msgstr "Да"
+
+msgid "IDS_BR_SK_NO"
+msgstr "Не"
+
+msgid "IDS_BR_SK_CANCEL"
+msgstr "Откажи"
+
+msgid "IDS_ST_HEADER_RENAME_DEVICE"
+msgstr "Преименувај го уредот"
+
+msgid "IDS_ST_HEADER_MY_DEVICE_NAME"
+msgstr "Име на мојот уред"
+
+msgid "IDS_COM_POP_FAILED"
+msgstr "Неуспешно."
+
+msgid "IDS_COM_POP_CANCEL"
+msgstr "Откажи"
+
+msgid "IDS_COM_BODY_CONNECTED_M_STATUS"
+msgstr "Поврзано"
+
+msgid "IDS_BR_SK_OK"
+msgstr "OK"
+
+msgid "IDS_ST_POP_DEVICE_NAMES_ARE_DISPLAYED_TO_DISTINGUISH_EACH_OF_THE_DEVICES_AVAILABLE_MSG"
+msgstr "Имињата на уредите се прикажани за да се разликува секој уред од уредите достапни на листата блиски уреди, како и преку Bluetooth, Wi-Fi Direct и други начини."
+
+msgid "IDS_ST_SK_RENAME"
+msgstr "Преименувај"
+
+msgid "IDS_ST_BODY_TAP_TO_CHANGE_SETTINGS"
+msgstr "Допрете да смените поставки"
+
+msgid "IDS_ST_POP_INVALID_CHARACTER_ENTERED_TRY_AGAIN"
+msgstr "Внесен е неважечки знак. Обидете се повторно"
+
+msgid "IDS_ST_POP_NOT_SUPPORTED"
+msgstr "Не е поддржано."
+
+msgid "IDS_CHATON_BODY_AVAILABLE"
+msgstr "Достапно"
+
+msgid "IDS_CHATON_HEADER_CONNECTION_FAILED_ABB2"
+msgstr "Неусп. поврзување"
+
+msgid "IDS_WIFI_BODY_WI_FI_DIRECT_DEVICES"
+msgstr "Уреди за Wi-Fi Direct"
+
+msgid "IDS_WIFI_POP_TAP_TO_CONNECT"
+msgstr "Допрете за поврзување."
+
+msgid "IDS_WIFI_SK2_CANCEL_CONNECTION"
+msgstr "Откажи поврзување"
+
+msgid "IDS_ST_HEADER_CONNECTED_DEVICES"
+msgstr "Поврзани уреди"
+
+msgid "IDS_WIFI_BODY_SELECT_ALL"
+msgstr "Избери ги сите"
+
+msgid "IDS_ST_HEADER_BUSY_DEVICES"
+msgstr "Зафатени уреди"
+
+msgid "IDS_ST_BODY_CONNECTED_WITH_ANOTHER_DEVICE_ABB"
+msgstr "Поврзани со друг уред"
+
+msgid "IDS_WIFI_BODY_WAITING_FOR_CONNECTION_M_STATUS_ABB"
+msgstr "Се чека поврзување"
+
+msgid "IDS_ST_POP_FAILED_TO_CONNECT"
+msgstr "Не можеше да се поврзе."
+
+msgid "IDS_WIFI_BUTTON_MULTI_CONNECT"
+msgstr "Мулти-поврзување"
+
+msgid "IDS_WIFI_BUTTON_DISCONNECT_ALL"
+msgstr "Прекини ги сите"
+
+msgid "IDS_WIFI_SK_DISCONNECT"
+msgstr "Прекини врска"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "Исклучи Wi-Fi Direct по употреба"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_ABB"
+msgstr "Исклучи Wi-Fi Direct по употреба"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY"
+msgstr "Исклучи Wi-Fi Direct по употреба за да се заштеди батерија"
+
+msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY_ABB"
+msgstr "Искл. Wi-Fi Direct по употр. за да се зашт. батер."
+
+msgid "IDS_WIFI_BODY_PS_IS_REQUESTING_A_WI_FI_DIRECT_CONNECTION_ALLOW_Q"
+msgstr "%s бара поврзување Wi-Fi Direct. Да се дозволи?"
+
+msgid "IDS_WIFI_BODY_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_CONNECTION_CONTINUE_Q"
+msgstr "Користењето на Wi-Fi Direct ќе ја прекине моменталната врска Wi-Fi. Да се продолжи?"
+
+msgid "IDS_WIFI_BODY_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_TETHERING_CONTINUE_Q"
+msgstr "Користењето на Wi-Fi Direct ќе го прекине моменталното делење Wi-Fi. Да се продолжи?"
+
+msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_CONNECTION_ABB"
+msgstr "Поврзување Wi-Fi Direct"
+
+msgid "IDS_WIFI_MBODY_DISCONNECT_WI_FI_DIRECT"
+msgstr "Прек. врска Wi-Fi Direct"
+
+msgid "IDS_WIFI_POP_CANCEL_WI_FI_DIRECT_CONNECTION_Q"
+msgstr "Да се откаже поврзување Wi-Fi Direct?"
+
+msgid "IDS_WIFI_POP_CONNECT_TO_OTHER_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "Поврзи се со други уреди преку Wi-Fi Direct."
+
+msgid "IDS_WIFI_POP_THERE_HAS_BEEN_NO_ACTIVITY_FOR_PD_MINUTES_SINCE_WI_FI_DIRECT_WAS_ENABLED_MSG"
+msgstr "Нема никаква активност %d минути откако е вклучено Wi-Fi Direct. За да се продолжи траењето на батеријата, Wi-Fi Direct беше исклучено."
+
+msgid "IDS_WIFI_SK4_SCAN"
+msgstr "Скенирај"
+
+msgid "IDS_WIFI_SK_STOP"
 msgstr "Запри"
 
-msgid "IDS_WFD_POP_DEACTIVATE_FAIL"
-msgstr "Исклучувањето беше неуспешно"
+msgid "IDS_WIFI_POP_DEACTIVATION_FAILED"
+msgstr "Исклучувањето беше неуспешно."
 
-msgid "IDS_WFD_POP_ACTIVATE_FAIL"
-msgstr "Неуспешно активирање"
+msgid "IDS_WIMAX_POP_ACTIVATION_FAILED"
+msgstr "Неуспешно активирање."
 
-msgid "IDS_WFD_POP_DISCONNECT"
+msgid "IDS_WIFI_POP_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_CONTINUE_Q"
 msgstr "Моменталната врска ќе се прекине. Сепак продолжи?"
 
-msgid "IDS_WFD_BODY_AVAILABLE_DEVICES"
+msgid "IDS_ST_POP_YOU_CAN_CONNECT_UP_TO_PD_DEVICES_AT_THE_SAME_TIME"
+msgstr "Може да се поврзете со најмногу %d уреди истовремено."
+
+msgid "IDS_WIFI_HEADER_AVAILABLE_DEVICES_ABB"
 msgstr "Достапни уреди"
 
-msgid "IDS_WFD_POP_MULTI_CONNECT"
-msgstr "Може да се поврзете со најмногу %d уреди истовремено"
+msgid "IDS_WIFI_POP_FAILED_TO_CONNECT_TO_PS"
+msgstr "Неуспешно поврзување со %s."
+
+msgid "IDS_ST_POP_DEVICE_CONNECTED_TO_ANOTHER_DEVICE"
+msgstr "Уредот е поврзан со друг уред."
+
+msgid "IDS_WIFI_BODY_CONNECTED_TO_PS"
+msgstr "Поврзано со %s."
+
+msgid "IDS_COM_BODY_PINS_DO_NOT_MATCH"
+msgstr "PIN-овите не се исти."
+
+msgid "IDS_COM_POP_DEACTIVATING_ING"
+msgstr "Се исклучува..."
+
+msgid "IDS_WIFI_BODY_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_SO_THAT_SCANNING_CAN_START_CONTINUE_Q"
+msgstr "Моменталната врска ќе се прекине за да почне скенирањето. Продолжи?"
+
+msgid "IDS_WIFI_HEADER_DEVICES_THAT_FAILED_TO_CONNECT"
+msgstr "Уреди што не успеале да се поврзат"
+
+msgid "IDS_WIFI_POP_ENTER_PIN_TO_CONNECT_TO_PS"
+msgstr "Внесете PIN за поврзување со %s."
+
+msgid "IDS_WIFI_POP_CONNECT_TO_PS_IN_PD_SECONDS"
+msgstr "Поврзи се со %s за %d секунди."
+
+msgid "IDS_WIFI_POP_PIN_CODE_PS"
+msgstr "PIN код %s"
+
+msgid "IDS_DLNA_HEADER_SELECT_DEVICES_ABB"
+msgstr "Изберете уреди"
+
+msgid "IDS_WIFI_BODY_THE_WI_FI_DIRECT_CONNECTION_HAS_BEEN_LOST"
+msgstr "Поврзувањето Wi-Fi Direct е изгубено."
+
+msgid "IDS_ST_BODY_CONNECT_WITH_PS_IN_PD_SECS_ABB"
+msgstr "Поврзувањео со %s за %d секунди."
+
+msgid "IDS_ST_BODY_RENAME_DEVICE_ABB"
+msgstr "Преименувај го уредот"
+
+msgid "IDS_WIFI_POP_PIN"
+msgstr "PIN"
+
+msgid "IDS_WIFI_HEADER_UNABLE_TO_CONNECT_ABB2"
+msgstr "Не е можно поврзување"
+
+msgid "IDS_WIFI_BUTTON_STOP_CONNECTION_ABB"
+msgstr "Сопри поврзување"
+
+msgid "IDS_WIFI_BUTTON_ALLOW"
+msgstr "Дозволи"
+
+msgid "IDS_COM_POP_ACTIVATING"
+msgstr "Се активира..."
+
+msgid "IDS_WIFI_SK_CONNECT"
+msgstr "Поврзи"
+
+msgid "IDS_WIFI_BODY_CONNECTED"
+msgstr "Поврзано."
+
+msgid "IDS_STU_HEADER_ENTER_DEVICE_NAME"
+msgstr "Внесете име на уредот"
+
+msgid "IDS_ST_POP_CONNECTED_WITH_PD_DEVICES_VIA_WI_FI_DIRECT"
+msgstr "Поврзано со %d уреди преку Wi-Fi Direct."
+
+msgid "IDS_WIFI_SBODY_NOT_CONNECTED_M_STATUS_ABB"
+msgstr "Не е поврзано"
+
+msgid "IDS_WIFI_POP_THIS_WI_FI_DIRECT_CONNECTION_WILL_BE_CANCELLED"
+msgstr "Ова поврзување Wi-Fi Direct ќе се откаже."
+
+msgid "IDS_WIFI_BODY_TO_SAVE_BATTERY_POWER_DISABLE_WI_FI_DIRECT_AFTER_USE"
+msgstr "За да заштедите батерија, исклучете го Wi-Fi Direct по употребата."
 
