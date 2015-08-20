@@ -31,12 +31,6 @@
 #include <Elementary.h>
 #include <efl-assist/efl_assist.h>
 #include <vconf.h>
-#if defined(X)
-#include <X11/Xatom.h>
-#include <X11/Xutil.h>
-#include <Ecore_X.h>
-#include <utilX.h>
-#endif
 #include <notification.h>
 #include <feedback.h>
 #include <wifi-direct.h>
@@ -72,30 +66,6 @@ static void mouseup_cb(void *data, Evas *e, Evas_Object *obj, void *event_info)
 		evas_object_del(obj);
 	}
 }*/
-static Eina_Bool __rotate(void *data, int type, void *event)
-{
-	__WFD_APP_FUNC_ENTER__;
-	wfd_appdata_t *ad = (wfd_appdata_t *)data;
-#if defined(X)
-	Ecore_X_Event_Client_Message *ev = event;
-#endif
-	int rots[4] = {0, 90, 180, 270};
-
-	if (ad == NULL || ad->win == NULL) {
-		WFD_APP_LOG(WFD_APP_LOG_ERROR, "Parameter NULL");
-		return EINA_FALSE;
-	}
-
-#if defined(X)
-	if (ev->message_type == ECORE_X_ATOM_E_ILLUME_ROTATE_ROOT_ANGLE) {
-		WFD_APP_LOG(WFD_APP_LOG_LOW, "ev->message_type: [%d]\n", ev->message_type);
-		elm_win_wm_rotation_available_rotations_set(ad->win, rots, 1);
-	}
-#endif
-
-	__WFD_APP_FUNC_EXIT__;
-	return EINA_FALSE;
-}
 
 /**
  *	This function let the ug make a callback for click the button in popup
@@ -294,114 +264,24 @@ void wfd_destroy_popup()
 	__WFD_APP_FUNC_EXIT__;
 	return;
 }
-#if defined(X)
-static int __get_window_property(Display *dpy, Window win, Atom atom,
-		Atom type, unsigned int *val, unsigned int len)
-{
-	__WFD_APP_FUNC_ENTER__;
-	unsigned char *prop_ret = NULL;
-	Atom type_ret = -1;
-	unsigned long bytes_after = 0;
-	unsigned long  num_ret = -1;
-	int format_ret = -1;
-	unsigned int i = 0;
-	int num = 0;
 
-	prop_ret = NULL;
-	if (XGetWindowProperty(dpy, win, atom, 0, 0x7fffffff, False,
-				type, &type_ret, &format_ret, &num_ret,
-				&bytes_after, &prop_ret) != Success) {
-		return -1;
-	}
-
-	if (type_ret != type || format_ret != 32) {
-		num = -1;
-	} else if (num_ret == 0 || !prop_ret) {
-		num = 0;
-	} else {
-		if (num_ret < len) {
-			len = num_ret;
-		}
-		for (i = 0; i < len; i++) {
-			val[i] = ((unsigned long *)prop_ret)[i];
-		}
-		num = len;
-	}
-
-	if (prop_ret) {
-		XFree(prop_ret);
-	}
-
-	__WFD_APP_FUNC_EXIT__;
-	return num;
-}
-
-static int __x_rotation_get(Display *dpy, void* win)
-{
-	__WFD_APP_FUNC_ENTER__;
-	Window active_win = 0;
-	Window root_win = 0;
-	int rotation = -1;
-	int ret = -1;
-
-	Atom atom_active_win;
-	Atom atom_win_rotate_angle;
-
-	root_win = XDefaultRootWindow(dpy);
-
-	atom_active_win = XInternAtom(dpy, "_NET_ACTIVE_WINDOW", False);
-	ret = __get_window_property(dpy, root_win, atom_active_win,
-			XA_WINDOW, (unsigned int *)&active_win, 1);
-
-	if (ret != 1) {
-		return 0;
-	}
-
-	atom_win_rotate_angle =
-		XInternAtom(dpy, "_E_ILLUME_ROTATE_WINDOW_ANGLE", False);
-	ret = __get_window_property(dpy, active_win	,
-			atom_win_rotate_angle, XA_CARDINAL,
-			(unsigned int *)&rotation, 1);
-
-	__WFD_APP_FUNC_EXIT__;
-
-	if (ret == 1) {
-		return rotation;
-	} else {
-		return 0;
-	}
-}
 void __set_parent_rotate_angle(wfd_appdata_t *ad)
 {
 	__WFD_APP_FUNC_ENTER__;
 
-	int rotate_angle = 0;
 	int rots1[1] = {0};
-	int rots2[4] = {0, 90, 180, 270};
 
 	if (ad == NULL || ad->win == NULL) {
 		WFD_APP_LOG(WFD_APP_LOG_ERROR, "Parameter NULL");
 		return;
 	}
 
-	rotate_angle = __x_rotation_get(ecore_x_display_get(), NULL);
-
-	WFD_APP_LOG(WFD_APP_LOG_LOW, "rotate_angle: [%d]\n", rotate_angle);
-
-	if (rotate_angle < 0) {
-		rotate_angle = 0;
-	}
-
-	if (rotate_angle == 0) {
-		elm_win_wm_rotation_available_rotations_set(ad->win, rots1, 1);
-	} else {
-		elm_win_wm_rotation_available_rotations_set(ad->win, rots2, 1);
-	}
+	elm_win_wm_rotation_available_rotations_set(ad->win, rots1, 1);
 
 	__WFD_APP_FUNC_EXIT__;
 	return;
 }
-#endif
+
 /**
  *	This function let the app create a popup which includes no button
  *	@return   popup
@@ -423,14 +303,9 @@ static Evas_Object *wfd_draw_pop_type_a(Evas_Object * win, wfd_popup_t * pop)
 	evas_object_size_hint_weight_set(popup, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
 	elm_object_domain_translatable_text_set(popup, PACKAGE, pop->text);
 	elm_popup_timeout_set(popup, pop->timeout);
-#if defined(X)
 	__set_parent_rotate_angle(ad);
-#endif
 	evas_object_show(popup);
 	evas_object_show(win);
-#if defined(X)
-	ad->rotate_event_handler = ecore_event_handler_add(ECORE_X_EVENT_CLIENT_MESSAGE, __rotate, ad);
-#endif
 
 	__WFD_APP_FUNC_EXIT__;
 	return popup;
@@ -463,14 +338,9 @@ static Evas_Object *wfd_draw_pop_type_b(Evas_Object * win, wfd_popup_t * pop)
 	elm_object_part_content_set(popup, "button1", btn);
 	evas_object_smart_callback_add(btn, "clicked", __popup_resp_cb, (void *) pop->resp_data1);
 
-#if defined(X)
 	__set_parent_rotate_angle(ad);
-#endif
 	evas_object_show(popup);
 	evas_object_show(win);
-#if defined(X)
-	ad->rotate_event_handler = ecore_event_handler_add(ECORE_X_EVENT_CLIENT_MESSAGE, __rotate, ad);
-#endif
 
 	__WFD_APP_FUNC_EXIT__;
 	return popup;
@@ -513,14 +383,9 @@ static Evas_Object *wfd_draw_pop_type_c(Evas_Object * win, wfd_popup_t * pop)
 	evas_object_smart_callback_add(btn2, "clicked", __popup_resp_cb,
 		(void *) pop->resp_data1);
 
-#if defined(X)
 	__set_parent_rotate_angle(ad);
-#endif
 	evas_object_show(popup);
 	evas_object_show(win);
-#if defined(X)
-	ad->rotate_event_handler = ecore_event_handler_add(ECORE_X_EVENT_CLIENT_MESSAGE, __rotate, ad);
-#endif
 
 	__WFD_APP_FUNC_EXIT__;
 	return popup;
@@ -575,14 +440,9 @@ Evas_Object *wfd_draw_pop_type_auto_deactivation(Evas_Object *win,  void *userda
 	elm_object_part_content_set(popup, "button1", btn);
 	evas_object_smart_callback_add(btn, "clicked", _wfd_ug_automatic_turn_off_popup_cb, userdata);
 
-#if defined(X)
 	__set_parent_rotate_angle(ad);
-#endif
 	evas_object_show(popup);
 	evas_object_show(win);
-#if defined(X)
-	ad->rotate_event_handler = ecore_event_handler_add(ECORE_X_EVENT_CLIENT_MESSAGE, __rotate, ad);
-#endif
 
 	__WFD_APP_FUNC_EXIT__;
 	return popup;
@@ -897,14 +757,9 @@ Evas_Object *wfd_draw_pop_type_display(Evas_Object * win, wfd_popup_t * pop)
 	}
 
 	elm_object_content_set(popup, layout);
-#if defined(X)
 	__set_parent_rotate_angle(ad);
-#endif
 	evas_object_show(popup);
 	evas_object_show(win);
-#if defined(X)
-	ad->rotate_event_handler = ecore_event_handler_add(ECORE_X_EVENT_CLIENT_MESSAGE, __rotate, ad);
-#endif
 
 	__WFD_APP_FUNC_EXIT__;
 	return popup;
@@ -1264,16 +1119,10 @@ Evas_Object *wfd_draw_pop_type_keypad(Evas_Object * win, wfd_popup_t * pop)
 	evas_object_show(genlist);
 	elm_object_content_set(pinpopup, genlist);
 
-#if defined(X)
 	__set_parent_rotate_angle(ad);
-#endif
 	evas_object_show(pinpopup);
 	evas_object_show(win);
 	elm_object_focus_set(ad->pin_entry, EINA_TRUE);
-#if defined(X)
-	ad->rotate_event_handler = ecore_event_handler_add(ECORE_X_EVENT_CLIENT_MESSAGE,
-			__rotate, ad);
-#endif
 
 	__WFD_APP_FUNC_EXIT__;
 	return pinpopup;

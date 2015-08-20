@@ -30,9 +30,6 @@
 #include <string.h>
 
 #include <Elementary.h>
-#if defined(X)
-#include <utilX.h>
-#endif
 #include <vconf.h>
 #include <app_control_internal.h>
 #include <notification.h>
@@ -44,6 +41,8 @@
 
 #include "wfd-app.h"
 #include "wfd-app-util.h"
+
+#define KEY_SELECT "XF86Home"
 
 char *wfd_app_trim_path(const char *filewithpath)
 {
@@ -569,7 +568,7 @@ static Eina_Bool _wfd_hard_key_down_cb(void *data, int type, void *event)
 		WFD_APP_LOG(WFD_APP_LOG_ERROR, "Invalid AppData parameter");
 		return EINA_FALSE;
 	}
-#if defined(KEY)
+
 	if (!strcmp(ev->keyname, KEY_SELECT)) {
 		WFD_APP_LOG(WFD_APP_LOG_HIGH, "[KEY]KEY_SELECT pressed");
 		WFD_APP_LOG(WFD_APP_LOG_HIGH, "Mac : %s", ad->mac_addr_connecting);
@@ -586,7 +585,7 @@ static Eina_Bool _wfd_hard_key_down_cb(void *data, int type, void *event)
 		WFD_APP_LOG(WFD_APP_LOG_HIGH, "[KEY][%s] pressed not Handled",
 			ev->keyname);
 	}
-#endif
+
 	return EINA_FALSE;
 }
 
