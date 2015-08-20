@@ -26,12 +26,11 @@
 #include <wifi-direct.h>
 #include <efl_extension.h>
 
-#if defined(X)
-#include "utilX.h"
-#endif
 #include "wfd_ug.h"
 #include "wfd_ug_view.h"
 #include "wfd_client.h"
+
+#define KEY_BACK "XF86Back"
 
 static void delete_popup(void *data)
 {
@@ -104,7 +103,6 @@ static void _mouseup_wifi_cb(void *data, Evas *e, Evas_Object *obj, void *event_
 static void _keydown_wifi_cb(void *data, Evas *e, Evas_Object *obj, void *event_info)
 {
 
-#if defined(KEY)
 	Evas_Event_Key_Down *ev = event_info;
 	if (!strcmp(ev->keyname, KEY_BACK)) {
 		struct ug_data *ugd = (struct ug_data *) data;
@@ -115,7 +113,6 @@ static void _keydown_wifi_cb(void *data, Evas *e, Evas_Object *obj, void *event_
 		evas_object_del(ugd->act_popup);
 		ugd->act_popup = NULL;
 	}
-#endif
 }
 #endif /* MODEL_BUILD_FEATURE_WLAN_CONCURRENT_MODE */
 
@@ -135,7 +132,6 @@ static void _mouseup_hotspot_cb(void *data, Evas *e, Evas_Object *obj, void *eve
 }
 static void _keydown_hotspot_cb(void *data, Evas *e, Evas_Object *obj, void *event_info)
 {
-#if defined(KEY)
 	Evas_Event_Key_Down *ev = event_info;
 	if (!strcmp(ev->keyname, KEY_BACK)) {
 		struct ug_data *ugd = (struct ug_data *) data;
@@ -146,7 +142,6 @@ static void _keydown_hotspot_cb(void *data, Evas *e, Evas_Object *obj, void *eve
 		evas_object_del(ugd->act_popup);
 		ugd->act_popup = NULL;
 	}
-#endif
 }
 
 static void _mouseup_disconnect_all_cb(void *data, Evas *e, Evas_Object *obj, void *event_info)

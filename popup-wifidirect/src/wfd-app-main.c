@@ -27,9 +27,6 @@
 
 #include <libintl.h>
 #include <Elementary.h>
-#if defined(X)
-#include <Ecore_X.h>
-#endif
 #include <notification.h>
 #include <ui-gadget-module.h>
 #include <app_control_internal.h>
@@ -38,9 +35,6 @@
 #include <efl_util.h>
 #include <efl_assist.h>
 #include <linux/unistd.h>
-#if defined(X)
-#include <utilX.h>
-#endif
 #include <vconf.h>
 
 #include "wfd-app.h"
@@ -62,7 +56,6 @@ static void _win_del(void *data, Evas_Object *obj, void *event)
 static Evas_Object *_create_win(Evas_Object *parent, const char *name)
 {
 	Evas_Object *eo;
-	int w, h;
 
 	/* eo = elm_win_add(parent, name, ELM_WIN_BASIC); */
 	eo = elm_win_add(NULL, name, ELM_WIN_NOTIFICATION);
@@ -71,11 +64,7 @@ static Evas_Object *_create_win(Evas_Object *parent, const char *name)
 		elm_win_borderless_set(eo, EINA_TRUE);
 		elm_win_alpha_set(eo, EINA_TRUE);
 		evas_object_smart_callback_add(eo, "delete,request", _win_del, NULL);
-#if defined(X)
-		ecore_x_window_size_get(ecore_x_window_root_first_get(), &w, &h);
-#endif
 		efl_util_set_notification_window_level(eo, EFL_UTIL_NOTIFICATION_LEVEL_1);
-		evas_object_resize(eo, w, h);
 		evas_object_raise(eo);
 	}
 
@@ -132,12 +121,6 @@ static bool _app_create(void *data)
 
 	ad->layout = elm_layout_add(ad->conformant);
 	elm_object_content_set(ad->conformant, ad->layout);
-
-#if defined(X)
-	if (!ecore_x_display_get()) {
-		return FALSE;
-	}
-#endif
 
 	ret = init_wfd_client(ad);
 	if (!ret) {

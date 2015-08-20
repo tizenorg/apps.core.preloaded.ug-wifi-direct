@@ -355,10 +355,6 @@ struct ug_data {
 	GCancellable *dbus_cancellable;
 	GDBusConnection *conn;
 #endif
-#if defined(EA)
-	Ea_Theme_Color_Table *color_table;
-	Ea_Theme_Font_Table *font_table;
-#endif
 };
 
 extern Elm_Gen_Item_Class device_name_title_itc;
