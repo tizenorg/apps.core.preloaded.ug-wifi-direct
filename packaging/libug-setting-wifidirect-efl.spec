@@ -3,13 +3,13 @@
 
 Name:       libug-setting-wifidirect-efl
 Summary:    Wi-Fi Direct setting UI gadget
-Version:    1.11.64
+Version:    1.11.65
 Release:    1
 Group:      App/Network
 License:    Flora-1.1
 Source0:    %{name}-%{version}.tar.gz
 
-%if "%{?tizen_profile_name}" == "wearable"
+%if "%{profile}" == "wearable"
 ExcludeArch: %{arm} %ix86 x86_64
 %endif
 
