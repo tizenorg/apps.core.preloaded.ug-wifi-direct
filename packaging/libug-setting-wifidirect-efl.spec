@@ -60,7 +60,7 @@ wifi direct client library (Shared Library)
 
 %package -n org.tizen.wifi-direct-popup
 Summary:    Wifi-Wirect system popup
-License:    Flora-1.0
+License:    Flora-1.1
 Requires:   %{name} = %{version}-%{release}
 
 
