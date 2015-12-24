@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns="http://tizen.org/ns/packages" package="setting-wifidirect-efl" version="1.1.2" install-location="internal-only">
+<manifest xmlns="http://tizen.org/ns/packages" package="setting-wifidirect-efl" api-version="2.4" version="1.1.2" install-location="internal-only">
 	<label>Wi-Fi Direct Setting</label>
 	<author email="sungsik.jang@samsung.com" href="www.samsung.com">Sungsik Jang</author>
 	<description>Wi-Fi Direct setting UG</description>
