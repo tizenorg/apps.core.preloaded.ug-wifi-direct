@@ -3,7 +3,7 @@
 
 Name:       libug-setting-wifidirect-efl
 Summary:    Wi-Fi Direct setting UI gadget
-Version:    1.11.65
+Version:    1.11.66
 Release:    1
 Group:      App/Network
 License:    Flora-1.1
@@ -15,7 +15,6 @@ ExcludeArch: %{arm} %ix86 x86_64
 
 Requires(post): /sbin/ldconfig
 Requires(post): /usr/bin/sqlite3
-Requires(post): sys-assert
 Requires(postun): /sbin/ldconfig
 BuildRequires:  cmake
 BuildRequires:  edje-tools
