@@ -355,6 +355,9 @@ struct ug_data {
 	GCancellable *dbus_cancellable;
 	GDBusConnection *conn;
 #endif
+#ifdef MOTION_CONTROL_ENABLE
+	void *motion_handle
+#endif
 };
 
 extern Elm_Gen_Item_Class device_name_title_itc;

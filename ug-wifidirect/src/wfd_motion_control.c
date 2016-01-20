@@ -52,12 +52,14 @@ static TARGET_VIEW_FOCUS __motion_target_view_focus_get(void *data)
 }
 
 
-static void __motion_shake_cb(unsigned int event_type, sensor_event_data_t *event_data, void *data)
+static void __motion_shake_cb(gesture_type_e gesture,
+		const gesture_data_h event_data, double timestamp,
+		gesture_error_e error, void *user_data)
 {
 	__FUNC_ENTER__;
 
 	gboolean motion_activated = FALSE;
-	struct ug_data *ugd = (struct ug_data *) data;
+	struct ug_data *ugd = (struct ug_data *) user_data;
 	if (NULL == ugd) {
 		DBG(LOG_ERROR,"NULL pointer!");
 		return;
@@ -151,54 +153,42 @@ static void __motion_shake_cb(unsigned int event_type, sensor_event_data_t *even
 
 void motion_create(struct ug_data *ugd)
 {
+	gesture_h handle;
+	bool supported = false;
 	int ret = -1;
 
-	motion_handle = sf_connect(MOTION_SENSOR);
-	if (motion_handle < 0) {
-		DBG(LOG_ERROR, "Failed Operation sf_connect.\n");
+	ret = gesture_is_supported(GESTURE_SHAKE, &supported);
+	if (ret != GESTURE_ERROR_NONE || !supported) {
+		DBG(LOG_ERROR, "gesture_is_supported failed : %d", ret);
 		return;
 	}
-	ret = sf_register_event(motion_handle, MOTION_ENGINE_EVENT_SHAKE, NULL,
-			__motion_shake_cb, ugd);
-	if (ret < 0) {
-		DBG(LOG_ERROR, "Failed Operation sf_register_event. [%d]\n", ret);
-		goto fail;
+
+	ret =  gesture_create(&handle);
+	if (ret != GESTURE_ERROR_NONE) {
+		DBG(LOG_ERROR, "gesture_create failed : %d", ret);
+		return;
 	}
-	ret = sf_start(motion_handle, 0);
-	if (ret < 0) {
-		DBG(LOG_ERROR, "Failed Operation sf_start. [%d]\n", ret);
-		goto fail;
+	ugd->motion_handle = handle;
+
+	ret = gesture_start_recognition(handle, GESTURE_SHAKE,
+			GESTURE_OPTION_DEFAULT, __motion_shake_cb, ugd);
+	if (ret != GESTURE_ERROR_NONE) {
+		DBG(LOG_ERROR, "gesture_start_recognition failed : %d", ret);
+		gesture_release(handle);
+		ugd->motion_handle = NULL;
 	}
 
 	DBG(LOG_INFO, "Succesfully, Init Sensor Handle\n");
 	return;
-
-fail:
-	ret = sf_disconnect(motion_handle);
-	if (ret < 0) {
-		DBG(LOG_ERROR, "Failed Operation sf_disconnect. [%d]\n", ret);
-	}
 }
 
 void motion_destroy(void)
 {
-	int ret = -1;
-
-	if (motion_handle < 0) {
-		DBG(LOG_ERROR, "Motion Handle Not valid !!!");
-		return;
+	gesture_h handle;
+	if(ugd->motion_handle) {
+		handle = ugd->motion_handle;
+		gesture_release(handle);
+		ugd->motion_handle = NULL;
 	}
-
-	ret = sf_stop(motion_handle);
-	if (ret < 0) {
-		DBG(LOG_ERROR, "Failed Operation sf_stop. [%d]\n", ret);
-	}
-	ret = sf_unregister_event(motion_handle, MOTION_ENGINE_EVENT_SHAKE);
-	if (ret < 0) {
-		DBG(LOG_ERROR, "Failed Operation sf_unregister_event. [%d]\n", ret);
-	}
-	ret = sf_disconnect(motion_handle);
-	if (ret < 0) {
-		DBG(LOG_ERROR, "Failed Operation sf_disconnect. [%d]\n", ret);
-	}
+	return;
 }
