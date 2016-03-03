@@ -63,6 +63,8 @@
 
 #define VCONF_WFD_APNAME			"db/setting/device_name"
 
+#define MAX_HEX_COLOR_LENGTH 255
+
 #define assertm_if(expr, fmt, arg...) do { \
 	if (expr) { \
 	  DBG(LOG_VERBOSE, " ##(%s) -> %s() assert!!## "fmt, #expr, __FUNCTION__, ##arg); \

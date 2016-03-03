@@ -390,7 +390,7 @@ static void _gl_peer_sel(void *data, Evas_Object *obj, void *event_info)
 		for (iterator = ugd->raw_discovered_peer_list; iterator; iterator = iterator->next) {
 			if(!strncmp(peer_start->mac_addr, peer->mac_addr, MAC_LENGTH)) {
 				DBG(LOG_INFO, "Device [%s] found in genlist, but it is already lost", ((device_type_s *)iterator->data)->ssid);
-				sprintf(txt, "Cannot find device %s", ((device_type_s *)iterator->data)->ssid);
+				snprintf(txt, sizeof(txt), "Cannot find device %s", ((device_type_s *)iterator->data)->ssid);
 				free_gl_peer(&ugd->gl_avlb_peers_start, ((device_type_s *)iterator->data)->mac_addr, &ugd->gl_available_peer_cnt);
 				wfd_check_gl_available_peers(ugd);
 				wfd_ug_warn_popup(ugd, txt, POPUP_TYPE_INFO);

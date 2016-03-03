@@ -551,6 +551,7 @@ static Eina_Bool _keypad_popup_timer_cb(void *data)
 
 	char msg1[WFD_POP_STR_MAX_LEN] = {0};
 	char msg2[WFD_POP_STR_MAX_LEN] = {0};
+	char label_str[WFD_POP_STR_MAX_LEN] = {0, };
 
 	Evas_Object *label = (Evas_Object*) data;
 	wfd_appdata_t *ad = wfd_get_appdata();
@@ -569,11 +570,10 @@ static Eina_Bool _keypad_popup_timer_cb(void *data)
 				_("IDS_ST_BODY_CONNECT_WITH_PS_IN_PD_SECS_ABB"),
 				connection->peer_name, keypad_popup_timeout);
 
-		strcat(msg1, " ");
 		snprintf(msg2, sizeof(msg2), _("IDS_WIFI_POP_ENTER_PIN_TO_CONNECT_TO_PS"),
 						connection->peer_name);
-		strcat(msg1, msg2);
-		elm_object_domain_translatable_text_set(label, PACKAGE, msg1);
+		snprintf(label_str, sizeof(label_str), "%s %s", msg1, msg2);
+		elm_object_domain_translatable_text_set(label, PACKAGE, label_str);
 
 	}
 
@@ -836,6 +836,7 @@ static char *__wfd_main_desc_label_get(void *data, Evas_Object *obj,
 	WFD_APP_LOG(WFD_APP_LOG_LOW, "wfd_rename desc\n");
 	char msg1[WFD_POP_STR_MAX_LEN] = {0, };
 	char msg2[WFD_POP_STR_MAX_LEN] = {0, };
+	char label_str[WFD_POP_STR_MAX_LEN] = {0, };
 	wfd_appdata_t *ad = wfd_get_appdata();
 	WFD_RETV_IF(ad == NULL, NULL, "Incorrect parameter(NULL)\n");
 	wfd_connection_info_s *connection = ad->connection;
@@ -849,12 +850,11 @@ static char *__wfd_main_desc_label_get(void *data, Evas_Object *obj,
 				_("IDS_ST_BODY_CONNECT_WITH_PS_IN_PD_SECS_ABB"),
 				connection->peer_name, ad->timeout);
 
-		strcat(msg1, " ");
 		snprintf(msg2, sizeof(msg2),
 				_("IDS_WIFI_POP_ENTER_PIN_TO_CONNECT_TO_PS"),
 				connection->peer_name);
-		strcat(msg1, msg2);
-		WFD_APP_LOG(WFD_APP_LOG_LOW, "string %s", msg1);
+		snprintf(label_str, sizeof(label_str), "%s %s", msg1, msg2);
+		WFD_APP_LOG(WFD_APP_LOG_LOW, "string %s", label_str);
 		__WFD_APP_FUNC_EXIT__;
 		return g_strdup(msg1);
 	}

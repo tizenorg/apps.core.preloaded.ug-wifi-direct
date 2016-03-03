@@ -609,12 +609,12 @@ char* ConvertRGBAtoHex(int r, int g, int b, int a)
 {
 	int hexcolor = 0;
 	char *string = NULL;
-	string = g_try_malloc0(sizeof(char )* 255);
+	string = g_try_malloc0(MAX_HEX_COLOR_LENGTH);
 	if (string == NULL) {
 		return string;
 	}
 	hexcolor = (r << 24) + (g << 16) + (b << 8) + a;
-	sprintf(string, "%08x", hexcolor );
+	snprintf(string, MAX_HEX_COLOR_LENGTH, "%08x", hexcolor );
 	return string;
 }
 
