@@ -416,7 +416,6 @@ void _cb_connection(int error_code, wifi_direct_connection_state_e connection_st
 		}
 
 		if (connection->auto_conn) {
-			usleep(200);
 			result = wifi_direct_accept_connection(connection->peer_addr);
 			if (result < 0) {
 				WFD_APP_LOG(WFD_APP_LOG_ERROR, "Failed to accept connection");

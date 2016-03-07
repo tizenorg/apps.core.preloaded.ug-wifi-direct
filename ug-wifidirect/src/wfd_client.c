@@ -825,7 +825,6 @@ void _wfd_ug_auto_exit(void *user_data)
 	struct ug_data *ugd = (struct ug_data *)user_data;
 	WFD_RET_IF(ugd == NULL, "Incorrect parameter(NULL)\n");
 
-	usleep(1000);
 	deinit_wfd_client(ugd);
 	wfd_destroy_ug(ugd);
 
