@@ -101,14 +101,15 @@ static void __launch_app_result_cb(app_control_h request, app_control_h reply, a
 	__WFD_APP_FUNC_EXIT__;
 }
 
-static void _move_data_to_app_control(const char *key, const char *val, void *data)
+static void _move_data_to_app_control(const char *key, const int type,
+		const bundle_keyval_t *kv, void *data)
 {
 	__WFD_APP_FUNC_ENTER__;
 
-	WFD_RET_IF(data == NULL || key == NULL || val == NULL, , "Invialid parameter!");
+	WFD_RET_IF(data == NULL || key == NULL || type == NULL, , "Invialid parameter!");
 
 	app_control_h control = data;
-	app_control_add_extra_data(control, key, val);
+	app_control_add_extra_data(control, key, type);
 
 	__WFD_APP_FUNC_EXIT__;
 }
@@ -129,9 +130,10 @@ static void _launch_app(char *app_id, void *data)
 
 	app_control_set_operation(control, APP_CONTROL_OPERATION_DEFAULT);
 	app_control_set_app_id(control, app_id);
-	bundle_iterate((bundle *)data, _move_data_to_app_control, control);
+	bundle_foreach((bundle *)data, _move_data_to_app_control, control);
 
-	char *launch_type = (char*)bundle_get_val(data, "-t");
+	char *launch_type = NULL;
+	bundle_get_str(data, "-t", &launch_type);
 	if (!strcmp(launch_type, "reconnect_by_connecting_wifi_ap")) {
 		ret = app_control_send_launch_request(control, __launch_app_result_cb, NULL);
 	} else {
@@ -168,7 +170,7 @@ void _add_screen_mirroring_activated_indicator(void *user_data)
 		WFD_RET_IF(noti_err != NOTIFICATION_ERROR_NONE, "Failed to notification_free. [%d]", noti_err);
 	}
 
-	ad->noti_screen_mirroring_on = notification_new(NOTIFICATION_TYPE_ONGOING, NOTIFICATION_GROUP_ID_NONE, NOTIFICATION_PRIV_ID_NONE);
+	ad->noti_screen_mirroring_on = notification_create(NOTIFICATION_TYPE_ONGOING);
 	WFD_RET_IF(NULL == ad->noti_screen_mirroring_on, "NULL parameters.\n");
 
 	noti_err = notification_set_image(ad->noti_screen_mirroring_on, NOTIFICATION_IMAGE_TYPE_ICON_FOR_INDICATOR, SCREEN_MIRRIONG_INDICATOR_ICON_PATH);
@@ -217,7 +219,7 @@ void _add_wfd_peers_connected_notification(void *user_data, char* package_name)
 		WFD_RET_IF(noti_err != NOTIFICATION_ERROR_NONE, "Failed to notification_free. [%d]", noti_err);
 	}
 
-	ad->noti_screen_mirroring_play = notification_new(NOTIFICATION_TYPE_ONGOING, NOTIFICATION_GROUP_ID_NONE, NOTIFICATION_PRIV_ID_NONE);
+	ad->noti_screen_mirroring_play = notification_create(NOTIFICATION_TYPE_ONGOING);
 	WFD_RET_IF(NULL == ad->noti_screen_mirroring_play, "NULL parameters.\n");
 
 	char msg[WFD_MAX_SIZE] = {0};
@@ -229,16 +231,10 @@ void _add_wfd_peers_connected_notification(void *user_data, char* package_name)
 
 	app_control_set_package(control, package_name);
 	app_control_add_extra_data(control, "-t", "notification");
-	res = app_control_to_bundle(control, &b);
-	if (res != APP_CONTROL_ERROR_NONE) {
-		WFD_APP_LOG(WFD_APP_LOG_ERROR, "app_control_to_bundle() return error : %d", res);
-		app_control_destroy(control);
-		return;
-	}
 
-	res = notification_set_execute_option(ad->noti_screen_mirroring_play, NOTIFICATION_EXECUTE_TYPE_SINGLE_LAUNCH, /*Button Text*/NULL, NULL, b);
+	res = notification_set_launch_option(ad->noti_screen_mirroring_play, NOTIFICATION_LAUNCH_OPTION_APP_CONTROL, control);
 	if (res != NOTIFICATION_ERROR_NONE) {
-		WFD_APP_LOG(WFD_APP_LOG_ERROR, "Failed to notification_set_execute_option. [%d]", res);
+		WFD_APP_LOG(WFD_APP_LOG_ERROR, "Failed to otification_set_launch_option. [%d]", res);
 		app_control_destroy(control);
 		return;
 	}
@@ -383,7 +379,7 @@ static void _wfd_cpu_limit_mode_changed(keynode_t *node, void *user_data)
 				cup_limit_mode){
 		bundle *b = NULL;
 		b = bundle_create();
-		bundle_add(b, "-t", "notification_power_saving_on");
+		bundle_add_str(b, "-t", "notification_power_saving_on");
 		_launch_app(PACKAGE_ALLSHARE_CAST, b);
 		bundle_free(b);
 	}
@@ -422,7 +418,7 @@ static void _wfd_power_saving_mode_changed(keynode_t *node, void *user_data)
 		WFD_APP_LOG(WFD_APP_LOG_LOW, "Ultra power saving mode on\n");
 		bundle *b = NULL;
 		b = bundle_create();
-		bundle_add(b, "-t", "quit_by_ultra_power_saving_on");
+		bundle_add_str(b, "-t", "quit_by_ultra_power_saving_on");
 
 		_launch_app(PACKAGE_ALLSHARE_CAST, b);
 		bundle_free(b);
@@ -436,7 +432,7 @@ static void _wfd_power_saving_mode_changed(keynode_t *node, void *user_data)
 			if (cup_limit_mode) {
 				bundle *b = NULL;
 				b = bundle_create();
-				bundle_add(b, "-t", "notification_power_saving_on");
+				bundle_add_str(b, "-t", "notification_power_saving_on");
 				_launch_app(PACKAGE_ALLSHARE_CAST, b);
 				bundle_free(b);
 			}
@@ -479,7 +475,7 @@ static void _wfd_wifi_status_changed(keynode_t *node, void *user_data)
 		ad->screen_mirroring_state = WFD_POP_SCREEN_MIRROR_DISCONNECT_BY_RECONNECT_WIFI_AP;
 		bundle *b = NULL;
 		b = bundle_create();
-		bundle_add(b, "-t", "reconnect_by_connecting_wifi_ap");
+		bundle_add_str(b, "-t", "reconnect_by_connecting_wifi_ap");
 
 		_launch_app(PACKAGE_ALLSHARE_CAST, b);
 		bundle_free(b);
@@ -728,9 +724,9 @@ void wfd_app_util_del_notification(wfd_appdata_t *ad)
 	/* delete the notification */
 	notification_error_e noti_err = NOTIFICATION_ERROR_NONE;
 
-	noti_err  = notification_delete_all_by_type(NULL, NOTIFICATION_TYPE_ONGOING);
+	noti_err  = notification_delete_all(NOTIFICATION_TYPE_ONGOING);
 	if (noti_err != NOTIFICATION_ERROR_NONE) {
-		WFD_APP_LOG(WFD_APP_LOG_ERROR, "Fail to notification_delete_all_by_type.(%d)\n", noti_err);
+		WFD_APP_LOG(WFD_APP_LOG_ERROR, "Fail to notification_delete_all.(%d)\n", noti_err);
 		return;
 	}
 
@@ -792,7 +788,7 @@ void wfd_app_util_add_indicator_icon(void *user_data)
 		WFD_RET_IF(noti_err != NOTIFICATION_ERROR_NONE, "Failed to notification_free. [%d]", noti_err);
 	}
 
-	ad->noti_wifi_direct_on = notification_new(NOTIFICATION_TYPE_ONGOING, NOTIFICATION_GROUP_ID_NONE, NOTIFICATION_PRIV_ID_NONE);
+	ad->noti_wifi_direct_on = notification_create(NOTIFICATION_TYPE_ONGOING);
 	WFD_RET_IF(NULL == ad->noti_wifi_direct_on, "NULL parameters.\n");
 
 	noti_err = notification_set_image(ad->noti_wifi_direct_on, NOTIFICATION_IMAGE_TYPE_ICON_FOR_INDICATOR, WFD_ACTIVATED_NOTI_ICON_PATH);
@@ -872,7 +868,7 @@ void wfd_app_util_add_wfd_turn_off_notification(void *user_data)
 		WFD_RET_IF(noti_err != NOTIFICATION_ERROR_NONE, "Failed to notification_free. [%d]", noti_err);
 	}
 
-	ad->noti_wifi_direct_connected = (notification_h) notification_new(NOTIFICATION_TYPE_ONGOING, NOTIFICATION_GROUP_ID_NONE, NOTIFICATION_PRIV_ID_NONE);
+	ad->noti_wifi_direct_connected = (notification_h) notification_create(NOTIFICATION_TYPE_ONGOING);
 	WFD_RET_IF(NULL == ad->noti_wifi_direct_connected, "NULL parameters.\n");
 
 	bundle *b = NULL;
@@ -882,16 +878,10 @@ void wfd_app_util_add_wfd_turn_off_notification(void *user_data)
 
 	app_control_set_package(control, PACKAGE);
 	app_control_add_extra_data(control, NOTIFICATION_BUNDLE_PARAM, NOTIFICATION_BUNDLE_VALUE);
-	res = app_control_to_bundle(control, &b);
-	if (res != APP_CONTROL_ERROR_NONE) {
-		WFD_APP_LOG(WFD_APP_LOG_ERROR, "app_control_to_bundle() return error : %d", res);
-		app_control_destroy(control);
-		return;
-	}
 
-	noti_err = notification_set_execute_option(ad->noti_wifi_direct_connected, NOTIFICATION_EXECUTE_TYPE_SINGLE_LAUNCH, /*Button Text*/NULL, NULL, b);
+	noti_err = notification_set_launch_option(ad->noti_wifi_direct_connected, NOTIFICATION_LAUNCH_OPTION_APP_CONTROL, control);
 	if (noti_err != NOTIFICATION_ERROR_NONE) {
-		WFD_APP_LOG(WFD_APP_LOG_ERROR, "Failed to notification_set_execute_option. [%d]", noti_err);
+		WFD_APP_LOG(WFD_APP_LOG_ERROR, "Failed to notification_set_launch_option. [%d]", noti_err);
 		app_control_destroy(control);
 		return;
 	}

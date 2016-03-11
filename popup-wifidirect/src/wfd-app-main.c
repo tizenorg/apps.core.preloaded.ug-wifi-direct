@@ -264,7 +264,7 @@ static void _app_reset(app_control_h control, void *data)
 		WFD_APP_LOG(WFD_APP_LOG_LOW, "Launching Settings EFL from notification\n");
 		app_control_create(&ug_control);
 		app_control_set_operation(ug_control, APP_CONTROL_OPERATION_DEFAULT);
-		app_control_set_window(ug_control, elm_win_xwindow_get(ug_get_window()));
+		app_control_set_launch_mode(ug_control, APP_CONTROL_LAUNCH_MODE_GROUP);
 		app_control_set_app_id(ug_control, "setting-wifidirect-efl");
 
 		ret = app_control_send_launch_request(ug_control, NULL, NULL);
