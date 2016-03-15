@@ -128,6 +128,8 @@ static void _mouseup_hotspot_cb(void *data, Evas *e, Evas_Object *obj, void *eve
 		ugd->act_popup = NULL;
 	}
 }
+
+#if 0
 static void _keydown_hotspot_cb(void *data, Evas *e, Evas_Object *obj, void *event_info)
 {
 	Evas_Event_Key_Down *ev = event_info;
@@ -141,6 +143,7 @@ static void _keydown_hotspot_cb(void *data, Evas *e, Evas_Object *obj, void *eve
 		ugd->act_popup = NULL;
 	}
 }
+#endif
 
 static void _mouseup_disconnect_all_cb(void *data, Evas *e, Evas_Object *obj, void *event_info)
 {
@@ -531,7 +534,7 @@ void wfd_ug_act_popup(void *data, const char *message, int popup_type)
 	eext_object_event_callback_add(popup, EEXT_CALLBACK_BACK, eext_popup_back_cb, NULL);
 	evas_object_size_hint_weight_set(popup, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
 	elm_object_domain_translatable_part_text_set(popup, "title,text",
-			 PACKAGE, _("IDS_WIFI_HEADER_WI_FI_DIRECT_CONNECTION_ABB"));
+			 PACKAGE, D_("IDS_WIFI_HEADER_WI_FI_DIRECT_CONNECTION_ABB"));
 	elm_object_domain_translatable_text_set(popup, PACKAGE, message);
 	evas_object_smart_callback_add(popup, "language,changed", act_popup_language_changed, (void *)popup_type);
 
@@ -753,7 +756,7 @@ void warn_popup_language_changed(void *data, Evas_Object *obj, void *event_info)
 				"IDS_ST_POP_DEVICE_CONNECTED_TO_ANOTHER_DEVICE");
 		break;
 	case POP_TYPE_MULTI_CONNECT_POPUP:
-		snprintf(popup_text, MAX_POPUP_TEXT_SIZE, _("IDS_ST_POP_YOU_CAN_CONNECT_UP_TO_PD_DEVICES_AT_THE_SAME_TIME"), MAX_CONNECTED_PEER_NUM);
+		snprintf(popup_text, MAX_POPUP_TEXT_SIZE, D_("IDS_ST_POP_YOU_CAN_CONNECT_UP_TO_PD_DEVICES_AT_THE_SAME_TIME"), MAX_CONNECTED_PEER_NUM);
 		elm_object_domain_translatable_text_set(ugd->warn_popup, PACKAGE,
 				popup_text);
 		break;
@@ -788,7 +791,7 @@ void wfd_ug_warn_popup(void *data, const char *message, int popup_type)
 				 PACKAGE, "IDS_WIFI_HEADER_UNABLE_TO_CONNECT_ABB2");
 	} else {
 		elm_object_domain_translatable_part_text_set(popup, "title,text",
-				 PACKAGE, _("IDS_WIFI_HEADER_WI_FI_DIRECT_CONNECTION_ABB"));
+				 PACKAGE, D_("IDS_WIFI_HEADER_WI_FI_DIRECT_CONNECTION_ABB"));
 	}
 	elm_object_domain_translatable_text_set(popup, PACKAGE, message);
 	evas_object_smart_callback_add(popup, "language,changed", warn_popup_language_changed, (void *)popup_type);

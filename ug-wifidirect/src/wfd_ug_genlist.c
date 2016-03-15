@@ -67,7 +67,7 @@ static char *_gl_wfd_onoff_text_get(void *data, Evas_Object *obj,
 
 	if (!strcmp("elm.text.sub", part)) {
 		__FUNC_EXIT__;
-		return g_strdup(_("IDS_ST_HEADER_MY_DEVICE_NAME"));
+		return g_strdup(D_("IDS_ST_HEADER_MY_DEVICE_NAME"));
 	} else if (!strcmp("elm.text", part)) {
 		DBG(LOG_INFO, "%s", ugd->dev_name);
 		if (ugd->dev_name) {
@@ -145,7 +145,7 @@ static char *_gl_device_name_label_get(void *data, Evas_Object *obj,
 			}
 
 			snprintf(str, WFD_GLOBALIZATION_STR_LENGTH,
-				_("IDS_WIFI_BODY_YOUR_DEVICE_HPS_IS_CURRENTLY_VISIBLE_TO_NEARBY_DEVICES"),
+				D_("IDS_WIFI_BODY_YOUR_DEVICE_HPS_IS_CURRENTLY_VISIBLE_TO_NEARBY_DEVICES"),
 				dev_name);
 
 			snprintf(buf, WFD_GLOBALIZATION_STR_LENGTH,
@@ -174,7 +174,7 @@ static char *_gl_title_label_get(void *data, Evas_Object *obj, const char *part)
 	WFD_RETV_IF(data == NULL, NULL, "Incorrect parameter(NULL)\n");
 	DBG(LOG_INFO, "%s", part);
 	if (!strcmp("elm.text", part)) {
-		return g_strdup(_("IDS_WIFI_HEADER_AVAILABLE_DEVICES_ABB"));
+		return g_strdup(D_("IDS_WIFI_HEADER_AVAILABLE_DEVICES_ABB"));
 	}
 	__FUNC_EXIT__;
 	return NULL;
@@ -189,7 +189,7 @@ static char *_gl_title_no_device_label_get(void *data, Evas_Object *obj,
 	WFD_RETV_IF(data == NULL, NULL, "Incorrect parameter(NULL)\n");
 	DBG(LOG_INFO, "%s", part);
 	if (!strcmp("elm.text", part)) {
-		return g_strdup(_("IDS_WIFI_HEADER_AVAILABLE_DEVICES_ABB"));
+		return g_strdup(D_("IDS_WIFI_HEADER_AVAILABLE_DEVICES_ABB"));
 	}
 
 	__FUNC_EXIT__;
@@ -202,7 +202,7 @@ static char *_gl_multi_title_label_get(void *data, Evas_Object *obj, const char 
 
 	WFD_RETV_IF(data == NULL, NULL, "Incorrect parameter(NULL)\n");
 	if (!strcmp("elm.text", part)) {
-		return g_strdup(_("IDS_WIFI_HEADER_AVAILABLE_DEVICES_ABB"));
+		return g_strdup(D_("IDS_WIFI_HEADER_AVAILABLE_DEVICES_ABB"));
 	}
 
 	__FUNC_EXIT__;
@@ -239,7 +239,7 @@ static char *_gl_available_title_label_get(void *data, Evas_Object *obj, const c
 	}
 	DBG(LOG_INFO, "available- %s", part);
 	if (!strcmp("elm.text", part)) {
-		return g_strdup(_("IDS_WIFI_HEADER_AVAILABLE_DEVICES_ABB"));
+		return g_strdup(D_("IDS_WIFI_HEADER_AVAILABLE_DEVICES_ABB"));
 	}
 
 	__FUNC_EXIT__;
@@ -317,26 +317,26 @@ static char *_gl_peer_label_get(void *data, Evas_Object *obj, const char *part)
 	} else if (!strcmp("elm.text.sub", part)) {
 		switch (peer->conn_status) {
 		case PEER_CONN_STATUS_DISCONNECTED:
-			g_strlcpy(buf, _("IDS_CHATON_BODY_AVAILABLE"), WFD_GLOBALIZATION_STR_LENGTH);
+			g_strlcpy(buf, D_("IDS_CHATON_BODY_AVAILABLE"), WFD_GLOBALIZATION_STR_LENGTH);
 			break;
 		case PEER_CONN_STATUS_CONNECTING:
-			g_strlcpy(buf, _("IDS_WIFI_BODY_CONNECTING_ING"), WFD_GLOBALIZATION_STR_LENGTH);
+			g_strlcpy(buf, D_("IDS_WIFI_BODY_CONNECTING_ING"), WFD_GLOBALIZATION_STR_LENGTH);
 			break;
 		case PEER_CONN_STATUS_CONNECTED:
 			if (peer->is_group_owner == FALSE) {
-				g_strlcpy(buf, _("IDS_COM_BODY_CONNECTED_M_STATUS"), WFD_GLOBALIZATION_STR_LENGTH);
+				g_strlcpy(buf, D_("IDS_COM_BODY_CONNECTED_M_STATUS"), WFD_GLOBALIZATION_STR_LENGTH);
 			} else {
-				g_strlcpy(buf, _("IDS_CHATON_BODY_AVAILABLE"), WFD_GLOBALIZATION_STR_LENGTH);
+				g_strlcpy(buf, D_("IDS_CHATON_BODY_AVAILABLE"), WFD_GLOBALIZATION_STR_LENGTH);
 			}
 			break;
 		case PEER_CONN_STATUS_FAILED_TO_CONNECT:
-			g_strlcpy(buf, _("IDS_CHATON_HEADER_CONNECTION_FAILED_ABB2"), WFD_GLOBALIZATION_STR_LENGTH);
+			g_strlcpy(buf, D_("IDS_CHATON_HEADER_CONNECTION_FAILED_ABB2"), WFD_GLOBALIZATION_STR_LENGTH);
 			break;
 		case PEER_CONN_STATUS_WAIT_FOR_CONNECT:
-			g_strlcpy(buf, _("IDS_WIFI_BODY_WAITING_FOR_CONNECTION_M_STATUS_ABB"), WFD_GLOBALIZATION_STR_LENGTH);
+			g_strlcpy(buf, D_("IDS_WIFI_BODY_WAITING_FOR_CONNECTION_M_STATUS_ABB"), WFD_GLOBALIZATION_STR_LENGTH);
 			break;
 		default:
-			g_strlcpy(buf, _("IDS_CHATON_BODY_AVAILABLE"), WFD_GLOBALIZATION_STR_LENGTH);
+			g_strlcpy(buf, D_("IDS_CHATON_BODY_AVAILABLE"), WFD_GLOBALIZATION_STR_LENGTH);
 			break;
 		}
 	} else {
@@ -578,7 +578,7 @@ static char *_gl_noitem_text_get(void *data, Evas_Object *obj, const char *part)
 
 	DBG(LOG_INFO,"part = %s",part);
 	if (!strcmp("elm.text", part)) {
-		return g_strdup(_("IDS_BT_BODY_NO_DEVICES_FOUND_ABB"));
+		return g_strdup(D_("IDS_BT_BODY_NO_DEVICES_FOUND_ABB"));
 	}
 	__FUNC_EXIT__;
 	return NULL;
@@ -601,7 +601,7 @@ static char *_gl_conn_dev_title_label_get(void *data, Evas_Object *obj, const ch
 	}
 	DBG(LOG_INFO,"part = %s",part);
 	if (!strcmp("elm.text", part)) {
-		return g_strdup(_("IDS_ST_HEADER_CONNECTED_DEVICES"));
+		return g_strdup(D_("IDS_ST_HEADER_CONNECTED_DEVICES"));
 	}
 
 	__FUNC_EXIT__;
@@ -657,7 +657,7 @@ static char *_gl_peer_conn_dev_label_get(void *data, Evas_Object *obj, const cha
 			return ssid;
 		}
 	} else if (!strcmp("elm.text.sub", part)) {
-		det = elm_entry_utf8_to_markup(_("IDS_COM_BODY_CONNECTED_M_STATUS"));
+		det = elm_entry_utf8_to_markup(D_("IDS_COM_BODY_CONNECTED_M_STATUS"));
 		buf = g_strdup_printf("<color=#%s>%s</color>",
 			ConvertRGBAtoHex(2, 61, 132, 255), det);
 		if (det != NULL) {
@@ -688,7 +688,7 @@ static char *_gl_conn_failed_dev_title_label_get(void *data, Evas_Object *obj,
 	}
 
 	if (!strcmp("elm.text", part)) {
-		return g_strdup(_("IDS_WIFI_SBODY_NOT_CONNECTED_M_STATUS_ABB"));
+		return g_strdup(D_("IDS_WIFI_SBODY_NOT_CONNECTED_M_STATUS_ABB"));
 	}
 
 	__FUNC_EXIT__;
@@ -730,7 +730,7 @@ static char *_gl_peer_conn_failed_dev_label_get(void *data, Evas_Object *obj, co
 			return ssid;
 		}
 	} else if (!strcmp("elm.text.sub", part)) {
-		g_strlcpy(buf, _("IDS_CHATON_HEADER_CONNECTION_FAILED_ABB2"),
+		g_strlcpy(buf, D_("IDS_CHATON_HEADER_CONNECTION_FAILED_ABB2"),
 			WFD_GLOBALIZATION_STR_LENGTH);
 		__FUNC_EXIT__;
 		return g_strdup(buf);
@@ -758,9 +758,9 @@ static char *_gl_multi_connect_dev_title_label_get(void *data, Evas_Object *obj,
 
 	if (!strcmp("elm.text", part)) {
 		if (ugd->multi_connect_mode == WFD_MULTI_CONNECT_MODE_IN_PROGRESS) {
-			return g_strdup(_("IDS_WIFI_HEADER_AVAILABLE_DEVICES_ABB"));
+			return g_strdup(D_("IDS_WIFI_HEADER_AVAILABLE_DEVICES_ABB"));
 		} else if (ugd->multi_connect_mode == WFD_MULTI_CONNECT_MODE_COMPLETED) {
-			return g_strdup(_("IDS_WIFI_SBODY_NOT_CONNECTED_M_STATUS_ABB"));
+			return g_strdup(D_("IDS_WIFI_SBODY_NOT_CONNECTED_M_STATUS_ABB"));
 		}
 	}
 
@@ -787,7 +787,7 @@ static char *_gl_multi_connect_select_all_title_label_get(void *data, Evas_Objec
 
 	if (!strcmp("elm.text", part)) {
 		__FUNC_EXIT__;
-		return g_strdup(_("IDS_WIFI_BODY_SELECT_ALL"));
+		return g_strdup(D_("IDS_WIFI_BODY_SELECT_ALL"));
 	}
 	__FUNC_EXIT__;
 	return NULL;
@@ -848,7 +848,7 @@ static char *_gl_busy_dev_title_label_get(void *data, Evas_Object *obj,
 	DBG(LOG_INFO, "%s", part);
 
 	if (!strcmp("elm.text", part)) {
-		return g_strdup(_("IDS_ST_HEADER_BUSY_DEVICES"));
+		return g_strdup(D_("IDS_ST_HEADER_BUSY_DEVICES"));
 	}
 
 	__FUNC_EXIT__;
@@ -891,7 +891,7 @@ static char *_gl_peer_busy_dev_label_get(void *data, Evas_Object *obj, const cha
 			return ssid;
 		}
 	} else if (!strcmp("elm.text.sub", part)) {
-		g_strlcpy(buf, _("IDS_ST_BODY_CONNECTED_WITH_ANOTHER_DEVICE_ABB"),
+		g_strlcpy(buf, D_("IDS_ST_BODY_CONNECTED_WITH_ANOTHER_DEVICE_ABB"),
 			WFD_GLOBALIZATION_STR_LENGTH);
 		__FUNC_EXIT__;
 		return g_strdup(buf);

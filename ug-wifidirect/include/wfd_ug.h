@@ -36,9 +36,7 @@
 #include <assert.h>
 
 #define PACKAGE "ug-setting-wifidirect-efl"
-#define LOCALEDIR "/usr/share/locale"
-#define COLOR_TABLE "/usr/apps/setting-wifidirect-efl/shared/res/tables/setting-wifidirect-efl_ChangeableColorTable.xml"
-#define FONT_TABLE "/usr/apps/setting-wifidirect-efl/shared/res/tables/setting-wifidirect-efl_FontInfoTable.xml"
+#define LOCALEDIR "/usr/ug/res/locale"
 
 #define DIRECT_TAG  "wfd_ug"
 /* TODO:: To change the log level as LOG_INFO */
@@ -122,7 +120,7 @@
 #define SSID_LENGTH 32
 #define MAX_CONNECTED_PEER_NUM 7
 #define MAX_PEER_NUM 10
-#define MAX_POPUP_TEXT_SIZE 256
+#define MAX_POPUP_TEXT_SIZE 512
 #define MAX_DISPLAY_TIME_OUT 3
 #define MAX_NO_ACTION_TIME_OUT	300            /*5min*/
 #define MAX_SCAN_TIME_OUT 0
@@ -132,7 +130,7 @@
 #define SR_CHECKBOX_OFF_MSG "on/off button off"
 #define SR_BUTTON_MSG "multiple connect button"
 
-#define _(s)        dgettext(PACKAGE, s)
+#define D_(s)        dgettext(PACKAGE, s)
 #define N_(s)      dgettext_noop(s)
 #define S_(s)      dgettext("sys_string", s)
 
@@ -163,7 +161,7 @@ typedef enum {
 
 
 typedef struct device_type_s_{
-	char ssid[SSID_LENGTH];
+	char ssid[SSID_LENGTH + 1];
 	unsigned int category;
 	unsigned int sub_category;
 	char mac_addr[MAC_LENGTH];

@@ -83,8 +83,8 @@ Eina_Bool _multiconnect_view_pop_cb(void *data, Elm_Object_Item *it)
 				DBG(LOG_ERROR, "Failed to start discovery. [%d]\n", ret);
 				wifi_direct_cancel_discovery();
 			}
-		} else if (g_strcmp0(_(ugd->view_type),
-			_("IDS_WIFI_BUTTON_MULTI_CONNECT")) == 0) {
+		} else if (g_strcmp0(D_(ugd->view_type),
+			D_("IDS_WIFI_BUTTON_MULTI_CONNECT")) == 0) {
 			DBG(LOG_INFO, "Discovery not started\n");
 			ug_destroy_me(ugd->ug);
 		}
@@ -323,7 +323,7 @@ void _connect_btn_cb(void *data, Evas_Object *obj, void *event_info)
 
 	/* if more than 7 device selected, show the popup */
 	if (count > MAX_CONNECTED_PEER_NUM) {
-		snprintf(popup_text, MAX_POPUP_TEXT_SIZE, _("IDS_ST_POP_YOU_CAN_CONNECT_UP_TO_PD_DEVICES_AT_THE_SAME_TIME"), MAX_CONNECTED_PEER_NUM);
+		snprintf(popup_text, MAX_POPUP_TEXT_SIZE, D_("IDS_ST_POP_YOU_CAN_CONNECT_UP_TO_PD_DEVICES_AT_THE_SAME_TIME"), MAX_CONNECTED_PEER_NUM);
 		wfd_ug_warn_popup(ugd, popup_text, POP_TYPE_MULTI_CONNECT_POPUP);
 		__FUNC_EXIT__;
 		return;
@@ -434,10 +434,10 @@ static void _wfd_gl_multi_sel_cb(void *data, Evas_Object *obj, void *event_info)
 
 	if (is_sel) {
 		char title[MAX_POPUP_TEXT_SIZE] = {0};
-		snprintf(title, MAX_POPUP_TEXT_SIZE, _("IDS_ST_HEADER_PD_SELECTED"), sel_count);
+		snprintf(title, MAX_POPUP_TEXT_SIZE, D_("IDS_ST_HEADER_PD_SELECTED"), sel_count);
 		wfd_naviframe_title_set(ugd, title);
 	} else {
-		wfd_naviframe_title_set(ugd, _("IDS_DLNA_HEADER_SELECT_DEVICES_ABB"));
+		wfd_naviframe_title_set(ugd, D_("IDS_DLNA_HEADER_SELECT_DEVICES_ABB"));
 	}
 
 	state = elm_check_state_get(ugd->select_all_icon);
@@ -620,10 +620,10 @@ static void _gl_unrealized(void *data, Evas_Object *obj, void *event_info)
 
 	if (is_sel) {
 		char title[MAX_POPUP_TEXT_SIZE] = {0};
-		snprintf(title, MAX_POPUP_TEXT_SIZE, _("IDS_ST_HEADER_PD_SELECTED"), sel_count);
+		snprintf(title, MAX_POPUP_TEXT_SIZE, D_("IDS_ST_HEADER_PD_SELECTED"), sel_count);
 		wfd_naviframe_title_set(ugd, title);
 	} else {
-		wfd_naviframe_title_set(ugd, _("IDS_DLNA_HEADER_SELECT_DEVICES_ABB"));
+		wfd_naviframe_title_set(ugd, D_("IDS_DLNA_HEADER_SELECT_DEVICES_ABB"));
 	}
 
 	if (ugd->multiconn_conn_btn) {
@@ -723,7 +723,7 @@ int wfd_update_multiconnect_device(struct ug_data *ugd, bool is_free_all_peers)
 		elm_check_state_set(ugd->select_all_icon, EINA_FALSE);
 		ugd->is_select_all_checked = FALSE;
 		wfd_free_multiconnect_device(ugd);
-		wfd_naviframe_title_set(ugd, _("IDS_DLNA_HEADER_SELECT_DEVICES_ABB"));
+		wfd_naviframe_title_set(ugd, D_("IDS_DLNA_HEADER_SELECT_DEVICES_ABB"));
 	} else {
 		WFD_IF_DEL_ITEM(ugd->mcview_nodevice_item);
 		wfd_ug_view_refresh_glitem(ugd->mcview_title_item);
@@ -806,7 +806,7 @@ void wfd_genlist_select_all_check_changed_cb(void *data, Evas_Object * obj, void
 
 			char title[MAX_POPUP_TEXT_SIZE] = {0};
 			snprintf(title, MAX_POPUP_TEXT_SIZE,
-				_("IDS_ST_HEADER_PD_SELECTED"), sel_count);
+				D_("IDS_ST_HEADER_PD_SELECTED"), sel_count);
 			wfd_naviframe_title_set(ugd, title);
 
 			if (ugd->multiconn_layout) {
@@ -825,7 +825,7 @@ void wfd_genlist_select_all_check_changed_cb(void *data, Evas_Object * obj, void
 		}
 		ugd->is_multi_check_all_selected = FALSE;
 		wfd_naviframe_title_set(ugd,
-			_("IDS_DLNA_HEADER_SELECT_DEVICES_ABB"));
+			D_("IDS_DLNA_HEADER_SELECT_DEVICES_ABB"));
 
 		if (ugd->multiconn_layout) {
 			wfd_ug_view_refresh_button(ugd->multiconn_conn_btn,
@@ -874,13 +874,13 @@ void _multi_scan_btn_cb(void *data, Evas_Object *obj, void *event_info)
 		return;
 	}
 
-	if (0 == strcmp(btn_text, _("IDS_WIFI_SK4_SCAN"))) {
+	if (0 == strcmp(btn_text, D_("IDS_WIFI_SK4_SCAN"))) {
 		wfd_refresh_wifi_direct_state(ugd);
 		DBG(LOG_INFO, "Start discovery again, status: %d\n", ugd->wfd_status);
 
 		/* if connected, show the popup*/
 		if (ugd->wfd_status >= WIFI_DIRECT_STATE_CONNECTED) {
-			wfd_ug_act_popup(ugd, _("IDS_WIFI_BODY_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_SO_THAT_SCANNING_CAN_START_CONTINUE_Q"), POP_TYPE_SCAN_AGAIN);
+			wfd_ug_act_popup(ugd, D_("IDS_WIFI_BODY_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_SO_THAT_SCANNING_CAN_START_CONTINUE_Q"), POP_TYPE_SCAN_AGAIN);
 		} else if (WIFI_DIRECT_STATE_DEACTIVATED == ugd->wfd_status) {
 			wfd_client_switch_on(ugd);
 			__FUNC_EXIT__;
@@ -897,7 +897,7 @@ void _multi_scan_btn_cb(void *data, Evas_Object *obj, void *event_info)
 		}
 		elm_object_domain_translatable_text_set(ugd->multiconn_scan_stop_btn,
 				PACKAGE, "IDS_WIFI_SK_STOP");
-	} else if (0 == strcmp(btn_text, _("IDS_WIFI_SK_STOP"))) {
+	} else if (0 == strcmp(btn_text, D_("IDS_WIFI_SK_STOP"))) {
 		DBG(LOG_INFO, "Stop pressed.\n");
 		ugd->wfd_discovery_status = WIFI_DIRECT_DISCOVERY_STOPPED;
 		wfd_cancel_progressbar_stop_timer(ugd);
@@ -948,7 +948,6 @@ void wfd_create_multiconnect_view(struct ug_data *ugd)
 	evas_object_smart_callback_add(genlist, "unrealized", _gl_unrealized, ugd);
 
 	elm_object_part_content_set(layout, "elm.swallow.content", genlist);
-	//elm_genlist_fx_mode_set(genlist, EINA_FALSE);
 	elm_genlist_homogeneous_set(genlist, EINA_TRUE);
 #if defined(GENLIST_REALIZATION_MOTE_SET)
 	elm_genlist_realization_mode_set(genlist, TRUE);
@@ -972,8 +971,8 @@ void wfd_create_multiconnect_view(struct ug_data *ugd)
 
 	btn1 = elm_button_add(ugd->multiconn_layout);
 	elm_object_style_set(btn1, "bottom");
-	if (ugd->view_type && g_strcmp0(_(ugd->view_type),
-		_("IDS_WIFI_BUTTON_MULTI_CONNECT")) == 0) {
+	if (ugd->view_type && g_strcmp0(D_(ugd->view_type),
+		D_("IDS_WIFI_BUTTON_MULTI_CONNECT")) == 0) {
 		elm_object_domain_translatable_text_set(btn1, PACKAGE,
 				"IDS_WIFI_SK4_SCAN");
 	} else {

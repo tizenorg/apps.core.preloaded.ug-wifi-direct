@@ -37,6 +37,7 @@
 #include <notification_text_domain.h>
 #include <bundle_internal.h>
 #include <app_control.h>
+#include <app.h>
 
 #include <wifi-direct.h>
 
@@ -106,11 +107,46 @@ static void _move_data_to_app_control(const char *key, const int type,
 		const bundle_keyval_t *kv, void *data)
 {
 	__WFD_APP_FUNC_ENTER__;
+	void *ptr = NULL;
+	char *buff = NULL;
+	unsigned int size = 0;
 
-	WFD_RET_IF(data == NULL || key == NULL || type == NULL, , "Invialid parameter!");
+
+	WFD_RET_IF(data == NULL || key == NULL || type == 0, , "Invialid parameter!");
 
 	app_control_h control = data;
-	app_control_add_extra_data(control, key, type);
+
+	if (type == BUNDLE_TYPE_STR)
+	{
+		bundle_keyval_get_basic_val((bundle_keyval_t *) kv, &ptr, &size);
+		buff = malloc(sizeof(char)* size + 1);
+		snprintf(buff, size + 1, "%s", ((char*) ptr));
+		WFD_APP_LOG(WFD_APP_LOG_ERROR, "Found STR -KEY: %s, VAL: %s, SIZE: %d", key, buff, size);
+
+		app_control_add_extra_data(control, key, buff);
+		free(buff);
+	} else if (type == BUNDLE_TYPE_BYTE) {
+		bundle_keyval_get_basic_val((bundle_keyval_t *) kv, &ptr, &size);
+		buff = malloc(sizeof(char)* size + 1);
+		snprintf(buff, size + 1, "%s", ((char*) ptr));
+		WFD_APP_LOG(WFD_APP_LOG_ERROR, "Found STR -KEY: %s, VAL: %s, SIZE: %d", key, buff, size);
+
+		app_control_add_extra_data(control, key, buff);
+		free(buff);
+	} else if (type == BUNDLE_TYPE_STR_ARRAY) {
+		int i = 0;
+		void ** array;
+		unsigned int len = 0;
+		size_t *element_size = NULL;
+		WFD_APP_LOG(WFD_APP_LOG_ERROR, "Found STR_ARRAY -KEY: %s", key);
+		bundle_keyval_get_array_val((bundle_keyval_t *) kv, &array, &len, &element_size);
+		WFD_APP_LOG(WFD_APP_LOG_ERROR, "-Array len: %d", len);
+		for (i = 0; i < len; i++) {
+			WFD_APP_LOG(WFD_APP_LOG_ERROR, "-%s", (char*)array[i]);
+
+			app_control_add_extra_data(control, key, (char*)array[i]);
+		}
+	}
 
 	__WFD_APP_FUNC_EXIT__;
 }
@@ -254,11 +290,11 @@ void _add_wfd_peers_connected_notification(void *user_data, char* package_name)
 
 	/* set the title and content */
 	wfd_app_get_connected_peers(ad);
-	noti_err = notification_set_text(ad->noti_screen_mirroring_play, NOTIFICATION_TEXT_TYPE_TITLE, _("IDS_SMR_BODY_SCREEN_MIRRORING_IS_ENABLED"),
+	noti_err = notification_set_text(ad->noti_screen_mirroring_play, NOTIFICATION_TEXT_TYPE_TITLE, D_("IDS_SMR_BODY_SCREEN_MIRRORING_IS_ENABLED"),
 			NULL, NOTIFICATION_VARIABLE_TYPE_NONE);
 	WFD_RET_IF(noti_err != NOTIFICATION_ERROR_NONE, "Failed to notification_set_text. [%d]", noti_err);
 
-	snprintf(msg, WFD_MAX_SIZE, _("IDS_WIFI_BODY_CONNECTED_TO_PS"), ad->raw_connected_peers[0].ssid);
+	snprintf(msg, WFD_MAX_SIZE, D_("IDS_WIFI_BODY_CONNECTED_TO_PS"), ad->raw_connected_peers[0].ssid);
 	noti_err = notification_set_text(ad->noti_screen_mirroring_play, NOTIFICATION_TEXT_TYPE_CONTENT,
 			msg, NULL, NOTIFICATION_VARIABLE_TYPE_NONE);
 	WFD_RET_IF(noti_err != NOTIFICATION_ERROR_NONE, "Failed to notification_set_text. [%d]", noti_err);
@@ -840,7 +876,7 @@ void wfd_app_util_set_screen_mirroring_deactivated(wfd_appdata_t *ad)
 		if (result < 0) {
 			WFD_APP_LOG(WFD_APP_LOG_ERROR, "Failed to set vconf VCONFKEY_SCREEN_MIRRORING_STATE\n");
 		}
-		notification_status_message_post(_("IDS_SMR_POP_SCREEN_MIRRORING_HAS_BEEN_DISABLED"));
+		notification_status_message_post(D_("IDS_SMR_POP_SCREEN_MIRRORING_HAS_BEEN_DISABLED"));
 	}
 
 	__WFD_APP_FUNC_EXIT__;
@@ -904,11 +940,11 @@ void wfd_app_util_add_wfd_turn_off_notification(void *user_data)
 
 	/* set the title and content */
 	noti_err = notification_set_text(ad->noti_wifi_direct_connected, NOTIFICATION_TEXT_TYPE_TITLE,
-		_("IDS_WIFI_BODY_WI_FI_DIRECT_ABB"), "IDS_WIFI_BODY_WI_FI_DIRECT_ABB", NOTIFICATION_VARIABLE_TYPE_NONE);
+		D_("IDS_WIFI_BODY_WI_FI_DIRECT_ABB"), "IDS_WIFI_BODY_WI_FI_DIRECT_ABB", NOTIFICATION_VARIABLE_TYPE_NONE);
 	WFD_RET_IF(noti_err != NOTIFICATION_ERROR_NONE, "Failed to notification_set_text. [%d]", noti_err);
 
 	noti_err = notification_set_text(ad->noti_wifi_direct_connected, NOTIFICATION_TEXT_TYPE_CONTENT,
-		_("IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_ABB"),
+		D_("IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_ABB"),
 		"IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_ABB", NOTIFICATION_VARIABLE_TYPE_NONE);
 	WFD_RET_IF(noti_err != NOTIFICATION_ERROR_NONE, "Failed to notification_set_text. [%d]", noti_err);
 

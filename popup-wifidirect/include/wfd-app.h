@@ -42,8 +42,8 @@
 #define NOTIFICATION_BUNDLE_PARAM "NotiType"
 #define NOTIFICATION_BUNDLE_VALUE "WiFi-Direct"
 
-#define LOCALE_FILE_NAME "wifi-direct-popup"
-#define LOCALEDIR "/usr/apps/org.tizen.wifi-direct-popup/res/locale"
+#define LOCALE_FILE_NAME "ug-setting-wifidirect-efl"
+#define LOCALEDIR "/usr/ug/res/locale"
 #define WFD_NOTI_ICON_PATH "/usr/apps/org.tizen.quickpanel/shared/res/noti_icons/Wi-Fi/noti_wifi_direct_auto_off.png"
 #define WFD_INDICATOR_ICON_PATH "/usr/apps/org.tizen.wifi-direct-popup/res/images/B03_wi-fi_direct_on_connected.png"
 #define WFD_ACTIVATED_NOTI_ICON_PATH "/usr/apps/org.tizen.wifi-direct-popup/res/images/B03_wi-fi_direct_on_not_connected.png"
@@ -52,7 +52,7 @@
 #define SCREEN_MIRRIONG_INDICATOR_PLAY_ICON_PATH "/usr/apps/org.tizen.wifi-direct-popup/res/images/B03_event_screen_mirroring_play.png"
 #define SCREEN_MIRRIONG_NOTI_ICON_PATH "/usr/apps/org.tizen.wifi-direct-popup/res/images/ug-setting-allshare-cast-efl.png"
 
-#define _(s)        dgettext(LOCALE_FILE_NAME, s)
+#define D_(s)        dgettext(LOCALE_FILE_NAME, s)
 #define N_(s)      dgettext_noop(s)
 #define S_(s)      dgettext("sys_string", s)
 

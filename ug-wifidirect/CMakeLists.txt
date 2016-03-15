@@ -2,12 +2,12 @@ CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
 PROJECT(ug-setting-wifidirect-efl C)
 SET(PACKAGE_NAME ug-setting-wifidirect-efl)
 
-SET(PREFIX "/usr/apps/setting-wifidirect-efl")
+SET(PREFIX "${TZ_SYS_RO_APP}/${PACKAGE_NAME}")
 SET(LIBDIR "${PREFIX}/lib/ug")
 SET(RESDIR "${PREFIX}/res")
 SET(EDJDIR "${RESDIR}/edje/${PROJECT_NAME}")
-SET(TABLEDIR "/usr/apps/setting-wifidirect-efl/shared/res/tables")
-SET(IMAGEDIR "/usr/apps/setting-wifidirect-efl/shared/icons")
+SET(TABLEDIR "${TZ_SYS_RO_APP}/${PACKAGE_NAME}/shared/res/tables")
+SET(IMAGEDIR "${TZ_SYS_RO_APP}/${PACKAGE_NAME}/shared/icons")
 
 SET(dependents "network")
 
@@ -47,7 +47,7 @@ ADD_DEPENDENCIES(${PROJECT_NAME} wfd_ug.edj)
 
 INSTALL(TARGETS ${PROJECT_NAME} DESTINATION ${LIBDIR})
 INSTALL(FILES ${CMAKE_BINARY_DIR}/wfd_ug.edj DESTINATION ${EDJDIR})
-INSTALL(FILES setting-wifidirect-efl.xml DESTINATION /usr/share/packages)
+INSTALL(FILES ${PACKAGE_NAME}.xml DESTINATION /usr/share/packages)
 INSTALL(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/tables/ DESTINATION ${TABLEDIR} FILES_MATCHING PATTERN "*.xml")
 INSTALL(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/resources/icons/ DESTINATION ${IMAGEDIR} FILES_MATCHING PATTERN "*.png")
 

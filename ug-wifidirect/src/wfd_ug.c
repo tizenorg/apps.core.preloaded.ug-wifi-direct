@@ -32,6 +32,8 @@
 #include <ui-gadget-module.h>
 #include <app_control.h>
 
+#include <setting-cfg.h>
+
 #include "wfd_ug.h"
 #include "wfd_ug_view.h"
 #include "wfd_client.h"
@@ -303,7 +305,6 @@ static void *on_create(ui_gadget_h ug, enum ug_mode mode, app_control_h control,
 	__FUNC_ENTER__;
 	struct ug_data *ugd;
 	int wfd_status = -1;
-	int rots[4] = { 0, 90, 180, 270 };
 	int ret;
 
 	if (!ug || !priv) {
@@ -332,7 +333,7 @@ static void *on_create(ui_gadget_h ug, enum ug_mode mode, app_control_h control,
 	ugd->is_auto_exit = false;
 	ugd->is_multi_connect = true;
 	ugd->is_init_ok = false;
-	ugd->title = strdup(_("IDS_WIFI_BODY_WI_FI_DIRECT_ABB"));
+	ugd->title = strdup(D_("IDS_WIFI_BODY_WI_FI_DIRECT_ABB"));
 
 	if (control) {
 		char *wfds = NULL;
@@ -533,7 +534,7 @@ static void on_start(ui_gadget_h ug, app_control_h control, void *priv)
 	} else {
 		DBG_SECURE(LOG_INFO, "HW ID of this device [%s]\n", kernel_info.machine);
 		if (strncmp(kernel_info.machine, "arm", 3) != 0) {
-			wfd_ug_warn_popup(ugd, _("IDS_ST_POP_NOT_SUPPORTED"), POPUP_TYPE_TERMINATE_NOT_SUPPORT);
+			wfd_ug_warn_popup(ugd, D_("IDS_ST_POP_NOT_SUPPORTED"), POPUP_TYPE_TERMINATE_NOT_SUPPORT);
 			return;
 		}
 	}
@@ -614,7 +615,7 @@ static void on_destroy(ui_gadget_h ug, app_control_h control, void *priv)
 
 	if (ugd->scan_toolbar) {
 		wfd_ug_view_refresh_button(ugd->scan_toolbar,
-			_("IDS_WIFI_SK4_SCAN"), FALSE);
+			D_("IDS_WIFI_SK4_SCAN"), FALSE);
 	}
 
 	ret = vconf_ignore_key_changed(VCONFKEY_SETAPPL_DEVICE_NAME_STR,
@@ -845,7 +846,7 @@ UG_MODULE_API int setting_plugin_search_init(app_control_h control, void *priv, 
 {
 	__FUNC_ENTER__;
 
-	*applocale = strdup("ug-setting-wifidirect-efl");
+	*applocale = strdup(PACKAGE);
 	void *node = NULL;
 
 	Eina_List **pplist = (Eina_List**)priv;

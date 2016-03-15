@@ -18,7 +18,8 @@ FOREACH(pofile ${POFILES})
 			COMMAND ${MSGFMT} -o ${moFile} ${absPofile}
 			DEPENDS ${absPofile}
 	)
-	INSTALL(FILES ${moFile} DESTINATION /usr/share/locale/${lang}/LC_MESSAGES RENAME ${PROJECT_NAME}.mo)
+	INSTALL(FILES ${moFile}
+			DESTINATION ${TZ_SYS_RO_UG}/res/locale/${lang}/LC_MESSAGES RENAME ${PROJECT_NAME}.mo)
 	SET(moFiles ${moFiles} ${moFile})
 ENDFOREACH(pofile)
 
