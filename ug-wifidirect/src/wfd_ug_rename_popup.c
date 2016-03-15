@@ -194,7 +194,7 @@ static void __device_name_maxlength_reached_cb(void *data, Evas_Object *obj,
 	}
 
 	int ret = notification_status_message_post(
-			_("IDS_COM_POP_MAXIMUM_NUMBER_OF_CHARACTERS_REACHED"));
+			D_("IDS_COM_POP_MAXIMUM_NUMBER_OF_CHARACTERS_REACHED"));
 	if (ret != NOTIFICATION_ERROR_NONE) {
 		DBG(LOG_ERROR, "notification_status_message_post() ERROR [%d]", ret);
 	}
@@ -252,7 +252,7 @@ static char *__wfd_main_rename_desc_label_get(void *data, Evas_Object *obj,
 	if (!strcmp("elm.text.multiline", part)) {
 		char buf[WFD_GLOBALIZATION_STR_LENGTH] = {0, };
 		snprintf(buf, WFD_GLOBALIZATION_STR_LENGTH, "<font_size=30>%s</font_size>",
-			_("IDS_ST_POP_DEVICE_NAMES_ARE_DISPLAYED_TO_DISTINGUISH_EACH_OF_THE_DEVICES_AVAILABLE_MSG"));
+			D_("IDS_ST_POP_DEVICE_NAMES_ARE_DISPLAYED_TO_DISTINGUISH_EACH_OF_THE_DEVICES_AVAILABLE_MSG"));
 		return g_strdup(buf);
 	}
 	__FUNC_EXIT__;

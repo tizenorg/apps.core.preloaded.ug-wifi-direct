@@ -114,7 +114,7 @@ static void __motion_shake_cb(unsigned int event_type, sensor_event_data_t *even
 
 	GList *iterator = NULL;
 
-	if (0 == strcmp(btn_text, _("IDS_WIFI_SK4_SCAN"))) {
+	if (0 == strcmp(btn_text, D_("IDS_WIFI_SK4_SCAN"))) {
 		if (WIFI_DIRECT_STATE_CONNECTED == ugd->wfd_status) {
 			ret = wfd_client_disconnect(NULL);
 			if (ret != WIFI_DIRECT_ERROR_NONE) {

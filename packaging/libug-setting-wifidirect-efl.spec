@@ -1,7 +1,4 @@
-#sbs-git:slp/apps/u/ug-wifi-di/rect libug-setting-wifidirect-efl 0.3.4 82f07b22ef73127a446c49e00b8dca37010b3ee2
-%define PREFIX /usr/apps/setting-wifidirect-efl
-
-Name:       libug-setting-wifidirect-efl
+Name:       ug-setting-wifidirect-efl
 Summary:    Wi-Fi Direct setting UI gadget
 Version:    1.11.70
 Release:    1
@@ -47,6 +44,9 @@ BuildRequires:  pkgconfig(feedback)
 BuildRequires:  pkgconfig(deviced)
 BuildRequires:  pkgconfig(capi-ui-efl-util)
 BuildRequires:  pkgconfig(efl-extension)
+
+BuildRequires: pkgconfig(libtzplatform-config)
+
 #BuildRequires:  model-build-features
 BuildRequires:  cmake
 BuildRequires:  gettext-devel
@@ -74,8 +74,11 @@ Wi-Fi Direct system popup.
 export CFLAGS="$CFLAGS -DTIZEN_DEBUG_ENABLE"
 export CXXFLAGS="$CXXFLAGS -DTIZEN_DEBUG_ENABLE"
 export FFLAGS="$FFLAGS -DTIZEN_DEBUG_ENABLE"
-%cmake . -DCMAKE_INSTALL_PREFIX=$PREFIX \
-	 -DMODEL_BUILD_FEATURE_WLAN_CONCURRENT_MODE=1 \
+
+%cmake . -DCMAKE_INSTALL_PREFIX=${_prefix} \
+	-DMODEL_BUILD_FEATURE_WLAN_CONCURRENT_MODE=1 \
+	-DTZ_SYS_RO_APP=%TZ_SYS_RO_APP \
+	-DTZ_SYS_RO_UG=%TZ_SYS_RO_UG \
 
 make %{?jobs:-j%jobs}
 
@@ -83,24 +86,15 @@ make %{?jobs:-j%jobs}
 rm -rf %{buildroot}
 %make_install
 %define tizen_sign 1
-%define tizen_sign_base /usr/apps/org.tizen.wifi-direct-popup
+%define tizen_sign_base %{TZ_SYS_RO_APP}/org.tizen.wifi-direct-popup
 %define tizen_sign_level platform
 %define tizen_author_sign 1
 %define tizen_dist_sign 1
-#%__strip %{buildroot}/usr/ug/lib/libug-setting-wifidirect-efl.so.0.1.0
-#%__strip %{buildroot}/usr/apps/org.tizen.wifi-direct-popup/bin/wifi-direct-popup
-
-mkdir -p %{buildroot}/usr/share/license
-cp %{_builddir}/%{buildsubdir}/LICENSE %{buildroot}/usr/share/license/%{name}
-cp %{_builddir}/%{buildsubdir}/LICENSE %{buildroot}/usr/share/license/org.tizen.wifi-direct-popup
 
 %post
-mkdir -p /usr/apps/setting-wifidirect-efl/bin/ -m 777
-chown -R 5000:5000 /usr/apps/setting-wifidirect-efl/bin/
-chsmack -a "_" /usr/apps/setting-wifidirect-efl/bin/
-
-ln -sf /usr/bin/ug-client /usr/apps/setting-wifidirect-efl/bin/ug-setting-wifidirect-efl
-ln -sf /usr/apps/setting-wifidirect-efl/lib/libug-setting-wifidirect-efl.so /usr/apps/setting-wifidirect-efl/lib/libug-ug-setting-wifidirect-efl.so
+mkdir -p %{TZ_SYS_RO_APP}/%{name}/bin/
+ln -sf %{TZ_SYS_BIN}/ug-client %{TZ_SYS_RO_APP}/%{name}/bin/%{name}
+ln -sf %{TZ_SYS_RO_APP}/%{name}/lib/lib%{name}.so %{TZ_SYS_RO_APP}/%{name}/lib/lib%{name}.so
 
 %post -n org.tizen.wifi-direct-popup
 
@@ -109,31 +103,27 @@ ln -sf /usr/apps/setting-wifidirect-efl/lib/libug-setting-wifidirect-efl.so /usr
 
 
 %files
-%manifest setting-wifidirect-efl.manifest
+%manifest %{name}.manifest
+%license LICENSE
 %defattr(-,root,root,-)
-/usr/apps/setting-wifidirect-efl/lib/ug/*
-/usr/apps/setting-wifidirect-efl/res/edje/*
-#/usr/ug/res/locale/*/*/*
-#/usr/apps/setting-wifidirect-efl/data/locale/*/*/*
-%{_datadir}/locale/*/LC_MESSAGES/*.mo
-/usr/share/license/%{name}
-/usr/share/packages/setting-wifidirect-efl.xml
-/usr/apps/setting-wifidirect-efl/shared/res/tables/setting-wifidirect-efl_ChangeableColorTable.xml
-/usr/apps/setting-wifidirect-efl/shared/res/tables/setting-wifidirect-efl_FontInfoTable.xml
-/usr/apps/setting-wifidirect-efl/shared/icons/*
+%{TZ_SYS_RO_APP}/%{name}/lib/ug/*
+%{TZ_SYS_RO_APP}/%{name}/res/edje/*
+%{TZ_SYS_RO_UG}/res/locale/*/*/*
+%{TZ_SYS_RO_APP}/%{name}/shared/res/tables/setting-wifidirect-efl_ChangeableColorTable.xml
+%{TZ_SYS_RO_APP}/%{name}/shared/res/tables/setting-wifidirect-efl_FontInfoTable.xml
+%{TZ_SYS_RO_APP}/%{name}/shared/icons/*
+%{TZ_SYS_RO_PACKAGES}/%{name}.xml
 
 %files -n org.tizen.wifi-direct-popup
 %manifest org.tizen.wifi-direct-popup.manifest
+%license LICENSE
 %defattr(-,root,root,-)
-/usr/apps/org.tizen.wifi-direct-popup/bin/*
-/usr/apps/org.tizen.wifi-direct-popup/res/images/*
-/usr/apps/org.tizen.wifi-direct-popup/res/edje/*
-/usr/apps/org.tizen.wifi-direct-popup/res/locale/*/*/*
-#%{_datadir}/locale/*/LC_MESSAGES/*.mo
-/usr/apps/org.tizen.wifi-direct-popup/author-signature.xml
-/usr/apps/org.tizen.wifi-direct-popup/signature1.xml
-#/usr/share/applications/org.tizen.wifi-direct-popup.desktop
-#for appfw new manifest
-/usr/share/packages/org.tizen.wifi-direct-popup.xml
-/usr/share/license/org.tizen.wifi-direct-popup
+%{TZ_SYS_RO_APP}/org.tizen.wifi-direct-popup/bin/*
+%{TZ_SYS_RO_APP}/org.tizen.wifi-direct-popup/res/images/*
+%{TZ_SYS_RO_APP}/org.tizen.wifi-direct-popup/res/edje/*
+#%{TZ_SYS_RO_APP}/org.tizen.wifi-direct-popup/res/locale/*/*/*
+%{TZ_SYS_RO_UG}/res/locale/*/*/*
+%{TZ_SYS_RO_APP}/org.tizen.wifi-direct-popup/author-signature.xml
+%{TZ_SYS_RO_APP}/org.tizen.wifi-direct-popup/signature1.xml
+%{TZ_SYS_RO_PACKAGES}/org.tizen.wifi-direct-popup.xml
 

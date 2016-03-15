@@ -22,9 +22,8 @@
 
 #include <glib.h>
 
-#define EDJDIR "/usr/apps/setting-wifidirect-efl/res/edje/ug-setting-wifidirect-efl"
+#define EDJDIR "/usr/apps/ug-setting-wifidirect-efl/res/edje/ug-setting-wifidirect-efl"
 #define WFD_UG_EDJ_PATH  EDJDIR"/wfd_ug.edj"
-#define WFD_IMG_DIR "/usr/apps/setting-wifidirect-efl/res/images/ug-setting-wifidirect-efl"
 
 /* Genlist new style for Tizen 2.4 */
 #define WFD_GENLIST_1LINE_TEXT_STYLE "type1"
@@ -120,6 +119,8 @@ enum {
 };
 
 struct ug_data *wfd_get_ug_data();
+
+void scan_button_create(struct ug_data *ugd);
 
 /**
  *	This function let the ug create the main view

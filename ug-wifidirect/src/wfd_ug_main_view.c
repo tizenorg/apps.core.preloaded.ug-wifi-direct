@@ -141,6 +141,92 @@ cleanup:
 	return FALSE;
 }
 
+/**
+ *	This function let the ug call it when click 'back' button
+ *	@return   void
+ *	@param[in] data the pointer to the main data structure
+ *	@param[in] obj the pointer to the evas object
+ *	@param[in] event_info the pointer to the event information
+ */
+void _smart_back_btn_cb(void *data, Evas_Object *obj, void *event_info)
+{
+	__FUNC_ENTER__;
+	struct ug_data *ugd = (struct ug_data *) data;
+	int ret = -1;
+	bool owner = FALSE;
+	app_control_h control = NULL;
+
+	if(ugd == NULL) {
+		DBG(LOG_ERROR, "The param is NULL");
+		return;
+	}
+
+#ifdef WFD_DBUS_LAUNCH
+	if (ugd->dbus_cancellable != NULL) {
+		g_cancellable_cancel(ugd->dbus_cancellable);
+		g_object_unref(ugd->dbus_cancellable);
+		ugd->dbus_cancellable = NULL;
+		if (ugd->conn) {
+			g_object_unref(ugd->conn);
+			ugd->conn = NULL;
+		}
+		DBG(LOG_INFO, "Cancel dbus call");
+	}
+#endif
+
+	wfd_refresh_wifi_direct_state(ugd);
+	if (ugd->wfd_status <= WIFI_DIRECT_STATE_DEACTIVATING) {
+		DBG(LOG_INFO, "WiFi direct is already deactivated\n");
+		goto cleanup;
+	}
+
+	if (NULL != ugd->mac_addr_connecting) {
+		if (ugd->is_conn_incoming) {
+			DBG(LOG_INFO, "Reject the incoming connection before client deregister \n");
+			ret = wifi_direct_reject_connection(ugd->mac_addr_connecting);
+			if (ret != WIFI_DIRECT_ERROR_NONE) {
+				DBG(LOG_ERROR, "Failed to send reject request [%d]\n", ret);
+			}
+		} else {
+			DBG(LOG_INFO, "Cancel the outgoing connection before client deregister \n");
+			ret = wifi_direct_cancel_connection(ugd->mac_addr_connecting);
+			if (ret != WIFI_DIRECT_ERROR_NONE) {
+				DBG(LOG_ERROR, "Failed to send cancel request [%d]\n", ret);
+			}
+		}
+		ugd->mac_addr_connecting = NULL;
+	}
+
+	if (ugd->raw_connected_peer_cnt == 0) {
+		ret = wifi_direct_is_group_owner(&owner);
+		if (ret == WIFI_DIRECT_ERROR_NONE) {
+			if (owner) {
+				wifi_direct_destroy_group();
+			}
+		}
+	}
+
+cleanup:
+	wfd_ug_view_free_peers(ugd);
+	ret = app_control_create(&control);
+	if (ret) {
+		DBG(LOG_ERROR, "Failed to create control");
+	} else {
+		if (ugd->wfd_status > WIFI_DIRECT_STATE_CONNECTING) {
+			app_control_add_extra_data(control, "Connection", "TRUE");
+		} else {
+			app_control_add_extra_data(control, "Connection", "FALSE");
+		}
+
+		ug_send_result(ugd->ug, control);
+		app_control_destroy(control);
+	}
+
+	ug_destroy_me(ugd->ug);
+	__FUNC_EXIT__;
+	return;
+}
+
 void wfd_cancel_progressbar_stop_timer(struct ug_data *ugd)
 {
 	__FUNC_ENTER__;
@@ -194,7 +280,7 @@ void _gl_failed_peer_cb(void *data, Evas_Object *obj, void *event_info)
 
 	/* if connected, show the popup*/
 	if (ugd->wfd_status >= WIFI_DIRECT_STATE_CONNECTED) {
-		wfd_ug_act_popup(ugd, _("IDS_WIFI_BODY_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_SO_THAT_SCANNING_CAN_START_CONTINUE_Q"), POP_TYPE_SCAN_AGAIN);
+		wfd_ug_act_popup(ugd, D_("IDS_WIFI_BODY_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_SO_THAT_SCANNING_CAN_START_CONTINUE_Q"), POP_TYPE_SCAN_AGAIN);
 	} else {
 		ugd->wfd_discovery_status = WIFI_DIRECT_DISCOVERY_SOCIAL_CHANNEL_START;
 		ret = wifi_direct_start_discovery_specific_channel(false, 1, WIFI_DIRECT_DISCOVERY_SOCIAL_CHANNEL);
@@ -230,12 +316,12 @@ void _scan_btn_cb(void *data, Evas_Object *obj, void *event_info)
 	btn_text = elm_object_part_text_get(ugd->scan_toolbar, "default");
 	DBG(LOG_INFO, "Button text=%s",btn_text);
 
-	if (!g_strcmp0(elm_object_text_get(obj), _("IDS_WIFI_SK4_SCAN"))) {
+	if (!g_strcmp0(elm_object_text_get(obj), D_("IDS_WIFI_SK4_SCAN"))) {
 		wfd_refresh_wifi_direct_state(ugd);
 		DBG(LOG_INFO, "Start discovery again, status: %d\n", ugd->wfd_status);
 		/* if connected, show the popup*/
 		if (ugd->wfd_status >= WIFI_DIRECT_STATE_CONNECTED || ugd->raw_connected_peer_cnt > 0) {
-			wfd_ug_act_popup(ugd, _("IDS_WIFI_BODY_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_SO_THAT_SCANNING_CAN_START_CONTINUE_Q"), POP_TYPE_SCAN_AGAIN);
+			wfd_ug_act_popup(ugd, D_("IDS_WIFI_BODY_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_SO_THAT_SCANNING_CAN_START_CONTINUE_Q"), POP_TYPE_SCAN_AGAIN);
 		} else if (WIFI_DIRECT_STATE_DEACTIVATED == ugd->wfd_status) {
 			wfd_client_switch_on(ugd);
 			__FUNC_EXIT__;
@@ -249,15 +335,15 @@ void _scan_btn_cb(void *data, Evas_Object *obj, void *event_info)
 				wifi_direct_cancel_discovery();
 			}
 		}
-	} else if (!g_strcmp0(elm_object_text_get(obj), _("IDS_WIFI_SK_STOP"))) {
+	} else if (!g_strcmp0(elm_object_text_get(obj), D_("IDS_WIFI_SK_STOP"))) {
 		DBG(LOG_INFO, "Stop pressed.\n");
 		ugd->wfd_discovery_status = WIFI_DIRECT_DISCOVERY_STOPPED;
 		wfd_cancel_progressbar_stop_timer(ugd);
 		wfd_delete_progressbar_cb(ugd);
 		wfd_cancel_not_alive_delete_timer(ugd);
-	} else if (0 == strcmp(_("IDS_WIFI_SK2_CANCEL_CONNECTION"), btn_text)) {
+	} else if (0 == strcmp(D_("IDS_WIFI_SK2_CANCEL_CONNECTION"), btn_text)) {
 		DBG(LOG_INFO, "Cancel Connection");
-		wfd_ug_act_popup(ugd, _("IDS_WIFI_POP_THIS_WI_FI_DIRECT_CONNECTION_WILL_BE_CANCELLED"), POP_TYPE_CANCEL_CONNECT);
+		wfd_ug_act_popup(ugd, D_("IDS_WIFI_POP_THIS_WI_FI_DIRECT_CONNECTION_WILL_BE_CANCELLED"), POP_TYPE_CANCEL_CONNECT);
 	} else {
 		DBG(LOG_INFO, "Invalid Case\n");
 	}
@@ -358,7 +444,7 @@ static void _gl_peer_sel(void *data, Evas_Object *obj, void *event_info)
 	DBG(LOG_INFO, "No of connected peers= %d",ugd->raw_connected_peer_cnt);
 
 	if (ugd->raw_connected_peer_cnt >= MAX_CONNECTED_PEER_NUM) {
-		snprintf(popup_text, MAX_POPUP_TEXT_SIZE, _("IDS_ST_POP_YOU_CAN_CONNECT_UP_TO_PD_DEVICES_AT_THE_SAME_TIME"), MAX_CONNECTED_PEER_NUM);
+		snprintf(popup_text, MAX_POPUP_TEXT_SIZE, D_("IDS_ST_POP_YOU_CAN_CONNECT_UP_TO_PD_DEVICES_AT_THE_SAME_TIME"), MAX_CONNECTED_PEER_NUM);
 		wfd_ug_warn_popup(ugd, popup_text, POP_TYPE_MULTI_CONNECT_POPUP);
 		if (item) {
 			elm_genlist_item_selected_set(item, EINA_FALSE);
@@ -452,7 +538,7 @@ static void _gl_busy_peer_sel(void *data, Evas_Object *obj, void *event_info)
 		return;
 	}
 
-	wfd_ug_warn_popup(ugd, _("IDS_ST_POP_DEVICE_CONNECTED_TO_ANOTHER_DEVICE"), POP_TYPE_BUSY_DEVICE_POPUP);
+	wfd_ug_warn_popup(ugd, D_("IDS_ST_POP_DEVICE_CONNECTED_TO_ANOTHER_DEVICE"), POP_TYPE_BUSY_DEVICE_POPUP);
 
 	__FUNC_EXIT__;
 }
@@ -719,7 +805,7 @@ void _wfd_ug_disconnect_button_cb(void *data, Evas_Object * obj, void *event_inf
 	struct ug_data *ugd = (struct ug_data *)data;
 	WFD_RET_IF(ugd == NULL, "Incorrect parameter(NULL)\n");
 
-	wfd_ug_act_popup(ugd, _("IDS_WIFI_POP_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_CONTINUE_Q"), POP_TYPE_DISCONNECT);
+	wfd_ug_act_popup(ugd, D_("IDS_WIFI_POP_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_CONTINUE_Q"), POP_TYPE_DISCONNECT);
 
 	__FUNC_EXIT__;
 }
@@ -737,7 +823,7 @@ void _wfd_ug_cancel_connection_button_cb(void *data, Evas_Object * obj, void *ev
 	struct ug_data *ugd = (struct ug_data *)data;
 	WFD_RET_IF(ugd == NULL, "Incorrect parameter(NULL)\n");
 
-	wfd_ug_act_popup(ugd, _("IDS_WIFI_POP_THIS_WI_FI_DIRECT_CONNECTION_WILL_BE_CANCELLED"), POP_TYPE_CANCEL_CONNECT);
+	wfd_ug_act_popup(ugd, D_("IDS_WIFI_POP_THIS_WI_FI_DIRECT_CONNECTION_WILL_BE_CANCELLED"), POP_TYPE_CANCEL_CONNECT);
 
 	__FUNC_EXIT__;
 }
@@ -1901,7 +1987,7 @@ void create_wfd_ug_view(void *data)
 
 	ugd->back_btn = elm_button_add(ugd->naviframe);
 	elm_object_style_set(ugd->back_btn, "naviframe/back_btn/default");
-	evas_object_smart_callback_add(ugd->back_btn, "clicked", _back_btn_cb, (void *)ugd);
+	evas_object_smart_callback_add(ugd->back_btn, "clicked", _smart_back_btn_cb, (void *)ugd);
 	elm_object_focus_allow_set(ugd->back_btn, EINA_FALSE);
 
 	/* Create layout */
@@ -1915,22 +2001,13 @@ void create_wfd_ug_view(void *data)
 		DBG(LOG_ERROR, "Failed to create basic genlist");
 		return;
 	}
-
-
-	DBG(LOG_ERROR, "elm_object_part_content_set");
 	elm_object_part_content_set(layout, "elm.swallow.content", ugd->genlist);
-	DBG(LOG_ERROR, "elm_genlist_fx_mode_set");
-	//elm_genlist_fx_mode_set(ugd->genlist, EINA_FALSE);
 
-	DBG(LOG_ERROR, "evas_object_show");
 	evas_object_show(ugd->base);
-	DBG(LOG_ERROR, "elm_object_focus_set");
 	elm_object_focus_set(ugd->base, EINA_TRUE);
 
-	DBG(LOG_ERROR, "elm_naviframe_item_push");
 	ugd->navi_item = elm_naviframe_item_push(ugd->naviframe, ugd->title,
 			ugd->back_btn, NULL, layout, NULL);
-	DBG(LOG_ERROR, "elm_naviframe_item_pop_cb_set");
 	elm_naviframe_item_pop_cb_set(ugd->navi_item, _back_btn_cb, ugd);
 
 #ifdef TIZEN_WIFIDIRECT_MORE_BTN
@@ -1948,7 +2025,7 @@ void create_wfd_ug_view(void *data)
 		scan_button_create(ugd);
 	}
 
-	if (ugd->view_type && g_strcmp0(_(ugd->view_type), _("IDS_WIFI_BUTTON_MULTI_CONNECT")) == 0) {
+	if (ugd->view_type && g_strcmp0(D_(ugd->view_type), D_("IDS_WIFI_BUTTON_MULTI_CONNECT")) == 0) {
 		int ret = 0;
 		ugd->raw_discovered_peer_cnt = 0;
 		wfd_create_multiconnect_view(ugd);

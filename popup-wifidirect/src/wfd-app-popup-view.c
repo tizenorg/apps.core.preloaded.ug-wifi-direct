@@ -96,7 +96,7 @@ static void __popup_resp_cb(void *data, Evas_Object * obj, void *event_info)
 			evas_object_hide(ad->win);
 
 			/* tickernoti popup */
-			snprintf(msg, WFD_POP_STR_MAX_LEN, _("IDS_WIFI_POP_FAILED_TO_CONNECT_TO_PS"),
+			snprintf(msg, WFD_POP_STR_MAX_LEN, D_("IDS_WIFI_POP_FAILED_TO_CONNECT_TO_PS"),
 							connection->peer_name);
 			notification_status_message_post(msg);
 		}
@@ -117,7 +117,7 @@ static void __popup_resp_cb(void *data, Evas_Object * obj, void *event_info)
 			WFD_APP_LOG(WFD_APP_LOG_LOW,
 				"wifi_direct_accept_connection() failed. result=[%d]\n", result);
 			/* tickernoti popup */
-			notification_status_message_post(_("IDS_WIFI_POP_FAILED_TO_CONNECT_TO_PS"));
+			notification_status_message_post(D_("IDS_WIFI_POP_FAILED_TO_CONNECT_TO_PS"));
 		}
 	}
 	break;
@@ -137,7 +137,7 @@ static void __popup_resp_cb(void *data, Evas_Object * obj, void *event_info)
 			WFD_APP_LOG(WFD_APP_LOG_ERROR, "Error, Incorrect PIN!!\n");
 			keypad_popup_timeout--;
 			/* tickernoti popup */
-			notification_status_message_post(_("IDS_COM_BODY_PINS_DO_NOT_MATCH"));
+			notification_status_message_post(D_("IDS_COM_BODY_PINS_DO_NOT_MATCH"));
 
 			/* redraw the popup */
 			wfd_prepare_popup(WFD_POP_PROG_CONNECT_WITH_KEYPAD, (void *) NULL);
@@ -148,7 +148,7 @@ static void __popup_resp_cb(void *data, Evas_Object * obj, void *event_info)
 		result = wifi_direct_set_wps_pin(connection->wps_pin);
 		if (result != WIFI_DIRECT_ERROR_NONE) {
 			/* tickernoti popup */
-			snprintf(msg, WFD_POP_STR_MAX_LEN, _("IDS_WIFI_POP_FAILED_TO_CONNECT_TO_PS"),
+			snprintf(msg, WFD_POP_STR_MAX_LEN, D_("IDS_WIFI_POP_FAILED_TO_CONNECT_TO_PS"),
 							connection->peer_name);
 			notification_status_message_post(msg);
 			return;
@@ -160,7 +160,7 @@ static void __popup_resp_cb(void *data, Evas_Object * obj, void *event_info)
 			evas_object_hide(ad->win);
 
 			/* tickernoti popup */
-			snprintf(msg, WFD_POP_STR_MAX_LEN, _("IDS_WIFI_POP_FAILED_TO_CONNECT_TO_PS"),
+			snprintf(msg, WFD_POP_STR_MAX_LEN, D_("IDS_WIFI_POP_FAILED_TO_CONNECT_TO_PS"),
 							connection->peer_name);
 			notification_status_message_post(msg);
 		}
@@ -341,7 +341,7 @@ static Evas_Object *wfd_draw_pop_type_c(Evas_Object * win, wfd_popup_t * pop)
 //	evas_object_event_callback_add(popup, EVAS_CALLBACK_KEY_DOWN, keydown_cb, ad);
 	evas_object_size_hint_weight_set(popup, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
 	elm_object_domain_translatable_part_text_set(popup, "title,text",
-			PACKAGE, _("IDS_WIFI_HEADER_WI_FI_DIRECT_CONNECTION_ABB"));
+			PACKAGE, D_("IDS_WIFI_HEADER_WI_FI_DIRECT_CONNECTION_ABB"));
 	elm_object_domain_translatable_text_set(popup, PACKAGE, pop->text);
 
 	btn1 = elm_button_add(popup);
@@ -535,10 +535,10 @@ static Eina_Bool _keypad_popup_timer_cb(void *data)
 
 	if (keypad_popup_timeout > 0) {
 		_replace_1PS_2PD((char *)msg1, sizeof(msg1),
-				_("IDS_ST_BODY_CONNECT_WITH_PS_IN_PD_SECS_ABB"),
+				D_("IDS_ST_BODY_CONNECT_WITH_PS_IN_PD_SECS_ABB"),
 				connection->peer_name, keypad_popup_timeout);
 
-		snprintf(msg2, sizeof(msg2), _("IDS_WIFI_POP_ENTER_PIN_TO_CONNECT_TO_PS"),
+		snprintf(msg2, sizeof(msg2), D_("IDS_WIFI_POP_ENTER_PIN_TO_CONNECT_TO_PS"),
 						connection->peer_name);
 		snprintf(label_str, sizeof(label_str), "%s %s", msg1, msg2);
 		elm_object_domain_translatable_text_set(label, PACKAGE, label_str);
@@ -661,7 +661,7 @@ Evas_Object *wfd_draw_pop_type_display(Evas_Object * win, wfd_popup_t * pop)
 //	evas_object_event_callback_add(popup, EVAS_CALLBACK_KEY_DOWN, keydown_cb, ad);
 	evas_object_size_hint_weight_set(popup, EVAS_HINT_EXPAND, 0.0);
 	elm_object_domain_translatable_part_text_set(popup, "title,text",
-			 PACKAGE, _("IDS_WIFI_HEADER_WI_FI_DIRECT_CONNECTION_ABB"));
+			 PACKAGE, D_("IDS_WIFI_HEADER_WI_FI_DIRECT_CONNECTION_ABB"));
 
 	layout = elm_layout_add(popup);
 	if (layout == NULL) {
@@ -686,7 +686,7 @@ Evas_Object *wfd_draw_pop_type_display(Evas_Object * win, wfd_popup_t * pop)
 	/* add time */
 	time = elm_label_add(layout);
 	elm_label_line_wrap_set(time, ELM_WRAP_MIXED);
-	elm_object_text_set(time, _("<font_size=40><align=center>00:00</align></font_size>"));
+	elm_object_text_set(time, D_("<font_size=40><align=center>00:00</align></font_size>"));
 	evas_object_size_hint_weight_set(time, EVAS_HINT_EXPAND, 0.0);
 	evas_object_size_hint_align_set(time, EVAS_HINT_FILL, EVAS_HINT_FILL);
 	evas_object_show(time);
@@ -814,11 +814,11 @@ static char *__wfd_main_desc_label_get(void *data, Evas_Object *obj,
 				ad->timeout = keypad_popup_timeout;
 		}
 		_replace_1PS_2PD((char *)msg1, WFD_POP_STR_MAX_LEN,
-				_("IDS_ST_BODY_CONNECT_WITH_PS_IN_PD_SECS_ABB"),
+				D_("IDS_ST_BODY_CONNECT_WITH_PS_IN_PD_SECS_ABB"),
 				connection->peer_name, ad->timeout);
 
 		snprintf(msg2, WFD_POP_STR_MAX_LEN,
-				_("IDS_WIFI_POP_ENTER_PIN_TO_CONNECT_TO_PS"),
+				D_("IDS_WIFI_POP_ENTER_PIN_TO_CONNECT_TO_PS"),
 				connection->peer_name);
 
 		WFD_APP_LOG(WFD_APP_LOG_LOW, "string %s %s", msg1, msg2);
@@ -867,7 +867,7 @@ static Evas_Object *__wfd_pin_entry_icon_get(void *data, Evas_Object *obj,
 			ELM_INPUT_PANEL_LAYOUT_DATETIME);
 	elm_object_signal_emit(entry, "elm,action,hide,search_icon", "");
 	elm_object_domain_translatable_part_text_set(entry, "elm.guide",
-			 PACKAGE, _("IDS_WIFI_POP_PIN"));
+			 PACKAGE, D_("IDS_WIFI_POP_PIN"));
 	elm_entry_input_panel_return_key_autoenabled_set(entry,EINA_TRUE);
 	elm_entry_input_panel_return_key_type_set(entry,
 			ELM_INPUT_PANEL_RETURN_KEY_TYPE_DONE);
@@ -1016,7 +1016,7 @@ Evas_Object *wfd_draw_pop_type_keypad(Evas_Object * win, wfd_popup_t * pop)
 			NULL);
 	evas_object_size_hint_weight_set(pinpopup, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
 	elm_object_domain_translatable_part_text_set(pinpopup, "title,text",
-			 PACKAGE, _("IDS_WIFI_HEADER_WI_FI_DIRECT_CONNECTION_ABB"));
+			 PACKAGE, D_("IDS_WIFI_HEADER_WI_FI_DIRECT_CONNECTION_ABB"));
 
 	genlist = elm_genlist_add(pinpopup);
 	elm_genlist_homogeneous_set(genlist, EINA_TRUE);
@@ -1161,11 +1161,11 @@ void wfd_prepare_popup(int type, void *user_data)
 	case /* MT */ WFD_POP_APRV_CONNECTION_WPS_PUSHBUTTON_REQ:
 
 		_replace_1PS_2PD((char *)pop->text, sizeof(pop->text),
-				_("IDS_WIFI_POP_CONNECT_TO_PS_IN_PD_SECONDS"),
+				D_("IDS_WIFI_POP_CONNECT_TO_PS_IN_PD_SECONDS"),
 				peer_name, WFD_POP_TIMER_120);
 
-		snprintf(pop->label1, sizeof(pop->label1), "%s", _("IDS_WIFI_SK2_OK"));
-		snprintf(pop->label2, sizeof(pop->label2), "%s", _("IDS_WIFI_SK_CANCEL"));
+		snprintf(pop->label1, sizeof(pop->label1), "%s", D_("IDS_WIFI_SK2_OK"));
+		snprintf(pop->label2, sizeof(pop->label2), "%s", D_("IDS_WIFI_SK_CANCEL"));
 		pop->timeout = WFD_POP_TIMER_120;
 		pop->resp_data1 = WFD_POP_RESP_APRV_CONNECT_PBC_YES;
 		pop->resp_data2 = WFD_POP_RESP_APRV_CONNECT_NO;
@@ -1175,10 +1175,10 @@ void wfd_prepare_popup(int type, void *user_data)
 
 	case /* MT */ WFD_POP_APRV_CONNECTION_WPS_DISPLAY_REQ:
 		snprintf(pop->text, sizeof(pop->text),
-				_("IDS_WIFI_BODY_PS_IS_REQUESTING_A_WI_FI_DIRECT_CONNECTION_ALLOW_Q"),
+				D_("IDS_WIFI_BODY_PS_IS_REQUESTING_A_WI_FI_DIRECT_CONNECTION_ALLOW_Q"),
 				peer_name);
-		snprintf(pop->label1, sizeof(pop->label1), "%s", _("IDS_WIFI_BUTTON_ALLOW"));
-		snprintf(pop->label2, sizeof(pop->label2), "%s", _("IDS_BR_SK_CANCEL"));
+		snprintf(pop->label1, sizeof(pop->label1), "%s", D_("IDS_WIFI_BUTTON_ALLOW"));
+		snprintf(pop->label2, sizeof(pop->label2), "%s", D_("IDS_BR_SK_CANCEL"));
 		pop->timeout = WFD_POP_TIMER_120;
 		pop->resp_data1 = WFD_POP_RESP_APRV_CONNECT_DISPLAY_OK;
 		pop->resp_data2 = WFD_POP_RESP_APRV_CONNECT_NO;
@@ -1188,10 +1188,10 @@ void wfd_prepare_popup(int type, void *user_data)
 
 	case /* MT */ WFD_POP_APRV_CONNECTION_WPS_KEYPAD_REQ:
 		_replace_1PS_2PD((char *)pop->text, sizeof(pop->text),
-					_("IDS_WIFI_POP_CONNECT_TO_PS_IN_PD_SECONDS"),
+					D_("IDS_WIFI_POP_CONNECT_TO_PS_IN_PD_SECONDS"),
 					peer_name, WFD_POP_TIMER_120);
-		snprintf(pop->label1, sizeof(pop->label1), "%s", _("IDS_BR_SK_OK"));
-		snprintf(pop->label2, sizeof(pop->label2), "%s", _("IDS_BR_SK_CANCEL"));
+		snprintf(pop->label1, sizeof(pop->label1), "%s", D_("IDS_BR_SK_OK"));
+		snprintf(pop->label2, sizeof(pop->label2), "%s", D_("IDS_BR_SK_CANCEL"));
 		pop->timeout = WFD_POP_TIMER_120;
 		pop->resp_data1 = WFD_POP_RESP_APRV_CONNECT_KEYPAD_YES;
 		pop->resp_data2 = WFD_POP_RESP_APRV_CONNECT_NO;
@@ -1200,8 +1200,8 @@ void wfd_prepare_popup(int type, void *user_data)
  		break;
 
 	case /* MT */ WFD_POP_PROG_CONNECT:
-		snprintf(pop->text, sizeof(pop->text), "%s", _("IDS_WIFI_BODY_CONNECTING_ING"));
-		snprintf(pop->label1, sizeof(pop->label1), "%s", _("IDS_BR_SK_CANCEL"));
+		snprintf(pop->text, sizeof(pop->text), "%s", D_("IDS_WIFI_BODY_CONNECTING_ING"));
+		snprintf(pop->label1, sizeof(pop->label1), "%s", D_("IDS_BR_SK_CANCEL"));
 		pop->timeout = WFD_POP_TIMER_120;
 		pop->resp_data1 = WFD_POP_RESP_APRV_CONNECT_NO;
 
@@ -1210,16 +1210,16 @@ void wfd_prepare_popup(int type, void *user_data)
 
 	case /* MO */ WFD_POP_PROG_CONNECT_WITH_KEYPAD:
 		_replace_1PS_2PD((char *)text, sizeof(text),
-						_("IDS_WIFI_POP_CONNECT_TO_PS_IN_PD_SECONDS"),
+						D_("IDS_WIFI_POP_CONNECT_TO_PS_IN_PD_SECONDS"),
 						peer_name, WFD_POP_TIMER_120);
 
 		snprintf(text1, WFD_POP_STR_MAX_LEN, "%s %s",
-				text, _("IDS_WIFI_POP_ENTER_PIN_TO_CONNECT_TO_PS"));
+				text, D_("IDS_WIFI_POP_ENTER_PIN_TO_CONNECT_TO_PS"));
 
 		snprintf(pop->text, sizeof(pop->text), text1, connection->peer_name);
 
-		snprintf(pop->label1, sizeof(pop->label1), "%s", _("IDS_WIFI_SK_CONNECT"));
-		snprintf(pop->label2, sizeof(pop->label2), "%s", _("IDS_BR_SK_CANCEL"));
+		snprintf(pop->label1, sizeof(pop->label1), "%s", D_("IDS_WIFI_SK_CONNECT"));
+		snprintf(pop->label2, sizeof(pop->label2), "%s", D_("IDS_BR_SK_CANCEL"));
 		pop->timeout = WFD_POP_TIMER_120;
 		pop->resp_data1 = WFD_POP_RESP_PROG_CONNECT_KEYPAD_OK;
 		pop->resp_data2 = WFD_POP_RESP_APRV_CONNECT_NO;
@@ -1229,16 +1229,16 @@ void wfd_prepare_popup(int type, void *user_data)
 
 	case /* MO/MT */ WFD_POP_PROG_CONNECT_WITH_PIN:
 		_replace_1PS_2PD((char *)text, sizeof(text),
-				_("IDS_WIFI_POP_CONNECT_TO_PS_IN_PD_SECONDS"),
+				D_("IDS_WIFI_POP_CONNECT_TO_PS_IN_PD_SECONDS"),
 				peer_name, WFD_POP_TIMER_120);
 
 		snprintf(text1, WFD_POP_STR_MAX_LEN, "%s %s %s",
 				text,
 				"<br>",
-				_("IDS_WIFI_POP_PIN_CODE_PS"));
+				D_("IDS_WIFI_POP_PIN_CODE_PS"));
 		snprintf(pop->text, sizeof(pop->text), text1, connection->wps_pin);
 
-		snprintf(pop->label2, sizeof(pop->label2), "%s", _("IDS_BR_SK_CANCEL"));
+		snprintf(pop->label2, sizeof(pop->label2), "%s", D_("IDS_BR_SK_CANCEL"));
 		pop->timeout = WFD_POP_TIMER_120;
 		pop->resp_data2 = WFD_POP_RESP_APRV_CONNECT_NO;
 
@@ -1246,7 +1246,7 @@ void wfd_prepare_popup(int type, void *user_data)
  		break;
 
 	case WFD_POP_PROG_CONNECT_CANCEL:
-		snprintf(pop->text, sizeof(pop->text), "%s", _("IDS_BR_SK_CANCEL"));
+		snprintf(pop->text, sizeof(pop->text), "%s", D_("IDS_BR_SK_CANCEL"));
 		pop->timeout = WFD_POP_TIMER_120;
 		ad->popup = wfd_draw_pop_type_a(ad->win, pop);
  		break;

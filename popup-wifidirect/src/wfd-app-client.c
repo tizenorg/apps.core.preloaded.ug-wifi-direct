@@ -149,7 +149,7 @@ Eina_Bool wfd_automatic_deactivated_for_connection_cb(void *user_data)
 	/* show tickernoti*/
 	if (wfd_transfer_state > VCONFKEY_WIFI_DIRECT_TRANSFER_START) {
 		WFD_APP_LOG(WFD_APP_LOG_LOW, "Display Toast popup.\n");
-		notification_status_message_post(_("IDS_WIFI_BODY_TO_SAVE_BATTERY_POWER_DISABLE_WI_FI_DIRECT_AFTER_USE"));
+		notification_status_message_post(D_("IDS_WIFI_BODY_TO_SAVE_BATTERY_POWER_DISABLE_WI_FI_DIRECT_AFTER_USE"));
 		WFD_APP_LOG(WFD_APP_LOG_LOW, "No RX/TX packet, turn off WFD automatically.\n");
 		wfd_app_util_add_wfd_turn_off_notification(ad);
 	} else {
@@ -411,7 +411,7 @@ void _cb_connection(int error_code, wifi_direct_connection_state_e connection_st
 			if (result != WIFI_DIRECT_ERROR_NONE)
 				WFD_APP_LOG(WFD_APP_LOG_ERROR, "Failed to reject connection(%d)", result);
 			snprintf(popup_text, MAX_POPUP_TEXT_SIZE,
-					_("IDS_ST_POP_YOU_CAN_CONNECT_UP_TO_PD_DEVICES_AT_THE_SAME_TIME"),
+					D_("IDS_ST_POP_YOU_CAN_CONNECT_UP_TO_PD_DEVICES_AT_THE_SAME_TIME"),
 					WFD_MAX_CONNECTED_PEER);
 			notification_status_message_post(popup_text);
 			break;
@@ -494,12 +494,12 @@ void _cb_connection(int error_code, wifi_direct_connection_state_e connection_st
 		if (error_code != WIFI_DIRECT_ERROR_NONE) {
 			WFD_APP_LOG(WFD_APP_LOG_ERROR, "Failed to connect with peer[%s] -(%d)",
 								connection->peer_name, error_code);
-			snprintf(txt, WFD_POP_STR_MAX_LEN,  _("IDS_WIFI_POP_FAILED_TO_CONNECT_TO_PS"),
+			snprintf(txt, WFD_POP_STR_MAX_LEN,  D_("IDS_WIFI_POP_FAILED_TO_CONNECT_TO_PS"),
 								connection->peer_name);
 		} else {
 			WFD_APP_LOG(WFD_APP_LOG_LOW, "Succeeded to connect with peer[%s] -(%d)",
 								connection->peer_name, error_code);
-			snprintf(txt, WFD_POP_STR_MAX_LEN,  _("IDS_WIFI_BODY_CONNECTED_TO_PS"),
+			snprintf(txt, WFD_POP_STR_MAX_LEN,  D_("IDS_WIFI_BODY_CONNECTED_TO_PS"),
 								connection->peer_name);
 #ifdef WFD_SCREEN_MIRRORING_ENABLED
 			result = vconf_get_int(VCONFKEY_SCREEN_MIRRORING_STATE, &screen_mirroring_status);
@@ -507,7 +507,7 @@ void _cb_connection(int error_code, wifi_direct_connection_state_e connection_st
 				WFD_APP_LOG(WFD_APP_LOG_ERROR, "Failed to get VCONFKEY_SCREEN_MIRRORING_STATE");
 
 			if (screen_mirroring_status == VCONFKEY_SCREEN_MIRRORING_DEACTIVATED)
-				snprintf(txt, WFD_POP_STR_MAX_LEN,  _("IDS_WIFI_BODY_CONNECTED_TO_PS"),
+				snprintf(txt, WFD_POP_STR_MAX_LEN,  D_("IDS_WIFI_BODY_CONNECTED_TO_PS"),
 								connection->peer_name);
 #endif
 		}
@@ -554,7 +554,7 @@ void _cb_connection(int error_code, wifi_direct_connection_state_e connection_st
 #ifdef WFD_SCREEN_MIRRORING_ENABLED
 		wfd_app_util_set_screen_mirroring_deactivated(ad);
 #endif
-		notification_status_message_post(_("IDS_WIFI_BODY_THE_WI_FI_DIRECT_CONNECTION_HAS_BEEN_LOST"));
+		notification_status_message_post(D_("IDS_WIFI_BODY_THE_WI_FI_DIRECT_CONNECTION_HAS_BEEN_LOST"));
 		wfd_app_util_del_wfd_connected_notification(ad);
 	}
 	break;
@@ -581,7 +581,7 @@ void _cb_connection(int error_code, wifi_direct_connection_state_e connection_st
 	case WIFI_DIRECT_GROUP_DESTROYED:
 	{
 		WFD_APP_LOG(WFD_APP_LOG_LOW, "event ------------------ WIFI_DIRECT_GROUP_DESTROYED\n");
-		notification_status_message_post(_("IDS_WIFI_BODY_THE_WI_FI_DIRECT_CONNECTION_HAS_BEEN_LOST"));
+		notification_status_message_post(D_("IDS_WIFI_BODY_THE_WI_FI_DIRECT_CONNECTION_HAS_BEEN_LOST"));
 	}
 	break;
 
