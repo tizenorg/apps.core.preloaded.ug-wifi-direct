@@ -1,6 +1,3 @@
-msgid "IDS_WIFI_BODY_ENTER_YOUR_ID"
-msgstr "Insire a túa ID"
-
 msgid "IDS_COM_POP_MAXIMUM_NUMBER_OF_CHARACTERS_REACHED"
 msgstr "Número máximo de caracteres alcanzado"
 
@@ -10,125 +7,11 @@ msgstr "%d seleccionados"
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "Activar"
 
-msgid "IDS_WIFI_BODY_DOT"
-msgstr "."
-
-msgid "IDS_WIFI_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_PD_REACHED"
-msgstr "Alcanzouse o número máximo de carácteres %d."
-
-msgid "IDS_WIFI_TPOP_FAILED_TO_OBTAIN_IP_ADDRESS"
-msgstr "Non se puido obter o enderezo IP."
-
-msgid "IDS_WIFI_TPOP_CONNECTED_TO_WI_FI_NETWORK_PS"
-msgstr "Conectado á rede Wi-Fi %s."
-
-msgid "IDS_WIFI_TMBODY_NEVER_M_ALWAYS_OFF"
-msgstr "Nunca"
-
-msgid "IDS_WIFI_TMBODY_DOWNLOAD_DATA_VIA_WI_FI_AND_4G"
-msgstr "Descargar datos por Wi-Fi e 4G"
-
-msgid "IDS_WIFI_TMBODY_DOWNLOAD_DATA_VIA_WI_FI_AND_3G"
-msgstr "Descargar datos por Wi-Fi e 3G"
-
-msgid "IDS_WIFI_SK_WPS_PIN"
-msgstr "PIN WPS"
-
-msgid "IDS_WIFI_SK_FORGET"
-msgstr "Ignorar"
-
 msgid "IDS_WIFI_SK_CANCEL"
 msgstr "Cancelar"
 
 msgid "IDS_WIFI_SK2_OK"
 msgstr "Aceptar"
-
-msgid "IDS_WIFI_SBODY_CONNECTED_M_STATUS"
-msgstr "Conectado"
-
-msgid "IDS_WIFI_SBODY_AUTOMATICALLY_SWITCH_BETWEEN_WI_FI_AND_MOBILE_NETWORKS_TO_MAINTAIN_A_STABLE_INTERNET_CONNECTION"
-msgstr "Cambiar automaticamente entre redes móbiles e Wi-Fi para manter unha conexión á Internet estable."
-
-msgid "IDS_WIFI_SBODY_AUTHENTICATION_ERROR_OCCURRED_M_STATUS"
-msgstr "Produciuse un erro de autenticación"
-
-msgid "IDS_WIFI_POP_WI_FI_AND_MOBILE_NETWORKS_WILL_BE_USED_TOGETHER_TO_DOWNLOAD_FILES_FASTER_MSG"
-msgstr "Utilizaranse redes Wi-Fi e móbiles á vez para descargar os arquivos máis rápido. É posible que isto aumente a utilización de datos móbiles."
-
-msgid "IDS_WIFI_POP_SMART_NETWORK_SWITCH_HAS_BEEN_ENABLED_MSG"
-msgstr "Activouse Smart network switch. Esta función axuda a manter unha conexión á Internet estable mediante o cambio entre redes móbiles e Wi-Fi. É posible que isto aumente o teu uso de datos."
-
-msgid "IDS_WIFI_POP_PS_IS_SELECTED_N_NIF_YOU_ARE_UNABLE_TO_CONNECT_TO_AN_AP_CHANGE_THE_SIM_CARD_USED_FOR_VERIFICATION_BY_GOING_TO_SIM_CARD_MANAGER_MSG"
-msgstr "%s está seleccionado.\n\nSe non podes conectarte a un punto de acceso, cambia a tarxeta SIM usada para a verificación no xestor de tarxetas SIM. A continuación, selecciona a tarxeta SIM que desexas usar para os datos móbiles e as mensaxes multimedia. Tamén podes desmontar a tarxeta SIM que non desexas usar."
-
-msgid "IDS_WIFI_POP_PRESS_WPS_ON_YOUR_WI_FI_ACCESS_POINT_WITHIN_PD_MINUTES"
-msgstr "Pulsa no botón WPS no punto de acceso Wi-Fi dentro de %d minutos"
-
-msgid "IDS_WIFI_POP_OPEN"
-msgstr "Abrir"
-
-msgid "IDS_WIFI_POP_NO_WI_FI_AP_FOUND"
-msgstr "Non se atopou ningún punto de acceso Wi-Fi"
-
-msgid "IDS_WIFI_POP_CURRENT_NETWORK_WILL_BE_DISCONNECTED"
-msgstr "Desconectarase a rede actual"
-
-msgid "IDS_WIFI_OPT_WPS"
-msgstr "WPS"
-
-msgid "IDS_WIFI_OPT_SHOW_PASSWORD"
-msgstr "Amosar contrasinal"
-
-msgid "IDS_WIFI_OPT_MOBILEACCESSSERVICEATCIVATION_ON"
-msgstr "Activado"
-
-msgid "IDS_WIFI_OPT_MOBILEACCESSSERVICEATCIVATION_OFF"
-msgstr "Desactivado"
-
-msgid "IDS_WIFI_OPT_FORGET_NETWORK"
-msgstr "Ignorar rede"
-
-msgid "IDS_WIFI_MBODY_SMART_NETWORK_SWITCH"
-msgstr "Cambio rede intelixente"
-
-msgid "IDS_WIFI_MBODY_SIGNAL_STRENGTH_KOR_SKT"
-msgstr "Intensidade do sinal"
-
-msgid "IDS_WIFI_MBODY_REDUCE_MOBILE_DATA_USAGE"
-msgstr "Reducir uso datos móbiles"
-
-msgid "IDS_WIFI_MBODY_PRIORITISE_SPEED"
-msgstr "Prioridade á velocidade"
-
-msgid "IDS_WIFI_MBODY_NETWORK_BONDING"
-msgstr "Unión de redes"
-
-msgid "IDS_WIFI_HEADER_WI_FI_NETWORK_INFO_ABB"
-msgstr "Información rede Wi-Fi"
-
-msgid "IDS_WIFI_HEADER_SELECT_WPS_METHOD_ABB"
-msgstr "Seleccionar método WPS"
-
-msgid "IDS_WIFI_HEADER_PROXY_ADDRESS"
-msgstr "Enderezo proxy"
-
-msgid "IDS_WIFI_HEADER_PASSWORD"
-msgstr "Contrasinal"
-
-msgid "IDS_WIFI_HEADER_ENTER_PASSWORD"
-msgstr "Introduza o contrasinal"
-
-msgid "IDS_WIFI_BUTTON_WPS_BUTTON"
-msgstr "Botón WPS"
-
-msgid "IDS_WIFI_BUTTON_SCAN"
-msgstr "Buscar"
-
-msgid "IDS_WIFI_BUTTON_FIND_HIDDEN_NETWORK"
-msgstr "Buscar rede oculta"
-
-msgid "IDS_WIFI_BODY_WI_FI_NETWORKS_AVAILABLE_ABB"
-msgstr "Redes Wi-Fi dispoñibles"
 
 msgid "IDS_WIFI_BODY_WI_FI_DIRECT_ABB"
 msgstr "Wi-Fi Direct"
@@ -136,116 +19,14 @@ msgstr "Wi-Fi Direct"
 msgid "IDS_WIFI_BODY_WI_FI"
 msgstr "Wi-Fi"
 
-msgid "IDS_WIFI_BODY_WHILE_CHARGING_ONLY_ABB"
-msgstr "Só durante a carga"
-
-msgid "IDS_WIFI_BODY_WEAK_M_STRENGTH"
-msgstr "Débil"
-
-msgid "IDS_WIFI_BODY_USER_CERTIFICATE_ABB"
-msgstr "Certificado usua."
-
-msgid "IDS_WIFI_BODY_UNSPECIFIED"
-msgstr "Non especificado"
-
-msgid "IDS_WIFI_BODY_UNKNOWN"
-msgstr "Descoñecido"
-
-msgid "IDS_WIFI_BODY_TO_DOWNLOAD_LARGE_FILES_FASTER_USE_WI_FI_AND_MOBILE_NETWORKS_TOGETHER_T_HELP"
-msgstr "Para descargar arquivos grandes máis rapidamente, utiliza redes Wi-Fi e móbiles á vez"
-
-msgid "IDS_WIFI_BODY_SUBNET_MASK"
-msgstr "Máscara de subrede"
-
-msgid "IDS_WIFI_BODY_STATIC_IP"
-msgstr "IP estática"
-
-msgid "IDS_WIFI_BODY_SSID"
-msgstr "SSID"
-
-msgid "IDS_WIFI_BODY_SORT_BY"
-msgstr "Ordenar por"
-
-msgid "IDS_WIFI_BODY_SCANNING_ING"
-msgstr "Escaneando..."
-
-msgid "IDS_WIFI_BODY_RECEIVE_NOTIFICATIONS_WHEN_NETWORKS_ARE_AVAILABLE"
-msgstr "Recibir notificacións cando as redes estean dispoñibles"
-
-msgid "IDS_WIFI_BODY_PROXY_PORT"
-msgstr "Porto do proxy"
-
-msgid "IDS_WIFI_BODY_NAME"
-msgstr "Nome"
-
-msgid "IDS_WIFI_BODY_MAC_ADDRESS"
-msgstr "Enderezo MAC"
-
-msgid "IDS_WIFI_BODY_IP_ADDRESS"
-msgstr "Enderezo IP"
-
-msgid "IDS_WIFI_BODY_IDENTITY"
-msgstr "Identidade"
-
-msgid "IDS_WIFI_BODY_GATEWAY_ADDRESS"
-msgstr "Enderezo de pasarela"
-
-msgid "IDS_WIFI_BODY_ENTER_IDENTITY"
-msgstr "Introducir identidade"
-
-msgid "IDS_WIFI_BODY_EAP_METHOD"
-msgstr "Método EAP"
-
-msgid "IDS_WIFI_BODY_EAP"
-msgstr "EAP"
-
-msgid "IDS_WIFI_BODY_DNS_2"
-msgstr "DNS 2"
-
-msgid "IDS_WIFI_BODY_DNS_1"
-msgstr "DNS 1"
-
 msgid "IDS_WIFI_BODY_CONNECTING_ING"
 msgstr "Conectando..."
 
 msgid "IDS_WIFI_BODY_CONNECT"
 msgstr "Conectar"
 
-msgid "IDS_WIFI_BODY_CONFIGURATION_SAVED_M_STATUS"
-msgstr "Gardado"
-
-msgid "IDS_WIFI_BODY_A_WI_FI_NETWORK_HAS_BEEN_DETECTED_YOU_WILL_BE_CONNECTED"
-msgstr "Detectouse unha rede Wi-Fi. Establecerase a conexión a ela."
-
-msgid "IDS_WIFI_BODY_ADVANCED_SETTINGS"
-msgstr "Axustes avanzados"
-
-msgid "IDS_COM_SK_NO"
-msgstr "Non"
-
 msgid "IDS_COM_POP_SECURITY_POLICY_RESTRICTS_USE_OF_WI_FI"
 msgstr "A política de seguridade limita o uso da Wi-Fi"
-
-msgid "IDS_WIFI_SBODY_TAP_HERE_TO_CONNECT"
-msgstr "Toca aquí para conectarte."
-
-msgid "IDS_WIFI_POP_YOUR_DEVICE_IS_CONNECTING_TO_P1SS_HOWEVER_THIS_NETWORK_MAY_NOT_PROVIDE_INTERNET_ACCESS_MSG"
-msgstr "O teu dispositivo está conectándose a %1$s. Non obstante, é posible que esta rede non forneza acceso á Internet.\nToca Aceptar para manterte conectado a %1$s agora, pero impide tamén que Cambio de Smart network se conecte a esta rede no futuro."
-
-msgid "IDS_WIFI_POP_BOTH_WI_FI_AND_MOBILE_AP_CANNOT_BE_ACTIVATED_AT_THE_SAME_TIME_DEACTIVATE_MOBILE_AP_Q"
-msgstr "O Wi-Fi e AP Móbil non poden activarse ao mesmo tempo. Desactivar AP Móbil?"
-
-msgid "IDS_WIFI_HEADER_SIGN_IN_TO_WI_FI_NETWORK_ABB"
-msgstr "Inic. sesi. na rede Wi-Fi"
-
-msgid "IDS_WIFI_HEADER_INTERNET_MAY_NOT_BE_AVAILABLE_ABB"
-msgstr "Pode que Internet non dispoñ."
-
-msgid "IDS_WIFI_BUTTON_DONT_ASK_AGAIN"
-msgstr "Non volver preguntar"
-
-msgid "IDS_WIFI_BODY_OPEN_WI_FI_SETTINGS_ABB"
-msgstr "Abrir axustes de Wi-Fi"
 
 msgid "IDS_BT_BODY_NO_DEVICES_FOUND_ABB"
 msgstr "Non se atoparon dispositivos"
@@ -268,9 +49,6 @@ msgstr "Nome do meu dispositivo"
 msgid "IDS_COM_POP_FAILED"
 msgstr "Erro"
 
-msgid "IDS_COM_POP_CANCEL"
-msgstr "Cancelar"
-
 msgid "IDS_COM_BODY_CONNECTED_M_STATUS"
 msgstr "Conectado"
 
@@ -283,12 +61,6 @@ msgstr "Os nomes dos dispositivos amósanse para distinguir cada un dos disposit
 msgid "IDS_ST_SK_RENAME"
 msgstr "Cam. nome"
 
-msgid "IDS_ST_BODY_TAP_TO_CHANGE_SETTINGS"
-msgstr "Toca para cambiar os axustes"
-
-msgid "IDS_ST_POP_INVALID_CHARACTER_ENTERED_TRY_AGAIN"
-msgstr "Inseriuse un carácter non válido. Téntao de novo."
-
 msgid "IDS_ST_POP_NOT_SUPPORTED"
 msgstr "Non admitido"
 
@@ -297,12 +69,6 @@ msgstr "Dispoñible"
 
 msgid "IDS_CHATON_HEADER_CONNECTION_FAILED_ABB2"
 msgstr "Erro de conexión"
-
-msgid "IDS_WIFI_BODY_WI_FI_DIRECT_DEVICES"
-msgstr "Dispositivos Wi-Fi Direct"
-
-msgid "IDS_WIFI_POP_TAP_TO_CONNECT"
-msgstr "Toca para conectarte"
 
 msgid "IDS_WIFI_SK2_CANCEL_CONNECTION"
 msgstr "Cancelar conexión"
@@ -322,14 +88,8 @@ msgstr "Conectado con outro dispositivo"
 msgid "IDS_WIFI_BODY_WAITING_FOR_CONNECTION_M_STATUS_ABB"
 msgstr "Agardando conex. datos"
 
-msgid "IDS_ST_POP_FAILED_TO_CONNECT"
-msgstr "Non se puido establecer a conexión"
-
 msgid "IDS_WIFI_BUTTON_MULTI_CONNECT"
 msgstr "Multiconexión"
-
-msgid "IDS_WIFI_BUTTON_DISCONNECT_ALL"
-msgstr "Desconectar todo"
 
 msgid "IDS_WIFI_SK_DISCONNECT"
 msgstr "Desconectar"
@@ -339,12 +99,6 @@ msgstr "Desactiva Wi-Fi Direct despois de usalo"
 
 msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_ABB"
 msgstr "Desactivar Wi-Fi Direct despois uso"
-
-msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY"
-msgstr "Desactiva Wi-Fi Direct despois de usalo para aforrar batería"
-
-msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY_ABB"
-msgstr "Desac. Wi-Fi Direct desp. uso para aforrar batería"
 
 msgid "IDS_WIFI_BODY_PS_IS_REQUESTING_A_WI_FI_DIRECT_CONNECTION_ALLOW_Q"
 msgstr "%s está solicitando unha conexión Wi-Fi Direct. Desexas permitila?"
@@ -358,15 +112,6 @@ msgstr "A utilización de Wi-Fi Direct desconectará a ancoraxe á rede Wi-Fi ac
 msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_CONNECTION_ABB"
 msgstr "Conexión Wi-Fi Direct"
 
-msgid "IDS_WIFI_MBODY_DISCONNECT_WI_FI_DIRECT"
-msgstr "Desconectar Wi-Fi Direct"
-
-msgid "IDS_WIFI_POP_CANCEL_WI_FI_DIRECT_CONNECTION_Q"
-msgstr "Desexas cancelar a conexión Wi-Fi Direct?"
-
-msgid "IDS_WIFI_POP_CONNECT_TO_OTHER_DEVICES_VIA_WI_FI_DIRECT"
-msgstr "Conectar a outros dispositivos a través de Wi-Fi Direct"
-
 msgid "IDS_WIFI_POP_THERE_HAS_BEEN_NO_ACTIVITY_FOR_PD_MINUTES_SINCE_WI_FI_DIRECT_WAS_ENABLED_MSG"
 msgstr "Non houbo ningunha actividade durante %d minutos dende que se activou Wi-Fi Direct. Para ampliar a vida útil da batería, desactivouse Wi-Fi Direct."
 
@@ -378,9 +123,6 @@ msgstr "Deter"
 
 msgid "IDS_WIFI_POP_DEACTIVATION_FAILED"
 msgstr "Erro na desactivación"
-
-msgid "IDS_WIMAX_POP_ACTIVATION_FAILED"
-msgstr "Fallo na activación"
 
 msgid "IDS_WIFI_POP_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_CONTINUE_Q"
 msgstr "A conexión actual desconectarase. Continuar?"
@@ -403,14 +145,8 @@ msgstr "Conectando a %s"
 msgid "IDS_COM_BODY_PINS_DO_NOT_MATCH"
 msgstr "Os PINs non coinciden"
 
-msgid "IDS_COM_POP_DEACTIVATING_ING"
-msgstr "Desactivando..."
-
 msgid "IDS_WIFI_BODY_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_SO_THAT_SCANNING_CAN_START_CONTINUE_Q"
 msgstr "A conexión actual desconectarase para que se poida iniciar a exploración. Desexas continuar?"
-
-msgid "IDS_WIFI_HEADER_DEVICES_THAT_FAILED_TO_CONNECT"
-msgstr "Dispositivos que non se puideron conectar"
 
 msgid "IDS_WIFI_POP_ENTER_PIN_TO_CONNECT_TO_PS"
 msgstr "Introduce o PIN para conectarte a %s"
@@ -439,14 +175,8 @@ msgstr "PIN"
 msgid "IDS_WIFI_HEADER_UNABLE_TO_CONNECT_ABB2"
 msgstr "Imposible conectar"
 
-msgid "IDS_WIFI_BUTTON_STOP_CONNECTION_ABB"
-msgstr "Deter conexión"
-
 msgid "IDS_WIFI_BUTTON_ALLOW"
 msgstr "Permitir"
-
-msgid "IDS_COM_POP_ACTIVATING"
-msgstr "Activando..."
 
 msgid "IDS_WIFI_SK_CONNECT"
 msgstr "Conectar"
@@ -457,9 +187,6 @@ msgstr "Conectado"
 msgid "IDS_STU_HEADER_ENTER_DEVICE_NAME"
 msgstr "Introduce o nome do dispositivo"
 
-msgid "IDS_ST_POP_CONNECTED_WITH_PD_DEVICES_VIA_WI_FI_DIRECT"
-msgstr "Conectado a %d dispositivos a través de Wi-Fi Direct"
-
 msgid "IDS_WIFI_SBODY_NOT_CONNECTED_M_STATUS_ABB"
 msgstr "Non conectado"
 
@@ -468,4 +195,13 @@ msgstr "Cancelarase esta conexión a Wi-Fi Direct."
 
 msgid "IDS_WIFI_BODY_TO_SAVE_BATTERY_POWER_DISABLE_WI_FI_DIRECT_AFTER_USE"
 msgstr "Para aforrar batería, desactiva Wi-Fi Direct despois de usalo"
+
+msgid "IDS_SMR_BODY_SCREEN_MIRRORING_IS_ENABLED"
+msgstr "Screen Mirroring está activado"
+
+msgid "IDS_SMR_POP_SCREEN_MIRRORING_HAS_BEEN_DISABLED"
+msgstr "Screen Mirroring foi desactivado"
+
+msgid "IDS_WIFI_BODY_YOUR_DEVICE_HPS_IS_CURRENTLY_VISIBLE_TO_NEARBY_DEVICES"
+msgstr "Actualmente o teu dispositivo (%s) está visible para os dispositivos próximos."
 

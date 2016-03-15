@@ -1,6 +1,3 @@
-msgid "IDS_WIFI_BODY_ENTER_YOUR_ID"
-msgstr "Introduceţi ID-ul."
-
 msgid "IDS_COM_POP_MAXIMUM_NUMBER_OF_CHARACTERS_REACHED"
 msgstr "Adăugare la marcaje"
 
@@ -10,125 +7,11 @@ msgstr "%d selectate"
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "Activare"
 
-msgid "IDS_WIFI_BODY_DOT"
-msgstr "."
-
-msgid "IDS_WIFI_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_PD_REACHED"
-msgstr "S-a atins numărul maxim de %d caractere."
-
-msgid "IDS_WIFI_TPOP_FAILED_TO_OBTAIN_IP_ADDRESS"
-msgstr "Adresa IP nu a putut fi obţinută."
-
-msgid "IDS_WIFI_TPOP_CONNECTED_TO_WI_FI_NETWORK_PS"
-msgstr "Este conectat la reţeaua Wi-Fi %s."
-
-msgid "IDS_WIFI_TMBODY_NEVER_M_ALWAYS_OFF"
-msgstr "Niciodată"
-
-msgid "IDS_WIFI_TMBODY_DOWNLOAD_DATA_VIA_WI_FI_AND_4G"
-msgstr "Descărc. date prin Wi-Fi şi 4G"
-
-msgid "IDS_WIFI_TMBODY_DOWNLOAD_DATA_VIA_WI_FI_AND_3G"
-msgstr "Descărc. date prin Wi-Fi şi 3G"
-
-msgid "IDS_WIFI_SK_WPS_PIN"
-msgstr "PIN WPS"
-
-msgid "IDS_WIFI_SK_FORGET"
-msgstr "Revocare"
-
 msgid "IDS_WIFI_SK_CANCEL"
 msgstr "Anulare"
 
 msgid "IDS_WIFI_SK2_OK"
 msgstr "OK"
-
-msgid "IDS_WIFI_SBODY_CONNECTED_M_STATUS"
-msgstr "Conectat"
-
-msgid "IDS_WIFI_SBODY_AUTOMATICALLY_SWITCH_BETWEEN_WI_FI_AND_MOBILE_NETWORKS_TO_MAINTAIN_A_STABLE_INTERNET_CONNECTION"
-msgstr "Comutaţi automat între reţelele Wi-Fi şi mobile pentru menţinerea unei conexiuni stabile la internet."
-
-msgid "IDS_WIFI_SBODY_AUTHENTICATION_ERROR_OCCURRED_M_STATUS"
-msgstr "A apărut o eroare de autentificare"
-
-msgid "IDS_WIFI_POP_WI_FI_AND_MOBILE_NETWORKS_WILL_BE_USED_TOGETHER_TO_DOWNLOAD_FILES_FASTER_MSG"
-msgstr "Pentru descărcarea mai rapidă a fişierelor, reţeaua Wi-Fi şi cea mobilă vor fi utilizate împreună. Aceasta poate creşte utilizarea datelor mobile."
-
-msgid "IDS_WIFI_POP_SMART_NETWORK_SWITCH_HAS_BEEN_ENABLED_MSG"
-msgstr "A fost activată Comutarea inteligentă a reţelei. Această funcţie vă ajută să menţineţi o conexiune la internet stabilă, comutând între reţelele mobile şi Wi-Fi. Aceasta poate creşte utilizarea datelor."
-
-msgid "IDS_WIFI_POP_PS_IS_SELECTED_N_NIF_YOU_ARE_UNABLE_TO_CONNECT_TO_AN_AP_CHANGE_THE_SIM_CARD_USED_FOR_VERIFICATION_BY_GOING_TO_SIM_CARD_MANAGER_MSG"
-msgstr "S-a selectat %s.\n\nDacă nu vă puteţi conecta la un PA, schimbaţi cartela SIM utilizată pentru verificare accesând managerul de cartele SIM. Apoi, selectaţi cartela SIM pe care doriţi să o utilizaţi pentru Datele mobile şi mesajele multimedia. De asemenea, puteţi să dezinstalaţi cartela SIM pe care nu doriţi să o utilizaţi."
-
-msgid "IDS_WIFI_POP_PRESS_WPS_ON_YOUR_WI_FI_ACCESS_POINT_WITHIN_PD_MINUTES"
-msgstr "Apăsaţi pe WPS pe punctul dvs. de acces Wi-Fi în interval de %d minute."
-
-msgid "IDS_WIFI_POP_OPEN"
-msgstr "Deschidere"
-
-msgid "IDS_WIFI_POP_NO_WI_FI_AP_FOUND"
-msgstr "Nu a fost găsită o aplicaţie Wi-Fi."
-
-msgid "IDS_WIFI_POP_CURRENT_NETWORK_WILL_BE_DISCONNECTED"
-msgstr "Reţeaua curentă va fi deconectată."
-
-msgid "IDS_WIFI_OPT_WPS"
-msgstr "WPS"
-
-msgid "IDS_WIFI_OPT_SHOW_PASSWORD"
-msgstr "Afişaţi parola"
-
-msgid "IDS_WIFI_OPT_MOBILEACCESSSERVICEATCIVATION_ON"
-msgstr "Pornit"
-
-msgid "IDS_WIFI_OPT_MOBILEACCESSSERVICEATCIVATION_OFF"
-msgstr "Oprit"
-
-msgid "IDS_WIFI_OPT_FORGET_NETWORK"
-msgstr "Ignorare reţea"
-
-msgid "IDS_WIFI_MBODY_SMART_NETWORK_SWITCH"
-msgstr "Comutare intelig. reţea"
-
-msgid "IDS_WIFI_MBODY_SIGNAL_STRENGTH_KOR_SKT"
-msgstr "Putere semnal"
-
-msgid "IDS_WIFI_MBODY_REDUCE_MOBILE_DATA_USAGE"
-msgstr "Reducere ut. date mobile"
-
-msgid "IDS_WIFI_MBODY_PRIORITISE_SPEED"
-msgstr "Prioritate viteză"
-
-msgid "IDS_WIFI_MBODY_NETWORK_BONDING"
-msgstr "Asocierea reţelelor"
-
-msgid "IDS_WIFI_HEADER_WI_FI_NETWORK_INFO_ABB"
-msgstr "Informaţii reţea Wi-Fi"
-
-msgid "IDS_WIFI_HEADER_SELECT_WPS_METHOD_ABB"
-msgstr "Selectare metodă WPS"
-
-msgid "IDS_WIFI_HEADER_PROXY_ADDRESS"
-msgstr "Adresă proxy"
-
-msgid "IDS_WIFI_HEADER_PASSWORD"
-msgstr "Parolă"
-
-msgid "IDS_WIFI_HEADER_ENTER_PASSWORD"
-msgstr "Introduceţi parola."
-
-msgid "IDS_WIFI_BUTTON_WPS_BUTTON"
-msgstr "Buton WPS"
-
-msgid "IDS_WIFI_BUTTON_SCAN"
-msgstr "Căutare"
-
-msgid "IDS_WIFI_BUTTON_FIND_HIDDEN_NETWORK"
-msgstr "Găsire reţea ascunsă"
-
-msgid "IDS_WIFI_BODY_WI_FI_NETWORKS_AVAILABLE_ABB"
-msgstr "Reţele Wi-Fi disponibile"
 
 msgid "IDS_WIFI_BODY_WI_FI_DIRECT_ABB"
 msgstr "Wi-Fi Direct"
@@ -136,116 +19,14 @@ msgstr "Wi-Fi Direct"
 msgid "IDS_WIFI_BODY_WI_FI"
 msgstr "Wi-Fi"
 
-msgid "IDS_WIFI_BODY_WHILE_CHARGING_ONLY_ABB"
-msgstr "Numai la încărcare"
-
-msgid "IDS_WIFI_BODY_WEAK_M_STRENGTH"
-msgstr "Slabă"
-
-msgid "IDS_WIFI_BODY_USER_CERTIFICATE_ABB"
-msgstr "Certif. utiliz."
-
-msgid "IDS_WIFI_BODY_UNSPECIFIED"
-msgstr "Nespecificat"
-
-msgid "IDS_WIFI_BODY_UNKNOWN"
-msgstr "Necunoscut"
-
-msgid "IDS_WIFI_BODY_TO_DOWNLOAD_LARGE_FILES_FASTER_USE_WI_FI_AND_MOBILE_NETWORKS_TOGETHER_T_HELP"
-msgstr "Pentru a descărca mai rapid fişierele mari, utilizaţi împreună reţeaua Wi-Fi şi cea mobilă."
-
-msgid "IDS_WIFI_BODY_SUBNET_MASK"
-msgstr "Mască subreţea"
-
-msgid "IDS_WIFI_BODY_STATIC_IP"
-msgstr "IP static"
-
-msgid "IDS_WIFI_BODY_SSID"
-msgstr "SSID"
-
-msgid "IDS_WIFI_BODY_SORT_BY"
-msgstr "Sortare după"
-
-msgid "IDS_WIFI_BODY_SCANNING_ING"
-msgstr "Scanare..."
-
-msgid "IDS_WIFI_BODY_RECEIVE_NOTIFICATIONS_WHEN_NETWORKS_ARE_AVAILABLE"
-msgstr "Primiţi notificări atunci când sunt disponibile reţele"
-
-msgid "IDS_WIFI_BODY_PROXY_PORT"
-msgstr "Port proxy"
-
-msgid "IDS_WIFI_BODY_NAME"
-msgstr "Nume"
-
-msgid "IDS_WIFI_BODY_MAC_ADDRESS"
-msgstr "Adresă MAC"
-
-msgid "IDS_WIFI_BODY_IP_ADDRESS"
-msgstr "Adresă IP"
-
-msgid "IDS_WIFI_BODY_IDENTITY"
-msgstr "Identitate"
-
-msgid "IDS_WIFI_BODY_GATEWAY_ADDRESS"
-msgstr "Adresă gateway"
-
-msgid "IDS_WIFI_BODY_ENTER_IDENTITY"
-msgstr "Introducere identitate"
-
-msgid "IDS_WIFI_BODY_EAP_METHOD"
-msgstr "Metodă EAP"
-
-msgid "IDS_WIFI_BODY_EAP"
-msgstr "EAP"
-
-msgid "IDS_WIFI_BODY_DNS_2"
-msgstr "DNS2"
-
-msgid "IDS_WIFI_BODY_DNS_1"
-msgstr "DNS1"
-
 msgid "IDS_WIFI_BODY_CONNECTING_ING"
 msgstr "Conectare"
 
 msgid "IDS_WIFI_BODY_CONNECT"
 msgstr "Conectare"
 
-msgid "IDS_WIFI_BODY_CONFIGURATION_SAVED_M_STATUS"
-msgstr "Salvat"
-
-msgid "IDS_WIFI_BODY_A_WI_FI_NETWORK_HAS_BEEN_DETECTED_YOU_WILL_BE_CONNECTED"
-msgstr "S-a detectat o reţea Wi-Fi. Veţi fi conectat."
-
-msgid "IDS_WIFI_BODY_ADVANCED_SETTINGS"
-msgstr "Setări complexe"
-
-msgid "IDS_COM_SK_NO"
-msgstr "Nu"
-
 msgid "IDS_COM_POP_SECURITY_POLICY_RESTRICTS_USE_OF_WI_FI"
 msgstr "Politica de securitate restricţionează utilizarea reţelei Wi-Fi."
-
-msgid "IDS_WIFI_SBODY_TAP_HERE_TO_CONNECT"
-msgstr "Atingeţi aici pentru a vă conecta."
-
-msgid "IDS_WIFI_POP_YOUR_DEVICE_IS_CONNECTING_TO_P1SS_HOWEVER_THIS_NETWORK_MAY_NOT_PROVIDE_INTERNET_ACCESS_MSG"
-msgstr "Dispozitivul se conectează la %1$s. Cu toate acestea, este posibil ca această reţea să nu ofere acces la internet.\nAtingeţi OK pentru a rămâne conectat la %1$s acum, dar şi pentru a nu permite funcţiei Comutare inteligentă a reţelei să se conecteze pe viitor la această reţea."
-
-msgid "IDS_WIFI_POP_BOTH_WI_FI_AND_MOBILE_AP_CANNOT_BE_ACTIVATED_AT_THE_SAME_TIME_DEACTIVATE_MOBILE_AP_Q"
-msgstr "Wi-Fi şi PA mobil nu pot fi activate simultan. Dezactivaţi PA mobil?"
-
-msgid "IDS_WIFI_HEADER_SIGN_IN_TO_WI_FI_NETWORK_ABB"
-msgstr "Conect. la reţeaua Wi-Fi"
-
-msgid "IDS_WIFI_HEADER_INTERNET_MAY_NOT_BE_AVAILABLE_ABB"
-msgstr "Internetul poate fi indispon."
-
-msgid "IDS_WIFI_BUTTON_DONT_ASK_AGAIN"
-msgstr "Nu întreba din nou"
-
-msgid "IDS_WIFI_BODY_OPEN_WI_FI_SETTINGS_ABB"
-msgstr "Deschidere setări Wi-Fi"
 
 msgid "IDS_BT_BODY_NO_DEVICES_FOUND_ABB"
 msgstr "Nu au fost găsite dispozitive"
@@ -268,9 +49,6 @@ msgstr "Numele dispozitivului meu"
 msgid "IDS_COM_POP_FAILED"
 msgstr "Nereuşit"
 
-msgid "IDS_COM_POP_CANCEL"
-msgstr "Anulare"
-
 msgid "IDS_COM_BODY_CONNECTED_M_STATUS"
 msgstr "Conectat"
 
@@ -283,12 +61,6 @@ msgstr "Numele dispozitivelor sunt afişate pentru a diferenţia dispozitivele d
 msgid "IDS_ST_SK_RENAME"
 msgstr "Redenumire"
 
-msgid "IDS_ST_BODY_TAP_TO_CHANGE_SETTINGS"
-msgstr "Atingeţi pentru a modifica setările"
-
-msgid "IDS_ST_POP_INVALID_CHARACTER_ENTERED_TRY_AGAIN"
-msgstr "Aţi introdus un caracter nevalid. Încercaţi din nou"
-
 msgid "IDS_ST_POP_NOT_SUPPORTED"
 msgstr "Neacceptat"
 
@@ -297,12 +69,6 @@ msgstr "Disponibil"
 
 msgid "IDS_CHATON_HEADER_CONNECTION_FAILED_ABB2"
 msgstr "Conexiune nereuşită"
-
-msgid "IDS_WIFI_BODY_WI_FI_DIRECT_DEVICES"
-msgstr "Dispozitive cu Wi-Fi Direct"
-
-msgid "IDS_WIFI_POP_TAP_TO_CONNECT"
-msgstr "Apăsaţi pentru conectare."
 
 msgid "IDS_WIFI_SK2_CANCEL_CONNECTION"
 msgstr "Revocare conexiune"
@@ -322,14 +88,8 @@ msgstr "Conectat la un alt dispozitiv"
 msgid "IDS_WIFI_BODY_WAITING_FOR_CONNECTION_M_STATUS_ABB"
 msgstr "Se aşteaptă conexiunea"
 
-msgid "IDS_ST_POP_FAILED_TO_CONNECT"
-msgstr "Conectare nereuşită"
-
 msgid "IDS_WIFI_BUTTON_MULTI_CONNECT"
 msgstr "Mai multe conexiuni"
-
-msgid "IDS_WIFI_BUTTON_DISCONNECT_ALL"
-msgstr "Deconectaţi-le pe toate"
 
 msgid "IDS_WIFI_SK_DISCONNECT"
 msgstr "Deconectare"
@@ -339,12 +99,6 @@ msgstr "Dezactivare Wi-Fi Direct după utilizare"
 
 msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_ABB"
 msgstr "Dezact. Wi-Fi Direct după utilizare"
-
-msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY"
-msgstr "Dezactivare Wi-Fi Direct după utilizare pentru a economisi bateria"
-
-msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY_ABB"
-msgstr "Dezact. Wi-Fi Direct după util. pt. econ. baterie"
 
 msgid "IDS_WIFI_BODY_PS_IS_REQUESTING_A_WI_FI_DIRECT_CONNECTION_ALLOW_Q"
 msgstr "%s solicită o conexiune Wi-Fi Direct. Permiteţi conexiunea?"
@@ -358,15 +112,6 @@ msgstr "Utilizarea Wi-Fi Direct va întrerupe furnizarea accesului la internet p
 msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_CONNECTION_ABB"
 msgstr "Conexiune Wi-Fi Direct"
 
-msgid "IDS_WIFI_MBODY_DISCONNECT_WI_FI_DIRECT"
-msgstr "Deconectare Wi-Fi Direct"
-
-msgid "IDS_WIFI_POP_CANCEL_WI_FI_DIRECT_CONNECTION_Q"
-msgstr "Revocaţi conexiunea Wi-Fi Direct?"
-
-msgid "IDS_WIFI_POP_CONNECT_TO_OTHER_DEVICES_VIA_WI_FI_DIRECT"
-msgstr "Conectare la alte dispozitive prin Wi-Fi Direct"
-
 msgid "IDS_WIFI_POP_THERE_HAS_BEEN_NO_ACTIVITY_FOR_PD_MINUTES_SINCE_WI_FI_DIRECT_WAS_ENABLED_MSG"
 msgstr "Nu s-a înregistrat nicio activitate timp de %d minute, de la activarea Wi-Fi Direct. Pentru a prelungi durata de viaţă a bateriei, Wi-Fi Direct a fost dezactivat."
 
@@ -378,9 +123,6 @@ msgstr "Oprire"
 
 msgid "IDS_WIFI_POP_DEACTIVATION_FAILED"
 msgstr "Dezactivare nereuşită"
-
-msgid "IDS_WIMAX_POP_ACTIVATION_FAILED"
-msgstr "Activare nereuşită"
 
 msgid "IDS_WIFI_POP_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_CONTINUE_Q"
 msgstr "Conexiunea actuală va fi încheiată. Continuaţi?"
@@ -403,14 +145,8 @@ msgstr "Conectat la %s"
 msgid "IDS_COM_BODY_PINS_DO_NOT_MATCH"
 msgstr "Codurile PIN nu se potrivesc."
 
-msgid "IDS_COM_POP_DEACTIVATING_ING"
-msgstr "Dezactivare..."
-
 msgid "IDS_WIFI_BODY_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_SO_THAT_SCANNING_CAN_START_CONTINUE_Q"
 msgstr "Conexiunea curentă va fi deconectată, pentru ca scanarea să poată începe. Continuaţi?"
-
-msgid "IDS_WIFI_HEADER_DEVICES_THAT_FAILED_TO_CONNECT"
-msgstr "Dispozitive care nu s-au conectat"
 
 msgid "IDS_WIFI_POP_ENTER_PIN_TO_CONNECT_TO_PS"
 msgstr "Introduceţi codul PIN pentru a vă conecta la %s."
@@ -439,14 +175,8 @@ msgstr "PIN"
 msgid "IDS_WIFI_HEADER_UNABLE_TO_CONNECT_ABB2"
 msgstr "Nu se poate stabili conexiunea"
 
-msgid "IDS_WIFI_BUTTON_STOP_CONNECTION_ABB"
-msgstr "Oprire conexiune"
-
 msgid "IDS_WIFI_BUTTON_ALLOW"
 msgstr "Se permite"
-
-msgid "IDS_COM_POP_ACTIVATING"
-msgstr "Se activează..."
 
 msgid "IDS_WIFI_SK_CONNECT"
 msgstr "Conectare"
@@ -457,9 +187,6 @@ msgstr "Conectat"
 msgid "IDS_STU_HEADER_ENTER_DEVICE_NAME"
 msgstr "Introduceţi numele dispozitivului"
 
-msgid "IDS_ST_POP_CONNECTED_WITH_PD_DEVICES_VIA_WI_FI_DIRECT"
-msgstr "Conectat cu %d dispozitive prin Wi-Fi Direct"
-
 msgid "IDS_WIFI_SBODY_NOT_CONNECTED_M_STATUS_ABB"
 msgstr "Neconectat"
 
@@ -468,4 +195,13 @@ msgstr "Această conexiune Wi-Fi Direct va fi anulată."
 
 msgid "IDS_WIFI_BODY_TO_SAVE_BATTERY_POWER_DISABLE_WI_FI_DIRECT_AFTER_USE"
 msgstr "Pentru a economisi bateria, dezactivaţi Wi-Fi Direct după utilizare."
+
+msgid "IDS_SMR_BODY_SCREEN_MIRRORING_IS_ENABLED"
+msgstr "S-a activat Screen Mirroring."
+
+msgid "IDS_SMR_POP_SCREEN_MIRRORING_HAS_BEEN_DISABLED"
+msgstr "S-a dezactivat Screen Mirroring."
+
+msgid "IDS_WIFI_BODY_YOUR_DEVICE_HPS_IS_CURRENTLY_VISIBLE_TO_NEARBY_DEVICES"
+msgstr "În prezent, dispozitivul dvs. (%s) este vizibil pentru dispozitivele din apropiere."
 

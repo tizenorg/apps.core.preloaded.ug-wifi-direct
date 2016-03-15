@@ -3,7 +3,7 @@
 
 Name:       libug-setting-wifidirect-efl
 Summary:    Wi-Fi Direct setting UI gadget
-Version:    1.11.69
+Version:    1.11.70
 Release:    1
 Group:      App/Network
 License:    Flora-1.1
@@ -45,7 +45,6 @@ BuildRequires:  pkgconfig(capi-system-device)
 BuildRequires:  pkgconfig(notification)
 BuildRequires:  pkgconfig(feedback)
 BuildRequires:  pkgconfig(deviced)
-BuildRequires:  pkgconfig(efl-assist)
 BuildRequires:  pkgconfig(capi-ui-efl-util)
 BuildRequires:  pkgconfig(efl-extension)
 #BuildRequires:  model-build-features

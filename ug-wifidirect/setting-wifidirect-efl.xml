@@ -8,4 +8,11 @@
 		<label>Wi-Fi Direct Setting</label>
 		<label xml:lang="en-us">Wi-Fi Direct Setting</label>
 	</ui-application>
+	<privileges>
+		<privilege>http://tizen.org/privilege/network.get</privilege>
+		<privilege>http://tizen.org/privilege/network.set</privilege>
+		<privilege>http://tizen.org/privilege/wifidirect</privilege>
+		<privilege>http://tizen.org/privilege/notification</privilege>
+		<privilege>http://tizen.org/privilege/haptic</privilege>
+	</privileges>
 </manifest>

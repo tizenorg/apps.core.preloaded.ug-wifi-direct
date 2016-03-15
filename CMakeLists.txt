@@ -10,7 +10,7 @@ pkg_check_modules(pkgs REQUIRED appcore-efl appsvc ui-gadget-1 dlog
 	capi-appfw-application
 	feedback
 	dbus-1
-	deviced efl-assist
+	deviced
 	capi-ui-efl-util
 	efl-extension
 	)

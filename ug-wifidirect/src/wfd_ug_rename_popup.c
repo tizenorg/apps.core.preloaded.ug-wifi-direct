@@ -238,6 +238,7 @@ static void _rename_entry_keydown_cb(void *data, Evas *e, Evas_Object *obj, void
 		elm_object_focus_set(entry, EINA_FALSE);
 	}
 }
+
 static char *__wfd_main_rename_desc_label_get(void *data, Evas_Object *obj,
 					      const char *part)
 {
@@ -248,8 +249,11 @@ static char *__wfd_main_rename_desc_label_get(void *data, Evas_Object *obj,
 		return NULL;
 	}
 
-	if (!strcmp(part, "elm.text.multiline")) {
-		return g_strdup(_("IDS_ST_POP_DEVICE_NAMES_ARE_DISPLAYED_TO_DISTINGUISH_EACH_OF_THE_DEVICES_AVAILABLE_MSG"));
+	if (!strcmp("elm.text.multiline", part)) {
+		char buf[WFD_GLOBALIZATION_STR_LENGTH] = {0, };
+		snprintf(buf, WFD_GLOBALIZATION_STR_LENGTH, "<font_size=30>%s</font_size>",
+			_("IDS_ST_POP_DEVICE_NAMES_ARE_DISPLAYED_TO_DISTINGUISH_EACH_OF_THE_DEVICES_AVAILABLE_MSG"));
+		return g_strdup(buf);
 	}
 	__FUNC_EXIT__;
 	return NULL;
@@ -346,7 +350,7 @@ void _gl_rename_device_sel(void *data, Evas_Object *obj, void *event_info)
 
 	popup = elm_popup_add(ugd->base);
 	elm_popup_align_set(popup, ELM_NOTIFY_ALIGN_FILL, 1.0);
-	eext_object_event_callback_add(popup, EA_CALLBACK_BACK, _rename_popup_cancel_cb, ugd);
+	eext_object_event_callback_add(popup, EEXT_CALLBACK_BACK, _rename_popup_cancel_cb, ugd);
 	evas_object_size_hint_weight_set(popup, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
 	elm_object_domain_translatable_part_text_set(popup, "title,text",
 			 PACKAGE, "IDS_ST_HEADER_RENAME_DEVICE");
@@ -377,7 +381,7 @@ void _gl_rename_device_sel(void *data, Evas_Object *obj, void *event_info)
 
 	ugd->rename_desc_itc = elm_genlist_item_class_new();
 	if(ugd->rename_desc_itc != NULL) {
-		ugd->rename_desc_itc->item_style = "multiline_sub";
+		ugd->rename_desc_itc->item_style = WFD_GENLIST_MULTILINE_TEXT_STYLE;
 		ugd->rename_desc_itc->func.text_get = __wfd_main_rename_desc_label_get;
 		ugd->rename_desc_itc->func.content_get = NULL;
 		ugd->rename_desc_itc->func.state_get = NULL;

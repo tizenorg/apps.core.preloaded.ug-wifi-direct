@@ -1,9 +1,8 @@
 #define RENAME_POPUP_ENTRY_2BUTTON_BG_MIN 0 374
-#define TOOLBAR_H 108
 #define INDICATOR_H 32
 #define TITLE_P_H 65
 #define TITLE_L_H 30
-#define TOOLBAR_H 108
+#define TOOLBAR_H 154
 #define POPUP_WITH_2_GL_ITEMS 200
 
 #define RESOURCE_IMAGE( FILE_NAME ) \
@@ -273,42 +272,8 @@ collections {
 		}
 	}
 
-	group { name: "main_layout";
+	group { name: "bottom_btn";
 		parts {
-			part { name: "bg";
-				type: RECT;
-				scale: 1;
-				description { state: "default" 0.0;
-				rel1 { relative: 0.0 0.0;}
-				rel2 { relative: 1.0 1.0; }
-				color: 0 0 0 0;
-				}
-				description { state: "horizontal" 0.0;
-					rel1 { relative: 0.0 0.0;}
-					rel2 { relative: 1.0 1.0; }
-					color: 0 0 0 0;
-				}
-			}
-			part {
-				name: "button_bg";
-				type: RECT;
-				scale: 1;
-				description {
-					state: "default" 0.0;
-					min: 400 TOOLBAR_H;
-					max: -1 TOOLBAR_H;
-					fixed: 0 0;
-					rel1 {
-						relative: 0.0 1.0;
-						offset: 0 -TOOLBAR_H;
-					}
-					rel2 {
-						relative: 1.0 1.0;
-						offset: 0 0;
-					}
-					color_class: "B062";
-				}
-			}
 			part {
 				name: "button.big";
 				type: SWALLOW;
@@ -375,32 +340,6 @@ collections {
 					inherit: "default" 0.0;
 				}
 			}
-			part { name: "genlist-bg";
-				type: RECT;
-				scale: 1;
-				description { state: "default" 0.0;
-					rel1 {
-						relative: 0.0 0.0;
-						to: "bg";
-					}
-					rel2 {
-						to: "bg";
-						offset: 0 -TOOLBAR_H;
-					}
-					color_class: "B041";
-				}
-				description { state: "horizontal" 0.0;
-					rel1 {
-						relative: 0.0 0.0;
-						to: "bg";
-					}
-					rel2 {
-						to: "bg";
-						offset: 0 -TOOLBAR_H;
-					}
-					color_class: "B041";
-				}
-			}
 			part { name: "elm.swallow.content";
 				type: SWALLOW;
 				scale: 1;
@@ -408,10 +347,8 @@ collections {
 					fixed: 0 0;
 					rel1 {
 						relative: 0.0 0.0;
-						to: "bg";
 					}
 					rel2 {
-						to: "bg";
 						offset: 0 -TOOLBAR_H;
 					}
 				}
@@ -419,10 +356,8 @@ collections {
 					fixed: 0 0;
 					rel1 {
 						relative: 0.0 0.0;
-						to: "bg";
 					}
 					rel2 {
-						to: "bg";
 						offset: 0 -TOOLBAR_H;
 					}
 				}

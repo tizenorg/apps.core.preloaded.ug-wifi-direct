@@ -26,6 +26,16 @@
 #define WFD_UG_EDJ_PATH  EDJDIR"/wfd_ug.edj"
 #define WFD_IMG_DIR "/usr/apps/setting-wifidirect-efl/res/images/ug-setting-wifidirect-efl"
 
+/* Genlist new style for Tizen 2.4 */
+#define WFD_GENLIST_1LINE_TEXT_STYLE "type1"
+#define WFD_GENLIST_1LINE_TEXT_ICON_STYLE "type1"
+#define WFD_GENLIST_2LINE_TOP_TEXT_STYLE "type1"
+#define WFD_GENLIST_2LINE_TOP_TEXT_ICON_STYLE "type1"
+#define WFD_GENLIST_2LINE_BOTTOM_TEXT_STYLE "type2"
+#define WFD_GENLIST_2LINE_BOTTOM_TEXT_ICON_STYLE "type2"
+#define WFD_GENLIST_MULTILINE_TEXT_STYLE "multiline"
+#define WFD_GENLIST_GROUP_INDEX_STYLE "group_index"
+
 /* Define icons */
 #define WFD_ICON_DEVICE_COMPUTER			"A09_device_computer.png"
 #define WFD_ICON_DEVICE_INPUT_DEVICE		"A09_device_input_device.png"

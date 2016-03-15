@@ -1,6 +1,3 @@
-msgid "IDS_WIFI_BODY_ENTER_YOUR_ID"
-msgstr "Մուտքագրեք Ձեր ID-ն:"
-
 msgid "IDS_COM_POP_MAXIMUM_NUMBER_OF_CHARACTERS_REACHED"
 msgstr "Հասել եք նիշերի առավելագույն քանակին:"
 
@@ -10,125 +7,11 @@ msgstr "%d ընտրվել է"
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "Ակտիվացնլ"
 
-msgid "IDS_WIFI_BODY_DOT"
-msgstr "."
-
-msgid "IDS_WIFI_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_PD_REACHED"
-msgstr "Հասել է նիշերի առավելագույն քանակին՝ %d"
-
-msgid "IDS_WIFI_TPOP_FAILED_TO_OBTAIN_IP_ADDRESS"
-msgstr "Չհաջողվեց ստանալ IP հասցե:"
-
-msgid "IDS_WIFI_TPOP_CONNECTED_TO_WI_FI_NETWORK_PS"
-msgstr "Միացել է %s Wi-Fi ցանցին"
-
-msgid "IDS_WIFI_TMBODY_NEVER_M_ALWAYS_OFF"
-msgstr "Երբեք"
-
-msgid "IDS_WIFI_TMBODY_DOWNLOAD_DATA_VIA_WI_FI_AND_4G"
-msgstr "Ներբեռնել տվյալներ. Wi-Fi և 4G"
-
-msgid "IDS_WIFI_TMBODY_DOWNLOAD_DATA_VIA_WI_FI_AND_3G"
-msgstr "Ներբեռնել տվյալներ. Wi-Fi և 3G"
-
-msgid "IDS_WIFI_SK_WPS_PIN"
-msgstr "WPS PIN"
-
-msgid "IDS_WIFI_SK_FORGET"
-msgstr "Մոռանալ"
-
 msgid "IDS_WIFI_SK_CANCEL"
 msgstr "Չեղարկել"
 
 msgid "IDS_WIFI_SK2_OK"
 msgstr "OK"
-
-msgid "IDS_WIFI_SBODY_CONNECTED_M_STATUS"
-msgstr "Միացված է"
-
-msgid "IDS_WIFI_SBODY_AUTOMATICALLY_SWITCH_BETWEEN_WI_FI_AND_MOBILE_NETWORKS_TO_MAINTAIN_A_STABLE_INTERNET_CONNECTION"
-msgstr "Ինքնաբերաբար փոխարկել Wi-Fi և շարժական կապի ցանցերի միջև՝ կայուն ինտերնետ-միացում պահպանելու համար:"
-
-msgid "IDS_WIFI_SBODY_AUTHENTICATION_ERROR_OCCURRED_M_STATUS"
-msgstr "Նույնականացման սխալ է տեղի ունեցել"
-
-msgid "IDS_WIFI_POP_WI_FI_AND_MOBILE_NETWORKS_WILL_BE_USED_TOGETHER_TO_DOWNLOAD_FILES_FASTER_MSG"
-msgstr "Wi-Fi և բջջային ցանցերը կօգտագործվեն միասին՝ նիշքերն արագ ներբեռնելու համար: Կարող են օգտագործել լրացուցիչ տվյալներ:"
-
-msgid "IDS_WIFI_POP_SMART_NETWORK_SWITCH_HAS_BEEN_ENABLED_MSG"
-msgstr "Ցանցերի խելացի փոխարկումն ընձեռվել է: Այս գործառույթն օգնում է պահպանել կայուն ինտերնետի միացում՝ փոխարկելով Wi-Fi և շարժական կապի ցանցերի միջև: Դա կարող է մեծացնել տվյալների օգտագործումը:"
-
-msgid "IDS_WIFI_POP_PS_IS_SELECTED_N_NIF_YOU_ARE_UNABLE_TO_CONNECT_TO_AN_AP_CHANGE_THE_SIM_CARD_USED_FOR_VERIFICATION_BY_GOING_TO_SIM_CARD_MANAGER_MSG"
-msgstr "Ընտրվել է %s:\n\nԵթե չեք կարողանում միանալ որևէ մուտքի կետի, փոխեք ստուգման նպատակով օգտագործվող SIM քարտ՝ գնալով SIM քարտի կառավարիչ: Հետո ընտրեք SIM քարտը, որն ուզում եք օգտագործել Շարժական տվյալների և մուլտիմեդիա հաղորդագրությունների համար: Այլընտրանքորեն, կարող եք ապասարել SIM քարտը, որն ուզում եք օգտագործել:"
-
-msgid "IDS_WIFI_POP_PRESS_WPS_ON_YOUR_WI_FI_ACCESS_POINT_WITHIN_PD_MINUTES"
-msgstr "Սեղմեք Ձեր Wi-Fi մուտքի կետի WPS-ը %d րոպե:"
-
-msgid "IDS_WIFI_POP_OPEN"
-msgstr "Բացել"
-
-msgid "IDS_WIFI_POP_NO_WI_FI_AP_FOUND"
-msgstr "Wi-Fi մատչման կետ չի գտնեվել:"
-
-msgid "IDS_WIFI_POP_CURRENT_NETWORK_WILL_BE_DISCONNECTED"
-msgstr "Ընթացիկ ցանցը կանջատվի:"
-
-msgid "IDS_WIFI_OPT_WPS"
-msgstr "WPS"
-
-msgid "IDS_WIFI_OPT_SHOW_PASSWORD"
-msgstr "Ցույց տալ գաղտնաբառը"
-
-msgid "IDS_WIFI_OPT_MOBILEACCESSSERVICEATCIVATION_ON"
-msgstr "Միացված է"
-
-msgid "IDS_WIFI_OPT_MOBILEACCESSSERVICEATCIVATION_OFF"
-msgstr "Անջատված է"
-
-msgid "IDS_WIFI_OPT_FORGET_NETWORK"
-msgstr "Մոռանալ ցանցը"
-
-msgid "IDS_WIFI_MBODY_SMART_NETWORK_SWITCH"
-msgstr "Ցանցերի խելացի փոխարկում"
-
-msgid "IDS_WIFI_MBODY_SIGNAL_STRENGTH_KOR_SKT"
-msgstr "Ազդանշանի ուժգնությունը"
-
-msgid "IDS_WIFI_MBODY_REDUCE_MOBILE_DATA_USAGE"
-msgstr "Իջեցնել բջջ. տվյլ-ի օգտ-ը"
-
-msgid "IDS_WIFI_MBODY_PRIORITISE_SPEED"
-msgstr "Առաջնահերթ արագություն"
-
-msgid "IDS_WIFI_MBODY_NETWORK_BONDING"
-msgstr "Ցանցի կապում"
-
-msgid "IDS_WIFI_HEADER_WI_FI_NETWORK_INFO_ABB"
-msgstr "Տեղեկ. Wi-Fi ցանցի մասին"
-
-msgid "IDS_WIFI_HEADER_SELECT_WPS_METHOD_ABB"
-msgstr "Ընտրել WPS եղանակ"
-
-msgid "IDS_WIFI_HEADER_PROXY_ADDRESS"
-msgstr "Պրոքսիի հասցե"
-
-msgid "IDS_WIFI_HEADER_PASSWORD"
-msgstr "Գաղտնաբառ"
-
-msgid "IDS_WIFI_HEADER_ENTER_PASSWORD"
-msgstr "Մուտքագրեք գաղտնաբառը:"
-
-msgid "IDS_WIFI_BUTTON_WPS_BUTTON"
-msgstr "WPS կոճակ"
-
-msgid "IDS_WIFI_BUTTON_SCAN"
-msgstr "Զննել"
-
-msgid "IDS_WIFI_BUTTON_FIND_HIDDEN_NETWORK"
-msgstr "Փնտրել թաքնված ցանց"
-
-msgid "IDS_WIFI_BODY_WI_FI_NETWORKS_AVAILABLE_ABB"
-msgstr "Առկա են Wi-Fi ցանցեր:"
 
 msgid "IDS_WIFI_BODY_WI_FI_DIRECT_ABB"
 msgstr "Wi-Fi Direct"
@@ -136,116 +19,14 @@ msgstr "Wi-Fi Direct"
 msgid "IDS_WIFI_BODY_WI_FI"
 msgstr "Wi-Fi"
 
-msgid "IDS_WIFI_BODY_WHILE_CHARGING_ONLY_ABB"
-msgstr "Միայն լիցքավորման ընթացքում"
-
-msgid "IDS_WIFI_BODY_WEAK_M_STRENGTH"
-msgstr "Թույլ"
-
-msgid "IDS_WIFI_BODY_USER_CERTIFICATE_ABB"
-msgstr "Օգտվողի վկայական"
-
-msgid "IDS_WIFI_BODY_UNSPECIFIED"
-msgstr "Սահմանված չէ"
-
-msgid "IDS_WIFI_BODY_UNKNOWN"
-msgstr "Անհայտ"
-
-msgid "IDS_WIFI_BODY_TO_DOWNLOAD_LARGE_FILES_FASTER_USE_WI_FI_AND_MOBILE_NETWORKS_TOGETHER_T_HELP"
-msgstr "Մեծ նիշքերն արագ ներբեռնելու համար օգտագործեք Wi-Fi և բջջային ցանցերը միասին:"
-
-msgid "IDS_WIFI_BODY_SUBNET_MASK"
-msgstr "Ենթացանցի դիմակ"
-
-msgid "IDS_WIFI_BODY_STATIC_IP"
-msgstr "Ստատիկ IP"
-
-msgid "IDS_WIFI_BODY_SSID"
-msgstr "SSID"
-
-msgid "IDS_WIFI_BODY_SORT_BY"
-msgstr "Տեսակավորել ըստ"
-
-msgid "IDS_WIFI_BODY_SCANNING_ING"
-msgstr "Սկանավորում է..."
-
-msgid "IDS_WIFI_BODY_RECEIVE_NOTIFICATIONS_WHEN_NETWORKS_ARE_AVAILABLE"
-msgstr "Ստանալ ծանուցումներ ցանցերի մատչելիության մասին"
-
-msgid "IDS_WIFI_BODY_PROXY_PORT"
-msgstr "Պրոքսիի պորտ"
-
-msgid "IDS_WIFI_BODY_NAME"
-msgstr "Անուն"
-
-msgid "IDS_WIFI_BODY_MAC_ADDRESS"
-msgstr "MAC հասցե"
-
-msgid "IDS_WIFI_BODY_IP_ADDRESS"
-msgstr "IP հասցե"
-
-msgid "IDS_WIFI_BODY_IDENTITY"
-msgstr "Ինքնություն"
-
-msgid "IDS_WIFI_BODY_GATEWAY_ADDRESS"
-msgstr "Ուղեմուտի հասցե"
-
-msgid "IDS_WIFI_BODY_ENTER_IDENTITY"
-msgstr "Մուտքագրել ինքնությունը:"
-
-msgid "IDS_WIFI_BODY_EAP_METHOD"
-msgstr "EAP եղանակ"
-
-msgid "IDS_WIFI_BODY_EAP"
-msgstr "EAP"
-
-msgid "IDS_WIFI_BODY_DNS_2"
-msgstr "DNS 2"
-
-msgid "IDS_WIFI_BODY_DNS_1"
-msgstr "DNS 1"
-
 msgid "IDS_WIFI_BODY_CONNECTING_ING"
 msgstr "Միացում..."
 
 msgid "IDS_WIFI_BODY_CONNECT"
 msgstr "Միանալ"
 
-msgid "IDS_WIFI_BODY_CONFIGURATION_SAVED_M_STATUS"
-msgstr "Պահպանվեց:"
-
-msgid "IDS_WIFI_BODY_A_WI_FI_NETWORK_HAS_BEEN_DETECTED_YOU_WILL_BE_CONNECTED"
-msgstr "Wi-Fi ցանց է հայտնաբերվել: Դուք կմիանաք ցանցին"
-
-msgid "IDS_WIFI_BODY_ADVANCED_SETTINGS"
-msgstr "Լրացուցիչ կայանքներ"
-
-msgid "IDS_COM_SK_NO"
-msgstr "Ոչ"
-
 msgid "IDS_COM_POP_SECURITY_POLICY_RESTRICTS_USE_OF_WI_FI"
 msgstr "Անվտանգության քաղաքականությունը սահմանափակում է Wi-Fi-ի օգտագործումը:"
-
-msgid "IDS_WIFI_SBODY_TAP_HERE_TO_CONNECT"
-msgstr "Միանալու համար թակեք այստեղ:"
-
-msgid "IDS_WIFI_POP_YOUR_DEVICE_IS_CONNECTING_TO_P1SS_HOWEVER_THIS_NETWORK_MAY_NOT_PROVIDE_INTERNET_ACCESS_MSG"
-msgstr "Ձեր սարքը կապակցվում է %1$s-ին: Սակայն այս ցանցը կարող է չապահովել կապակցումը Համացանցին:\nՀպեք OK՝ %1$s-ին այժմ կապակցված մնալու համար, սակայն նաև կանխեք Խելացի ցանցի փոխարկումը այս ցանցին հետագայում:"
-
-msgid "IDS_WIFI_POP_BOTH_WI_FI_AND_MOBILE_AP_CANNOT_BE_ACTIVATED_AT_THE_SAME_TIME_DEACTIVATE_MOBILE_AP_Q"
-msgstr "Wi-Fi-ն ու Mobile AP-ն չեն կարող միաժամանակ ակտիվացվել: Ապաակտիվացնե՞լ Mobile AP-ն:"
-
-msgid "IDS_WIFI_HEADER_SIGN_IN_TO_WI_FI_NETWORK_ABB"
-msgstr "Մտեք Wi-Fi ցանց"
-
-msgid "IDS_WIFI_HEADER_INTERNET_MAY_NOT_BE_AVAILABLE_ABB"
-msgstr "Համացանցը կարող է անմատչելի լինել"
-
-msgid "IDS_WIFI_BUTTON_DONT_ASK_AGAIN"
-msgstr "Այլևս չհարցնել"
-
-msgid "IDS_WIFI_BODY_OPEN_WI_FI_SETTINGS_ABB"
-msgstr "Բացել Wi-Fi կարգավորումները"
 
 msgid "IDS_BT_BODY_NO_DEVICES_FOUND_ABB"
 msgstr "Սարքեր չեն գտնվել"
@@ -268,9 +49,6 @@ msgstr "Իմ սարքի անունը"
 msgid "IDS_COM_POP_FAILED"
 msgstr "Ձախողվեց:"
 
-msgid "IDS_COM_POP_CANCEL"
-msgstr "Չեղարկել"
-
 msgid "IDS_COM_BODY_CONNECTED_M_STATUS"
 msgstr "Միացված"
 
@@ -283,12 +61,6 @@ msgstr "Սարքի անունները ցուցադրվում են, որպեսզ�
 msgid "IDS_ST_SK_RENAME"
 msgstr "Վրանվանել"
 
-msgid "IDS_ST_BODY_TAP_TO_CHANGE_SETTINGS"
-msgstr "Թակել՝ դրվածքները փոխելու համար"
-
-msgid "IDS_ST_POP_INVALID_CHARACTER_ENTERED_TRY_AGAIN"
-msgstr "Անվավեր նիշ է մուտքագրվել: Նորից փորձեք"
-
 msgid "IDS_ST_POP_NOT_SUPPORTED"
 msgstr "Չի սատարվում:"
 
@@ -297,12 +69,6 @@ msgstr "Հասանելի է"
 
 msgid "IDS_CHATON_HEADER_CONNECTION_FAILED_ABB2"
 msgstr "Միացումը ձախողվեց"
-
-msgid "IDS_WIFI_BODY_WI_FI_DIRECT_DEVICES"
-msgstr "Wi-Fi Direct սարքեր"
-
-msgid "IDS_WIFI_POP_TAP_TO_CONNECT"
-msgstr "Թակել միանալու համար:"
 
 msgid "IDS_WIFI_SK2_CANCEL_CONNECTION"
 msgstr "Դադարեցնել միացումը"
@@ -322,14 +88,8 @@ msgstr "Միացված է այլ սարքի հետ"
 msgid "IDS_WIFI_BODY_WAITING_FOR_CONNECTION_M_STATUS_ABB"
 msgstr "Սպասում է միացման"
 
-msgid "IDS_ST_POP_FAILED_TO_CONNECT"
-msgstr "Չհաջողվեց միանալ:"
-
 msgid "IDS_WIFI_BUTTON_MULTI_CONNECT"
 msgstr "Բազմակի միացում"
-
-msgid "IDS_WIFI_BUTTON_DISCONNECT_ALL"
-msgstr "Անջատել բոլորը"
 
 msgid "IDS_WIFI_SK_DISCONNECT"
 msgstr "Անջատել"
@@ -339,12 +99,6 @@ msgstr "Օգտագործումից հետո կասեցրեք Wi-Fi Direct-ը"
 
 msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_ABB"
 msgstr "Օգտ. հետո կասեցրեք Wi-Fi Direct-ը"
-
-msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY"
-msgstr "Օգտագործումից հետո կասեցրեք Wi-Fi Direct-ը՝ մարտկոցի լիցքը խնայելու համար"
-
-msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY_ABB"
-msgstr "Օգտ. հետո կասեցրեք Wi-Fi Direct՝ մրտկց խնայելու հր"
 
 msgid "IDS_WIFI_BODY_PS_IS_REQUESTING_A_WI_FI_DIRECT_CONNECTION_ALLOW_Q"
 msgstr "%s-ը Wi-Fi Direct միացում է պահանջում. թույլ տա՞լ:"
@@ -358,15 +112,6 @@ msgstr "Wi-Fi Direct օգտագործելը կանջատի ընթացիկ Wi-Fi 
 msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_CONNECTION_ABB"
 msgstr "Wi-Fi Direct-ի միացում"
 
-msgid "IDS_WIFI_MBODY_DISCONNECT_WI_FI_DIRECT"
-msgstr "Անջատել Wi-Fi Direct-ը"
-
-msgid "IDS_WIFI_POP_CANCEL_WI_FI_DIRECT_CONNECTION_Q"
-msgstr "Դադարեցնե՞լ Wi-Fi Direct-ի միացումը:"
-
-msgid "IDS_WIFI_POP_CONNECT_TO_OTHER_DEVICES_VIA_WI_FI_DIRECT"
-msgstr "Միանալ այլ սարքերի Wi-Fi Direct-ի միջոցով:"
-
 msgid "IDS_WIFI_POP_THERE_HAS_BEEN_NO_ACTIVITY_FOR_PD_MINUTES_SINCE_WI_FI_DIRECT_WAS_ENABLED_MSG"
 msgstr "%d րոպեի ընթացքում ոչ մի գործունեություն չի եղել Wi-Fi Direct-ի ընձեռումից ի վեր: Մարտկոցի կյանքը երկարացնելու համար Wi-Fi Direct-ը կասեցվել է:"
 
@@ -378,9 +123,6 @@ msgstr "Կանգնել"
 
 msgid "IDS_WIFI_POP_DEACTIVATION_FAILED"
 msgstr "Ապաակտիվացումը ձախողվեց:"
-
-msgid "IDS_WIMAX_POP_ACTIVATION_FAILED"
-msgstr "Ակտիվացումը ձախողվեց:"
 
 msgid "IDS_WIFI_POP_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_CONTINUE_Q"
 msgstr "Ընթացիկ կապակցումը կդադարեցվի։ Շարունակե՞լ"
@@ -403,14 +145,8 @@ msgstr "Միացել է %s-ին:"
 msgid "IDS_COM_BODY_PINS_DO_NOT_MATCH"
 msgstr "PIN-երը չեն համընկնում:"
 
-msgid "IDS_COM_POP_DEACTIVATING_ING"
-msgstr "Ապաակտիվացում..."
-
 msgid "IDS_WIFI_BODY_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_SO_THAT_SCANNING_CAN_START_CONTINUE_Q"
 msgstr "Ընթացիկ միացումը կանջատվի, որպեսզի հնարավոր լինի սկսել տեսածրումը. շարունակե՞լ:"
-
-msgid "IDS_WIFI_HEADER_DEVICES_THAT_FAILED_TO_CONNECT"
-msgstr "Սարքեր, որոնք չեն կարողացել միանալ"
 
 msgid "IDS_WIFI_POP_ENTER_PIN_TO_CONNECT_TO_PS"
 msgstr "Մուտքագրել PIN-ը՝ %s-ին միանալու համար:"
@@ -439,14 +175,8 @@ msgstr "PIN"
 msgid "IDS_WIFI_HEADER_UNABLE_TO_CONNECT_ABB2"
 msgstr "Անհնար է միանալ"
 
-msgid "IDS_WIFI_BUTTON_STOP_CONNECTION_ABB"
-msgstr "Կանգնեցնել միացում"
-
 msgid "IDS_WIFI_BUTTON_ALLOW"
 msgstr "Թույլատրել"
-
-msgid "IDS_COM_POP_ACTIVATING"
-msgstr "Ակտիվացվում է..."
 
 msgid "IDS_WIFI_SK_CONNECT"
 msgstr "Միացնել"
@@ -457,9 +187,6 @@ msgstr "Միացված է"
 msgid "IDS_STU_HEADER_ENTER_DEVICE_NAME"
 msgstr "Մուտքագրել սարքի անունը"
 
-msgid "IDS_ST_POP_CONNECTED_WITH_PD_DEVICES_VIA_WI_FI_DIRECT"
-msgstr "Միացված է %d սարքերի հետ Wi-Fi Direct-ի միջոցով:"
-
 msgid "IDS_WIFI_SBODY_NOT_CONNECTED_M_STATUS_ABB"
 msgstr "Միացված չէ"
 
@@ -468,4 +195,13 @@ msgstr "Այս Wi-Fi Direct միացումը կդադարեցվի:"
 
 msgid "IDS_WIFI_BODY_TO_SAVE_BATTERY_POWER_DISABLE_WI_FI_DIRECT_AFTER_USE"
 msgstr "Մարտկոցի էներգիան խնայելու համար կասեցրեք Wi-Fi Direct-ը այն օգտագործելուց հետո:"
+
+msgid "IDS_SMR_BODY_SCREEN_MIRRORING_IS_ENABLED"
+msgstr "Screen Mirroring-ն ընձեռված է:"
+
+msgid "IDS_SMR_POP_SCREEN_MIRRORING_HAS_BEEN_DISABLED"
+msgstr "Screen Mirroring-ը կասեցվել է:"
+
+msgid "IDS_WIFI_BODY_YOUR_DEVICE_HPS_IS_CURRENTLY_VISIBLE_TO_NEARBY_DEVICES"
+msgstr "Ձեր սարքը (%s) ներկա պահին տեսանելի է մոտակա սարքերին:"
 

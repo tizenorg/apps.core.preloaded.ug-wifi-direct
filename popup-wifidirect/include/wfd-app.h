@@ -30,6 +30,7 @@
 #define __WFD_SYS_POPAPP_MAIN_H__
 
 #include <wifi-direct.h>
+#include <wifi-direct-internal.h>
 
 #define PACKAGE "org.tizen.wifi-direct-popup"
 #define PACKAGE_ALLSHARE_CAST "org.tizen.allshare-cast-popup"
@@ -171,8 +172,6 @@ typedef struct {
 #endif
 	wifi_direct_state_e last_wfd_status;
 	int last_wfd_time;
-
-	Ecore_Event_Handler *rotate_event_handler;
 
 #ifdef WFD_SCREEN_MIRRORING_ENABLED
 	int screen_mirroring_state;

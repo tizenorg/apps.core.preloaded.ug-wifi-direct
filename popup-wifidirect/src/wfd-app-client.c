@@ -39,6 +39,8 @@
 
 #include <dd-display.h>
 
+#include <dbus/dbus.h>
+
 #include "wfd-app.h"
 #include "wfd-app-util.h"
 #include "wfd-app-strings.h"

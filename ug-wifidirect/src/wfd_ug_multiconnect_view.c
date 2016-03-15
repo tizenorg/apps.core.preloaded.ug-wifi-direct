@@ -23,7 +23,6 @@
 #include <Elementary.h>
 #include <vconf.h>
 #include <ui-gadget-module.h>
-#include <wifi-direct.h>
 
 #include "wfd_ug.h"
 #include "wfd_ug_view.h"
@@ -475,7 +474,7 @@ static char *_wfd_gl_device_label_get(void *data, Evas_Object *obj, const char *
 		return NULL;
 	}
 
-	if (!g_strcmp0(part, "elm.text.main.left")) {
+	if (!strcmp("elm.text", part)) {
 		if (strlen(peer->ssid) != 0) {
 			ssid = elm_entry_utf8_to_markup(peer->ssid);
 			if (NULL == ssid) {
@@ -556,23 +555,9 @@ static Evas_Object *_wfd_gl_device_icon_get(void *data, Evas_Object *obj, const 
 	Evas_Object *icon = NULL;
 	Evas_Object *icon_layout = NULL;
 
-
 	DBG(LOG_INFO, "Part %s", part);
 
-	if (!g_strcmp0(part, "elm.icon.2")) {
-		icon_layout = elm_layout_add(obj);
-		elm_layout_theme_set(icon_layout, "layout", "list/C/type.2", "default");
-		DBG(LOG_INFO, "Part %s", part);
-		icon = elm_check_add(icon_layout);
-		elm_object_style_set(icon, "default/genlist");
-		evas_object_propagate_events_set(icon, EINA_FALSE);
-		if (peer->dev_sel_state == EINA_TRUE) {
-			elm_check_state_set(icon, EINA_TRUE);
-		}
-		evas_object_smart_callback_add(icon,
-			"changed", _wfd_gl_multi_sel_cb, (void *)data);
-		elm_layout_content_set(icon_layout, "elm.swallow.content", icon);
-	}else if (!g_strcmp0(part, "elm.icon.1")) {
+	if (!strcmp("elm.swallow.icon", part)) {
 		DBG(LOG_INFO, "Part %s", part);
 		icon_layout = elm_layout_add(obj);
 		elm_layout_theme_set(icon_layout, "layout", "list/B/type.3", "default");
@@ -585,8 +570,24 @@ static Evas_Object *_wfd_gl_device_icon_get(void *data, Evas_Object *obj, const 
 		evas_object_show(icon);
 		evas_object_propagate_events_set(icon, EINA_FALSE);
 		elm_layout_content_set(icon_layout, "elm.swallow.content", icon);
+	} else if (!strcmp("elm.swallow.end", part)) {
+		icon_layout = elm_layout_add(obj);
+		elm_layout_theme_set(icon_layout, "layout", "list/C/type.2", "default");
+		DBG(LOG_INFO, "Part %s", part);
+		icon = elm_check_add(icon_layout);
+		elm_object_style_set(icon, "default/genlist");
+		evas_object_propagate_events_set(icon, EINA_FALSE);
+		if (peer->dev_sel_state == EINA_TRUE) {
+			elm_check_state_set(icon, EINA_TRUE);
+		}
+		evas_object_smart_callback_add(icon,
+			"changed", _wfd_gl_multi_sel_cb, (void *)data);
+		elm_layout_content_set(icon_layout, "elm.swallow.content", icon);
 	}
-	evas_object_show(icon_layout);
+
+	if (icon_layout)
+		evas_object_show(icon_layout);
+
 	return icon_layout;
 }
 
@@ -928,7 +929,7 @@ void wfd_create_multiconnect_view(struct ug_data *ugd)
 		return;
 	}
 
-	device_itc.item_style = "1line";
+	device_itc.item_style = WFD_GENLIST_1LINE_TEXT_ICON_STYLE;
 	device_itc.func.text_get = _wfd_gl_device_label_get;
 	device_itc.func.content_get = _wfd_gl_device_icon_get;
 	device_itc.func.state_get = NULL;
@@ -936,7 +937,7 @@ void wfd_create_multiconnect_view(struct ug_data *ugd)
 
 	/* Create layout */
 	layout = elm_layout_add(ugd->naviframe);
-	elm_layout_file_set(layout, WFD_UG_EDJ_PATH, "main_layout");
+	elm_layout_file_set(layout, WFD_UG_EDJ_PATH, "bottom_btn");
 	ugd->multiconn_layout = layout;
 
 
@@ -947,7 +948,7 @@ void wfd_create_multiconnect_view(struct ug_data *ugd)
 	evas_object_smart_callback_add(genlist, "unrealized", _gl_unrealized, ugd);
 
 	elm_object_part_content_set(layout, "elm.swallow.content", genlist);
-	elm_genlist_fx_mode_set(genlist, EINA_FALSE);
+	//elm_genlist_fx_mode_set(genlist, EINA_FALSE);
 	elm_genlist_homogeneous_set(genlist, EINA_TRUE);
 #if defined(GENLIST_REALIZATION_MOTE_SET)
 	elm_genlist_realization_mode_set(genlist, TRUE);

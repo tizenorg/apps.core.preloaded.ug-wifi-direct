@@ -1,6 +1,3 @@
-msgid "IDS_WIFI_BODY_ENTER_YOUR_ID"
-msgstr "Įveskite savo ID."
-
 msgid "IDS_COM_POP_MAXIMUM_NUMBER_OF_CHARACTERS_REACHED"
 msgstr "Pasiektas didžiausias simbolių skaičius."
 
@@ -10,125 +7,11 @@ msgstr "Pasirinkta: %d"
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "Įjungti"
 
-msgid "IDS_WIFI_BODY_DOT"
-msgstr "."
-
-msgid "IDS_WIFI_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_PD_REACHED"
-msgstr "Pasiektas didžiausias simbolių skaičius: %d"
-
-msgid "IDS_WIFI_TPOP_FAILED_TO_OBTAIN_IP_ADDRESS"
-msgstr "Nepavyko gauti IP adreso."
-
-msgid "IDS_WIFI_TPOP_CONNECTED_TO_WI_FI_NETWORK_PS"
-msgstr "Prisijungta prie „Wi-Fi“ tinklo %s"
-
-msgid "IDS_WIFI_TMBODY_NEVER_M_ALWAYS_OFF"
-msgstr "Niekada"
-
-msgid "IDS_WIFI_TMBODY_DOWNLOAD_DATA_VIA_WI_FI_AND_4G"
-msgstr "Siųstis duomenis per Wi-Fi, 4G"
-
-msgid "IDS_WIFI_TMBODY_DOWNLOAD_DATA_VIA_WI_FI_AND_3G"
-msgstr "Siųstis duomenis per Wi-Fi, 3G"
-
-msgid "IDS_WIFI_SK_WPS_PIN"
-msgstr "WPS PIN"
-
-msgid "IDS_WIFI_SK_FORGET"
-msgstr "Pamiršti"
-
 msgid "IDS_WIFI_SK_CANCEL"
 msgstr "Atšaukti"
 
 msgid "IDS_WIFI_SK2_OK"
 msgstr "Gerai"
-
-msgid "IDS_WIFI_SBODY_CONNECTED_M_STATUS"
-msgstr "Prisijungta"
-
-msgid "IDS_WIFI_SBODY_AUTOMATICALLY_SWITCH_BETWEEN_WI_FI_AND_MOBILE_NETWORKS_TO_MAINTAIN_A_STABLE_INTERNET_CONNECTION"
-msgstr "Automatiškai perjungti tarp mobiliųjų tinklų ir „Wi-Fi“, kad būtų palaikomas pastovus interneto ryšys."
-
-msgid "IDS_WIFI_SBODY_AUTHENTICATION_ERROR_OCCURRED_M_STATUS"
-msgstr "Įvyko tapatumo nustatymo klaida"
-
-msgid "IDS_WIFI_POP_WI_FI_AND_MOBILE_NETWORKS_WILL_BE_USED_TOGETHER_TO_DOWNLOAD_FILES_FASTER_MSG"
-msgstr "„Wi-Fi“ ir mobilieji tinklai bus naudojami kartu, kad failai būtų atsiųsti greičiau. Dėl to gali padidėti mobiliųjų duomenų naudojimas."
-
-msgid "IDS_WIFI_POP_SMART_NETWORK_SWITCH_HAS_BEEN_ENABLED_MSG"
-msgstr "Išmanusis tinklo jungiklis įjungtas. Ši funkcija padeda palaikyti stabilų interneto ryšį naudojant mobiliuosius ir „Wi-Fi“ tinklus. Dėl to gali padidėti duomenų naudojimas."
-
-msgid "IDS_WIFI_POP_PS_IS_SELECTED_N_NIF_YOU_ARE_UNABLE_TO_CONNECT_TO_AN_AP_CHANGE_THE_SIM_CARD_USED_FOR_VERIFICATION_BY_GOING_TO_SIM_CARD_MANAGER_MSG"
-msgstr "Pasirinkta %s.\n\nJei negalite prisijungti prie AP, nuėję į SIM kortelės tvarkyklę pakeiskite patvirtinimui naudojamą SIM kortelę. Tuomet pasirinkite SIM kortelę, kurią norite naudoti mobiliesiems duomenims ir multimedijos žinutėms. Taip pat galite išimti SIM kortelę, kurios nenorite naudoti."
-
-msgid "IDS_WIFI_POP_PRESS_WPS_ON_YOUR_WI_FI_ACCESS_POINT_WITHIN_PD_MINUTES"
-msgstr "Paspauskite WPS mygtuką „Wi-Fi“ prieigos taške per %d min."
-
-msgid "IDS_WIFI_POP_OPEN"
-msgstr "Atidaryti"
-
-msgid "IDS_WIFI_POP_NO_WI_FI_AP_FOUND"
-msgstr "„Wi-Fi“ AP nerasta."
-
-msgid "IDS_WIFI_POP_CURRENT_NETWORK_WILL_BE_DISCONNECTED"
-msgstr "Dabartinis tinklas bus atjungtas."
-
-msgid "IDS_WIFI_OPT_WPS"
-msgstr "WPS"
-
-msgid "IDS_WIFI_OPT_SHOW_PASSWORD"
-msgstr "Rodyti slaptažodį"
-
-msgid "IDS_WIFI_OPT_MOBILEACCESSSERVICEATCIVATION_ON"
-msgstr "Įjungta"
-
-msgid "IDS_WIFI_OPT_MOBILEACCESSSERVICEATCIVATION_OFF"
-msgstr "Išjungta"
-
-msgid "IDS_WIFI_OPT_FORGET_NETWORK"
-msgstr "Pamiršti tinklą"
-
-msgid "IDS_WIFI_MBODY_SMART_NETWORK_SWITCH"
-msgstr "Išmanus tinklo jungiklis"
-
-msgid "IDS_WIFI_MBODY_SIGNAL_STRENGTH_KOR_SKT"
-msgstr "Signalo stiprumas"
-
-msgid "IDS_WIFI_MBODY_REDUCE_MOBILE_DATA_USAGE"
-msgstr "Mažint.mob.duom.naudojimą"
-
-msgid "IDS_WIFI_MBODY_PRIORITISE_SPEED"
-msgstr "Suteikti pirmen. greičiui"
-
-msgid "IDS_WIFI_MBODY_NETWORK_BONDING"
-msgstr "Tinklo ryšys"
-
-msgid "IDS_WIFI_HEADER_WI_FI_NETWORK_INFO_ABB"
-msgstr "„Wi-Fi“ tinklo informacija"
-
-msgid "IDS_WIFI_HEADER_SELECT_WPS_METHOD_ABB"
-msgstr "Pasirinkite WPS metodą"
-
-msgid "IDS_WIFI_HEADER_PROXY_ADDRESS"
-msgstr "Proxy serverio adresas"
-
-msgid "IDS_WIFI_HEADER_PASSWORD"
-msgstr "Slaptažodis"
-
-msgid "IDS_WIFI_HEADER_ENTER_PASSWORD"
-msgstr "Įvesti slaptažodį."
-
-msgid "IDS_WIFI_BUTTON_WPS_BUTTON"
-msgstr "WPS mygtuk."
-
-msgid "IDS_WIFI_BUTTON_SCAN"
-msgstr "Skenuoti"
-
-msgid "IDS_WIFI_BUTTON_FIND_HIDDEN_NETWORK"
-msgstr "Ieškoti slepiamo tinklo"
-
-msgid "IDS_WIFI_BODY_WI_FI_NETWORKS_AVAILABLE_ABB"
-msgstr "Aptikti „Wi-Fi“ tinklai."
 
 msgid "IDS_WIFI_BODY_WI_FI_DIRECT_ABB"
 msgstr "„Wi-Fi Direct“"
@@ -136,116 +19,14 @@ msgstr "„Wi-Fi Direct“"
 msgid "IDS_WIFI_BODY_WI_FI"
 msgstr "Wi-Fi"
 
-msgid "IDS_WIFI_BODY_WHILE_CHARGING_ONLY_ABB"
-msgstr "Tik kraunant"
-
-msgid "IDS_WIFI_BODY_WEAK_M_STRENGTH"
-msgstr "Silpnas"
-
-msgid "IDS_WIFI_BODY_USER_CERTIFICATE_ABB"
-msgstr "Naud. sertifik."
-
-msgid "IDS_WIFI_BODY_UNSPECIFIED"
-msgstr "Nenurodytas"
-
-msgid "IDS_WIFI_BODY_UNKNOWN"
-msgstr "Nežinomas"
-
-msgid "IDS_WIFI_BODY_TO_DOWNLOAD_LARGE_FILES_FASTER_USE_WI_FI_AND_MOBILE_NETWORKS_TOGETHER_T_HELP"
-msgstr "Norėdami greičiau atsisiųsti didelius failus, „Wi-Fi“ ir mobiliuosius tinklus naudokite kartu."
-
-msgid "IDS_WIFI_BODY_SUBNET_MASK"
-msgstr "Potinklio maskuotė"
-
-msgid "IDS_WIFI_BODY_STATIC_IP"
-msgstr "Statinis IP"
-
-msgid "IDS_WIFI_BODY_SSID"
-msgstr "SSID"
-
-msgid "IDS_WIFI_BODY_SORT_BY"
-msgstr "Rūšiuoti pagal"
-
-msgid "IDS_WIFI_BODY_SCANNING_ING"
-msgstr "Ieškoma..."
-
-msgid "IDS_WIFI_BODY_RECEIVE_NOTIFICATIONS_WHEN_NETWORKS_ARE_AVAILABLE"
-msgstr "Gauti pranešimus, kai tinklas pasiekiamas"
-
-msgid "IDS_WIFI_BODY_PROXY_PORT"
-msgstr "Proxy prievadas"
-
-msgid "IDS_WIFI_BODY_NAME"
-msgstr "Vardas"
-
-msgid "IDS_WIFI_BODY_MAC_ADDRESS"
-msgstr "MAC adresas"
-
-msgid "IDS_WIFI_BODY_IP_ADDRESS"
-msgstr "IP adresas"
-
-msgid "IDS_WIFI_BODY_IDENTITY"
-msgstr "Tapatybė"
-
-msgid "IDS_WIFI_BODY_GATEWAY_ADDRESS"
-msgstr "Šliuzo adresas"
-
-msgid "IDS_WIFI_BODY_ENTER_IDENTITY"
-msgstr "Įveskite tapatybę."
-
-msgid "IDS_WIFI_BODY_EAP_METHOD"
-msgstr "EAP būdas"
-
-msgid "IDS_WIFI_BODY_EAP"
-msgstr "EAP"
-
-msgid "IDS_WIFI_BODY_DNS_2"
-msgstr "2 DNS"
-
-msgid "IDS_WIFI_BODY_DNS_1"
-msgstr "1 DNS"
-
 msgid "IDS_WIFI_BODY_CONNECTING_ING"
 msgstr "Jungiamasi..."
 
 msgid "IDS_WIFI_BODY_CONNECT"
 msgstr "Jungtis"
 
-msgid "IDS_WIFI_BODY_CONFIGURATION_SAVED_M_STATUS"
-msgstr "Išsaugota"
-
-msgid "IDS_WIFI_BODY_A_WI_FI_NETWORK_HAS_BEEN_DETECTED_YOU_WILL_BE_CONNECTED"
-msgstr "Aptiktas „Wi-Fi“ tinklas. Būsite prijungti."
-
-msgid "IDS_WIFI_BODY_ADVANCED_SETTINGS"
-msgstr "Papildomi nustatymai"
-
-msgid "IDS_COM_SK_NO"
-msgstr "Ne"
-
 msgid "IDS_COM_POP_SECURITY_POLICY_RESTRICTS_USE_OF_WI_FI"
 msgstr "Saugos strategija riboja naudojimąsi „Wi-Fi“."
-
-msgid "IDS_WIFI_SBODY_TAP_HERE_TO_CONNECT"
-msgstr "Bakstelėkite čia, norėdami prisijungti."
-
-msgid "IDS_WIFI_POP_YOUR_DEVICE_IS_CONNECTING_TO_P1SS_HOWEVER_THIS_NETWORK_MAY_NOT_PROVIDE_INTERNET_ACCESS_MSG"
-msgstr "Jūsų įrenginys jungiasi prie %1$s. Gali būti, kad šis tinklas neteikia interneto prieigos.\nBakstelėkite „Gerai“ ir likite prisijungę prie %1$s dabar, bet neleiskite išmaniajam tinklo jungikliui jungtis prie šio tinklo ateityje."
-
-msgid "IDS_WIFI_POP_BOTH_WI_FI_AND_MOBILE_AP_CANNOT_BE_ACTIVATED_AT_THE_SAME_TIME_DEACTIVATE_MOBILE_AP_Q"
-msgstr "Tuo pat metu negalima suaktyvinti ir „Wi-Fi“, ir „Mobile AP“. Išjungti „Mobile AP“?"
-
-msgid "IDS_WIFI_HEADER_SIGN_IN_TO_WI_FI_NETWORK_ABB"
-msgstr "Prisijungti prie „Wi-Fi“"
-
-msgid "IDS_WIFI_HEADER_INTERNET_MAY_NOT_BE_AVAILABLE_ABB"
-msgstr "Internetas gali būti nepasiek."
-
-msgid "IDS_WIFI_BUTTON_DONT_ASK_AGAIN"
-msgstr "Kitą kartą neklausti"
-
-msgid "IDS_WIFI_BODY_OPEN_WI_FI_SETTINGS_ABB"
-msgstr "Atidaryti „Wi-Fi“ nustatymus"
 
 msgid "IDS_BT_BODY_NO_DEVICES_FOUND_ABB"
 msgstr "Įrenginių nerasta"
@@ -268,9 +49,6 @@ msgstr "Mano įrenginio pavadinimas"
 msgid "IDS_COM_POP_FAILED"
 msgstr "Nepavyko."
 
-msgid "IDS_COM_POP_CANCEL"
-msgstr "Atšaukti"
-
 msgid "IDS_COM_BODY_CONNECTED_M_STATUS"
 msgstr "Prisijungta"
 
@@ -283,12 +61,6 @@ msgstr "Įrenginių pavadinimai rodomi, kad būtų galima išskirti kiekvieną �
 msgid "IDS_ST_SK_RENAME"
 msgstr "Pervardyti"
 
-msgid "IDS_ST_BODY_TAP_TO_CHANGE_SETTINGS"
-msgstr "Bakstelėkite ir keiskite nustatymus"
-
-msgid "IDS_ST_POP_INVALID_CHARACTER_ENTERED_TRY_AGAIN"
-msgstr "Įvestas neteisingas simbolis. Bandykite vėl"
-
 msgid "IDS_ST_POP_NOT_SUPPORTED"
 msgstr "Nepalaikoma."
 
@@ -297,12 +69,6 @@ msgstr "Prieinama"
 
 msgid "IDS_CHATON_HEADER_CONNECTION_FAILED_ABB2"
 msgstr "Nepavyko prisijungti"
-
-msgid "IDS_WIFI_BODY_WI_FI_DIRECT_DEVICES"
-msgstr "„Wi-Fi Direct“ įrenginiai"
-
-msgid "IDS_WIFI_POP_TAP_TO_CONNECT"
-msgstr "Spustelėkite, kad prisijungtumėte."
 
 msgid "IDS_WIFI_SK2_CANCEL_CONNECTION"
 msgstr "Atšaukti ryšį"
@@ -322,14 +88,8 @@ msgstr "Prijungta prie kito įrenginio"
 msgid "IDS_WIFI_BODY_WAITING_FOR_CONNECTION_M_STATUS_ABB"
 msgstr "Laukiama prisijungimo"
 
-msgid "IDS_ST_POP_FAILED_TO_CONNECT"
-msgstr "Nepavyko sujungti."
-
 msgid "IDS_WIFI_BUTTON_MULTI_CONNECT"
 msgstr "Kelių įreng. prijungim."
-
-msgid "IDS_WIFI_BUTTON_DISCONNECT_ALL"
-msgstr "Atjungti visus"
 
 msgid "IDS_WIFI_SK_DISCONNECT"
 msgstr "Atjungti"
@@ -339,12 +99,6 @@ msgstr "Panaudojus išjungti „Wi-Fi Direct“"
 
 msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_ABB"
 msgstr "Po naud. išjunkite „Wi-Fi Direct“"
-
-msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY"
-msgstr "Taupyti akumuliatoriaus energiją ir panaudojus išjungti „Wi-Fi Direct“"
-
-msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY_ABB"
-msgstr "Taupyk. akum.energ. ir po naud. išj.„Wi-Fi Direct“"
 
 msgid "IDS_WIFI_BODY_PS_IS_REQUESTING_A_WI_FI_DIRECT_CONNECTION_ALLOW_Q"
 msgstr "%s reikia „Wi-Fi Direct“ ryšio. Leisti?"
@@ -358,15 +112,6 @@ msgstr "Naudojant „Wi-Fi Direct“ bus atjungtas esamas „Wi-Fi“ siejimas. 
 msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_CONNECTION_ABB"
 msgstr "„Wi-Fi Direct“ ryšys"
 
-msgid "IDS_WIFI_MBODY_DISCONNECT_WI_FI_DIRECT"
-msgstr "Atjungti „Wi-Fi Direct“"
-
-msgid "IDS_WIFI_POP_CANCEL_WI_FI_DIRECT_CONNECTION_Q"
-msgstr "Atšaukti „Wi-Fi Direct“ ryšį?"
-
-msgid "IDS_WIFI_POP_CONNECT_TO_OTHER_DEVICES_VIA_WI_FI_DIRECT"
-msgstr "Prisijungti prie kitų įrenginių per „Wi-Fi Direct“."
-
 msgid "IDS_WIFI_POP_THERE_HAS_BEEN_NO_ACTIVITY_FOR_PD_MINUTES_SINCE_WI_FI_DIRECT_WAS_ENABLED_MSG"
 msgstr "Nuo to laiko, kai buvo įjungta „Wi-Fi Direct“, %d min. neatliktas joks veiksmas. „Wi-Fi Direct“ išjungtas, kad ilgiau veiktų akumuliatorius."
 
@@ -378,9 +123,6 @@ msgstr "Stabdyti"
 
 msgid "IDS_WIFI_POP_DEACTIVATION_FAILED"
 msgstr "Išjungti nepavyko."
-
-msgid "IDS_WIMAX_POP_ACTIVATION_FAILED"
-msgstr "Aktyvinti nepavyko."
 
 msgid "IDS_WIFI_POP_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_CONTINUE_Q"
 msgstr "Dabartinis ryšys bus išjungtas. Tęsti?"
@@ -403,14 +145,8 @@ msgstr "Prisijungta prie %s."
 msgid "IDS_COM_BODY_PINS_DO_NOT_MATCH"
 msgstr "PIN kodai neatitinka."
 
-msgid "IDS_COM_POP_DEACTIVATING_ING"
-msgstr "Išjungiama..."
-
 msgid "IDS_WIFI_BODY_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_SO_THAT_SCANNING_CAN_START_CONTINUE_Q"
 msgstr "Dabartinis ryšys bus atjungtas, kad būtų galima pradėti paiešką. Tęsti?"
-
-msgid "IDS_WIFI_HEADER_DEVICES_THAT_FAILED_TO_CONNECT"
-msgstr "Įrenginiai, kurių nepavyko prijungti"
 
 msgid "IDS_WIFI_POP_ENTER_PIN_TO_CONNECT_TO_PS"
 msgstr "Norėdami prisijungti prie „%s“, įveskite PIN kodą."
@@ -439,14 +175,8 @@ msgstr "PIN kodas"
 msgid "IDS_WIFI_HEADER_UNABLE_TO_CONNECT_ABB2"
 msgstr "Neįmanoma prisijungti"
 
-msgid "IDS_WIFI_BUTTON_STOP_CONNECTION_ABB"
-msgstr "Stabdyti ryšį"
-
 msgid "IDS_WIFI_BUTTON_ALLOW"
 msgstr "Leisti"
-
-msgid "IDS_COM_POP_ACTIVATING"
-msgstr "Aktyvinama..."
 
 msgid "IDS_WIFI_SK_CONNECT"
 msgstr "Jungtis"
@@ -457,9 +187,6 @@ msgstr "Prisijungta."
 msgid "IDS_STU_HEADER_ENTER_DEVICE_NAME"
 msgstr "Įveskite įrenginio pavadinimą"
 
-msgid "IDS_ST_POP_CONNECTED_WITH_PD_DEVICES_VIA_WI_FI_DIRECT"
-msgstr "Prijungta prie %d įrenginių per „Wi-Fi Direct“."
-
 msgid "IDS_WIFI_SBODY_NOT_CONNECTED_M_STATUS_ABB"
 msgstr "Neprisijungta"
 
@@ -468,4 +195,13 @@ msgstr "Šis „Wi-Fi Direct“ ryšys bus nutrauktas."
 
 msgid "IDS_WIFI_BODY_TO_SAVE_BATTERY_POWER_DISABLE_WI_FI_DIRECT_AFTER_USE"
 msgstr "Baigę naudoti išjunkite „Wi-Fi Direct“ – taip bus taupoma akumuliatoriaus energija."
+
+msgid "IDS_SMR_BODY_SCREEN_MIRRORING_IS_ENABLED"
+msgstr "„Screen Mirroring“ įjungta."
+
+msgid "IDS_SMR_POP_SCREEN_MIRRORING_HAS_BEEN_DISABLED"
+msgstr "„Screen Mirroring“ buvo išjungta."
+
+msgid "IDS_WIFI_BODY_YOUR_DEVICE_HPS_IS_CURRENTLY_VISIBLE_TO_NEARBY_DEVICES"
+msgstr "Jūsų įrenginys (%s) šiuo metu yra matomas netoliese esantiems įrenginiams."
 

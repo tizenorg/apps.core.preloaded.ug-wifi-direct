@@ -27,7 +27,6 @@
 #include <Elementary.h>
 #include <vconf.h>
 #include <ui-gadget-module.h>
-#include <wifi-direct.h>
 
 #include "wfd_motion_control.h"
 #include "wfd_ug_view.h"

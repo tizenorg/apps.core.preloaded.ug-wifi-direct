@@ -32,7 +32,6 @@
 #include <ui-gadget-module.h>
 #include <app_control.h>
 
-#include <wifi-direct.h>
 #include "wfd_ug.h"
 #include "wfd_ug_view.h"
 #include "wfd_client.h"
@@ -118,7 +117,7 @@ static void __wfd_hotspot_mode_vconf_change_cb(keynode_t *key, void *data)
 
 	res = vconf_get_int(VCONFKEY_MOBILE_HOTSPOT_MODE, &hotspot_mode);
 	if (res) {
-		WDS_LOGE("Failed to get vconf value for PLMN(%d)", res);
+		DBG(LOG_INFO, "Failed to get vconf value for PLMN(%d)", res);
 		return;
 	}
 	DBG(LOG_INFO, "__wfd_hotspot_mode_vconf_change_cb mode %d", hotspot_mode);
@@ -321,8 +320,11 @@ static void *on_create(ui_gadget_h ug, enum ug_mode mode, app_control_h control,
 		return NULL;
 	}
 
-	elm_win_wm_rotation_available_rotations_set(ugd->win, rots, 1);
-
+	/* set rotation */
+	if (elm_win_wm_rotation_supported_get(ugd->win)) {
+		int rots[4] = {0, 90, 180, 270};
+		elm_win_wm_rotation_available_rotations_set(ugd->win, (const int *)(&rots), 4);
+	}
 
 	/* check the input parameters from app at first */
 	ugd->wfds = NULL;

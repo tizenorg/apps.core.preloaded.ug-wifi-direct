@@ -28,7 +28,7 @@
 #include <tethering.h>
 
 #include <wifi-direct.h>
-#include <efl-assist/efl_assist.h>
+#include <wifi-direct-internal.h>
 
 #include <glib-object.h>
 #include <gio/gio.h>
@@ -185,6 +185,7 @@ struct ug_data {
 	Evas_Object *win;
 	Evas_Object *bg;
 	Evas_Object *layout;
+	Evas_Object *button_layout;
 	Evas_Object *naviframe;
 	Elm_Object_Item *navi_item;
 	Elm_Object_Item *multi_navi_item;

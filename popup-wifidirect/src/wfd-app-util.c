@@ -36,6 +36,7 @@
 #include <notification_internal.h>
 #include <notification_text_domain.h>
 #include <bundle_internal.h>
+#include <app_control.h>
 
 #include <wifi-direct.h>
 
@@ -565,7 +566,7 @@ static Eina_Bool _wfd_hard_key_down_cb(void *data, int type, void *event)
 		return EINA_FALSE;
 	}
 
-	if (!strcmp(ev->keyname, KEY_SELECT)) {
+	if (!strcmp(ev->keyname, "XF86Home")) {
 		WFD_APP_LOG(WFD_APP_LOG_HIGH, "[KEY]KEY_SELECT pressed");
 		WFD_APP_LOG(WFD_APP_LOG_HIGH, "Mac : %s", ad->mac_addr_connecting);
 
@@ -871,7 +872,6 @@ void wfd_app_util_add_wfd_turn_off_notification(void *user_data)
 	ad->noti_wifi_direct_connected = (notification_h) notification_create(NOTIFICATION_TYPE_ONGOING);
 	WFD_RET_IF(NULL == ad->noti_wifi_direct_connected, "NULL parameters.\n");
 
-	bundle *b = NULL;
 	app_control_h control;
 	res = app_control_create(&control);
 	WFD_RET_IF(res != APP_CONTROL_ERROR_NONE, "app_control_create() return error : %d", res);

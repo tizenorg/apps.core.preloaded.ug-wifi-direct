@@ -1,6 +1,3 @@
-msgid "IDS_WIFI_BODY_ENTER_YOUR_ID"
-msgstr "Въведете вашия ИД."
-
 msgid "IDS_COM_POP_MAXIMUM_NUMBER_OF_CHARACTERS_REACHED"
 msgstr "Достигнат максимален брой знаци."
 
@@ -10,125 +7,11 @@ msgstr "%d избрани"
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "Разрешаване"
 
-msgid "IDS_WIFI_BODY_DOT"
-msgstr "."
-
-msgid "IDS_WIFI_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_PD_REACHED"
-msgstr "Достигнат е максималният брой знаци %d."
-
-msgid "IDS_WIFI_TPOP_FAILED_TO_OBTAIN_IP_ADDRESS"
-msgstr "Неуспешно получаване на IP адрес."
-
-msgid "IDS_WIFI_TPOP_CONNECTED_TO_WI_FI_NETWORK_PS"
-msgstr "Свързано e към Wi-Fi мрежа %s."
-
-msgid "IDS_WIFI_TMBODY_NEVER_M_ALWAYS_OFF"
-msgstr "Никога"
-
-msgid "IDS_WIFI_TMBODY_DOWNLOAD_DATA_VIA_WI_FI_AND_4G"
-msgstr "Изтег. на данни през Wi-Fi и 4G"
-
-msgid "IDS_WIFI_TMBODY_DOWNLOAD_DATA_VIA_WI_FI_AND_3G"
-msgstr "Изтег. на данни през Wi-Fi и 3G"
-
-msgid "IDS_WIFI_SK_WPS_PIN"
-msgstr "WPS PIN"
-
-msgid "IDS_WIFI_SK_FORGET"
-msgstr "Забравяне"
-
 msgid "IDS_WIFI_SK_CANCEL"
 msgstr "Отмени"
 
 msgid "IDS_WIFI_SK2_OK"
 msgstr "OK"
-
-msgid "IDS_WIFI_SBODY_CONNECTED_M_STATUS"
-msgstr "Свързано"
-
-msgid "IDS_WIFI_SBODY_AUTOMATICALLY_SWITCH_BETWEEN_WI_FI_AND_MOBILE_NETWORKS_TO_MAINTAIN_A_STABLE_INTERNET_CONNECTION"
-msgstr "За автоматично превключване между Wi-Fi и мобилни мрежи за поддържане на стабилна интернет връзка."
-
-msgid "IDS_WIFI_SBODY_AUTHENTICATION_ERROR_OCCURRED_M_STATUS"
-msgstr "Възникна грешка при удостоверяване"
-
-msgid "IDS_WIFI_POP_WI_FI_AND_MOBILE_NETWORKS_WILL_BE_USED_TOGETHER_TO_DOWNLOAD_FILES_FASTER_MSG"
-msgstr "Wi-Fi и мобилните мрежи ще се използват заедно за по-бързо изтегляне на файлове. Това може да увеличи вашето потребление на мобилни данни."
-
-msgid "IDS_WIFI_POP_SMART_NETWORK_SWITCH_HAS_BEEN_ENABLED_MSG"
-msgstr "Превключване на умна мрежа е активирано. Тази функция помага да се запази стабилна интернет връзка, като превключва между мобилна и Wi-Fi мрежа. Това може да увеличи потреблението на мобилни данни."
-
-msgid "IDS_WIFI_POP_PS_IS_SELECTED_N_NIF_YOU_ARE_UNABLE_TO_CONNECT_TO_AN_AP_CHANGE_THE_SIM_CARD_USED_FOR_VERIFICATION_BY_GOING_TO_SIM_CARD_MANAGER_MSG"
-msgstr "%s е избрано.\n\nАко не можете да се свържете към точка за достъп, сменете SIM картата, използвана за потвърждаване, като отидете в „Диспечер на SIM карти“. След това изберете SIM картата, която искате да използвате за Мобилни данни и за мултимедийни съобщения. Също така можете да демонтирате SIM картата, която не искате да използвате."
-
-msgid "IDS_WIFI_POP_PRESS_WPS_ON_YOUR_WI_FI_ACCESS_POINT_WITHIN_PD_MINUTES"
-msgstr "Натиснете WPS на Wi-Fi точката за достъп в рамките на %d минути."
-
-msgid "IDS_WIFI_POP_OPEN"
-msgstr "Отваряне"
-
-msgid "IDS_WIFI_POP_NO_WI_FI_AP_FOUND"
-msgstr "Не е намерена Wi-Fi AP."
-
-msgid "IDS_WIFI_POP_CURRENT_NETWORK_WILL_BE_DISCONNECTED"
-msgstr "Връзката с текущата мрежа ще бъде прекъсната."
-
-msgid "IDS_WIFI_OPT_WPS"
-msgstr "WPS"
-
-msgid "IDS_WIFI_OPT_SHOW_PASSWORD"
-msgstr "Показване на паролата"
-
-msgid "IDS_WIFI_OPT_MOBILEACCESSSERVICEATCIVATION_ON"
-msgstr "Включено"
-
-msgid "IDS_WIFI_OPT_MOBILEACCESSSERVICEATCIVATION_OFF"
-msgstr "Изключено"
-
-msgid "IDS_WIFI_OPT_FORGET_NETWORK"
-msgstr "Забравяне на мрежата"
-
-msgid "IDS_WIFI_MBODY_SMART_NETWORK_SWITCH"
-msgstr "Превключв. на умна мрежа"
-
-msgid "IDS_WIFI_MBODY_SIGNAL_STRENGTH_KOR_SKT"
-msgstr "Сила на сигнала"
-
-msgid "IDS_WIFI_MBODY_REDUCE_MOBILE_DATA_USAGE"
-msgstr "Намал. използ. моб. данни"
-
-msgid "IDS_WIFI_MBODY_PRIORITISE_SPEED"
-msgstr "Приоритет на скоростта"
-
-msgid "IDS_WIFI_MBODY_NETWORK_BONDING"
-msgstr "Свързване на мрежа"
-
-msgid "IDS_WIFI_HEADER_WI_FI_NETWORK_INFO_ABB"
-msgstr "Информация за Wi-Fi мрежа"
-
-msgid "IDS_WIFI_HEADER_SELECT_WPS_METHOD_ABB"
-msgstr "Избор на WPS метод"
-
-msgid "IDS_WIFI_HEADER_PROXY_ADDRESS"
-msgstr "Адрес на прокси"
-
-msgid "IDS_WIFI_HEADER_PASSWORD"
-msgstr "Парола"
-
-msgid "IDS_WIFI_HEADER_ENTER_PASSWORD"
-msgstr "Въвеждане на парола"
-
-msgid "IDS_WIFI_BUTTON_WPS_BUTTON"
-msgstr "Бутон WPS"
-
-msgid "IDS_WIFI_BUTTON_SCAN"
-msgstr "Сканиране"
-
-msgid "IDS_WIFI_BUTTON_FIND_HIDDEN_NETWORK"
-msgstr "Намиране на скрита мрежа"
-
-msgid "IDS_WIFI_BODY_WI_FI_NETWORKS_AVAILABLE_ABB"
-msgstr "Има достъпни Wi-Fi мрежи."
 
 msgid "IDS_WIFI_BODY_WI_FI_DIRECT_ABB"
 msgstr "Wi-Fi Direct"
@@ -136,116 +19,14 @@ msgstr "Wi-Fi Direct"
 msgid "IDS_WIFI_BODY_WI_FI"
 msgstr "Wi-Fi"
 
-msgid "IDS_WIFI_BODY_WHILE_CHARGING_ONLY_ABB"
-msgstr "Само докато се зарежда"
-
-msgid "IDS_WIFI_BODY_WEAK_M_STRENGTH"
-msgstr "Слаб"
-
-msgid "IDS_WIFI_BODY_USER_CERTIFICATE_ABB"
-msgstr "Сертификат потр."
-
-msgid "IDS_WIFI_BODY_UNSPECIFIED"
-msgstr "Неопределен"
-
-msgid "IDS_WIFI_BODY_UNKNOWN"
-msgstr "Няма информация"
-
-msgid "IDS_WIFI_BODY_TO_DOWNLOAD_LARGE_FILES_FASTER_USE_WI_FI_AND_MOBILE_NETWORKS_TOGETHER_T_HELP"
-msgstr "За да изтегляте по-големи файлове по-бързо, използвайте Wi-Fi и мобилни мрежи за едно."
-
-msgid "IDS_WIFI_BODY_SUBNET_MASK"
-msgstr "Подмрежова маска"
-
-msgid "IDS_WIFI_BODY_STATIC_IP"
-msgstr "Статичен IP"
-
-msgid "IDS_WIFI_BODY_SSID"
-msgstr "SSID"
-
-msgid "IDS_WIFI_BODY_SORT_BY"
-msgstr "Сортиране по"
-
-msgid "IDS_WIFI_BODY_SCANNING_ING"
-msgstr "Сканиране..."
-
-msgid "IDS_WIFI_BODY_RECEIVE_NOTIFICATIONS_WHEN_NETWORKS_ARE_AVAILABLE"
-msgstr "Получаване на известия, когато има достъпни мрежи"
-
-msgid "IDS_WIFI_BODY_PROXY_PORT"
-msgstr "Порт за прокси"
-
-msgid "IDS_WIFI_BODY_NAME"
-msgstr "Име"
-
-msgid "IDS_WIFI_BODY_MAC_ADDRESS"
-msgstr "MAC адрес"
-
-msgid "IDS_WIFI_BODY_IP_ADDRESS"
-msgstr "IP адрес"
-
-msgid "IDS_WIFI_BODY_IDENTITY"
-msgstr "Самоличност"
-
-msgid "IDS_WIFI_BODY_GATEWAY_ADDRESS"
-msgstr "Адрес на шлюз"
-
-msgid "IDS_WIFI_BODY_ENTER_IDENTITY"
-msgstr "Въведете самоличност."
-
-msgid "IDS_WIFI_BODY_EAP_METHOD"
-msgstr "Метод EAP"
-
-msgid "IDS_WIFI_BODY_EAP"
-msgstr "EAP"
-
-msgid "IDS_WIFI_BODY_DNS_2"
-msgstr "DNS 2"
-
-msgid "IDS_WIFI_BODY_DNS_1"
-msgstr "DNS 1"
-
 msgid "IDS_WIFI_BODY_CONNECTING_ING"
 msgstr "Свързване..."
 
 msgid "IDS_WIFI_BODY_CONNECT"
 msgstr "Свързване"
 
-msgid "IDS_WIFI_BODY_CONFIGURATION_SAVED_M_STATUS"
-msgstr "Записан"
-
-msgid "IDS_WIFI_BODY_A_WI_FI_NETWORK_HAS_BEEN_DETECTED_YOU_WILL_BE_CONNECTED"
-msgstr "Открита е Wi-Fi връзка. Ще бъдете свързани."
-
-msgid "IDS_WIFI_BODY_ADVANCED_SETTINGS"
-msgstr "Разширени настройки"
-
-msgid "IDS_COM_SK_NO"
-msgstr "Не"
-
 msgid "IDS_COM_POP_SECURITY_POLICY_RESTRICTS_USE_OF_WI_FI"
 msgstr "Правилата за защита ограничават използването на Wi-Fi."
-
-msgid "IDS_WIFI_SBODY_TAP_HERE_TO_CONNECT"
-msgstr "Чукнете тук, за да се свържете."
-
-msgid "IDS_WIFI_POP_YOUR_DEVICE_IS_CONNECTING_TO_P1SS_HOWEVER_THIS_NETWORK_MAY_NOT_PROVIDE_INTERNET_ACCESS_MSG"
-msgstr "Устройството ви се свързва към %1$s. Все пак, тази мрежа може да не осигурява интернет достъп.\nЧукнете OK, за да останете свързани към %1$s сега, но също и да предотвратите свързване на Превключване на умна мрежа към тази мрежа в бъдеще."
-
-msgid "IDS_WIFI_POP_BOTH_WI_FI_AND_MOBILE_AP_CANNOT_BE_ACTIVATED_AT_THE_SAME_TIME_DEACTIVATE_MOBILE_AP_Q"
-msgstr "Wi-Fi и Mobile AP не могат да бъдат активирани едновременно.. Деактивиране на Mobile AP?"
-
-msgid "IDS_WIFI_HEADER_SIGN_IN_TO_WI_FI_NETWORK_ABB"
-msgstr "Влизане в Wi-Fi мрежа"
-
-msgid "IDS_WIFI_HEADER_INTERNET_MAY_NOT_BE_AVAILABLE_ABB"
-msgstr "Интернет може да не е достъпен"
-
-msgid "IDS_WIFI_BUTTON_DONT_ASK_AGAIN"
-msgstr "Не питай повече"
-
-msgid "IDS_WIFI_BODY_OPEN_WI_FI_SETTINGS_ABB"
-msgstr "Отворете настройките за Wi-Fi"
 
 msgid "IDS_BT_BODY_NO_DEVICES_FOUND_ABB"
 msgstr "Не са намерени устройства"
@@ -268,9 +49,6 @@ msgstr "Име на моето устройство"
 msgid "IDS_COM_POP_FAILED"
 msgstr "Неуспешно."
 
-msgid "IDS_COM_POP_CANCEL"
-msgstr "Отказ"
-
 msgid "IDS_COM_BODY_CONNECTED_M_STATUS"
 msgstr "Свързан"
 
@@ -283,12 +61,6 @@ msgstr "Имената на устройствата са показани, за
 msgid "IDS_ST_SK_RENAME"
 msgstr "Ново име"
 
-msgid "IDS_ST_BODY_TAP_TO_CHANGE_SETTINGS"
-msgstr "Чукнете, за да промените настройките"
-
-msgid "IDS_ST_POP_INVALID_CHARACTER_ENTERED_TRY_AGAIN"
-msgstr "Въведен е невалиден знак. Опитайте отново"
-
 msgid "IDS_ST_POP_NOT_SUPPORTED"
 msgstr "Не се поддържа."
 
@@ -297,12 +69,6 @@ msgstr "Достъпен"
 
 msgid "IDS_CHATON_HEADER_CONNECTION_FAILED_ABB2"
 msgstr "Свързването е неусп."
-
-msgid "IDS_WIFI_BODY_WI_FI_DIRECT_DEVICES"
-msgstr "Устройства за Wi-Fi Direct"
-
-msgid "IDS_WIFI_POP_TAP_TO_CONNECT"
-msgstr "Чукнете, за да се свържете."
 
 msgid "IDS_WIFI_SK2_CANCEL_CONNECTION"
 msgstr "Отмяна на връзката"
@@ -322,14 +88,8 @@ msgstr "Свързано с друго устройство"
 msgid "IDS_WIFI_BODY_WAITING_FOR_CONNECTION_M_STATUS_ABB"
 msgstr "Изчакване на връзка"
 
-msgid "IDS_ST_POP_FAILED_TO_CONNECT"
-msgstr "Неуспешно свързване."
-
 msgid "IDS_WIFI_BUTTON_MULTI_CONNECT"
 msgstr "Мултивръзка"
-
-msgid "IDS_WIFI_BUTTON_DISCONNECT_ALL"
-msgstr "Прекъсване на всички"
 
 msgid "IDS_WIFI_SK_DISCONNECT"
 msgstr "Изключване"
@@ -339,12 +99,6 @@ msgstr "Деактивиране на Wi-Fi Direct след използване
 
 msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_ABB"
 msgstr "Деакт. Wi-Fi Direct след използване"
-
-msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY"
-msgstr "Деактивиране на Wi-Fi Direct след използване, за да се пести батерията"
-
-msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY_ABB"
-msgstr "Деактив. Wi-Fi Direct след използв. за пест. бат."
 
 msgid "IDS_WIFI_BODY_PS_IS_REQUESTING_A_WI_FI_DIRECT_CONNECTION_ALLOW_Q"
 msgstr "%s иска разрешение за Wi-Fi Direct връзка. Разрешавате ли?"
@@ -358,15 +112,6 @@ msgstr "Използването на Wi-Fi Direct ще прекъсне тек�
 msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_CONNECTION_ABB"
 msgstr "Връзка Wi-Fi Direct"
 
-msgid "IDS_WIFI_MBODY_DISCONNECT_WI_FI_DIRECT"
-msgstr "Край връзка Wi-Fi Direct"
-
-msgid "IDS_WIFI_POP_CANCEL_WI_FI_DIRECT_CONNECTION_Q"
-msgstr "Отмяна на връзка Wi-Fi Direct?"
-
-msgid "IDS_WIFI_POP_CONNECT_TO_OTHER_DEVICES_VIA_WI_FI_DIRECT"
-msgstr "Свързване към други устройства през Wi-Fi Direct"
-
 msgid "IDS_WIFI_POP_THERE_HAS_BEEN_NO_ACTIVITY_FOR_PD_MINUTES_SINCE_WI_FI_DIRECT_WAS_ENABLED_MSG"
 msgstr "Не е имало никаква активност в продължение на %d минути от активирането на Wi-Fi Direct. За да се удължи животът на батерията, Wi-Fi Direct е деактивиран."
 
@@ -378,9 +123,6 @@ msgstr "Стоп"
 
 msgid "IDS_WIFI_POP_DEACTIVATION_FAILED"
 msgstr "Деактивирането e неуспешно."
-
-msgid "IDS_WIMAX_POP_ACTIVATION_FAILED"
-msgstr "Неуспешно активиране"
 
 msgid "IDS_WIFI_POP_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_CONTINUE_Q"
 msgstr "Текущата връзка ще бъде прекъсната. Продължаване?"
@@ -403,14 +145,8 @@ msgstr "Свързан с %s."
 msgid "IDS_COM_BODY_PINS_DO_NOT_MATCH"
 msgstr "PIN-овете не съвпадат."
 
-msgid "IDS_COM_POP_DEACTIVATING_ING"
-msgstr "Деактивиране..."
-
 msgid "IDS_WIFI_BODY_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_SO_THAT_SCANNING_CAN_START_CONTINUE_Q"
 msgstr "Текущата връзка ще бъде прекъсната, за да може да стартира сканирането. Продължавате ли?"
-
-msgid "IDS_WIFI_HEADER_DEVICES_THAT_FAILED_TO_CONNECT"
-msgstr "Устройства, които не са успели да се свържат"
 
 msgid "IDS_WIFI_POP_ENTER_PIN_TO_CONNECT_TO_PS"
 msgstr "Въведете PIN, за да се свържете с %s."
@@ -439,14 +175,8 @@ msgstr "PIN"
 msgid "IDS_WIFI_HEADER_UNABLE_TO_CONNECT_ABB2"
 msgstr "Не може да се свърже"
 
-msgid "IDS_WIFI_BUTTON_STOP_CONNECTION_ABB"
-msgstr "Край на връзката"
-
 msgid "IDS_WIFI_BUTTON_ALLOW"
 msgstr "Позволи"
-
-msgid "IDS_COM_POP_ACTIVATING"
-msgstr "Активиране..."
 
 msgid "IDS_WIFI_SK_CONNECT"
 msgstr "Свързване"
@@ -457,9 +187,6 @@ msgstr "Свързан."
 msgid "IDS_STU_HEADER_ENTER_DEVICE_NAME"
 msgstr "Въведете име на устройството"
 
-msgid "IDS_ST_POP_CONNECTED_WITH_PD_DEVICES_VIA_WI_FI_DIRECT"
-msgstr "Свързано с %d устройства през Wi-Fi Direct."
-
 msgid "IDS_WIFI_SBODY_NOT_CONNECTED_M_STATUS_ABB"
 msgstr "Не е свързано"
 
@@ -468,4 +195,13 @@ msgstr "Тази Wi-Fi Direct връзка ще бъде отменена."
 
 msgid "IDS_WIFI_BODY_TO_SAVE_BATTERY_POWER_DISABLE_WI_FI_DIRECT_AFTER_USE"
 msgstr "За да пестите енергията на батерията, деактивирайте Wi-Fi Direct след използване."
+
+msgid "IDS_SMR_BODY_SCREEN_MIRRORING_IS_ENABLED"
+msgstr "Screen Mirroring е активирано."
+
+msgid "IDS_SMR_POP_SCREEN_MIRRORING_HAS_BEEN_DISABLED"
+msgstr "Screen Mirroring е деактивирано."
+
+msgid "IDS_WIFI_BODY_YOUR_DEVICE_HPS_IS_CURRENTLY_VISIBLE_TO_NEARBY_DEVICES"
+msgstr "Устройството ви (%s) в момента е видимо за устройства наблизо."
 

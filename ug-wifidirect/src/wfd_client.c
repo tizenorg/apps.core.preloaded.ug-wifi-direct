@@ -30,8 +30,6 @@
 #include <network-cm-intf.h>
 #include <network-wifi-intf.h>
 
-#include <wifi-direct.h>
-
 #include "wfd_ug.h"
 #include "wfd_ug_view.h"
 #include "wfd_client.h"
@@ -489,11 +487,10 @@ void _activation_cb(int error_code, wifi_direct_device_state_e device_state, voi
 		 */
 		if (ugd->disconnect_btn) {
 			Evas_Object *content;
-			content = elm_object_part_content_unset(ugd->layout, "button.next");
+			content = elm_object_part_content_unset(ugd->button_layout, "button.next");
 			WFD_IF_DEL_OBJ(content);
 			ugd->disconnect_btn = NULL;
-			elm_object_part_content_set(ugd->layout, "button.big",
-			ugd->scan_toolbar);
+			elm_layout_content_set(ugd->button_layout, "button.big", ugd->scan_toolbar);
 		}
 
 		/* When connect is on ongoing and deactivte happened refresh scan */
@@ -956,7 +953,7 @@ void discover_cb(int error_code, wifi_direct_discovery_state_e discovery_state, 
 		ugd->wfd_discovery_status == WIFI_DIRECT_DISCOVERY_SOCIAL_CHANNEL_START) {
 		WFD_IF_DEL_ITEM(ugd->multi_connect_toolbar_item);
 		if (!ugd->conn_wfd_item) {
-			elm_object_part_content_set(ugd->layout, "button.big", ugd->scan_toolbar);
+			elm_layout_content_set(ugd->button_layout, "button.big", ugd->scan_toolbar);
 		}
 		wfd_ug_view_refresh_button(ugd->scan_toolbar, "IDS_WIFI_SK_STOP", TRUE);
 		if (ugd->multiconn_scan_stop_btn) {
@@ -1098,8 +1095,11 @@ void _connection_cb(int error_code, wifi_direct_connection_state_e connection_st
 			WFD_IF_DEL_OBJ(ugd->act_popup);
 
 			Evas_Object *content;
-			content = elm_object_part_content_unset(ugd->layout, "button.next");
+			content = elm_object_part_content_unset(ugd->button_layout, "button.next");
 			WFD_IF_DEL_OBJ(content);
+			content = elm_object_part_content_unset(ugd->button_layout, "button.prev");
+			evas_object_hide(content);
+
 			/* when disconnection, clear all the connected peers */
 			if (ugd->raw_connected_peer_cnt > 0) {
 				memset(ugd->raw_connected_peers, 0x00, ugd->raw_connected_peer_cnt*sizeof(device_type_s));

@@ -29,11 +29,9 @@
 #include <glib.h>
 
 #include <Elementary.h>
-#include <efl-assist/efl_assist.h>
 #include <vconf.h>
 #include <notification.h>
 #include <feedback.h>
-#include <wifi-direct.h>
 #include <efl_extension.h>
 
 #include "wfd-app.h"
@@ -84,11 +82,6 @@ static void __popup_resp_cb(void *data, Evas_Object * obj, void *event_info)
 	char msg[WFD_POP_STR_MAX_LEN] = {0};
 
 	WFD_APP_LOG(WFD_APP_LOG_HIGH, "popup resp : %d\n", resp);
-
-	if (ad->rotate_event_handler) {
-		ecore_event_handler_del(ad->rotate_event_handler);
-		ad->rotate_event_handler = NULL;
-	}
 
 	switch (resp) {
 	case /* MT */ WFD_POP_RESP_APRV_CONNECT_PBC_YES:
@@ -265,23 +258,6 @@ void wfd_destroy_popup()
 	return;
 }
 
-void __set_parent_rotate_angle(wfd_appdata_t *ad)
-{
-	__WFD_APP_FUNC_ENTER__;
-
-	int rots1[1] = {0};
-
-	if (ad == NULL || ad->win == NULL) {
-		WFD_APP_LOG(WFD_APP_LOG_ERROR, "Parameter NULL");
-		return;
-	}
-
-	elm_win_wm_rotation_available_rotations_set(ad->win, rots1, 1);
-
-	__WFD_APP_FUNC_EXIT__;
-	return;
-}
-
 /**
  *	This function let the app create a popup which includes no button
  *	@return   popup
@@ -297,13 +273,13 @@ static Evas_Object *wfd_draw_pop_type_a(Evas_Object * win, wfd_popup_t * pop)
 
 	popup = elm_popup_add(win);
 	elm_popup_align_set(popup, ELM_NOTIFY_ALIGN_FILL, 1.0);
-	eext_object_event_callback_add(popup, EA_CALLBACK_BACK, __popup_resp_cb, NULL);
+	eext_object_event_callback_add(popup, EEXT_CALLBACK_BACK, __popup_resp_cb, NULL);
 	evas_object_event_callback_add(popup, EVAS_CALLBACK_MOUSE_UP, mouseup_cb, ad);
 //	evas_object_event_callback_add(popup, EVAS_CALLBACK_KEY_DOWN, keydown_cb, ad);
 	evas_object_size_hint_weight_set(popup, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
 	elm_object_domain_translatable_text_set(popup, PACKAGE, pop->text);
 	elm_popup_timeout_set(popup, pop->timeout);
-	__set_parent_rotate_angle(ad);
+
 	evas_object_show(popup);
 	evas_object_show(win);
 
@@ -326,7 +302,7 @@ static Evas_Object *wfd_draw_pop_type_b(Evas_Object * win, wfd_popup_t * pop)
 
 	popup = elm_popup_add(win);
 	elm_popup_align_set(popup, ELM_NOTIFY_ALIGN_FILL, 1.0);
-	eext_object_event_callback_add(popup, EA_CALLBACK_BACK, __popup_resp_cb, (void *) pop->resp_data1);
+	eext_object_event_callback_add(popup, EEXT_CALLBACK_BACK, __popup_resp_cb, (void *) pop->resp_data1);
 	evas_object_event_callback_add(popup, EVAS_CALLBACK_MOUSE_UP, mouseup_cb, ad);
 //	evas_object_event_callback_add(popup, EVAS_CALLBACK_KEY_DOWN, keydown_cb, ad);
 	evas_object_size_hint_weight_set(popup, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
@@ -338,7 +314,6 @@ static Evas_Object *wfd_draw_pop_type_b(Evas_Object * win, wfd_popup_t * pop)
 	elm_object_part_content_set(popup, "button1", btn);
 	evas_object_smart_callback_add(btn, "clicked", __popup_resp_cb, (void *) pop->resp_data1);
 
-	__set_parent_rotate_angle(ad);
 	evas_object_show(popup);
 	evas_object_show(win);
 
@@ -361,7 +336,7 @@ static Evas_Object *wfd_draw_pop_type_c(Evas_Object * win, wfd_popup_t * pop)
 
 	popup = elm_popup_add(win);
 	elm_popup_align_set(popup, ELM_NOTIFY_ALIGN_FILL, 1.0);
-	eext_object_event_callback_add(popup, EA_CALLBACK_BACK, __popup_resp_cb, (void *) pop->resp_data2);
+	eext_object_event_callback_add(popup, EEXT_CALLBACK_BACK, __popup_resp_cb, (void *) pop->resp_data2);
 	evas_object_event_callback_add(popup, EVAS_CALLBACK_MOUSE_UP, mouseup_cb, ad);
 //	evas_object_event_callback_add(popup, EVAS_CALLBACK_KEY_DOWN, keydown_cb, ad);
 	evas_object_size_hint_weight_set(popup, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
@@ -383,7 +358,6 @@ static Evas_Object *wfd_draw_pop_type_c(Evas_Object * win, wfd_popup_t * pop)
 	evas_object_smart_callback_add(btn2, "clicked", __popup_resp_cb,
 		(void *) pop->resp_data1);
 
-	__set_parent_rotate_angle(ad);
 	evas_object_show(popup);
 	evas_object_show(win);
 
@@ -399,11 +373,6 @@ static void _wfd_ug_automatic_turn_off_popup_cb(void *data, Evas_Object *obj, vo
 	if (ad->popup) {
 		evas_object_del(ad->popup);
 		ad->popup = NULL;
-	}
-
-	if (ad->rotate_event_handler) {
-		ecore_event_handler_del(ad->rotate_event_handler);
-		ad->rotate_event_handler = NULL;
 	}
 
 	if (ad->win) {
@@ -424,7 +393,7 @@ Evas_Object *wfd_draw_pop_type_auto_deactivation(Evas_Object *win,  void *userda
 
 	popup = elm_popup_add(win);
 	elm_popup_align_set(popup, ELM_NOTIFY_ALIGN_FILL, 1.0);
-	eext_object_event_callback_add(popup, EA_CALLBACK_BACK, _wfd_ug_automatic_turn_off_popup_cb, userdata);
+	eext_object_event_callback_add(popup, EEXT_CALLBACK_BACK, _wfd_ug_automatic_turn_off_popup_cb, userdata);
 	evas_object_event_callback_add(popup, EVAS_CALLBACK_MOUSE_UP, mouseup_cb, ad);
 //	evas_object_event_callback_add(popup, EVAS_CALLBACK_KEY_DOWN, keydown_cb, ad);
 	evas_object_size_hint_weight_set(popup, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
@@ -440,7 +409,6 @@ Evas_Object *wfd_draw_pop_type_auto_deactivation(Evas_Object *win,  void *userda
 	elm_object_part_content_set(popup, "button1", btn);
 	evas_object_smart_callback_add(btn, "clicked", _wfd_ug_automatic_turn_off_popup_cb, userdata);
 
-	__set_parent_rotate_angle(ad);
 	evas_object_show(popup);
 	evas_object_show(win);
 
@@ -742,7 +710,7 @@ Evas_Object *wfd_draw_pop_type_display(Evas_Object * win, wfd_popup_t * pop)
 		elm_object_part_content_set(popup, "button1", btn2);
 		evas_object_smart_callback_add(btn2, "clicked", __popup_resp_cb,
 			(void *) pop->resp_data2);
-		eext_object_event_callback_add(popup, EA_CALLBACK_BACK, __popup_resp_cb, (void *) pop->resp_data2);
+		eext_object_event_callback_add(popup, EEXT_CALLBACK_BACK, __popup_resp_cb, (void *) pop->resp_data2);
 	}
 
 	if (pop->resp_data1 == WFD_POP_RESP_APRV_CONNECT_KEYPAD_YES || pop->resp_data1 == WFD_POP_RESP_APRV_CONNECT_PBC_YES ) {
@@ -753,11 +721,10 @@ Evas_Object *wfd_draw_pop_type_display(Evas_Object * win, wfd_popup_t * pop)
 		elm_object_part_content_set(popup, "button2", btn1);
 		evas_object_smart_callback_add(btn1, "clicked", __popup_resp_cb,
 			(void *) pop->resp_data1);
-		eext_object_event_callback_add(popup, EA_CALLBACK_BACK, __popup_resp_cb, (void *) pop->resp_data1);
+		eext_object_event_callback_add(popup, EEXT_CALLBACK_BACK, __popup_resp_cb, (void *) pop->resp_data1);
 	}
 
 	elm_object_content_set(popup, layout);
-	__set_parent_rotate_angle(ad);
 	evas_object_show(popup);
 	evas_object_show(win);
 
@@ -834,29 +801,32 @@ static char *__wfd_main_desc_label_get(void *data, Evas_Object *obj,
 		return NULL;
 	}
 	WFD_APP_LOG(WFD_APP_LOG_LOW, "wfd_rename desc\n");
+	char buf[WFD_POP_STR_MAX_LEN] = {0, };
 	char msg1[WFD_POP_STR_MAX_LEN] = {0, };
 	char msg2[WFD_POP_STR_MAX_LEN] = {0, };
-	char label_str[WFD_POP_STR_MAX_LEN] = {0, };
 	wfd_appdata_t *ad = wfd_get_appdata();
 	WFD_RETV_IF(ad == NULL, NULL, "Incorrect parameter(NULL)\n");
 	wfd_connection_info_s *connection = ad->connection;
 	WFD_RETV_IF(connection == NULL, NULL, "Incorrect parameter(NULL)\n");
 
-	if (!g_strcmp0(part, "elm.text.multiline")) {
+	if (!strcmp("elm.text.multiline", part)) {
 		if (keypad_popup_timeout > 0) {
 				ad->timeout = keypad_popup_timeout;
 		}
-		_replace_1PS_2PD((char *)msg1, sizeof(msg1),
+		_replace_1PS_2PD((char *)msg1, WFD_POP_STR_MAX_LEN,
 				_("IDS_ST_BODY_CONNECT_WITH_PS_IN_PD_SECS_ABB"),
 				connection->peer_name, ad->timeout);
 
-		snprintf(msg2, sizeof(msg2),
+		snprintf(msg2, WFD_POP_STR_MAX_LEN,
 				_("IDS_WIFI_POP_ENTER_PIN_TO_CONNECT_TO_PS"),
 				connection->peer_name);
-		snprintf(label_str, sizeof(label_str), "%s %s", msg1, msg2);
-		WFD_APP_LOG(WFD_APP_LOG_LOW, "string %s", label_str);
+
+		WFD_APP_LOG(WFD_APP_LOG_LOW, "string %s %s", msg1, msg2);
+		snprintf(buf, WFD_POP_STR_MAX_LEN,
+				"<font_size=30>%s %s</font_size>",
+				msg1, msg2);
 		__WFD_APP_FUNC_EXIT__;
-		return g_strdup(msg1);
+		return g_strdup(buf);
 	}
 	__WFD_APP_FUNC_EXIT__;
 	return NULL;
@@ -981,7 +951,7 @@ static char *__wfd_password_label(void *data, Evas_Object *obj, const char *part
 	}
 	WFD_APP_LOG(WFD_APP_LOG_LOW, "Part %s", part);
 
-	if (!g_strcmp0(part, "elm.text.main.right")) {
+	if (!strcmp("elm.text", part)) {
 		__WFD_APP_FUNC_EXIT__;
 		return g_strdup(" Show password");
 	}
@@ -1002,7 +972,7 @@ static Evas_Object *__wfd_password_check(void *data, Evas_Object *obj,
 
 	WFD_APP_LOG(WFD_APP_LOG_LOW, "Part %s", part);
 
-	if (!g_strcmp0(part, "elm.icon.left")) {
+	if (!strcmp("elm.swallow.icon", part)) {
 		check = elm_check_add(obj);
 		evas_object_propagate_events_set(check, EINA_FALSE);
 		evas_object_size_hint_align_set(check, EVAS_HINT_FILL, EVAS_HINT_FILL);
@@ -1042,7 +1012,7 @@ Evas_Object *wfd_draw_pop_type_keypad(Evas_Object * win, wfd_popup_t * pop)
 
 	pinpopup = elm_popup_add(ad->layout);
 	elm_popup_align_set(pinpopup, ELM_NOTIFY_ALIGN_FILL, 1.0);
-	eext_object_event_callback_add(pinpopup, EA_CALLBACK_BACK, eext_popup_back_cb,
+	eext_object_event_callback_add(pinpopup, EEXT_CALLBACK_BACK, eext_popup_back_cb,
 			NULL);
 	evas_object_size_hint_weight_set(pinpopup, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
 	elm_object_domain_translatable_part_text_set(pinpopup, "title,text",
@@ -1059,7 +1029,7 @@ Evas_Object *wfd_draw_pop_type_keypad(Evas_Object * win, wfd_popup_t * pop)
 	/* Entry genlist item */
 	ad->pin_desc_itc = elm_genlist_item_class_new();
 	if(ad->pin_desc_itc != NULL) {
-		ad->pin_desc_itc->item_style = "multiline_main";
+		ad->pin_desc_itc->item_style = WFD_GENLIST_MULTILINE_TEXT_STYLE;
 		ad->pin_desc_itc->func.text_get = __wfd_main_desc_label_get;
 		ad->pin_desc_itc->func.content_get = NULL;
 		ad->pin_desc_itc->func.state_get = NULL;
@@ -1090,7 +1060,7 @@ Evas_Object *wfd_draw_pop_type_keypad(Evas_Object * win, wfd_popup_t * pop)
 
 	ad->paswd_itc = elm_genlist_item_class_new();
 	if(ad->paswd_itc != NULL) {
-		ad->paswd_itc->item_style = "1line";
+		ad->paswd_itc->item_style = WFD_GENLIST_1LINE_TEXT_ICON_STYLE;
 		ad->paswd_itc->func.text_get = __wfd_password_label;
 		ad->paswd_itc->func.content_get = __wfd_password_check;
 		ad->paswd_itc->func.state_get = NULL;
@@ -1119,7 +1089,6 @@ Evas_Object *wfd_draw_pop_type_keypad(Evas_Object * win, wfd_popup_t * pop)
 	evas_object_show(genlist);
 	elm_object_content_set(pinpopup, genlist);
 
-	__set_parent_rotate_angle(ad);
 	evas_object_show(pinpopup);
 	evas_object_show(win);
 	elm_object_focus_set(ad->pin_entry, EINA_TRUE);

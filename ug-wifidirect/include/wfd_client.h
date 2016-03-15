@@ -122,7 +122,6 @@ int wfd_client_switch_on(void *data);
  */
 int wfd_client_switch_off(void *data);
 
-#ifdef WFD_ON_OFF_GENLIST
 /**
  *	This function let the ug turn wi-fi direct on/off forcely
  *	@return   If success, return 0, else return -1
@@ -130,7 +129,6 @@ int wfd_client_switch_off(void *data);
   *	@param[in] onoff whether to turn on/off wi-fi direct
  */
 int wfd_client_swtch_force(void *data, int onoff);
-#endif
 
 /**
  *	This function let the ug create a group

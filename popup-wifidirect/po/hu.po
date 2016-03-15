@@ -1,6 +1,3 @@
-msgid "IDS_WIFI_BODY_ENTER_YOUR_ID"
-msgstr "Adja meg az azonosítóját."
-
 msgid "IDS_COM_POP_MAXIMUM_NUMBER_OF_CHARACTERS_REACHED"
 msgstr "Nincs hely több karakternek."
 
@@ -10,125 +7,11 @@ msgstr "%d kiválasztva"
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "Engedélyezés"
 
-msgid "IDS_WIFI_BODY_DOT"
-msgstr "."
-
-msgid "IDS_WIFI_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_PD_REACHED"
-msgstr "Elérte a karakterek maximális számát (%d)."
-
-msgid "IDS_WIFI_TPOP_FAILED_TO_OBTAIN_IP_ADDRESS"
-msgstr "Nem sikerült lekérni az IP-címet."
-
-msgid "IDS_WIFI_TPOP_CONNECTED_TO_WI_FI_NETWORK_PS"
-msgstr "A(z) %s Wi-Fi hálózathoz kapcsolódva."
-
-msgid "IDS_WIFI_TMBODY_NEVER_M_ALWAYS_OFF"
-msgstr "Soha"
-
-msgid "IDS_WIFI_TMBODY_DOWNLOAD_DATA_VIA_WI_FI_AND_4G"
-msgstr "Adatletöltés Wi-Fi-n és 4G-n"
-
-msgid "IDS_WIFI_TMBODY_DOWNLOAD_DATA_VIA_WI_FI_AND_3G"
-msgstr "Adatletöltés Wi-Fi-n és 3G-n"
-
-msgid "IDS_WIFI_SK_WPS_PIN"
-msgstr "WPS PIN"
-
-msgid "IDS_WIFI_SK_FORGET"
-msgstr "Elfelejt"
-
 msgid "IDS_WIFI_SK_CANCEL"
 msgstr "Mégse"
 
 msgid "IDS_WIFI_SK2_OK"
 msgstr "OK"
-
-msgid "IDS_WIFI_SBODY_CONNECTED_M_STATUS"
-msgstr "Csatlakoztatva"
-
-msgid "IDS_WIFI_SBODY_AUTOMATICALLY_SWITCH_BETWEEN_WI_FI_AND_MOBILE_NETWORKS_TO_MAINTAIN_A_STABLE_INTERNET_CONNECTION"
-msgstr "Automatikusan átkapcsol a Wi-Fi és a mobilhálózat között a stabil internetkapcsolat fenntartása érdekében."
-
-msgid "IDS_WIFI_SBODY_AUTHENTICATION_ERROR_OCCURRED_M_STATUS"
-msgstr "Hitelesítési hiba történt"
-
-msgid "IDS_WIFI_POP_WI_FI_AND_MOBILE_NETWORKS_WILL_BE_USED_TOGETHER_TO_DOWNLOAD_FILES_FASTER_MSG"
-msgstr "Az eszköz a nagy fájlok letöltésének meggyorsítására egyszerre használja a Wi-Fi és a mobilhálózatot. Így növekedhet a mobil internetkapcsolat adatforgalma."
-
-msgid "IDS_WIFI_POP_SMART_NETWORK_SWITCH_HAS_BEEN_ENABLED_MSG"
-msgstr "Engedélyezte az intelligens hálózatváltást. Ez a funkció a mobil- és Wi-Fi hálózat között átváltva hozzájárul a stabil internetkapcsolat fenntartásához. Így megnövekedhet az adatforgalom."
-
-msgid "IDS_WIFI_POP_PS_IS_SELECTED_N_NIF_YOU_ARE_UNABLE_TO_CONNECT_TO_AN_AP_CHANGE_THE_SIM_CARD_USED_FOR_VERIFICATION_BY_GOING_TO_SIM_CARD_MANAGER_MSG"
-msgstr "A(z) %s van kiválasztva.\n\nHa nem tud kapcsolódni egy hozzáférési ponthoz, akkor módosítsa a hitelesítéshez használt SIM kártyát a SIM-kártyakezelő segítségével. Ezután válassza ki a mobil adatkapcsolathoz és multimédiás üzenetekhez használni kívánt SIM kártyát. Azt is megteheti azonban, hogy leválasztja azt a SIM kártyát, amelyet nem kíván használni."
-
-msgid "IDS_WIFI_POP_PRESS_WPS_ON_YOUR_WI_FI_ACCESS_POINT_WITHIN_PD_MINUTES"
-msgstr "%d percen belül nyomja meg a Wi-Fi hozzáférési pont WPS gombját."
-
-msgid "IDS_WIFI_POP_OPEN"
-msgstr "Nincs"
-
-msgid "IDS_WIFI_POP_NO_WI_FI_AP_FOUND"
-msgstr "Nem található Wi-Fi hozzáférési pont."
-
-msgid "IDS_WIFI_POP_CURRENT_NETWORK_WILL_BE_DISCONNECTED"
-msgstr "A jelenlegi hálózati kapcsolat megszűnik."
-
-msgid "IDS_WIFI_OPT_WPS"
-msgstr "WPS"
-
-msgid "IDS_WIFI_OPT_SHOW_PASSWORD"
-msgstr "Jelszó megjelenítése"
-
-msgid "IDS_WIFI_OPT_MOBILEACCESSSERVICEATCIVATION_ON"
-msgstr "Be"
-
-msgid "IDS_WIFI_OPT_MOBILEACCESSSERVICEATCIVATION_OFF"
-msgstr "Ki"
-
-msgid "IDS_WIFI_OPT_FORGET_NETWORK"
-msgstr "Hálózat elfelejtése"
-
-msgid "IDS_WIFI_MBODY_SMART_NETWORK_SWITCH"
-msgstr "Intelligens hálózatváltás"
-
-msgid "IDS_WIFI_MBODY_SIGNAL_STRENGTH_KOR_SKT"
-msgstr "Jelerősség"
-
-msgid "IDS_WIFI_MBODY_REDUCE_MOBILE_DATA_USAGE"
-msgstr "Mobil adathaszn. csökk."
-
-msgid "IDS_WIFI_MBODY_PRIORITISE_SPEED"
-msgstr "A gyorsaság az elsődleges"
-
-msgid "IDS_WIFI_MBODY_NETWORK_BONDING"
-msgstr "Hálózatkapcsolás"
-
-msgid "IDS_WIFI_HEADER_WI_FI_NETWORK_INFO_ABB"
-msgstr "Wi-Fi hálózat adatai"
-
-msgid "IDS_WIFI_HEADER_SELECT_WPS_METHOD_ABB"
-msgstr "WPS-módszer kiválasztása"
-
-msgid "IDS_WIFI_HEADER_PROXY_ADDRESS"
-msgstr "Proxy címe"
-
-msgid "IDS_WIFI_HEADER_PASSWORD"
-msgstr "Jelszó"
-
-msgid "IDS_WIFI_HEADER_ENTER_PASSWORD"
-msgstr "Írja be a jelszót."
-
-msgid "IDS_WIFI_BUTTON_WPS_BUTTON"
-msgstr "WPS gomb"
-
-msgid "IDS_WIFI_BUTTON_SCAN"
-msgstr "Keresés"
-
-msgid "IDS_WIFI_BUTTON_FIND_HIDDEN_NETWORK"
-msgstr "Rejtett hálózat keresése"
-
-msgid "IDS_WIFI_BODY_WI_FI_NETWORKS_AVAILABLE_ABB"
-msgstr "Van elérhető Wi-Fi hálózat."
 
 msgid "IDS_WIFI_BODY_WI_FI_DIRECT_ABB"
 msgstr "Wi-Fi Direct"
@@ -136,116 +19,14 @@ msgstr "Wi-Fi Direct"
 msgid "IDS_WIFI_BODY_WI_FI"
 msgstr "Wi-Fi"
 
-msgid "IDS_WIFI_BODY_WHILE_CHARGING_ONLY_ABB"
-msgstr "Csak töltéskor"
-
-msgid "IDS_WIFI_BODY_WEAK_M_STRENGTH"
-msgstr "Gyenge"
-
-msgid "IDS_WIFI_BODY_USER_CERTIFICATE_ABB"
-msgstr "Felh. tanúsítv."
-
-msgid "IDS_WIFI_BODY_UNSPECIFIED"
-msgstr "Nincs megadva"
-
-msgid "IDS_WIFI_BODY_UNKNOWN"
-msgstr "Ismeretlen"
-
-msgid "IDS_WIFI_BODY_TO_DOWNLOAD_LARGE_FILES_FASTER_USE_WI_FI_AND_MOBILE_NETWORKS_TOGETHER_T_HELP"
-msgstr "A nagy fájlok gyorsabb letöltése érdekében egyszerre is használhatja a Wi-Fi és a mobilhálózatot."
-
-msgid "IDS_WIFI_BODY_SUBNET_MASK"
-msgstr "Alhálózati maszk"
-
-msgid "IDS_WIFI_BODY_STATIC_IP"
-msgstr "Statikus IP-cím"
-
-msgid "IDS_WIFI_BODY_SSID"
-msgstr "SSID"
-
-msgid "IDS_WIFI_BODY_SORT_BY"
-msgstr "Rendezés"
-
-msgid "IDS_WIFI_BODY_SCANNING_ING"
-msgstr "Ellenőrzés..."
-
-msgid "IDS_WIFI_BODY_RECEIVE_NOTIFICATIONS_WHEN_NETWORKS_ARE_AVAILABLE"
-msgstr "Értesítések fogadása, ha elérhető a hálózat"
-
-msgid "IDS_WIFI_BODY_PROXY_PORT"
-msgstr "Proxy port"
-
-msgid "IDS_WIFI_BODY_NAME"
-msgstr "Név"
-
-msgid "IDS_WIFI_BODY_MAC_ADDRESS"
-msgstr "MAC-cím"
-
-msgid "IDS_WIFI_BODY_IP_ADDRESS"
-msgstr "IP-cím"
-
-msgid "IDS_WIFI_BODY_IDENTITY"
-msgstr "Azonosító"
-
-msgid "IDS_WIFI_BODY_GATEWAY_ADDRESS"
-msgstr "Átjárócím"
-
-msgid "IDS_WIFI_BODY_ENTER_IDENTITY"
-msgstr "Identitás megadása"
-
-msgid "IDS_WIFI_BODY_EAP_METHOD"
-msgstr "EAP módszer"
-
-msgid "IDS_WIFI_BODY_EAP"
-msgstr "EAP"
-
-msgid "IDS_WIFI_BODY_DNS_2"
-msgstr "2. DNS"
-
-msgid "IDS_WIFI_BODY_DNS_1"
-msgstr "1. DNS"
-
 msgid "IDS_WIFI_BODY_CONNECTING_ING"
 msgstr "Kapcsolódás..."
 
 msgid "IDS_WIFI_BODY_CONNECT"
 msgstr "Kapcsolódás"
 
-msgid "IDS_WIFI_BODY_CONFIGURATION_SAVED_M_STATUS"
-msgstr "Mentve."
-
-msgid "IDS_WIFI_BODY_A_WI_FI_NETWORK_HAS_BEEN_DETECTED_YOU_WILL_BE_CONNECTED"
-msgstr "Wi-Fi hálózat észlelhető. Kapcsolódni fog hozzá."
-
-msgid "IDS_WIFI_BODY_ADVANCED_SETTINGS"
-msgstr "Speciális beállítások"
-
-msgid "IDS_COM_SK_NO"
-msgstr "Nem"
-
 msgid "IDS_COM_POP_SECURITY_POLICY_RESTRICTS_USE_OF_WI_FI"
 msgstr "A biztonsági irányelv korlátozza a Wi-Fi használatát."
-
-msgid "IDS_WIFI_SBODY_TAP_HERE_TO_CONNECT"
-msgstr "Érintse meg a kapcsolódáshoz."
-
-msgid "IDS_WIFI_POP_YOUR_DEVICE_IS_CONNECTING_TO_P1SS_HOWEVER_THIS_NETWORK_MAY_NOT_PROVIDE_INTERNET_ACCESS_MSG"
-msgstr "Az eszköz kapcsolódik a(z) %1$s hozzáférési ponthoz. Ez a hálózat azonban nem feltétlenül biztosít internet-hozzáférést.\nÉrintse meg az OK gombot a(z) %1$s-kapcsolat jelenlegi fenntartásához azzal, hogy az intelligens hálózatváltás funkció máskor nem kapcsolódik majd ehhez a hálózathoz."
-
-msgid "IDS_WIFI_POP_BOTH_WI_FI_AND_MOBILE_AP_CANNOT_BE_ACTIVATED_AT_THE_SAME_TIME_DEACTIVATE_MOBILE_AP_Q"
-msgstr "A Wi-Fi és a Mobil AP-nem lehet egyszerre aktív. Kikapcsolja a Mobil AP-t?"
-
-msgid "IDS_WIFI_HEADER_SIGN_IN_TO_WI_FI_NETWORK_ABB"
-msgstr "Bejel. a Wi-Fi hálózatba"
-
-msgid "IDS_WIFI_HEADER_INTERNET_MAY_NOT_BE_AVAILABLE_ABB"
-msgstr "Az internet esetleg nem elérh."
-
-msgid "IDS_WIFI_BUTTON_DONT_ASK_AGAIN"
-msgstr "Máskor ne legyen kérdés"
-
-msgid "IDS_WIFI_BODY_OPEN_WI_FI_SETTINGS_ABB"
-msgstr "Wi-Fi beállítások megnyitása"
 
 msgid "IDS_BT_BODY_NO_DEVICES_FOUND_ABB"
 msgstr "Nem található eszköz"
@@ -268,9 +49,6 @@ msgstr "Saját eszköz neve"
 msgid "IDS_COM_POP_FAILED"
 msgstr "Sikertelen"
 
-msgid "IDS_COM_POP_CANCEL"
-msgstr "Mégse"
-
 msgid "IDS_COM_BODY_CONNECTED_M_STATUS"
 msgstr "Csatlakoztatva."
 
@@ -283,12 +61,6 @@ msgstr "Megjelennek az eszköznevek, hogy meg lehessen különböztetni a közel
 msgid "IDS_ST_SK_RENAME"
 msgstr "Átnevez"
 
-msgid "IDS_ST_BODY_TAP_TO_CHANGE_SETTINGS"
-msgstr "Érintse meg a beállítások módosításához"
-
-msgid "IDS_ST_POP_INVALID_CHARACTER_ENTERED_TRY_AGAIN"
-msgstr "Érvénytelen karaktert vitt be. Próbálja újra"
-
 msgid "IDS_ST_POP_NOT_SUPPORTED"
 msgstr "Nem támogatott."
 
@@ -297,12 +69,6 @@ msgstr "Elérhető"
 
 msgid "IDS_CHATON_HEADER_CONNECTION_FAILED_ABB2"
 msgstr "Sikert. kapcsolódás"
-
-msgid "IDS_WIFI_BODY_WI_FI_DIRECT_DEVICES"
-msgstr "Wi-Fi Direct-eszközök"
-
-msgid "IDS_WIFI_POP_TAP_TO_CONNECT"
-msgstr "Érintse meg a kapcsolódáshoz."
 
 msgid "IDS_WIFI_SK2_CANCEL_CONNECTION"
 msgstr "Kapcsolat megszakítása"
@@ -322,14 +88,8 @@ msgstr "Másik eszközhöz csatlakozik"
 msgid "IDS_WIFI_BODY_WAITING_FOR_CONNECTION_M_STATUS_ABB"
 msgstr "Várakozás kapcsolatra"
 
-msgid "IDS_ST_POP_FAILED_TO_CONNECT"
-msgstr "Nem sikerült kapcsolódni."
-
 msgid "IDS_WIFI_BUTTON_MULTI_CONNECT"
 msgstr "Többszörös kapcsolat"
-
-msgid "IDS_WIFI_BUTTON_DISCONNECT_ALL"
-msgstr "Összes szétkapcsolása"
 
 msgid "IDS_WIFI_SK_DISCONNECT"
 msgstr "Szétkapcsolás"
@@ -339,12 +99,6 @@ msgstr "Használat után tiltsa le a Wi-Fi Direct funkciót"
 
 msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_ABB"
 msgstr "Haszn. után tiltsa le a Wi-Fi Directet"
-
-msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY"
-msgstr "Használat után akkukíméléshez le a Wi-Fi Direct funkciót"
-
-msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY_ABB"
-msgstr "Haszn. után akkukíméléshez tiltsa le a Wi-Fi Directet"
 
 msgid "IDS_WIFI_BODY_PS_IS_REQUESTING_A_WI_FI_DIRECT_CONNECTION_ALLOW_Q"
 msgstr "A(z) %s Wi-Fi Direct-kapcsolatot kér. Engedélyezi?"
@@ -358,15 +112,6 @@ msgstr "A Wi-Fi Direct használatával a Mobil Wi-Fi hotspot kapcsolat megszakad
 msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_CONNECTION_ABB"
 msgstr "Wi-Fi Direct-kapcsolat"
 
-msgid "IDS_WIFI_MBODY_DISCONNECT_WI_FI_DIRECT"
-msgstr "Wi-Fi Direct-kapcs. bont."
-
-msgid "IDS_WIFI_POP_CANCEL_WI_FI_DIRECT_CONNECTION_Q"
-msgstr "Megszakítja a Wi-Fi Direct-kapcsolatot?"
-
-msgid "IDS_WIFI_POP_CONNECT_TO_OTHER_DEVICES_VIA_WI_FI_DIRECT"
-msgstr "Kapcsolódás más eszközökhöz Wi-Fi Direct segítségével"
-
 msgid "IDS_WIFI_POP_THERE_HAS_BEEN_NO_ACTIVITY_FOR_PD_MINUTES_SINCE_WI_FI_DIRECT_WAS_ENABLED_MSG"
 msgstr "%d percig tartott a tétlenség engedélyezett Wi-Fi Direct mellett. A Wi-Fi Direct az akkumulátor üzemidejének meghosszabbítása érdekében le lett tiltva."
 
@@ -378,9 +123,6 @@ msgstr "Leállít"
 
 msgid "IDS_WIFI_POP_DEACTIVATION_FAILED"
 msgstr "Sikertelen deaktiválás"
-
-msgid "IDS_WIMAX_POP_ACTIVATION_FAILED"
-msgstr "Nem sikerült aktiválni."
 
 msgid "IDS_WIFI_POP_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_CONTINUE_Q"
 msgstr "A jelenlegi kapcsolat megszakad. Folytatja a műveletet?"
@@ -403,14 +145,8 @@ msgstr "Kapcsolódva a(z) %s hálózathoz."
 msgid "IDS_COM_BODY_PINS_DO_NOT_MATCH"
 msgstr "A PIN kódok nem egyeznek."
 
-msgid "IDS_COM_POP_DEACTIVATING_ING"
-msgstr "Deaktiválás..."
-
 msgid "IDS_WIFI_BODY_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_SO_THAT_SCANNING_CAN_START_CONTINUE_Q"
 msgstr "A keresés megkezdéséhez megszakad a jelenlegi kapcsolat. Folytatja?"
-
-msgid "IDS_WIFI_HEADER_DEVICES_THAT_FAILED_TO_CONNECT"
-msgstr "Sikertelenül kapcsolódó eszközök"
 
 msgid "IDS_WIFI_POP_ENTER_PIN_TO_CONNECT_TO_PS"
 msgstr "Adja meg a PIN-t a(z) %s eszközhöz való kapcsolódáshoz."
@@ -439,14 +175,8 @@ msgstr "PIN"
 msgid "IDS_WIFI_HEADER_UNABLE_TO_CONNECT_ABB2"
 msgstr "Nem lehet kapcsolódni"
 
-msgid "IDS_WIFI_BUTTON_STOP_CONNECTION_ABB"
-msgstr "Kapcs. leállítása"
-
 msgid "IDS_WIFI_BUTTON_ALLOW"
 msgstr "Megenged"
-
-msgid "IDS_COM_POP_ACTIVATING"
-msgstr "Aktiválás..."
 
 msgid "IDS_WIFI_SK_CONNECT"
 msgstr "Kapcsolódik"
@@ -457,9 +187,6 @@ msgstr "Csatlakoztatva."
 msgid "IDS_STU_HEADER_ENTER_DEVICE_NAME"
 msgstr "Írjon be egy eszköznevet"
 
-msgid "IDS_ST_POP_CONNECTED_WITH_PD_DEVICES_VIA_WI_FI_DIRECT"
-msgstr "%d eszközhöz csatlakozik Wi-Fi Direct segítségével."
-
 msgid "IDS_WIFI_SBODY_NOT_CONNECTED_M_STATUS_ABB"
 msgstr "Nincs kapcsolat"
 
@@ -468,4 +195,13 @@ msgstr "Ez a Wi-Fi Direct-kapcsolat megszakad."
 
 msgid "IDS_WIFI_BODY_TO_SAVE_BATTERY_POWER_DISABLE_WI_FI_DIRECT_AFTER_USE"
 msgstr "Használat után az akkumulátor kímélése érdekében tiltsa le a Wi-Fi Direct funkciót."
+
+msgid "IDS_SMR_BODY_SCREEN_MIRRORING_IS_ENABLED"
+msgstr "Screen Mirroring engedélyezve."
+
+msgid "IDS_SMR_POP_SCREEN_MIRRORING_HAS_BEEN_DISABLED"
+msgstr "Screen Mirroring letiltva."
+
+msgid "IDS_WIFI_BODY_YOUR_DEVICE_HPS_IS_CURRENTLY_VISIBLE_TO_NEARBY_DEVICES"
+msgstr "Az eszközt (%s) jelenleg láthatják a közeli eszközök."
 

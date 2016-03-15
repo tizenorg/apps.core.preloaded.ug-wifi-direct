@@ -33,7 +33,6 @@
 #include <feedback.h>
 #include <wifi-direct.h>
 #include <efl_util.h>
-#include <efl_assist.h>
 #include <linux/unistd.h>
 #include <vconf.h>
 
@@ -93,9 +92,10 @@ static bool _app_create(void *data)
 	memset(ad->popup_data, 0x0, sizeof(wfd_popup_t));
 	ad->win = _create_win(NULL, PACKAGE);
 
+	/* set rotation */
 	if (elm_win_wm_rotation_supported_get(ad->win)) {
-		int rots[4] = { 0, 90, 180, 270 };
-		elm_win_wm_rotation_available_rotations_set(ad->win, rots, 1);
+		int rots[4] = {0, 90, 180, 270};
+		elm_win_wm_rotation_available_rotations_set(ad->win, (const int *)(&rots), 4);
 	}
 
 	ad->conformant = elm_conformant_add(ad->win);

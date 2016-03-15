@@ -25,7 +25,6 @@
 #include <vconf.h>
 #include <ui-gadget-module.h>
 #include <app_control.h>
-#include <wifi-direct.h>
 #include <efl_extension.h>
 
 #include "wfd_ug.h"
@@ -36,20 +35,26 @@ void scan_button_create(struct ug_data *ugd)
 {
 	__FUNC_ENTER__;
 
-	Evas_Object *btn;
-	btn = elm_button_add(ugd->layout);
-	/* Use "bottom" style button */
+	Evas_Object *btn_ly = NULL;
+	Evas_Object *btn = NULL;
+
+	btn_ly = elm_layout_add(ugd->layout);
+	elm_layout_file_set(btn_ly, WFD_UG_EDJ_PATH, "bottom_btn");
+	ugd->button_layout = btn_ly;
+
+	btn = elm_button_add(ugd->button_layout);
 	elm_object_style_set(btn, "bottom");
 	elm_object_domain_translatable_text_set(btn, PACKAGE, "IDS_WIFI_SK4_SCAN");
-	ugd->scan_toolbar = btn;
 	if (ugd->wfd_status <= WIFI_DIRECT_STATE_DEACTIVATING) {
-		wfd_ug_view_refresh_button(ugd->scan_toolbar, "IDS_WIFI_SK4_SCAN",
+		wfd_ug_view_refresh_button(btn, "IDS_WIFI_SK4_SCAN",
 			FALSE);
 	}
 	evas_object_smart_callback_add(btn, "clicked",_scan_btn_cb, (void *)ugd);
-	/* Set button into "toolbar" swallow part */
-	elm_object_part_content_set(ugd->layout, "button.big", btn);
-	evas_object_show(ugd->scan_toolbar);
+	elm_layout_content_set(ugd->button_layout, "button.big", btn);
+	ugd->scan_toolbar = btn;
+
+	elm_object_part_content_set(ugd->naviframe, "toolbar", ugd->button_layout);
+	evas_object_show(ugd->button_layout);
 
 	__FUNC_EXIT__;
 }
@@ -363,11 +368,10 @@ static void _gl_peer_sel(void *data, Evas_Object *obj, void *event_info)
 
 	if (ugd->disconnect_btn) {
 		Evas_Object *content;
-		content = elm_object_part_content_unset(ugd->layout, "button.next");
+		content = elm_object_part_content_unset(ugd->button_layout, "button.next");
 		WFD_IF_DEL_OBJ(content);
 		ugd->disconnect_btn = NULL;
-		elm_object_part_content_set(ugd->layout, "button.big",
-			ugd->scan_toolbar);
+		elm_layout_content_set(ugd->button_layout, "button.big", ugd->scan_toolbar);
 	}
 
 	if (item) {
@@ -562,8 +566,8 @@ void _more_button_cb(void *data, Evas_Object *obj, void *event_info)
 
 	ugd->ctxpopup = elm_ctxpopup_add(naviframe);
 	elm_object_style_set(ugd->ctxpopup, "more/default");
-	eext_object_event_callback_add(ugd->ctxpopup, EA_CALLBACK_BACK, eext_ctxpopup_back_cb, NULL);
-	eext_object_event_callback_add(ugd->ctxpopup, EA_CALLBACK_MORE, eext_ctxpopup_back_cb, NULL);
+	eext_object_event_callback_add(ugd->ctxpopup, EEXT_CALLBACK_BACK, eext_ctxpopup_back_cb, NULL);
+	eext_object_event_callback_add(ugd->ctxpopup, EEXT_CALLBACK_MORE, eext_ctxpopup_back_cb, NULL);
 	evas_object_smart_callback_add(ugd->ctxpopup, "dismissed", ctxpopup_dismissed_cb, ugd);
 	elm_ctxpopup_auto_hide_disabled_set(ugd->ctxpopup, EINA_TRUE);
 
@@ -923,7 +927,7 @@ static Evas_Object *_create_basic_genlist(void *data)
 	Evas_Object *genlist;
 
 	genlist = elm_genlist_add(ugd->layout);
-	elm_genlist_homogeneous_set(genlist, EINA_TRUE);
+
 	elm_genlist_mode_set(genlist, ELM_LIST_COMPRESS);
 	evas_object_size_hint_weight_set(genlist, EVAS_HINT_EXPAND,
 			EVAS_HINT_EXPAND);
@@ -1256,64 +1260,63 @@ void wfd_ug_update_toolbar(struct ug_data *ugd)
 	Evas_Object *btn;
 
 	wfd_refresh_wifi_direct_state(ugd);
-		if (ugd->wfd_status == WIFI_DIRECT_STATE_CONNECTING) {
-			DBG(LOG_INFO, "WIFI_DIRECT_STATE_CONNECTING\n");
-			if( ugd->multi_connect_wfd_item != NULL) {
-				DBG(LOG_INFO, "multi_connect_toolbar_item\n");
-				btn = elm_button_add(ugd->layout);
-				/* Use "bottom" style button */
-				elm_object_style_set(btn, "bottom");
-				elm_object_domain_translatable_text_set(btn, PACKAGE,
-						"IDS_WIFI_SK2_CANCEL_CONNECTION");
-				evas_object_smart_callback_add(btn, "clicked",
+	if (ugd->wfd_status == WIFI_DIRECT_STATE_CONNECTING) {
+		DBG(LOG_INFO, "WIFI_DIRECT_STATE_CONNECTING\n");
+		if( ugd->multi_connect_wfd_item != NULL) {
+			DBG(LOG_INFO, "multi_connect_toolbar_item\n");
+			btn = elm_button_add(ugd->button_layout);
+			/* Use "bottom" style button */
+			elm_object_style_set(btn, "bottom");
+			elm_object_domain_translatable_text_set(btn, PACKAGE,
+					"IDS_WIFI_SK2_CANCEL_CONNECTION");
+			evas_object_smart_callback_add(btn, "clicked",
 					_wfd_ug_cancel_connection_button_cb, (void *)ugd);
-				/* Set button into "toolbar" swallow part */
-				elm_object_part_content_set(ugd->layout, "button.next", btn);
-				ugd->disconnect_btn = btn;
-				evas_object_show(ugd->disconnect_btn);
-				elm_object_part_content_set(ugd->layout, "button.prev",
-					ugd->scan_toolbar);
-				wfd_ug_view_refresh_button(ugd->scan_toolbar,
+			/* Set button into "toolbar" swallow part */
+			elm_object_part_content_set(ugd->button_layout, "button.next", btn);
+			ugd->disconnect_btn = btn;
+			evas_object_show(ugd->disconnect_btn);
+			elm_object_part_content_set(ugd->button_layout, "button.prev",
+				ugd->scan_toolbar);
+			wfd_ug_view_refresh_button(ugd->scan_toolbar,
 					"IDS_WIFI_SK4_SCAN", FALSE);
-				evas_object_data_set(ugd->disconnect_btn, "multi", "disconnect");
-				DBG(LOG_INFO, "button: disconnect button added\n");
-			} else {
-				DBG(LOG_INFO, "scan_toolbar\n");
-				WFD_IF_DEL_ITEM(ugd->multi_connect_toolbar_item);
-				wfd_ug_view_refresh_button(ugd->scan_toolbar,
+			evas_object_data_set(ugd->disconnect_btn, "multi", "disconnect");
+			DBG(LOG_INFO, "button: disconnect button added\n");
+		} else {
+			DBG(LOG_INFO, "scan_toolbar\n");
+			WFD_IF_DEL_ITEM(ugd->multi_connect_toolbar_item);
+			wfd_ug_view_refresh_button(ugd->scan_toolbar,
 					"IDS_WIFI_SK2_CANCEL_CONNECTION", TRUE);
-				evas_object_data_set(ugd->scan_btn, "multi", "cancel");
-				DBG(LOG_INFO, "button: stop connect button added\n");
-			}
-		} else if (no_of_conn_dev > 0) {
+			evas_object_data_set(ugd->scan_btn, "multi", "cancel");
+			DBG(LOG_INFO, "button: stop connect button added\n");
+		}
+	} else if (no_of_conn_dev > 0) {
 		if (!ugd->multi_connect_toolbar_item) {
-			btn = elm_button_add(ugd->layout);
+			btn = elm_button_add(ugd->button_layout);
 			/* Use "bottom" style button */
 			elm_object_style_set(btn, "bottom");
 			elm_object_domain_translatable_text_set(btn, PACKAGE,
 					"IDS_WIFI_SK_DISCONNECT");
 			evas_object_smart_callback_add(btn, "clicked",
-				_wfd_ug_disconnect_button_cb, (void *)ugd);
+					_wfd_ug_disconnect_button_cb, (void *)ugd);
 			/* Set button into "toolbar" swallow part */
-			elm_object_part_content_set(ugd->layout, "button.next", btn);
+			elm_object_part_content_set(ugd->button_layout, "button.next", btn);
 			ugd->disconnect_btn = btn;
 			evas_object_show(ugd->disconnect_btn);
 		}
-		elm_object_part_content_set(ugd->layout, "button.prev",
-			ugd->scan_toolbar);
+		elm_object_part_content_set(ugd->button_layout, "button.prev",
+				ugd->scan_toolbar);
 		wfd_ug_view_refresh_button(ugd->scan_toolbar,
-			"IDS_WIFI_SK4_SCAN", TRUE);
+				"IDS_WIFI_SK4_SCAN", TRUE);
 		evas_object_data_set(ugd->disconnect_btn, "multi", "disconnect");
 		DBG(LOG_INFO, "button: disconnect button added\n");
-	}else {
+	} else {
 		if (no_of_conn_dev == 0 && ugd->disconnect_btn != NULL) {
 			DBG(LOG_INFO, "disconnect btn removed when conn failed\n");
 			Evas_Object *content;
-			content = elm_object_part_content_unset(ugd->layout, "button.next");
+			content = elm_object_part_content_unset(ugd->button_layout, "button.next");
 			WFD_IF_DEL_OBJ(content);
 			ugd->disconnect_btn = NULL;
-			elm_object_part_content_set(ugd->layout, "button.big",
-				ugd->scan_toolbar);
+			elm_layout_content_set(ugd->button_layout, "button.big", ugd->scan_toolbar);
 		}
 		wfd_ug_view_refresh_button(ugd->scan_toolbar,
 			"IDS_WIFI_SK4_SCAN", TRUE);
@@ -1807,11 +1810,11 @@ void _onoff_changed_cb(void *data, Evas_Object *obj, void *event_info)
 	elm_object_disabled_set(ugd->on_off_check, TRUE);
 	if(ugd->disconnect_btn) {
 		Evas_Object *content;
-		content = elm_object_part_content_unset(ugd->layout, "button.next");
+		content = elm_object_part_content_unset(ugd->button_layout, "button.next");
 		WFD_IF_DEL_OBJ(content);
 		ugd->disconnect_btn = NULL;
 	}
-	elm_object_part_content_set(ugd->layout, "button.big", ugd->scan_toolbar);
+	elm_layout_content_set(ugd->button_layout, "button.big", ugd->scan_toolbar);
 
 	/* turn on/off wfd */
 	if (!ugd->wfd_onoff) {
@@ -1892,8 +1895,8 @@ void create_wfd_ug_view(void *data)
 
 	ugd->naviframe = elm_naviframe_add(ugd->base);
 	elm_naviframe_prev_btn_auto_pushed_set(ugd->naviframe, EINA_FALSE);
-	eext_object_event_callback_add(ugd->naviframe, EA_CALLBACK_BACK, eext_naviframe_back_cb, NULL);
-	eext_object_event_callback_add(ugd->naviframe, EA_CALLBACK_MORE, eext_naviframe_more_cb, NULL);
+	eext_object_event_callback_add(ugd->naviframe, EEXT_CALLBACK_BACK, eext_naviframe_back_cb, NULL);
+	eext_object_event_callback_add(ugd->naviframe, EEXT_CALLBACK_MORE, eext_naviframe_more_cb, NULL);
 	elm_object_part_content_set(ugd->base, "elm.swallow.content", ugd->naviframe);
 
 	ugd->back_btn = elm_button_add(ugd->naviframe);
@@ -1903,7 +1906,8 @@ void create_wfd_ug_view(void *data)
 
 	/* Create layout */
 	layout = elm_layout_add(ugd->naviframe);
-	elm_layout_file_set(layout, WFD_UG_EDJ_PATH, "main_layout");
+	elm_layout_theme_set(layout, "layout", "application", "default");
+	evas_object_size_hint_weight_set(layout, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
 	ugd->layout = layout;
 
 	ugd->genlist = _create_basic_genlist(ugd);
@@ -1911,14 +1915,22 @@ void create_wfd_ug_view(void *data)
 		DBG(LOG_ERROR, "Failed to create basic genlist");
 		return;
 	}
-	elm_object_part_content_set(layout, "elm.swallow.content", ugd->genlist);
 
-	elm_genlist_fx_mode_set(ugd->genlist, EINA_FALSE);
+
+	DBG(LOG_ERROR, "elm_object_part_content_set");
+	elm_object_part_content_set(layout, "elm.swallow.content", ugd->genlist);
+	DBG(LOG_ERROR, "elm_genlist_fx_mode_set");
+	//elm_genlist_fx_mode_set(ugd->genlist, EINA_FALSE);
+
+	DBG(LOG_ERROR, "evas_object_show");
 	evas_object_show(ugd->base);
+	DBG(LOG_ERROR, "elm_object_focus_set");
 	elm_object_focus_set(ugd->base, EINA_TRUE);
 
+	DBG(LOG_ERROR, "elm_naviframe_item_push");
 	ugd->navi_item = elm_naviframe_item_push(ugd->naviframe, ugd->title,
 			ugd->back_btn, NULL, layout, NULL);
+	DBG(LOG_ERROR, "elm_naviframe_item_pop_cb_set");
 	elm_naviframe_item_pop_cb_set(ugd->navi_item, _back_btn_cb, ugd);
 
 #ifdef TIZEN_WIFIDIRECT_MORE_BTN
@@ -1970,6 +1982,8 @@ void destroy_wfd_ug_view(void *data)
 	WFD_IF_DEL_OBJ(ugd->back_btn);
 	WFD_IF_DEL_OBJ(ugd->toolbar);
 	WFD_IF_DEL_OBJ(ugd->genlist);
+	WFD_IF_DEL_OBJ(ugd->button_layout);
+	WFD_IF_DEL_OBJ(ugd->layout);
 	WFD_IF_DEL_OBJ(ugd->naviframe);
 	__FUNC_EXIT__;
 }

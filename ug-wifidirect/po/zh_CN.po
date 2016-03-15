@@ -1,6 +1,3 @@
-msgid "IDS_WIFI_BODY_ENTER_YOUR_ID"
-msgstr "输入您的 ID。"
-
 msgid "IDS_COM_POP_MAXIMUM_NUMBER_OF_CHARACTERS_REACHED"
 msgstr "已达到最大字符限制"
 
@@ -10,125 +7,11 @@ msgstr "%d 已选择"
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "启动"
 
-msgid "IDS_WIFI_BODY_DOT"
-msgstr "。"
-
-msgid "IDS_WIFI_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_PD_REACHED"
-msgstr "达到的最大字符数 %d"
-
-msgid "IDS_WIFI_TPOP_FAILED_TO_OBTAIN_IP_ADDRESS"
-msgstr "获取 IP 地址失败"
-
-msgid "IDS_WIFI_TPOP_CONNECTED_TO_WI_FI_NETWORK_PS"
-msgstr "已连接至 Wi-Fi 网络 %s"
-
-msgid "IDS_WIFI_TMBODY_NEVER_M_ALWAYS_OFF"
-msgstr "从不"
-
-msgid "IDS_WIFI_TMBODY_DOWNLOAD_DATA_VIA_WI_FI_AND_4G"
-msgstr "通过 Wi-Fi 和 4G 下载数据"
-
-msgid "IDS_WIFI_TMBODY_DOWNLOAD_DATA_VIA_WI_FI_AND_3G"
-msgstr "通过 Wi-Fi 和 3G 下载数据"
-
-msgid "IDS_WIFI_SK_WPS_PIN"
-msgstr "WPS PIN"
-
-msgid "IDS_WIFI_SK_FORGET"
-msgstr "忘记"
-
 msgid "IDS_WIFI_SK_CANCEL"
 msgstr "取消"
 
 msgid "IDS_WIFI_SK2_OK"
 msgstr "确定"
-
-msgid "IDS_WIFI_SBODY_CONNECTED_M_STATUS"
-msgstr "已连接"
-
-msgid "IDS_WIFI_SBODY_AUTOMATICALLY_SWITCH_BETWEEN_WI_FI_AND_MOBILE_NETWORKS_TO_MAINTAIN_A_STABLE_INTERNET_CONNECTION"
-msgstr "在移动网络和无线网络之间自动切换以保持互联网连接稳定。"
-
-msgid "IDS_WIFI_SBODY_AUTHENTICATION_ERROR_OCCURRED_M_STATUS"
-msgstr "发生验证错误"
-
-msgid "IDS_WIFI_POP_WI_FI_AND_MOBILE_NETWORKS_WILL_BE_USED_TOGETHER_TO_DOWNLOAD_FILES_FASTER_MSG"
-msgstr "将同时使用 Wi-Fi 和移动网络以使下载文件更快。此操作可能增加移动数据使用量。"
-
-msgid "IDS_WIFI_POP_SMART_NETWORK_SWITCH_HAS_BEEN_ENABLED_MSG"
-msgstr "智能网络切换已启用。该功能可通过在移动网络和 Wi-Fi 网络之间进行切换来帮助保持稳定的互联网连接。此操作可能增加您的数据使用量。"
-
-msgid "IDS_WIFI_POP_PS_IS_SELECTED_N_NIF_YOU_ARE_UNABLE_TO_CONNECT_TO_AN_AP_CHANGE_THE_SIM_CARD_USED_FOR_VERIFICATION_BY_GOING_TO_SIM_CARD_MANAGER_MSG"
-msgstr "已选择 %s。\n\n如果无法连接至 AP，请通过进入 SIM 卡管理器更改用于验证的 SIM 卡。然后选择您想要用于移动数据和彩信的 SIM 卡。或者，也可以卸载您不想使用的 SIM 卡。"
-
-msgid "IDS_WIFI_POP_PRESS_WPS_ON_YOUR_WI_FI_ACCESS_POINT_WITHIN_PD_MINUTES"
-msgstr "%d分钟内在Wi-Fi接入点按下WPS钮。"
-
-msgid "IDS_WIFI_POP_OPEN"
-msgstr "开放"
-
-msgid "IDS_WIFI_POP_NO_WI_FI_AP_FOUND"
-msgstr "未找到Wi-Fi AP。"
-
-msgid "IDS_WIFI_POP_CURRENT_NETWORK_WILL_BE_DISCONNECTED"
-msgstr "当前网络将断开。"
-
-msgid "IDS_WIFI_OPT_WPS"
-msgstr "WPS"
-
-msgid "IDS_WIFI_OPT_SHOW_PASSWORD"
-msgstr "显示密码"
-
-msgid "IDS_WIFI_OPT_MOBILEACCESSSERVICEATCIVATION_ON"
-msgstr "开"
-
-msgid "IDS_WIFI_OPT_MOBILEACCESSSERVICEATCIVATION_OFF"
-msgstr "关"
-
-msgid "IDS_WIFI_OPT_FORGET_NETWORK"
-msgstr "忘记网络"
-
-msgid "IDS_WIFI_MBODY_SMART_NETWORK_SWITCH"
-msgstr "智能网络切换"
-
-msgid "IDS_WIFI_MBODY_SIGNAL_STRENGTH_KOR_SKT"
-msgstr "信号强度"
-
-msgid "IDS_WIFI_MBODY_REDUCE_MOBILE_DATA_USAGE"
-msgstr "减少移动数据使用量"
-
-msgid "IDS_WIFI_MBODY_PRIORITISE_SPEED"
-msgstr "速度优先"
-
-msgid "IDS_WIFI_MBODY_NETWORK_BONDING"
-msgstr "网络绑定"
-
-msgid "IDS_WIFI_HEADER_WI_FI_NETWORK_INFO_ABB"
-msgstr "Wi-Fi 网络信息"
-
-msgid "IDS_WIFI_HEADER_SELECT_WPS_METHOD_ABB"
-msgstr "选择 WPS 方式"
-
-msgid "IDS_WIFI_HEADER_PROXY_ADDRESS"
-msgstr "代理服务器地址"
-
-msgid "IDS_WIFI_HEADER_PASSWORD"
-msgstr "密码"
-
-msgid "IDS_WIFI_HEADER_ENTER_PASSWORD"
-msgstr "输入密码"
-
-msgid "IDS_WIFI_BUTTON_WPS_BUTTON"
-msgstr "WPS按钮"
-
-msgid "IDS_WIFI_BUTTON_SCAN"
-msgstr "扫描"
-
-msgid "IDS_WIFI_BUTTON_FIND_HIDDEN_NETWORK"
-msgstr "查找隐藏网络"
-
-msgid "IDS_WIFI_BODY_WI_FI_NETWORKS_AVAILABLE_ABB"
-msgstr "Wi-Fi网络可用。"
 
 msgid "IDS_WIFI_BODY_WI_FI_DIRECT_ABB"
 msgstr "Wi-Fi 直连"
@@ -136,116 +19,14 @@ msgstr "Wi-Fi 直连"
 msgid "IDS_WIFI_BODY_WI_FI"
 msgstr "Wi-Fi"
 
-msgid "IDS_WIFI_BODY_WHILE_CHARGING_ONLY_ABB"
-msgstr "仅在充电时"
-
-msgid "IDS_WIFI_BODY_WEAK_M_STRENGTH"
-msgstr "弱"
-
-msgid "IDS_WIFI_BODY_USER_CERTIFICATE_ABB"
-msgstr "用户证书"
-
-msgid "IDS_WIFI_BODY_UNSPECIFIED"
-msgstr "不明确的"
-
-msgid "IDS_WIFI_BODY_UNKNOWN"
-msgstr "未知"
-
-msgid "IDS_WIFI_BODY_TO_DOWNLOAD_LARGE_FILES_FASTER_USE_WI_FI_AND_MOBILE_NETWORKS_TOGETHER_T_HELP"
-msgstr "若要更快下载大文件，请同时使用 Wi-Fi 和移动网络。"
-
-msgid "IDS_WIFI_BODY_SUBNET_MASK"
-msgstr "子网时标"
-
-msgid "IDS_WIFI_BODY_STATIC_IP"
-msgstr "静态IP"
-
-msgid "IDS_WIFI_BODY_SSID"
-msgstr "SSID"
-
-msgid "IDS_WIFI_BODY_SORT_BY"
-msgstr "排序方式"
-
-msgid "IDS_WIFI_BODY_SCANNING_ING"
-msgstr "扫描中..."
-
-msgid "IDS_WIFI_BODY_RECEIVE_NOTIFICATIONS_WHEN_NETWORKS_ARE_AVAILABLE"
-msgstr "网络可用时接收通知"
-
-msgid "IDS_WIFI_BODY_PROXY_PORT"
-msgstr "代理服务器端口"
-
-msgid "IDS_WIFI_BODY_NAME"
-msgstr "名称"
-
-msgid "IDS_WIFI_BODY_MAC_ADDRESS"
-msgstr "MAC 地址"
-
-msgid "IDS_WIFI_BODY_IP_ADDRESS"
-msgstr "IP 地址"
-
-msgid "IDS_WIFI_BODY_IDENTITY"
-msgstr "身份"
-
-msgid "IDS_WIFI_BODY_GATEWAY_ADDRESS"
-msgstr "网关地址"
-
-msgid "IDS_WIFI_BODY_ENTER_IDENTITY"
-msgstr "输入 ID。"
-
-msgid "IDS_WIFI_BODY_EAP_METHOD"
-msgstr "EAP 方法"
-
-msgid "IDS_WIFI_BODY_EAP"
-msgstr "EAP"
-
-msgid "IDS_WIFI_BODY_DNS_2"
-msgstr "DNS 2"
-
-msgid "IDS_WIFI_BODY_DNS_1"
-msgstr "DNS 1"
-
 msgid "IDS_WIFI_BODY_CONNECTING_ING"
 msgstr "连接中..."
 
 msgid "IDS_WIFI_BODY_CONNECT"
 msgstr "连接"
 
-msgid "IDS_WIFI_BODY_CONFIGURATION_SAVED_M_STATUS"
-msgstr "已保存"
-
-msgid "IDS_WIFI_BODY_A_WI_FI_NETWORK_HAS_BEEN_DETECTED_YOU_WILL_BE_CONNECTED"
-msgstr "已检测到 Wi-Fi 网络。您将连接。"
-
-msgid "IDS_WIFI_BODY_ADVANCED_SETTINGS"
-msgstr "高级设定"
-
-msgid "IDS_COM_SK_NO"
-msgstr "否"
-
 msgid "IDS_COM_POP_SECURITY_POLICY_RESTRICTS_USE_OF_WI_FI"
 msgstr "安全政策限制使用Wi-Fi。"
-
-msgid "IDS_WIFI_SBODY_TAP_HERE_TO_CONNECT"
-msgstr "轻敲此处以连接"
-
-msgid "IDS_WIFI_POP_YOUR_DEVICE_IS_CONNECTING_TO_P1SS_HOWEVER_THIS_NETWORK_MAY_NOT_PROVIDE_INTERNET_ACCESS_MSG"
-msgstr "您的设备正在连接至 %1$s。然而，该网络可能不提供上网服务。\n点击确定不但可以立即保持连接至 %1$s，而且还可以防止智能网络切换在将来连接至该网络。"
-
-msgid "IDS_WIFI_POP_BOTH_WI_FI_AND_MOBILE_AP_CANNOT_BE_ACTIVATED_AT_THE_SAME_TIME_DEACTIVATE_MOBILE_AP_Q"
-msgstr "Wi-Fi和移动接入无法同时启动。取消移动接入？"
-
-msgid "IDS_WIFI_HEADER_SIGN_IN_TO_WI_FI_NETWORK_ABB"
-msgstr "登录至 Wi-Fi 网络"
-
-msgid "IDS_WIFI_HEADER_INTERNET_MAY_NOT_BE_AVAILABLE_ABB"
-msgstr "互联网可能不可用"
-
-msgid "IDS_WIFI_BUTTON_DONT_ASK_AGAIN"
-msgstr "不要再询问"
-
-msgid "IDS_WIFI_BODY_OPEN_WI_FI_SETTINGS_ABB"
-msgstr "开放Wi-Fi设置"
 
 msgid "IDS_BT_BODY_NO_DEVICES_FOUND_ABB"
 msgstr "未找到设备"
@@ -268,9 +49,6 @@ msgstr "我的设备名称"
 msgid "IDS_COM_POP_FAILED"
 msgstr "失败"
 
-msgid "IDS_COM_POP_CANCEL"
-msgstr "取消"
-
 msgid "IDS_COM_BODY_CONNECTED_M_STATUS"
 msgstr "已连接"
 
@@ -283,12 +61,6 @@ msgstr "显示设备名称以区分附近设备列表中可用的、以及通过
 msgid "IDS_ST_SK_RENAME"
 msgstr "重命名"
 
-msgid "IDS_ST_BODY_TAP_TO_CHANGE_SETTINGS"
-msgstr "轻敲以更改设定"
-
-msgid "IDS_ST_POP_INVALID_CHARACTER_ENTERED_TRY_AGAIN"
-msgstr "输入的字符无效。请重试。"
-
 msgid "IDS_ST_POP_NOT_SUPPORTED"
 msgstr "不支持"
 
@@ -297,12 +69,6 @@ msgstr "适用"
 
 msgid "IDS_CHATON_HEADER_CONNECTION_FAILED_ABB2"
 msgstr "连接失败"
-
-msgid "IDS_WIFI_BODY_WI_FI_DIRECT_DEVICES"
-msgstr "Wi-Fi直连设备"
-
-msgid "IDS_WIFI_POP_TAP_TO_CONNECT"
-msgstr "点击并连接。"
 
 msgid "IDS_WIFI_SK2_CANCEL_CONNECTION"
 msgstr "取消连接"
@@ -322,14 +88,8 @@ msgstr "已与另一设备连接"
 msgid "IDS_WIFI_BODY_WAITING_FOR_CONNECTION_M_STATUS_ABB"
 msgstr "等待连接"
 
-msgid "IDS_ST_POP_FAILED_TO_CONNECT"
-msgstr "连接失败。"
-
 msgid "IDS_WIFI_BUTTON_MULTI_CONNECT"
 msgstr "多连接"
-
-msgid "IDS_WIFI_BUTTON_DISCONNECT_ALL"
-msgstr "断开所有"
 
 msgid "IDS_WIFI_SK_DISCONNECT"
 msgstr "断开"
@@ -339,12 +99,6 @@ msgstr "使用后禁用 Wi-Fi直连"
 
 msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_ABB"
 msgstr "使用后禁用Wi-Fi直连"
-
-msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY"
-msgstr "使用后禁用 Wi-Fi直连以节省电池电量"
-
-msgid "IDS_WIFI_BODY_DISABLE_WI_FI_DIRECT_AFTER_USE_TO_SAVE_BATTERY_ABB"
-msgstr "在使用后禁用Wi-Fi直连以节省电池"
 
 msgid "IDS_WIFI_BODY_PS_IS_REQUESTING_A_WI_FI_DIRECT_CONNECTION_ALLOW_Q"
 msgstr "%s 正在请求 Wi-Fi 直连连接。是否允许？"
@@ -358,15 +112,6 @@ msgstr "使用 Wi-Fi 直连将断开当前 Wi-Fi 网络共享。是否继续？"
 msgid "IDS_WIFI_HEADER_WI_FI_DIRECT_CONNECTION_ABB"
 msgstr "Wi-Fi 直连连接"
 
-msgid "IDS_WIFI_MBODY_DISCONNECT_WI_FI_DIRECT"
-msgstr "断开Wi-Fi直连"
-
-msgid "IDS_WIFI_POP_CANCEL_WI_FI_DIRECT_CONNECTION_Q"
-msgstr "是否取消 Wi-Fi直连 连接？"
-
-msgid "IDS_WIFI_POP_CONNECT_TO_OTHER_DEVICES_VIA_WI_FI_DIRECT"
-msgstr "通过Wi-Fi直连连接到其它设备。"
-
 msgid "IDS_WIFI_POP_THERE_HAS_BEEN_NO_ACTIVITY_FOR_PD_MINUTES_SINCE_WI_FI_DIRECT_WAS_ENABLED_MSG"
 msgstr "自 Wi-Fi直连 启用后已 %d 分钟无活动。若要延长电池寿命，Wi-Fi直连 已禁用。"
 
@@ -378,9 +123,6 @@ msgstr "停止"
 
 msgid "IDS_WIFI_POP_DEACTIVATION_FAILED"
 msgstr "停用失败"
-
-msgid "IDS_WIMAX_POP_ACTIVATION_FAILED"
-msgstr "激活失败"
 
 msgid "IDS_WIFI_POP_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_CONTINUE_Q"
 msgstr "当前连接将断开。 继续？"
@@ -403,14 +145,8 @@ msgstr "已连接%s。"
 msgid "IDS_COM_BODY_PINS_DO_NOT_MATCH"
 msgstr "PIN码不匹配。"
 
-msgid "IDS_COM_POP_DEACTIVATING_ING"
-msgstr "正在取消..."
-
 msgid "IDS_WIFI_BODY_CURRENT_CONNECTION_WILL_BE_DISCONNECTED_SO_THAT_SCANNING_CAN_START_CONTINUE_Q"
 msgstr "当前连接将断开使得扫描可开始。是否继续？"
-
-msgid "IDS_WIFI_HEADER_DEVICES_THAT_FAILED_TO_CONNECT"
-msgstr "连接失败的设备"
 
 msgid "IDS_WIFI_POP_ENTER_PIN_TO_CONNECT_TO_PS"
 msgstr "输入PIN码以连接到%s。"
@@ -425,7 +161,7 @@ msgid "IDS_DLNA_HEADER_SELECT_DEVICES_ABB"
 msgstr "选择设备"
 
 msgid "IDS_WIFI_BODY_THE_WI_FI_DIRECT_CONNECTION_HAS_BEEN_LOST"
-msgstr "Wi-Fi 直连连接已丢失。"
+msgstr "WLAN 直连连接已丢失。"
 
 msgid "IDS_ST_BODY_CONNECT_WITH_PS_IN_PD_SECS_ABB"
 msgstr "请在 %d 秒内与 %s 连接。"
@@ -439,14 +175,8 @@ msgstr "PIN 码"
 msgid "IDS_WIFI_HEADER_UNABLE_TO_CONNECT_ABB2"
 msgstr "无法连接"
 
-msgid "IDS_WIFI_BUTTON_STOP_CONNECTION_ABB"
-msgstr "停止连接"
-
 msgid "IDS_WIFI_BUTTON_ALLOW"
 msgstr "允许"
-
-msgid "IDS_COM_POP_ACTIVATING"
-msgstr "激活中..."
 
 msgid "IDS_WIFI_SK_CONNECT"
 msgstr "连接"
@@ -457,9 +187,6 @@ msgstr "已连接"
 msgid "IDS_STU_HEADER_ENTER_DEVICE_NAME"
 msgstr "输入设备名称"
 
-msgid "IDS_ST_POP_CONNECTED_WITH_PD_DEVICES_VIA_WI_FI_DIRECT"
-msgstr "已通过 Wi-Fi 直连与 %d 台设备连接。"
-
 msgid "IDS_WIFI_SBODY_NOT_CONNECTED_M_STATUS_ABB"
 msgstr "未连接"
 
@@ -468,4 +195,13 @@ msgstr "该 Wi-Fi 直连连接将取消"
 
 msgid "IDS_WIFI_BODY_TO_SAVE_BATTERY_POWER_DISABLE_WI_FI_DIRECT_AFTER_USE"
 msgstr "若要节省电池电力，使用后禁用 Wi-Fi 直连。"
+
+msgid "IDS_SMR_BODY_SCREEN_MIRRORING_IS_ENABLED"
+msgstr "屏幕共享已启用。"
+
+msgid "IDS_SMR_POP_SCREEN_MIRRORING_HAS_BEEN_DISABLED"
+msgstr "屏幕共享已禁用。"
+
+msgid "IDS_WIFI_BODY_YOUR_DEVICE_HPS_IS_CURRENTLY_VISIBLE_TO_NEARBY_DEVICES"
+msgstr "您的设备 (%s) 当前对附近的设备可见。"
 

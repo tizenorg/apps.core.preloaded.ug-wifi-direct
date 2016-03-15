@@ -23,7 +23,6 @@
 #include <Elementary.h>
 #include <vconf.h>
 #include <ui-gadget-module.h>
-#include <wifi-direct.h>
 #include <efl_extension.h>
 
 #include "wfd_ug.h"
@@ -102,7 +101,6 @@ static void _mouseup_wifi_cb(void *data, Evas *e, Evas_Object *obj, void *event_
 
 static void _keydown_wifi_cb(void *data, Evas *e, Evas_Object *obj, void *event_info)
 {
-
 	Evas_Event_Key_Down *ev = event_info;
 	if (!strcmp(ev->keyname, KEY_BACK)) {
 		struct ug_data *ugd = (struct ug_data *) data;
@@ -316,7 +314,7 @@ gboolean _wfd_disconnect_idle_cb(gpointer user_data)
 		return FALSE;
 	}
 	Evas_Object *content;
-	content = elm_object_part_content_unset(ugd->layout, "button.next");
+	content = elm_object_part_content_unset(ugd->button_layout, "button.next");
 	WFD_IF_DEL_OBJ(content);
 
 	wfd_ug_view_init_genlist(ugd, true);
@@ -530,7 +528,7 @@ void wfd_ug_act_popup(void *data, const char *message, int popup_type)
 
 	popup = elm_popup_add(ugd->base);
 	elm_popup_align_set(popup, ELM_NOTIFY_ALIGN_FILL, 1.0);
-	eext_object_event_callback_add(popup, EA_CALLBACK_BACK, eext_popup_back_cb, NULL);
+	eext_object_event_callback_add(popup, EEXT_CALLBACK_BACK, eext_popup_back_cb, NULL);
 	evas_object_size_hint_weight_set(popup, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
 	elm_object_domain_translatable_part_text_set(popup, "title,text",
 			 PACKAGE, _("IDS_WIFI_HEADER_WI_FI_DIRECT_CONNECTION_ABB"));
@@ -782,7 +780,7 @@ void wfd_ug_warn_popup(void *data, const char *message, int popup_type)
 
 	popup = elm_popup_add(ugd->base);
 	elm_popup_align_set(popup, ELM_NOTIFY_ALIGN_FILL, 1.0);
-	eext_object_event_callback_add(popup, EA_CALLBACK_BACK, eext_popup_back_cb, NULL);
+	eext_object_event_callback_add(popup, EEXT_CALLBACK_BACK, eext_popup_back_cb, NULL);
 	evas_object_size_hint_weight_set(popup, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
 	if (popup_type == POP_TYPE_MULTI_CONNECT_POPUP ||
 		popup_type == POP_TYPE_BUSY_DEVICE_POPUP) {
