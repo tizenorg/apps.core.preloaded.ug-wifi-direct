@@ -462,7 +462,7 @@ void act_popup_language_changed(void *data, Evas_Object *obj, void *event_info)
 {
 	__FUNC_ENTER__;
 
-	int popup_type = (int)data;
+	unsigned long int popup_type = (unsigned long int)data;
 	Evas_Object *btn1 = NULL;
 	Evas_Object *btn2 = NULL;
 	struct ug_data *ugd = wfd_get_ug_data();
@@ -536,7 +536,8 @@ void wfd_ug_act_popup(void *data, const char *message, int popup_type)
 	elm_object_domain_translatable_part_text_set(popup, "title,text",
 			 PACKAGE, D_("IDS_WIFI_HEADER_WI_FI_DIRECT_CONNECTION_ABB"));
 	elm_object_domain_translatable_text_set(popup, PACKAGE, message);
-	evas_object_smart_callback_add(popup, "language,changed", act_popup_language_changed, (void *)popup_type);
+	evas_object_smart_callback_add(popup, "language,changed", act_popup_language_changed,
+			(void *) (intptr_t) popup_type);
 
 	btn1 = elm_button_add(popup);
 	btn2 = elm_button_add(popup);
@@ -720,10 +721,11 @@ void warn_popup_language_changed(void *data, Evas_Object *obj, void *event_info)
 {
 	__FUNC_ENTER__;
 
-	int popup_type = (int)data;
+	unsigned long int popup_type = (unsigned long int)data;
 	struct ug_data *ugd = wfd_get_ug_data();
 	char popup_text[MAX_POPUP_TEXT_SIZE] = {0};
 	Evas_Object *btn = NULL;
+	char *format_str = NULL;
 
 	if (!ugd || !ugd->warn_popup) {
 		DBG(LOG_ERROR, "NULL parameters.\n");
@@ -756,7 +758,8 @@ void warn_popup_language_changed(void *data, Evas_Object *obj, void *event_info)
 				"IDS_ST_POP_DEVICE_CONNECTED_TO_ANOTHER_DEVICE");
 		break;
 	case POP_TYPE_MULTI_CONNECT_POPUP:
-		snprintf(popup_text, MAX_POPUP_TEXT_SIZE, D_("IDS_ST_POP_YOU_CAN_CONNECT_UP_TO_PD_DEVICES_AT_THE_SAME_TIME"), MAX_CONNECTED_PEER_NUM);
+		format_str = D_("IDS_ST_POP_YOU_CAN_CONNECT_UP_TO_PD_DEVICES_AT_THE_SAME_TIME");
+		snprintf(popup_text, MAX_POPUP_TEXT_SIZE, format_str, MAX_CONNECTED_PEER_NUM);
 		elm_object_domain_translatable_text_set(ugd->warn_popup, PACKAGE,
 				popup_text);
 		break;
@@ -794,7 +797,8 @@ void wfd_ug_warn_popup(void *data, const char *message, int popup_type)
 				 PACKAGE, D_("IDS_WIFI_HEADER_WI_FI_DIRECT_CONNECTION_ABB"));
 	}
 	elm_object_domain_translatable_text_set(popup, PACKAGE, message);
-	evas_object_smart_callback_add(popup, "language,changed", warn_popup_language_changed, (void *)popup_type);
+	evas_object_smart_callback_add(popup, "language,changed", warn_popup_language_changed,
+			(void *) (intptr_t) popup_type);
 
 	btn = elm_button_add(popup);
 	elm_object_style_set(btn, "popup");

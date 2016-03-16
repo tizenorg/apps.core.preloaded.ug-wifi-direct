@@ -434,6 +434,7 @@ static void _gl_peer_sel(void *data, Evas_Object *obj, void *event_info)
 	struct ug_data *ugd = wfd_get_ug_data();
 	device_type_s *peer = (device_type_s *)data;
 	Elm_Object_Item *item = (Elm_Object_Item *)event_info;
+	char *format_str = NULL;
 
 	if (!ugd || !peer) {
 		DBG(LOG_ERROR, "NULL parameters.\n");
@@ -444,7 +445,8 @@ static void _gl_peer_sel(void *data, Evas_Object *obj, void *event_info)
 	DBG(LOG_INFO, "No of connected peers= %d",ugd->raw_connected_peer_cnt);
 
 	if (ugd->raw_connected_peer_cnt >= MAX_CONNECTED_PEER_NUM) {
-		snprintf(popup_text, MAX_POPUP_TEXT_SIZE, D_("IDS_ST_POP_YOU_CAN_CONNECT_UP_TO_PD_DEVICES_AT_THE_SAME_TIME"), MAX_CONNECTED_PEER_NUM);
+		format_str = D_("IDS_ST_POP_YOU_CAN_CONNECT_UP_TO_PD_DEVICES_AT_THE_SAME_TIME");
+		snprintf(popup_text, MAX_POPUP_TEXT_SIZE, format_str, MAX_CONNECTED_PEER_NUM);
 		wfd_ug_warn_popup(ugd, popup_text, POP_TYPE_MULTI_CONNECT_POPUP);
 		if (item) {
 			elm_genlist_item_selected_set(item, EINA_FALSE);

@@ -839,20 +839,3 @@ UG_MODULE_API int setting_plugin_reset(app_control_h control, void *priv)
 	__FUNC_EXIT__;
 	return 0;
 }
-
-UG_MODULE_API int setting_plugin_search_init(app_control_h control, void *priv, char** applocale)
-{
-	__FUNC_ENTER__;
-
-	*applocale = strdup(PACKAGE);
-	void *node = NULL;
-
-	Eina_List **pplist = (Eina_List**)priv;
-
-	node = setting_plugin_search_item_add("IDS_WIFI_BUTTON_MULTI_CONNECT", "viewtype:IDS_WIFI_BUTTON_MULTI_CONNECT", NULL, 5, NULL);
-	*pplist = eina_list_append(*pplist, node);
-
-	 __FUNC_EXIT__;
-	return 0;
-}
-

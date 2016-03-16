@@ -401,6 +401,7 @@ void _cb_connection(int error_code, wifi_direct_connection_state_e connection_st
 	case WIFI_DIRECT_CONNECTION_REQ:
 	{
 		WFD_APP_LOG(WFD_APP_LOG_LOW, "event ------------------ WIFI_DIRECT_CONNECTION_REQ\n");
+		char *format_str = D_("IDS_ST_POP_YOU_CAN_CONNECT_UP_TO_PD_DEVICES_AT_THE_SAME_TIME");
 
 		memcpy((char*)ad->mac_addr_connecting, connection->peer_addr, MACSTR_LENGTH);
 
@@ -410,9 +411,8 @@ void _cb_connection(int error_code, wifi_direct_connection_state_e connection_st
 			result = wifi_direct_reject_connection(connection->peer_addr);
 			if (result != WIFI_DIRECT_ERROR_NONE)
 				WFD_APP_LOG(WFD_APP_LOG_ERROR, "Failed to reject connection(%d)", result);
-			snprintf(popup_text, MAX_POPUP_TEXT_SIZE,
-					D_("IDS_ST_POP_YOU_CAN_CONNECT_UP_TO_PD_DEVICES_AT_THE_SAME_TIME"),
-					WFD_MAX_CONNECTED_PEER);
+			g_snprintf(popup_text, MAX_POPUP_TEXT_SIZE,
+					format_str, WFD_MAX_CONNECTED_PEER);
 			notification_status_message_post(popup_text);
 			break;
 		}
@@ -487,6 +487,7 @@ void _cb_connection(int error_code, wifi_direct_connection_state_e connection_st
 	{
 		char *msg = NULL;
 		char txt[WFD_POP_STR_MAX_LEN] = {0};
+		char *format_str = NULL;
 		wfd_destroy_popup();
 
 		memset(ad->mac_addr_connecting, 0x00, MACSTR_LENGTH);
@@ -494,13 +495,13 @@ void _cb_connection(int error_code, wifi_direct_connection_state_e connection_st
 		if (error_code != WIFI_DIRECT_ERROR_NONE) {
 			WFD_APP_LOG(WFD_APP_LOG_ERROR, "Failed to connect with peer[%s] -(%d)",
 								connection->peer_name, error_code);
-			snprintf(txt, WFD_POP_STR_MAX_LEN,  D_("IDS_WIFI_POP_FAILED_TO_CONNECT_TO_PS"),
-								connection->peer_name);
+			format_str = D_("IDS_WIFI_POP_FAILED_TO_CONNECT_TO_PS");
+			snprintf(txt, WFD_POP_STR_MAX_LEN, format_str, connection->peer_name);
 		} else {
 			WFD_APP_LOG(WFD_APP_LOG_LOW, "Succeeded to connect with peer[%s] -(%d)",
 								connection->peer_name, error_code);
-			snprintf(txt, WFD_POP_STR_MAX_LEN,  D_("IDS_WIFI_BODY_CONNECTED_TO_PS"),
-								connection->peer_name);
+			format_str = D_("IDS_WIFI_BODY_CONNECTED_TO_PS");
+			snprintf(txt, WFD_POP_STR_MAX_LEN, format_str, connection->peer_name);
 #ifdef WFD_SCREEN_MIRRORING_ENABLED
 			result = vconf_get_int(VCONFKEY_SCREEN_MIRRORING_STATE, &screen_mirroring_status);
 			if (result < 0)

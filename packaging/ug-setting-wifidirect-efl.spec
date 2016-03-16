@@ -2,7 +2,7 @@ Name:       ug-setting-wifidirect-efl
 Summary:    Wi-Fi Direct setting UI gadget
 Version:    1.11.70
 Release:    1
-Group:      App/Network
+Group:      Applications/Network
 License:    Flora-1.1
 Source0:    %{name}-%{version}.tar.gz
 
@@ -65,8 +65,6 @@ Requires:   %{name} = %{version}-%{release}
 %description -n org.tizen.wifi-direct-popup
 Wi-Fi Direct system popup.
 
-
-
 %prep
 %setup -q
 
@@ -121,7 +119,6 @@ ln -sf %{TZ_SYS_RO_APP}/%{name}/lib/lib%{name}.so %{TZ_SYS_RO_APP}/%{name}/lib/l
 %{TZ_SYS_RO_APP}/org.tizen.wifi-direct-popup/bin/*
 %{TZ_SYS_RO_APP}/org.tizen.wifi-direct-popup/res/images/*
 %{TZ_SYS_RO_APP}/org.tizen.wifi-direct-popup/res/edje/*
-#%{TZ_SYS_RO_APP}/org.tizen.wifi-direct-popup/res/locale/*/*/*
 %{TZ_SYS_RO_UG}/res/locale/*/*/*
 %{TZ_SYS_RO_APP}/org.tizen.wifi-direct-popup/author-signature.xml
 %{TZ_SYS_RO_APP}/org.tizen.wifi-direct-popup/signature1.xml

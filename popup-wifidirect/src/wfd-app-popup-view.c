@@ -78,8 +78,9 @@ static void __popup_resp_cb(void *data, Evas_Object * obj, void *event_info)
 	wfd_appdata_t *ad = wfd_get_appdata();
 	wfd_connection_info_s *connection = ad->connection;
 	int result = -1;
-	int resp = (int) data;
+	unsigned long int resp = (unsigned long int) data;
 	char msg[WFD_POP_STR_MAX_LEN] = {0};
+	char *format_str = NULL;
 
 	WFD_APP_LOG(WFD_APP_LOG_HIGH, "popup resp : %d\n", resp);
 
@@ -96,8 +97,8 @@ static void __popup_resp_cb(void *data, Evas_Object * obj, void *event_info)
 			evas_object_hide(ad->win);
 
 			/* tickernoti popup */
-			snprintf(msg, WFD_POP_STR_MAX_LEN, D_("IDS_WIFI_POP_FAILED_TO_CONNECT_TO_PS"),
-							connection->peer_name);
+			format_str = D_("IDS_WIFI_POP_FAILED_TO_CONNECT_TO_PS");
+			snprintf(msg, WFD_POP_STR_MAX_LEN, format_str, connection->peer_name);
 			notification_status_message_post(msg);
 		}
 		WFD_APP_LOG(WFD_APP_LOG_LOW, "Succeeded to accept connection");
@@ -148,8 +149,8 @@ static void __popup_resp_cb(void *data, Evas_Object * obj, void *event_info)
 		result = wifi_direct_set_wps_pin(connection->wps_pin);
 		if (result != WIFI_DIRECT_ERROR_NONE) {
 			/* tickernoti popup */
-			snprintf(msg, WFD_POP_STR_MAX_LEN, D_("IDS_WIFI_POP_FAILED_TO_CONNECT_TO_PS"),
-							connection->peer_name);
+			format_str = D_("IDS_WIFI_POP_FAILED_TO_CONNECT_TO_PS");
+			snprintf(msg, WFD_POP_STR_MAX_LEN, format_str, connection->peer_name);
 			notification_status_message_post(msg);
 			return;
 		}
@@ -160,8 +161,8 @@ static void __popup_resp_cb(void *data, Evas_Object * obj, void *event_info)
 			evas_object_hide(ad->win);
 
 			/* tickernoti popup */
-			snprintf(msg, WFD_POP_STR_MAX_LEN, D_("IDS_WIFI_POP_FAILED_TO_CONNECT_TO_PS"),
-							connection->peer_name);
+			format_str = D_("IDS_WIFI_POP_FAILED_TO_CONNECT_TO_PS");
+			snprintf(msg, WFD_POP_STR_MAX_LEN, format_str, connection->peer_name);
 			notification_status_message_post(msg);
 		}
 		WFD_APP_LOG(WFD_APP_LOG_LOW, "Succeeded to connect with [%s]", connection->peer_addr);
@@ -302,7 +303,7 @@ static Evas_Object *wfd_draw_pop_type_b(Evas_Object * win, wfd_popup_t * pop)
 
 	popup = elm_popup_add(win);
 	elm_popup_align_set(popup, ELM_NOTIFY_ALIGN_FILL, 1.0);
-	eext_object_event_callback_add(popup, EEXT_CALLBACK_BACK, __popup_resp_cb, (void *) pop->resp_data1);
+	eext_object_event_callback_add(popup, EEXT_CALLBACK_BACK, __popup_resp_cb, (void *) (intptr_t) pop->resp_data1);
 	evas_object_event_callback_add(popup, EVAS_CALLBACK_MOUSE_UP, mouseup_cb, ad);
 //	evas_object_event_callback_add(popup, EVAS_CALLBACK_KEY_DOWN, keydown_cb, ad);
 	evas_object_size_hint_weight_set(popup, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
@@ -312,7 +313,7 @@ static Evas_Object *wfd_draw_pop_type_b(Evas_Object * win, wfd_popup_t * pop)
 	elm_object_style_set(btn, "popup");
 	elm_object_domain_translatable_text_set(btn, PACKAGE, pop->label1);
 	elm_object_part_content_set(popup, "button1", btn);
-	evas_object_smart_callback_add(btn, "clicked", __popup_resp_cb, (void *) pop->resp_data1);
+	evas_object_smart_callback_add(btn, "clicked", __popup_resp_cb, (void *) (intptr_t) pop->resp_data1);
 
 	evas_object_show(popup);
 	evas_object_show(win);
@@ -336,7 +337,7 @@ static Evas_Object *wfd_draw_pop_type_c(Evas_Object * win, wfd_popup_t * pop)
 
 	popup = elm_popup_add(win);
 	elm_popup_align_set(popup, ELM_NOTIFY_ALIGN_FILL, 1.0);
-	eext_object_event_callback_add(popup, EEXT_CALLBACK_BACK, __popup_resp_cb, (void *) pop->resp_data2);
+	eext_object_event_callback_add(popup, EEXT_CALLBACK_BACK, __popup_resp_cb, (void *) (intptr_t) pop->resp_data2);
 	evas_object_event_callback_add(popup, EVAS_CALLBACK_MOUSE_UP, mouseup_cb, ad);
 //	evas_object_event_callback_add(popup, EVAS_CALLBACK_KEY_DOWN, keydown_cb, ad);
 	evas_object_size_hint_weight_set(popup, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
@@ -349,14 +350,14 @@ static Evas_Object *wfd_draw_pop_type_c(Evas_Object * win, wfd_popup_t * pop)
 	elm_object_domain_translatable_text_set(btn1, PACKAGE, pop->label2);
 	elm_object_part_content_set(popup, "button1", btn1);
 	evas_object_smart_callback_add(btn1, "clicked", __popup_resp_cb,
-		(void *) pop->resp_data2);
+		(void *) (intptr_t) pop->resp_data2);
 
 	btn2 = elm_button_add(popup);
 	elm_object_style_set(btn2, "popup");
 	elm_object_domain_translatable_text_set(btn2, PACKAGE, pop->label1);
 	elm_object_part_content_set(popup, "button2", btn2);
 	evas_object_smart_callback_add(btn2, "clicked", __popup_resp_cb,
-		(void *) pop->resp_data1);
+		(void *) (intptr_t) pop->resp_data1);
 
 	evas_object_show(popup);
 	evas_object_show(win);
@@ -389,6 +390,7 @@ Evas_Object *wfd_draw_pop_type_auto_deactivation(Evas_Object *win,  void *userda
 	Evas_Object *popup = NULL;
 	Evas_Object *btn = NULL;
 	char popup_text[MAX_POPUP_TEXT_SIZE] = {0};
+	char *format_str = NULL;
 	wfd_appdata_t *ad = wfd_get_appdata();
 
 	popup = elm_popup_add(win);
@@ -399,8 +401,8 @@ Evas_Object *wfd_draw_pop_type_auto_deactivation(Evas_Object *win,  void *userda
 	evas_object_size_hint_weight_set(popup, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
 	elm_object_domain_translatable_part_text_set(popup, "title,text",
 			PACKAGE, "IDS_WIFI_BODY_WI_FI_DIRECT_ABB");
-	snprintf(popup_text, MAX_POPUP_TEXT_SIZE,
-		"IDS_WIFI_POP_THERE_HAS_BEEN_NO_ACTIVITY_FOR_PD_MINUTES_SINCE_WI_FI_DIRECT_WAS_ENABLED_MSG", 5);
+	format_str = D_("IDS_WIFI_POP_THERE_HAS_BEEN_NO_ACTIVITY_FOR_PD_MINUTES_SINCE_WI_FI_DIRECT_WAS_ENABLED_MSG");
+	snprintf(popup_text, MAX_POPUP_TEXT_SIZE, format_str, 5);
 	elm_object_domain_translatable_text_set(popup, PACKAGE, popup_text);
 
 	btn = elm_button_add(popup);
@@ -520,6 +522,7 @@ static Eina_Bool _keypad_popup_timer_cb(void *data)
 	char msg1[WFD_POP_STR_MAX_LEN] = {0};
 	char msg2[WFD_POP_STR_MAX_LEN] = {0};
 	char label_str[WFD_POP_STR_MAX_LEN] = {0, };
+	char * format_str = NULL;
 
 	Evas_Object *label = (Evas_Object*) data;
 	wfd_appdata_t *ad = wfd_get_appdata();
@@ -538,8 +541,8 @@ static Eina_Bool _keypad_popup_timer_cb(void *data)
 				D_("IDS_ST_BODY_CONNECT_WITH_PS_IN_PD_SECS_ABB"),
 				connection->peer_name, keypad_popup_timeout);
 
-		snprintf(msg2, sizeof(msg2), D_("IDS_WIFI_POP_ENTER_PIN_TO_CONNECT_TO_PS"),
-						connection->peer_name);
+		format_str = D_("IDS_WIFI_POP_ENTER_PIN_TO_CONNECT_TO_PS");
+		snprintf(msg2, sizeof(msg2), format_str, connection->peer_name);
 		snprintf(label_str, sizeof(label_str), "%s %s", msg1, msg2);
 		elm_object_domain_translatable_text_set(label, PACKAGE, label_str);
 
@@ -709,8 +712,9 @@ Evas_Object *wfd_draw_pop_type_display(Evas_Object * win, wfd_popup_t * pop)
 		elm_object_domain_translatable_text_set(btn2, PACKAGE, pop->label2);
 		elm_object_part_content_set(popup, "button1", btn2);
 		evas_object_smart_callback_add(btn2, "clicked", __popup_resp_cb,
-			(void *) pop->resp_data2);
-		eext_object_event_callback_add(popup, EEXT_CALLBACK_BACK, __popup_resp_cb, (void *) pop->resp_data2);
+				(void *) (intptr_t) pop->resp_data2);
+		eext_object_event_callback_add(popup, EEXT_CALLBACK_BACK, __popup_resp_cb,
+				(void *) (intptr_t) pop->resp_data2);
 	}
 
 	if (pop->resp_data1 == WFD_POP_RESP_APRV_CONNECT_KEYPAD_YES || pop->resp_data1 == WFD_POP_RESP_APRV_CONNECT_PBC_YES ) {
@@ -720,8 +724,9 @@ Evas_Object *wfd_draw_pop_type_display(Evas_Object * win, wfd_popup_t * pop)
 		elm_object_domain_translatable_text_set(btn1, PACKAGE, pop->label1);
 		elm_object_part_content_set(popup, "button2", btn1);
 		evas_object_smart_callback_add(btn1, "clicked", __popup_resp_cb,
-			(void *) pop->resp_data1);
-		eext_object_event_callback_add(popup, EEXT_CALLBACK_BACK, __popup_resp_cb, (void *) pop->resp_data1);
+				(void *) (intptr_t) pop->resp_data1);
+		eext_object_event_callback_add(popup, EEXT_CALLBACK_BACK, __popup_resp_cb,
+				(void *) (intptr_t) pop->resp_data1);
 	}
 
 	elm_object_content_set(popup, layout);
@@ -804,6 +809,7 @@ static char *__wfd_main_desc_label_get(void *data, Evas_Object *obj,
 	char buf[WFD_POP_STR_MAX_LEN] = {0, };
 	char msg1[WFD_POP_STR_MAX_LEN] = {0, };
 	char msg2[WFD_POP_STR_MAX_LEN] = {0, };
+	char *format_str = NULL;
 	wfd_appdata_t *ad = wfd_get_appdata();
 	WFD_RETV_IF(ad == NULL, NULL, "Incorrect parameter(NULL)\n");
 	wfd_connection_info_s *connection = ad->connection;
@@ -817,9 +823,8 @@ static char *__wfd_main_desc_label_get(void *data, Evas_Object *obj,
 				D_("IDS_ST_BODY_CONNECT_WITH_PS_IN_PD_SECS_ABB"),
 				connection->peer_name, ad->timeout);
 
-		snprintf(msg2, WFD_POP_STR_MAX_LEN,
-				D_("IDS_WIFI_POP_ENTER_PIN_TO_CONNECT_TO_PS"),
-				connection->peer_name);
+		format_str = D_("IDS_WIFI_POP_ENTER_PIN_TO_CONNECT_TO_PS");
+		snprintf(msg2, WFD_POP_STR_MAX_LEN, format_str, connection->peer_name);
 
 		WFD_APP_LOG(WFD_APP_LOG_LOW, "string %s %s", msg1, msg2);
 		snprintf(buf, WFD_POP_STR_MAX_LEN,
@@ -1075,14 +1080,14 @@ Evas_Object *wfd_draw_pop_type_keypad(Evas_Object * win, wfd_popup_t * pop)
 	elm_object_domain_translatable_text_set(btn1, PACKAGE, pop->label2);
 	elm_object_part_content_set(pinpopup, "button1", btn1);
 	evas_object_smart_callback_add(btn1, "clicked", __popup_resp_cb,
-			(void *)pop->resp_data2);
+			(void *) (intptr_t) pop->resp_data2);
 
 	btn2 = elm_button_add(pinpopup);
 	elm_object_style_set(btn2, "popup");
 	elm_object_domain_translatable_text_set(btn2, PACKAGE, pop->label1);
 	elm_object_part_content_set(pinpopup, "button2", btn2);
 	evas_object_smart_callback_add(btn2, "clicked", __popup_resp_cb,
-			(void *)pop->resp_data1);
+			(void *) (intptr_t) pop->resp_data1);
 #if defined(GENLIST_REALIZATION_MOTE_SET)
 	elm_genlist_realization_mode_set(genlist, EINA_TRUE);
 #endif
@@ -1151,6 +1156,8 @@ void wfd_prepare_popup(int type, void *user_data)
 	char text1[WFD_POP_STR_MAX_LEN+1] = {0, };
 	wfd_destroy_popup();
 	char *peer_name;
+	char *format_str = NULL;
+
 	peer_name = elm_entry_utf8_to_markup(connection->peer_name);
 
 	memset(pop, 0, sizeof(wfd_popup_t));
@@ -1174,9 +1181,8 @@ void wfd_prepare_popup(int type, void *user_data)
  		break;
 
 	case /* MT */ WFD_POP_APRV_CONNECTION_WPS_DISPLAY_REQ:
-		snprintf(pop->text, sizeof(pop->text),
-				D_("IDS_WIFI_BODY_PS_IS_REQUESTING_A_WI_FI_DIRECT_CONNECTION_ALLOW_Q"),
-				peer_name);
+		format_str = D_("IDS_WIFI_BODY_PS_IS_REQUESTING_A_WI_FI_DIRECT_CONNECTION_ALLOW_Q");
+		snprintf(pop->text, sizeof(pop->text), format_str, peer_name);
 		snprintf(pop->label1, sizeof(pop->label1), "%s", D_("IDS_WIFI_BUTTON_ALLOW"));
 		snprintf(pop->label2, sizeof(pop->label2), "%s", D_("IDS_BR_SK_CANCEL"));
 		pop->timeout = WFD_POP_TIMER_120;

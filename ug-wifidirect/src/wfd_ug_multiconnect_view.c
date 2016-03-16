@@ -311,6 +311,7 @@ void _connect_btn_cb(void *data, Evas_Object *obj, void *event_info)
 	int count = 0;
 	char popup_text[MAX_POPUP_TEXT_SIZE] = {0};
 	device_type_s *peer = NULL;
+	char *format_str = NULL;
 
 	peer = ugd->multi_conn_dev_list_start;
 	while (peer != NULL) {
@@ -323,7 +324,8 @@ void _connect_btn_cb(void *data, Evas_Object *obj, void *event_info)
 
 	/* if more than 7 device selected, show the popup */
 	if (count > MAX_CONNECTED_PEER_NUM) {
-		snprintf(popup_text, MAX_POPUP_TEXT_SIZE, D_("IDS_ST_POP_YOU_CAN_CONNECT_UP_TO_PD_DEVICES_AT_THE_SAME_TIME"), MAX_CONNECTED_PEER_NUM);
+		format_str = D_("IDS_ST_POP_YOU_CAN_CONNECT_UP_TO_PD_DEVICES_AT_THE_SAME_TIME");
+		snprintf(popup_text, MAX_POPUP_TEXT_SIZE, format_str, MAX_CONNECTED_PEER_NUM);
 		wfd_ug_warn_popup(ugd, popup_text, POP_TYPE_MULTI_CONNECT_POPUP);
 		__FUNC_EXIT__;
 		return;
@@ -385,6 +387,7 @@ static void _wfd_gl_multi_sel_cb(void *data, Evas_Object *obj, void *event_info)
 	const char *object_type = NULL;
 	struct ug_data *ugd = (struct ug_data *)wfd_get_ug_data();
 	device_type_s *peer = (device_type_s *)data;
+	char *format_str = NULL;
 
 	if (NULL == ugd) {
 		DBG(LOG_ERROR, "ugd is NULL\n");
@@ -434,7 +437,8 @@ static void _wfd_gl_multi_sel_cb(void *data, Evas_Object *obj, void *event_info)
 
 	if (is_sel) {
 		char title[MAX_POPUP_TEXT_SIZE] = {0};
-		snprintf(title, MAX_POPUP_TEXT_SIZE, D_("IDS_ST_HEADER_PD_SELECTED"), sel_count);
+		format_str = D_("IDS_ST_HEADER_PD_SELECTED");
+		snprintf(title, MAX_POPUP_TEXT_SIZE, format_str, sel_count);
 		wfd_naviframe_title_set(ugd, title);
 	} else {
 		wfd_naviframe_title_set(ugd, D_("IDS_DLNA_HEADER_SELECT_DEVICES_ABB"));
@@ -601,6 +605,7 @@ static void _gl_unrealized(void *data, Evas_Object *obj, void *event_info)
 	int sel_count = 0;
 	bool is_sel = FALSE;
 	device_type_s *peer = NULL;
+	char *format_str = NULL;
 
 	if (!ugd->multiconn_conn_btn) {
 		DBG(LOG_INFO, "popup naviframe, no need to update UI\n");
@@ -620,7 +625,8 @@ static void _gl_unrealized(void *data, Evas_Object *obj, void *event_info)
 
 	if (is_sel) {
 		char title[MAX_POPUP_TEXT_SIZE] = {0};
-		snprintf(title, MAX_POPUP_TEXT_SIZE, D_("IDS_ST_HEADER_PD_SELECTED"), sel_count);
+		format_str = D_("IDS_ST_HEADER_PD_SELECTED");
+		snprintf(title, MAX_POPUP_TEXT_SIZE, format_str, sel_count);
 		wfd_naviframe_title_set(ugd, title);
 	} else {
 		wfd_naviframe_title_set(ugd, D_("IDS_DLNA_HEADER_SELECT_DEVICES_ABB"));
@@ -760,6 +766,7 @@ void wfd_genlist_select_all_check_changed_cb(void *data, Evas_Object * obj, void
 	Evas_Object *content = NULL;
 	const char *object_type;
 	Eina_Bool state;
+	char *format_str = NULL;
 
 
 	struct ug_data *ugd = (struct ug_data *)data;
@@ -805,8 +812,8 @@ void wfd_genlist_select_all_check_changed_cb(void *data, Evas_Object * obj, void
 			ugd->is_multi_check_all_selected = TRUE;
 
 			char title[MAX_POPUP_TEXT_SIZE] = {0};
-			snprintf(title, MAX_POPUP_TEXT_SIZE,
-				D_("IDS_ST_HEADER_PD_SELECTED"), sel_count);
+			format_str = D_("IDS_ST_HEADER_PD_SELECTED");
+			snprintf(title, MAX_POPUP_TEXT_SIZE, format_str, sel_count);
 			wfd_naviframe_title_set(ugd, title);
 
 			if (ugd->multiconn_layout) {

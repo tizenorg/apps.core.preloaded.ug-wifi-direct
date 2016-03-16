@@ -109,7 +109,7 @@ static void _move_data_to_app_control(const char *key, const int type,
 	__WFD_APP_FUNC_ENTER__;
 	void *ptr = NULL;
 	char *buff = NULL;
-	unsigned int size = 0;
+	size_t size = 0;
 
 
 	WFD_RET_IF(data == NULL || key == NULL || type == 0, , "Invialid parameter!");
@@ -912,7 +912,7 @@ void wfd_app_util_add_wfd_turn_off_notification(void *user_data)
 	res = app_control_create(&control);
 	WFD_RET_IF(res != APP_CONTROL_ERROR_NONE, "app_control_create() return error : %d", res);
 
-	app_control_set_package(control, PACKAGE);
+	app_control_set_app_id(control, PACKAGE);
 	app_control_add_extra_data(control, NOTIFICATION_BUNDLE_PARAM, NOTIFICATION_BUNDLE_VALUE);
 
 	noti_err = notification_set_launch_option(ad->noti_wifi_direct_connected, NOTIFICATION_LAUNCH_OPTION_APP_CONTROL, control);

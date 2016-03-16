@@ -133,6 +133,7 @@ static char *_gl_device_name_label_get(void *data, Evas_Object *obj,
 	char *dev_name = NULL;
 	char str[WFD_GLOBALIZATION_STR_LENGTH] = {0, };
 	char buf[WFD_GLOBALIZATION_STR_LENGTH] = {0, };
+	char *format_str = NULL;
 
 	if (!strcmp("elm.text.multiline", part)) {
 		DBG(LOG_INFO, "%s", ugd->dev_name);
@@ -144,9 +145,8 @@ static char *_gl_device_name_label_get(void *data, Evas_Object *obj,
 				return NULL;
 			}
 
-			snprintf(str, WFD_GLOBALIZATION_STR_LENGTH,
-				D_("IDS_WIFI_BODY_YOUR_DEVICE_HPS_IS_CURRENTLY_VISIBLE_TO_NEARBY_DEVICES"),
-				dev_name);
+			format_str = D_("IDS_WIFI_BODY_YOUR_DEVICE_HPS_IS_CURRENTLY_VISIBLE_TO_NEARBY_DEVICES");
+			snprintf(str, WFD_GLOBALIZATION_STR_LENGTH, format_str, dev_name);
 
 			snprintf(buf, WFD_GLOBALIZATION_STR_LENGTH,
 				"<font_size=30>%s</font_size>", str);
