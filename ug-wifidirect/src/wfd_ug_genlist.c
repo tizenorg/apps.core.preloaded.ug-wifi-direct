@@ -660,9 +660,7 @@ static char *_gl_peer_conn_dev_label_get(void *data, Evas_Object *obj, const cha
 		det = elm_entry_utf8_to_markup(D_("IDS_COM_BODY_CONNECTED_M_STATUS"));
 		buf = g_strdup_printf("<color=#%s>%s</color>",
 			ConvertRGBAtoHex(2, 61, 132, 255), det);
-		if (det != NULL) {
-			g_free(det);
-		}
+		WFD_IF_FREE_MEM(det);
 		__FUNC_EXIT__;
 		return buf;
 	}
