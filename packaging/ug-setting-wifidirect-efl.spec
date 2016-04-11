@@ -1,6 +1,6 @@
 Name:       ug-setting-wifidirect-efl
 Summary:    Wi-Fi Direct setting UI gadget
-Version:    1.11.71
+Version:    1.11.72
 Release:    1
 Group:      Applications/Network
 License:    Flora-1.1

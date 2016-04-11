@@ -15,5 +15,6 @@
 		<privilege>http://tizen.org/privilege/notification</privilege>
 		<privilege>http://tizen.org/privilege/haptic</privilege>
 		<privilege>http://tizen.org/privilege/display</privilege>
+		<privilege>http://tizen.org/privilege/window.priority.set</privilege>
 	</privileges>
 </manifest>
