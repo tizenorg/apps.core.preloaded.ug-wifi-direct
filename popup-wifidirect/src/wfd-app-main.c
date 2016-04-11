@@ -102,7 +102,7 @@ static bool _app_create(void *data)
 	assertm_if(NULL == ad->conformant, "conformant is NULL!!");
 	elm_win_conformant_set(ad->win, EINA_TRUE);
 	elm_win_resize_object_add(ad->win, ad->conformant);
-	evas_object_size_hint_weight_set(ad->conformant, EVAS_HINT_EXPAND, 0.0);
+	evas_object_size_hint_weight_set(ad->conformant, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
 	evas_object_size_hint_align_set(ad->conformant, EVAS_HINT_FILL, 0.0);
 	evas_object_show(ad->conformant);
 
