@@ -194,7 +194,6 @@ static void __disabled_cb(tethering_error_e error, tethering_type_e type, tether
 	tethering_error_e ret = TETHERING_ERROR_NONE;
 	tethering_h th = NULL;
 	bool is_wifi_enabled = false;
-	bool is_wifi_ap_enabled = false;
 
 	if (error != TETHERING_ERROR_NONE) {
 		if (code != TETHERING_DISABLED_BY_REQUEST) {
@@ -208,10 +207,8 @@ static void __disabled_cb(tethering_error_e error, tethering_type_e type, tether
 	th = ugd->hotspot_handle;
 	if (th != NULL) {
 		is_wifi_enabled = tethering_is_enabled(th, TETHERING_TYPE_WIFI);
-		is_wifi_ap_enabled = tethering_is_enabled(th, TETHERING_TYPE_RESERVED);
-		if (is_wifi_enabled || is_wifi_ap_enabled) {
+		if (is_wifi_enabled) {
 			DBG(LOG_ERROR, "error !!! TETHERING is not disabled.\n");
-			DBG(LOG_ERROR, "is_wifi_enabled:%d is_wifi_ap_enabled:%d\n", is_wifi_enabled, is_wifi_ap_enabled);
 			return;
 		}
 
@@ -219,11 +216,6 @@ static void __disabled_cb(tethering_error_e error, tethering_type_e type, tether
 		wfd_client_swtch_force(ugd, TRUE);
 
 		ret = tethering_unset_disabled_cb(th, TETHERING_TYPE_WIFI);
-		if (ret != TETHERING_ERROR_NONE) {
-			DBG(LOG_ERROR, "tethering_unset_disabled_cb is failed(%d)\n", ret);
-		}
-
-		ret = tethering_unset_disabled_cb(th, TETHERING_TYPE_RESERVED);
 		if (ret != TETHERING_ERROR_NONE) {
 			DBG(LOG_ERROR, "tethering_unset_disabled_cb is failed(%d)\n", ret);
 		}
@@ -298,10 +290,8 @@ int wfd_mobile_ap_off(void *data)
 	WFD_RETV_IF(ugd == NULL || ugd->hotspot_handle == NULL, -1, "Incorrect parameter(NULL)\n");
 	tethering_error_e ret = TETHERING_ERROR_NONE;
 	bool is_wifi_enabled = false;
-	bool is_wifi_ap_enabled = false;
 
 	is_wifi_enabled = tethering_is_enabled(ugd->hotspot_handle, TETHERING_TYPE_WIFI);
-	is_wifi_ap_enabled = tethering_is_enabled(ugd->hotspot_handle, TETHERING_TYPE_RESERVED);
 
 	if (is_wifi_enabled) {
 		/* Register cbs */
@@ -312,13 +302,6 @@ int wfd_mobile_ap_off(void *data)
 		}
 		/* Disable tethering */
 		ret = tethering_disable(ugd->hotspot_handle, TETHERING_TYPE_WIFI);
-	} else if (is_wifi_ap_enabled) {
-		ret = tethering_set_disabled_cb(ugd->hotspot_handle, TETHERING_TYPE_RESERVED, __disabled_cb, ugd);
-		if (ret != TETHERING_ERROR_NONE) {
-			DBG(LOG_ERROR, "tethering_set_disabled_cb is failed\n", ret);
-			return -1;
-		}
-		ret = tethering_disable(ugd->hotspot_handle, TETHERING_TYPE_RESERVED);
 	}
 
 	if (ret != TETHERING_ERROR_NONE) {
@@ -1533,11 +1516,6 @@ void wfd_client_destroy_tethering(struct ug_data *ugd)
 			DBG(LOG_ERROR, "tethering_unset_disabled_cb is failed(%d)\n", ret);
 		}
 
-		ret = tethering_unset_disabled_cb(ugd->hotspot_handle, TETHERING_TYPE_RESERVED);
-		if (ret != TETHERING_ERROR_NONE) {
-			DBG(LOG_ERROR, "tethering_unset_disabled_cb is failed(%d)\n", ret);
-		}
-
 		/* Destroy tethering handle */
 		ret = tethering_destroy(ugd->hotspot_handle);
 		if (ret != TETHERING_ERROR_NONE) {
@@ -1657,8 +1635,6 @@ int wfd_client_switch_on(void *data)
 	int res;
 
 	bool is_wifi_enabled = false;
-	bool is_wifi_ap_enabled = false;
-
 
 	if(!ugd->is_init_ok) {
 		DBG(LOG_ERROR, "device is initializing, please wait\n");
@@ -1689,7 +1665,6 @@ int wfd_client_switch_on(void *data)
 		}
 
 		is_wifi_enabled = tethering_is_enabled(ugd->hotspot_handle, TETHERING_TYPE_WIFI);
-		is_wifi_ap_enabled = tethering_is_enabled(ugd->hotspot_handle, TETHERING_TYPE_RESERVED);
 
 #ifndef MODEL_BUILD_FEATURE_WLAN_CONCURRENT_MODE
 		if (wifi_state > VCONFKEY_WIFI_OFF) {
@@ -1698,7 +1673,7 @@ int wfd_client_switch_on(void *data)
 		} else
 #endif /* MODEL_BUILD_FEATURE_WLAN_CONCURRENT_MODE */
 
-		if (is_wifi_enabled || is_wifi_ap_enabled) {
+		if (is_wifi_enabled) {
 			DBG(LOG_INFO, "WiFi is connected, so have to turn off WiFi");
 			wfd_ug_act_popup(ugd, D_("IDS_WIFI_BODY_USING_WI_FI_DIRECT_WILL_DISCONNECT_CURRENT_WI_FI_TETHERING_CONTINUE_Q"), POPUP_TYPE_HOTSPOT_OFF);
 		} else

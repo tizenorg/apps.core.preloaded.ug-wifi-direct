@@ -14,5 +14,6 @@
 		<privilege>http://tizen.org/privilege/wifidirect</privilege>
 		<privilege>http://tizen.org/privilege/notification</privilege>
 		<privilege>http://tizen.org/privilege/haptic</privilege>
+		<privilege>http://tizen.org/privilege/tethering.admin</privilege>
 	</privileges>
 </manifest>
