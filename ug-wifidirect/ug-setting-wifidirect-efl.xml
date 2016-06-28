@@ -3,7 +3,7 @@
 	<label>Wi-Fi Direct Setting</label>
 	<author email="sungsik.jang@samsung.com" href="www.samsung.com">Sungsik Jang</author>
 	<description>Wi-Fi Direct setting UG</description>
-	<ui-application appid="ug-setting-wifidirect-efl" exec="/usr/apps/ug-setting-wifidirect-efl/bin/ug-setting-wifidirect-efl" ui-gadget="true" nodisplay="true" multiple="false" type="capp"  taskmanage="false" process-pool="true" hw-acceleration="use-GL">
+	<ui-application appid="ug-setting-wifidirect-efl" exec="/usr/apps/ug-setting-wifidirect-efl/bin/ug-setting-wifidirect-efl" ui-gadget="true" nodisplay="true" multiple="false" type="capp"  taskmanage="false" process-pool="true" hw-acceleration="use-GL" launch_mode="caller">
 		<icon>/usr/apps/ug-setting-wifidirect-efl/shared/icons/settings_wifi_direct.png</icon>
 		<label>Wi-Fi Direct Setting</label>
 		<label xml:lang="en-us">Wi-Fi Direct Setting</label>
